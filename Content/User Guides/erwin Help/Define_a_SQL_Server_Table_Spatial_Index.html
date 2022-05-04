@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a SQL Server Table Spatial Index</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7824" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');highlight('7824')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7824">Define a SQL Server Table Spatial Index</h6>
+        <p class="bodytext">A spatial index is an index on a table based on spatial data in the table (a spatial column). Spatial data uses the new data types, GEOMETRY and GEOGRAPHY. Different tessellation schemes are used depending on the data type of the spatial column; a spatial column assigned the GEOMETRY data type uses the GEOMETRY_GRID tessellation scheme, while a spatial column assigned the GEOGRAPHIC data type uses the GEOGRAPHY_GRID tessellation scheme.</p>
+        <p class="bodytext">The table spatial index options provide a way to define how the index behaves, such as using index padding, how to store temporary sort results used to build the index, whether distribution statistics are recomputed, allowing row or page locks, and so on.</p>
+        <p class="bodytext">Tessellation options let you specify the density of the grid at each level of a tessellation scheme and define the number of tessellation cells per object that you can use for a single spatial index object during the tessellation process. There are four levels for which you can specify density, and there are three density values you can select:</p>
+        <dl>
+            <dt>Low</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies to use the lowest density for the grid. Low equals 16 cells, or a 4x4 grid.</p>
+            </dd>
+            <dt>Medium</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies to use the medium density for the grid at the given level. Medium equals 64 cells, or an 8x8 grid.</p>
+            </dd>
+            <dt>High</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies to use the highest possible density for the grid at the given level. High equals 256 cells, or a 16x16 grid.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">Boundary box options are used to set the four coordinates of the bounding box when GEOMETRY_GRID is your tessellation scheme.</p>
+        <p class="bodytext">Use the SQL Server Table Spatial Index Editor in a SQL Server physical model to define general options, tessellation options, and boundary box options for an index on a table that contains spatial columns. You can specify more than one spatial index on a spatial column.</p>
+        <p class="proceduresubheading">To define a SQL Server table spatial index</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a table spatial index in the Model Explorer and click Properties.
+<p class="listcontinue">The SQL Server Table Spatial Index Editor opens.</p></li>
+            <li class="listnumber">Select the table from the Table drop-down that contains the table spatial index that you want to define.
+</li>
+            <li class="listnumber">Select the table spatial index in the Navigation Grid that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new table spatial index. Use the <em class="italic">Enter filter text</em> box to filter a very large list of indexes to quickly locate the index that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the table spatial index. You can change the name of the table spatial index in this field.</p><p class="noteAlt">Table spatial index names must be unique within the table but do not have to be unique within the database.</p></dd><dt>Column</dt><dd><p class="normaltermcontinued2">Specifies the spatial column upon which the table spatial index is based.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Displays the data type (and therefore the tessellation scheme) of the spatial column. You do not explicitly define the data type here; the data type of the spatial column is defined in the SQL Server Column Editor.</p><p class="noteAlt">A spatial column assigned the GEOMETRY data type uses the GEOMETRY_GRID tessellation scheme, while a spatial column assigned the GEOGRAPHIC data type uses the GEOGRAPHY_GRID tessellation scheme.</p></dd><dt>Filegroup</dt><dd><p class="normaltermcontinued2">Specifies the filegroup to which the table spatial index belongs. Select the filegroup from the drop-down.</p><p class="noteAlt">The filegroup you specify must already exist. If you do not specify a filegroup and the table is not partitioned, by default the spatial index uses the filegroup of the table upon which the index is based.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd></dl></li>
+            <li class="listnumber">Click the General tab and specify the following Spatial Index options:
+<dl><dt>Fill Factor</dt><dd><p class="normaltermcontinued2">Lets you specify a percentage to indicate how full the database engine should make the leaf level of each index page during table spatial index creation or build. Enter an integer value in this field.</p></dd><dt>Pad Index</dt><dd><p class="normaltermcontinued2">Specifies whether to use index padding. Select the option from the drop-down. If Pad Index is set to True, specify the percentage of free space specified by Fill Factor.</p></dd><dt>Sort In Temp DB</dt><dd><p class="normaltermcontinued2">Specifies whether to store the temporary sort results used to build the index in <strong>tempdb</strong>. Select the option from the drop-down.</p></dd><dt>No Recompute</dt><dd><p class="normaltermcontinued2">Specifies whether distribution statistics are recomputed. Select the option from the drop-down.</p></dd><dt>Drop Existing</dt><dd><p class="normaltermcontinued2">Specifies whether a named preexisting table spatial index is dropped and rebuilt. Select the option using the check box.</p></dd><dt>Allow Row Locks</dt><dd><p class="normaltermcontinued2">Specifies whether row locks are allowed for the selected table spatial index. Select the option from the drop-down.</p></dd><dt>Allow Page Locks</dt><dd><p class="normaltermcontinued2">Specifies whether page locks are allowed for the selected table spatial index. Select the option from the drop-down.</p></dd><dt>Maximum Degree of Parallelism</dt><dd><p class="normaltermcontinued2">Specifies the maximum parallel property for the selected table spatial index. Enter a value in the field. This value overrides the maximum degree of parallelism option for the duration of the index operation. This is to limit the number of processors used in a parallel plan execution.</p></dd><dt>Data Compression</dt><dd><p class="normaltermcontinued2">Specifies the level of data compression used by the index.</p></dd><dt>Online</dt><dd><p class="normaltermcontinued2">Specifies whether the underlying tables and associated indexes are available for queries and data modification during the index operation.</p></dd></dl></li>
+            <li class="listnumber">Specify the density of the grid at each level of a tessellation scheme and the cells per object value using the following tessellation options:
+<dl><dt>Level 1 Density Type</dt><dd><p class="normaltermcontinued2">Lets you specify the density of the first (top) level grid. Select either Low, Medium, or High for the density level from the drop-down.</p></dd><dt>Level 2 Density Type</dt><dd><p class="normaltermcontinued2">Lets you specify the density of the second level grid. Select either Low, Medium, or High for the density level from the drop-down.</p></dd><dt>Level 3 Density Type</dt><dd><p class="normaltermcontinued2">Lets you specify the density of the third level grid. Select either Low, Medium, or High for the density level from the drop-down.</p></dd><dt>Level 4 Density Type</dt><dd><p class="normaltermcontinued2">Lets you specify the density of the fourth level grid. Select either Low, Medium, or High for the density level from the drop-down.</p><p class="noteAlt"><em class="italic">Low</em> density equals 16 cells (4x4 grid), <em class="italic">Medium</em> density equals 64 cells (8x8 grid), and <em class="italic">High</em> density equals 256 cells (16x16 grid).</p></dd><dt>Cells Per Object</dt><dd><p class="normaltermcontinued2">Specifies the number of tessellation cells per object that can be used for a single spatial object in the index by the tessellation process. Enter a numerical value.</p></dd></dl></li>
+            <li class="listnumber">Specify the following Boundary Box options:
+<p class="noteAlt">Boundary Box options are only available if the spatial column upon which your index is based is Geometric.</p><dl><dt>Bound Lower Left X</dt><dd><p class="normaltermcontinued2">Lets you specify the value for the x-coordinate of the lower-left corner of the bounding box. Enter a numerical value.</p></dd><dt>Bound Lower Left Y</dt><dd><p class="normaltermcontinued2">Lets you specify the value for the y-coordinate of the lower-left corner of the bounding box. Enter a numerical value.</p></dd><dt>Bound Upper Right X</dt><dd><p class="normaltermcontinued2">Lets you specify the value for the x-coordinate of the upper-right corner of the bounding box. Enter a numerical value.</p></dd><dt>Bound Upper Right Y</dt><dd><p class="normaltermcontinued2">Lets you specify the value for the y-coordinate of upper-right corner of the bounding box. Enter a numerical value.</p></dd></dl></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The table spatial index is defined and the SQL Server Table Spatial Index Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

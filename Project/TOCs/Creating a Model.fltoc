@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="How to Create a Model"
+    Link="/Content/Tutorials/Scenarios/Creating a Model/creating_model.html">
+    <TocEntry
+      Title="Review the Prerequisites"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/review_the_prerequisites.html" />
+    <TocEntry
+      Title="Determine the Method"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/determine_the_method.html" />
+    <TocEntry
+      Title="Select a Model Template for a Mart Model"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/select_template_for_mart_model.html" />
+    <TocEntry
+      Title="Set Model Properties"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/Set_General_Model_Properties.html" />
+    <TocEntry
+      Title="Add Model Objects"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/add_model_objects.html">
+      <TocEntry
+        Title="Add an Entity"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/add_entity.html" />
+      <TocEntry
+        Title="Add an Attribute to an Entity Using the Attribute Editor"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_an_attribute_to_an_entity.html" />
+      <TocEntry
+        Title="Add a View"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_view.html" />
+      <TocEntry
+        Title="Create a Subject Area"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Create_a_Subject_Area.html" />
+      <TocEntry
+        Title="Create a New Diagram"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Create_a_New_Diagram.html" />
+      <TocEntry
+        Title="Add an Identifying Relationship"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_an_Identifying_Relationship.html" />
+      <TocEntry
+        Title="Add a Non-Identifying Relationship"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_Non_Identifying_Relationship.html" />
+      <TocEntry
+        Title="Add a New Relationship in a Physical Model"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_New_Relationship_in_a_Physical_Model.html" />
+      <TocEntry
+        Title="Add an Annotation"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_an_Annotation.html" />
+      <TocEntry
+        Title="Add a User-Defined Property to a Logical Object"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_User_Defined_Property_to_a_Logical_Object.html" />
+      <TocEntry
+        Title="Add a User-Defined Property to a Physical Object"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_User-Defined_Property_to_a_Physical_Object.html" />
+      <TocEntry
+        Title="Add a Domain in the Logical Edit Mode"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_domain_in_the_logical_edit_mode.html" />
+      <TocEntry
+        Title="Add a Domain in the Physical Edit Mode"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/Add_a_domain_in_the_physical_edit_mode.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Save the Model"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/save_the_model.html" />
+    <TocEntry
+      Title="Update a Mart Model"
+      Link="/Content/Tutorials/Scenarios/Creating a Model/update_a_mart_model.html">
+      <TocEntry
+        Title="Mart Live Permissions"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/mart_live_permissions.html" />
+      <TocEntry
+        Title="How Profiles Work"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/how_profiles_work.html" />
+      <TocEntry
+        Title="Live Permission Checking in Mart"
+        Link="/Content/Tutorials/Scenarios/Creating a Model/live_permission_checking_mart.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

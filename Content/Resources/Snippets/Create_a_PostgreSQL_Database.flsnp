@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">If you are a DBA or a system administrator responsible for installing the software on a PostgreSQL database management system, perform the following tasks:</p>
+        <p class="bodytext">Use a graphical user interface (GUI) tool, such as pgAdmin or a similar tool, to create the erwin Data Modeler Workgroup Edition database. If a GUI tool is not available, you can use SQL Shell to type in the appropriate commands manually.</p>
+        <p class="examplesubheading">Configure PostgreSQL:</p>
+        <p class="bodytext">You can configure PostgreSQL database to accept any IP address.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Set the IP address to 0.0.0.0/0
+</li>
+            <li class="listnumber">Select the server.
+</li>
+            <li class="listnumber">Click Tools, Server Configuration, pg_hba.conf. Alternately, you can find the file at C:\Program Files\PostgreSQL\&lt;version&gt;\data.
+</li>
+            <li class="listnumber">Double-click the last empty column.
+</li>
+            <li class="listnumber">Complete the following fields:
+<dl><dt>Type </dt><dd><p class="normaltermcontinued2">host</p></dd><dt>Database </dt><dd><p class="normaltermcontinued2">all</p></dd><dt>User </dt><dd><p class="normaltermcontinued2">all</p></dd><dt>Ip_Address </dt><dd><p class="normaltermcontinued2">0.0.0.0/0</p></dd><dt>Method </dt><dd><p class="normaltermcontinued2">md5</p></dd></dl></li>
+            <li class="listnumber">Select Enable and click Ok.
+</li>
+            <li class="listnumber">Click Save.
+</li>
+            <li class="listnumber">Click Reload Server.
+</li>
+        </ol>
+        <p class="bodytext">The PostgreSQL database configuration is complete.</p>
+    </body>
+</html>

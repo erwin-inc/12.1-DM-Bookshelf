@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">For a SQL Server 2005 Mart, you must have the <em class="italic">bulkadmin</em> permission designated. The ability to do bulk inserts (which the public permission permitted previously) is no longer part of the public permission. As the administrator, you explicitly define this permission. Assign the bulkadmin permission to the physical user that connects to the database. If you do not define the permission, when you create a mart using a SQL Server 2005 database, and save it, an error appears.</p>
+    </body>
+</html>

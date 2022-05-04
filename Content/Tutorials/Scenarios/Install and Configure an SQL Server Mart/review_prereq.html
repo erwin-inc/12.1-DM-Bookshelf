@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Review the Prerequisites</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8076" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T18:02-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('487');highlight('8076')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t8076">Review the Prerequisites for a SQL Server Mart</h2>
+        <p class="bodytext">Before you install the Mart components, help ensure that the minimum system requirements that are outlined in this topic are met.</p>
+        <p class="bodytext">You can use any of the following combinations to install erwin Data Modeler, the Mart database, and the MartServer application:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Install erwin Data Modeler, the Mart database, and the MartServer application on the same computer.
+</li>
+            <li class="listbullet">Install erwin Data Modeler, the Mart database, and the MartServer application on different computers.
+</li>
+            <li class="listbullet">Install erwin Data Modeler and the Mart database on one computer, and install the MartServer application on a different computer.
+</li>
+            <li class="listbullet">Install erwin Data Modeler on one computer, and install the Mart database and the MartServer application on a different computer.
+</li>
+        </ul>
+        <p class="bodytext">Ensure that you always install the MartServer application on Windows operating system.</p>
+        <p class="examplesubheading"><strong>System requirements to install the MartServer application</strong>
+        </p>
+        <p class="bodytext"><strong>Hardware requirements (based on physical hardware performance, not a virtual environment): </strong>
+        </p>
+        <p class="bodytext">Hardware requirements (based on physical hardware performance, not a virtual environment):</p>
+        <ul class="listbullet">
+            <li class="listbullet">2 GHZ or higher dual core processor
+</li>
+            <li class="listbullet">4 GB RAM (8 GB or more for large marts)
+</li>
+            <li class="listbullet">10 GB of disk space or more as required to support your specific mart
+</li>
+        </ul>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext"><strong>Operating system:</strong><![CDATA[
+]]></p>
+        <MadCap:snippetBlock src="../../../Resources/Snippets/WindowsVersions.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <ul class="listbullet">
+            <li class="listbullet">Microsoft .NET Framework 4.0 and above
+</li>
+            <li class="listbullet">All current Microsoft Windows critical updates are applied
+</li>
+        </ul>
+        <p class="bodytext"><strong>Database:</strong>
+        </p>
+        <ul class="listbullet">
+            <li class="listbullet">The Mart Server can use a standalone or can share an existing database server for a Microsoft SQL Server 2014 SP3, 2016 SP2, or certified versions 2017 and 2019 database, Microsoft SQL Azure 12, and Amazon RDS SQL Server 2019. 
+</li>
+            <li class="listbullet">The SQL Server 2012, 2014, 2014 SP1, 2016, 2016 SP1, 2016 SP2, 2017, and 2019 TRUSTWORTHY database property is no longer required for the mart. After you install this product, you can optionally reset this property to OFF. 
+</li>
+            <li class="listbullet">The database user account that is used to configure the Mart must have the dba_owner role assigned.
+</li>
+            <li class="listbullet">(Optional) To use the Korean language, use the Korean_wansung_CI_AS character set. Select the character set while creating the Mart database (in the Collation field). For more information, see the SQL Server documentation.
+</li>
+        </ul>
+        <p class="bodytext"><strong>erwin Mart Administrator web client:</strong>
+        </p>
+        <p class="bodytext">Supported browsers:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Microsoft Edge v97 or newer</li>
+            <li class="listbullet">Mozilla Firefox v91 or newer
+</li>
+            <li class="listbullet">Google Chrome v97 or newer
+</li>
+            <li class="listbullet">Apple Safari 15 or newer
+</li>
+        </ul>
+        <p class="noteAlt">Ensure that your screen resolution is 1024 x 768 or higher. If your screen resolution is less than the minimum supported, some portions of the screen will not be visible.</p>
+        <p class="examplesubheading"><strong>Other requirements</strong>
+        </p>
+        <p class="bodytext">Help ensure that the following additional requirements are met:</p>
+        <ul class="listbullet">
+            <li class="listbullet">If you want to use Microsoft IIS as the web server, you have configured it.
+</li>
+            <li class="listbullet">The DBMS is installed and prepared for creating the Mart Database. 
+</li>
+            <li class="listbullet">The Mart database is created. At least one user with administrator privileges is present. 
+</li>
+            <li class="listbullet">If you want to add Windows Group users as Mart users, you have the Active Directory Server details. 
+<p class="noteAlt">You can add Windows Group users as normal Mart users, but not as Mart administrators. A Mart administrator must be a server or Windows user.</p></li>
+        </ul>
+        <p class="examplesubheading">Important disclaimer notice on all requirements</p>
+        <ol class="listnumber">
+            <li class="listnumber">The requirements that are mentioned previously define the minimum requirements which permit the application to run with reasonable performance based on a small business use case scenario. The actual requirements for an enterprise-wide use case based on larger models and configurations require significantly greater resources to obtain acceptable performance.
+</li>
+            <li class="listnumber">These requirements are based on actual physical hardware (no virtual environment) and the following assumptions:
+<ul class="listbullet2"><li class="listbullet2">Minimal to no network overhead (both the database and application servers are locally installed)
+</li><li class="listbullet2">Vendor's default install of the current version of their software (with all current service or fix packs)
+</li><li class="listbullet2">No other applications sharing the defined hardware configuration (for example, a clean machine)
+</li></ul><p class="listcontinue">Any other hardware/software configurations are acceptable as long as they provide the same (or better) performance characteristics identified.</p></li>
+        </ol>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\406.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

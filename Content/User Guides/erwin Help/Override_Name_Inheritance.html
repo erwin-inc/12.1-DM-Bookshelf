@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Override Name Inheritance</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4617" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4594');expand2('4616');highlight('4617')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t4617">Override Name Inheritance</h4>
+        <p class="bodytext">You can override the inheritance of names and can harden the names. If a name is hardened, the physical model name does not change upon changing the logical name.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Go to <b>Tools</b> &gt; <b>Manage Name Hardening</b>.
+<p class="listcontinue">The <span class="uielement">Name Hardening Wizard</span> opens.</p></li>
+            <li class="listnumber">Click <b>Type Selection</b>.
+<p class="normaltermcontinued">The options that you select on this page determine the options that are defined on the Object Selection page. </p><p class="noteAlt">While you can select the Entity check box in a logical model, you can harden names only in a physical model. Logical entity names are not inherited names; they are set on the entity object. Therefore, they do not change and there is no need to harden them.</p></li>
+            <li class="listnumber">Select the object types for which you want to override inheritance, then click <b>Object Selection</b>.
+</li>
+            <li class="listnumber">Select the model objects for which you want to override inheritance, then click <b>Action</b>.
+<p class="listcontinue">If some of the subordinate objects are selected, then the check box for that collection node is selected and is also shaded. </p></li>
+            <li class="listnumber">Select the check box for each item for which you want to override inheritance, and then click <b>Apply</b>.
+</li>
+            <li class="listnumber">
+                <p>Click <b>Close</b>.</p>
+                <p class="normaltermcontinued">The <span class="uielement">Logical</span> and <span class="uielement">Physical</span> columns indicate the status of the objects and the <span class="uielement">Selected Objects</span> column lists their fully qualified names. For example, instead of simply 'a,' an attribute name would be 'OwnerName.E/1.a.'. When you unharden an object name, the same name you used in the hardening process remains. However, now you can edit or reset that name (editing or resetting of hardened names is not allowed). </p>
+                <p class="noteAlt">Unhardening an object name does not automatically restore inheritance, it only allows the names to be reset or changed. </p>
+            </li>
+        </ol>
+        <p class="relatedheading">More information:</p>
+        <p class="relateditem"><a href="name_hardening_wizard.html" target="_self">Name Hardening Wizard</a>
+        </p>
+        <p class="relateditem"><a href="Harden_Unharden_Object_Names_Selectively.html" target="_self">Harden or Unharden Object Names Selectively</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

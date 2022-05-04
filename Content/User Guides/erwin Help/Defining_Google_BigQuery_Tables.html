@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Defining Google BigQuery Tables</title>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8032" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('8022');expand2('8023');highlight('8032')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading1" id="t3067">Defining Google BigQuery Tables</p>
+        <p class="bodytext">The following properties are applicable to a Google BigQuery  Table object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" style="width: 129px;" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Name</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the table  </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">The maximum length for physical name is 254</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Dataset</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the dataset to which the table belongs </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Replace Syntax</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the REPLACE syntax is used </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Selecting this option replaces the syntax with the new DDL that is generated during Forward Engineering</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">If Not Exists</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies that if the table already exists, no exception is thrown, and no action happens  </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p><b>Base</b>: Indicates a standard table</p>
+                    <p><b>Clone</b>: Indicates that a standard table is restored from table snapshot</p>
+                    <p><b>Copy</b>: Indicates that a table is created with the same metadata and data from another table</p>
+                    <p><b>External</b>: Indicates that the table's data is stored in an external data source</p>
+                    <p><b>Like</b>: Indicates that the table is created based on another table and has the same metadata of the specified table</p>
+                    <p><b>Snapshot</b>: Indicates that the table is snapshot of a base table at a given timestamp</p>
+                    <p><b>Temp</b>: Indicates that the table is temporary</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a DDL&#160;statement is generated for the table during forward engineering </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="28">General</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Label List</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an array of labels for the dataset, expressed as key-value pairs </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Clustering Column List</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the comma-separated list of columns based on which the table’s data is organized for a clustered table </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Name</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the table </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Friendly Name</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the user-friendly name for the table, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Expiration Timestamp</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the exact time when this table expires, in milliseconds, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Partition Expiration in Days</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the number of days after which a table partition is deleted </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">KMS&#160;Key Name</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the Cloud KMS key for encrypting table data in the dataset, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Require Partition Filter</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table requires a partition filter that can be used for partition elimination to be specified</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Allow Jagged Rows</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table accepts rows in CSV files that are missing trailing optional columns</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Allow Quoted Newlines</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table allows quoted data sections that contain newline characters in a CSV file</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compression</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the compressed CSV&#160;or JSON&#160;data, enclosed in quotation marks </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Decimal Target Types</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how to convert a Decimal type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example, ["NUMERIC", "BIGNUMERIC"]</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Enable Logical Types</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the converted Avro logical types into their corresponding SQL types</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Applies only to Avro data</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Encoding</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies CSV files with data encoded in ISO-8859-1 (also known as Latin-1) format, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Supported values are UTF8 (or UTF-8) and ISO_8859_1 (or ISO-8859-1)</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Field Delimiter</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the separator for fields in a CSV file, enclosed in quotation marks </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example, any single-byte character</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the format of the external data, enclosed in quotation marks </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Supported values are AVRO, CSV, DATASTORE_BACKUP, GOOGLE_SHEETS, NEWLINE_DELIMITED_JSON (or JSON), ORC, and PARQUET</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Hive Partition URI Prefix </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a common prefix for all source URIs before the partition key encoding begins</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Applies to Avro, CSV, JSON, Parquet, and ORC data</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Ignore Unknown Values</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether to allow and ignore extra, unrecognized values in CSV or JSON data</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyD-Column1-Body1" rowspan="6">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">JSON&#160;Extension</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the JSON&#160;extension, enclosed in quotation marks </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Max Bad Records</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the maximum number of bad records to ignore when reading the data in CSV, JSON, and Sheets data</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Null Marker</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the string that represents NULL values in a CSV file, enclosed in quotation marks</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Projection Fields</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies list of entity properties to load in Datastore data, enclosed in quotation marks</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Quote</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the string used to quote data sections in a CSV file, enclosed in quotation marks</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Require Hive Partition Filter</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether all queries of table require a partition filter that can be used to eliminate partitions when reading data in Avro, CSV, JSON, Parquet, and ORC data, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Applies only to hive-partitioned external tables</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Sheet Range</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies range of a Sheets spreadsheet to query from, enclosed in quotation marks</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example, “sheet1!A1:B20”</p>
+                    <p>Available when Table Type is set to External</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Skip Leading Rows</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the number of rows at the top of a file to skip when reading the data in CSV and Sheets data</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">URIs</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an array of fully qualified URIs for the external data locations</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Source Table</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a standard table</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Table Type is set to Clone, Copy, Like, or Snapshot </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Query Statement</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a valid standalone SQL statement to execute</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="9">Partitions</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Column</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the list of available columns for partition</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Data Type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical data type for the selected column</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Ingestion Options</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type of pre-defined partition</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Scheme</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how the table is partitioned</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1"><b>DATE</b>: Indicates partition by ingestion time with daily partition<p><b>DATE_TRUNC</b>: Indicates partition by a DATE column with the specified partitioning type</p><p><b>TIMESTAMP_TRUNC</b>: Indicates partition by ingestion time with the specified partitioning type</p><p><b>DATETIME_TRUNC</b>: Indicates partition by a DATETIME column with the specified partitioning type</p><p><b>RANGE_BUCKET</b>: Indicates partition by an integer column with the specified range</p></td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Schema Options</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the option to partition table via schema</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Start</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the start of range partitioning</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Scheme is set to Range Bucket</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">End</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the end of range partitioning</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Scheme is set to Range Bucket</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Interval</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the width of each range within the partition</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when Scheme is set to Range Bucket</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Partition Expression</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an expression that determines how to partition the table</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">
+            <div class="noteAlt">If the value of an object property is of the Function type, do not enclose the value in quotation marks.</div>
+        </p>
+    </body>
+</html>

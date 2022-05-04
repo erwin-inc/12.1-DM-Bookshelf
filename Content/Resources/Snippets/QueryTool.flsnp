@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>The Query Tool provides a convenient way to execute SQL SELECT queries against a model in erwin Data Modeler (DM), a model in a mart, or against a database catalog. You can execute a query against the objects and properties in the model, the metadata defining those objects and properties, and the action log that records the changes that are made to your model during the modeling session.</body>
+</html>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Forward Engineering/Schema Generation</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4025" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4622');highlight('4025')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4025">Forward Engineering/Schema Generation for Databases</h3>
+        <p class="bodytext">You can generate a physical database schema from a physical model using the Forward Engineering process. The schema that you generate includes all options that are supported in your target server.</p>
+        <p class="bodytext">This topic walks you through the steps to generate alter script for a MongoDB model as an example. Similarly, you can generate alter script for a list of databases models based on your requirements. Also, the Forward Engineering Schema Generation Wizard has different configuration sections specific to database. For more information on database specific forward engineering schema generation options, refer to <a href="Forward_Engineering_Options_for_Databases.html">Forward Engineering Options for Databases</a> topic.</p>
+        <p class="bodytext">To forward engineer a model, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Open a MongoDB model in <MadCap:variable name="General.ProductNameDM" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.<p class="noteAlt">Ensure that you are in the Physical mode.</p></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Actions</b> &gt; <b>Schema</b>.<br />The Forward Engineer Schema Generation Wizard appears.<br /><img src="../../Resources/Images/FEWizard.png" style="height: 460px;width: 520px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Option Selection</b>.<br></br>The Option Selection tab displays the default option set. Select the schema generation syntax options as required.</p>
+                <p class="bodytext">Similarly, you can select schema generation options for available schema groups for other databases.</p>
+                <p class="bodytext">
+                    <img src="../../Resources/Images/FEOptionSelection.png" style="width: 546px;height: 487px;">
+                    </img>
+                </p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Collection Filter tab appears. It displays a list of collections available in your model.<br />Similarly, you can filter Collections or Tables for other databases.<br /><img src="../../Resources/Images/FECollectionFilter.png" style="width: 543px;height: 484px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select the collections that you want to forward engineer.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Preview</b> to view the schema script.<br></br><img src="../../Resources/Images/FEPreview.png" style="width: 540px;height: 481px;"></img></p>
+                <p class="bodytext">Use the following options:</p>
+                <ul>
+                    <li>
+                        <p class="bodytext"><b>Auto Error Check</b>: Select this option to enable auto error check by the forward engineering wizard.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Error Check</b> (<img src="../../Resources/Images/Icon-ErrorCheck.png" style="width: 17px;height: 16px;"></img>): Use this option to run an error check. Based on the results, you can correct the generated script.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Text Options</b> (<img src="../../Resources/Images/Icon-TextOptions.png"></img>): Use this option to configure the preview text editor's look and feel, such as window, font, syntax color settings. For more information, refer to the Forward Engineering Wizard - Preview Editor topic.</p>
+                    </li>
+                    <li>
+                        <p><b>Save</b> (<img src="../../Resources/Images/332.gif"></img>): Use this option to save the generated script in the JSON or BSON format.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Generate</b>.<br />The forward engineering process starts. The script generates your physical database schema. You can access your database and verify the newly generated schema.<br /><img src="../../Resources/Images/FEGenerateScript.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 419px;height: 294px;" /><br /></p>
+            </li>
+        </ol>
+        <p class="bodytext">Similarly, you can generate alter script for a database using forward engineering, for more information refer to <a href="Alter_Script_Schema_Generation.html">Generating Alter Script for Databases</a>.</p>
+    </body>
+</html>

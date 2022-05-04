@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8357" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/11/2018T16:39-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="../../Resources/open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('8356');highlight('8357')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tools" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t8357">Installing erwin DM Scheduler</h1>
+        <p class="bodytext">erwin DM&#160;Scheduler is one of the components in erwin Data Modeler (DM) installer. Installing it installs erwin DM Scheduler Service in your environment.</p>
+        <p class="noteAlt">Installing erwin DM Scheduler installs Windows Resource Kit Tools. It is not a prerequisite, and you can uninstall it without affecting erwin DM Scheduler's function. However, this set of tools assists you to manage issues in permissions and security for erwin DM Scheduler. It helps you troubleshoot in case you do not have appropriate privileges to use erwin DM scheduler windows service.
+        </p>
+        <p class="bodytext">To install erwin DM Scheduler, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On erwin DM installer, ensure that erwin DM Scheduler is not disabled and click <b>Next</b>.<br /><img src="../../Resources/Images/SchedulerInstallerOptionSelection.png" alt="" title="" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 481px;height: 368px;" /><br /></li>
+            <li class="listnumber">Select the type of erwin DM&#160;Scheduler Service that you want to create.<br /><img src="../../Resources/Images/SchedulerInstallerWindowsService.png" alt="" title="" style="width: 484px;height: 368px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br />You can create a local administrator user-based service or a domain-based non-administrator service.<p class="noteAlt">For a non-administrator user, ensure that you do not select the Local System check box.</p>To be able to connect to the Mart from the Scheduler using Windows Authentication, instead of Local System, use Domain\Username to create the erwin DM&#160;Scheduler Service. For example, the following image shows the Domain\Username format:<br /><img src="../../Resources/Images/SchedulerInstallerWindowsService-DomainUser.png" alt="" title="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 493px;height: 374px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br />For non-administrator users, select the <b>Auto Start</b> check box to start the erwin Data Modeler Scheduler Service by default.<br /></li>
+            <li class="listnumber">Finish the installation according to the instructions on next screens.<br />erwin DM Scheduler Service is installed in your environment and  is added to erwin Data Modeler under the Tools tab.<br /><img src="../../Resources/Images/SchedulerToolsTab.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 410px;height: 129px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br /></li>
+        </ol>
+        <p class="bodytext">&#160;</p>
+    </body>
+</html>

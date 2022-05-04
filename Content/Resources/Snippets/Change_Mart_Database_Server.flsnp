@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Sometimes, you may change the server on which the Mart database is installed, or you may restore the Mart database with a new name. When there is a change the server name or database name, reconfigure the MartServer.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Back up your Mart database.
+</li>
+            <li class="listnumber">Restore the database on the designated server. 
+</li>
+            <li class="listnumber">If you use the same computer for Mart Server and restore the database in a different name, include the new database name in the erwin Mart Configuration dialog.
+<p class="listcontinue">From the Windows Start menu, open the erwin Mart Configuration dialog. In the Mart Server tab, Database Name field, enter the new name with which the database is restored. Enter the current user name and password to access the database. If wrong information is provided here, you may be able to install the Mart, but you cannot log in and cannot use it.</p></li>
+            <li class="listnumber">If you use a different computer for Mart Server and restore the database in the same name, install the Mart Server on the new computer.
+<p class="listcontinue">Use the Install erwin Mart Server procedure and install the Mart Server. In the Mart Server tab, Server Name field, enter the name of the new server where the database is restored. Enter the current user name and password to access the database. If wrong information is provided here, you may be able to install the Mart, but you cannot log in and cannot use it.</p></li>
+            <li class="listnumber">Stop the MartServer service and start it again.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , erwin Mart Administrator <MadCap:variable name="General.VersionNumber" /> .
+<p class="listcontinue">Enter the credentials of the Mart administrator and log in.</p></li>
+        </ol>
+    </body>
+</html>

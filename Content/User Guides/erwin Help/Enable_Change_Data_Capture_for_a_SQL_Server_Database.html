@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Enable Change Data Capture for a SQL Server Database</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7802" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');expand2('7843');highlight('7802')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t7802">Enable Change Data Capture for a SQL Server Database</p>
+        <p class="bodytext">To track changes in your database you must have change data capture enabled. The change data capture object in erwin® Data Modeler provides the specifications for capturing changes to data stored in a table without creating triggers or modifying the schema of the table.</p>
+        <p class="bodytext">Use the options in the SQL Server Database Editor to enable change data capture for a database in a SQL Server physical model.</p>
+        <p class="proceduresubheading">To enable change data capture for an SQL Server database</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Target - SQL Server, Databases on the Model menu.
+<p class="listcontinue">The SQL Server Database Editor opens.</p></li>
+            <li class="listnumber">Select the database in the Navigation Grid for which you want to enable change data capture.
+</li>
+            <li class="listnumber">Specify the <em class="italic">True</em> value in the Is Change Data Capture Enabled drop-down option in the Navigation Grid.
+</li>
+            <li class="listnumber">Click the General tab and work with the following options:
+<dl><dt>Change Tracking</dt><dd><p class="normaltermcontinued2">Specifies whether to enable or disable change tracking for the database.</p></dd><dt>Auto Cleanup</dt><dd><p class="normaltermcontinued2">Specifies whether to enable automatic removal of the change tracking information from the database. An ENABLE value specifies that change tracking information is automatically removed from the database after the specified retention period. A DISABLE value specifies that change tracking information is not removed from the database.</p></dd><dt>Change Retention Period</dt><dd><p class="normaltermcontinued2">Specifies the minimum timeframe for retention of change tracking information. Enter a number that corresponds to the timeframe you must select in the <strong>Change Retention Period Type</strong> drop-down. For example, you can enter 10 in this field, and then specify whether this is minutes, hours, or days in <strong>Change Retention Period Type</strong>.</p><p class="noteAlt">Change tracking information is removed only if the <strong>Auto Cleanup</strong> option is enabled.</p></dd><dt>Change Retention Period Type</dt><dd><p class="normaltermcontinued2">Lets you specify the timeframe that corresponds to the numerical value you entered in the <strong>Change Retention Period</strong> field. Make a selection from the drop-down.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">Change data capture is enabled and defined and the SQL Server Database Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

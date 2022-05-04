@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p class="bodytext">You can copy neighboring objects of an object in a diagram and paste it to a different model.</p>
+        <p class="proceduresubheading">To copy  neighboring objects to a different model</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open a diagram and select an object of which you want to copy neighboring objects.
+</li>
+            <li class="listnumber">In Home menu, click Copy Neighborhood. 
+<p class="listcontinue">The neighboring objects are copied.</p></li>
+            <li class="listnumber">Open the diagram to which you want to copy the objects.
+</li>
+            <li class="listnumber">Click Paste.
+<p class="listcontinue">If none of the neighboring objects exist in the source diagram, the selected object is copied and can be added to new model.<br />If one or more selected objects exist in the target diagram, a message appears informing you that the objects are pasted as new objects in the model. The new objects follow the naming standards of the model, and are displayed in the same location as in the source diagram. In addition, the new objects appear in the Model Explorer.</p><p class="listcontinue">If none of the selected objects exists in the target diagram, the selected objects are only displayed in the diagram. They are not added to the model as new objects.</p></li>
+        </ol>
+        <p class="noteAlt">Cut or copied objects remain on the clipboard even after you paste them into another location. This is convenient if you want to paste more than one copy. But, if you have a large copy selection on the clipboard, it can take up too much memory. To free up memory, after you finish copying and pasting, select an entity and copy it to the clipboard to replace the large copy set.</p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Impact of the r8 Transformations Functionality</title>
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\docsstylesheet.css" />
+        <meta name="componentcd" content="&lt;authorit:componentcd&gt;" />
+        <meta name="objectid" content="4843" />
+        <meta name="basedOnKey" content="260" />
+        <!--metadata variables for XMD: translatable-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="&lt;authorit:ca_keywords&gt;" />
+        <meta name="ca_content_type" content="&lt;authorit:ca_content_type&gt;" />
+        <meta name="ca_context" content="&lt;authorit:ca_context&gt;" />
+        <meta name="ca_role" content="&lt;authorit:ca_role&gt;" />
+        <meta name="ca_language" content="en-US" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta name="ca_offering_name" content="&lt;authorit:ca_offering_name&gt;" />
+        <meta name="ca_product_version" content="&lt;authorit:ca_product_version&gt;" />
+        <meta name="ca_product_family" content="&lt;authorit:ca_product_family&gt;" />
+        <meta name="ca_alias_name" content="&lt;authorit:ca_alias_name&gt;" />
+        <meta name="ca_related_offering" content="&lt;authorit:ca_related_offering&gt;" />
+        <meta name="ca_access_level" content="&lt;authorit:ca_access_level&gt;" />
+        <meta name="ca_date_time" content="7/23/2018T13:56-5:00" />
+        <meta name="ca_creator" content="(supervisor)" />
+        <meta name="ca_source" content="&lt;authorit:ca_source&gt;" />
+        <meta name="ca_format" content="HTML" />
+        <meta name="ca_database" content="&lt;authorit:ca_database&gt;" />
+        <meta name="ca_application_server" content="&lt;authorit:ca_application_server&gt;" />
+        <meta name="ca_operating_system" content="&lt;authorit:ca_operating_system&gt;" />
+        <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
+        <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript" src="../../Resources/mailerwin.js"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4839');expand2('4841');highlight('4843')}">
+        <!--<p class="bodytext">
+            <a class="browse" href="Overview of Transformations in r8.html" title="Previous Topic: Overview of Transformations in r8" target="_self">
+                <img class="button" src="..\..\Resources\Images\580.png" alt="Previous Topic: Overview of Transformations in r8" height="16px" width="16px" />
+            </a>
+            <a class="browse" href="Changes to the User Interface.html" title="Next Topic: Changes to the User Interface" target="_self">
+                <img class="button" src="..\..\Resources\Images\579.png" alt="Next Topic: Changes to the User Interface" height="16px" width="16px" />
+            </a>
+        </p>
+        <p class="breadcrumbs">
+            <a href="Working with Data Models.html" class="crumbs">Working with Data Models</a> › <a href="working_with_transforms.html" class="crumbs">Working with Transformations</a> › <a href="Overview of Transformations in r8.html" class="crumbs">Overview of Transformations in r8</a> › <a href="Impact of the r8 Transformations Functionality.html" class="crumbs">Impact of the r8 Transformations Functionality</a></p>-->
+        <h4 id="t4843" class="heading4">
+            <MadCap:concept term="User Guides" />Impact of the r8 Transformations Functionality</h4>
+        <p class="bodytext">Both the many-to-many and supertype-subtype relationships are automatically transformed at the time of creation of the relationship object.</p>
+        <p class="bodytext"><strong>Automatic Many-To-Many Transformation</strong>
+        </p>
+        <p class="bodytext">When a many-to-many relationship is created, erwin® Data Modeler automatically creates the association table and its relationships. The following rules apply to this transformation: </p>
+        <ul class="listbullet">
+            <li class="listbullet">When the model is in the physical view, the association table and its relationships are displayed, but when the model is in the logical view, the many-to-many relationship is displayed.
+</li>
+            <li class="listbullet">When a many-to-many relationship is deleted, the association table and its relationships are also deleted.
+</li>
+            <li class="listbullet">When an association table is deleted, the many-to-many relationship is also deleted. 
+</li>
+            <li class="listbullet">When any of the two association table relationships is deleted the many-to-many relationship is also deleted.
+</li>
+            <li class="listbullet">Many-to-many relationships are excluded from FE/ALTER script generation based on the relationship object type.
+</li>
+        </ul>
+        <p class="bodytext"><strong>Automatic Supertype-Subtype Identity Transformation</strong>
+        </p>
+        <p class="bodytext">When a supertype-subtype relationship is created using a supertype-subtype symbol between two entities erwin® Data Modeler creates a subtype relationship between those two entities. The following rules apply to this transformation:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The relationship will have two layouts, one for the logical view and one for the physical view. The one for the logical view will be a line linking the subtype symbol to the subtype entity, and the one for the physical view will be a line linking the supertype entity with the subtype entity.
+</li>
+            <li class="listbullet">When the subtype symbol is deleted, the subtype relationships are also deleted. 
+</li>
+            <li class="listbullet">When the last subtype relationship is deleted, the subtype symbol is also deleted.
+</li>
+        </ul>
+        <p class="bodytext"><strong>Column Denormalization Transformation</strong>
+        </p>
+        <p class="bodytext">The column denormalization transform is implemented differently in r8, using the Link object. A Link object will be automatically created to link an existing source attribute/column to a new or existing target attribute/column. You can create new Link objects and specify Link object properties using the Link Wizard. The Link Wizard is accessed from the Link tab of either the Attribute Editor or the Column Editor. </p>
+        <p class="bodytext">The Link Wizard lets you:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Specify Link object properties such as:
+<ul class="listbullet2"><li class="listbullet2">Name
+</li><li class="listbullet2">Definition
+</li><li class="listbullet2">Synch Direction (From-this, To-this, None, Two-way)
+</li><li class="listbullet2">Target Column Reference
+</li><li class="listbullet2">Synch Properties List
+</li></ul></li>
+            <li class="listbullet">View the list of existing Link objects created for an attribute/column.
+</li>
+            <li class="listbullet">Delete Link objects. You can delete Link objects individually, or choose to delete all link objects in the model that are owned by attributes/columns.
+</li>
+        </ul>
+        <p class="bodytext">The following rules apply to Link objects:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The target column can be created as new by the wizard or be selected from the existing columns on any table in the model.
+</li>
+            <li class="listbullet">Two Link objects are created for every link, one owned by the source column and one owned by the target column. For unidirectional synch, the synch direction on the source column is set to “From-this” and on the target column, to “To-this."
+</li>
+            <li class="listbullet">Link objects are excluded from FE/ALTER script generation.
+</li>
+            <li class="listbullet">Complete Compare will show the Link objects in a model-level compare.
+</li>
+        </ul>
+        <p class="bodytext"><strong>Changes to the Supertype-Subtype Roll Up Transform Relationship Roll Up Rule</strong>
+        </p>
+        <p class="bodytext">An enhancement was made to the supertype-subtype roll up transform relationship roll up rule for r8. All of the relationships coming to subtype tables from another table are merged into one by the roll up transformation unless rolenames are applied on any of the migrated attributes. This is the case where one table contributes its non-identifying relationships to more than one subtype table of the same supertype-subtype construct.</p>
+        <p class="bodytext">In previous versions, the old rule specified that each relationship associated with subtype tables had a correspondent target relationship in the supertype-subtype roll up transform.</p>
+        <p class="bodytext">For example, if E/4 has one non-identifying relationship coming into the subtype E/2 and one coming into the subtype E/3, then after the roll up, each of the non-identifying relationships had a corresponding target relationship going from E/4 to the supertype table E/1, as shown here:</p>
+        <p class="picture">
+            <img id="f4844" src="..\..\Resources\Images\4854.gif" alt="Example Model_Old Transforms_SS Rollup Rule" height="361" width="390" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">For r8, the new rule specifies that if the incoming relationships to subtype tables have the same parent table, then merge them into one target relationship except for those relationships that are carrying rolenamed FK attributes.</p>
+        <p class="examplesubheading">Example 1: No rolenames are applied. All of the relationships coming from the parent table E/4 into subtype tables E/2 and E/3 are merged into one target relationship from E/4 to E/1:</p>
+        <p class="picture">
+            <img id="f4845" src="..\..\Resources\Images\4853.gif" alt="Example 1_New SS Rollup Rule" height="352" width="360" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="examplesubheading">Example 2: Some migrated FK attributes have rolenames. Attribute <em class="italic">a</em> migrated from E/4 to E/3 is rolenamed to <em class="italic">RoleName</em>. When the transformation is applied, every relationship that carries at least one rolenamed attribute will be represented in the target, so besides the relationship from E/4 to E/2, the relationship from E/4 to E/3 will also be represented in the target because it carries the rolenamed attribute <em class="italic">RoleName</em>.</p>
+        <p class="picture">
+            <img id="f4846" src="..\..\Resources\Images\4850.gif" alt="Example 2_New SS Rollup Rule" height="373" width="374" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

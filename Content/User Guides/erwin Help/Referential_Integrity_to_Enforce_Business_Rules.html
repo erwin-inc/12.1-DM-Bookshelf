@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Referential Integrity to Enforce Business Rules</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2601" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2600');highlight('2601')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t2601">Referential Integrity to Enforce Business Rules</h4>
+        <p class="bodytext">Business rules are logical constructs that express how a business uses its data. You can use a set of built-in referential integrity (RI) options to capture common business rules that apply to relationships between data that you maintain in different tables. You can enforce the rules using a variety of different programming techniques, including the following:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Application logic, such as front-end applications or stored procedures.
+</li>
+            <li class="listbullet">Declarative referential integrity, declaring which RI rule to enforce for each table relationship in the schema.
+</li>
+            <li class="listbullet">Triggers, which are segments of SQL code that are automatically executed by the database when a SQL INSERT, UPDATE, or DELETE command is executed against a table.
+</li>
+        </ul>
+        <p class="bodytext">One of the best ways to enforce RI rules is through the use of triggers. Unlike the coding in front-end applications, triggers are centrally located, so that if the business rule changes, the change can be implemented once. Triggers also support the enforcement of additional rules, beyond those supported by declarative referential integrity. For example, in an Order Entry database, if you want to flag backorder items when creating a row in the CUST_ORDER table, you can create a custom trigger to check a quantity_on_hand value for a product when inserting a row into the ORDER_LINE table.</p>
+        <p class="bodytext">erwin® Data Modeler triggers can handle the most common rules for enforcing referential integrity without any additional programming or customization. For example, the question, "Can I delete an order that has one or more order line details?" can be answered by a business rule and can be enforced by a built-in trigger. If the business answer to the question is: </p>
+        <ul class="listbullet">
+            <li class="listbullet">"No, if there is a line item the order cannot be deleted," you can enforce the behavior by attaching the Parent Delete-RESTRICT trigger to the relationship between the CUST_ORDER and ORDER_LINE tables. Once the trigger is generated, when a user attempts to delete a row in the CUST_ORDER table, the delete fails if there are one or more rows in the child ORDER_LINE table.
+</li>
+            <li class="listbullet">"Yes, if there is a line item the order can be deleted and the line item must also be deleted," you can enforce the behavior by attaching the Parent Delete-CASCADE trigger to the relationship between the CUST_ORDER and ORDER_LINE tables. When a user deletes a row in the CUST_ORDER table, the dependent rows in the child ORDER_LINE table are also deleted.
+</li>
+        </ul>
+        <p class="bodytext">In a similar way, the business rule might specify that the dependent rows in the child ORDER_LINE table should not be deleted when the row in the CUST_ORDER table is deleted, but that the foreign key value should be set to NULL or to a default value. You can handle each of these situations using erwin® Data Modeler-generated triggers.</p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Triggers.html" target="_self">Triggers</a>
+        </p>
+        <p class="relateditem"><a href="set_default_referential_integrity_rules.html" target="_self">Set Default Referential Integrity Rules</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

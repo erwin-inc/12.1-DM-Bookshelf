@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Dangling Relationships in Schema Generation</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4637" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4622');highlight('4637')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4637">Dangling Relationships in Schema Generation</h3>
+        <p class="bodytext">When you create a subject area, you include a subset of tables and other objects from the Main Subject Area in a separate model so that you can work with a smaller group of tables. </p>
+        <p class="bodytext">By default, when you generate the schema for a subject area, the schema references tables in the Main Subject Area that are not in the new subject area, specifically in statements related to foreign keys and triggers. Optionally, you can exclude references to these objects in the schema statements.</p>
+        <p class="bodytext">For example, you can migrate the primary key <em class="italic">customer-number</em> from the CUSTOMER table into the MOVIE-RENTAL-RECORD table as a foreign key. If you create a subject area that includes MOVIE-RENTAL-RECORD but does not include CUSTOMER, <em class="italic">customer-number</em> is still identified as a foreign key in the schema.</p>
+        <p class="bodytext">When you select the Filter Dangling Relationship from Schema Gen option in the Subject Areas dialog, you can eliminate the foreign key reference to the extraneous CUSTOMER table. </p>
+        <p class="noteAlt">When you select the Filter Dangling Relationship from Schema Gen option, attributes that migrate from tables outside of the subject area as still shown as foreign keys. This option has no effect on the graphical objects in the model, only the schema statements change.</p>
+        <p class="bodytext">When you open the Subject Areas dialog from the Main Subject Area, the Filter Dangling Relationship from Schema Gen option is disabled, since all tables are included in the Main Subject Area.</p>
+        <p>
+        </p>
+    </body>
+</html>

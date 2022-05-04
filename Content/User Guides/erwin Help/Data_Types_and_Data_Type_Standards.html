@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Data Types and Data Type Standards</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4819" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');highlight('4819')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t4819">Data Types and Data Type Standards</h2>
+        <p class="bodytext">A data type is a predefined set of characteristics for an attribute or column that specifies field length, acceptable characters, and optional and required parameters. For example, the data type Char(18) specifies that the column can store up to 18 alpha and numeric characters.</p>
+        <p class="bodytext">By default, a data type is applied to every attribute in a logical model and to every column in a physical model. In the logical model, you assign the data type or the domain from which the attribute inherits its properties determines it. In the physical model, you assign the data type or the default value that is specified by the target server determines it. </p>
+        <p class="bodytext">Considering the large quantity of attributes or columns a data model usually has, it is tedious to assign and maintain consistency of data types manually. The <span class="uielement">DSM Option Editor</span> helps you easily assign and maintain data types in a model.</p>
+        <p class="bodytext">Create data type standards so that everyone in your organization uses data types consistently.</p>
+        <p class="bodytext">When you create a DSM Option object, it is preloaded with default logical data types. Use the <span class="uielement">DSM Options Editor</span> to create data types and mappings. You can create multiple DSM Option objects but you can apply only one of them to the model.</p>
+        <p class="bodytext">You can assign data types in any of the following scenarios:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Deriving a physical model from a logical model, or switching from a logical model to a physical model. A physical data type is automatically assigned to each column based on the data type assigned to the corresponding attribute.
+</li>
+            <li class="listbullet">Deriving a physical model from a physical model. The corresponding data type for the target database is automatically assigned.
+</li>
+            <li class="listbullet">Migrating from one version of a database to a newer version, or changing the target database. You are prompted you to verify if you want to convert data types. When you convert the data types, the corresponding data type for the target database is automatically assigned.
+</li>
+            <li class="listbullet">Creating a physical model by reverse engineering from a database or script file. Information from the database or script file is extracted, and a physical data type is automatically assigned to each column.
+</li>
+        </ul>
+        <p class="bodytext">You can use the following tabs in the Datatype Standards editor to add properties:</p>
+        <p class="bodytext">Logical Definition, Mapping, <a class="z--jumptemplate" href="Enter_a_key_group_definition.html" id="h1119" target="_self" title="Enter a Key Group Definition">Definition</a>, <a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a>, <a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></p>
+        <p>
+        </p>
+    </body>
+</html>

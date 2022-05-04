@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Go to <b>Application Menu</b> &gt; <b>Catalogs</b>.<br />The Catalogs page appears.<br /><img src="../Images/Catalogs.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;width: 544px;height: 296px;" /></p>
+            </li>
+            <li class="listnumber">In the Catalog pane, click <img src="../Images/Icon-Mart-CreateCatalog.png" />.<br />A library is added to the catalogs tree.</li>
+            <li class="listnumber">Select the newly created library. and in the Catalog Details pane, click <img src="../Images/Icon-Mart-EditProfile.png" />.</li>
+            <li class="listnumber">Edit the <b>Name</b> and <b>Description</b>.</li>
+            <li class="listnumber">Click <img src="../Images/Icon-Mart-Save.png" />.</li>
+        </ol>
+    </body>
+</html>

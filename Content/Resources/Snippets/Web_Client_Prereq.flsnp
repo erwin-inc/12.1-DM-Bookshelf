@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">
+            <strong>erwin Mart Administrator web client:</strong>
+        </p>
+        <p class="bodytext">Supported browsers:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Microsoft Edge v97 or newer</li>
+            <li class="listbullet">Mozilla Firefox v91 or newer
+</li>
+            <li class="listbullet">Google Chrome v97 or newer
+</li>
+            <li class="listbullet">Apple Safari 15 or newer
+</li>
+        </ul>
+        <p class="bodytext">Ensure that your screen resolution is 1024 x 768 or higher. If your screen resolution is less than the minimum supported, some portions of the screen will not be visible.</p>
+        <p class="examplesubheading">
+            <strong>Other requirements</strong>
+        </p>
+        <p class="bodytext">Help ensure that the following additional requirements are met:</p>
+        <ul class="listbullet">
+            <li class="listbullet">If you want to use Microsoft IIS as the web server, you have configured it.
+</li>
+            <li class="listbullet">The DBMS is installed and prepared for creating the Mart Database. 
+</li>
+            <li class="listbullet">The Mart database is created. At least one user with administrator privileges is present. You have run the initial queries on the Oracle database. For more information about the initial queries, see the Implementation Guide.
+</li>
+            <li class="listbullet">If you want to add Windows Group users as Mart users, you have the Active Directory Server details. 
+<p class="noteAlt">You can add Windows Group users as normal Mart users, but not as Mart administrators. A Mart administrator must be a server or Windows user.</p></li>
+        </ul>
+        <p class="examplesubheading">Important disclaimer notice on all requirements</p>
+        <ol class="listnumber">
+            <li class="listnumber">The requirements that are mentioned previously define the minimum requirements which permit the application to run with reasonable performance based on a small business use case scenario. The actual requirements for an enterprise-wide use case based on larger models and configurations require significantly greater resources to obtain acceptable performance.
+</li>
+            <li class="listnumber">These requirements are based on actual physical hardware (no virtual environment) and the following assumptions:
+<ul class="listbullet2"><li class="listbullet2">Minimal to no network overhead (both the database and application servers are locally installed)
+</li><li class="listbullet2">Vendor's default install of the current version of their software (with all current service or fix packs)
+</li><li class="listbullet2">No other applications sharing the defined hardware configuration (for example, a clean machine)
+</li></ul><p class="listcontinue">Any other hardware/software configurations are acceptable as long as they provide the same (or better) performance characteristics identified.</p></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Db2 LUW Stored Procedures</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1819" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');highlight('1819')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t1819">Define Db2 LUW Stored Procedures</h5>
+        <p class="bodytext">Use the Db2 Stored Procedures editor to add, change, view, or delete a Db2 stored procedure for the model. As you define parameters, the Code tab of the editor is populated with SQL code, which you can review and edit.</p>
+        <p class="proceduresubheading">To define Db2 stored procedures</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Stored Procedure</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 Stored Procedure Editor opens.</p></li>
+            <li class="listnumber">Select a stored procedure and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a stored procedure. Use the <em class="italic">Enter filter text</em> text box to filter a large list of names to locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the stored procedure.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the default schema for the stored procedure.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies whether the stored procedure is Model Level or Table Level. Select from the drop-down list.</p></dd><dt>Procedure Type</dt><dd><p class="normaltermcontinued2">Indicates the procedure type. Select from the drop-down list; valid valules are External, Sourced, and SQL. </p></dd><dt>Use Replace Syntax</dt><dd><p class="normaltermcontinued2">Specifies whether or not to use the CREATE or REPLACE command instead of the CREATE command during Forward Engineering.</p></dd><dt>Attach to New</dt><dd><p class="normaltermcontinued2">Specifies to automatically attach the selected stored procedure to each new table that you create. Clear the check box if you do want to automatically attach the stored procedure to new tables.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Work with the following options on the <span class="uielement">General</span> tab (applies to all procedure types):
+<dl><dt>Specific Name</dt><dd><p class="normaltermcontinued2">Provides a unique name for the instance of the stored procedure that is being defined.</p></dd><dt>SQL Data Access</dt><dd><p class="normaltermcontinued2">Indicates the level of data access for SQL statements included in the procedure. Select a value from the drop-down list; valid values are Modifies SQL Data, Reads SQL Data, and Contains SQL Data.</p></dd><dt>Is External Action Allowed</dt><dd><p class="normaltermcontinued2">Specifies that the stored procedure takes some action that changes the state of an object not managed by the database manager. </p></dd><dt>Is Deterministic</dt><dd><p class="normaltermcontinued2">Specfies that the stored procedure the procedure always returns the same results for given argument values. </p></dd></dl></li>
+            <li class="listnumber">When you select <em class="italic">External</em> or <em class="italic">SQL Native</em> procedure type, you can work with the following options on the <span class="uielement">Other Options</span> tab:
+<dl><dt>Language </dt><dd><p class="normaltermcontinued2">Specifies the language in which the procedure body is written. Select from the drop-down list; valid values are C, Java, COBOL, OLE, SQL, and CLR.</p></dd><dt>Coded Character Set Identifier</dt><dd><p class="normaltermcontinued2">Specifies the encoding scheme for the string data passed to and from of the procedure. Select from the drop-down list; valid values are ASCII and UNICODE.</p></dd><dt>Parameter Style</dt><dd><p class="normaltermcontinued2">Specifies the conventions for passing parameters to and returning values from procedures. Select from the drop-down list; valid values are Db2 General, Db2 SQL, General, General with Nulls, Java, and SQL.</p></dd><dt>Program Type</dt><dd><p class="normaltermcontinued2">Specifies how the stored procedure runs. Select from the drop-down list; valid values are Subroutine or Main Routine.</p></dd><dt>Is Fenced</dt><dd><p class="normaltermcontinued2">Specifies that the stored procedure runs in an external address space to prevent user programs from corrupting Db2 storage.</p></dd><dt>Is Thread Safe</dt><dd><p class="normaltermcontinued2">Specifies if the procedure is safe to run in the same process as other routines. </p></dd><dt>Use DB Info</dt><dd><p class="normaltermcontinued2">Specifies whether or not status information known by Db2 is passed to the stored procedure when it is invoked. </p></dd><dt>Null Input</dt><dd><p class="normaltermcontinued2">Specifies if the procedure is called regardless of whether any arguments are null. Select Called from the drop-down list if you want to call procedures with null arguments.</p></dd><dt>Use New Savepoint Level (check box)</dt><dd><p class="normaltermcontinued2">Specifies whether or not the procedure creates a savepoint level for savepoint names and effects.</p></dd><dt>Special Register Usage</dt><dd><p class="normaltermcontinued2">Specifies if updatable special registers in the procedure inherit their initial values from the environment of the invoking statement. Select Inherit from the drop-down list if you want the special registers to inherit initial values. </p></dd><dt>Dynamic Result Sets</dt><dd><p class="normaltermcontinued2">Specifies the estimated maximum limit of the returned result sets for the procedure.</p></dd><dt>Commit Transaction On Return</dt><dd><p class="normaltermcontinued2">Specifies if you want to issue the COMMIT command after the procedure is executed.</p></dd><dt>Executes Autonomously (check box)</dt><dd><p class="normaltermcontinued2">Specifies whether or not you want the procedure to run in its own autonomous transaction scope.</p></dd></dl></li>
+            <li class="listnumber">When you select <em class="italic">Sourced</em> procedure type, you can work with the following options on the <span class="uielement">Other Options</span> tab:
+<dl><dt>Source Object Schema Name</dt><dd><p class="normaltermcontinued2">Specifies the schema name of the source procedure.</p></dd><dt>Source Object Package Name</dt><dd><p class="normaltermcontinued2">Specifies the package name of the source procedure.</p></dd><dt>Source Number of Parameters</dt><dd><p class="normaltermcontinued2">Specifies the number of parameters for the source procedure. Enter an integer. </p></dd><dt>Source Object ID</dt><dd><p class="normaltermcontinued2">Specifies the unique identifier for the source procedure; this identifier helps you identify the specific procedure when there are multiple identical procedures.</p></dd><dt>Server </dt><dd><p class="normaltermcontinued2">Specifies a server definition that you have registered using the CREATE SERVER statement.</p></dd></dl></li>
+            <li class="listnumber">When you work with the <em class="italic">External</em> procedure type, you can work with the following options on the <span class="uielement">External Name</span> tab:
+<dl><dt>External Name</dt><dd><p class="normaltermcontinued2">Identifies the user-written code that implements the stored procedure.</p></dd><dt>File</dt><dd><p class="normaltermcontinued2">Indicates the file to reference for the external name.</p></dd><dt>Class Name</dt><dd><p class="normaltermcontinued2">Identifes the class name. Enter a value in the text box.</p></dd><dt>Method Name</dt><dd><p class="normaltermcontinued2">Identifies the name of the method. Enter a value in the text box.</p></dd></dl></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Edit the SQL code for the selected stored procedure on the <a class="z--jumptemplate" href="Define_the_Code_to_a_Stored_Procedure_Function_or_Trigger.html" id="h1811" target="_self" title="Define the Code to a Stored Procedure, Function, or Trigger">Code</a> tab.
+</li><li class="listbullet2">View expanded code (read-only) on the <a class="z--jumptemplate" href="expanded_tab_options.html" id="h1814" target="_self" title="Expanded Tab">Expanded</a> tab.
+</li><li class="listbullet2">Work with parameters for the selected stored procedure on the <a class="z--jumptemplate" href="Define_DB2_LUW_Stored_Procedures_2.html" id="h1822" target="_self" title="Define DB2 LUW Stored Procedure Parameters">Parameter</a> tab.
+</li><li class="listbullet2">Change the object creation order on the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab.
+</li><li class="listbullet2">Associate permissions with the selected stored procedure on the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab.
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for LUW Stored Procedure Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More Information</p>
+        <p class="relateditem"><a href="View_Expanded_Code_in_a_Property_Editor.html" target="_self">View Expanded Code in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Change_the_Object_Creation_Order_in_a_Property_Editor.html" target="_self">Change the Object Creation Order in a Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

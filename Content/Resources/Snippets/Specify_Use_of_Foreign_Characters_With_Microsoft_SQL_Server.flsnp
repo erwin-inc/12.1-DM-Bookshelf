@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">For Microsoft SQL Server modify your registry settings to have certain foreign language characters in your models recognized.</p>
+        <p class="proceduresubheading">Follow these steps: </p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Run on the Start menu.
+</li>
+            <li class="listnumber">Enter <em class="italic">regedit</em>.
+<p class="listcontinue">The Registry Editor opens.</p></li>
+            <li class="listnumber">Verify or add the following registry entry:
+<p class="listcontinue">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSSQLServer\Client\DB-Lib]</p><p class="listcontinue">"AutoAnsiToOem"="ON"</p><p class="listcontinue">"UseIntlSettings"="ON"</p></li>
+            <li class="listnumber">Click File, Exit.
+<p class="listcontinue">Your configuration is set to recognize foreign language characters in your models.</p></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Teradata Databases</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2757" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2696');highlight('2757')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2757">Define Teradata Databases</h5>
+        <p class="bodytext">You can use the Teradata Database Editor to manage databases so that other database objects can be created and stored in it in a Teradata physical model.</p>
+        <p class="proceduresubheading">To define a Teradata database</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Target-Teradata, Databases</span> on the <span class="uielement">Model </span>menu.
+<p class="listcontinue">The Teradata Database Editor opens.</p></li>
+            <li class="listnumber">Select a database and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New </span><img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new database. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of databases to quickly locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the database.</p></dd><dt>Account</dt><dd><p class="normaltermcontinued2">Specifies the account to be charged for the space used by this database.</p></dd><dt>From Database</dt><dd><p class="normaltermcontinued2">Specifies the schema of the database to which the table belongs. Select from the drop-down list.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Complete the following fields on the <span class="uielement">General </span>tab:
+<dl><dt>Permanent</dt><dd><p class="normaltermcontinued2">Specifies the number of bytes to be reserved for the permanent storage of this database.</p></dd><dt>Spool</dt><dd><p class="normaltermcontinued2">Specifies the number of bytes to be allowed for spool and volatile temporary files.</p></dd><dt>Temporary</dt><dd><p class="normaltermcontinued2">Defines how many bytes are allowed for creating global temporary tables by users within the database.</p></dd><dt>Fallback Protection</dt><dd><p class="normaltermcontinued2">Specifies the type of fallback protection for the database. Select from the drop-down list.</p></dd><dt>Before Journal Image</dt><dd><p class="normaltermcontinued2">Specifies the image type of the before journal image. Select from the drop-down list. Valid values are: None, Single, and Dual.</p></dd><dt>After Journal Image</dt><dd><p class="normaltermcontinued2">Specifies the image type of the after journal image. Select from the drop-down list. Valid values are: None, Single, Dual, Local, and Not Local.</p></dd><dt>Default Journal</dt><dd><p class="normaltermcontinued2">Specifies the default table that is to receive the journal images of tables created in the database.</p></dd></dl></li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a><span class="uielement"></span>tab to associate permissions with the selected database. Features on the Permission tab let you to create new permissions, work with existing permissions, and open the Teradata Permissions Editor to define permission options.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Teradata Database Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Add_Permissions_in_a_Teradata_Property_Editor.html" target="_self">Add Permissions in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p><a name="o2975"></a>
+        <h5 class="heading5" id="t2975">Define Teradata Default Values</h5>
+        <p class="bodytext">You can use the Teradata Default Values Editor to create server default values to associate with columns in a Teradata physical model.</p>
+        <p class="proceduresubheading">To define Teradata default values</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Default Values</span> on the <span class="uielement">Model </span>menu.
+<p class="listcontinue">The Teradata Default Values Editor opens.</p></li>
+            <li class="listnumber">Select a default value and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New </span><img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create new default values. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of default values to quickly locate the one you want to work with.</p><dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the default value.</p></dd><dt>Value</dt><dd><p class="normaltermcontinued2">Specifies the default value.</p></dd><dt>Physical Only</dt><dd><p class="listcontinue2">Lets you select whether the table should be suppressed from a logical model and appear in a physical model only.</p></dd></dl></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Teradata Default Value Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

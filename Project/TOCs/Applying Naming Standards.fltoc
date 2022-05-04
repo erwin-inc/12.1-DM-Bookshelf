@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Applying Naming Standards"
+    Link="/Content/Tutorials/Scenarios/Applying Naming Standards/Applying Naming Standards.html">
+    <TocEntry
+      Title="Decide the Method"
+      Link="/Content/Tutorials/Scenarios/Applying Naming Standards/Decide the Method.html" />
+    <TocEntry
+      Title="Create and Apply Naming Standards"
+      Link="/Content/Tutorials/Scenarios/Applying Naming Standards/Create and Apply Naming Standards.html">
+      <TocEntry
+        Title="Define Naming Standards for a Logical Model"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/define_naming_standards_for_a_logical_model.html" />
+      <TocEntry
+        Title="Define Naming Standards for a Physical Model"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/define_naming_standards_for_a_physical_model.html" />
+      <TocEntry
+        Title="Create Glossary Words and Abbreviations"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/add_words_and_abbreviations_to_the_naming_standards_glossary.html">
+        <TocEntry
+          Title="Import Words and Abbreviations to the Naming Standards Glossary"
+          Link="/Content/Tutorials/Scenarios/Applying Naming Standards/import_words_and_abbreviations_to_the_naming_standards_glossary.html" />
+        <TocEntry
+          Title="Import from a Previous Version"
+          Link="/Content/Tutorials/Scenarios/Applying Naming Standards/import_from_previous_version.html">
+          <TocEntry
+            Title="Bind a Template to a Model"
+            Link="/Content/Tutorials/Scenarios/Applying Naming Standards/bind_template.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Verify Naming Standards Compliance"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/check_model_names_against_the_naming_standards_glossary.html" />
+      <TocEntry
+        Title="Apply Naming Standards to a Model"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/Convert_names_using_naming_standard_abbreviations.html" />
+      <TocEntry
+        Title="Applying Naming Standards from Mart"
+        Link="/Content/Tutorials/Scenarios/Applying Naming Standards/Applying Naming Standards from Mart.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

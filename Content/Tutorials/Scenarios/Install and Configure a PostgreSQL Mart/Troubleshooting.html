@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Troubleshooting</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8295" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/10/2018T12:53-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('838');highlight('8295')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><span class="browse"><img alt="" class="button" height="16px" src="..\..\..\Resources\Images\rgtgray33.png" title="" width="16px" /></span>
+        </p>
+        <h2 class="heading2" id="t8295">Troubleshooting</h2>
+        <p class="bodytext">This section explains the errors that you can encounter while installing and configuring Mart, and how you can troubleshoot them.</p>
+        <p class="noteAlt">The Mart Server log files are available in the following location:</p><pre xml:space="preserve">
+Windows 7: {user.home}/AppData/Local/erwin/Mart Server/logs/application.log
+</pre>
+        <p class="note">The latest version of Apache Tomcat does not support custom authorization-related error messages. Hence, a generic error message, "Unauthorized operation attempted. For more information, please review the log file.", is displayed. To understand the cause of the error, review the application.log file, which contains the description of the cause. Following is one such sample from the application.log file:</p>
+        <p class="bodytext">ERROR exception.MMException.setException: java.lang.Exception: User "johndoe" does not have required "View Users" permission on "User Management". Please contact the Mart Administrator for required permission.</p><a name="o7758"></a>
+        <h3 class="heading3" id="t7758">Unable to Create MartServer Service</h3>
+        <p class="bodytext"><strong>Symptom:</strong>
+        </p>
+        <p class="bodytext">If Mart Server is upgraded to the latest version without stopping and deleting the Mart Server service of the earlier version, creating a new Mart Server service does not work.</p>
+        <p class="bodytext"><strong>Solution:</strong>
+        </p>
+        <p class="bodytext">Run the <em class="italic">sc Delete MartServer</em> command to delete the Mart Server Service from command prompt and then try to create a Mart Server Service in the new version.</p><a name="o842"></a>
+        <h3 class="heading3" id="t842">Port out of range </h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">Whenever I connect to the web server, I get the following error message: </p><pre xml:space="preserve">
+java.lang.IllegalArgumentException: port out of range 80821.
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Type the correct port number in the Configure erwin Mart Administrator�s Server dialog and then restart your web server.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o843"></a>
+        <h3 class="heading3" id="t843">Call failed on the server</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the Mart server, I get the following error:</p><pre xml:space="preserve">
+500 The call failed on the server; see server log for details
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">The probable reasons for this error could be one of the following reasons:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The server name is not correct.
+</li>
+            <li class="listbullet">The application name is not correct. By default, the application name is MartServer and it is case-sensitive.
+</li>
+        </ul>
+        <p class="reasonactiontext">Type the correct server name and application name in the erwin Mart Administrator�s Server dialog and the Configure MartServer Details dialog. Restart the web server.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_1" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o844"></a>
+        <h3 class="heading3" id="t844">Application Internal Error</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the database, I get the following error:</p><pre xml:space="preserve">
+Application Internal Error
+</pre>
+        <p class="reasonactionheading">Solution</p>
+        <p class="reasonactiontext">You get this error when the MartServer application is unable to connect to the required database. The following reasons are probable for this error:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The database details that are provided in the Configure MartServer Details dialog are incorrect.
+</li>
+            <li class="listbullet">The username and the password for the database are incorrect.
+</li>
+            <li class="listbullet">The database is not present.
+</li>
+            <li class="listbullet">The port number for the database is incorrect.
+</li>
+            <li class="listbullet">The network is down.
+</li>
+        </ul>
+        <p class="reasonactiontext">Ensure that you enter the correct details of your database in the Mart Server tab of the erwin Mart Configuration dialog.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_2" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o845"></a>
+        <h3 class="heading3" id="t845">Mart already exists. Specify another database name</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the Mart, I get the following error message:</p><pre xml:space="preserve">
+An earlier mart is already present in the database you are trying to initialize. This process can not be continued. Please specify another database name to continue.
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">You get this error when you connect to an old Mart that you have used for erwin DM Release r7 series, r8 series, or Beta release of any r9 series release.</p>
+        <p class="reasonactiontext">Create a database and provide its details in the Configure MartServer Details dialog.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_3" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o846"></a>
+        <h3 class="heading3" id="t846">Initialize page is not loading in Internet Explorer</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I type the URL to initialize my Mart in Internet Explorer, the Initialize Mart page is taking a long time to load.</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">The Initialize Mart page does not load because the Active Scripting option in Internet Explorer is disabled. </p>
+        <p class="proceduresubheading">To enable Active Scripting, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In Internet Explorer, click Tools, Internet Options.
+</li>
+            <li class="listnumber">In the Security tab, click the Custom Level button.
+<p class="listcontinue">The Security Settings � Local Intranet Zone window opens.</p></li>
+            <li class="listnumber">From the list of options, locate Scripting, Active Scripting, and select Enable. Click OK.
+</li>
+            <li class="listnumber">Restart Internet Explorer and enter the URL to initialize Mart.
+<p class="listcontinue">The Mart Initialize page opens.</p></li>
+        </ol>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_4" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o847"></a>
+        <h3 class="heading3" id="t847">The Tomcat server is not starting properly. The Configure button is disabled.</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">My administrator has given me the Administrator rights and when I start the Tomcat server, I get a series of errors. Also, I cannot click the Configure button in the configuration dialog because it is disabled.</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Right-click Start Server, and click Run as Administrator.</p>
+        <p class="reasonactiontext">The Tomcat server starts without any error, and the configuration button is enabled.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_5" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o848"></a>
+        <h3 class="heading3" id="t848">A connection with the server could not be established</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the web server from erwin Data Modeler, I get the following error message:</p><pre xml:space="preserve">
+A connection with the server could not be established
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Verify that you have provided the correct port number and then reconnect to the web server.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_6" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o849"></a>
+        <h3 class="heading3" id="t849">The server name or address could not be resolved</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the web server from erwin Data Modeler, I get the following error message:</p><pre xml:space="preserve">
+The server name or address could not be resolved
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Verify that the server name where the web server is installed is correct and then reconnect to the server.</p>
+        <p class="noteAlt">If erwin Data Modeler and the web server are installed on the same computer, you can give the server name as localhost. Suppose that erwin Data Modeler and the web server are installed on different computers. The server name is the name of the computer where the web server is installed.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_7" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o850"></a>
+        <h3 class="heading3" id="t850">Invalid user ID or password</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to connect to the server, I get the following error message:</p><pre xml:space="preserve">
+Invalid user ID or password. Please try again to login.
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Type the correct user name and password.</p>
+        <p class="noteAlt">The user must be an application level user and not a database user.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_8" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o851"></a>
+        <h3 class="heading3" id="t851">Error 12029</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I connect to the web server, I get the following error message:</p><pre xml:space="preserve">
+Error 12029
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Restart the web server.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_9" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o852"></a>
+        <h3 class="heading3" id="t852">Unable to load the web page from my web browser</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I type the URL in Internet Explorer or Google Chrome to connect to the web server, I get the following error messages:</p>
+        <p class="reasonactiontext"><strong>For Internet Explorer</strong>
+        </p><pre xml:space="preserve">
+Internet Explorer cannot display the webpage
+</pre>
+        <p class="reasonactiontext"><strong>For Google Chrome</strong>
+        </p><pre xml:space="preserve">
+Oops! Google Chrome could not connect to localhost:18170
+</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Restart the web server.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_10" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o853"></a>
+        <h3 class="heading3" id="t853">Internet Explorer Redirects to a Different Link</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">Suppose that I install erwin Mart Server on a fresh machine. If I enable the SSL option and I invoke erwin Mart Administrator, Internet Explorer redirects the page to res://ieframe.dll//. </p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">Internet Explorer versions 8 through 10 have a security enhancement that blocks the following types of sites:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Sites that have self-signed certificates 
+</li>
+            <li class="listbullet">Sites that have self-signed certificates where the certificate does not match the URL
+</li>
+        </ul>
+        <p class="proceduresubheading">Follow any of these steps:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Install the certificate in the Trusted Root Certification Authorities store.
+</li>
+            <li class="listbullet">Add the site to trusted sites.
+</li>
+            <li class="listbullet">Set the Internet Explorer Security level to Medium Low.
+</li>
+        </ul><a name="o854"></a>
+        <h3 class="heading3" id="t854">Chinese characters are replaced with question marks</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">I type Chinese characters in the Version Description dialog in erwin Mart Administrator. If I open erwin Data Modeler and go to the Catalog Manager window, I see that the Chinese characters are replaced with ????.</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Select Chinese for the Format, Location, and Locale fields in the computer where you have installed erwin Data Modeler, Mart server, and Mart database. (You can access these settings through the Control Panel.)
+</li>
+            <li class="listnumber">Open the Database Properties dialog for the Mart database and verify the value for the Collation field.
+</li>
+            <li class="listnumber">If the value is other than SQL_Latin1_General_CP1_CI_AS, create a database and assign this value for Collation. Initialize the Mart again.
+</li>
+        </ol><a name="o855"></a>
+        <h3 class="heading3" id="t855">I have a very long Windows user name and I cannot log in to the Mart through erwin Data Modeler</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">I have added a very long Windows user name similar to "Magdalena.Chalamalasetti" using the Mart Administrator. When the user tries to log in to the Mart through erwin Data Modeler, the name is truncated to "US\Magdalena.Chalamas" and the user cannot log in.</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">The name is truncated due to a limitation with Windows. The Windows API returns the legacy user name that is limited to 20 characters. If the length of a user name exceeds 20 characters, for example, "US\Magdalena.Chalamalasetti", the name is displayed as "US\Magdalena.Chalamas" in the Connect to Mart dialog.</p>
+        <p class="reasonactiontext">You can resolve this in one of the following ways:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Type the first 20 characters of the user name when you add the user as a Windows User, in the Mart Administrator. For example, instead of typing "US\Magdalena.Chalamalasetti", type "US\Magdalena.Chalamalas". 
+</li>
+            <li class="listbullet">Use a Windows Group instead of the user's domain name. Using your Windows domain controller software, add the user to a Windows Group, and then add the group as a User Group in the Mart Administrator. For more information about how to add a User Group, see <a class="z--jumptourl" href="http://erwin.com/resources/video-library/ca-erwin-data-modeler-r9-work-group-edition-support-for-directory-services" target="_blank" title="">erwin Data Modeler r9 Workgroup Edition: Support for Directory Services</a> video.
+</li>
+        </ul>
+        <p class="bodytext">
+        </p><a name="o470"></a>
+        <h3 class="heading3" id="t470">SSL Certificate Error</h3>
+        <p class="proceduresubheading">Symptom:</p>
+        <p class="bodytext">When you open Mart Administrator from Mart Server that is configured with an SSL certification, an SSL certificate error appears.</p>
+        <p class="proceduresubheading">Solution:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Replace localhost in the Mart Server URL with your computer name.
+<p class="listcontinue">https://localhost:12345/MartAdmin/</p><p class="listcontinue">https://&lt;computer_name&gt;:12345/MartAdmin/</p></li>
+            <li class="listnumber">Use the updated URL to access the Mart Server
+</li>
+        </ol>
+        <p class="bodytext">
+        </p><a name="o471"></a>
+        <h3 class="heading3" id="t471">Unable to save a model to Mart with an existing model name</h3>
+        <p class="proceduresubheading">Symptom:</p>
+        <p class="bodytext">When you save a model to Mart with an existing model name, a dialog with the following text appears.</p>
+        <p class="bodytext">Model '&lt;model name&gt;' already exists in library '&lt;mart name&gt;'. Rename the new model name </p>
+        <p class="proceduresubheading">Solution:</p>
+        <p class="bodytext">Save the model with a different name.</p>
+        <p>
+        </p>
+    </body>
+</html>

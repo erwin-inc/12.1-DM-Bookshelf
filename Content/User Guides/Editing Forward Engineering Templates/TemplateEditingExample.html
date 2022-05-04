@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Template Editing Example</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8171" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/12/2018T00:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('8171')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><span class="browse"><img alt="" class="button" height="16px" src="..\..\Resources\Images\rgtgray35.png" title="" width="16px" /></span>
+        </p>
+        <h1 class="heading1" id="t8171">Template Editing Example</h1>
+        <p class="bodytext">This section provides an example of creating a template to demonstrate the mechanics of editing a template. This example creates a very simple version of a <em class="italic">CREATE TABLE</em> template and tests it against the <em class="italic">EMPLOYEE</em> table in the <em class="italic">emovies.erwin</em> sample model. </p>
+        <p class="noteAlt">This example assumes the target server of your model is SQL Server 2000. However, the process is the same for all supported target servers.</p>
+        <p class="bodytext">The template produced here will not cover the full syntax of a <em class="italic">CREATE TABLE</em> statement. Once you understand the principles here, you can examine the full templates shipped with erwin DM to guide you in customizing your SQL.</p>
+        <p class="bodytext">Follow these steps to create the example template:</p>
+        <p class="examplesubheading">Basic Template - Version 1</p>
+        <p class="bodytext">The first pass demonstrates the steps to produce the following SQL:</p><pre xml:space="preserve">
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+</pre>
+        <p class="bodytext">)</p>
+        <p class="examplesubheading">Getting Started</p>
+        <p class="bodytext">Template files are quite extensive in order to cover all of the SQL required for erwin DM's processes. The easiest way to start is to make a copy of an existing template file and edit it to produce the custom SQL you want:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Go to the &lt;install folder&gt;\erwin\Data Modeler\[r<em class="italic">n</em>]\Templates directory, make a copy of <em class="italic">SqlServer.fet</em>, and name it <em class="italic">SqlServer2.fet</em>. This prevents unwanted changes to the real template file.
+</li>
+            <li class="listbullet">Start erwin DM and load <em class="italic">emovies.erwin</em>.
+</li>
+            <li class="listbullet">Click Forward Engineering Templates on the Tools menu to invoke the Template Editor.
+</li>
+            <li class="listbullet">Click the <em class="italic">Open</em> tool and load <em class="italic">SqlServer2.fet</em>.
+</li>
+            <li class="listbullet">Make sure the <em class="italic">EMPLOYEE [Entity]</em> table is selected in the <em class="italic">Sample Context</em> box. If you cannot find it, turn on <em class="italic">Show All</em>. 
+</li>
+        </ul>
+        <p class="examplesubheading">Entry Point Templates</p>
+        <p class="bodytext">The Forward Engineering component of erwin DM looks for templates with certain names to use as the starting point for a particular SQL command. For a <em class="italic">CREATE</em> statement, the name of the entry point template is <em class="italic">Create XXX</em> where <em class="italic">XXX</em> is the class name for the object type. The entry points for other types of statements follow this pattern; <em class="italic">DROP</em> statements have entry points of <em class="italic">Drop XXX</em>, <em class="italic">ALTER</em> statements have entry points of <em class="italic">Alter XXX</em>, and so on. </p>
+        <p class="noteAlt">Consult the <em class="italic">erwin Metamodel Reference</em> to locate the class names for various object and property types.</p>
+        <p class="bodytext">The class name for a table is <em class="italic">Entity</em>, so the <em class="italic">Create Entity</em> template is edited:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Select the <em class="italic">Create Entity</em> template (it is probably already selected) and press F2. Rename that template to <em class="italic">Create Entity old</em>.
+</li>
+            <li class="listbullet">Select the <em class="italic">New Template</em> tool and name the new template <em class="italic">Create Entity</em>.
+</li>
+        </ul>
+        <p class="bodytext">At this point, the Template Editor attempts to expand the new template and displays a message that an undetermined parsing error occurred - this is expected.</p>
+        <p class="examplesubheading">The Template</p>
+        <p class="bodytext">This version of the template uses three macros: <em class="italic">Property</em>, <em class="italic">ForEachOwnee</em>, and <em class="italic">ListSeparator</em>.</p>
+        <p class="noteAlt">Consult the <em class="italic">Template Language and Macro Reference</em> document if you are uncertain of TLX syntax, or to see full descriptions of the macros used here.</p>
+        <ul class="listbullet">
+            <li class="listbullet">Type the following code into the <em class="italic">Template Source</em> field of the editor:
+<pre xml:space="preserve">
+"create table " Property("Physical_Name")
+"\n("
+ForEachOwnee("Attribute")
+{
+  ListSeparator(",")
+  "\n\t" Property("Physical_Name") " " Property("Physical_Data_Type")
+}
+"\n)"
+</pre></li>
+        </ul>
+        <p class="bodytext">After a moment, the following text appears in the <em class="italic">Expanded Text</em> field:</p><pre xml:space="preserve">
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+</pre>
+        <p class="bodytext">)</p>
+        <p class="examplesubheading">Splitting SQL Scripts - Version 2</p>
+        <p class="bodytext">The Forward Engineering component needs to be able to split up the various SQL statements that are generated to the script. Parsing the script during generation is too slow, so tokens are placed into the script to indicate the split points. These tokens are inserted by a macro called <em class="italic">FE::EndOfStatement</em>.</p>
+        <p class="bodytext">Tokens representing instructions to the Forward Engineering component are all delimited by double @ symbols (@@).</p>
+        <ul class="listbullet">
+            <li class="listbullet">Put your cursor in the <em class="italic">Template Source</em> field after the last line.
+</li>
+            <li class="listbullet">Double-click the <em class="italic">FE::EndOfStatement</em> macro in the <em class="italic">Macros</em> tree.
+</li>
+        </ul>
+        <p class="bodytext">After a moment, the following text appears in the <em class="italic">Expanded Text</em> field:</p><pre xml:space="preserve">
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+)
+go
+</pre>
+        <p class="bodytext">@@*EOS*@@</p>
+        <p class="examplesubheading">Subsidiary Templates - Version 3</p>
+        <p class="bodytext">Describes subsidiary templates and the use of the <em class="italic">Execute</em> macro.</p>
+        <p class="bodytext">
+        </p>
+        <p class="examplesubheading">Execute Macro</p>
+        <p class="bodytext">One template can delegate some of the processing to another template using the <em class="italic">Execute</em> macro. Another template is created called <em class="italic">Emit FK</em> and it is delegated to produce the foreign key constraints for the table:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Select the <em class="italic">New Template</em> tool and name the new template <em class="italic">Emit FK</em>.
+</li>
+            <li class="listbullet">Add the following as temporary code for the new template. This code will be replaced later in the example.
+<pre xml:space="preserve">
+"Got here"
+</pre></li>
+            <li class="listbullet">Double-click the <em class="italic">Create Entity</em> template again to go back to editing it and add the following text at the end. The use of the <em class="italic">Equal</em> macro causes nothing to emit if the current <em class="italic">Key_Group</em> is not a foreign key.
+<pre xml:space="preserve">
+ForEachOwnee("Key_Group")
+{
+  Equal( Left( Property( "Key_Group_Type" ), 2 ), "IF" )
+  Execute("Emit FK")
+  FE::EndOfStatement
+}
+</pre></li>
+        </ul>
+        <p class="bodytext">After a moment, the following text appears in the <em class="italic">Expanded Text</em> field:</p><pre xml:space="preserve">
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+)
+go
+@@*EOS*@@
+Got here
+go
+@@*EOS*@@
+Got here
+go
+@@*EOS*@@
+</pre>
+        <p class="examplesubheading">Controlling the Context Stack</p>
+        <p class="bodytext">The <em class="italic">Got here</em> statement can now be replaced in the <em class="italic">Emit FK</em> template with code to emit an <em class="italic">ALTER</em> statement that adds the foreign key. Since such a statement requires information from the <em class="italic">Entity</em> object, the <em class="italic">Attribute</em> objects owned by it, the <em class="italic">Relationship</em> object, and the <em class="italic">Key_Group_Member</em> objects, the template code will have to control the context stack to make sure that properties are read from the correct object.</p>
+        <p class="noteAlt">This is not the most efficient way to produce the intended output, but it accomplishes the task without complicating the example with a lot of new macros.</p>
+        <ul class="listbullet">
+            <li class="listbullet">Double-click on the <em class="italic">Emit FK</em> template to edit it.
+</li>
+            <li class="listbullet">Replace the existing text with the following code:
+<pre xml:space="preserve">
+"alter table " PushOwner Property("Physical_Name") Pop
+"\nadd foreign key ("
+ForEachOwnee("Key_Group_Member")
+{
+  ListSeparator(",") Property("Physical_Name")
+}
+") references "
+PushReference("Relationship_Ref") 
+PushReference("Parent_Entity_Ref")
+Property("Physical_Name")
+Pop
+Pop
+" ("
+ForEachMigratingColumn
+{
+  ListSeparator(",") Property("Physical_Name")
+}
+")"
+PushReference("Relationship_Ref")
+"\n\ton delete " 
+UpperCase( Property("Parent_Delete_Rule") ) 
+Pop
+</pre></li>
+            <li class="listbullet">Ignore the parsing error that appears in the <em class="italic">Expanded Text</em> field (because the template was not entered from the correct starting point) and double-click the <em class="italic">Create Entity</em> template to get the entry point template to evaluate.
+</li>
+        </ul>
+        <p class="bodytext">After a moment, the following text appears in the <em class="italic">Expanded Text</em> field:</p><pre xml:space="preserve">
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+)
+go
+@@*EOS*@@
+alter table EMPLOYEE
+add foreign key (store_number) references STORE (store_number)
+on delete NO ACTION
+go
+@@*EOS*@@
+alter table EMPLOYEE
+add foreign key (supervisor) references EMPLOYEE (employee_number)
+on delete NO ACTION
+go
+@@*EOS*@@
+</pre>
+        <p class="examplesubheading">Sorting the Output - Version 4</p>
+        <p class="bodytext">One of the foreign keys in the <em class="italic">EMPLOYEE</em> table is self-referential. However, the other is not; it references the <em class="italic">STORE</em> table. If the order of processing the <em class="italic">Entity</em> objects results in the <em class="italic">STORE</em> table emitting after the <em class="italic">EMPLOYEE</em> table, the <em class="italic">ALTER</em> statement creating the foreign key will fail.</p>
+        <p class="bodytext">To avoid this, tokens can be emitted that instruct the Forward Engineering component to sort types of statements into groups. These groups are called <em class="italic">buckets</em>. Any statement placed in Bucket #1 is emitted before any statement placed in Bucket #2, which is before any statement in Bucket #3, and so on. There can be an arbitrary number of buckets. The macro <em class="italic">FE::Bucket</em> inserts the bucket tokens.</p>
+        <ul class="listbullet">
+            <li class="listbullet">Insert the following code as the first line of the <em class="italic">Create Entity</em> template:
+<pre xml:space="preserve">
+FE::Bucket("10")
+</pre></li>
+            <li class="listbullet">Insert the following code right after the first occurrence of the <em class="italic">FE::EndOfStatement</em> macro:
+<pre xml:space="preserve">
+FE::Bucket("20")
+</pre></li>
+        </ul>
+        <p class="bodytext">After a moment, the following text appears in the <em class="italic">Expanded Text</em> field:</p><pre xml:space="preserve">
+@@*B=10*@@
+create table EMPLOYEE
+(
+  employee_first_name varchar(20),
+  employee_address varchar(20),
+  employee_phone integer,
+  employee_address_2 varchar(20),
+  employee_number varchar(20),
+  soc_sec_number integer
+  hire_date datetime,
+  salary integer,
+  email varchar(20),
+  store_number integer,
+  supervisor varchar(20)
+)
+go
+@@*EOS*@@
+@@*B=20*@@
+alter table EMPLOYEE
+add foreign key (store_number) references STORE (store_number)
+on delete NO ACTION
+go
+@@*EOS*@@
+</pre>
+        <p class="bodytext">When the templates are executed against the entire model, all of the <em class="italic">CREATE TABLE</em> statements (Bucket #10) will emit before any of the <em class="italic">ALTER</em> statements (Bucket #20).</p>
+        <p>
+        </p>
+    </body>
+</html>

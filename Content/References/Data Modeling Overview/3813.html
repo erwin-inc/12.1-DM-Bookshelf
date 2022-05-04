@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Many-to-Many Relationships</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3813" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T20:00-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3805');expand2('3807');highlight('3813')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t3813">Many-to-Many Relationships</h3>
+        <p class="bodytext">A many-to-many relationship is also known as a nonspecific relationship. A many-to-many relationship represents a situation where an instance in one entity relates to one or more instances in a second entity, and an instance in the second entity also relates to one or more instances in the first entity. In the video store example, a many-to-many relationship occurs between a CUSTOMER and a MOVIE COPY. From a conceptual point of view, this many-to-many relationship indicates that:</p>
+        <ul class="listbullet">
+            <li class="listbullet">A CUSTOMER &lt;rents&gt; many MOVIE COPYs
+</li>
+            <li class="listbullet">A MOVIE COPY &lt;is rented by&gt; many CUSTOMERs
+</li>
+        </ul>
+        <p class="bodytext">You typically use many-to-many relationships in a preliminary stage of diagram development, such as in an ERD. Many-to-many relationships are represented in IDEF1X as a solid line with dots on both ends.</p>
+        <p class="picture">
+            <img align="bottom" alt="Many-to-many relationship describing CUSTOMER rents MOVIE-COPY" border="0" height="157" hspace="0" id="f3814" src="../../Resources/Images/3814.gif" vspace="0" width="441" />
+        </p>
+        <p class="bodytext">Because a many-to-many relationship can hide other business rules or constraints, it is better to explore them later in the modeling process. For example, sometimes a many-to-many relationship identified in early modeling stages is mislabeled, and is actually two one-to-many relationships between related entities. Or, the business must keep additional facts about the many-to-many relationship, such as dates or comments. The result is that an additional entity to keep these facts replaces the many-to-many relationship. Discuss in detail all many-to-many relationships later in the modeling process to help ensure that the relationship is modeled correctly.</p>
+        <p>
+        </p>
+    </body>
+</html>

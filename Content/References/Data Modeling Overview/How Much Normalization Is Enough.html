@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>How Much Normalization Is Enough</title>
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\docsstylesheet.css" />
+        <meta name="componentcd" content="&lt;authorit:componentcd&gt;" />
+        <meta name="objectid" content="3654" />
+        <meta name="basedOnKey" content="260" />
+        <!--metadata variables for XMD: translatable-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="&lt;authorit:ca_keywords&gt;" />
+        <meta name="ca_content_type" content="&lt;authorit:ca_content_type&gt;" />
+        <meta name="ca_context" content="&lt;authorit:ca_context&gt;" />
+        <meta name="ca_role" content="&lt;authorit:ca_role&gt;" />
+        <meta name="ca_language" content="en-US" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta name="ca_offering_name" content="&lt;authorit:ca_offering_name&gt;" />
+        <meta name="ca_product_version" content="&lt;authorit:ca_product_version&gt;" />
+        <meta name="ca_product_family" content="&lt;authorit:ca_product_family&gt;" />
+        <meta name="ca_alias_name" content="&lt;authorit:ca_alias_name&gt;" />
+        <meta name="ca_related_offering" content="&lt;authorit:ca_related_offering&gt;" />
+        <meta name="ca_access_level" content="&lt;authorit:ca_access_level&gt;" />
+        <meta name="ca_date_time" content="8/29/2018T20:00-5:00" />
+        <meta name="ca_creator" content="(supervisor)" />
+        <meta name="ca_source" content="&lt;authorit:ca_source&gt;" />
+        <meta name="ca_format" content="HTML" />
+        <meta name="ca_database" content="&lt;authorit:ca_database&gt;" />
+        <meta name="ca_application_server" content="&lt;authorit:ca_application_server&gt;" />
+        <meta name="ca_operating_system" content="&lt;authorit:ca_operating_system&gt;" />
+        <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
+        <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
+        <script language="javascript" type="text/javascript" src="..\..\Resources\dhtml_toc.js">
+        </script> <script language="javascript" type="text/javascript" src="..\..\Resources\open_parent.js"></script> <script language="javascript" type="text/javascript" src="../../Resources/mailca.js"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3633');highlight('3654')}">
+        <h2 id="t3654" class="heading2">
+            <MadCap:concept term="References" />How Much Normalization Is Enough</h2>
+        <p class="bodytext">From a formal normalization perspective (what an algorithm would find solely from the shape of the model, without understanding the meanings of the entities and attributes) there is nothing wrong with the EMPLOYEE-CHILD-SPOUSE model. However, just because it is normalized does not mean that the model is complete or correct. It still may not be able to store all of the information that is needed or it may store the information inefficiently. With experience, you can learn to detect and remove additional design flaws even after the pure normalization is finished.</p>
+        <p class="bodytext">Using the following EMPLOYEE-CHILD-SPOUSE model example, you see that there is no way of recording a CHILD whose parents are both EMPLOYEEs. Therefore, you can make additional changes to try to accommodate this type of data.</p>
+        <p class="bodytext">
+            <img id="f3653" src="../../Resources/Images/3653.png" alt="" height="212" width="346" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">If you noticed that EMPLOYEE, SPOUSE, and CHILD all represent instances of people, you may want to try to combine the information into a single table that represents facts about people and one that represents facts about relationships. To fix the model, you can eliminate CHILD and SPOUSE, replacing them with PERSON and PERSON-ASSOCIATION. This lets you record parentage and marriage through the relationships between two PERSONs captured in the PERSON-ASSOCIATION entity.</p>
+        <p class="picture">
+            <img id="f3655" src="../../Resources/Images/3655.png" alt="" height="252" width="403" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">In this structure, you can finally record any number of relationships between two PERSONs, as well as a number of relationships you could not previously record in the first model, such as adoption. The new structure automatically covers it. To represent adoption you can add a new value to the “person-association-type” validation rule to represent adopted parentage. You can also add legal guardian, significant other, or other relationships between two PERSONs later, if needed.</p>
+        <p class="bodytext">EMPLOYEE remains an independent entity, since the business chooses to identify EMPLOYEEs differently from PERSONs. However, EMPLOYEE inherits the properties of PERSON by virtue of the <em class="italic">is a</em> relationship back to PERSON. Notice the <em class="italic">Z</em> on that relationship and the absence of a diamond. This is a one&#8209;to&#8209;zero or one relationship that can sometimes be used in place of a subtype when the subtype entities require different keys. In this example, a PERSON either <em class="italic">is an</em> EMPLOYEE or <em class="italic">is not an</em> EMPLOYEE.</p>
+        <p class="bodytext">If you wanted to use the same key for both PERSON and EMPLOYEE, you can encase the EMPLOYEE entity into PERSON and allowed its attributes to be NULL whenever the PERSON is not an EMPLOYEE. You still can specify that the business wanted to look up employees by a separate identifier, but the business statements would be a bit different. This structure is shown in the following figure:</p>
+        <p class="picture">
+            <img id="f3656" src="../../Resources/Images/3656.png" alt="" height="125" width="394" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">This means that a model may normalize, but still may not be a correct representation of the business. Formal normalization is important. Verifying that the model means something, perhaps with sets of sample instance tables as done here, is no less important.</p>
+        <p />
+    </body>
+</html>

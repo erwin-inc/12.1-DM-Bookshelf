@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><title>Oracle Table Index Editor</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2164" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('2164')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2164">Oracle Table Index Editor</h5>
+        <p class="bodytext">A primary key (PK) and a foreign key (FK) index are automatically created for each table in your model, based on the primary key and foreign key columns. If you designate columns as an alternate key group (AK) or inversion entry group (IE), the equivalent unique (AK) and non-unique (IE) indexes are also generated. </p>
+        <p class="bodytext">Use the Oracle Table Index Editor to create alternate key (unique) and inversion entry (non-unique) indexes for tables in your model. After you create an index, you can use the Oracle Table Index Editor to modify its properties, such as the index name, column members, physical properties, and user-defined properties.</p>
+        <p class="bodytext">Use the Generate as Constraint option so that Forward Engineering generates a constraint based on the information in the selected index. The types of constraints created from indexes are:</p>
+        <dl>
+            <dt><strong>Unique Constraint</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Prohibits multiple rows from having the same value in the same column or a combination of columns but allows some values to be NULL.</p>
+            </dd>
+            <dt><strong>Primary Key Constraint</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Combines a NOT NULL constraint and a unique constraint in a single declaration. That is, it prohibits multiple rows from having the same value in the same column or a combination of columns, and prohibits NULL values.</p>
+            </dd>
+            <dt><strong>Foreign Key Constraint</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Requires the values in one table to match the values in another table.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">The following properties are applicable to an Oracle Table object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Section</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table to which the index belongs</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Show FK Indexes</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether FK indexes are displayed in the navigation grid</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tablebodytext">Physical Name</p>
+                </td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Owner</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the database owner</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Type</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the index type</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Is Unique</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether unique values are allowed in the index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Only</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index should only appear in the physical model</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a SQL statement for the index is generated during forward engineering</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate As Constraint</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index is generated as a constraint and the corresponding SQL statement is generated during forward engineering</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">
+                    <p class="tablebodytext">Members</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Column</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the columns of the table that participate in the index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Sort Order</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the column sort order for indexing</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Column/Expression</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the column expression on which the index is based</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="8">Constraint</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Constraint Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the key constraint name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Deferrable</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether dependent cursors are invalidated while creating the index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Immediate/Deferred</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies when the dependent cursors are invalidated</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Immediate</b>: Indicates that dependent cursors are invalidated immediately</p>
+                    <p><b>Deferred</b>: Indicates that invalidating the dependent cursors is avoided</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Rely</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a constraint in the NOVALIDATE mode is considered for query rewrite</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Rely</b>: Indicates that the constraint is considered for query rewrite</p>
+                    <p><b>NoRely</b>: Indicates that the constraint is not considered for query rewrite</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Validate</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether all the new and old data complies with the constraint</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Validate</b>: Indicates that all the data complies with the constraint when it is enabled</p>
+                    <p><b>NoValidate</b>: Indicates that all DML operations on the constrained data comply with the constraint. However, it does not ensure whether existing data complies with the constraint.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Enabled</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the constraint is enabled on the index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Exception&#160;Table</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table that collects the rowids of all rows that violate the constraint</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Index</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="15">Options</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Is Unique</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies that the value of the column (or columns) on which the index is based must be unique</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Bitmap</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index is created with a bitmap for each distinct key</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Alias</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a correlation name for the table on which the index is being built</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Reverse Store</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the bytes of the index block, excluding the rowid, are stored in a reverse order</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Online</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether DML operations on the table are allowed during index creation</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Parallel</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index creation is parallelized</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Parallel</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the degree of parallelism</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the compression technique to be used for index compression</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>No Compress</b>: Indicates the compression is disabled</p>
+                    <p><b>Prefix</b>: Indicates that repeated occurrence of key column values are eliminated</p>
+                    <p><b>Advanced Low</b>: Indicates that index is compressed less than the HIGH level, but provides faster access to the index</p>
+                    <p><b>Advance High</b>: Indicates that index is compressed more than the LOW level, but provides faster access to the index</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Prefix Length</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the number of prefix columns to compress</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Compress Type is set to Prefix</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Logging</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether index creation is logged in the redo log file</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Logging</b>: Indicates that index creation of a database object and the subsequent inserts into the object are logged in the redo log file</p>
+                    <p><b>No Logging</b>: Indicates that index creation is not logged in the redo log file</p>
+                    <p><b>File System Like Logging</b>: Indicates whether only metadata changes are logged</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Visible</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index is visible to the optimizer</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">No Sort</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the rows are already stored in the database in ascending order</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Indexing</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether indexing is full or partial</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Applicable only to an index on a partitioned table</p>
+                    <p><b>Full</b>: Indicates that all partitions in underlying table are included in the index irrespective of their indexing properties</p>
+                    <p><b>Partial</b>: Indicates that only the partitions in underlying table with the indexing property set to ON are included in the index</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Usable</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the index is usable</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>For non-partitioned indexes, indicates whether the index is created in a usable state</p>
+                    <p>For partitioned indexes, indicates whether all index partitions are usable or unusable</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Invalidation</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies when the dependent cursors are invalidated while index creation</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Immediate</b>: Indicates that dependent cursors are invalidated immediately</p>
+                    <p><b>Deferred</b>: Indicates that invalidating the dependent cursors is avoided</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Storage</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical storage object for the index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="15">Partition</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Index Partition Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Index Partition&#160;Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the index partition type</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Global</b>: Indicates that index partitioning is user defined and is not equi-partitioned with the underlying table</p>
+                    <p><b>Local</b>: Indicates that the index is partitioned on the same columns, with the same number of partitions and the same partition bounds as table</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Index Global Partition Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the global index is hash-partitioned  or range-partitioned</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Index Local Partition Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether type of partitioned table on which the index is created</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Partition Columns</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Columns</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the columns that participate in the partition</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">Hash Partition Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Hash Partition&#160;Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Index Global Partition Type is set to Hash</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Hash Partition Quantity</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Index Global Partition Type is set to Hash</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Index Global Partition Type is set to Hash</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Prefix Length</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Index Global Partition Type is set to Hash and Compress Type is set to Prefix</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Tablespaces for Quantity</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="6">Partition&#160;Elements</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Partition Value</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compress Prefix Length</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Usable</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Logging</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+        </table>
+        <dl>
+            <dt>Members</dt>
+            <dd>
+                <p class="normaltermcontinued"> Lets you specify index members.</p>
+            </dd>
+            <dt>Constraint State</dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you assign constraint state properties.</p>
+            </dd>
+            <dt>Physical</dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you assign physical property options.</p>
+            </dd>
+            <dt>Partitions</dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you select partition type and partition type options.</p>
+            </dd>
+            <dt>Where Used</dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you view where the object is used in the model.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="The_Text_Editor.html" id="h1736" target="_self" title="The Text Editor">Comment</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you enter any comments that you want to associate with the object.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you enter user-defined property values for the object.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you view or edit user notes.</p>
+            </dd>
+        </dl>
+        <p>
+        </p>
+    </body>
+</html>

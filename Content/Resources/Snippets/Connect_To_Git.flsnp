@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Starting erwin Data Modeler (DM) 12.0, you can connect erwin DM to Git repositories via Mart Server. This enables you to push Forward Engineering (FE) scripts for a Mart Model to GitLab or GitHub. You cannot store FE scripts or DDL on a Mart Server but only erwin models. With Git support you can adopt DevOps principles as you can commit FE scripts in Git repositories. Working with these repositories help you in:</p>
+        <ul class="listbullet">
+            <li class="listbullet">DevOps adoption
+                </li>
+            <li class="listbullet">collaboration with team members
+            </li>
+            <li class="listbullet">
+                version control
+            </li>
+            <li class="listbullet">
+                workflow management</li>
+            <li class="listbullet">
+                data integrity</li>
+        </ul>
+        <p class="bodytext">Pushing FE scripts to a Git repository involves:</p>
+        <ol class="listnumber">
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/connect_to_mart.html">Connecting erwin DM to Mart Server</a>
+            </li>
+            <li class="listnumber"><a href="../../Release Notes/Feature Tour/Connecting_to_Git_Repositories.html">Connecting erwin DM to a Git repository</a>
+            </li>
+            <li class="listnumber"><a href="../../Release Notes/Feature Tour/Committing_FE_Scripts.html">Opening a Mart Model and committing FE scripts</a>
+            </li>
+        </ol>
+        <p class="bodytext">To summarize, following is the workflow to commit FE scripts.</p>
+        <p>
+            <img src="../Images/Workflow-PushFEScriptGit.png" style="width: 570px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 250px;" />
+        </p>
+    </body>
+</html>

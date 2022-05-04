@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Review the following prerequisites before you start the upgrade process:</p>
+        <p class="bodytext">If the Mart database is an Oracle database, the default tablespaces that were used for initializing any earlier release of r9 series Mart are available for the latest release.</p>
+    </body>
+</html>

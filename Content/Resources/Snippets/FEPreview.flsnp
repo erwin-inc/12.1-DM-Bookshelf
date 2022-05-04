@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">On the Forward Engineer Schema Generation Wizard, click the <b>Preview</b> tab.<p class="listcontinue">The schema DDL script generated for the current model is displayed.</p></li>
+            <li class="listnumber">Use the following options:
+<dl><dt>Save</dt><dd><p class="normaltermcontinued2">Opens the Generate SQL Schema Report dialog to save the schema DDL script as an .ers, .sql, or .ddl text file. After you save the file, you can change it in a text editor and run it against the database using a utility that interprets SQL scripts.</p></dd><dt>Print</dt><dd><p class="normaltermcontinued2">Prints a copy of the schema DDL script.</p></dd><dt>Search</dt><dd><p class="normaltermcontinued2">Opens the Find dialog to search for a text string.</p></dd><dt>Replace</dt><dd><p class="normaltermcontinued2">Opens the Replace dialog to search for a text string and replace it with a new text string.</p></dd><dt>Cut</dt><dd><p class="normaltermcontinued2">Cuts the text.</p></dd><dt>Copy</dt><dd><p class="normaltermcontinued2">Copies the text.</p></dd><dt>Paste</dt><dd><p class="normaltermcontinued2">Pastes the text.</p></dd></dl></li>
+            <li class="listnumber">Click <b>Generate</b> to start the schema generation process or click <b>Close</b> to return to the wizard.</li>
+        </ol>
+    </body>
+</html>

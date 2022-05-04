@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Comparing Models or Databases</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1570" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T12:03-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('1570')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t1570">How to Compare a Model with a Database Using Complete Compare</h1>
+        <p class="bodytext">During the life-cycle of a model, as a Data Architect you create several versions of the model. After you create a database from the model, you may change the database, but not implement the changes in the model. Similarly, you may update the model over time but not update the same changes in the database. This results in the model and the database not being up-to-date. At some point, you may want to compare models or databases to know the differences in the objects and properties. The Complete Compare feature lets you compare two models and resolve differences between the two models.</p>
+        <p class="bodytext">This tutorial describes how Data Architects can compare a model with a database using the Complete Compare feature.</p>
+        <p class="noteAlt">When you compare a model with a database or compare two databases, you reverse engineer the database to create a model and then compare the model. This means, you compare two models all the time.</p>
+        <p class="bodytext">Use the Complete Compare feature to compare the following items:</p>
+        <ul class="listbullet">
+            <li class="listbullet">A data model with a different data model
+</li>
+            <li class="listbullet">A data model with a database
+</li>
+            <li class="listbullet">A data model with a script file
+</li>
+            <li class="listbullet">A database with a different database
+</li>
+        </ul>
+        <p class="bodytext">Using Complete Compare, you compare the objects and properties at the model level (Logical, Physical, or Logical/Physical) or database level. You can compare a Logical Only model with another Logical Only model. However, you can compare a Physical Only model with another Physical Only model or a Logical/Physical model.</p>
+        <p class="bodytext">After you finish comparing, you view and resolve differences. When you begin to resolve differences, the models that are currently open are changed in real time. You can undo, redo, or reverse compare actions. If you are comparing at the physical level or you included a database or script file in the compare, you can generate ALTER scripts for the models.</p>
+        <p class="bodytext">You can select the class of objects you want to compare. For example, tables, columns, indexes, and relationships. You can also compare all objects or only a few selected objects. Comparing selected objects helps you view differences at specific object levels. For example, you can view differences only for selected tables, columns, indexes, or relationships.</p>
+        <p class="bodytext">Consider the following circumstances when you want to compare a model with a database:</p>
+        <ul class="listbullet">
+            <li class="listbullet">You added new objects to the model and you want to update the database schema. You compare the existing database with the new model, and generate ALTER scripts for the database.
+</li>
+            <li class="listbullet">You want to compare the updates in a database with the original model.
+</li>
+        </ul>
+        <p class="bodytext">The following diagram illustrates how to to compare data models with databases. We considered the left model selection as the data model and the right model selection as the database.</p>
+        <p class="picture">
+            <img align="bottom" alt="Complete Compare between a model and a database" border="0" height="476" hspace="0" id="f1571" src="../../../Resources/Images/1571.png" vspace="0" width="458" />
+        </p>
+        <p class="bodytext">Use the following steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber"><a class="z--jumptemplate" href="select_left_model_database.html" id="h1553" target="_self" title="Select the Left Model">Select the Left Model</a>.
+</li>
+            <li class="listnumber"><a class="z--jumptemplate" href="select_right_model_database.html" id="h1555" target="_self" title="Select the Right Model">Select the Right Model</a>.
+</li>
+            <li class="listnumber">[Optional] <a class="z--jumptemplate" href="resolve_type_conflicts.html" id="h1557" target="_self" title="(Optional) Resolve Type Conflicts">Resolve Type Conflicts</a>.
+</li>
+            <li class="listnumber"><a class="z--jumptemplate" href="Select_objects_properties_compare.html" id="h1559" target="_self" title="Select Objects and Properties to Compare">Select Objects and Properties to Compare</a>.
+</li>
+            <li class="listnumber">[Optional] <a class="z--jumptemplate" href="Refine_Criteria_Object_Comparison_LeftModel.html" id="h1561" target="_self" title="Refine the Criteria for Object Comparison in the Left Model">Refine the Criteria for Object Comparison in the Left Model</a>.
+</li>
+            <li class="listnumber">[Optional] <a class="z--jumptemplate" href="Refine_Criteria_Object_Comparison_RightModel.html" id="h1563" target="_self" title="Refine the Criteria for Object Comparison in the Right Model">Refine the Criteria for Object Comparison in the Right Model</a>.
+</li>
+            <li class="listnumber">[Optional] <a class="z--jumptemplate" href="Select_Advanced_Options_to_Refine_the_Compare_Criteria.html" id="h1566" target="_self" title="(Optional) Select Advanced Options to Refine the Compare Criteria">Select Advanced Options to Refine the Compare Criteria</a>.
+</li>
+            <li class="listnumber"><a class="z--jumptemplate" href="Select_Advanced_Options_to_Refine_the_Compare_Criteria.html#o1569" id="h1568" target="_self" title="Compare and Resolve Differences">Compare and Resolve Differences</a>.
+</li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

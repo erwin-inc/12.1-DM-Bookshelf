@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Use Macros to Create Logical to Physical Relationship Names</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4613" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4594');highlight('4613')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4613">Use Macros to Create Logical to Physical Relationship Names</h3>
+        <p class="bodytext">When enforcing a Foreign Key Constraint Name Standard you can use macros to create Logical to Physical relationship names.</p>
+        <p class="bodytext">The default for mapping a logical relationship to a physical relationship is to follow the convention, &lt;entity parent name&gt;&lt;R/number&gt;&lt;entity child name&gt; maps to &lt;table parent name&gt;&lt;R_number&gt;&lt;table child name&gt;. Each relationship is assigned a number, based on the order in which it was created.</p>
+        <p class="bodytext">For example:</p>
+        <p class="bodytext">In the logical model: Grandparent R/1 Parent</p>
+        <p class="bodytext">In the physical model: Grandparent R_1 Parent</p>
+        <p class="bodytext">You can use the Name Mapping options to establish another convention for the inherited name. For example, you might want the relationship name created from the table names in the relationship.</p>
+        <p class="proceduresubheading">To use macros to create logical to physical relationship names</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Model Naming Options on the Tools menu.
+<p class="listcontinue">The Model Naming Options dialog opens.</p></li>
+            <li class="listnumber">Select the Name Mapping tab, enter the %Parent_%Child macro in the Relationships box, and click OK.
+<p class="listcontinue">The macro is used to create logical to physical relationship names.</p></li>
+        </ol>
+        <p class="bodytext">This creates relationship names in the physical model based on a combination of the parent and child table names. For example, in a model in which the parent table is named Grandfather and the child table is named Parent, the following relationship name would result: Grandfather Grandfather_Parent Parent.</p>
+        <p class="bodytext">Your change would be reflected in the Relationships dialog on the physical side of your model.</p>
+        <p class="bodytext">You can refine the use of macros in this context, to address other issues that may be relevant. For example:</p>
+        <p class="bodytext">Long table names may exceed the limits of the allowable string length for constraint names. To prevent this problem, you could modify the macro as follows:</p>
+        <p class="bodytext">%Substr(%Parent,1,5)_Substr(%Child,1,5)</p>
+        <p class="bodytext">This macro takes a substring from the variable string at the specific location for a specified length. This example indicates the substrings Parent and Child, and allows five characters, starting at position 1.  </p>
+        <p class="bodytext">The relationship that results is:</p>
+        <p class="bodytext">Grandparent Grand_Paren Parent</p>
+        <p class="bodytext">A case may exist where there are two relationships between the same two tables (such as one identifying and one non-identifying). You can modify the %Substr(%Parent,1,5)_Substr(%Child,1,5) macro to indicate the relationship type using %RelType. </p>
+        <p class="bodytext">For example, this macro returns the relationship type at the end of the relationship name.  </p>
+        <p class="bodytext">[Relationship type valid values and their definitions include: RT_ID (identifying), RT_NI (non-identifying), RT_SC (subtype), or RT_MM (many-to-many).] You can shorten the length of the relationship name by removing the "RT" portion of the relationship type. You implement this through the %Substitute macro:</p>
+        <p class="bodytext">%Substr(%Parent,1,5)_Substr(%Child,1,5)%RelType</p>
+        <p class="bodytext">for a non-identifying relationship it returns:</p>
+        <p class="bodytext">Grandparent Grand_ParenRT_NI Parent</p>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext">%Substr(%Parent,1,5)_Substr(%Child,1,5)%Substitute(%RelType,RT_,_)</p>
+        <p class="bodytext">returns</p>
+        <p class="bodytext">Grandparent Grand_Paren_NI Parent</p>
+        <p class="bodytext">Another case may exist where there are two relationships between the same two tables (such as one identifying and one non-identifying). You can modify the %Substr(%Parent,1,5)_Substr(%Child,1,5) macro to indicate the relationship type using %RelType.</p>
+        <p class="bodytext">For example, this macro returns the relationship type at the end of the relationship name.  </p>
+        <p class="bodytext">[Relationship type valid values and their definitions include: RT_ID (identifying), RT_NI (non-identifying), RT_SC (subtype), or RT_MM (many-to-many).] You can shorten the length of the relationship name by removing the "RT" portion of the relationship type. You implement this through the %Substitute macro:</p>
+        <p class="bodytext">%Substr(%Parent,1,5)_Substr(%Child,1,5)%RelType</p>
+        <p class="bodytext">for a non-identifying relationship returns:</p>
+        <p class="bodytext">Grandparent Grand_ParenRT_NI Parent</p>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext">%Substr(%Parent,1,5)_Substr(%Child,1,5)%Substitute(%RelType,RT_,_)</p>
+        <p class="bodytext">returns</p>
+        <p class="bodytext">Grandparent Grand_Paren_NI Parent</p>
+        <p>
+        </p>
+    </body>
+</html>

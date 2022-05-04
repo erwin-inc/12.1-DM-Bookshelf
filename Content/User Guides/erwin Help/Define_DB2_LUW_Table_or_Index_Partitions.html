@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Db2 LUW Table or Index Partitions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3086" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');highlight('3086')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t3086">Define Db2 LUW Table or Index Partitions</h5>
+        <p class="bodytext">When your target server is Db2, you can work with options on the Partitions tab on the Table, Index, or Tablespace editors to specify the partition type and elements.</p>
+        <p class="proceduresubheading">To define Db2 table or index partitions</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click the <span class="uielement">Partitions</span> tab in the <span class="uielement">Table</span>, <span class="uielement">Index</span>, or <span class="uielement">Tablespace</span> editor and work with the following options:
+<dl><dt>Partition Type</dt><dd><p class="normaltermcontinued2">Specifies the partition type for the selected table or index. Select Range or Size from the drop-down menu.</p><p class="list2"><strong>Partition Elements:</strong></p></dd><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the partition name.</p></dd><dt>Storage Group</dt><dd><p class="normaltermcontinued2">Identifies the storage group for the partition. Select a storage group name from the drop-down list.</p></dd><dt>Partition Number</dt><dd><p class="normaltermcontinued2">Displays a read-only integer designating the partition number.</p></dd><dt>Is Ending Value Inclusive</dt><dd><p class="normaltermcontinued2">Indicates that the specified range values are included in the data partition.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Partition Element Editor</span> icon to open the <span class="uielement">Partition Element</span> editor to specify partition element properties.
+</li>
+            <li class="listnumber">On the <span class="uielement">General</span> tab, work with the following properties:
+<dl><dt>Primary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum primary space allocation. Enter an integer in the text box.</p></dd><dt>Secondary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum secondary space allocation. Enter an integer in the text box.</p></dd><dt>Define Data Sets (check-box)</dt><dd><p class="normaltermcontinued2">Indicates that you want to define data sets rather than use Db2-managed data sets.</p></dd><dt>Erase When Deleted (check-box)</dt><dd><p class="normaltermcontinued2">Indicates that you want Db2-managed data sets to be erased when they are deleted during the execution of a utility or SQL statement that drops the partition.</p></dd><dt>Free Page Interval</dt><dd><p class="normaltermcontinued2">Specifies how often to leave a page of free space when the partition is loaded or reorganized. Enter an integer in the text box.</p></dd><dt>Group Bufferpool type</dt><dd><p class="normaltermcontinued2">Indicates the group bufferpool type. Select a group type from the drop-down list: Changed, All, None, System.</p></dd><dt>Percent Free</dt><dd><p class="normaltermcontinued2">Indicates what percentage of each page to leave as free space when the table is loaded or reorganized. Enter an integer in the text box.</p></dd><dt>Track Modified Pages (check)</dt><dd><p class="normaltermcontinued2">Indicates that Db2 tracks modified pages in the space map pages of the partition. Clear the check box to indicate <em class="italic">TRACKMOD NO</em>.</p></dd><dt>Volume Catalog</dt><dd><p class="normaltermcontinued2">Identifies the catalog name for the data set. </p></dd><dt>Is Compressed (check-box)</dt><dd><p class="normaltermcontinued2">Indicates that data compression applies to the rows of the partition.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Columns</span> tab to indicate partition column properties
+</li>
+            <li class="listnumber">Click the <span class="uielement">Boundaries</span> tab to indicate partition boundary properties.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Table or Index Partition Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More Information</p>
+        <p class="relateditem"><a href="Define_DB2_LUW_Table_Partition_Elements.html" target="_self">Define Db2 LUW Table Partition Elements</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_DB2_LUW_Table.html" target="_self">Define a Db2 LUW Table</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_DB2_LUW_Tablespace.html" target="_self">Define a Db2 LUW Tablespace</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_DB2_zOS_Index.html" target="_self">Define a Db2 z/OS Index</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_DB2_zOS_Table.html" target="_self">Define a Db2 z/OS Table</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_DB2_zOS_Tablespace.html" target="_self">Define a Db2 z/OS Tablespace</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

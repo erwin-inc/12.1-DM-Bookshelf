@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>ISCSession Interface</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6186" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');expand2('6182');expand2('6185');highlight('6186')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t6186">ISCSession Interface</h4>
+        <p class="bodytext">The following table contains information on the <em class="italic">ISCSession</em> interface:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="160">
+                    <p class="tableheading">Signature</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="240">
+                    <p class="tableheading">Description</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="224">
+                    <p class="tableheading">Valid Arguments</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="160">
+                    <p class="tablebodytext">VARIANT BeginNamedTransaction(</p>
+                    <p class="tablebodytext">BSTR Name, VARIANT PropertyBag [optional] )</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="240">
+                    <p class="tablebodytext">Opens a transaction on the session with the given name. Returns an identifier of the transaction.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="224">
+                    <p class="tablebodytext">Name � Provides a name for a new transaction.</p>
+                    <p class="tablebodytext">PropertyBag � Collection of parameters for history tracking in the transaction.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The following table describes the properties used in creating a new model:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="176">
+                    <p class="tableheading">Property Name</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">Type</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="352">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="176">
+                    <p class="tablebodytext">History_Tracking</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Boolean</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="352">
+                    <p class="tablebodytext">TRUE � Indicates that all historical information generated during the transaction will be marked as the API event. The TRUE value is assumed if the property is not provided.</p>
+                    <p class="tablebodytext">FALSE � Uses the standard erwin DM mechanism of history tracking.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="176">
+                    <p class="tablebodytext">History_Description</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">BSTR</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="352">
+                    <p class="tablebodytext">When the <em class="italic">History_Tracking</em> property is TRUE, it provides the content for the Description field of the history event.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="noteAlt">A complete set of available properties is located in the appendix <a class="z--jumptemplate" href="API_Interfaces_Reference_Appendix.html" id="h6061" target="_self" title="API Interfaces Reference">API Interfaces Reference</a>.</p>
+        <p class="bodytext">Example 34</p>
+        <p class="bodytext">The following example illustrates how to mark history records for entities and attributes as API events, and how to mark history records with the API History Tracking description using Visual Basic .NET:</p><pre xml:space="preserve">
+Public Sub Main()
+    Sub Main()
+        Dim oApi As New SCAPI.Application
+        Dim oBag As New SCAPI.PropertyBag
+        Dim oPU As SCAPI.PersistenceUnit
+        ' Construct a new logical-physical model. Accept the rest as defaults
+        oBag.Add("Model_Type", "Combined")
+        oPU = oApi.PersistenceUnits.Create(oBag)
+        ' Clear the bag for the future reuse
+        oBag.ClearAll()
+        ' Start a session
+        Dim oSession As SCAPI.Session
+        oSession = oApi.Sessions.Add
+        oSession.Open(oPU)
+        ' Prepare a property bag with the transaction properties
+        oBag.Add("History_Description", "API History Tracking")
+        ' Start a transaction
+        Dim nTransId As Object
+        nTransId = oSession.BeginNamedTransaction("Create Entity and Attribute", oBag)
+        ' Create an entity and an attribute
+        Dim oEntity As SCAPI.ModelObject
+        Dim oAttribute As SCAPI.ModelObject
+        oEntity = oSession.ModelObjects.Add("Entity")
+        oAttribute = oSession.ModelObjects.Collect(oEntity).Add("Attribute")
+        oAttribute.Properties("Name").Value = "Attr A"
+        ' Commit
+        oSession.CommitTransaction(nTransId)
+    End Sub
+</pre>
+        <p class="bodytext">You can select the history options for the model objects for which you want to preserve history, as well as to control the type of events to track. This is done within the History Options tab in the Model Properties dialog.</p>
+        <p class="bodytext">If the check box for API events is cleared (unchecked), then no historic events from the API category are recorded. It is possible to control the status of that check box, as well as the check boxes for model object types from the API, by controlling the value of properties in the model where the status of these check boxes is stored.</p>
+        <p>
+        </p>
+    </body>
+</html>

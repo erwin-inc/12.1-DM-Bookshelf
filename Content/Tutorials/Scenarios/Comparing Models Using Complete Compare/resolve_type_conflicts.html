@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Resolve Type Conflicts</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1439" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T10:32-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1454');highlight('1439')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t1439">Resolve Type Conflicts</h2>
+        <p class="bodytext">Use the Type Resolution Wizard to verify that the type signatures of the compared models are identical. The Type Resolution dialog displays only when the compare scenario includes missing types or type conflicts. For example:</p>
+        <ul class="listbullet">
+            <li class="listbullet">When one of the models in the compare session contains UDP types that are not present in the other model.
+</li>
+            <li class="listbullet">When both models contain identically named UDP types that have different data types.
+</li>
+        </ul>
+        <p class="noteAlt">If you select the option Auto Resolve Missing UDPs under Advanced Options, UDPs are resolved automatically.</p>
+        <p class="bodytext">Depending on the type of conflict, complete one of the following tasks:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Rename or discard the newly created UDP type to resolve name conflicts.
+<p class="listcontinue">If you have identically named UDP types with different data types, each conflicting UDP type is split into two types each with a new name. The new types are copied to both models. For example, suppose that you have a UDP type named User with a data type of Text in one model and List in the other. User is replaced with two UDP types, User_1 and User_2. You can indicate different names in the New Name column as long as the names do not conflict.</p></li>
+            <li class="listbullet">Copy missing properties to resolve property conflicts.
+<p class="listcontinue">If one of the models contains UDP types and the other model does not contain UDPs, copy the missing property types. You can copy in either direction.</p></li>
+        </ul>
+        <p class="bodytext">
+            <img align="bottom" alt="Illustrates how to resolve conflicting UDP properties" border="0" height="213" hspace="0" id="f887" src="..\..\..\Resources\Images\892.png" vspace="0" width="380" />
+        </p>
+        <p class="bodytext"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\399.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

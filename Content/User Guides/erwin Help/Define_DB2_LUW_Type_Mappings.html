@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Db2 LUW Type Mappings</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2913" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');expand2('3073');highlight('2913')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t2913">Define Db2 LUW Type Mappings</h6>
+        <p class="bodytext">Use the Db2 for LUW Type Mapping Editor to define properties for data type mappings in a Db2 LUW physical model.</p>
+        <p class="proceduresubheading">To define Db2 LUW type mappings</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Type Mapping</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for LUW Type Mapping Editor opens.</p></li>
+            <li class="listnumber">Select a type mapping and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a type mapping. Use the <em class="italic">Enter filter text</em> text box to filter a large list of names to locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the type mapping.</p></dd><dt>Local Data Type</dt><dd><p class="normaltermcontinued2">Specifies the data type that is being mapped to a federated database.</p></dd><dt>Character Type</dt><dd><p class="normaltermcontinued2">Specifies whether the character type data is for binary.</p></dd><dt>Remote Data Type</dt><dd><p class="normaltermcontinued2">Specifies the data type that is being mapped from a federated database.</p></dd><dt>Mapping Direction Type</dt><dd><p class="normaltermcontinued2">Specifies the mapping direction. Select a direction type (Remote To Local or Local To Remote) from the drop-down list.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Work with the following options on the <span class="uielement">General</span> tab:
+<dl><dt>Server</dt><dd><p class="normaltermcontinued2">Specifies the server name to associate with the type mapping. Select a server from the drop-down list.</p></dd><dt>Server Type</dt><dd><p class="normaltermcontinued2">Identifies the type of server for the type mapping. </p></dd><dt>Server Version</dt><dd><p class="normaltermcontinued2">Identifies the version of the server for the type mapping. See IBM Db2 reference documentation for acceptable parameters (for example, version, release, and so on.)</p></dd><dt>Wrapper</dt><dd><p class="normaltermcontinued2">Specifies the name of the wrapper that the federated server uses to interact with the defined server type and server version. Select a wrapper from the drop-down list.</p></dd></dl><p class="listcontinue">You can specify the following parameters for precision and scale for remote mapping:</p><dl><dt>Is Remote For Binary Data</dt><dd><p class="normaltermcontinued2">Specifies whether the data-source-data-type is for bit data.</p></dd><dt>Remote Low Precision</dt><dd><p class="normaltermcontinued2">Specifies the minimum value for precision for a remote data type.</p></dd><dt>Remote High Precision</dt><dd><p class="normaltermcontinued2">Specifies the maximum value for precision for a remote data type.</p></dd><dt>Remote Low Scale</dt><dd><p class="normaltermcontinued2">Specifies the minimum value for scale for a remote data type.</p></dd><dt>Remote High Scale</dt><dd><p class="normaltermcontinued2">Specifies the maximum value for scale for a remote data type.</p></dd><dt>Remote Precision To Scale</dt><dd><p class="normaltermcontinued2">Specifies an arithmetical expression to filter precision and scale. Select from the drop-down list.</p></dd></dl></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for LUW Type Mapping Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

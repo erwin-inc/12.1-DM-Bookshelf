@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define SQL Server Stored Procedures</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1830" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('3057');highlight('1830')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t1830">Define SQL Server Stored Procedures</h6>
+        <p class="bodytext">A stored procedure is a pre-compiled collection of SQL statements that are stored under a name and processed as a unit. The SQL Server Stored Procedure Editor simplifies the management of database-level and table-level stored procedures. The Code type determines if the stored procedure is intended to be a single procedure, generated for the entire database, or a set of procedures, generated once for each associated table.</p>
+        <p class="bodytext">The order in which you generate stored procedures to your database is important. The stored procedure code is generated according to the order in the SQL Server Stored Procedures Editor.</p>
+        <p class="proceduresubheading">To define SQL Server stored procedures</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Stored Procedures on the Model menu.
+<p class="listcontinue">The SQL Server Stored Procedure Editor opens.</p></li>
+            <li class="listnumber">Select the stored procedure in the Navigation Grid that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new stored procedure. Use the <em class="italic">Enter filter text</em> box to filter a very large list of stored procedures to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the stored procedure. Change the name of the stored procedure in this field.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema of the database to which the stored procedure belongs. Select the schema from the drop-down list.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies whether the stored procedure type is model-level or table-level. Select the type from the drop-down list.</p></dd><dt>Enabled</dt><dd><p class="normaltermcontinued2">Specifies to enable the stored procedure in the database. </p><p class="noteAlt">The Stored Procedure Browser icon <img align="bottom" alt="Macro/Stored Procedure Browser Icon" border="0" height="7" hspace="0" id="f1345" src="..\..\Resources\Images\1347.gif" vspace="0" width="15" />, which opens the SQL Server Procedure Browser, is only enabled for table-level stored procedures. The SQL Server Procedure Browser lets you manage the tables and views that generate a table-level stored procedure.</p></dd><dt>Attach To New</dt><dd><p class="normaltermcontinued2">Specifies to attach the selected stored procedure to each new table that you create. Clear the check box if you want to manually attach the stored procedure to new tables.</p></dd><dt>Use Alter Syntax</dt><dd><p class="normaltermcontinued2">Generates a combined CREATE and ALTER statement, which, during forward engineering:</p><ul><li>Creates a stored procedure if it does not exist.</li><li>Alters a stored procedure if it exists.</li></ul><p>Applicable SQL Server 2016 onward.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd><dt>Generate As Pre-Script</dt><dd><p class="listnote2">Specifies whether the stored procedure is generated as part of a pre-script. Select an option from the drop-down list.  </p></dd></dl></li>
+            <li class="listnumber">Click the General tab and work with the following options:
+<dl><dt>'Stored Procedure Name' Code Type</dt><dd><p class="normaltermcontinued2">Specifies the code type of the stored procedure and its associated values. Select <em class="italic">one</em> of the following code types from the drop-down list:</p><p class="list3"><strong>SQL</strong></p><p class="list4">Specifies to use SQL code. Work with the following options when you select the SQL code type:</p><p class="list4"><strong>For Replication</strong></p><p class="list4">Specifies the stored procedure is invoked as part of database replication.</p><p class="list4"><strong>Encryption</strong></p><p class="list4">Specifies that the original text of the procedure code is encrypted in the database.</p><p class="list4"><strong>Recompile</strong></p><p class="list4">Specifies that the SQL Server database not store a plan for the stored procedure and that the stored procedure is compiled at runtime.</p><p class="list4"><strong>Startup</strong></p><p class="list4">Specifies to execute the stored procedure upon startup of SQL Server.</p><p class="list3"><strong>Assembly</strong></p><p class="list4">Specifies to use Common Language Runtime code defined in an assembly. Work with the following option when you select the Assembly code type:</p><p class="list4"><strong>Startup</strong></p><p class="list4">Specifies to execute the stored procedure upon startup of SQL Server.</p><p class="list3"><strong>NativeCompilation</strong></p><p class="list4">Specifies to use stored procedures that are compiled to native code that access memory-optimized tables. Native compilation is available SQL Server 2014 onward.</p><p class="list4"><strong>Transaction Isolation Level</strong></p><p class="list4">Specifies the the level of isolation to be followed by the transaction.</p><p class="list4"><strong>Language</strong></p><p class="list4">Specifies the programming language which the procedure or function is written in.</p><p class="list4"><strong>Date First</strong></p><p class="list4">Specifies the first date of a week of natively complied stored procedure atomic block.</p><p class="list4"><strong>Date Format</strong></p><p class="list4">Specifies the date format of natively complied stored procedure atomic block.</p><p class="list4"><strong>Delayed Durability</strong></p><p class="list4">Specifies whether the stored procedure uses delayed durability.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies the permission level in effect when the stored procedure is executed.</p></dd><dt>Select User</dt><dd><p class="normaltermcontinued2">Specifies the user whose permissions are in effect for the execution of the procedure. </p><p class="noteAlt">This option is only available if you have selected the Execute As User option in the Type drop-down list.</p></dd><dt>'Stored Procedure Name' Parameter_Order_List</dt><dd><p class="normaltermcontinued2">Specifies the parameters for the stored procedure and lets you select the order in which the parameters execute and the properties of each one. </p><p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to add a new parameter, or click Delete <img align="bottom" alt="property editor DELETE button" border="0" height="14" hspace="0" id="f1113" src="..\..\Resources\Images\1120.gif" vspace="0" width="12" /> to delete the selected parameter.</p></dd></dl></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Define the code type in the <a class="z--jumptemplate" href="Define_the_Code_to_a_Stored_Procedure_Function_or_Trigger.html" id="h1826" target="_self" title="Define the Code to a Stored Procedure, Function, or Trigger">Code</a> tab
+</li><li class="listbullet2">View expanded code in the <a class="z--jumptemplate" href="expanded_tab_options.html" id="h1827" target="_self" title="Expanded Tab">Expanded</a> tab
+</li><li class="listbullet2">Define stored procedure permissions using the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab
+</li><li class="listbullet2">Specify the order of DDL generation in the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab
+</li><li class="listbullet2">View where the stored procedure is used in the model in the <a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a> tab
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The stored procedure is defined and the SQL Server Stored Procedure Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Define_Code_Type_for_SQL_Svr_Object.html" target="_self">Define the Code Type for an Object in a SQL Server Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="View_Expanded_Code_in_a_Property_Editor.html" target="_self">View Expanded Code in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Change_the_Object_Creation_Order_in_a_Property_Editor.html" target="_self">Change the Object Creation Order in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" target="_self">Define Permissions for an Object in a SQL Server Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_UDP_in_a_SQL_Svr_Phys_Prop_Editor.html" target="_self">Add a UDP in a SQL Server Physical Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="SQL_Server_Browser_Editor.html" target="_self">SQL Server Browser for Functions, Script Templates, and Stored Procedures</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

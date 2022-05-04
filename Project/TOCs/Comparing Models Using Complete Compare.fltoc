@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Comparing Models Using Complete Compare"
+    Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/compare_model_db.html">
+    <TocEntry
+      Title="Select the Left Model or Database"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/select_left_model_database.html" />
+    <TocEntry
+      Title="Select the Right Model or Database"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/select_right_model_database.html" />
+    <TocEntry
+      Title="Resolve Type Conflicts"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/resolve_type_conflicts.html" />
+    <TocEntry
+      Title="Select Objects and Properties to Compare"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/Select_objects_properties_compare.html" />
+    <TocEntry
+      Title="Refine the Criteria for Object Comparison in the Left Model"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/Refine_the_Criteria_for_Object_Comparison_in_the_Left_Model.html" />
+    <TocEntry
+      Title="Refine the Criteria for Object Comparison in the Right Model"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/Refine_the_Criteria_for_Object_Comparison_in_the_Right_Model.html" />
+    <TocEntry
+      Title="Select Advanced Options to Refine the Compare Criteria"
+      Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/Select_Advanced_Options_to_Refine_the_Compare_Criteria.html">
+      <TocEntry
+        Title="Search the Resolve Differences Dialog"
+        Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/search_the_resolve_differences_dialog.html" />
+      <TocEntry
+        Title="How_you_can_generate_Alter_Script_in_Resolve_Differences_Dialog"
+        Link="/Content/Tutorials/Scenarios/Comparing Models Using Complete Compare/How_you_can_generate_Alter_Script_in_Resolve_Differences_Dialog.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

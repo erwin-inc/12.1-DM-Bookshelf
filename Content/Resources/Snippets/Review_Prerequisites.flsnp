@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Before you install the Mart components, help ensure that the minimum system requirements that are outlined in this topic are met.</p>
+        <p class="bodytext">You can use any of the following combinations to install erwin Data Modeler, the Mart database, and the MartServer application:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Install erwin Data Modeler, the Mart database, and the MartServer application on the same computer.</li>
+            <li class="listbullet">Install erwin Data Modeler, the Mart database, and the MartServer application on different computers.
+</li>
+            <li class="listbullet">Install erwin Data Modeler and the Mart database on one computer, and install the MartServer application on a different computer.
+</li>
+            <li class="listbullet">Install erwin Data Modeler on one computer, and install the Mart database and the MartServer application on a different computer.
+</li>
+        </ul>
+        <p class="noteAlt">Ensure that you always install the MartServer application on Windows operating system.</p>
+        <p class="examplesubheading">
+            <strong>System requirements for installing the MartServer application</strong>
+        </p>
+        <p class="bodytext">
+            <strong>Hardware requirements (based on physical hardware performance, not a virtual environment): </strong>
+        </p>
+        <p class="bodytext">Hardware requirements (based on physical hardware performance, not a virtual environment):</p>
+        <ul class="listbullet">
+            <li class="listbullet">2 GHZ or higher dual core processor
+</li>
+            <li class="listbullet">4 GB RAM (8 GB or more for large marts)
+</li>
+            <li class="listbullet">10 GB of disk space or more as required to support your specific mart
+</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">The procedure to install erwin Mart Server for a pluggable database is same as the procedure for a normal database. This topic describes only those fields that need different values for a pluggable database. For more information on how to configure the erwin Mart Server, see the Install erwin Mart Server topic.</p>
+        <p class="bodytext">The following fields on the Configure the erwin Mart Server dialog need different values:</p>
+        <dl>
+            <dt>Server Name</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the name of the database server where you have installed the Mart database. Enter the name of the computer where Oracle 12c is installed and the pluggable database erwin_test is created. </p>
+            </dd>
+            <dt>Database Name</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the name of the pluggable Mart database. For example, erwin_test.</p>
+            </dd>
+            <dt>User Name</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the user name to connect to the Mart database. Enter mmadmin or any other user account that you have created when you ran the script. </p>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the password to connect to the Mart database. Enter mmadmin or any other password that you have created when you ran the script. </p>
+            </dd>
+        </dl>
+    </body>
+</html>

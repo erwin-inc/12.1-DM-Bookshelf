@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">For complex models with many nodes in the diagram, the diagram menu  provides hide and unhide options. These options enable you to selectively view or hide Entity, View, and Materialized View nodes from the complex and large diagram and focus only on necessary nodes. These options are also accessible via right-clicking the node.</p>
+        <p class="bodytext">
+            <img src="../Images/Hide-Unhide-Feature-Tour.png" style="width: 410px;height: 257px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+        </p>
+        <p class="notealt">For Neo4j database, you can hide or unhide nodes only in the orthogonal layout. Also, you cannot hide the Supertype or Subtype Entity and isolated nodes.​</p>
+        <p class="proceduresubheading">To hide or unhide nodes</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the diagram in which you want to hide or unhide nodes.
+</li>
+            <li class="listnumber">Select one or multiple nodes.</li>
+            <li class="listnumber">On the diagram menu, work with the following available options:<dl><dt>Hide</dt><dd><p class="normaltermcontinued2">Hides a single or multiple selected nodes in the diagram.</p></dd><dt><p>Hide Neighborhood</p></dt><dd><p class="normaltermcontinued2">Hides a single selected node and all its neighboring nodes in the diagram.​</p></dd><dt>Unhide</dt><dd><p class="normaltermcontinued2">Unhides the neighboring hidden nodes of a single selected node with the visual hiding cue (<img src="../Images/Hide-Clue.png" style="width: 21px;height: 19px;" />) in the diagram.​ This option resets the selected objects to their default sizes.</p></dd><dt><p>Unhide All</p></dt><dd><p class="normaltermcontinued2">Unhides all the hidden nodes that the single selected node can reach in the diagram or unhide all the hidden nodes when no node is selected in the diagram.​​</p></dd></dl><p class="noteAlt">You can also access these options by right-clicking the nodes.</p></li>
+            <li class="listnumber">Click Save on the File menu.
+<p class="listcontinue">Your diagram is saved and can be retained whenever you open a model.</p></li>
+        </ol>
+    </body>
+</html>

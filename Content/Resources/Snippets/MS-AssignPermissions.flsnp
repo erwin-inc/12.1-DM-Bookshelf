@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Go to <b>Application Menu</b> &gt; <b>Permissions</b>.<br />The Permissions page appears.<br /><img src="../Images/Permissions.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;width: 544px;height: 209px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">In the Select Catalog pane, select the libraries that you want the user to access.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext"> In the Assign User/Group to Profile pane,  click a profile.</p>
+            </li>
+            <li class="listnumber">
+                <p>Click the <img src="../Images/Icon-Mart-DropDown.png" /> to view a list of users or groups.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select the required users or groups. You can verify your permission updates before submitting them. Click <b>Review Changes</b>.<br />The Review Uncommitted Permission Changes page appears.<br /><img src="../Images/Review-Changes.png" style="width: 543px;height: 272px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Submit</b>.<br />The selected users or groups acquire the profile's permissions.</p>
+            </li>
+        </ol>
+    </body>
+</html>

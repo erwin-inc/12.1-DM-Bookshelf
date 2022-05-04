@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Unification</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3652" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T20:00-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3633');highlight('3652')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t3652">Unification</h2>
+        <p class="bodytext">In the following example, the �employee-id� attribute migrates to the CHILD entity through two relationships: one with EMPLOYEE and the other with SPOUSE. You might expect that the foreign key attribute would appear twice in the CHILD entity as a result. Since the attribute �employee-id� was already present in the key area of CHILD, it is not repeated in the entity even though it is part of the key of SPOUSE.</p>
+        <p class="picture">
+            <img align="bottom" alt="" border="0" height="212" hspace="0" id="f3653" src="../../Resources/Images/3653.png" vspace="0" width="346" />
+        </p>
+        <p class="bodytext">This combining of two identical foreign key attributes migrated from the same base attribute through two or more relationships is called <em class="italic">unification</em>. In the example, �employee-id�was part of the primary key of CHILD (contributed by the �has� relationship from EMPLOYEE) and was also a non-key attribute of CHILD (contributed by the �has� relationship from SPOUSE). Since both foreign key attributes are the identifiers of the same EMPLOYEE, it is better that the attribute appears only once. Unification is implemented automatically when this situation occurs. </p>
+        <p class="bodytext">The rules used to implement unification include:</p>
+        <ul class="listbullet">
+            <li class="listbullet">If the same foreign key is contributed to an entity more than once, without the assignment of rolenames, then all occurrences unify.
+</li>
+            <li class="listbullet">If the occurrences of the foreign key are given different rolenames, then unification does not occur.
+</li>
+            <li class="listbullet">If different foreign keys are assigned the same rolename, and these foreign keys are rolenamed back to the same base attribute, then unification occurs. If they are not rolenamed back to the same base attribute, there is an error in the diagram.
+</li>
+            <li class="listbullet">If any of the foreign keys that unify are part of the primary key of the entity, then the unified attribute remains as part of the primary key.
+</li>
+            <li class="listbullet">If none of the foreign keys that unify are part of the primary key, then the unified attribute is not part of the primary key.
+</li>
+        </ul>
+        <p class="bodytext">Accordingly, you can override the unification of foreign keys, when necessary, by assigning rolenames. If you want the same foreign key to appear two or more times in a child entity, you can add a rolename to each foreign key attribute.</p>
+        <p>
+        </p>
+    </body>
+</html>

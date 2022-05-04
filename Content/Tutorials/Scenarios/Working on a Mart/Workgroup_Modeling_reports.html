@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Workgroup Modeling Reports</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="750" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T15:08-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('756');highlight('750')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t750">Workgroup Modeling Reports</h1>
+        <p class="bodytext">Modelers typically work from a common set of libraries and models, and share information about these objects with other users. One way to share information is by using reports, which details the information and definitions for a model. You can generate predefined reports to view the contents of specific libraries and models, view the changes and conflicts for specific models, and view the security structure for the database. </p>
+        <p class="bodytext">You can generate Mart reports using either the Report Designer, the Query Tool, or a third-party reporting tool.</p>
+        <dl>
+            <dt>Report Designer </dt>
+            <dd>
+                <p class="normaltermcontinued">Report Designer lets you create a wide variety of mart administrative reports and cross-model reports. You can create report templates for frequently used reports and you can export reports to the HTML, CSV, and PDF formats. You can create report solutions and include multiple report templates. For more information about the Report Designer, see the Online Help.</p>
+            </dd>
+            <dt>Reporting Tool</dt>
+            <dd>
+                <p class="normaltermcontinued">You can create custom reports using a third-party reporting tool. For more information about generating custom reports, see the Creating Custom Mart Reports using a Reporting Tool guide.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">erwin Data Modeler Workgroup Edition includes the following predefined reports:</p>
+        <dl>
+            <dt>Cross Model Reports</dt>
+        </dl>
+        <p class="bodytext">The following table describes the cross-model reports that you can run against Mart:</p>
+        <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;" width="638">
+            <col style="width: 175px;">
+            </col>
+            <col>
+            </col>
+            <tr align="left" valign="top">
+                <th style="border: 1px solid #010101;">
+                    <p class="tableheading">Report Name</p>
+                </th>
+                <th style="border: 1px solid #010101;" width="355">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Attributes/Columns</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about attributes/columns of the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Design Layer Lineage</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the model sources of the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Domains</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about Domains and Datatypes  of Attributes of the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Entities/Tables</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the entities/tables of the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Naming Standard</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides a list of mart models that have active naming standard objects</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Relationships</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides relationship information, such as parent and child tables of mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Subject Areas</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the subject areas of the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">User Defined Properties</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the UDPs present in the mart models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Views</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the views present in the mart models</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">
+		The following table describes the filters available for the above reports:</p>
+        <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;" width="638">
+            <col style="width: 175px;">
+            </col>
+            <col>
+            </col>
+            <col>
+            </col>
+            <tr align="left" valign="top">
+                <th style="border: 1px solid #010101;">
+                    <p class="tableheading">Report Name</p>
+                </th>
+                <th style="border: 1px solid #010101;" width="355">
+                    <p class="tableheading">Filter By</p>
+                </th>
+                <th style="border: 1px solid #010101;">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="6">
+                    <p class="tablebodytext">Attributes/Columns</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Within Entity</p>
+                </td>
+                <td>
+                    <p class="tablebodytext">Filters attributes that are only part of entities</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Without Comment</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters columns without Comments</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Without Definition</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters attributes without Definition</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Without Domains</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters attributes whose domain is a default domain</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Attribute Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the attribute whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Design Layer Lineage</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="2">
+                    <p class="tablebodytext">Domains</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Search Domain Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the domain whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="4">
+                    <p class="tablebodytext">Entities/Tables</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Without Comment</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters columns without Comments</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Only The Attributes Without Definition</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters attributes without Definition</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Attribute Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the attribute whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Naming Standard</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">NSM_Option-Show Only Active NSM</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters NSM Objects that are Active in Mart Models</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="3">
+                    <p class="tablebodytext">Relationships</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Exclude Relationship On View</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Relationship Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters Relationship Names that are present in the Mart and whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="2">
+                    <p class="tablebodytext">Subject Areas</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Search Subject Area Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the subject area whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="2">
+                    <p class="tablebodytext">User Defined Properties</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Search UDP Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the UDP whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="2">
+                    <p class="tablebodytext">Views</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Search View Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the view whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Specify Model Name at Run Time</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the model whose name is specified at run time</p>
+                </td>
+            </tr>
+        </table>
+        <p class="noteAlt">The filters available  are mutually exclusive. Therefore, you can select only one of them at a time.</p>
+        <dl>
+            <dt>Mart Administrative Reports</dt>
+        </dl>
+        <p class="bodytext">The following table describes the mart administrative reports that can be run against models in the mart:</p>
+        <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;" width="638">
+            <tr align="left" valign="top">
+                <th style="border: 1px solid #010101;" width="283">
+                    <p class="tableheading">Report Name</p>
+                </th>
+                <th style="border: 1px solid #010101;" width="355">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Libraries</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about libraries present in the mart</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Locks</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about locks present in the mart, such as the models and catalogs that are locked</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Models</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the models saved in the mart</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Profiles</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the profiles present in the mart</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Sessions</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the mart user sessions, such as the session status</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">User Logs</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the actions performed by mart users</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">User Permissions</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about the permissions present for mart users</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="283">
+                    <p class="tablebodytext">Users</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Provides information about mart users, such as the user type</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The following table describes the filters available for the above reports:</p>
+        <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;" width="638">
+            <col style="width: 175px;">
+            </col>
+            <col>
+            </col>
+            <col>
+            </col>
+            <tr align="left" valign="top">
+                <th style="border: 1px solid #010101;">
+                    <p class="tableheading">Report Name</p>
+                </th>
+                <th style="border: 1px solid #010101;" width="355">
+                    <p class="tableheading">Filter By</p>
+                </th>
+                <th style="border: 1px solid #010101;">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Libraries</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">No Filter</p>
+                </td>
+                <td>
+                    <p class="tablebodytext">&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Locks</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">No Filter</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Models</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">No Filter</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Profiles</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">No Filter</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="2">
+                    <p class="tablebodytext">Sessions</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Active Session</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters active user sessions</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Current User</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters all information of the user that is logged on currently or the use that runs the report</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;" rowspan="11">
+                    <p class="tablebodytext">User Logs</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">User-Exclude Deleted Users</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters log result of users, excluding the deleted users</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">User-Specify Users at Runtime</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters the user whose name is specified at run time</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Authentication</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters log-in, log-out, and authentication failure logs</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Catalog</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters actions performed on the Catalog Manager, such as open and close, initial save, incremental save, create catalog, and delete catalog</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Log</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters users that cleared logs using the Log Management pane of the erwin Mart Administrator</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Misc</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of miscellaneous actions that are not covered under any category. For example, report execution</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Permission</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of actions performed using the Permissions pane of erwin Mart Administrator</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- Profile</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of actions performed using the Profile Management pane of the erwin Mart Adminsitrator</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Category- User</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of actions performed using the User Management pane of the erwin Mart Administrator</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Type- Error</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of actions that are registered as errors</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Session_Log-Filter By Type- Info</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters logs of actions that are registered as information. This is the default level for all actions except for actions that result into errors.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">User Permissions</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Exclude Delete Users</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters permission information of users, excluding deleted users</p>
+                </td>
+            </tr>
+            <tr align="left" valign="center">
+                <td style="border: 1px solid #010101;text-align: center;">
+                    <p class="tablebodytext">Users</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="355">
+                    <p class="tablebodytext">Exclude Delete Users</p>
+                </td>
+                <td style="border: 1px solid #010101;">
+                    <p class="tablebodytext">Filters information of users, excluding deleted users</p>
+                </td>
+            </tr>
+        </table>
+        <p class="noteAlt">The filters available  are mutually exclusive. Therefore, you can select only one of them at a time.</p>
+        <dl>
+            <dt>Bulk Editor</dt>
+        </dl>
+        <p class="bodytext">The Bulk Editor provides the selection, validation, and maintenance of model object metadata, permits reusable customization (option sets), and realtime access to model changes. Export results or selected rows to a CSV file. You can use the Bulk Editor to edit a small set of properties over a large number of objects. Changes and updates are immediately committed as you make them, field by field.</p>
+        <p class="bodytext">For more information, refer to the <a href="../../../User Guides/erwin Help/Using_the_Bulk_Editor.html" target="_blank">Using the Bulk Editor</a> topic.
+        </p>
+        <dl>
+            <dt>Query Tool</dt>
+        </dl>
+        <p class="bodytext">The Query Tool is used to query the repository through executing SQL SELECT statements against a local model or a model in the mart. You can use the Query Tool to create your own .QRY report file. Save your option set locally to the model or as an XML file. Export your results to a CSV file. You can execute a query against the objects and properties in the model, the metadata defining those objects and properties, and the action log that records the changes that are made to your model during the modeling session. You can create new queries or paste text from another source (such as a .SQL file) into a query. Although the Query Tool provides a built-in query interface in erwin Data Modeler, you can also use any third-party reporting tool that has ODBC capability to query erwin Data Modeler modeling data.</p>
+        <p class="bodytext">For more information, refer to the <a href="../../../User Guides/erwin Help/The_Query_Tool.html" target="_blank">Query Tool</a> topic.</p>
+    </body>
+</html>

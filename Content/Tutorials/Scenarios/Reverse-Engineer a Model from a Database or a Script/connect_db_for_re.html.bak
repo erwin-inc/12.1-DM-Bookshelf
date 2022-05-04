@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <title>Connect to a Database and Reverse Engineer</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="601" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T13:42-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="..\..\..\Resources\mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('597');highlight('601')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t601">Connect to a Database and Reverse Engineer</h2>
+        <p class="bodytext">If you are reverse engineering from a database, you must connect to the database to complete the process. The parameters on the Database Connection dialog are displayed based on the database you select.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Complete the following fields on the Database Connection dialog: 
+<dl><dt>Database</dt><dd><p class="normaltermcontinued2">Specifies the database that you want to connect to. </p></dd><dt>Authentication</dt><dd><p class="normaltermcontinued2">Specifies the type of authentication to use to connect. Select one of the following options:</p><p class="list3"><strong>Windows Authentication</strong></p><p class="list4">Uses Windows user names and passwords to access the database. The user name you provide here must be the dbo of the database.</p><p class="noteAlt">This option is available only for Oracle and SQL Server.</p><p class="list3"><strong>Database Authentication</strong></p><p class="normaltermcontinued3">Specifies the User Name and Password for the connection.</p></dd></dl></li>
+            <li class="listnumber">Complete the following fields, as appropriate for the selected database:
+<dl><dt><strong>SQL Server</strong></dt><dd><dl><dt><strong>Connection Type</strong></dt><dd><p class="normaltermcontinued3">Specifies the type of connection you want to use. Select <em class="italic">Use Native Connection</em> to connect using the API provided by the SQL Server Native client software. Select <em class="italic">Use ODBC Data</em> to connect using the ODBC data source that you have defined.</p></dd><dt><strong>Server</strong></dt><dd><p class="normaltermcontinued3">Specifies the name of the server where the database is installed.</p></dd><dt><strong>Database</strong></dt><dd><p class="normaltermcontinued3">Specifies the name of the database that you want to connect to.</p></dd><dt>Use Encrypted Connection</dt><dd></dd></dl><p class="normaltermcontinued2">Indicates that the SQL Server connection that is being established is encrypted to guarantee privacy.</p></dd><dt><strong>SQL Azure</strong></dt><dd><dl><dt><strong>Connection Type</strong></dt><dd><p class="normaltermcontinued3">Specifies the type of connection you want to use. Select <em class="italic">Use Native Connection</em> to connect using the API provided by the SQL Server Native client software. Select <em class="italic">Use ODBC Data</em> to connect using the ODBC data source you have defined.</p></dd><dt><strong>Server</strong></dt><dd><p class="normaltermcontinued3">Specifies the name of the server where the database is installed.</p></dd></dl><p class="noteAlt">You may need to append the SQL Azure server name to the login in the connection string using the <em class="italic">&lt;login&gt;@&lt;server&gt;</em> notation. If you do, separate the login and the SQL Azure server name with the <em class="italic">at</em> (<em class="italic">@)</em> symbol. For more information, see Connecting to SQL Azure.</p><dl><dt><strong>Database</strong></dt><dd></dd></dl><p class="normaltermcontinued2">Specifies the name of the database that you want to connect to.</p></dd><dt>SAP ASE<strong> and SAP IQ</strong></dt><dd><dl><dt><strong>Server</strong></dt><dd><p class="normaltermcontinued3">Specifies the name of the server where the database is installed.</p></dd><dt><strong>Database</strong></dt><dd></dd></dl><p class="normaltermcontinued2">Specifies the name of the database that you want to connect to.</p></dd><dt><strong>Oracle</strong></dt><dd><dl><dt><strong>Connection String</strong></dt><dd><p class="normaltermcontinued3">Specifies the connection string (<em class="italic">TNSNames</em> entry).</p></dd><dt><strong>Connect as SYSDBA</strong></dt><dd></dd></dl><p class="normaltermcontinued2">Specifies that you want to connect to Oracle as SYSDBA. Select the check box.</p></dd><dt><strong>ODBC/Generic, Db2 LUW, Informix, Db2 for i, MySQL, Progress, SAS, and Teradata</strong></dt><dd><dl><dt><strong>ODBC Data Source</strong></dt><dd><p class="normaltermcontinued3">Specifies the data source to which you want to connect. The drop-down list displays the data sources that are defined on your computer.</p></dd><dt><strong>Invoke ODBC Administrator</strong></dt><dd></dd></dl><p class="normaltermcontinued2">Specifies whether you want to start the ODBC Administrator software and display the Select Data Source dialog. You can then select a previously defined data source, or create a data source.</p></dd><dt><strong>Db2/zOS, Db2 LUW</strong></dt><dd><dl><dt><strong>Alternate Catalog</strong></dt><dd></dd></dl><p class="normaltermcontinued2">Specifies the name of the alternate catalog that you want to use for the connection. If you leave this value empty, the application connects to the system catalog. If necessary, consider connecting to the alternate catalog for faster reverse engineering.</p></dd></dl></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

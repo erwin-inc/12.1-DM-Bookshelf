@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>XML Schema</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8070" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4109');expand2('4140');highlight('8070')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t8070">XML Schema</h3>
+        <p class="bodytext">An XML schema is a document or a set of documents that defines the structure and legal elements of the XML file. XML schemas can be used to ensure that an XML file is syntactically correct and conforms to the defined schema. This product provides such a schema and uses the schema to validate XML files when they are opened in the tool.</p>
+        <p class="bodytext">The XML schema in this product is comprised of five files that are stored in the \Doc directory after installation. The following list describes these files:</p>
+        <dl>
+            <dt>erwinSchema.xsd</dt>
+            <dd>
+                <p class="normaltermcontinued">This is the top level schema. It imports from UDP.xsd, EMX.xsd, and EM2.xsd. Its namespace is http://www.erwin.com/dm.</p>
+            </dd>
+            <dt>UDP.xsd</dt>
+            <dd>
+                <p class="normaltermcontinued">Contains the schema for UDP definitions. Its namespace is http://www.erwin.com/dm/metadata.</p>
+            </dd>
+            <dt>EMX.xsd</dt>
+            <dd>
+                <p class="normaltermcontinued">Contains the schema for object hierarchy (EMX). It includes EMXProps.xsd. Its namespace is http://www.erwin.com/dm/data.</p>
+            </dd>
+            <dt>EM2.xsd</dt>
+            <dd>
+                <p class="normaltermcontinued">Contains the schema for non-transactional data (EM2). Its namespace is http://www.erwin.com/dm/EM2data.</p>
+            </dd>
+            <dt>EMXProps.xsd</dt>
+            <dd>
+                <p class="normaltermcontinued">Contains the schema for object properties and UDP instances. Its namespace is http://www.erwin.com/dm/data.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">The schema files under the \Doc directory are not database specific and represent the entire metamodel. The schema contains all possible objects and properties for all valid database targets. If you need a database specific schema, those files are located in the Doc\DBMS_schemas directory. Within the Doc\DBMS_schemas directory, there is a folder for each target database that this product supports. The database specific schema files are stored in that folder and only consist of objects and properties that are valid for the given database target.</p>
+        <p class="noteAlt">The XML schema located in the \Doc directory is always used when an XML file is being validated, not a database specific schema. The database specific schemas are provided for documentation purposes and to assist third party tool integrators to determine the valid objects and properties for a given database target. An external XML validation tool can be used to validate an XML file against a database specific schema.</p>
+        <p class="bodytext">When you save a model in XML format, the XML output is structured according to the markup declarations defined in the r7 XML Schema. It is not necessary to understand every aspect of the r7 XML markup, but understanding some aspects of the XML Schema will enable you to use the XML output more easily. For example, you can quickly review the children of the Model element in your XML output to identify the model type, target server, and DBMS version.</p>
+        <p class="bodytext">The following excerpt from the r7 XML Schema defines the element Model as well as its child element ModelEnvProps:</p>
+        <p class="bodytext">- &lt;xs:element name="Model"&gt;</p>
+        <p class="bodytext">  - &lt;xs:complexType&gt;</p>
+        <p class="bodytext">    - &lt;xs:all&gt;</p>
+        <p class="bodytext">      - &lt;xs:element minOccurs="1" maxOccurs="1" name="ModelEnvProps"&gt;</p>
+        <p class="bodytext">        - &lt;xs:complexType&gt;</p>
+        <p class="bodytext">          - &lt;xs:all&gt;</p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Locator" type="xs:string" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Disposition" type="xs:string" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Persistence_Unit_Id" type="xs:string" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Model_Id" type="xs:string" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Model_Type" type="xs:nonNegativeInteger" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Active_Model" type="xs:integer" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Hidden_Model" type="xs:integer" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Storage_Format" type="xs:integer" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Target_Server" type="xs:integer" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Target_Server_Version" type="xs:integer" /&gt; </p>
+        <p class="bodytext">            &lt;xs:element minOccurs="0" maxOccurs="1" name="Target_Server_Minor_Version" type="xs:integer" /&gt; </p>
+        <p class="bodytext">          &lt;/xs:all&gt;</p>
+        <p class="bodytext">        &lt;/xs:complexType&gt;</p>
+        <p class="bodytext">    &lt;/xs:element&gt;</p>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext">Each attribute can receive a value in the tagged data. For example, the following XML output is generated for a Physical model with Oracle assigned as the Target DBMS:</p>
+        <p class="bodytext">&lt;EMX:Model id="{27E38352-ABCC-4793-AC53-DD79F8FA490E}+00000000" name="Model_1" xmlns="</p>
+        <p class="bodytext">        http://www.erwin.com/erwin/data"&gt;</p>
+        <p class="bodytext">          &lt;ModelEnvProps&gt;</p>
+        <p class="bodytext">          &lt;Locator&gt;erwin://C:\Oracle.xml&lt;/Locator&gt; </p>
+        <p class="bodytext">          &lt;Disposition&gt;Read Only = Yes;&lt;/Disposition&gt; </p>
+        <p class="bodytext">          &lt;Persistence_Unit_Id&gt;{E74F3A15-3FC9-4581-8B4E-6C57AF948DAA}+00000000&lt;/Persistence_Unit_Id&gt; </p>
+        <p class="bodytext">          &lt;Model_Type&gt;3&lt;/Model_Type&gt; </p>
+        <p class="bodytext">          &lt;Target_Server&gt;1075858979&lt;/Target_Server&gt; </p>
+        <p class="bodytext">          &lt;Target_Server_Version&gt;10&lt;/Target_Server_Version&gt; </p>
+        <p class="bodytext">          &lt;Target_Server_Minor_Version&gt;0&lt;/Target_Server_Minor_Version&gt; </p>
+        <p class="bodytext">          &lt;Active_Model&gt;-1&lt;/Active_Model&gt; </p>
+        <p class="bodytext">          &lt;Hidden_Model&gt;0&lt;/Hidden_Model&gt; </p>
+        <p class="bodytext">          &lt;Storage_Format&gt;4012&lt;/Storage_Format&gt; </p>
+        <p class="bodytext">          &lt;/ModelEnvProps&gt;</p>
+        <p class="bodytext">Unique numeric values are used for each attribute, as illustrated in the following summary tables.</p>
+        <p class="beforetable">Model_Type table</p>
+        <p class="beforetable">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="456">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Value</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="288">
+                    <p class="tableheading">Model Type</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="288">
+                    <p class="tablebodytext">logical model</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="288">
+                    <p class="tablebodytext">physical model</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="288">
+                    <p class="tablebodytext">logical/physical model</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">
+        </p>
+        <p class="beforetable">Target_Server table</p>
+        <p class="beforetable">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Database</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Target_Server Value</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tableheading">Target_Server Version Value</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tableheading">Target_Server_Minor_Version Value</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">ArangoDB 3.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859217</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Avro 1.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859205</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Amazon&#160;Keyspaces</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859223</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Azure Synapse</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859211</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">10</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Cassandra</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859199</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Couchbase 6.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859202</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">6</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Couchbase 7.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859202</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">7</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Databricks</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859232</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 LUW 9.5</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858977</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">5</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 for LUW 9.7/10.x </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858977</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">7</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 for LUW 11.1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858977</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">11</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 z/OS 8.1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858978</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">8</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 z/OS 9.1/10/11</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075858978</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 for z/OS 12</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075858978</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">12</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">DynamoDB</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859229</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">19</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Google BigQuery</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">1075859226</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Hive 2.1.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859187</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Informix 10.x/11.x/12.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859006</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Db2 for i 5.x/6.x/7.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859019</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">JSON 1.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859208</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">MariaDB 10.4.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859190</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">10</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">MongoDB 4.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859196</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">MySQL 8.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859129</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">8</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Neo4j 4.2.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859214</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Neo4j 4.3.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859214</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">3</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td class="tablebodytext" style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Netezza</p>
+                </td>
+                <td class="tablebodytext" style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075918978</p>
+                </td>
+                <td class="tablebodytext" style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">7</p>
+                </td>
+                <td class="tablebodytext" style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">ODBC/Generic 2.0</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859009</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">ODBC/Generic 3.0</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859009</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Oracle 12c r2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858979</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">12</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Oracle 18c</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858979</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">18</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Oracle 19c</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858979</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">19</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Oracle 21c</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075858979</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">21</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Parquet 2.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859220</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">PostgreSQL 9.6</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075918977</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">6</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Progress 9.x/10.x/11.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859010</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">9</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Redshift</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075918979</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">SAS</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859013</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">SQL Server 2012</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859016</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">11</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">SQL Server 2014</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859016</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="144">
+                    <p class="tablebodytext">12</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">SQL Server 2016/2017</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859016</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="144">
+                    <p class="tablebodytext">13</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">SQL Server 2019</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859016</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">15</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">SQL Azure</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859016</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">16</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">SAP ASE 15.x/16</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859017</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">12</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">5</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">SAP IQ 15.x/16</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859130</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">15</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Teradata 14.10</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859018</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">14</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">10</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Snowflake</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">1075859193</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">10</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Teradata 15.x/16.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" valign="middle" width="168">
+                    <p class="tablebodytext">1075859018</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">15</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">0</p>
+                </td>
+            </tr>
+        </table>
+        <p class="important"><strong>Caution:</strong> You should be careful not to modify any of the values for the Target_Server, Target_Server_Version, or Target_Server_Minor_Version tags. If you do so, this product may be unable to open the file again.</p>
+        <p class="relatedheading">More information:</p>
+        <p class="relateditem"><a href="XML_Format.html" target="_self">XML Format</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Option Set</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the option set template for reverse engineering</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="bodytext"><b>Open</b>: Use this  option to open a saved XML option set file. </p>
+                    <p class="bodytext"><b>Save</b>: Use this option to save the configured option set.</p>
+                    <p class="bodytext"><b>Save As</b>: Use this option to save an option set either in the model or in the XML format at some external location.</p>
+                    <p class="bodytext"><b>Delete</b>: Use this option to delete an option set. </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&lt;Option Set Name&gt;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the objects to be reverse engineered according to the selected option set. You can edit this list.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+        </table>
+    </body>
+</html>

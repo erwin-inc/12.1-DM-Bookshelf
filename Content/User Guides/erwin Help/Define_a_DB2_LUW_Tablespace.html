@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Db2 LUW Tablespace</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2868" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');highlight('2868')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2868">Define a Db2 LUW Tablespace</h5>
+        <p class="bodytext">Use the Db2 for LUW Tablespace Editor to specify parameters for a Db2 LUW tablespace.</p>
+        <p class="proceduresubheading">To define a Db2 LUW tablespace</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Tablespace</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for LUW Tablespace Editor opens.</p></li>
+            <li class="listnumber">Select a tablespace and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a tablespace. Use the <em class="italic">Enter filter text</em> text box to filter a large list of names to locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the tablespace.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies the tablespace type. Make a selection from the drop-down list: Large, Regular, System Temporary, or User Temporary.</p></dd><dt>Managed By Type</dt><dd><p class="normaltermcontinued2">Specifies how the tablespace is managed. Select from the drop-down list; valid values are System, Database, and Automatic Storage.</p></dd><dt>Database Partition Group</dt><dd><p class="normaltermcontinued2">Specifies the database partition group associated with the selected tablespace. Make a selection from the drop-down list.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Complete the following fields on the <span class="uielement">General</span> tab:
+<dl><dt>Page Size</dt><dd><p class="normaltermcontinued2">Specifies the size of pages used for the tablespace. Select a page size from the drop-down list: 4k, 8k, 16k, or 32k.</p></dd><dt>Extent Size</dt><dd><p class="normaltermcontinued2">Specifies the number of Page Size pages that are written to a container before skipping to the next container. Enter an integer in the text box.</p></dd><dt>Prefetch Size</dt><dd><p class="normaltermcontinued2">Specifies whether or not the data needed by a query is read before it is referenced, so that the query does not wait for I/O to be performed. Enter an integer in the text box.</p></dd><dt>Bufferpool</dt><dd><p class="normaltermcontinued2">Specifies the bufferpool used for tables in the selected tablespace. Select a bufferpool from the drop-down list.</p></dd><dt>Use File System Caching</dt><dd><p class="normaltermcontinued2">Specifies whether or not I/O operations are cached at the file system level.</p></dd><dt>Recover Dropped Table </dt><dd><p class="normaltermcontinued2">Specifies whether dropped tables can be recovered using the RECOVER DROPPED TABLE option of the ROLLFORWARD DATABASE command.</p></dd><dt>Overhead</dt><dd><p class="normaltermcontinued2">Specifies the I/O controller overhead and disk seek and latency time. This value is used to determine the cost of I/O during query optimization. Enter an integer in the text box.</p></dd><dt>Transfer Rate</dt><dd><p class="normaltermcontinued2">Specifies the transfer rate in milliseconds (that is, the time allocated to read one page into memory). Enter an integer in the text box.</p></dd><dt>Data Tag</dt><dd><p>Specifies a tag for the data in the table space.</p></dd><dt>Storage Group Name</dt><dd><p class="normaltermcontinued2">Specifies the storage group where the tablespace data should be stored.</p></dd><dt>Use Auto-Resize</dt><dd><p class="normaltermcontinued2">Specifies whether or not you want to use the auto-resize capability of a DMS tablespace or an automatic storage tablespace.</p></dd><dt>Initial Size</dt><dd><p class="normaltermcontinued2">Specifies the initial size of an automatic storage tablespace, for each database partition. </p></dd><dt>Increase Size By</dt><dd><p class="normaltermcontinued2">Specifies how you want to increase tablespace, when an auto-resize tablespace is full and Db2 receives a request for space. Select from the drop-down list; valid values are Value and Percentage.</p></dd><dt>Increase Size</dt><dd><p class="normaltermcontinued2">Specifies the amount of increase of the tablespace, per database partition.</p></dd><dt>Max Size</dt><dd><p class="normaltermcontinued2">Specifies the maximum size to which a tablespace that is enabled for auto-resize can automatically be increased.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Tablespace Container</span> tab and work with tablespace the following options:
+<dl><dt>Tablespace Container Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the tablespace container.</p></dd><dt>Database Partition</dt><dd><p class="normaltermcontinued2">Specifies the database partition name associated with the tablespace container. Select a partition from the drop-down list.</p></dd><dt>Container Type</dt><dd><p class="normaltermcontinued2">Specifies the type of the container. The container can be file or device.</p></dd><dt>Stripe Set</dt><dd><p class="normaltermcontinued2">Specifies the stripe set for the container.</p></dd><dt>Total Pages</dt><dd><p class="normaltermcontinued2">Specifies the total pages for the container.</p></dd></dl></li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab and grant permissions to users or roles on the selected tablespace.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for LUW Tablespace Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More Information:</p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Add In Manager"
+    Link="/Content/User Guides/Add-In Manager Online Help/Add_In_Manager.html">
+    <TocEntry
+      Title="Define an Add-In Software Application"
+      Link="/Content/User Guides/Add-In Manager Online Help/define_an_add_in_software_app.html" />
+    <TocEntry
+      Title="Change an Add-In Software Application Menu Item"
+      Link="/Content/User Guides/Add-In Manager Online Help/change_an_add_in_software_app.html" />
+    <TocEntry
+      Title="Delete an Add-In Software Application Menu Item"
+      Link="/Content/User Guides/Add-In Manager Online Help/delete_an_add_in_software_app.html" />
+  </TocEntry>
+</CatapultToc>

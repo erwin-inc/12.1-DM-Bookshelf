@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Name Mapping Conventions Using Macros</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4614" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4594');highlight('4614')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4614">Name Mapping Conventions Using Macros</h3>
+        <p class="bodytext">You can establish name mapping rules for your logical/physical or logical model. (This option does not apply to physical-only models). The preferences you set are used in a number of ways. For example:</p>
+        <ul class="listbullet">
+            <li class="listbullet">In a logical/physical model, to create the physical names of objects in relation to the logical names.
+</li>
+            <li class="listbullet">To set the defaults used when a physical model is derived from the logical level of the current model. For more information, see <a class="z--jumptemplate" href="set_prefs_derived_special_chars.html" id="h4615" target="_self" title="Set Preferences for Special Characters in Derived Physical Model Object Names">Set Preferences for Special Characters in Derived Physical Model Object Names</a>.
+</li>
+            <li class="listbullet">To set the defaults used when the current model is added as a model source to a physical model.
+</li>
+        </ul>
+        <p class="bodytext">By default, logical names are converted to physical names using the following conventions:</p>
+        <dl>
+            <dt>For attributes:</dt>
+            <dd>
+            </dd>
+        </dl>
+        <p class="bodytext">&lt;entity name&gt;+&lt;logical domain name&gt; (both in lower case)</p>
+        <p class="bodytext">Example:</p>
+        <p class="bodytext">movie rental record</p>
+        <dl>
+            <dt>For columns:</dt>
+            <dd>
+            </dd>
+        </dl>
+        <p class="bodytext">&lt;attribute name translated into a column name with the underscore character used between individual words&gt;.</p>
+        <p class="bodytext">Example:</p>
+        <p class="bodytext">movie_rental_record</p>
+        <p class="bodytext">Some of the commonly used macros for name mapping include:</p>
+        <ul class="listbullet">
+            <li class="listbullet">%EntityName
+</li>
+            <li class="listbullet">%AttDomain
+</li>
+            <li class="listbullet">%AttName
+</li>
+            <li class="listbullet">%KeyType
+</li>
+            <li class="listbullet">%TableName
+</li>
+            <li class="listbullet">%OwnerEntity
+</li>
+        </ul>
+        <p class="bodytext">Usage considerations: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The conversion from Entity to Table can be accomplished through the macros %EntityName or %EntityProp(UDP).
+</li>
+            <li class="listbullet">The logical to physical Domain conversion and Attribute to Column conversion should be used as is, without rearranging any macros.
+</li>
+            <li class="listbullet">The Key Group to Index conversion should be accomplished with the macros shown, although you can rearrange macros as needed. For example, X%KeyType%TableName or X_%TableName_%KeyType are valid alternatives.
+</li>
+        </ul>
+        <p>
+        </p>
+    </body>
+</html>

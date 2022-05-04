@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Table Partition in Oracle</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3221" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('3221')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t3221">Define Table Partition in Oracle</h5>
+        <p class="bodytext">The Oracle Table Partition Editor dialog lets you create the table partitions and subpartitions. You can access the editor from the Model Explorer. Expand a table in the Model Explorer and go to Partitions. </p>
+        <p class="noteAlt">When you use the Oracle Table Partition Editor, the constraints that are applied are same as the constraints in an Oracle database. For example, one of the constraints is that you cannot create a partition on a table that is part of a cluster. This constraint applies when you create a partition on an Oracle database therefore it also applies when you use the Oracle Table Partition Editor.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In the Model Explorer, expand a table and go to Partitions, right-click and select New.
+<p class="listcontinue">A new partition is added. You can also right-click a table and click Partitions to open the Oracle Table Partition Editor.</p></li>
+            <li class="listnumber">Right-click a partition and click Properties to open the Oracle Table Partition Editor.
+</li>
+            <li class="listnumber">Complete the following fields:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the partition.</p></dd><dt>Partition Type</dt><dd><p class="normaltermcontinued2">Specifies the type of partition. Select from Range, List, Hash, Interval, System, and Reference.</p></dd><dt>Subpartition Type</dt><dd><p class="normaltermcontinued2">Specifies the subpartition type. The subpartition can be Range, List, Hash, or Interval.</p></dd></dl><p class="noteAlt">You can create only one partition for an entity. </p><dl><dt>General Tab</dt><dd><p class="normaltermcontinued2">Complete the following fields in the General tab:</p><dl><dt>Partition Columns--Column</dt><dd><p class="normaltermcontinued3">Specifies the columns that are partitioned. Select one or more columns to include in the partition.</p></dd><dt>Properties--Hash Partition Type</dt><dd><p class="normaltermcontinued3">Specifies the type of hash partition you want to create. This field is displayed only for the Hash partition type.</p></dd><dt>Properties--Hash Partition Quantity</dt><dd><p class="normaltermcontinued3">Specifies the number of hash partitions you want to create. This field is displayed only if you select Quantity for the Hash Partition Type field.</p></dd><dt>Properties--Interval Value</dt><dd><p class="normaltermcontinued3">Specifies the interval at which a new partition is automatically created. This field is displayed only for the Interval partition type.</p></dd><dt>Properties--Key Group</dt><dd><p class="normaltermcontinued3">Specifies the primary key of the table included in the partition. This field is displayed only for the Reference partition type.</p></dd><dt>Partition Elements--Name</dt><dd><p class="normaltermcontinued3">Specifies the name of the partition element. Use the Partition Element Editor to add or edit partition elements.</p></dd><dt>Partition Elements--Value</dt><dd><p class="normaltermcontinued3">Specifies the values to the partitions. </p></dd><dt>Regular Table Tablespaces</dt><dd><p class="normaltermcontinued3">Specifies the names of tablespaces to store hash partitions. Use the Tablespace Editor to add or edit tablespaces.</p></dd><dt>Overflow Table Tablespaces</dt><dd><p class="normaltermcontinued3">Specifies the names of overflow tablespaces to store hash partitions. Use the Tablespace Editor to add or edit tablespaces.</p></dd></dl></dd></dl></li>
+            <li class="listnumber">Complete the fields on the Subpartition tab.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The partition details are saved and the editor closes.</p></li>
+        </ol>
+        <p class="noteAlt">The following properties are not supported for the partitioning feature:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Table compression (only the COMPRESSION and NOCOMPRESSION parameters are supported)
+</li>
+            <li class="listbullet">VARRAY parameters
+</li>
+            <li class="listbullet">STORAGE parameters such as, ENCRYPT, FLASH_CACHE, OPTIMAL, and maxsize_clause 
+</li>
+            <li class="listbullet">LOB SECUREFILE and BASICFILE
+</li>
+            <li class="listbullet">New COMPRESS setting with hash_partitions_by_quantity clause
+</li>
+            <li class="listbullet">SEGMENT CREATION IMMEDIATE/DEFERRED
+<p class="listcontinue">Deduplication</p></li>
+        </ul>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="define_subpartition_oracle.html" target="_self">Define a Subpartition in Oracle</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

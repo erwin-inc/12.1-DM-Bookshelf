@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>How erwin Data Modeler Generates Validation Rules</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2595" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2594');highlight('2595')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t2595">How erwin Data Modeler Generates Validation Rules</h4>
+        <p class="bodytext">You can implement validation rules as independent validation statements or as CHECK constraint clauses in the appropriate CREATE TABLE statements in the generated schema. During forward engineering, each validation rule for which you select the independent statement option (FIELDPROC, INTEGRITY, sp_bindrule) is generated in the schema as an independent statement. All other validation rules are implemented as a CHECK clause included in the CREATE TABLE or ALTER TABLE statement.</p>
+        <p class="bodytext">The following table shows the options for each target server that supports this feature:</p>
+        <p class="beforetable">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="438">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #808080;border-bottom: 1px solid #808080;" width="162">
+                    <p class="tableheading"><strong>DBMS</strong>
+                    </p>
+                </td>
+                <td style="border-top: 2px solid #808080;border-bottom: 1px solid #808080;" width="127">
+                    <p class="tableheading"><strong>Independent Statement Option</strong>
+                    </p>
+                </td>
+                <td style="border-top: 2px solid #808080;border-bottom: 1px solid #808080;" width="149">
+                    <p class="tableheading"><strong>CHECK Option</strong>
+                    </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="162">
+                    <p class="tablebodytext">Db2 z/OS</p>
+                </td>
+                <td width="127">
+                    <p class="tablebodytext">FIELDPROC</p>
+                </td>
+                <td width="149">
+                    <p class="tablebodytext">CHECK Constraint</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="162">
+                    <p class="tablebodytext">SQL Server</p>
+                </td>
+                <td width="127">
+                    <p class="tablebodytext">sp_bindrule</p>
+                </td>
+                <td width="149">
+                    <p class="tablebodytext">CHECK Constraint</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 2px solid #808080;" width="162">
+                    <p class="tablebodytext">SAP ASE</p>
+                </td>
+                <td style="border-bottom: 2px solid #808080;" width="127">
+                    <p class="tablebodytext">sp_bindrule</p>
+                </td>
+                <td style="border-bottom: 2px solid #808080;" width="149">
+                    <p class="tablebodytext">CHECK Constraint</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">
+        </p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="validation_rules.html" target="_self">Validation Rules</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

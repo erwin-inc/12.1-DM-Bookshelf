@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Teradata Hash Indexes</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3045" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2696');highlight('3045')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t3045">Define Teradata Hash Indexes</h5>
+        <p class="bodytext">You can use the Teradata Table Hash Index Editor to create a set of new hash indexes on an existing table in a Teradata physical model. The hash index provides an index structure that can be hash-distributed to Access Module Processors (AMPs). The index contains a row identifier that provides transparent access to the base table, which improves query performance by covering columns in a query so that the base table does not need to be accessed, or serves as an alternate access method to the base table in a join or retrieval operation.</p>
+        <p class="proceduresubheading">To define a Teradata hash index</p>
+        <ol class="listnumber">
+            <li class="listnumber">Expand a Table in the Model Explorer. Expand Hash Indexes, right-click a Hash Index, and select Properties.
+<p class="listcontinue">The Teradata Table Hash Index Editor opens.</p></li>
+            <li class="listnumber">Select a hash index and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New </span><img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new hash index. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of indexes to quickly locate the one you want to work with.</p><dl><dt>Table</dt><dd><p class="normaltermcontinued2">Specifies the table you want to create a Hash index for. Select a table from the drop-down list.</p></dd><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the hash index.</p></dd><dt>Database</dt><dd><p class="normaltermcontinued2">Defines the database or user.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Complete the following fields on the <span class="uielement">General </span>tab:
+<dl><dt>Index Members</dt><dd><p class="normaltermcontinued2">Specifies the columns for the table that have the index and are key group members. You can select any of the columns to be a key group member. The columns can be sorted.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Options </span>tab and work with the following options:
+<dl><dt>Fallback Protection</dt><dd><p class="normaltermcontinued2">Specifies the type of fallback protection for the database. Select from the drop-down list. Valid values are: No Fallback or Fallback.</p></dd><dt>Checksum</dt><dd><p class="normaltermcontinued2">Specifies the integrity checking level for disk I/O. Select from the drop-down list. Valid values are: All, Default, Low, Medium, High, or None. This property only displays if the index is a table index.</p></dd><dt>Order By</dt><dd><p class="normaltermcontinued2">Specifies how the rows are ordered. Select from the drop-down list. Valid values are: Column, Hash, or Value.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Ordering </span>tab, then select the check box next to the column name in the Hash by Column or Order by Column grid.
+<dl><dt>Hash by Columns</dt><dd><p class="normaltermcontinued2">Displays the valid columns that you can select to participate in the hash. This property only displays for a table index.</p></dd><dt>Order by Columns</dt><dd><p class="normaltermcontinued2">Displays the valid columns that you can select to participate in the ordering. </p></dd></dl><p class="listcontinue">Use the up and down arrow buttons to order the columns in each grid. </p></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Specify statistics options on the Statistics tab.
+</li><li class="listbullet2">Associate permissions with the selected hash index on the Permission tab.
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Teradata Table Hash Index Editor closes. </p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Add_Permissions_in_a_Teradata_Property_Editor.html" target="_self">Add Permissions in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

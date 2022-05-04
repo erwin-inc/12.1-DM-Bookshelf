@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">To enable Data Vault 2.0 on your model, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">In the Model Explorer, right-click the model and click <b>Properties</b>.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">On the <b>Model Editor</b> &gt; <b>General</b> tab, select the <b>Data Vault 2.0</b> check box.</p>
+            </li>
+            <p class="bodytext">
+                <img src="../Images/ModelProperties.png" style="width: 580px;height: 544px;">
+                </img>
+            </p>
+            <p class="bodytext">Once enabled, Data Vault 2.0 components are available via the Model Explorer and on the table editor. You can now <a href="https://erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Converting_Models_DataVault.html">convert your model to a Data Vault model</a>.</p>
+            <p class="bodytext">You can also create custom components and apply them to tables. However, these custom components do not appear on the ribbon.</p>
+        </ol>
+    </body>
+</html>

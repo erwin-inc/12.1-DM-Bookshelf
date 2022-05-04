@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Server</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the server where the database is installed</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Database</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the database that you want to connect to</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+        </table>
+    </body>
+</html>

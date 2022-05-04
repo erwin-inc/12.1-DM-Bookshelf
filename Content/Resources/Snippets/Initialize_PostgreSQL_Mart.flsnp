@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">When you access the Mart database through erwin Mart Administrator for the first time, you must initialize the database. You can initialize the database using a database authenticated user or a Windows authenticated user.</p>
+        <p class="noteAlt">Before you proceed, verify that you have installed a DBMS, created the Mart database and run the initial queries. If the Mart is already initialized, the Login page appears.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">If you are using MartServer as a Windows service, help ensure that the service is started. If not, from the Windows Start menu, click All Programs, erwin, Mart Server <MadCap:variable name="General.VersionNumber" /> , Start Mart Server to start the Mart Server.
+<p class="listcontinue">A Windows command prompt window appears and indicates when the server starts.</p></li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, Mart Server <MadCap:variable name="General.VersionNumber" /> , erwin Mart Administrator <MadCap:variable name="General.VersionNumber" /> .
+<p class="listcontinue">erwin Mart Administrator opens in your default browser.</p></li>
+            <li class="listnumber">Complete the following fields:
+<dl><dt>Username</dt><dd><p class="normaltermcontinued2">Defines the user name with which you want to access the Mart. If you are using a Windows-authenticated user, enter the name in the &lt;domain name&gt;/&lt;user name&gt; format.</p></dd><dt>Password</dt><dd>Defines the password for the user name.<div class="noteAlt">A password should fulfill the following criteria:<ul class="listbullet3"><li class="listbullet3">Contains at least 1 lowercase character
+</li><li class="listbullet3">Contains at least 1 uppercase character
+</li><li class="listbullet3">Contains at least 1 number
+</li><li class="listbullet3">Is minimum 6 characters in length
+</li><li class="listbullet3">Is maximum 130 characters in length
+</li></ul>Apart from the above criteria, special characters are optional.</div></dd><dt>Confirm Password</dt><dd><p class="normaltermcontinued2">Confirms the password that you entered in the previous field.</p></dd><dt>Email Address</dt><dd><p class="normaltermcontinued2">Defines the email address for the user account that you are creating. </p></dd></dl></li>
+            <li class="listnumber">Click Initialize.
+<p class="listcontinue">The user name is added as an administrator of Mart, Mart is initialized, and the Login web page appears. Initializing is a one-time task. After Mart is initialized, the user who initialized must log in first. Later, any other user who wants to use erwin Mart Administrator can log in.</p></li>
+        </ol>
+    </body>
+</html>

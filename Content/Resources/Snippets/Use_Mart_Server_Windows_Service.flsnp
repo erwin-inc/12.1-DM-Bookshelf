@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">The current version of the Mart provides two ways to start the web server that hosts Mart Server:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Start the web server manually.
+</li>
+            <li class="listbullet">Use a Windows service to start the web server.
+</li>
+        </ul>
+        <p class="bodytext">For example, if you have used Tomcat as the web server to host Mart Server, you can start Tomcat in two ways:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Start Tomcat through the startup.bat file or through a shortcut to this file.
+</li>
+            <li class="listbullet">Use a Windows service to start Tomcat.
+</li>
+        </ul>
+        <p class="bodytext">The benefits of using a Windows service to start a web server are as follows:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Any user with administrative privileges on a computer can start the Windows service, whereas, only designated users can start a web server manually.
+</li>
+            <li class="listbullet">A Windows service runs regardless of whether a user has logged in. A manually-started web server shuts down when the user who started it logs out.
+</li>
+        </ul>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Create MartServer Service to create the MartServer Windows service.
+<p class="listcontinue">Creating the service is a one-time task. After the service is created, you only have to start and stop the service.</p></li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Start MartServer Service to start the web server.
+</li>
+        </ol>
+        <p><span class="bodytext">You can find the log file, application.log, at C:\Windows\System32\config\systemprofile\AppData\Local\erwin\Mart Server\logs\.</span>
+        </p>
+        <h4 class="heading4">Enable Logging in Local AppData</h4>
+        <p class="bodytext">To enable logging  in a user's AppData while using Mart Server as a Windows Service, do the following:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Once the service is created, go to service properties.
+</li>
+            <li class="listnumber">On the <span class="uielement">Log On</span> tab, click <span class="uielement" style="font-weight: bold;">This Account</span>.
+</li>
+            <li class="listnumber">Enter the credentials.
+</li>
+            <li class="listnumber">Start the service.
+<p class="listcontinue">Logging is now enabled for your instance of Mart Server as a Windows service. The log file, application.log, will be created at {user account}/AppData/Local/erwin/Mart Server/logs.</p></li>
+        </ol>
+    </body>
+</html>

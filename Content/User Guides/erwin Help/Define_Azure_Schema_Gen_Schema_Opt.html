@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define SQL Azure Schema Generation Schema Options</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3154" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3137');expand2('3135');expand2('3025');highlight('3154')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t3154">Define SQL Azure Schema Generation Schema Options</p>
+        <p class="bodytext">You can define SQL Azure schema options using the Options tab of the Forward Engineer Schema Generation dialog that are appropriate for your modeling environment.</p>
+        <p class="proceduresubheading">To define schema generation schema options</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Forward Engineer, Schema</span> on the <span class="uielement">Actions </span>menu.
+<p class="listcontinue">The Forward Engineer Schema Generation dialog opens on the Options tab.</p></li>
+            <li class="listnumber">Select the name of the current option set and make your selections to include statements and actions in the generated schema using the following options:
+<ul class="listbullet2"><li class="listbullet2">Security—Includes CREATE LOGIN or DROP LOGIN statements.
+</li><li class="listbullet2">Database
+<ul class="listbullet3"><li class="listbullet3">Includes CREATE statements for DATABASE, SCHEMA, DATABASE ROLE, USER ID
+</li><li class="listbullet3">Includes DROP statements for SCHEMA, DATABASE ROLE, USER ID
+</li></ul></li><li class="listbullet2">Schema
+<ul class="listbullet3"><li class="listbullet3">Includes prescripts to execute before generating the schema, and postscripts to execute after generating the schema.
+</li><li class="listbullet3">Includes CREATE statements for FUNCTION, PROCEDURE, USER DEFINED TYPE, SYNONYM
+</li><li class="listbullet3">Includes DROP statements for FUNCTION, PROCEDURE, USER DEFINED TYPE, SYNONYM
+</li></ul></li><li class="listbullet2">Table
+<ul class="listbullet3"><li class="listbullet3">Includes prescripts to execute before generating the table, and postscripts to execute after generating the table.
+</li><li class="listbullet3">Includes CREATE statements for TABLE, PROCEDURE, FUNCTION, TABLE VALIDATION. TABLE VALIDATION includes statements for CREATE and ALTER.
+</li><li class="listbullet3">Includes DROP statements for TABLE, PROCEDURE, FUNCTION
+</li></ul></li><li class="listbullet2">Column
+<ul class="listbullet3"><li class="listbullet3">Includes CREATE statements for VALIDATION, DEFAULT
+</li><li class="listbullet3">Includes ALTER statements for VALIDATION, DEFAULT
+</li><li class="listbullet3">Includes statements for PHYSICAL ORDER and USER DATATYPE
+</li></ul></li><li class="listbullet2">View
+<ul class="listbullet3"><li class="listbullet3">Includes prescripts to execute before generating the view, and postscripts to execute after generating the view.
+</li><li class="listbullet3">Includes CREATE statements for VIEW, PROCEDURE, FUNCTION
+</li><li class="listbullet3">Includes DROP statements for VIEW, PROCEDURE, FUNCTION
+</li></ul></li><li class="listbullet2">Index
+<ul class="listbullet3"><li class="listbullet3">Includes CREATE statements for INDEX. CREATE INDEX includes statements for TABLE INDEX and VIEW INDEX.
+</li><li class="listbullet3">Includes DROP statements for INDEX. DROP INDEX includes statements for TABLE INDEX and VIEW INDEX.
+</li></ul></li><li class="listbullet2">Referential Integrity
+<ul class="listbullet3"><li class="listbullet3">Includes statements for PRIMARY KEY (PK), FOREIGN KEY (FK), UNIQUE (AK)
+</li></ul></li><li class="listbullet2">Trigger
+<ul class="listbullet3"><li class="listbullet3">Includes statements for ERWIN GENERATED and USER DEFINED
+</li><li class="listbullet3">Includes CREATE statements for TRIGGER. CREATE TRIGGER includes statements for TABLE, VIEW, DATABASE triggers.
+</li><li class="listbullet3">Includes DROP statements for TRIGGER. DROP TRIGGER includes statements for TABLE, VIEW, DATABASE triggers.
+</li></ul></li><li class="listbullet2">Other Options
+<ul class="listbullet3"><li class="listbullet3">Includes statements for CONSTRAINT NAME, SCHEMA, PERMISSION, GENERATE PASSWORDS, DELIMIT IDENTIFIERS, N QUOTED STRING, RUN CHECK MODEL
+</li></ul></li></ul></li>
+            <li class="listnumber">Click <span class="uielement">Generate </span>to start the schema generation process for forward engineering or alter script generation or <span class="uielement">OK </span>to save the changes and close the dialog. 
+</li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

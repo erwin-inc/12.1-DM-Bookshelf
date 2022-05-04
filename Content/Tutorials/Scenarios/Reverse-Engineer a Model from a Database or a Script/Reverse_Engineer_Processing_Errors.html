@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Reverse Engineer Processing Errors</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="610" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T13:42-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('597');highlight('610')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t610">Reverse Engineer Processing Errors</h2>
+        <p class="bodytext">When you reverse engineer a script or a database, parser errors may occur. Parser errors often occur when there is a mismatch between the syntax in the script or database, and the target server for the new model. For example, if you try to reverse engineer an Oracle database after selecting SQL Server as the target server, you will encounter parser errors.</p>
+        <p class="bodytext">After you select the Reverse Engineer options from the wizard and click Next, the parser begins to process your script file or database. If the parser encounters an error, it displays it in the informational window in the parser dialog. The parser dialog provides you with information that enables you to evaluate the processing errors and view details of a specific syntax error.</p>
+        <p class="bodytext">When a parser error displays, you can choose one of the following actions from a pop-up box:</p>
+        <dl>
+            <dt><strong>Skip this error</strong>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Skips the displayed error and continues processing the script or database.</p>
+            </dd>
+            <dt><strong>Skip all errors</strong>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Skips all errors and completes processing the script or database.</p>
+            </dd>
+            <dt><strong>Cancel processing</strong>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Closes the parser dialog and cancels the reverse engineering process.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">You can save the text of a selected error to a text file. For long error messages, select an error, and then click the Details icon to display the complete text of the error in a new window. </p><a name="o861"></a>
+        <h2 class="heading2" id="t861">Troubleshooting</h2>
+        <p class="bodytext">This section includes details of how you can troubleshoot the reverse engineering process and the reverse engineered model. </p><a name="o862"></a>
+        <h3 class="heading3" id="t862">How to Add Naming Standards</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="bodytext">How to add naming standards to a reverse engineered model?</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Create a model and include the naming standards.
+</li>
+            <li class="listnumber">Save the model as a template.
+</li>
+            <li class="listnumber">Select this template in the Match template field of the New Model dialog.
+<p class="listcontinue">The naming standards are selected in the new model.</p></li>
+        </ol><a name="o863"></a>
+        <h3 class="heading3" id="t863">Unable to use a Reserved Word</h3>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">When I try to reverse engineer from a script, I get the error message, "RES-1:Syntax Error - Line &lt;number&gt;, Offset11 &lt;word&gt;".</p>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">This error message appears when you use a database-specific reserved word or a keyword. Add the quotation marks (" and ") around the word in the script and then reverse engineer.</p>
+        <p class="bodytext" />
+        <p />
+    </body>
+</html>

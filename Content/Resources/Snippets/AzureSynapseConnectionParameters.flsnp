@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Authentication</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Specifies the database connection authentication type.</p>
+                    <p>Select <b>Database Authentication</b> to connect using the database login credentials. Or, select <b>Multi Factor Authentication</b> type to use multi-factor authentication for database connection.</p>
+                </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Multi Factor Authentication is only available for ODBC connection.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection Method</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type of connection you want to use. Select <b>JDBC</b> to connect using JDBC. Or, select <b>ODBC</b> to connect using the ODBC data source that you have defined.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Reverse engineering a model from a database using the ODBC&#160;connection retrieves only 64 characters.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">ODBC Data Source</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the data source to which you want to connect. The drop-down list displays the data sources that are defined on your computer.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available only when Connection Method is set to ODBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Invoke ODBC Administrator</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether you want to start the ODBC Administrator software and display the Select Data Source dialog. You can then select a previously defined data source, or create a data source.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available only when Connection Method is set to ODBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection String</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Specifies the connection string based on your JDBC instance and Azure Synapse database name in the following format:</p>
+                    <p class="normaltermcontinued3"><i>jdbc: sqlserver://&lt;server name&gt;.sql.azuresynapse.net:1433;</i>
+                    </p>
+                </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example, jdbc:sqlserver://localhost.sql.azuresynapse.net:1433;</p>
+                    <p>This option is available when Connection Method is set to JDBC.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Database</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the database that you want to connect to</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to JDBC.</td>
+            </tr>
+        </table>
+    </body>
+</html>

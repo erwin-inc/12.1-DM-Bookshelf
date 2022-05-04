@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Calculate Table and Database Size</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1954" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4726');highlight('1954')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t1954">Calculate Table and Database Size</h3>
+        <p class="bodytext">Use the Settings tab in the Volumetrics dialog to select each database table and assign estimates for initial and projected values, column properties, physical storage objects, and index types. Table size estimates are calculated in real time as you enter table, column, and physical storage information, and are useful for generating reports on future table and database growth.</p>
+        <p class="noteAlt">Ensure that your estimates are as accurate as possible because these estimates have the greatest effect on the calculated table size.</p>
+        <p class="proceduresubheading">To calculate table and database size</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Volumetrics on the Tools menu.
+<p class="listcontinue">The Volumetrics dialog opens.</p></li>
+            <li class="listnumber">Click the Settings tab and select the table in the Table list for which you want to apply calculation settings, complete the following fields as needed:
+<dl><dt>Initial</dt><dd><p class="normaltermcontinued2">Lets you enter an initial number of records for the selected table.</p></dd><dt>Max</dt><dd><p class="normaltermcontinued2">Lets you enter the maximum allowable number of records that the table is designed to hold. You can leave this field empty to achieve open-ended growth. This option is used along with the Grow By option to determine when a table will reach its designed record limit.</p></dd><dt>Grow By</dt><dd><p class="normaltermcontinued2">Lets you enter the estimated number of records that you expect the table to grow per month. If you have a maximum record number in the Max Rows field, table growth will stop at that record number.</p></dd><dt>Avg Width</dt><dd><p class="normaltermcontinued2">Lets you enter an estimated average width for the column. For example, if a variable width ADDRESS column is assigned a width of 50 characters, you can still enter 20 as the average character width of the column. The value automatically becomes the allocated width in the Alloc column.</p><p class="noteAlt">If the Avg Width column is unavailable it means that the column datatype does not support variable width as defined by your target DBMS.</p></dd><dt>Pct NULL</dt><dd><p class="normaltermcontinued2">Lets you enter a whole number to represent the estimated percentage of nulls used for the column. For example, you can estimate an optional ADDRESS 2 column having a width of 50 characters, to be NULL about 30 percent of the time.</p><p class="noteAlt">If the Pct NULL column is unavailable it means that the column datatype does not support NULL assignments as defined by your target DBMS.</p></dd><dt>Physical Object</dt><dd><p class="normaltermcontinued2">Lets you select a physical storage object and associate index types to include in the database calculation. You can select any of the following index types:</p><p class="list3"><strong>PK</strong></p><p class="list4">Specifies to include primary key (PK) indexes in each calculation.</p><p class="list3"><strong>FK</strong></p><p class="list4">Specifies to include foreign key (FK) indexes in each calculation.</p><p class="list3"><strong>AK</strong></p><p class="list4">Specifies to include alternate key (AK) indexes in each calculation.</p><p class="list3"><strong>IE</strong></p><p class="list4">Specifies to include inverse entry (IE) indexes in each calculation.</p><p class="noteAlt">The file sizes for each index are automatically calculated when you enter values in the Initial, Max, and Grow By fields.</p></dd></dl><p class="listcontinue">Click OK.</p><p class="listcontinue">Table volumetrics are defined and the Volumetrics dialog closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information:</p>
+        <p class="relateditem"><a href="volumetrics_in_a_data_model.html" target="_self">Volumetrics in a Data Model</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_Volumetrics_Report.html" target="_self">Define a Volumetrics Report</a>
+        </p>
+        <p class="relateditem"><a href="Set_Volumetrics_Database_Parameters.html" target="_self">Set Volumetrics Database Parameters</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

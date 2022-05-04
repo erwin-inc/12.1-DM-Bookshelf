@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Example: Relationship Override Template</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2622" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2600');expand2('2618');expand2('2620');highlight('2622')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t2622">Example: Relationship Override Template</h6>
+        <p class="bodytext">The following example shows the template code for the Relationship Override of the Parent-Delete RESTRICT trigger. The top section shows a portion of the template, the center section shows the expanded code of the same portion, and the bottom section shows the complete trigger template expanded for a SQL Server. The template code is for the relationship override on CUST_ORDER-ORDER_LINE relationship using the Parent-Delete RESTRICT trigger.</p><pre xml:space="preserve">
+/* erwin Built-in %Datetime */
+    /* %Parent %VerbPhrase %Child ON PARENT Delete RESTRICT */
+    update %Parent
+      set order_status = 'outstanding'
+      from %Parent,deleted,%Child
+        where
+          /* %%JoinPKPK(%Parent,deleted) */
+          %JoinPKPK(%Parent,deleted) and
+          /* %%JoinFKPK(%Child,deleted) */
+          %JoinFKPK(%Child,deleted)
+
+/* erwin Built-in Mon May 09 07:52:30 2007 */
+    /* CUST_ORDER contains ORDER_LINE ON PARENT Delete RESTRICT */
+    update CUST_ORDER
+      set order_status = 'outstanding'
+      from CUST_ORDER,deleted,ORDER_LINE
+        where
+          /* %JoinPKPK(CUST_ORDER,deleted) */
+          CUST_ORDER.order_id = deleted.order_id and
+          /* %JoinFKPK(ORDER_LINE,deleted) */
+          ORDER_LINE.order_id = deleted.order_id
+
+create trigger tD_CUST_ORDER on CUST_ORDER for Delete as
+/* erwin Built-in Mon May 09 07:55:10 2007 */
+/* Delete trigger on CUST_ORDER */
+begin
+  declare  @errno   int,
+           @errmsg  varchar(255)
+    /* erwin Built-in Mon May 09 07:55:10 2007 */
+    /* CUST_ORDER contains ORDER_LINE ON PARENT Delete RESTRICT */
+    update CUST_ORDER
+      set order_status = 'outstanding'
+      from CUST_ORDER,deleted,ORDER_LINE
+        where
+          /* %JoinPKPK(CUST_ORDER,deleted) */
+          CUST_ORDER.order_id = deleted.order_id and
+          /* %JoinFKPK(ORDER_LINE,deleted) */
+          ORDER_LINE.order_id = deleted.order_id
+    /* erwin Built-in Mon May 09 07:55:10 2007 */
+    return
+error:
+    raiserror @errno @errmsg
+    rollback transaction
+end
+go
+</pre>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Relationship_Override_Templates.html" target="_self">Relationship Override Templates</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define PostgreSQL Domains</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7950" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7897');expand2('7898');highlight('7950')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7950">Define PostgreSQL Domains</h6>
+        <p class="bodytext">In a model based on PostgreSQL target server, use the PostgreSQL tab in the Domain Editor to manage the data type, null option, and other properties for the selected domain.</p>
+        <p class="noteAlt">The options described here are the basic options available for most physical data types. There can be more options available depending on the physical data type you assign to the domain. For more information about using these properties, refer to PostgreSQL documentation.</p>
+        <p class="proceduresubheading">To define a PostgreSQL domain</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Domains on the Model menu.
+<p class="listcontinue">The PostgreSQL Domain Dictionary editor opens.</p></li>
+            <li class="listnumber">In the navigation grid, select the domain that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a domain. Use the <em class="italic">Enter filter text</em> box to filter a large list of domains to quickly locate the one that you want to define.</p><dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name of the domain. Change the physical name of the domain in this field.</p></dd><dt>Domain Parent</dt><dd><p class="normaltermcontinued2">Lets you select a domain from the list to attach it to the selected domain as a parent.</p></dd><dt>Physical Data Type</dt><dd><p class="normaltermcontinued2">Lets you select a data type from the drop-down list to apply to the selected domain. If the selected data type requires a value for precision, scale, or both, enter the value inside the data type parentheses. For example, you can select the DECIMAL() data type and specify a precision of 2 and a scale of 10 inside the parentheses to assign the data type DECIMAL(2,10) to the selected domain.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema of the database to which the domain belongs. Select the schema from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create one.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">Specifies whether the domain is suppressed from a logical model and appears in a physical model only.</p></dd></dl></li>
+            <li class="listnumber">Click the PostgreSQL tab and work with the following options:
+<dl><dt>Owner</dt><dd><p class="normaltermcontinued2">Specifies the role or user that owns the domain. Select the owner from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_2" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create one.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema of the database to which the domain belongs. Select the schema from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_3" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create one.</p></dd><dt>Collation</dt><dd><p class="normaltermcontinued2">Specifies an optional collation for the domain. If no collation is specified, the underlying data type's default collation is used. The underlying type must be collatable if COLLATE is specified.</p></dd><dt>Null Option</dt><dd><p class="normaltermcontinued2">Specifies the usage of the NULL clause for the selected domain. You can choose to inherit or override the null option.</p></dd><dt>Default</dt><dd><p class="normaltermcontinued2">Specifies a default value for columns of the domain data type. The value is any variable-free expression (but sub-queries are not allowed). The data type of the default expression must match the data type of the domain. If no default value is specified, then the default value is the null value.</p></dd></dl></li>
+            <li class="listnumber">Work with other tabs in the editor to access additional domain features and click Close.
+<p class="listcontinue">The domain is defined and the PostgreSQL Domain Dictionary editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

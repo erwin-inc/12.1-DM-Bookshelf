@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">The Mart Server and Mart Admin war files are deployed on a Web server. You can either use an existing web server, or install the web server through the erwin MartServer <MadCap:variable name="General.VersionNumber" /> Installation Wizard. You must install erwin Mart Server and configure it regardless of whether you use Mart Server as a Windows service.</p>
+        <p class="noteAlt">Ensure that you have reviewed the Install a Mart or Upgrade a Mart topic before proceeding.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p>
+Download the EDMMS12.0.exe file from the online erwin <a class="z--jumptourl" href="https://erwinhelp.zendesk.com/hc/en-us/articles/230429728-ERwin-Data-Modeler-Solutions-and-Patches" target="_blank" title="">product page</a> and run it. 
+</p>
+                <p class="listcontinue">The erwin MartServer <MadCap:variable name="General.VersionNumber" /> Installation Wizard appears.<br /><img src="../Images/msInstaller.png" /></p>
+            </li>
+            <li class="listnumber">Go through the wizard steps to install erwin Mart Server.<br /><p class="listcontinue"><img src="../Images/MSInstallerCustomSetup.png" /></p><p class="listcontinue">Depending on the options you select, erwin Mart Server and/or Oracle OpenJDK and Tomcat are installed.</p></li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, Mart Server <MadCap:variable name="General.VersionNumber" /> , Configure MartServer.<p class="listcontinue">The erwin Mart Configuration dialog appears.</p></li>
+        </ol>
+        <MadCap:pageBreak />
+        <p class="heading2">Configure the erwin Mart Server</p>
+        <p>
+            <img src="../Images/ConfigureMartServer.png" style="width: 413px;height: 444px;">
+            </img>
+        </p>
+        <ol class="listnumber">
+            <li class="listnumber">Complete the following fields in the Mart Server tab:
+<dl><dt>Database Connection Method</dt><dd>Specifies the connection method (On-Prem or Custom JDBC URL) used to connect to the Mart database. If you select Custom JDBC URL, the JDBC Connection String field appears. Enter your database connection string.</dd><dt>Database Type</dt><dd><p class="normaltermcontinued2">Specifies the database server type.</p></dd><dt>Port No.</dt><dd><p class="normaltermcontinued2">Specifies the port number of the database server.</p></dd><dt>Server Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the database server where you have installed the Mart database. For example, suppose that you are using SQL Server as the Mart database. Enter the name of the computer where SQL Server is installed.</p></dd><dt>Instance Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the database instance.</p></dd><dt>Database Name</dt><dd>Specifies the name of the Mart database.<p class="noteAlt">If you are installing the Mart for the first time, use a new database. Do not use an existing database that was created for r7.3 through r8.2.9 Mart. If you are upgrading the Mart from any earlier release of r9 series to the latest release, use the corresponding Mart database.</p></dd></dl><dl><dt>User Name</dt><dd><p class="normaltermcontinued2">Specifies the user name to connect to the Mart database. Enter the name of a user that is authenticated by the Mart database.</p><p class="noteAlt">Windows authentication (User Name field) is not supported for connecting to the Mart database from the Configure Mart Server window.</p></dd></dl><dl><dt>Password</dt><dd><p class="normaltermcontinued2">Specifies the password to connect to the Mart database.</p><p class="noteAlt">The following fields--Domain Controller Name, Domain/User Name, and Password are required only if you are using the Active Directory authentication. You can use the Active Directory authentication to initialize the Mart and to log in to erwin Mart Administrator.</p></dd></dl><dl><dt><p>Enable SSL/Wallet</p></dt><dd><p>Specifies whether SSL or Wallet (in case of Oracle database) is enabled. If you select this check box for Oracle database, the following fields are enabled:</p><ul><li><p><b>Oracle Wallet Location</b>: Specifies the location where you downloaded the wallet file.</p></li><li><p><b>Oracle Wallet Password</b>: Specifies the password that you set for the wallet.</p></li></ul></dd><dt>Domain Controller Name</dt><dd><p class="normaltermcontinued2">Specifies the fully qualified name of the Active Directory Server (Domain Controller). Enter the name in the following format:</p><pre xml:space="preserve">
+LDAP://server/distinguished-name
+</pre><p class="normaltermcontinued2"><strong>Example:</strong> ldap://mktgna:3268/dc=abc, dc=com</p><p class="normaltermcontinued2">Here, <em class="italic">mktgna </em>is the server name. You can provide either the name of the server or the IP address. 3268 is the port number to which the server listens.</p><p class="normaltermcontinued2"><em class="italic">dc=abc, dc=com</em> is the distinguished-name. The distinguished name is the full path of the object. </p><p class="noteAlt">If you do not know the Domain Controller Name, use the <em class="italic">Nltest </em>command or talk to your System Administrator.</p></dd><dt>Domain/User Name</dt><dd><p class="normaltermcontinued2">Specifies the domain name and user name in the &lt;domain name&gt;/&lt;user name&gt; format.</p></dd><dt>Domain Password</dt><dd><p class="normaltermcontinued2">Specifies the password of the domain user.</p></dd></dl><p class="bodytext">To validate connection for active directory, click <b>Test</b>. </p><p>You can also configure erwin Mart Server using the Command Line Interface. For example, use the following command to configure Mart Server with an Oracle database:</p><pre xml:space="preserve">C:\Program Files\erwin\Mart Server r9\OpenJRE64\bin&gt;java.exe -jar
+ "C:\Program Files\erwin\Mart Server r9\MartUpgrade\MartConfiguration.jar"
+ configure --dbuser=mmadmin --dbpwd=mmadmin --dbtype=ORACLE
+ --dcname=ldap://10.1.85.94:3268/DC=test-qa,DC=com --martusessl=true
+ --domainuser=test-qa\Administrator --domainpwd=interOP@123
+ --dbserver=10.1.85.108 --dbport=1521 --dbinstance= 
+--dbname=mart200models</pre><p>Once you run the above command, you can verify the configuration properties in the <b>MartConfiguration.properties</b> file located at C:\ProgramData\erwin\Mart Server. The same properties also reflect on the <b>Mart Server</b> tab of the erwin Mart Configuration dialog box.<br /></p></li>
+        </ol>
+        <MadCap:pageBreak />
+        <p class="heading2"><a name="ConfigureMartAdmin"></a>Configure erwin Mart Administrator</p>
+        <p>
+            <img src="../Images/ConfigureMartAdministrator.png" style="width: 446px;height: 481px;">
+            </img>
+        </p>
+        <ol class="listnumber">
+            <li class="listnumber">Enter the following information in the Mart Administrator tab:
+<dl><dt>Server Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the computer where the Web Server is present. For example, if you are using Tomcat, enter the name of the computer where Tomcat is installed.</p><p class="normaltermcontinued2"><strong>Default:</strong> localhost</p></dd><dt>Port Number</dt><dd><p class="normaltermcontinued2">Specifies the port number on which the Web Server is running.</p><p class="normaltermcontinued2"><strong>Default: </strong>18170</p></dd><dt>Application Name</dt><dd><p class="normaltermcontinued2">Specifies the application name with which the Web Server is identified.</p><p class="normaltermcontinued2"><strong>Default:</strong> MartServer</p></dd><dt>Secure Sockets Layer (SSL) Enabled</dt><dd><p class="normaltermcontinued2">Specifies whether you want to connect to the Mart through a secured connection (SSL). Select this check box if you have implemented SSL.</p><p class="noteAlt">If you use IIS with SSL, open server_ssl.xml file, which is available at C:\Program Files\erwin\Mart Server r9\Tomcat64\conf and un-comment Connector port="8009" protocol="AJP/1.3" allowedRequestAttributesPattern=".*" redirectPort="8443" secretRequired="false"/&gt;.</p><p class="noteAlt">Using a self-signed SSL certificate might result in an error about certificate authority while connecting to erwin Mart. In that case, click OK to continue connecting to erwin Mart.</p></dd><dt><p>Use IIS</p></dt><dd><p>Specifies whether IIS&#160;is used to run Mart Administrator. Select this check box only if you have configured IIS.</p><p class="noteAlt">If you use IIS, open server.xml file available at C:\Program Files\erwin\Mart Server r9\Tomcat64\conf and un-comment &lt;Connector port="8009" protocol="AJP/1.3" allowedRequestAttributesPattern=".*" redirectPort="8443" secretRequired="false"/&gt;.</p></dd><dt>IIS Port</dt><dd><p class="normaltermcontinued2">Specify the IIS port number that you want to use. This field is enabled only if you select the Use IIS check box. The default is 80.</p></dd><dt>Account Lockout Duration (Seconds)</dt><dd><p class="normaltermcontinued2">Specify the duration (in seconds) for which an account should be locked whenever an incorrect password is entered five consecutive times. By default, it is set to five minutes (300 seconds). At the most, you can set it to 30 days (2592000 seconds).</p></dd></dl></li>
+            <li class="listnumber">Click Configure.
+<p class="listcontinue">The erwin Mart Administrator and the Mart Server are configured.  </p></li>
+        </ol>
+        <h4 class="heading4">Enable SSL for Tomcat</h4>
+        <p class="bodytext">SSL enables you to access the Mart through a secured connection. You can enable SSL for Tomcat--the default web server, when you are installing the Mart for the first time. </p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">If the Mart Server service is running, stop it. From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Stop MartServer Service to stop the web server. 
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Enable SSL for Tomcat Webserver. 
+<p class="listcontinue">SSL is enabled for Tomcat and a security certificate is created. You must install this security certificate on all the computers from where you want to access the Mart.</p></li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Configure MartServer. 
+<p class="listcontinue">The erwin Mart Configuration dialog appears.</p></li>
+            <li class="listnumber">Go to the Mart Administrator tab and select the Transport Layer Security check box.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Start Mart Server Service.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , erwin Mart Administrator <MadCap:variable name="General.VersionNumber" /> .
+<p class="listcontinue">The erwin Mart Administrator home page appears and displays HTTPS in the address bar. If a certificate error appears, click Proceed Anyway to begin the session.</p></li>
+        </ol>
+        <p class="important"><strong>Important!</strong> If you want to connect to an SSL enabled Mart through API, you must first install the security certificate on the corresponding computer. Install the certificate through the data modeling tool. If you do not install the security certificate, the API will not be able to connect to the SSL enabled Mart. </p>
+        <p class="examplesubheading">Disable SSL and Access the Mart Through a Normal Connection</p>
+        <p class="bodytext">You can disable SSL at any time and access the Mart through a normal connection.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">If the Mart Server Service is running, stop it. From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Stop Mart Server Service.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Disable SSL.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Configure MartServer. 
+<p class="listcontinue">The erwin Mart Configuration dialog appears.</p></li>
+            <li class="listnumber">Go to the Mart Administrator tab and clear the Transport Layer Security check box.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Start Mart Server Service.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , erwin Mart Administrator <MadCap:variable name="General.VersionNumber" /> .
+<p class="listcontinue">The erwin Mart Administrator home page appears and displays HTTP in the address bar.</p></li>
+        </ol>
+    </body>
+</html>

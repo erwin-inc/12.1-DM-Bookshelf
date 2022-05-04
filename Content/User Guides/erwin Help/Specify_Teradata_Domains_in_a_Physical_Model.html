@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Specify Teradata Domains in a Physical Model</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="992" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2696');highlight('992')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t992">Specify Teradata Domains in a Physical Model</h5>
+        <p class="bodytext">In a model based on a Teradata target server, you use the Teradata tab in the Domain Editor to manage the data type, null option, and other properties for the selected domain.</p>
+        <p class="noteAlt">The options described here are the basic options available for most physical data types. There can be more options available depending on the physical data type you assign to the domain. We recommend that you see the Teradata documentation for more information about using these properties.</p>
+        <p class="proceduresubheading">To specify Teradata domains in a physical model</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Domains </span>on the <span class="uielement">Model </span>menu.
+<p class="list2">The Domain Editor opens.</p></li>
+            <li class="listnumber">Select the domain in the Navigation Grid that you want to define and work with the following options:
+<dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Lists the physical domain name.</p></dd><dt>Domain Parent</dt><dd><p class="normaltermcontinued2">Defines the parent of the selected domain. To change the parent, select a different domain from the list. This is a non-inheritable property.</p></dd><dt>Physical Data Type</dt><dd><p class="normaltermcontinued2">Indicates the physical data type for the selected domain.</p></dd><dt>Generate as Udd</dt><dd><p class="normaltermcontinued2">Indicates that the selected domain will be generated as a user-defined domain. Select the check box to enable this option.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">Specifies that the selected domain is only available in the physical model. Select the check box to enable this option. Clear the check box if you want the selected domain to be available in both the physical and logical model.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Teradata </span>tab and work with the following options:
+<dl><dt>Physical Datatype</dt><dd><p class="normaltermcontinued2">Displays the data type of the selected domain. You can select another data type from the drop-down list. If the data type supports a value for average width or Percent NULL you can indicate the value in the appropriate box. You can choose to inherit or override the physical data type.</p></dd><dt>Null Option</dt><dd><p class="normaltermcontinued2">Specifies the usage of the NULL clause for the selected column. You can choose to inherit or override the null option.</p></dd><dt><strong>Average Width</strong></dt><dd><p class="normaltermcontinued2">Specifies the average width for the column domain, if the option is available (not dimmed). For example, for a variable width string data type, you can assign an average width of 20 characters as the average character width of any column that uses the domain. You can later use the Volumetrics dialog to calculate table and database size estimates based on columns that use the domain. You can choose to inherit or override the average width.</p></dd><dt><strong>Percent Null</strong></dt><dd><p class="normaltermcontinued2">Defines the estimated percentage of null values used for the column domain, if the option is available (not dimmed). For example, for a variable width string data type, you can assign an estimate of 30 to indicate that any column using the column domain will contain a null about 30 percent of the time. Use whole numbers. You can later use the Volumetrics dialog to calculate table and database size estimates based on these and other values. You can choose to inherit or override the percent null value.</p></dd><dt>Format</dt><dd><p class="normaltermcontinued2">Specifies the Teradata display format to use for the domain. Select the display format from the drop-down list or open the Teradata Display Format Editor to work with display formats. You can choose to inherit or override the selected display format.</p></dd><dt>Title</dt><dd><p class="normaltermcontinued2">Lets you enter a name (up to 60 characters) that identifies the column values in Teradata applications. You can choose to inherit or override the selected title.</p></dd><dt>Compile</dt><dd><p class="normaltermcontinued2">Specifies the mode in which the domain should be compiled. Select from the drop-down list. Valid values are: Compile and Build, or Compile Only.</p></dd><dt>Column Compression</dt><dd><p class="normaltermcontinued2">Specifies to apply column compression. When you select the check box, you can click the New button on the Compress Values toolbar to enter a compress value.</p></dd><dt>Ordering Mapping Type</dt><dd><p class="normaltermcontinued2">Specifies the type of ordering procedure. Select from the drop-down list. Valid values are: Specific Method, Instance Method, Specific Function, or Function.</p></dd><dt>Ordering Procedure Ref</dt><dd><p class="normaltermcontinued2">Specifies the reference ID of the function or method that is used to order on.</p></dd><dt>Ordering Do Not Generate</dt><dd><p class="normaltermcontinued2">Specifies whether this ordering is generated in a forward engineering operation.</p></dd><dt>Transform Group Name</dt><dd><p class="normaltermcontinued2">Specifies the transform group name.</p></dd><dt>Transform From Mapping Type</dt><dd><p class="normaltermcontinued2">Specifies how the transform is being performed. Select from the drop-down list. Valid values are: Specific Method, Instance Method, Specific Function, or Function.</p></dd><dt>Transform From Procedure Ref</dt><dd><p class="normaltermcontinued2">Specifies the user defined type associated with the function/method used for the transform.</p></dd><dt>Transform To Mapping Type</dt><dd><p class="normaltermcontinued2">Specifies how the transform is being performed. Select from the drop-down list. Valid values are: Specific Function or Function.</p></dd><dt>Transform To Procedure Ref</dt><dd><p class="normaltermcontinued2">Specifies the function/method used for the transform. If none display, click the New icon to open the Function Editor.</p></dd><dt>Transform Do Not Generate</dt><dd><p class="normaltermcontinued2">Specifies whether the transform is generated in a forward engineering operation.</p></dd><dt>Character Set Type</dt><dd><p class="normaltermcontinued2">Specifies the type of character set to use.</p><p class="noteAlt">This option is only available if you select a character data type, such as CHAR, CHAR VARYING(), CHAR(), and so on.</p></dd><dt>Character Case</dt><dd><p class="normaltermcontinued2">Specifies how Teradata considers the case of the values stored in database fields for columns during processing. For example, table, TABLE, and Table are treated as different values when this option is specified. You can select either None, Case-Specific, or Not Case-Specific.</p><p class="noteAlt">This option is only available if you select a character data type, such as CHAR, CHAR VARYING(), CHAR(), and so on.</p></dd><dt>Upper Case</dt><dd><p class="normaltermcontinued2">Specifies whether column values are stored exactly as entered or automatically converted to uppercase characters. Select the check box to store values in uppercase. Clear the check box to store values exactly as it is entered.</p><p class="noteAlt">This option is only available if you select a character data type, such as CHAR, CHAR VARYING(), CHAR(), and so on.</p></dd></dl></li>
+            <li class="listnumber">Work with other tabs in the editor to access additional domain features and click Close.
+<p class="listcontinue">The Teradata Domain Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Specify_a_Validation_Rule_and_Default_Value_for_a_Teradata_Domain.html" target="_self">Specify a Validation Rule and Default Value for a Teradata Domain</a>
+        </p>
+        <p class="relateditem"><a href="specify_a_data_source_for_a_domain.html" target="_self">Specify a Data Source For a Domain</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

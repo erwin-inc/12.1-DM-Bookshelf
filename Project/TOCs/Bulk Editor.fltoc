@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Changing the Properties of Multiple Objects"
+    Link="/Content/Tutorials/Scenarios/Bulk Editor/Changing the Properties of Multiple Objects.html">
+    <TocEntry
+      Title="Open the Bulk Editor Wizard"
+      Link="/Content/Tutorials/Scenarios/Bulk Editor/Open the Bulk Editor Wizard.html" />
+    <TocEntry
+      Title="Change the Properties in erwin DM"
+      Link="/Content/Tutorials/Scenarios/Bulk Editor/Change_the_Properties_in_erwinDM.html" />
+    <TocEntry
+      Title="Change the Properties in a .CSV File"
+      Link="/Content/Tutorials/Scenarios/Bulk Editor/change_the_properties_in_a_CSV_file.html" />
+    <TocEntry
+      Title="Import the Changes to erwin DM"
+      Link="/Content/Tutorials/Scenarios/Bulk Editor/Import_the_Changes_to_erwinDM.html" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>SQL Server and SAP ASE User Data Types</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4740" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4758');expand2('4727');expand2('999');expand2('1002');expand2('1001');highlight('4740')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t4740">SQL Server and SAP ASE User Data Types</h6>
+        <p class="bodytext">When you assign the SQL Server or SAP ASE target server to a model, the General tab in the Domain Editor contains an additional option that lets you generate a domain as a User-defined Data Type. Select the <em class="italic">Generate as Udd</em> check box in the General tab to generate the selected domain as a User-defined Data Type. Clear the check box if you want the selected domain to set column properties without being generated as a User-defined Data Type.</p>
+        <p class="noteAlt">If you clear the <em class="italic">Generate as Udd</em> check box, the data type of the domain appears in the diagram as the data type.</p>
+        <p class="bodytext">In the Forward Engineer Schema Generation dialog you can determine how user data types are generated in SQL Server or SAP ASE. Each option in the Forward Engineer Schema Generation dialog that supports user-defined data types is explained below:</p>
+        <dl>
+            <dt>sp_addtype </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies to include a CREATE DATATYPE statement for each user-defined data type you defined in the Domain Editor.</p>
+            </dd>
+            <dt>User Datatype</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies to include the USE USER DATATYPE clause in the CREATE TABLE statement for columns that are based on user-defined data types.</p>
+            </dd>
+        </dl>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Define_Schema_Generation_Schema_Options.html" target="_self">Define Schema Generation Schema Options</a>
+        </p>
+        <p class="relateditem"><a href="Define_Schema_Generation_Column_Options.html" target="_self">Define Schema Generation Column Options</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

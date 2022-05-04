@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="CoverPage"
+    Link="/Content/Tools/DM Connect for DI/DMConnectDI.html"
+    conditions="General.PDF"
+    StartSection="false"
+    ReplaceMergeNode="false"
+    BreakType="pageLayout"
+    PageType="title"
+    AutoEndOnLeftPage="disabled"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Installation/Installation/erwin_Install/copyright.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="decimal"
+    PageNumber="(multiple)"
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
+  <TocEntry
+    Title="Contact Customer Support"
+    Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Tools/Scheduler/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"></TocEntry>
+  <TocEntry
+    Title="erwin DM Connect for DI"
+    Link="/Project/TOCs/erwin DM Connect for DI.fltoc" />
+</CatapultToc>

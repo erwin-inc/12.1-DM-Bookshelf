@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">A TLX report is a model validation report that uses erwin Template Language (TLX). Report Designer includes some default validation reports and also lets you configure new reports with custom properties. You must be familiar with erwin Template Language (TLX) to configure new reports.</p>
+        <p class="bodytext">When you configure new reports, you can add two types of custom properties, filters and TLX properties. The code for a filter includes a function that returns TRUE or FALSE.</p>
+        <h3 class="heading3" id="t1700">Generate a Default TLX Report</h3>
+        <p class="bodytext">Report Designer includes default TLX reports at entity/table, attribute/column, domain, and relationship level. Some of the properties that are included in the default TLX reports are no definition or no primary key. This topic describes how you can create an entity/table level report as an example. You can create other TLX reports on the same lines as described in the procedure.</p>
+        <p class="proceduresubheading">To create an entity/table level report, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Tools</span>, <span class="uielement">Report Designer</span>, <span class="uielement">Create a new report</span>.
+</li>
+            <li class="listnumber">Select <span class="uielement">Logical/Physical</span> for <span class="uielement">Report Type</span>.
+</li>
+            <li class="listnumber">Click <span class="uielement">Entity/Table</span> in the <span class="uielement">Select Report Subject</span> pane.
+</li>
+            <li class="listnumber">In the <span class="uielement">Select Report Fields</span> pane, expand <span class="uielement">Filter By</span> and select the <span class="uielement">No Definition</span> and <span class="uielement">No Comment</span> check boxes.
+</li>
+            <li class="listnumber">Expand <span class="uielement">Properties</span> and select <span class="uielement">Name</span>, <span class="uielement">Physical Name</span> check boxes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Run Report</span>.
+<p class="listcontinue">The list of entities and tables that do not have a definition or a comment is displayed.</p></li>
+        </ol>
+        <h3 class="heading3" id="t7970">Create a Custom TLX Report</h3>
+        <p class="bodytext">If you are familiar with TLX scripting, you can add your own functions for properties of your choice and configure custom reports. For example, you can create a report that gives the number of attributes in each entity. You can add two types of custom properties, filters and TLX properties. The code for a filter includes a function that returns TRUE or FALSE.</p>
+        <p class="bodytext">To configure a new report, you must modify the following configuration files:</p>
+        <ul class="listbullet">
+            <li class="listbullet">TLXReportAssembly.xml
+</li>
+            <li class="listbullet">TLXReportTemplate.FET
+</li>
+        </ul>
+        <p class="bodytext">These files are available in the &lt;erwin install folder&gt;\Report\TLX folder.</p>
+        <p class="proceduresubheading">Follow these steps to create a custom TLX report:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Modify the <span class="uielement">TLXReportAssembly.xml</span> file and include the TLX property that you want to report on.
+</li>
+            <li class="listnumber">Modify the <span class="uielement">TLXReportTemplate.FET</span> file and include the function for the custom property. 
+</li>
+            <li class="listnumber">Restart erwin Data Modeler.
+</li>
+            <li class="listnumber">Create a report in the <span class="uielement">Report Designer</span> and select the TLX property that you have added.
+</li>
+            <li class="listnumber">Run the report.
+</li>
+        </ol>
+        <p class="examplesubheading">Modify the TLXReportAssembly File</p>
+        <p class="bodytext">To display a property under the <span class="uielement">Filter By</span> node or the <span class="uielement">Property</span> node in the <span class="uielement">Report Designer</span>, you must add an entry for the property in the TLXReportAssembly file.</p>
+        <p class="bodytext">The <span class="uielement">TLXReportAssembly.xml</span> file includes the following parameters:</p>
+        <dl>
+            <dt><span class="uielement">Assembly ID</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the unique identifier for the property entry in the TLXReportAssembly file. You can enter any number of your choice, as long as it is unique within this file.</p>
+            </dd>
+            <dt><span class="uielement">OwnerID</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the owner ID for the object for which you want to create a custom property. Use the following owner IDs:</p>
+                <p class="beforetable" />
+            </dd>
+        </dl>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="348">
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tableheading">Owner ID</p>
+                </td>
+                <td width="180">
+                    <p class="tableheading">Object</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075838979	</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Entity/Table </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075838981</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Attribute/Column </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075838983</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Domain </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075839016</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Relationship </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075838985</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Key Group</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075838978</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Custom Template</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="168">
+                    <p class="tablebodytext">1075839014</p>
+                </td>
+                <td width="180">
+                    <p class="tablebodytext">Subject Area</p>
+                </td>
+            </tr>
+        </table>
+        <p class="normaltermcontinued" />
+        <dl>
+            <dt><span class="uielement">Name</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the name of the custom property the way it appears in the Report Designer.</p>
+            </dd>
+            <dt><span class="uielement">ExtractType</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the type of report for which the custom property is available. 1 denotes Logical, 2 denotes Physical, and 3 denotes Logical/Physical.</p>
+            </dd>
+            <dt><span class="uielement">DBMS Info</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the database for which the custom property applies. Enter the information in the format, "database brand code, major version number of the database, minor version of the database." </p>
+                <p class="normaltermcontinued">A value of "0,0,0" indicates that the custom property applies to all databases. The following table provides the DBMS information for the databases that the current release supports:</p>
+                <p class="beforetable" />
+            </dd>
+        </dl>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="390">
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tableheading">Database</p>
+                </td>
+                <td width="210">
+                    <p class="tableheading">DBMS Info in TLXAssembly</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">ArangoDB</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859217, 3, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Apache Avro 1.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859205, 1, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Amazon&#160;Keyspaces</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859223, 2, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Azure Synapse</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859211, 10, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Cassandra</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859199, 3, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Couchbase 6.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859202, 6, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Couchbase 7.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859202, 7, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Databricks </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859232, 1, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for i 5.x/6.x/7.x </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859019,4,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for LUW 9.5   </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858977,9,5)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for LUW 9.7/10.x  </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858977,9,7)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for LUW 11.1 </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858977,11,1)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for z/OS 8.1   </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858978,8,1)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for z/OS 9.1/10/11</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858978,9,1)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Db2 for z/OS 12</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858978,12,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">DynamoDB</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859229,19,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">Google BigQuery</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859226,2,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Hive 2.1.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859187,2,1)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Informix 10.x/11.x/12.x	 </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859006,9,2)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">JSON 1.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859208,1,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">MongoDB 4.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859196,4,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">MariaDB 10.4.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859190,10,4)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">MySQL 8.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859129,8,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Neo4j 4.2.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859214, 4, 2)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Neo4j 4.3.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859214, 4, 3)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Netezza</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075918978,7,2)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">ODBC/Generic 2.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859009,2,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">ODBC/Generic 3.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859009,3,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Oracle 12c r2	   </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858979, 12, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Oracle 18c</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858979, 18, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Oracle 19c</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858979, 19, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Oracle 21c	   </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075858979, 21, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Parquet 2.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859220, 2, 0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">PostgreSQL 9.6</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075918977,9,6)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Progress 9.x/10.x/11.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859010,9,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Redshift 1.0</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075918979,1,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">SAS</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859013,1,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">SAP ASE 15.x/16   </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859017,12,5)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">SAP IQ 15.x/16</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859130,15,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">SQL Server 2012</p>
+                </td>
+                <td valign="middle" width="210">
+                    <p class="tablebodytext">(1075859016,11,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">SQL Server 2014</p>
+                </td>
+                <td valign="middle" width="210">
+                    <p class="tablebodytext">(1075859016,12,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td valign="middle" width="180">
+                    <p class="tablebodytext">SQL Server 2016/2017</p>
+                </td>
+                <td valign="middle" width="210">
+                    <p class="tablebodytext">(1075859016,13,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">SQL Server 2019</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859016,15,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">SQL Azure</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859016,16,0)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Snowflake</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859193,4,10)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Teradata 14.10 </p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859018,14,10)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="180">
+                    <p class="tablebodytext">Teradata 15.x/16.x</p>
+                </td>
+                <td width="210">
+                    <p class="tablebodytext">(1075859018,15,0)</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext" />
+        <dl>
+            <dt><span class="uielement">TLXFunction</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the TLX function name for the custom property. The function name can be any name that describes the property.</p>
+            </dd>
+            <dt><span class="uielement">Is Filter</span>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies whether the custom property is a filter or a property. Include a value of 1 for filter and 0 for property. If you include 1, the property is displayed under the Filter by node of the corresponding object. If you include 0, the property is displayed under the Properties node of the object in Report Designer.</p>
+            </dd>
+        </dl>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the <span class="uielement">TLXReportAssembly.xml</span> file in a text editor such as Notepad.
+</li>
+            <li class="listnumber">Add a line for the property that you want to include in the report.
+</li>
+            <li class="listnumber">Save the file.
+</li>
+        </ol>
+        <p class="examplesubheading">Modify the TLXReportTemplate.FET File</p>
+        <p class="bodytext">The <span class="uielement">TLXReportTemplate.FET</span> file includes the functions that help the <span class="uielement">Report Designer</span> generate the report for a TLX property. You must modify the file to include the function for a custom property for which you want to generate a report. </p>
+        <p class="noteAlt">Use the same function name in the TLXReportAssembly and TLXReportTemplate files.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the <span class="uielement">TLXReportTemplate.FET</span> file in a text editor such as Notepad.
+</li>
+            <li class="listnumber">Add the TLX script for the property that you want to include in the report.
+</li>
+            <li class="listnumber">Save the file.
+<p class="listcontinue">Now the custom property appears in the Report Designer under the corresponding node. You can include the property in a report.</p></li>
+        </ol>
+        <p><a name="o1702"></a>
+        </p>
+        <h3 class="heading3" id="t1702">Example--Number of Attributes in an Entity</h3>
+        <p class="bodytext">This example demonstrates how you can generate a report on the custom property <em class="italic">Number of Attributes in an Entity</em>. This property is of type TLX property.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Add an entry to the <span class="uielement">TLXReportAssembly.xml</span> file to create a node for Number of Attributes in <span class="uielement">Report Designer</span>.
+</li>
+            <li class="listnumber">Add the TLX function NumberofAttributes to the <span class="uielement">TLXReportTemplate.FET</span> file.
+</li>
+            <li class="listnumber">Create a report and include the Number of Attributes property.
+</li>
+        </ol>
+        <p class="examplesubheading">Add an Entry to the TLXReportAssembly.xml File</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the <span class="uielement">TLXReportAssembly.xml</span> file from the &lt;erwin install folder&gt;\Report\TLX folder.
+</li>
+            <li class="listnumber">Add the following entry and save the file:
+<pre xml:space="preserve">
+&lt;Assembly Id="1002"  OwnerId="1075838979" Name="Number of Attributes" ExtractType="1" DBMSInfo="0, 0, 0" TLXFunction="NumberofAttribute" IsFilter="0"/&gt;
+</pre></li>
+        </ol>
+        <p class="examplesubheading">Add the TLX Function NumberofAttributes to the <span class="uielement">TLXReportTemplate.FET</span> File</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <p class="bodytext">Add the following code to the TLXReportTemplate.FET file and save the file:</p><pre xml:space="preserve">
+SPItemBegin = NumberofAttribute
+</pre><pre xml:space="preserve">
+[
+</pre><pre xml:space="preserve">
+	Set("Count", 0)
+</pre><pre xml:space="preserve">
+	ForEachOwnee("Attribute")
+</pre><pre xml:space="preserve">
+	{
+</pre><pre xml:space="preserve">
+		Increment("Count")
+</pre><pre xml:space="preserve">
+	}
+</pre><pre xml:space="preserve">
+	Value("Count")
+</pre><pre xml:space="preserve">
+]
+</pre><pre xml:space="preserve">
+SPItemEnd
+</pre>
+        <p class="bodytext">Number of Attributes is added to Report Designer under Entity, Properties.</p>
+        <p class="examplesubheading">Create a Report and Include the Number of Attributes Property</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open Report Designer.
+</li>
+            <li class="listnumber">Select the Report Type as Logical. 
+</li>
+            <li class="listnumber">In the Select Report Subject pane, select Entity.
+</li>
+            <li class="listnumber">In the Select Report Fields pane, expand Entity, Properties, and select Name, Number of Attributes.
+</li>
+            <li class="listnumber">Click Run Report.
+</li>
+        </ol>
+    </body>
+</html>

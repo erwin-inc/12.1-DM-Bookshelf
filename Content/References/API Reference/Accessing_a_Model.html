@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Accessing a Model</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6070" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');highlight('6070')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t6070">Accessing a Model</h2>
+        <p class="bodytext">An API client accesses model data by working with a pool of available persistence units. A persistence unit is the API concept that describes all data related to a single model. A persistence unit can be accessed and saved to persistence storage, such as a file or a model in a mart. A client manipulates persistence units by using the Persistence Units collection.</p>
+        <p class="bodytext">The existence of some persistence units in the application is dictated by a context in which an instance of the application was created. For example, in standalone mode, none of the units exist at launch time. Methods from the unit collection interface must be used to accumulate units in the collection. In add-in component mode, the collection contains all the units known to the erwin DM user interface at the time when the client component is activated.</p>
+        <p class="bodytext">When the client program is terminated, the arrangement for the persistence units in memory for standalone mode is that all units are closed. In add-in component mode, after the client program has ended, the units are still open and available in the erwin DM user interface with the exception of those that were explicitly closed and removed from the persistence unit collection before exiting the program.</p>
+        <p class="noteAlt">For erwin DM, the collection is a snapshot. The collection includes only those units that exist at the moment of collection construction (such as at the moment when the <em class="italic">PersistenceUnits</em> method of the <em class="italic">ISCApplication</em> interface was called). An exception to this is units added or deleted from the collection-these changes are reflected. All new collections reflect the changes as well.</p>
+        <p>
+        </p>
+    </body>
+</html>

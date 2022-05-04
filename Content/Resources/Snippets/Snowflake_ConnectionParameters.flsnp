@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection Method</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type of connection you want to use. Select <b>JDBC</b> to connect using JDBC. Or select <b>ODBC</b> to connect using the ODBC data source that you have defined.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">ODBC Data Source</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the data source to which you want to connect. The drop-down list displays the data sources that are defined on your computer.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to ODBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Invoke ODBC Administrator</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether you want to start the ODBC Administrator software and display the Select Data Source dialog. You can then select a previously defined data source or create a data source.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to ODBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection String</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="normaltermcontinued3">Specifies the connection string based on your JDBC instance and Snowflake database name</p><![CDATA[
+                    
+                    ]]></td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>This option is available when Connection Method is set to JDBC.</p>
+                    <p>For example:  jdbc:snowflake://&lt;account_name&gt;.snowflakecomputing.com/</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Database</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the database that you want to connect to</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to JDBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Warehouse</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the warehouse that you want to connect to</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to JDBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Role</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the role that you want to use to connect to the database</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to JDBC.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Schema</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the schema that you want to connect to</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>This option is available when Connection Method is set to JDBC.</p>
+                    <p class="noteAlt">Ensure that, you specify the schema name in this field to retrieve all database objects and properties  during a reverse engineering process.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Authentication URL</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the authentication URL</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>This option is available when Connection Method is set to JDBC.</p>
+                    <p>Set the value as EXTERNALBROWSER when you connect using AzureAD.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Private Key File (For Key-Pair Auth)</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the path to private key file for key-pair authentication.</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example: <i style="color: #0064af;">C:\Users\&lt;User&gt;\Documents\Keys\rsa_key.p8</i></p>
+                    <p>This option is available when Connection Method is set to JDBC.</p>
+                    <p class="noteAlt">Ensure that you generate a public key and private key for using key pair authentication. To generate key, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Snowflake_Key-Pair_Authentication.html">Snowflake Key-Pair Authentication</a> topic.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Private Key File Password (For Key-Pair Auth)</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the path to private key pass phrase file for key-pair authentication</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">This option is available when Connection Method is set to JDBC.</td>
+            </tr>
+        </table>
+    </body>
+</html>

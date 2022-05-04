@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Using the Two Table Roll Up Transformation</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4686" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4839');highlight('4686')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4686">Using the Two Table Roll Up Transformation</h3>
+        <p class="bodytext">You can apply a transformation to roll up and denormalize two related tables and create a single table. Denormalization improves query performance and helps build a more effective physical model for a target DBMS.</p>
+        <p class="important"><strong>Important!</strong> Once you apply the Two Table Roll Up transformation, it cannot be reversed. While in the current modeling session however, you can undo the action.</p>
+        <p class="bodytext"><strong>Roll-Up Denormalization Wizard</strong>
+        </p>
+        <p class="bodytext">To roll up and denormalize two tables, select the identifying relationship that connects two tables, then click the Two Table Roll Up icon <img align="bottom" alt="Two Table Roll Up transformation icon" border="0" height="15" hspace="0" id="f4052" src="..\..\Resources\Images\4083.gif" vspace="0" width="15" /> on the Transformations toolbar. Use the Table Denormalization Roll Up Wizard to:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Specify the number of column instances that are copied from the child table to the parent table. If you have previously set relationship cardinality for the two tables that you want to denormalize, the cardinality is used to determine the default number of column instances to copy from the child table to the parent table. 
+</li>
+            <li class="listbullet">(Optional) Select to include primary key columns from the source child table in the resulting rollup table. Select the check box with the label "Roll up non-FK columns from the primary key area of the child table into the non-primary key area of the parent table." When you select this check box, the primary key columns from the source child table are included in the resulting rollup table. If you clear the check box, primary key columns from the source child table are not included in the rollup. The check box is not selected by default. 
+<p class="noteAlt">Foreign keys associated with the child table are not affected by this feature.</p></li>
+        </ul>
+        <p class="bodytext"><strong>Result of Rolling Up and Denormalizing Two Tables</strong>
+        </p>
+        <p class="bodytext">When you select the Two Table Roll Up transformation to roll up and denormalize two tables, you:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Create a denormalized table that contains all primary-key and non-key columns from the source parent tables, and the non-key columns of the source child tables. When you create columns in the denormalized table, you preserve the column order in the source parent table, and then the column order in the source child table. The primary key of the denormalized table is the primary key of the parent table. The denormalized table appears in the Model Explorer under the Tables folder.
+</li>
+            <li class="listbullet">If the source child table that you denormalize contains an owned column, you create a specific number of column instances in the denormalized table based on the relationship cardinality.
+</li>
+            <li class="listbullet">If the source child table that you denormalize contains a foreign key (FK) that does not migrate from the source parent table, you create a specific number of corresponding foreign keys in the denormalized table based on the relationship cardinality. Each copy of the foreign key is rolenamed to match the new foreign key column names.
+</li>
+            <li class="listbullet">Creates all relationships associated with the source parent and child tables that you denormalize, and preserves all migrating keys.
+</li>
+            <li class="listbullet">If the source child table that you denormalize contains a relationship in which the table is a child, you create a specific number of relationship instances to the denormalized table based on the number of column instances that are copied from the source child table to the source parent table.
+</li>
+            <li class="listbullet">Preserves all object properties for the source parent table.
+</li>
+        </ul>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Roll_up_and_denormalize_two_tables_with_a_transform.html" target="_self">Roll Up and Denormalize Two Tables with a Transformation</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

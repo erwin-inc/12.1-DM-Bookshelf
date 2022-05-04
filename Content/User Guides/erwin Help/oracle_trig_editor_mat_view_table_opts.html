@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Oracle Triggers Editor - Materialized Views Triggers - Table Options Tab</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2250" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');expand2('1707');highlight('2250')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t2250">Oracle Triggers Editor - Materialized Views Triggers - Table Options Tab</h6>
+        <p class="bodytext">Use the Table Options tab in the Oracle Trigger Editor for materialized view triggers to specify execution information for a trigger. The following describes the options for this tab:</p>
+        <dl>
+            <dt><strong>Trigger On</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Select any of the following options to specify the action for which the trigger should fire. When you select an option, you include the built-in trigger code for that action in the materialized view trigger.</p>
+                <dl>
+                    <dt><strong>DELETE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Select this check box to fire the selected materialized view trigger when a SQL DELETE command is executed.</p>
+                    </dd>
+                    <dt><strong>INSERT </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Select this check box to fire the selected materialized view trigger when a SQL INSERT command is executed.</p>
+                    </dd>
+                    <dt><strong>UPDATE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Select this check box to fire the selected materialized view trigger when a SQL UPDATE command is executed.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Fire</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Select one of the following to specify when to fire the trigger:</p>
+                <dl>
+                    <dt><strong>BEFORE</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                    <dt><strong>AFTER</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>For Each Row</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">If you select this check box, enter a Referencing value for each option:</p>
+                <dl>
+                    <dt><strong>New</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                    <dt><strong>Old</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>State</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">If you select the State check box, select one of the following:</p>
+                <dl>
+                    <dt><strong>ENABLE</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                    <dt><strong>DISABLE</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Columns</strong>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lists all the columns in the selected materialized view for which an update to the column can be used as a triggering event. To fire the selected materialized view trigger template when a SQL UPDATE command is executed on a column, select the column in this list and click the <img align="bottom" alt="" border="0" height="22" hspace="0" id="f2113" src="..\..\Resources\Images\2123.gif" vspace="0" width="22" /> button to move it to the Update of Columns list.</p>
+            </dd>
+            <dt><strong>Update of Columns</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Lists all the columns in the selected materialized view for which an update to the column is a triggering event.</p>
+            </dd>
+        </dl>
+        <p>
+        </p>
+    </body>
+</html>

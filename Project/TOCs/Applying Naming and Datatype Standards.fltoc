@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<article
+  lang="">
+  <TocEntry
+    Title="Applying Naming and Datatype Standards"
+    Link="/Content/Installation/Implementation/Applying Naming and Datatype Standards.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Applying Naming Standards"
+      Link="/Content/Installation/Implementation/Applying Naming Standards.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Decide the Method"
+        Link="/Content/Installation/Implementation/Decide the Method.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Create and Apply Naming Standards"
+        Link="/Content/Installation/Implementation/Create and Apply Naming Standards.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Define Naming Standards for a Logical Model"
+          Link="/Content/Installation/Implementation/define_naming_standards_for_a_logical_model.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Define Naming Standards for a Physical Model"
+          Link="/Content/Installation/Implementation/define_naming_standards_for_a_physical_model.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Create Glossary Words and Abbreviations"
+          Link="/Content/Installation/Implementation/add_words_and_abbreviations_to_the_naming_standards_glossary.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+          <TocEntry
+            Title="Import Words and Abbreviations to the Naming Standards Glossary"
+            Link="/Content/Installation/Implementation/import_words_and_abbreviations_to_the_naming_standards_glossary.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+            <TocEntry
+              Title="Import from a Previous Version"
+              Link="/Content/Installation/Implementation/import_from_previous_version.html"
+              BreakType="chapter"
+              PageType="continue"
+              StartSection="false"
+              PageNumberReset="continue"
+              PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+          </TocEntry>
+        </TocEntry>
+        <TocEntry
+          Title="Apply Naming Standards by Binding a Model Template"
+          Link="/Content/Installation/Implementation/Apply Naming Standards by Binding a Model Template.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+          <TocEntry
+            Title="Bind a Template to a Model"
+            Link="/Content/Installation/Implementation/bind_template.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        </TocEntry>
+        <TocEntry
+          Title="Verify Naming Standards Compliance"
+          Link="/Content/Installation/Implementation/check_model_names_against_the_naming_standards_glossary.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Apply Naming Standards to a Model"
+          Link="/Content/Installation/Implementation/Convert_names_using_naming_standard_abbreviations.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Applying Naming Standards from Mart"
+          Link="/Content/Installation/Implementation/Applying Naming Standards from Mart.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Name Hardening Wizard"
+        Link="/Content/Installation/Implementation/name_hardening_wizard.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Override Name Inheritance"
+          Link="/Content/Installation/Implementation/Override_Name_Inheritance.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Unharden Object Names"
+          Link="/Content/Installation/Implementation/Unharden_Object_Names.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Applying Data Type Standards"
+      Link="/Content/Installation/Implementation/Applying Data Type Standards.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Decide a Method to Apply Standards"
+        Link="/Content/Installation/Implementation/Decide_the_Method_to_Apply_Standards.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Create and Apply Data Type Standards"
+        Link="/Content/Installation/Implementation/Create and Apply Data Type Standards.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Define Data Type Standards from Model Explorer"
+          Link="/Content/Installation/Implementation/Define_Data_Type_Standards_from_Model_Explorer.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="(Optional) Create a Mapping"
+          Link="/Content/Installation/Implementation/Create_a_Mapping.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Apply Data Type Standards to the Model"
+          Link="/Content/Installation/Implementation/Apply Data Type Standards to the Model.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Import Data Type Standards from a Previous Version"
+        Link="/Content/Installation/Implementation/Import Data Type Standards from a Previous Version.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Import Data Type Standards"
+          Link="/Content/Installation/Implementation/Import Data Type Standards.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Apply Data Type Standards to the Model"
+          Link="/Content/Installation/Implementation/Apply Data Type Standards to the Model.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Apply Data Type Standards by Binding a Model Template"
+        Link="/Content/Installation/Implementation/Apply Data Type Standards by Binding a Model Template.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Bind a Model Template"
+          Link="/Content/Installation/Implementation/Bind_a_Model_Template_2.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+</article>

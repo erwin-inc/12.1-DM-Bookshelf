@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Create Reports Using erwin Report Designer</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6818" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4710');highlight('6818')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t6818">Create Reports Using Report Designer </h2>
+        <p class="bodytext">Report Designer lets you create a wide variety of reports and on the current data available in your data models. If you are working in the Workgroup Edition, you can create Mart administrative reports and cross-model reports. You can create report templates for frequently used reports and you can export reports to HTML, CSV, and PDF formats. You can create report solutions and include multiple report templates.</p>
+        <p class="bodytext">You cannot reuse the .RTB reports that were created using Report Template Builder, because the metamodel objects are changed. You must recreate the reports in Report Designer.</p>
+        <p class="bodytext">Several sample (pinned) reports are included with the application and they are available in the following location:</p><pre xml:space="preserve">
+%Installdir%\erwin\Data Modeler r9\BackupFiles\Report Solutions 
+</pre>
+        <p class="bodytext">Also at the following location:</p>
+        <dl>
+            <dt>Windows 7</dt>
+            <dd><pre xml:space="preserve">
+C:\Users\&lt;user name&gt;\AppData\Local\erwin\Data Modeler\[rn]\Report 
+Solutions
+</pre>
+            </dd>
+        </dl>
+        <p class="noteAlt">The pinned reports are created using a Logical-Physical model. If you use the pinned reports with a Logical-only or a Physical-only model, it may result in inappropriate results.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Tools</span>, <span class="uielement">Report Designer</span>. The <span class="uielement">erwin Report Designer</span> window opens.
+</li>
+            <li class="listnumber">To create a report solution, click <span class="uielement">Create new solution for reports</span> on the toolbar. 
+<p class="listcontinue">If the current report solution is not saved already, you are prompted to save it. A new blank workspace appears.</p></li>
+            <li class="listnumber">To create a report template, follow these steps:
+<ol class="listalpha"><li class="listalpha">Click <span class="uielement">Create a Report</span> on the toolbar. The <span class="uielement">Report Editor</span> dialog appears.
+</li><li class="listalpha">Enter a name for the report. 
+</li><li class="listalpha">Select the model type that you want to report on. Select Mart to create a report on the Mart data. 
+<p class="listcontinue2">The items in the <span class="uielement">Select Report Subject</span> pane change according to the <span class="uielement">Report Type</span> that you select.</p><p class="noteAlt">You must have the Reports: View permission to create Mart reports.</p></li><li class="listalpha">In the <span class="uielement">Select Report Subject</span> pane, select the item on which you want to generate the report.
+</li><li class="listalpha">In the <span class="uielement">Select Report Fields</span> pane, select the fields that you want to include in the report.
+</li><li class="listalpha">To create a report that filters specific objects and includes them in the report, use the Filter by option. This option is available only for entities, tables, attributes, columns, subject areas, and indexes.<![CDATA[
+]]></li><li class="listalpha">Click <span class="uielement">Run Report</span>. 
+<p class="listcontinue2">If you are creating a report on your Mart and you have selected an option under <span class="uielement">Filter By</span>, the <span class="uielement">Mart Report Filter</span> dialog opens. </p></li><li class="listalpha">Select the specific models that you want to get the results from. Enter the specific model object name. Use wildcard characters, if necessary.
+<p class="listcontinue2">The report is generated and displayed. If you do not specify any model or entity, the generated report includes all the models. If you have used a wildcard, by default, the wildcard is applied to all the names. For example, if you type ID, the report includes Cust_ID and ID_For_Category. If the result is very large for Mart reports, the report is displayed in multiple pages (data grid). Use the navigational icons in the toolbar to view the subsequent pages.</p></li><li class="listalpha">(Optional) Click the <span class="uielement">Clear data in data grid</span> icon to clear the results in the grid.
+</li></ol></li>
+            <li class="listnumber">To configure report preferences, follow these steps:
+<ol class="listalpha"><li class="listalpha">Click <span class="uielement">Edit</span>, <span class="uielement">Preferences</span>. The <span class="uielement">Report Designer Preferences</span> dialog appears.
+</li><li class="listalpha">Complete the following fields and click <span class="uielement">OK</span>:
+<dl><dt>Add object type as prefix for the properties 'Name' and 'Physical Name'</dt><dd><p class="normaltermcontinued3">Prefixes the object type to only the Name and Physical Name columns. For example, you are generating a report on entities and the corresponding attribute names and data types. The column names in the report are displayed as Entity Name, Attribute Name, and Attribute Logical Data Type.</p></dd><dt>Add object type as prefix for all other properties</dt><dd><p class="normaltermcontinued3">Prefixes the object type to all columns.</p></dd></dl><p class="noteAlt">These options work only when they are selected at the time of creating a report. If these options are selected at the time of modifying an existing report, they do not work. </p><dl><dt>Apply optimization mode if row count is more than</dt><dd><p class="normaltermcontinued3">Specifies the number of rows at which the computer resources are optimized to display the report. If the row count in your report exceeds the number that you specify here, the report is displayed in optimization mode. In this mode, the group and sort options are not available in the result grid. If no value is entered, the row count for optimization mode is considered as equal to the total row count of a report.</p></dd><dt>Number of top rows to display</dt><dd><p class="normaltermcontinued3">Specifies the number of top rows that you want to display. This option displays the first few rows that match a report criteria, when the result contains more rows than the number specified here.</p></dd></dl></li></ol></li>
+            <li class="listnumber">To generate a report from an existing report template, select the template, right-click, and click <span class="uielement">Run</span>.
+</li>
+            <li class="listnumber">To modify an existing report template, select the template, right-click and then click <span class="uielement">Properties</span>. After you finish modifying, click <span class="uielement">Run Report</span>.
+<p class="noteAlt">When you modify an existing report template and select more properties for the existing report subject, the selections are retained. If you select a different report subject, the previous report subject and its properties are not included in the report.</p></li>
+            <li class="listnumber">To customize the appearance of the report at the node-level, follow these steps:
+<ol class="listalpha"><li class="listalpha">Right-click the node and click Properties. Complete the following fields:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued3">Specifies the name of the node. By default the name of the selected object is displayed.</p></dd><dt>HTML Style</dt><dd></dd></dl><p class="noteAlt">These settings apply to both HTML and PDF reports.</p><p class="normaltermcontinued3">Font Family: Specifies the font for the selected node.</p><p class="normaltermcontinued3">Size: Specifies the font size for the selected node.</p><p class="normaltermcontinued3">Roll up subtables: Specifies that you want to display a parent and its child node details together. This option is not effective when the report has only one node. The following image illustrates a report without selecting the Roll up subtables option:</p></li></ol><p class="listpicture"><img align="bottom" alt="Report without selecting the Inline option" border="0" height="583" hspace="0" id="f1592" src="..\..\Resources\Images\1600.png" vspace="0" width="1034" /></p><p class="normaltermcontinued3">The following image illustrates a report when the Roll up subtables option is selected:</p><p class="listpicture"><img align="bottom" alt="Report when the Inline option is selected" border="0" height="419" hspace="0" id="f1593" src="..\..\Resources\Images\1599.png" vspace="0" width="902" /></p><p class="normaltermcontinued3">PDF Page Breaking: Specifies that you want to display the details of each node on a new page. The node for which this option is selected and the subsequent nodes are displayed on a new page. This option is not effective when the report has only one node. When the report has multiple nodes, do not set this option on the main node. Suppose your report nodes look like the following illustration:</p><p class="listpicture"><img align="bottom" alt="Illustrating the report nodes for PDF Page Break option" border="0" height="201" hspace="0" id="f1594" src="..\..\Resources\Images\1598.png" vspace="0" width="277" /></p><p class="normaltermcontinued3">If you apply the PDF Page Breaking option to the Child Relationship (above CR Physical Name) node, the CR Physical Name and Column Physical Name nodes are displayed on a new page.</p><p class="normaltermcontinued3">Foreground: Specifies the text color. </p><p class="normaltermcontinued3">Background: Specifies the background color.</p><p class="normaltermcontinued3">Template Color: Specifies that the color that is specified in the template is used.</p><p class="normaltermcontinued3">Bold/Italic/Underline/Strikeout: Specifies the effect for the text.</p><p class="normaltermcontinued3">Width: Specifies the width of the selected node (report column). You can specify the width for any node and it is applied when the report is exported to HTML or PDF. However, the width is not applied to the last node (last column in the report) in a PDF report. This is because, the remaining length of the fixed page width is considered as the actual width of the column.</p><p class="normaltermcontinued3">Alignment: Specifies the alignment of the text.</p></li>
+            <li class="listnumber">To export a report solution to HTML, follow these steps:
+<ul class="listbullet2"><li class="listbullet2">Right-click the report solution and click <span class="uielement">Export All to HTML</span>. The <span class="uielement">Report Export</span> dialog appears.
+</li><li class="listbullet2">Click <span class="uielement">Browse</span> and select the folder to which you want to export the report.
+</li><li class="listbullet2">Go to the <span class="uielement">HTML</span> tab and add the title in the <span class="uielement">Solution Title in HTML</span> field. 
+</li><li class="listbullet2">Click <span class="uielement">OK</span>. The report is generated in the specified folder.
+</li></ul></li>
+            <li class="listnumber">To export a report to HTML, follow these steps:
+<ol class="listalpha"><li class="listalpha">Click the <span class="uielement">Clear data in data grid</span> icon and clear the result grid.
+<p class="listcontinue2">This is a best practice and helps the application export the report without consuming much of the computer resources.</p></li><li class="listalpha">Right-click the report and click <span class="uielement">Export to HTML</span>. The <span class="uielement">Report Export</span> dialog appears.
+</li><li class="listalpha">Click <span class="uielement">Browse</span> and select the folder to which you want to export the report.
+</li><li class="listalpha">Go to the <span class="uielement">HTML</span> tab and complete the following fields:
+<dl><dt>Select the template for exporting to HTML</dt><dd><p class="normaltermcontinued3">Specifies the templates that you want to use with the HTML report. You can use customized templates, provided the formatting is similar to the default templates. The default templates are available in the following folder:</p><p class="listcontinue3">C:\Program Files\erwin\Data Modeler r9\Report\Template\Template-Default</p></dd><dt>Solution Title in HTML</dt><dd><p class="normaltermcontinued3">Specifies the title for the entire report solution.</p></dd><dt>Report Header in HTML</dt><dd><p class="normaltermcontinued3">Specifies the text that appears between the report title and the first line of the report.</p></dd><dt>Report Footer in HTML</dt><dd><p class="normaltermcontinued3">Specifies the text that appears at the bottom of the report.</p></dd></dl></li><li class="listalpha">Click <span class="uielement">OK</span>. The report is generated in the specified folder. If the report data spans multiple page grids in the Report Designer, the data is segregated into multiple sections in the HTML. The sections are first divided by model name and then by object name. This means that a section may include objects from different models, which are sorted by model name and object name. 
+</li></ol></li>
+            <li class="listnumber">To view the HTML report on a different computer, include the computer name in the path to the filename. For example, if you have published the report to c:\erwin\reports folder on a computer that is named Comp001, use the following path to access it:
+<pre xml:space="preserve">
+\\comp001\erwin\reports\index.htm
+</pre><p class="noteAlt">The computer from which you are accessing the report must be in the same domain as the one in which the report is published. In addition, the user who is accessing the report must have at least the read-only privileges on the corresponding folder.</p></li>
+            <li class="listnumber">To export a report or a report solution to CSV, follow these steps:
+<ol class="listalpha"><li class="listalpha">Right-click the report and click <span class="uielement">Export to CSV</span>. Or, right-click the report solution and click <span class="uielement">Export All to CSV</span>. The Report Export dialog appears.
+</li><li class="listalpha">Click <span class="uielement">Browse</span> and select the folder to which you want to export the report.
+</li><li class="listalpha">Go to the <span class="uielement">TEXT</span> tab and select the following options:
+<dl><dt>Format</dt><dd><p class="normaltermcontinued3">Specifies whether you want to include the first-level object names multiple times. For example, you have included entity names and attribute names in your report and you have selected <span class="uielement">No Duplicates</span>. The entity name appears only once for all the corresponding attribute names. If you have selected <span class="uielement">Duplicates</span>, the entity name appears as many times as the corresponding attribute names appear.</p></dd><dt>Text Qualifier</dt><dd><p class="normaltermcontinued3">Specifies the symbol that you want to use to indicate the column headers.</p></dd><dt>Delimiters</dt><dd><p class="normaltermcontinued3">Specifies how you want to separate two columns in the exported report. The option <span class="uielement">Comma Delimited</span> creates a .CSV file and the remaining options create .TXT files.</p></dd></dl></li><li class="listalpha">Click <span class="uielement">OK</span>. The report is generated in the specified folder.
+</li></ol></li>
+            <li class="listnumber">
+                <ol class="listnumber">
+                    To export a report to PDF, follow these steps: 
+<ol class="listalpha"><li class="listalpha">Click the <span class="uielement">Clear data in data grid</span> icon and clear the result grid.
+<p class="listcontinue2">This is a best practice and helps the application export the report without consuming much of the computer resources.</p></li><li class="listalpha">Right-click the report and click <span class="uielement">Export to PDF</span>. The <span class="uielement">Report Export</span> dialog appears.
+</li><li class="listalpha">Click <span class="uielement">Browse</span> and select the folder to which you want to export the report.
+</li><li class="listalpha">Go to the <span class="uielement">PDF</span> tab and enter values/set the following fields:
+<dl><dt>Solution Title in PDF</dt><dd><p class="normaltermcontinued3">Specifies the title for the entire report solution.</p></dd><dt>Report Header in PDF</dt><dd><p class="normaltermcontinued3">Specifies the text that appears on the first line of every page of the report.</p></dd><dt>Report Footer in PDF</dt><dd><p class="normaltermcontinued3">Specifies the text that appears at the bottom of every page of the report.</p></dd></dl><p class="listcontinue2">For each of these options, you can specify the font, size, color, and alignment.</p><dl><dt>Image Orientation</dt><dd><p class="normaltermcontinued3">Specifies the direction of the images that are generated in the report. Images are generated for the Subject Area and ER Diagram reports, when you select properties under Graphical Members.</p></dd><dt>Font &amp; Color</dt><dd><p class="normaltermcontinued3">Specifies the styles to be used with respect to the font and its color.</p></dd><dt>Table of Contents</dt><dd><p class="normaltermcontinued3">Indicates whether the report should contain a table of contents.</p></dd><dt>Index</dt><dd><p class="normaltermcontinued3">Indicates whether the report should contain an index.</p></dd><dt>Comprehensive Report</dt><dd><p class="normaltermcontinued3">Indicates whether the report should contain comprehensive tabular information based on the items selected for the report. Selecting this option lets you avoid information duplication in the report.</p></dd></dl></li><li class="listalpha">Go to the <span class="uielement">Advanced</span> tab and enter values/set the following fields:
+<dl><dt>Report Logo</dt><dd><p class="normaltermcontinued3">Lets you add a logo to the report. Also, lets you link the logo to a URL of your choice.</p></dd><dt>Logo Position</dt><dd><p class="normaltermcontinued3">Specifies the position of the logo in the report.</p></dd><dt>Alignment</dt><dd><p class="normaltermcontinued3">Specifies the alignment of the logo at the selected position in the report.</p></dd></dl><dt>Custom Report</dt><dd><p class="normaltermcontinued3">Lets you set custom colors to the various sections of the report. Select the Use Custom Colors check box to be able to select colors of your choice.</p></dd><dt>Select ER Diagram Format</dt><dd><p class="normaltermcontinued3">Specifies the format of the ER&#160;diagram.</p></dd><dt>Page Size</dt><dd><p class="normaltermcontinued3">Specifies the page size that would be used for printing the PDF copy of the report.</p></dd></li><li class="listalpha">Click <span class="uielement">OK</span>. The report is generated in the specified folder. If the report data spans multiple page grids in the Report Designer, the data is segregated into multiple sections in the PDF. The sections are first divided by model name and then by object name. This means that a section may include objects from different models, which are sorted by model name and object name. 
+</li></ol></ol>
+            </li>
+            <li class="listnumber">To add a report from another report solution, follow these steps:
+<ul class="listbullet2"><li class="listbullet2">In the <span class="uielement">Report Designer</span> dialog, right-click the template name and click <span class="uielement">Add Report</span>.
+</li><li class="listbullet2">Select the report that you want to include (.erpt file) and click <span class="uielement">OK</span>.
+</li><li class="listbullet2">Save the report solution.
+</li></ul></li>
+        </ol><a name="o6822"></a>
+        <h3 class="heading3" id="t6822">The Filter By Option</h3>
+        <p class="bodytext">Report Designer includes the <em class="italic">Filter By</em> option that lets you generate drill-down reports. Some of the drill-down reports that you can generate are as follows: </p>
+        <p class="bodytext">Entity/Table level reports</p>
+        <ul class="listbullet">
+            <li class="listbullet">Entities and tables in the current Subject Area 
+</li>
+            <li class="listbullet">Entities and tables that are selected in the current diagram
+</li>
+        </ul>
+        <p class="bodytext">Attribute/Column level reports</p>
+        <ul class="listbullet">
+            <li class="listbullet">Migrated attributes and columns
+</li>
+            <li class="listbullet">Owned attributes and columns
+</li>
+            <li class="listbullet">Role-named attributes and columns
+</li>
+            <li class="listbullet">Foreign (FK) Key groups and indexes 
+</li>
+            <li class="listbullet">Generated indexes 
+</li>
+            <li class="listbullet">Nonunique (IE) Key groups and indexes 
+</li>
+            <li class="listbullet">Primary (PK) Key groups and indexes 
+</li>
+            <li class="listbullet">Unique (AK) Key groups and indexes
+</li>
+        </ul>
+        <p class="bodytext">Subject Area reports:</p>
+        <ul class="listbullet">
+            <li class="listbullet">All entities and tables in the current subject area
+</li>
+            <li class="listbullet">Members of the current diagram
+</li>
+            <li class="listbullet">Members of all the diagrams in the current Subject Area
+</li>
+            <li class="listbullet">Members of all the diagrams in the Main Subject Area, that is, the members of all diagrams at the model level
+</li>
+            <li class="listbullet">Members of the diagrams that are specified at run time
+</li>
+        </ul>
+        <p class="bodytext">You can use the Graphical Member option for diagrams and can view the images of diagrams.</p>
+        <p class="bodytext">The filters for Entity/Table and Key Group/Index are available when you select the members of a diagram or a Subject Area. </p>
+        <p class="bodytext">Attributes and columns can be displayed the following order:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Alphabetic
+</li>
+            <li class="listbullet">Attribute (the order in which attributes appear on the logical model)
+</li>
+            <li class="listbullet">Column (the order in which columns appear on the physical model)
+</li>
+            <li class="listbullet">Physical (the order in which columns appear in the DDL after Forward Engineering)
+</li>
+            <li class="listbullet">Reverse Alphabetic
+</li>
+        </ul>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Import Words and Abbreviations to the Naming Standards Glossary</title>
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6653" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/23/2018T20:28-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" src="highlight.js" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('7052');expand2('7053');expand2('7057');expand2('6650');highlight('6653')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t6653">Import Words and Abbreviations into the Naming Standards Glossary</h5>
+        <p class="bodytext">You can import words and abbreviations into the glossary from an existing naming standards CSV file. Be sure to examine the data in each row and edit or add as required. </p>
+        <p class="proceduresubheading">Follow these steps::</p>
+        <ol class="listnumber">
+            <li class="listnumber">Expand the Model Explorer, right-click <span class="uielement">Naming Standard</span> and click <span class="uielement">New</span>.
+<p class="listcontinue">A new Naming Standard object is added.</p></li>
+            <li class="listnumber">Right-click the new object and click <span class="uielement">Properties</span>.
+<p class="listcontinue">The <span class="uielement">Naming Standard Editor</span> appears.</p></li>
+            <li class="listnumber">Click the <span class="uielement">Glossary</span> tab, then click <span class="uielement">Import</span>.
+<p class="listcontinue">The <span class="uielement">Open</span> dialog appears. </p></li>
+            <li class="listnumber">Select the path and file name of the CSV file, and click <span class="uielement">Open</span>.
+<p class="listcontinue">The words and corresponding abbreviations are imported into the Naming Standards glossary.</p></li>
+        </ol>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\Resources\Images\389.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o7059"></a>
+        <p class="bodytext">You have two tables, Customer and Accounts. The Customer table has First Name and Last Name columns.</p>
+        <p class="bodytext">Suppose you want to implement the following standards:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Prefix the names of the tables with Tbl_.
+</li>
+            <li class="listbullet">Display First Name as Col_FNAME and Last Name as Col_LNAME.
+</li>
+        </ul>
+        <p class="bodytext">How you do it:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Add a Naming Standard Object and make it active.
+</li>
+            <li class="listnumber">In the Logical tab, for Entity and Attribute, select Modifier 1 in the Part 1 and Prime in the Part 2 column.
+</li>
+            <li class="listnumber">In the Physical tab, for the Table and Column object types, select Modifier 1 in the Part 1 and Prime in the Part 2 column.
+</li>
+            <li class="listnumber">In the Glossary tab, add First Name and Last Name and the corresponding abbreviations. Select the P check box.
+</li>
+            <li class="listnumber">Open the Model Naming Options dialog and click the Name Mapping tab.
+</li>
+            <li class="listnumber">Select the Use Glossary check box for Entity to Table and Attribute to Column rows. In the Prefix column, enter Tbl_ in the first row and Col_ in the third row. Click Close.
+<p class="listcontinue">The standards that you have defined are applied to the model.</p></li>
+        </ol>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext">
+        </p><a name="o7060"></a>
+        <h3 class="heading3" id="t7060">Import Naming Standards from a Previous Version</h3>
+        <p class="bodytext">If you have created naming standards in a previous version of erwin DM, you can import them to the current release. When you import naming standards, the definitions for logical and physical models, and glossary words are imported.</p>
+        <p>
+        </p>
+    </body>
+</html>

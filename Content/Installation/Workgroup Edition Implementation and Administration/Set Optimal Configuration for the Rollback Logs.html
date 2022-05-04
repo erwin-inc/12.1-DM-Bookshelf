@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" madcap:sourcedocument="D:\Documentation\ProjectRevamp\MadCapFlare\PythonScripts\AIT Files\Workgroup Edition Implementation and Administration\Set Optimal Configuration for the Rollback Logs.html" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Set Optimal Configuration for the Rollback Logs</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3465" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/22/2018T14:20-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3452');expand2('3462');highlight('3465')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t3465">Set Optimal Configuration for the Rollback Logs</h3>
+        <p class="bodytext">For large transactions, rollback segments may need to allocate new extents as the transaction continues. When the transaction ends, a properly configured Oracle database releases the additional rollback extents so that they can be used for other rollback segments. To ensure that the additional rollback extents are released, configure the OPTIMAL parameter for each rollback segment.</p>
+        <p class="proceduresubheading">To set the optimal configuration for the rollback logs of large databases</p>
+        <ol class="listnumber">
+            <li class="listnumber">Log in to Oracle as SYS or SYSTEM and run the following query and check the result to view the current configuration of the Rollback Segments:
+<pre xml:space="preserve">
+SQLWKS&gt; select SEGMENT_NAME, INITIAL_EXTENT, NEXT_EXTENT, MIN_EXTENTS, MAX_EXTENTS, STATUS from dba_rollback_segs;
+</pre><p class="listcontinue">The result is:</p><pre xml:space="preserve">
+<strong>SEGMENT_NAME INITIAL_EX NEXT_EXTEN MIN_EXTENT MAX_EXTENT STATUS</strong>
+SYSTEM	  51200 	51200		2	121 	 ONLINE
+RB_TEMP	  102400	102400		2	121	 OFFLINE
+RB1		  2097152	2097152		2	121	 ONLINE
+RB2		  2097152	2097152		2	121	 ONLINE
+RB3		  2097152	2097152		2	121	 ONLINE
+RB4		  2097152	2097152		2	121	 ONLINE
+RB5		  2097152	2097152		2	121	 ONLINE
+RB6		  2097152	2097152		2	121	 ONLINE
+RB7		  2097152	2097152		2	121	 ONLINE
+RB8		  2097152	2097152		2	121	 OFFLINE
+RB9		  2097152	2097152		2	121	 OFFLINE
+RB10	  2097152	2097152		2	121	 OFFLINE
+RB11	  2097152	2097152		2	121	 OFFLINE
+RB12	  2097152	2097152		2	121	 OFFLINE
+RB13	  2097152	2097152		2	121	 OFFLINE
+RB14	  2097152	2097152		2	121	 OFFLINE
+RB15	  2097152	2097152		2	121	 OFFLINE
+RB16	  2097152	2097152		2	121	 OFFLINE
+18 rows selected.
+</pre><p class="noteAlt">In this example, there are sixteen rollback segments with 2 MB INITIAL EXTENT, 2 MB NEXT EXTENT, and MAX EXTENTS of 121 MB.</p></li>
+            <li class="listnumber">Run the following query for each Rollback Segment:
+<pre xml:space="preserve">
+alter rollback segment rb1 offline;
+ drop rollback segment rb1;
+ create public rollback segment rb1
+tablespace rollback_data
+storage (initial 6M
+next 6M
+minextents 2
+maxextents 121
+optimal 12M);
+ alter rollback segment rb1 online;
+ alter rollback segment rb2 offline;
+ drop rollback segment rb2;
+ create public rollback segment rb2
+tablespace rollback_data
+storage (initial 6M
+next 6M
+minextents 2
+maxextents 121
+optimal 12M);
+ alter rollback segment rb2 online;
+ 
+&lt;Repeat for each Rollback Segment&gt;
+</pre><p class="listcontinue">This query sets the optimal Rollback Segment configuration to 6 MB INITIAL EXTENT, 6 MB NEXT EXTENT, 2 MB MIN EXTENT, 121 MB MAX EXTENT, and 12 MB OPTIMAL.</p></li>
+            <li class="listnumber">Run the following query to verify the Rollback segment configuration changes:
+<pre xml:space="preserve">
+SQLWKS&gt; select SEGMENT_NAME, INITIAL_EXTENT, NEXT_EXTENT, MIN_EXTENTS,MAX_EXTENTS, STATUS from dba_rollback_segs;
+</pre><p class="listcontinue">The result is:</p><pre xml:space="preserve">
+<strong>SEGMENT_NAME INITIAL_EX NEXT_EXTEN MIN_EXTENT MAX_EXTENT STATUS</strong>
+SYSTEM	  51200 	51200	    2	     121    	ONLINE
+RB_TEMP	  102400	102400	    2	     121    	OFFLINE
+RB1		  6291456	6291456	    2	     121    	ONLINE
+RB2		  6291456	6291456	    2	     121    	ONLINE
+RB3		  6291456	6291456	    2	     121    	ONLINE
+RB4		  6291456	6291456	    2	     121    	ONLINE
+RB5		  6291456	6291456	    2	     121    	ONLINE
+RB6		  6291456	6291456	    2	     121    	ONLINE
+RB7		  6291456	6291456	    2	     121    	ONLINE
+RB8		  6291456	6291456	    2	     121    	ONLINE
+RB9		  6291456	6291456	    2	     121    	ONLINE
+RB10	  6291456	6291456	    2	     121    	ONLINE
+RB11	  6291456	6291456	    2	     121    	ONLINE
+RB12	  6291456	6291456	    2	     121    	ONLINE
+RB13	  6291456	6291456	    2	     121    	ONLINE
+RB14	  6291456	6291456	    2	     121    	ONLINE
+RB15	  6291456	6291456	    2	     121    	ONLINE
+RB16	  6291456	6291456	    2	     121    	ONLINE
+18 rows selected.
+</pre></li>
+        </ol><a name="o3466"></a>
+        <h3 class="heading3" id="t3466">Tablespaces</h3>
+        <p class="bodytext">To improve performance you can create more than one tablespace for indexes. Then, after you install the software, you can move some indexes to the other tablespaces.</p>
+        <p class="bodytext">The following table lists the suggested initial sizes for DATA and INDEX tablespaces: </p>
+        <p class="beforetable">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="510">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="120">
+                    <p class="tableheading">Tablespace</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="102">
+                    <p class="tableheading">Small</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="150">
+                    <p class="tableheading">Medium</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="138">
+                    <p class="tableheading">Large</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="120">
+                    <p class="tablebodytext">DATA</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="102">
+                    <p class="tablebodytext">200 MB</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">500 MB</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="138">
+                    <p class="tablebodytext">1 GB</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="120">
+                    <p class="tablebodytext">INDEX</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="102">
+                    <p class="tablebodytext">200 MB</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">250 MB</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="138">
+                    <p class="tablebodytext">500 MB</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">DATA and INDEX tablespaces with these initial sizes can accommodate at least ten models or versions.</p>
+        <p>
+        </p>
+    </body>
+</html>

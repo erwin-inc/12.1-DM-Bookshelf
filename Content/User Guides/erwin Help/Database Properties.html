@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Database Properties</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2997" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3137');expand2('3135');highlight('2997')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t2997">Database Properties</h6>
+        <p class="bodytext">The following describes new or changed properties in the property editor and related information.</p>
+        <dl>
+            <dt>EDITION (New)</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the edition of the database, either <em class="italic">web</em> for Web Edition or <em class="italic">business</em> for Business Edition. </p>
+                <p class="normaltermcontinued">When EDITION is specified but MAXSIZE is not specified, MAXSIZE will be set to the most restrictive size that the edition supports (1 GB for Web Edition and 10 GB for Business Edition). </p>
+            </dd>
+            <dt>MAXSIZE (New)</dt>
+            <dd>
+                <p class="normaltermcontinued">Specifies the maximum size of the database. MAXSIZE must be valid for the specified EDITION. For Web Edition, valid values of MAXSIZE are: 1GB or 5GB. For Business Edition, valid values are: 10GB, 20GB, 30GB, 40GB, or 50GB. </p>
+                <p class="normaltermcontinued">If MAXSIZE is set to a value of 1GB or 5GB, and EDITION is not specified, the database edition is automatically set to Web Edition. </p>
+                <p class="normaltermcontinued">If MAXSIZE is set to a value of 10GB, 20GB, 30GB, 40GB, or 50GB, and EDITION is not specified, the database edition is automatically set to Business Edition. </p>
+                <p class="normaltermcontinued">If neither MAXSIZE or EDITION are specified, a Web Edition database of size 1GB is created.</p>
+            </dd>
+            <dt>AS COPY OF [source_server_name.]source_database_name (New)</dt>
+            <dd>
+                <p class="normaltermcontinued">Copies a database to the same or different SQL Azure server. </p>
+                <p class="listnote"><strong>Notes:</strong> </p>
+                <ul class="listbullet2">
+                    <li class="listbullet2">AS COPY OF cannot be used with any other CREATE DATABASE arguments.
+<p class="listcontinue2"><em class="italic">source_server_name</em></p><p class="listcontinue2">Specifies the name of the SQL Azure server where the source database is located. This parameter is optional when the source database and the destination database are located on the same SQL Azure server. </p></li>
+                    <li class="listbullet2">The AS COPY OF argument does not support fully-qualified unique domain names. In other words, if your server's fully-qualified domain name is <em class="italic">serverName.database.windows.net</em>, use only <em class="italic">serverName</em> during database copy. 
+<p class="listcontinue2"><em class="italic">source_database_name</em></p><p class="listcontinue2">Specifies the name of the database that will be copied. This monitors the copy process by querying the <em class="italic">sys.databases</em> and <em class="italic">sys.dm_database_copies</em> views on the destination server.</p><p class="listnote2"><strong>Notes:</strong> </p><p class="listnote2">While copying is in progress, the <em class="italic">state_desc</em> column of the <em class="italic">sys.databases</em> view for the new database will read COPYING.</p><p class="listnote2">If the copying fails, the <em class="italic">state_desc</em> column of the <em class="italic">sys.databases</em> view for the new database will read SUSPECT. In this case, execute the DROP statement on the new database and try again later.</p><p class="listnote2">If the copying succeeds, the <em class="italic">state_desc</em> column of the <em class="italic">sys.databases</em> view for the new database will read ONLINE. In this case, the copying is complete and the new database is a regular database, able to be changed independent of the source database.</p></li>
+                </ul>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">SQL Azure does not support the following options with the <em class="italic">CREATE DATABASE</em> statement:
+<ul class="listbullet2"><li class="listbullet2">All Parameters related to the physical placement of the file, such as <em class="italic">&lt;filespec&gt;</em> and <em class="italic">&lt;filegroup&gt;</em></li><li class="listbullet2">COLLATE on a user database
+</li><li class="listbullet2">External access options, such as DB_CHAINING and TRUSTWORTHY
+</li><li class="listbullet2">Attaching a database
+</li><li class="listbullet2">Service broker options, such as ENABLE_BROKER, NEW_BROKER, and ERROR_BROKER_CONVERSATIONS
+</li><li class="listbullet2">Database snapshot
+</li></ul></li>
+            <li class="listbullet">SQL Azure does not support the following options with the <em class="italic">ALTER DATABASE</em> statement:
+<ul class="listbullet2"><li class="listbullet2">COLLATE
+</li><li class="listbullet2"><em class="italic">&lt;file_and_filegroup_options&gt;</em></li><li class="listbullet2"><em class="italic">&lt;add_or_modify_files&gt;</em></li><li class="listbullet2"><em class="italic">&lt;filespec&gt;</em></li><li class="listbullet2"><em class="italic">&lt;add_or_modify_filegroups&gt;</em></li><li class="listbullet2"><em class="italic">&lt;filegroup_updatability_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;set_database_options&gt;</em></li><li class="listbullet2"><em class="italic">&lt;optionspec&gt;</em></li><li class="listbullet2"><em class="italic">&lt;auto_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;change_tracking_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;cursor_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;database_mirroring_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;date_correlation_optimization_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;db_encryption_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;db_state_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;db_update_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;db_user_access_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;external_access_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;parameterization_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;recovery_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;service_broker_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;snapshot_option&gt;</em></li><li class="listbullet2"><em class="italic">&lt;sql_option&gt;</em></li></ul></li>
+            <li class="listbullet">GRANT Database Permissions - SQL Azure does not support the following options with the GRANT statement:
+<ul class="listbullet2"><li class="listbullet2"><em class="italic">&lt;database_principal&gt;</em> options:
+<ul class="listbullet3"><li class="listbullet3">Application_role 
+</li><li class="listbullet3">Database_user_mapped_to_Windows_User 
+</li><li class="listbullet3">Database_user_mapped_to_Windows_Group 
+</li><li class="listbullet3">Database_user_mapped_to_certificate 
+</li><li class="listbullet3">Database_user_mapped_to_asymmetric_key
+</li></ul></li></ul></li>
+            <li class="listbullet">GRANT Database Principal Permissions grants permissions on a database user, database role, or application role. SQL Azure does not support the following arguments and options when using the GRANT statement:
+<ul class="listbullet2"><li class="listbullet2">GRANT ON APPLICATION ROLE
+</li><li class="listbullet2"><em class="italic">&lt;database_principal&gt;</em> options:
+<ul class="listbullet3"><li class="listbullet3">Application_role 
+</li><li class="listbullet3">Database_user_mapped_to_Windows_User 
+</li><li class="listbullet3">Database_user_mapped_to_Windows_Group 
+</li><li class="listbullet3">Database_user_mapped_to_certificate 
+</li><li class="listbullet3">Database_user_mapped_to_asymmetric_key
+</li></ul></li></ul></li>
+        </ul>
+        <p class="bodytext">The following describes the impacts on the SQL Azure Database Editor as compared to the SQL Server Database Editor:</p>
+        <ul class="listbullet">
+            <li class="listbullet">All properties on General, File, and Options tabs are invalid.
+</li>
+            <li class="listbullet">In the Navigation Grid, Database Type, Compatibility Level, and Collation are unavailable.
+</li>
+        </ul>
+        <p>
+        </p>
+    </body>
+</html>

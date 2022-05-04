@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="How to Generate or View Reports"
+    Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/How_to_Generate_View_Reports.html">
+    <TocEntry
+      Title="Verify erwin DM ODBC Data Source"
+      Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Verify_erwinDM_ODBC_DataSource.html" />
+    <TocEntry
+      Title="Decide the Type of Report"
+      Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/decide_the_method.html" />
+    <TocEntry
+      Title="Create Reports Using erwin Report Designer"
+      Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/create_rep_report_designer.html">
+      <TocEntry
+        Title="Subject Area Reports"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Subject Area Reports.html" />
+      <TocEntry
+        Title="Generating TLX Reports"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Generating TLX Reports.html" />
+      <TocEntry
+        Title="Change the Logo on the HTML Report"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Change the Logo on the HTML Report.html" />
+      <TocEntry
+        Title="Pinned Reports"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/pinned_reports.html">
+        <TocEntry
+          Title="Standard Reports"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/standard_reports.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Generate Custom Reports"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/generate_custom_reports.html">
+        <TocEntry
+          Title="Use the Built-in Query Tool and Run the Query"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Use_Query_Tool.html" />
+        <TocEntry
+          Title="Use Microsoft Excel and Run the Query"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/use_excel_and_run_query.html" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Appendix"
+    Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/r9_reporting_appendix.html">
+    <TocEntry
+      Title="Schemas"
+      Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/appendix_schemas.html">
+      <TocEntry
+        Title="M0 Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/M0_Schema.html">
+        <TocEntry
+          Title="M0 Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/M0 Schema Tables.html">
+          <TocEntry
+            Title="ABSTRACT_OBJECT Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/ABSTRACT_OBJECT_Table.html" />
+          <TocEntry
+            Title="Concrete Object Tables"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Concrete_Object_Tables.html" />
+          <TocEntry
+            Title="Vector Property Tables"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Vector_Property_Tables.html" />
+        </TocEntry>
+        <TocEntry
+          Title="Functions"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Functions.html">
+          <TocEntry
+            Title="IS_AUTOCALCULATED()"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/IS_AUTOCALCULATED.html" />
+          <TocEntry
+            Title="IS_DEFAULT"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/IS_DEFAULT.html" />
+          <TocEntry
+            Title="IS_HARDENED()"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/IS_HARDENED.html" />
+          <TocEntry
+            Title="TRAN()"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/TRAN.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="M1 Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/M1_Schema.html">
+        <TocEntry
+          Title="M1 Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/M1 Schema Tables.html">
+          <TocEntry
+            Title="OBJECT_TYPE Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/OBJECT_TYPE_Table.html" />
+          <TocEntry
+            Title="PROPERTY_TYPE Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/PROPERTY_TYPE_Table.html" />
+          <TocEntry
+            Title="ASSOCIATION_TYPE Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/ASSOCIATION_TYPE_Table.html" />
+          <TocEntry
+            Title="AGGREGATION_TYPE Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/AGGREGATION_TYPE_Table.html" />
+          <TocEntry
+            Title="ABSTRACT_TYPE Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/ABSTRACT_TYPE_Table.html" />
+          <TocEntry
+            Title="CATEGORY_TYPE and CATEGORY_MEMBERSHIP Tables"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/CATEGORY_TYPE_and_CATEGORY_MEMBERSHIP_Tables.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="EM0 Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/EM0Schema.html">
+        <TocEntry
+          Title="EM0 Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/EM0 Schema Tables.html" />
+      </TocEntry>
+      <TocEntry
+        Title="EM1 Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/EM1_Schema.html">
+        <TocEntry
+          Title="EM1 Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/EM1 Schema Tables.html">
+          <TocEntry
+            Title="TARGET_DBMS Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/TARGET_DBMS_Table.html" />
+          <TocEntry
+            Title="DBMS-Specific Tables"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/DBMS_Specific_Tables.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="AL Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/AL_Schema.html">
+        <TocEntry
+          Title="AL Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/AL Schema Tables.html">
+          <TocEntry
+            Title="CREATED Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/CREATED_Table.html" />
+          <TocEntry
+            Title="DELETED Table"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/DELETED_Table.html" />
+          <TocEntry
+            Title="MODIFIED and PROPERTIES Tables"
+            Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/MODIFIED_and_PROPERTIES_Tables.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="DGM Schema"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/DGM_schema.html">
+        <TocEntry
+          Title="DGM Schema Tables"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/DGM_schema_tables.html" />
+        <TocEntry
+          Title="Diagram Table"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/diagram_table.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Functions"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Functions_2.html">
+        <TocEntry
+          Title="TRAN()"
+          Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/TRAN_2.html" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Useful Queries"
+      Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Useful_Queries.html">
+      <TocEntry
+        Title="Logical and Physical Names of Entities"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Logical_and_Physical_Names_of_Entities.html" />
+      <TocEntry
+        Title="Names of Logical Entities"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Names_of_Logical_Entities.html" />
+      <TocEntry
+        Title="Qualified Names for Physical Entities (Tables)"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Qualified_Names_of_Physical_Entities_for_Target_Servers.html" />
+      <TocEntry
+        Title="Entity Definitions and Notes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Entity_Definitions_and_Notes.html" />
+      <TocEntry
+        Title="Logical and Physical Names of Attributes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Logical_and_Physical_Names_of_Attributes.html" />
+      <TocEntry
+        Title="Attributes with Data Types"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Attributes_with_Data_Types.html" />
+      <TocEntry
+        Title="Logical-Only Attributes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Logical_Only_Attributes.html" />
+      <TocEntry
+        Title="Logical-Only and Physical-Only Status of Attributes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Logical_Only_and_Physical_Only_Status_of_Attributes.html" />
+      <TocEntry
+        Title="Domain Usage"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Domain_Usage.html" />
+      <TocEntry
+        Title="Domains Not Used by Attributes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Domains_Not_Used_by_Attributes.html" />
+      <TocEntry
+        Title="Key Group Types"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Key_Group_Types.html" />
+      <TocEntry
+        Title="Subject Area Membership"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Subject_Area_Membership.html" />
+      <TocEntry
+        Title="Model UDP Definitions"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Model_UDP_Definitions.html" />
+      <TocEntry
+        Title="Objects Using a Default Name"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Objects_Using_a_Default_Name.html" />
+      <TocEntry
+        Title="Non-Subtype Relationships"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Non_Subtype_Relationships.html" />
+      <TocEntry
+        Title="All Objects Created During a Modeling Session"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/All_Objects_Created_During_a_Modeling_Session.html" />
+      <TocEntry
+        Title="All Objects Deleted During a Modeling Session"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/All_Objects_Deleted_During_a_Modeling_Session.html" />
+      <TocEntry
+        Title="All Objects Modified During a Modeling Session"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/All_Objects_Modified_During_a_Modeling_Session.html" />
+      <TocEntry
+        Title="All Objects and Properties Modified During a Modeling Session"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/All_Objects_and_Properties_Modified_During_a_Modeling_Session.html" />
+      <TocEntry
+        Title="Entities Not Having Primary Key Columns"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Entities_Not_Having_Primary_Key_Columns.html" />
+      <TocEntry
+        Title="Migrated Physical Attributes"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Migrated_Physical_Attributes.html" />
+      <TocEntry
+        Title="Oracle Model Object Types"
+        Link="/Content/Tutorials/Scenarios/Generating or Viewing Reports/Oracle_Model_Object_Types.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

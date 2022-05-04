@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>ISCPersistenceUnit::ReverseEngineer</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8011" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6062');expand2('6190');expand2('6242');highlight('8011')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t8011">ISCPersistenceUnit::ReverseEngineerScript</h4>
+        <p class="bodytext">Here is the signature for the <i>ReverseEngineerScript</i> function:</p><pre xml:space="preserve">
+HRESULT ReverseEngineerScript ([in]ISCPropertyBag * PropertyBag, VARIANT Locator,
+VARIANT Disposition);
+</pre>
+        <p class="bodytext">The following table contains the valid arguments for the <i>ReverseEngineerScript</i> function:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <col />
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Parameter</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="150">
+                    <p class="tableheading">Valid Type/Value</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="162">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">PropertyBag</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">ISCPropertyBag * - Pointer to a Property Bag object.</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Contains options for reverse engineering.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Locator</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BSTR - Full path to a storage location.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Provides the path to the reverse engineering script file.<p class="noteAltTable">Use the Schema option to reverse engineer a model from a JSON schema. This option is only available for JSON.</p></p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Disposition</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BSTR - List of keywords parameters.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="162">
+                    <p class="tablebodytext">Specifies a schema or a blank value as an option for RES.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The following table contains the valid arguments for the PropertyBag parameter.</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <col />
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Parameter</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="150">
+                    <p class="tableheading">Valid Type/Value</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="162">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Synch_Table_Filter_By_Name</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BSTR</p>
+                    <p class="tablebodytext">Default: Null</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Reverse engineers the tables that contain the input filter strings. Multiple filter strings are specified as comma separated values.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Case_Option</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">25090:None</p>
+                    <p class="tablebodytext">25091:lower</p>
+                    <p class="tablebodytext">25092:Upper</p>
+                    <p class="tablebodytext">Default: None</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Specifies the case conversion option for physical names.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Logical_Case_Option</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">25045: None</p>
+                    <p class="tablebodytext">25046: UPPER</p>
+                    <p class="tablebodytext">25047: lower</p>
+                    <p class="tablebodytext">25048:Mixed</p>
+                    <p class="tablebodytext">Default: None</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Specifies the case conversion option for logical names.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Infer_Primary_Keys</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BOOL-- True or False.</p>
+                    <p class="tablebodytext">Default: None</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Infers primary key columns for the tables that are based on defined indexes.</p>
+                    <p class="tablebodytext">True: Primary Keys option is selected.</p>
+                    <p class="tablebodytext">False: Primary Keys option is not selected.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Infer_Relations</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BOOL-- True or False.</p>
+                    <p class="tablebodytext">Default: False</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Infers the relationships between tables that are based on either primary key column names or defined indexes.</p>
+                    <p class="tablebodytext">True: Relations Option is selected.</p>
+                    <p class="tablebodytext">False: Relations Option is not selected.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Infer_Relations_Indexes</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BOOL-- True or False.</p>
+                    <p class="noteAltTable">Set the value to Indexes or Names when Infer_Relations is set to Relations.</p>
+                    <p class="tablebodytext">Default: False.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Infers the relationships from the table indexes.</p>
+                    <p class="tablebodytext">True: Indexes option is selected.</p>
+                    <p class="tablebodytext">False: Names option is selected.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Remove_ERwin_Generated_Triggers</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BOOL--True or False.</p>
+                    <p class="tablebodytext">Default: True.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="162">
+                    <p class="tablebodytext">Removes erwin generated triggers.</p>
+                    <p class="tablebodytext">True: Remove Include Generated Triggers.</p>
+                    <p class="tablebodytext">False: Do not remove Include Generated Triggers.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Force_Physical_Name_Option</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="150">
+                    <p class="tablebodytext">VT_BOOL--True or False.</p>
+                    <p class="tablebodytext">Default: Force</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="162">
+                    <p class="tablebodytext">Overrides the physical name property for all objects in logical/physical models automatically during reverse engineering.</p>
+                    <p class="tablebodytext">True: Force physical name option.</p>
+                    <p class="tablebodytext">False: Do not force physical name option.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">
+        </p>
+        <p class="bodytext"><b>Use Scripts with API while Reverse Engineering:</b>
+            <p class="bodytext">Use a JSON or SQL scripts with API while reverse engineering.</p>
+            <p class="bodytext"><strong>Reverse Engineering Script Sample:</strong>
+            </p>
+        </p><pre xml:space="preserve">Dim oAPI
+Set oAPI = CreateObject("ERwin9.SCAPI.9.0")
+
+Dim oPropertyBag
+Set oPropertyBag = CreateObject("ERwin9.SCAPI.PropertyBag.9.0")
+'Create LP model with Database as MongoDB
+Call oPropertyBag.Add("Model_Type", "Combined")
+Call oPropertyBag.Add("Target_Server", 1075859196)
+Call oPropertyBag.Add("Target_Server_Version", 4)
+'Create Persistence Unit
+Dim oPUnitCol
+Set oPUnitCol = oApi.PersistenceUnits
+'Create Propertybag
+Dim oPersistenceUnit
+Set oPersistenceUnit = oPUnitCol.Create(oPropertyBag)
+
+'Clear all propertybag objects
+oPropertyBag.ClearAll()
+
+'Call oPropertyBag.Add("Synch_Table_Filter_By_Name", "listingsAndReviews")
+Call oPropertyBag.Add("Case_Option", 25090)
+Call oPropertyBag.Add("Logical_Case_Option", 25045)
+Call oPropertyBag.Add("Infer_Primary_Keys", False)
+Call oPropertyBag.Add("Infer_Relations", False)
+Call oPropertyBag.Add("Infer_Relations_Indexes", False)
+Call oPropertyBag.Add("Remove_ERwin_Generated_Triggers", False)
+Call oPropertyBag.Add("Force_Physical_Name_Option", False)
+'Reverse Engineer the MongoDB DB
+ 
+	</pre>
+        <p class="bodytext">The following example refers to JSON models when the option is Blank Value:</p><pre xml:space="preserve">
+Call oPersistenceUnit.ReverseEngineerScript(oPropertyBag, "C:\ERWIN_PROJECT\Issue_Scripts\MongoDB_MCL\MongoDB_JSON2_4.json", "")
+</pre>
+        <p class="bodytext">The following example refers to JSON models when the option is Schema:</p><pre xml:space="preserve">'Call oPersistenceUnit.ReverseEngineerScript(oPropertyBag, "C:\ERWIN_PROJECT\Issue_Scripts\MongoDB_MCL\MongoDB_JSON2_4.json", "Schema"))
+
+'Save the RE'd model  
+Call oPersistenceUnit.Save("C:\TEMP_JPMC\MongoModelREDB_RES.erwin", "OVF=Yes")</pre>
+    </body>
+</html>

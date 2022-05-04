@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Link Objects Between Models</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4664" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4677');expand2('4643');expand2('4665');highlight('4664')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t4664">Link Objects Between Models</h5>
+        <p class="bodytext">You can use design layers to represent the different phases in the model development process. Using design layers, you can create separate models that are related and linked to one another. Within each design layer, you can make design decisions that allow you to transition from one layer to another. Possible examples of design layers include: enterprise, conceptual, logical, generic physical, physical, and data warehouse. </p>
+        <p class="bodytext">You can associate modeling objects in related models using tools like Add Model Source, Sync with Model Source, Split Logical/Physical models, and Derive model.</p>
+        <p class="bodytext">If you want to simply match existing objects in two models, creating a link between the objects, use the Link Model Source tool. Unlike the Add Model Source, Derive Model, and Sync with Model Source features, the Link Model Source feature creates no new objects in the target model (although you can use features in the Resolve Differences dialog to import and export objects and properties). You can maintain or update linked objects using the Sync with Model Source tool.</p>
+        <p class="proceduresubheading">To link objects of two models</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the model you want to identify as the target model, then on the Actions menu, choose Design Layers, Link Model Source. The Link Model Source wizard opens.
+</li>
+            <li class="listnumber">In the Source Model pane of the wizard, select your source file. You can choose a local .erwin file, or a file saved to a mart. Click Next.
+</li>
+            <li class="listnumber">In the Type Selection pane of the wizard, select the compare level and an option set.
+</li>
+            <li class="listnumber">In the Object Selection pane of the wizard, select the group of objects that you want to participate in the link process. For example, you can apply a filter to include only those objects not already linked to other objects, or a filter to include all objects. Click Finish.
+</li>
+            <li class="listnumber">In the Resolve Differences dialog, review the matched and unmatched objects, and selectively link objects. Objects with the same name are matched by default. You can also use features in this dialog to import and export objects and properties.
+</li>
+            <li class="listnumber">After you select the objects to link, click Finish to complete the link process and close the wizard. A new model source object is created in the Model Explorer. You can right-click the model source to view Model Source Properties, such as the file location, the synchronization history, and so on. You can also break the link with the model source by deleting the model source from this dialog.
+</li>
+        </ol>
+        <p class="bodytext">When your linked models change, you can keep them in sync by using the Sync with Model Source wizard. On the Actions menu, choose Sync with Model Source to start the synchronization process.</p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="How_to_Link_Model_Sources.html" target="_self">How to Link Model Sources</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

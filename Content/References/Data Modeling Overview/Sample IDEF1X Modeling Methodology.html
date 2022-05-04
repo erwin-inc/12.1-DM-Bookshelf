@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Sample IDEF1X Modeling Methodology</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3795" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T20:00-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3791');highlight('3795')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t3795">Sample IDEF1X Modeling Methodology</h2>
+        <p class="bodytext">erwin� Data Modeler was developed to support the IDEF1X and IE modeling standards. The use of various levels of models within the IDEF1X method can be helpful in developing a system. General model levels are outlined in the IDEF1X standard. In practice, you can expand or contract the number of levels to fit individual situations.</p>
+        <p class="bodytext">Model levels generally span from a wide view to a narrow view, depending on project requirements. A wide but not too detailed view can include only the major entities that are important to a business. A narrow view can include a level of precision required to represent the database design in terms understandable by a particular DBMS. At the lowest level of detail, models are technology-dependent. For example, a model for an IMS database looks different from a model for a Db2 database. At higher levels, models are technology independent and can represent information that is not stored in any automated system.</p>
+        <p class="bodytext">The modeling levels presented are suited to a top-down system development lifecycle approach, where successive levels of detail are created during each project phase.</p>
+        <p class="bodytext">The highest level models come in two forms: </p>
+        <dl>
+            <dt>Entity Relationship Diagram (ERD)</dt>
+            <dd>
+                <p class="normaltermcontinued">Identifies major business entities and their relationships. </p>
+            </dd>
+            <dt>Key-Based (KB)</dt>
+            <dd>
+                <p class="normaltermcontinued">Sets the scope of the business information requirement (all entities are included) and begins to expose the detail.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">The lower-level models also come in two forms: </p>
+        <dl>
+            <dt>Fully-Attributed (FA)</dt>
+            <dd>
+                <p class="normaltermcontinued">Represents a third normal form model that contains all of the detail for a particular implementation effort. </p>
+            </dd>
+            <dt>Transformation Model (TM)</dt>
+            <dd>
+                <p class="normaltermcontinued">Represents a transformation of the relational model into a structure, which is appropriate to the DBMS chosen for implementation. The TM, in most cases, is no longer in third normal form. The structures are optimized based on the capabilities of the DBMS, the data volumes, and the expected access patterns and rates against the data. In a way, a TM is a picture of the eventual physical database design.</p>
+            </dd>
+            <dt>DBMS Model</dt>
+            <dd>
+                <p class="normaltermcontinued">The database design is contained in the DBMS Model for the system. The DBMS Model can be a project level model or an area level model for the entire integrated system.</p>
+            </dd>
+        </dl>
+        <p>
+        </p>
+    </body>
+</html>

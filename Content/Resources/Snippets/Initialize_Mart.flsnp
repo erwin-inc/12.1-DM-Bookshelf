@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="noteAlt">The user name that is entered here is an application level user and not a database user. Remember the password that you have entered here, because without the password you cannot log in to erwin Mart Administrator for the first time. </p>
+        <p class="bodytext">In the previous releases, only a server user was allowed to initialize a Mart. From release r9.6, a Windows-authenticated user can also initialize a Mart. Further, a Windows-authenticated user can log in to a Mart as a Windows user. </p>
+        <p class="proceduresubheading">To initialize a Mart with a Windows-authenticated user, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Provide the Active Directory details with user credentials in the Active Directory Details section in the erwin Mart Configuration dialog. 
+</li>
+            <li class="listnumber">Open erwin Mart Administrator, enter the user name in the &lt;domain name&gt;/&lt;user name&gt; format. For more information about how to initialize a Mart, see the Workgroup Edition Implementation and Administration Guide.
+</li>
+        </ol>
+        <p class="proceduresubheading">To log in as a Windows-authenticated user, follow these steps:</p>
+        <p class="bodytext">This procedure describes how to enable a Windows-authenticated user log in to a Mart that is already initialized. Use this procedure if the Mart is initialized with either a server user or a Windows-authenticated user.</p>
+        <ol class="listnumber">
+            <li class="listnumber">Ensure that you have provided the Active Directory details with user credentials in the Active Directory Details section in the erwin Mart Configuration dialog. 
+</li>
+            <li class="listnumber">Log in to the Mart as an administrator and add the required user as a Windows user in the Mart. Ensure that the user belongs to the Active Directory that was provided at the time of configuring the Mart.
+<p class="listcontinue">Now the Windows-authenticated user can log in to erwin Mart Administrator by providing the user name in the &lt;domain name&gt;/&lt;user name&gt; format.</p></li>
+        </ol>
+        <p class="noteAlt">A local Windows user who does not belong to a domain or who is not part of an Active Directory cannot log in to the Mart as a Windows user. </p>
+    </body>
+</html>

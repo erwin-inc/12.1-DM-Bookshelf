@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Create a Profile</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1501" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T17:21-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1508');highlight('1501')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t1501">Create a Profile</h2>
+        <p class="bodytext">Profiles determine who can change the data or models in Mart. As a System Administrator, you can create profiles and can attach them to users for a catalog. When a user creates, modifies, or deletes an object in Mart, the profile determines if the operation is permitted. Each profile grants permissions at the following object levels, in the same hierarchical order:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Catalog Management
+</li>
+            <li class="listbullet">Library
+</li>
+            <li class="listbullet">Mart
+</li>
+            <li class="listbullet">Model
+<ul class="listbullet2"><li class="listbullet2">Locking
+</li><li class="listbullet2">Modeling Object
+<ul class="listbullet3"><li class="listbullet3">Data Movement Rule
+</li><li class="listbullet3">Data Source Object
+</li><li class="listbullet3">Default value
+</li><li class="listbullet3">Domain
+</li><li class="listbullet3">ER Diagram
+</li><li class="listbullet3">Entity
+</li><li class="listbullet3">Relationship
+</li><li class="listbullet3">Subject Area
+</li><li class="listbullet3">Theme
+</li><li class="listbullet3">Validation Rule
+</li><li class="listbullet3">View
+</li></ul></li><li class="listbullet2">User-Defined Property
+</li><li class="listbullet2">Version
+</li></ul></li>
+            <li class="listbullet">Permission Management
+</li>
+            <li class="listbullet">Reports
+</li>
+            <li class="listbullet">Session Management
+</li>
+            <li class="listbullet">User Management
+</li>
+        </ul>
+        <p class="noteAlt">Admin, Architect, Modeler, and Viewer profiles are created when you install Mart.</p>
+        <p class="proceduresubheading">Follow these steps::</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open erwin Mart Administrator.
+</li>
+            <li class="listnumber">To add a profile, follow these steps:
+<ol class="listalpha"><li class="listalpha">Click Add Profile and enter a name for the profile.
+</li><li class="listalpha">Enter a description for the profile.
+</li><li class="listalpha">Expand the items in the Permission Details section and select the permissions you want to assign.
+<p class="listcontinue2">Any dependent permissions for the selected permissions are selected too. For example, if you select the Create Entity permission, then Model Modify, ER Diagram Modify, ER Diagram Modify under Subject Area, and Key Group Create permissions are also selected.</p></li><li class="listalpha">Click Submit.
+<p class="listcontinue2">The profile is saved.</p></li></ol></li>
+            <li class="listnumber">To create a profile from an existing profile, follow these steps:
+<ol class="listalpha"><li class="listalpha">Enter a name for the profile. 
+</li><li class="listalpha">Select Clone from existing profile and select a profile to clone.
+</li><li class="listalpha">Click Submit.
+</li><li class="listalpha">Expand the items in the Permission Details section and select the permissions you want to assign.
+<p class="listcontinue2">Any dependent permissions for the selected permissions are selected too. For example, if you select the Create Entity permission, then Model Modify, ER Diagram Modify, ER Diagram Modify under Subject Area, and Key Group Create permissions are also selected.</p></li><li class="listalpha">Click Submit.
+</li></ol><p class="listcontinue">The profile is saved.</p></li>
+        </ol>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\405.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

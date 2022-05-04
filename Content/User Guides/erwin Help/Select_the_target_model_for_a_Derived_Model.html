@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Select the Target Model for a Derived Model</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3946" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4676');highlight('3946')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t3946">Select the Target Model for a Derived Model</h3>
+        <p class="bodytext">You can derive a new model from an existing model and transition from one design layer to another using the Derive Model Wizard Use the features in the Target Model section in the Derive Model wizard to select basic options for the derived model.</p>
+        <p class="bodytext">You can derive any models from relational to non-relational databases and vice-versa.</p>
+        <p class="bodytext">To derive a model, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open a database model in <MadCap:variable name="General.ProductNameDM" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</li>
+            <li class="listnumber">On the Action menu, click <b>Design Layers</b> &gt; <b>Derive New Model</b>.<br /><p class="listcontinue">The Derive Model wizard appears and displays the Target Model section.<br /><img src="../../Resources/Images/Derive_Model_Target_Model_Options.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 548px;height: 408px;" /></p></li>
+            <li class="listnumber">On the Target Model section, use the following options to set a target:
+<dl><dt><strong>New Model Type</strong> </dt><dd><p class="normaltermcontinued2">Select a model type that you want to derive. Specifies whether the derived model is Logical, Physical, or Logical/Physical.</p></dd><dt><strong>Create Using Template</strong> </dt><dd><p class="normaltermcontinued2">Specifies the template on which to base your new model. Click <b>Browse File System</b> or <b>Browse Mart</b> to search for an existing template, or skip this option and use the default blank model.</p></dd><dt><strong>Target Database Database/Version</strong></dt><dd><p class="normaltermcontinued2">Select a target database and version. Specifies that the source model is derived into target model based on the selection. </p><p class="noteAlt">When you derive a Cassandra model, the <b>Advanced Denormalization</b> check box appears. Select this option to access more denormalization options before deriving a Cassandra model. For more information, refer to <a href="Advanced_Denormalization_Options_for_Cassandra.html">Advanced Denormalization Options for Cassandra</a> topic.</p></dd></dl></li>
+            <li class="listnumber">Click <b>Derive</b>.
+<p class="listcontinue">The source model is derived based on the selected target database and opens in a new window.</p><p class="listcontinue"><p>Alternatively, you can click <b>Next</b> to select more derive model options.</p><p class="noteAlt">You can click <b>Derive</b> option any time after selecting a target database model in Target Model section.</p></p></li>
+        </ol>
+        <p class="bodytext">The only limitation is that when you derive a non-relational (NoSql) model from logical model, you cannot import check constraints and default values in a logical model to the logical side of a logical/physical model.</p>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">You can also configure the Mart Server using a CLI command on your <b>Mart Server r9\OpenJRE64\bin</b> folder. For example, use the following command to configure Mart Server with an Oracle database:</p>
+        <pre xml:space="preserve">C:\Program Files\erwin\Mart Server r9\OpenJRE64\bin&gt;java.exe -jar 
+"C:\Program Files\erwin\Mart Server r9\MartUpgrade\MartConfiguration.jar" 
+configure --dbuser=mmadmin --dbpwd=mmadmin --dbtype=ORACLE 
+--dcname=ldap://10.1.85.94:3268/DC=test-qa,DC=com --martusessl=true 
+--domainuser=test-qa\Administrator --domainpwd=interOP@123 
+--dbserver=10.1.85.108 --dbport=1521 --dbinstance=   --dbname=mart200models</pre>
+        <p class="bodytext">Once done, you can verify the configuration in the <b>Martconfiguration.properties</b> file located at C:\ProgramData\erwin\Mart Server. The same properties are also available on the Mart Server tab of the erwin Mart Configuration dialog box.</p>
+    </body>
+</html>

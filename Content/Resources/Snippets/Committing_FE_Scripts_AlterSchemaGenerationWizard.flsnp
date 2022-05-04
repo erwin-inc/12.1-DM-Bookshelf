@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p class="bodytext">The Forward Engineer Alter Schema Generation Wizard generates an alter script for a database after you make changes to a model. For a Mart Model, you can push the alter script to a Git repository.</p>
+        <p class="bodytext">To commit alter scripts to Git repositories, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the ribbon, go to <b>Mart</b> &gt; <b>Open</b></li>
+            <p class="bodytext">The Open page appears.</p>
+            <p class="bodytext">
+                <img src="../Images/Mart-Open-Git.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 570px;height: 400px;" />
+            </p>
+            <li class="listnumber">Select a model, and then click <b>Open</b>.</li>
+            <p class="bodytext">The Mart Model opens.</p>
+            <p>
+                <img src="../Images/Online-Mart-Model-Git.png" style="width: 570px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 270px;" />
+            </p>
+            <li class="listnumber">Make the required changes in the model.</li>
+            <p class="bodytext">For example, in the following model, a new table, cust_dec with four columns is added.</p>
+            <p class="bodytext">
+                <img src="../Images/OnlineMartModel-AlterScript.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 280px;width: 580px;" />
+            </p>
+            <li class="listnumber">Go to <b>Actions</b> &gt; <b>Alter Script</b>.</li>
+            <p class="bodytext">The Forward Engineer Alter Script Schema Generation Wizard appears.</p>
+            <p class="bodytext">
+                <img src="../Images/FEAlterScriptSchema-Git.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 550px;height: 300px;" />
+            </p>
+            <li class="listnumber">On the <b>Forward Engineer Alter Schema Generation Wizard</b>, click the <b>Preview</b> section.</li>
+            <p class="bodytext">The alter script appears. For more information on generating alter scripts, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Alter_Script_Schema_Generation.html">Generating Alter Script for Databases</a> topic.</p>
+            <p class="bodytext">For example, in the following image the Preview section displays an alter script of a Databricks database. </p>
+            <p class="bodytext">
+                <img src="../Images/FEAlterScriptSchema-PreviewGit.png" style="width: 570px;height: 350px;" />
+            </p>
+            <li class="listbullet">Click <img src="../Images/Icon-Connect-To-Git.png" style="width: 20px;height: 20px;" />.</li>
+            <p class="bodytext">The Commit to Git screen appears. The File Name and Git Path values autopopulates with the values configured in the previous commit. You can update the File Name and Git Path as per the requirement.</p>
+            <p class="bodytext">
+                <img src="../Images/FEAlterScriptSchema-CommitToGit.png" style="width: 400px;height: 280px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+            </p>
+            <li class="listnumber">Enter appropriate values in the fields. Fields marked with an asterisk (<img src="../Images/Icon-Asterisk.png" />) are mandatory. Refer to the following table for field descriptions.</li>
+            <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <col class="TableStyle-TableStyle-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-TableStyle-Head-Header1">
+                        <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Field Name</th>
+                        <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Description</th>
+                        <th class="TableStyle-TableStyle-HeadD-Column1-Header1">Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Connected To</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the connection that connects erwin DM to a Git repository</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">For example, ConnectGit.</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Git Repository</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the Git repository configured for Connection </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>For example, https://gitlab.com/d4215/GitLabIntegration is set for the ConnectGit connection.</p>
+                            <p>This field autopopulates based on the repository configured in the Git Connection Manager.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Git Branch</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the Git branch that was set for connection in the Git Connection Manager</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>For example, main is set for the ConnectGit connection.</p>
+                            <p>This field autopopulates based on the repository configured in the Git Connection Manager.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">File Name</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the user-defined name of the FE script file being committed to a Git repository</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">For example, Databricks-Sales-Data.sql</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Git Path</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the location in the Git repository where the FE script is committed</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>For example, FY2022/</p>
+                            <p>The FE script is committed to the FY2022 folder inside the root folder of your Git repository.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Commit Summary</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the summary of the push commit</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">For example, Append December Sales.</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Local Path</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the location on your local machine where the Alter script is saved</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">C:\Users\SO\Documents\Databricks</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">Auto Append</td>
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">Specifies whether the alter script is appended to the file set in File Name and Git Path</td>
+                        <td class="TableStyle-TableStyle-BodyA-Column1-Body1">
+                            <p>By default, the Auto Append check box is selected. To create a new script file, clear the Auto Append check box and set the File Name and File Path belonging to an existing file. A new file with the following naming convention: &lt;File Name&gt;_YYYY-MM-DD_HH-MM-SS is created.</p>
+                            <p>Ensure that you use this check box consistently every time you commit an alter script.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <li class="listnumber">Click <b>Commit</b>.</li>
+            <p class="bodytext">The alter script file is saved on the local path and committed to the Git repository.</p>
+        </ol>
+        <p class="bodytext">For example, in the following image, an alter script file is committed to a GitLab repository and appended to an existing file, Databricks-Sales-Data, with a commit summary, Append December Sales using the main branch. </p>
+        <p class="bodytext">
+            <img src="../Images/AlterScriptAppendedDatabricks-GitLab.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 250px;width: 500px;" />
+        </p>
+        <p class="bodytext">You can click the file to review its content. For example, in the following image, Databricks-Sales-Data contains the alter script.</p>
+        <p class="bodytext">
+            <img src="../Images/AlterScriptAppended-GitLab.png" style="height: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 500px;" />
+        </p>
+        <p class="bodytext">
+            Clearing the Auto Append check box and setting the File Name and File Path belonging to an existing file creates a new file with the following naming convention: &lt;File Name&gt;_YYYY-MM-DD_HH-MM-SS.</p>
+        <p class="bodytext">For example, in the following image, a file is created with a time stamp in a Git repository.</p>
+        <p class="bodytext">
+            <img src="../Images/Append-Clear-Commit-Databricks.png" style="width: 570px;height: 300px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+        </p>
+        <p class="bodytext">This file contains only the alter script.</p>
+        <p class="bodytext">
+            <img src="../Images/FE-TimeStamp-Commit.png" style="width: 570px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 250px;" />
+        </p>
+        <p class="bodytext">Use the committed FE script to generate a physical schema in your database. To generate schema, copy the FE script from your Git repository and run the script in the database.</p>
+        <p class="bodytext">For example, in the following Databricks database, the FE script copied from the Git repository is run.</p>
+        <p class="bodytext">
+            <img src="../Images/Running-AltScript-Databricks.png" style="width: 550px;height: 200px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+        </p>
+        <p class="bodytext">The cust_dec table is created in a Databricks database.</p>
+        <p>
+            <img src="../Images/Create-AltTable-Databricks.png" style="width: 570px;height: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+        </p>
+    </body>
+</html>

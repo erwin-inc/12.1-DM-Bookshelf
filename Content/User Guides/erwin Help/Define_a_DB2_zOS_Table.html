@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Db2 z/OS Table</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2826" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3067');highlight('2826')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2826">Define a Db2 z/OS Table</h5>
+        <p class="bodytext">Use the Db2 z/OS Table editor to create a table, or work with table properties for an existing Db2 z/OS table.</p>
+        <p class="proceduresubheading">To define a Db2/zOS Table</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Table</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 z/OS Table Editor opens.</p></li>
+            <li class="listnumber">Select a table and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a table. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of tables to locate the one you want to work with.</p><dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name of the table.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema to associate with the table. Select a schema from the drop-down list.</p></dd><dt>Db2 z/OS Type</dt><dd><p class="normaltermcontinued2">Specifies the table type. Select a value from the drop-down list; valid values are Permanent, Global Temporary, and History.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">In a Logical/Physical model, specifies that the table does not appear on the logical side of the model.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Work with the following fields on the <span class="uielement">General</span> tab:
+<dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name of the table.</p></dd><dt>In Tablespace</dt><dd><p class="normaltermcontinued2">Specifies the tablespace the table is associated with. Select a tablespace from the drop-down list.</p></dd><dt>In Database</dt><dd><p class="normaltermcontinued2">Specifies the database the table is associated with. Select a database from the drop-down list.</p></dd><dt>Edit Procedure</dt><dd><p class="normaltermcontinued2">Specifies the edit routine for the selected table. Enter a value in the field.</p></dd><dt>With Row Attributes</dt><dd><p>Specifies that the edit procedure parameter list contains an address for the description of a row.</p></dd><dt>Validation Procedure</dt><dd><p class="normaltermcontinued2">Specifies the validation exit routine for the table. Enter a value in the field.</p></dd><dt>Object Id</dt><dd><p class="normaltermcontinued2">Specifies the OBID (identifier for an object's internal descriptor) to use for the selected table. Enter a value in the field.</p></dd><dt>Data Capture</dt><dd><p class="normaltermcontinued2">Specifies whether action logging is augmented.</p></dd><dt>CCSId</dt><dd><p class="normaltermcontinued2">Specifies the encoding scheme for string data stored in the table. Valid Values: ASCII, EBCDIC, UNICODE.</p></dd><dt>Has Volatile Cardinality</dt><dd><p class="normaltermcontinued2">Specifies that index access should be used on this table wherever possible for SQL operations. Clear the check box to specify <em class="italic">NOT VOLATILE</em>.</p></dd><dt>Audit Access Type</dt><dd><p class="normaltermcontinued2">Identifies the types of access to the selected table that causes auditing to be performed. Valid Values: None, Changes, All.</p></dd><dt>Has Restriction on Drop</dt><dd><p class="normaltermcontinued2">Indicates that the selected table has the restriction on drop. Clear the check box to remove the restriction on dropping the table, and the database and table space that contain the table.</p></dd><dt>Is Appendable</dt><dd><p class="normaltermcontinued2">Specifies that append processing is used for the selected table. Clear the check box to indicate <em class="italic">APPEND NO</em>.</p></dd><dt>Label</dt><dd><p class="normaltermcontinued2">Specifies the description of the table.</p></dd><dt>Suppress Logging</dt><dd><p class="normaltermcontinued2">Specifies whether changes to the table should be logged.</p></dd><dt>Is Compressed</dt><dd><p class="normaltermcontinued2">Specifies whether data compression should be applied to the rows of the table.</p></dd><dt>Data Set Size</dt><dd><p class="normaltermcontinued2">Specifies the maximum size for the created partition-by-growth or partition-by-range table space.</p></dd><dt>Use Bufferpool</dt><dd><p class="normaltermcontinued2">Specifies the buffer pool to be used for the created table space and determines the page size of the table space.</p></dd><dt>Member Cluster</dt><dd><p class="normaltermcontinued2">Specifies whether data that is inserted by an insert operation is clustered.</p></dd><dt>Track Modified Pages</dt><dd><p class="normaltermcontinued2">Specifies whether modified pages  in the space map pages of the table space should be tracked.</p></dd><dt>Page Number</dt><dd><p class="normaltermcontinued2">Specifies the type of page numbering that is used while creating a partition-by-range table space.</p></dd><dt>Clone Table</dt><dd><p class="normaltermcontinued2">Specifies a clone table of the current&#160;(base) table.</p></dd></dl></li>
+            <li class="listnumber">Work with the following fields on the Organize By tab:
+			<dt>Organize By</dt><dd><p class="normaltermcontinued2">Specifies the method to be used for data organization of the table. The other fields on the tab are enabled based on the method that you select.</p></dd><dt>Organization Key Columns</dt><dd><p class="normaltermcontinued2">This property is enabled only on selection of Hash as the organization method. It specifies the list of columns defines the hash key that is used to determine where a row will be placed.</p></dd><dt>Hash Size</dt><dd><p class="normaltermcontinued2">Specifies the amount of fixed hash space to preallocate for the table.</p></dd><dt>Data Unit</dt><dd><p class="normaltermcontinued2">Specifies that data unit to be used for the specified hash size.</p><ul><li><b>K</b>: Multiplies hash size by 1024 to specify the it in bytes.</li><li><b>M</b>: Multiplies hash size by 1,048,576 to specify it in bytes.</li><li><b>G</b>: Multiplies hash size by 1,073,741,824 to specify it in bytes.</li></ul></dd></li>
+            <li class="listnumber">Work with the following fields on the Period Clause tab:
+			<dt>Period System Time</dt><dd><p class="normaltermcontinued2">Defines a period for the table with the name SYSTEM_TIME. Period System Time  datatype needs a pair of NOT NULL TIMESTAMP columns (one defined as Row Begin, one defined as Row End) and one defined as transaction start ID.</p></dd><dt>ST Begin Column</dt><dd><p class="normaltermcontinued2">Specifies the period start column. This column must be defined as AS ROW BEGIN in the column properties.</p></dd><dt>ST End Column</dt><dd><p class="normaltermcontinued2">Specifies the period end column. This column must be defined as AS ROW END in the column properties.</p></dd><dt>Period Business Time</dt><dd><p class="normaltermcontinued2">Defines an application period with the name BUSINESS_TIME.</p></dd><dt>BT Begin Column</dt><dd><p>Identifies the column that records the beginning of the period of time in which a row is valid. The column must not be defined with a GENERATED clause.</p></dd><dt>BT End Column</dt><dd><p class="normaltermcontinued2">Identifies the column that records the end of the period of time in which a row is valid. The column must not be defined with a GENERATED clause.</p></dd><dt>End Column Clause</dt><dd><p>Specifies whether the end column is included in the period.</p><ul><li><b>Inclusive</b>: Specifies that the value of the end column is included in the period.</li><li><b>Exclusive</b>: Specifies that the value of the end column is not included in the period.</li></ul></dd><dt>History Table</dt><dd><p class="normaltermcontinued2">Specifies or lets you create a history table and is enabled only when you set Period System Time. A history table is associated with a system-period temporal table and is used to store the historical versions of the rows from the associated system-period temporal table.</p><p class="normaltermcontinued2">For example, consider the following scenario:</p><ul><li>A table, E1 has a Period System Time set.</li><li>A table, E2 is created as a history table and is set as E1's history table.</li></ul><p class="normaltermcontinued2">Then, E2 stores a replica of E1 along with its versions. Therefore, a dependency is created between tables E1 and E2.</p></dd></li>
+            <li class="listnumber">Work with the following fields on the <span class="uielement">Partitions</span> tab:
+<dl><dt>Properties:</dt><dd></dd><dt>Partition Type</dt><dd><p class="normaltermcontinued2">Specifies the partition type for the selected table or index. Select Range or Size from the drop-down menu.</p></dd><dt>Partition Elements:</dt><dd></dd><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the partition name.</p></dd><dt>Partition Number</dt><dd><p class="normaltermcontinued2">Displays a read-only integer designating the partition number.</p></dd><dt>Partition Columns:</dt><dd></dd><dt>Column</dt><dd><p class="normaltermcontinued2">Specifies the columns to determine key data over which the range is defined to determine the target data partition of the data. </p></dd><dt>Nulls Last</dt><dd><p class="normaltermcontinued2">Specifies that null values are treated as positive infinity during comparison.</p></dd><dt>Sort Order</dt><dd><p class="normaltermcontinued2">Specifies the order in which the data in the selected columns are sorted. Select from the drop-down list; valid values are Ascending and Descending.</p><p class="normaltermcontinued2"><strong>Default:</strong> Ascending</p></dd></dl></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Specify volumetrics options on the <span class="uielement"><a class="z--jumptemplate" href="Specify_Volumetric_Information_for_a_Table.html" id="h2828" target="_self" title="Specify Volumetric Information for a Table">Volumetrics</a></span><span class="uielement"></span>tab.
+</li><li class="listbullet2">Preview the forward engineering script for a table in the <span class="uielement"><a class="" href="Preview_the_FE_Script.html" id="h8129" target="_self" title="Preview the FE Script">SQL</a></span> tab.
+</li><li class="listbullet2">Define constraints for a selected table on the <span class="uielement"><a class="z--jumptemplate" href="Enter_Table_Constraints_and_Validation_Rules.html" id="h2442" target="_self" title="Enter Table Constraints and Validation Rules">Validation</a></span><span class="uielement"></span>tab.
+</li><li class="listbullet2">Define alias and synonym names on the <a class="z--jumptemplate" href="Define_DB2_zOS_Table_Synonyms.html" id="h2829" target="_self" title="Define DB2 z/OS Table Synonyms">Alias &amp; Synonym</a> tab. You can open the Synonym editor from an icon on this tab if none yet exist.
+</li><li class="listbullet2">Associate permissions with the selected table on the <span class="uielement"><a class="z--jumptemplate" href="Define_DB2_zOS_Permissions_DB_Level.html" id="h2752" target="_self" title="Define DB2 z/OS Permissions at Database Level">Permission</a></span> tab.
+</li><li class="listbullet2">Change the object creation order on the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab.
+</li><li class="listbullet2">Specify the styles for the entity on the <a class="z--jumptemplate" href="Define_the_Style_for_a_Table_or_View.html" id="h1089" target="_self" title="Define the Style for a Table, View, or Column">Style</a> Tab
+</li><li class="listbullet2">Specify the icon to use for the entity on the <a class="z--jumptemplate" href="attach_icons_to_an_entity.html" id="h2238" target="_self" title="Attach Icons to an Entity">Icon</a> Tab
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Where Used</span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">History </span>tab to view the history information for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <a class="z--jumptemplate" href="expanded_tab_options.html" id="h1814" target="_self" title="Expanded Tab">Extended Notes tab</a> to view or edit user notes. 
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Table Editor closes. </p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Specify_Volumetric_Information_for_a_Table.html" target="_self">Specify Volumetric Information for a Table</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_Partition_Elements.html" target="_self">Define Db2 z/OS Table Partition Elements</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_Synonyms.html" target="_self">Define Db2 z/OS Table Synonyms</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Permissions_DB_Level.html" target="_self">Define Db2 z/OS Permissions at Database Level</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

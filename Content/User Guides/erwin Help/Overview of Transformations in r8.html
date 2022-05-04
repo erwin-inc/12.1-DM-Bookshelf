@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Overview of Transformations in r8</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4841" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4839');highlight('4841')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4841">Overview of Transformations in r8</h3>
+        <p class="bodytext">One of the most important differences between the live transforms support in previous releases and the non-live transforms support in r8 is that property data will no longer be kept in synch between the source and target objects of any given transform.</p>
+        <p class="bodytext">Elimination of live transforms from the model removes the following functionality:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Creation and maintenance of transform objects.
+</li>
+            <li class="listbullet">Creation and maintenance of source and target objects.
+</li>
+            <li class="listbullet">Live update of source objects based on target objects and live update of target objects based on source objects.
+</li>
+            <li class="listbullet">Ability to toggle the view to show source or target objects except for many-to-many and supertype-subtype constructs that are toggled by drawing only.
+</li>
+            <li class="listbullet">Elimination of the transforms Reverse functionality for all transform types and the Resolve functionality for some transform types.
+</li>
+            <li class="listbullet">Removal of the transforms editor and the entries in the Model Explorer tree for transform objects.
+</li>
+        </ul>
+        <p class="bodytext">When you open a r7.x file, if the file has transforms, then the Model Upgrade Wizard has options to specify how to convert the transforms. You will have the option to either resolve or reverse all of the transforms, convert transforms into their current state, and convert the Column Denormalization transform into a Link object. For each many-to-many relationship an association table will be added. For each subtype relationship a second graphic layout will be added to provide a line between the supertype table and the subtype table. Every Column Denormalization transform will be converted into a Link object. All of the properties will be selected for synch and the direction of the synch will be set based on the setting of the <em class="italic">Reflect Changes Back To Source Object</em> property of the Column Denormalization transform.</p>
+        <p class="bodytext">When you save a r8 model to an older version, no transforms will be created. The association table and its relationships will be deleted for all of the many-to-many constructs. The supertype-subtype construct will be reduced to the subtype relationships and one set of line layouts for each one of those subtype relationships. The column level Link objects will be removed leaving the columns in place.</p>
+        <p class="bodytext"><strong>Support for non-live transformations in r8</strong>
+        </p>
+        <p class="bodytext">The same type of constructs that were supported by transforms in r7.x will be supported by transformations in r8, but the transformation will only apply to create the target objects, except for the Many-to-Many, Supertype-Subtype Identity, and Column Denormalization transforms. The following transforms continue to be supported in r8 as transformations:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Two Table Roll Up
+</li>
+            <li class="listbullet">Two Table Roll Down
+</li>
+            <li class="listbullet">Supertype-Subtype Roll Up
+</li>
+            <li class="listbullet">Supertype-Subtype Roll Down
+</li>
+            <li class="listbullet">Vertical Partitioning
+</li>
+            <li class="listbullet">Horizontal Partitioning
+</li>
+        </ul>
+        <p>
+        </p>
+    </body>
+</html>

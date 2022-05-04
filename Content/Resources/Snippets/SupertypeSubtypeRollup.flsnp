@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">When you run Supertype-Subtype RollUp process via <b>erwin&#160;Data Modeler (DM)</b> &gt; <b>Actions</b> &gt; <b>Transformations</b> &gt; <b>Supertype-Subtype RollUp</b>, only a single, rolled-up state is maintained for the involved entities on logical and physical sides.</p>
+        <p class="bodytext">The Supertype-Subtype Transformation option enables you to maintain two states of relationships between entities. On the logical side, it maintains the involved entities. Whereas, on the physical side, it maintains the rolled-up entity.</p>
+        <p class="bodytext">For this option to take effect, do the following:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In erwin DM, on the <b>Tools</b> tab, click <b>Options</b>.<br />The Options dialog box opens.</li>
+            <li class="listnumber">In the Diagram section, select <b>Supertype-Subtype Transformation</b>.</li>
+            <li class="listnumber">Click <b>OK</b>.</li>
+            <li class="listnumber">On the Logical side of your model, right-click the Subtype symbol and click <b>Properties</b>.<br />The Subtype Symbol Editor opens.<br /><img src="../Images/SubtypeSymbolEditor.png" /></li>
+            <li class="listnumber">Under Transformation Type, select <b>RollUp</b>.</li>
+            <li class="listnumber">Click <b>Close</b>.<br />Supertype-subtype rollup transformation is applied on the Physical side of your model.</li>
+        </ol>
+        <p class="noteAlt">For an already transformed target entity, any newly added non-key attributes in the child entity on Logical side are not rolled-up automatically. To roll-up the new attributes, rerun the roll-up action on the Logical side as follows:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the Attribute Editor, clear the <b>Logical Only</b> check box and click <b>Close</b>.</li>
+            <li class="listnumber">On the Subtype Symbol Editor, set the <b>Transformation Type</b> to <b>RollUp</b> and click <b>Close</b>.</li>
+        </ol>
+    </body>
+</html>

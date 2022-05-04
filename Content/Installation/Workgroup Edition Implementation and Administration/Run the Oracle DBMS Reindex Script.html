@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" madcap:sourcedocument="D:\Documentation\ProjectRevamp\MadCapFlare\PythonScripts\AIT Files\Workgroup Edition Implementation and Administration\reindex_db.html" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3429" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/22/2018T14:20-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3426');highlight('3429')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4">Run the Oracle DBMS Reindex Script</h4>
+        <p class="bodytext">As the new index is being built, it coexists with the old index in the database. For this reason, you should plan for enough space to store both the old index and the new index. When the index is rebuilt, the new index becomes available, the old index is dropped, and the space is reclaimed by the database. If you encounter any errors while rebuilding the indexes, re-run the statements. If you require more space to rebuild those specific indexes, add more storage to your index tablespace, and then try rebuilding those specific indexes again.</p>
+        <p class="bodytext">To run the Oracle DBMS reindex script:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Create the mmreindex.ora script and copy it locally.</li>
+            <li class="listnumber">Edit the script and replace 'MODELMART' with the name of the mart schema-owner and 'MMINDEX' with the name of the mart index tablespace. Save your changes.</li>
+            <li class="listnumber">Connect to SQL*PLUS as the user SYS.</li>
+            <li class="listnumber">Grant the 'ALTER ANY INDEX' privilege to the mart Schema Owner.</li>
+            <li class="listnumber">Run your Oracle query tool and execute the following at the SQL prompt:<br />		GRANT ALTER ANY INDEX TO &lt;MART SCHEMA OWNER&gt;;</li>
+            <li class="listnumber">Disconnect user SYS and Connect to your Oracle query tool as the Schema Owner.</li>
+            <li class="listnumber">Execute the following Script at the SQL Prompt:<br />@c:\mmreindex.ora</li>
+        </ol>
+        <p class="examplesubheading">Example: Oracle Reindex Script (MMReIndex.ora)</p><pre xml:space="preserve">----------------------------------------------------------------------------------
+-- Object:   MMReIndex.ora
+-- Desc:     Use this Procedure to ReIndex the MM ORACLE Repository whenever a
+--           Merge/Save of big model is done to MM
+--           Limitation(s) is specific to Oracle Releases &gt;= 817
+-- For ORACLE DBMS &lt; 8i Modify the script to Use NOPARALLEL
+-- <div class="noteAlt">You will need to change MMOWNER to the Mart schema owner name.
+-- You will need to change MMINDEX to the Mart index tablespace.
+-- Oracle indexes are not self-balancing. They become fragmented after a large</div>
+-- number of INSERTs and DELETEs which may lead to significant performance degradation.
+-- This script rebuilds the Mart indexes and cures them.
+-------------------------------------------------------------------------------------
+set pagesize 1000
+set linesize 2000
+set verify off
+set feedback off
+set heading off
+spool c:\mmreindex.ora
+SELECT        'ALTER INDEX ' || USER || '.' || INDEX_NAME ||
+' REBUILD PARALLEL NOLOGGING COMPUTE STATISTICS TABLESPACE MMINDEX;'
+FROM   DBA_INDEXES
+WHERE OWNER = UPPER ('MMOWNER')
+AND    (INDEX_NAME like 'XPK%' or INDEX_NAME like 'XAK%'
+        or INDEX_NAME like 'XIE%')
+order by index_name;
+spool off
+set heading on
+set pagesize 24
+set verify on
+set feedback on
+@c:\mmreindex.ora
+/</pre>
+        <h4 class="heading4">Troubleshooting the Reindexing Script</h4>
+        <p class="reasonactionheading">Symptom:</p>
+        <p class="reasonactiontext">The query tool responds as given below:</p><pre xml:space="preserve">no rows selected
+not spooling currently	</pre>
+        <p class="reasonactionheading">Solution:</p>
+        <p class="reasonactiontext">You do not have the correct name for the mart schema-owner. Get the correct user name, replace 'MODELMART' with the user name, and re-run the script.</p>
+    </body>
+</html>

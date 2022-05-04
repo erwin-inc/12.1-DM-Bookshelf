@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>TARGET_DBMS Table</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1647" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/31/2018T22:44-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1686');expand2('1687');expand2('1645');expand2('1646');highlight('1647')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t1647">TARGET_DBMS Table</h5>
+        <p class="bodytext">This table categorizes the rows of the <em class="italic">OBJECT_TYPE</em>, <em class="italic">PROPERTY_TYPE</em>, <em class="italic">ASSOCIATION_TYPE</em>, and <em class="italic">AGGREGATION_TYPE</em> tables by DBMS. The following table describes the columns in the <em class="italic">TARGET_DBMS</em> table:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="712">
+            <tr align="left" valign="top">
+                <th style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Column Name</p>
+                </th>
+                <th style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Data Type</p>
+                </th>
+                <th style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="376">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">TYPE</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">INTEGER</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="376">
+                    <p class="tablebodytext">The ID of an object type, property type, association type, or aggregation type.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">DBMS</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">VARCHAR</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="376">
+                    <p class="tablebodytext">A constant indicating the DBMS in which the object is found. This value will correspond to the DBMS tag's ID defined in the <em class="italic">erwin Metamodel Reference</em> document. A value of zero indicates any DBMS.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">DBMS_NAME</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">VARCHAR</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="376">
+                    <p class="tablebodytext">The name of the DBMS.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">MIN_VERSION</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">INTEGER</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="376">
+                    <p class="tablebodytext">The earliest version for which the type is defined. The format is the version number multiplied by 1000. For example, Version 7.2 would be 7200. A value of zero indicates all versions less than <em class="italic">MAX_VERSION</em>.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">MAX_VERSION</p>
+                </td>
+                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">INTEGER</p>
+                </td>
+                <td style="border-left: 1px solid #010101;border-right: 1px solid #010101;border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="376">
+                    <p class="tablebodytext">The latest version for which the type is defined. The format is the version number multiplied by 1000. For example, Version 7.2 would be 7200. A value of 999000 indicates all versions greater than <em class="italic">MIN_VERSION</em>.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">Use a query similar to the following to see which erwin DM DBMS targets define synonym objects:</p><pre xml:space="preserve">
+SELECT DBMS_NAME, MIN_VERSION, MAX_VERSION
+</pre><pre xml:space="preserve">
+FROM EM1.TARGET_DBMS
+</pre><pre xml:space="preserve">
+WHERE TYPE = 
+</pre><pre xml:space="preserve">
+	(SELECT ID@ FROM M1.OBJECT_TYPE WHERE NAME = 'Synonym')
+</pre>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\397.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<article
+  lang="">
+  <TocEntry
+    Title="Installing and Configuring Mart"
+    Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/installing_configuring_mart.html">
+    <TocEntry
+      Title="Mart Architecture"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/mart_architecture.html" />
+    <TocEntry
+      Title="Install a Mart or Upgrade a Mart?"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Install a Mart or Upgrade a Mart.html" />
+    <TocEntry
+      Title="Review the Prerequisites"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/review_prereq.html" />
+    <TocEntry
+      Title="Prepare Your DBMS Environment"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/prepare_dbms_environment.html">
+      <TocEntry
+        Title="Oracle SQL Commands"
+        Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Oracle SQL Commands.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Install erwin Mart Server"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/deploy_mart_server.html" />
+    <TocEntry
+      Title="Use Mart Server as a Windows Service"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/mart_server_windows_service.html" />
+    <TocEntry
+      Title="Initialize Oracle Mart"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/initialize_oracle_mart.html" />
+    <TocEntry
+      Title="Log In to erwin Mart Administrator and Configure Settings"
+      Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/log_in_to_mart_and_configure.html">
+      <TocEntry
+        Title="Create a Pluggable Database"
+        Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Create a Pluggable Database.html" />
+      <TocEntry
+        Title="Install erwin Mart Server with a Pluggable Database"
+        Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Install erwin Mart Server with a Pluggable Database.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Change the Mart Database Server"
+    Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Change the Mart Database Server.html" />
+  <TocEntry
+    Title="Troubleshooting"
+    Link="/Content/Tutorials/Scenarios/Install and Configure an Oracle Mart/Troubleshooting.html" />
+</article>

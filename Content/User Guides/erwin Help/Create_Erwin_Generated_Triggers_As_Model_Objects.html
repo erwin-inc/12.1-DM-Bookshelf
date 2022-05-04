@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Create erwin-Generated Triggers As Model Objects</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2608" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2600');highlight('2608')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t2608">Create erwin-Generated Triggers As Model Objects</h4>
+        <p class="bodytext">In versions of erwin® Data Modeler prior to r7.3, erwin-generated triggers did not exist as objects in the model, they were created during the forward-engineering process, but were not recognized during reverse-engineering. You can select to treat erwin-generated triggers as model objects in order to include the triggers in alter scripts, Complete Compare scenarios, and as part of model templates.</p>
+        <p class="bodytext">Use the following process to generate erwin-generated triggers as model objects:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Click Model Properties on the Model menu. On the RI Defaults tab of the Model Editor, select the "Automatically Create RI Triggers" check box. When you select this check box, you are prompted with an option to create RI triggers for existing relationships. If you click Yes, the RI triggers are created for existing relationships, and the option is enabled for the automatic creation of triggers for new objects. If you click No to the prompt, RI Triggers are created only for new relationships. The check box is not selected by default.
+</li>
+            <li class="listbullet">Click Forward Engineer, Schema on the Actions menu. Click the Trigger option and review the choices listed in the Trigger pane. Select the check boxes for the triggers you want to generate during forward engineering. Be sure to select the "Automatically Generate Missing RI Triggers" check box to generate RI triggers for tables/relationships that do not have RI triggers attached.
+</li>
+        </ul>
+        <p class="bodytext">When you reverse engineer, you can select to include triggers in the reverse engineer process. In the Reverse Engineer - Set Options dialog, select the "Include Generated Triggers" check box to include the erwin-generated triggers. </p>
+        <p>
+        </p>
+    </body>
+</html>

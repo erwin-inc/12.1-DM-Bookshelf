@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Go to <b>Application Menu</b> &gt; <b>Profiles</b>.<br />The Profiles page appears.<br /><img src="../Images/Profiles.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;width: 442px;height: 239px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Add Profile</b>.<br />The Add Profile page appears.<br /><img src="../Images/Add-Profile.png" style="width: 551px;height: 210px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select or enter values to the following fields:</p>
+                <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;">
+                    <!--<table class="tableintopic" width="1256" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">-->
+                    <tr align="left" valign="top">
+                        <td style="border: 1px solid #010101;" valign="middle" width="628">
+                            <p class="tableheading">Field</p>
+                        </td>
+                        <td style="border: 1px solid #010101;" valign="middle" width="628">
+                            <p class="tableheading">Description</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">Name</p>
+                        </td>
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">Specifies the name of the profile</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">Description</p>
+                        </td>
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">Specifies the description and purpose of the profile</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">Clone From Existing Profiles</p>
+                        </td>
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p class="tablebodytext">If replicating an existing profile, specifies the source profile</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top">
+                        <td style="border: 1px solid #010101;" width="628">Permissions</td>
+                        <td style="border: 1px solid #010101;" width="628">
+                            <p width="628">Specifies the permissions that the profile has on each Mart Administrator module.</p>
+                            <p width="628">If you have cloned an existing profile, on top of default permissions, you can edit the permissions according to your preferences.</p>
+                            <p class="noteAltTable">Any dependent permissions for the selected permissions are selected too. For example, if you select the Create Entity permission, then Model Modify, ER Diagram Modify, ER Diagram Modify under Subject Area, and Key Group Create permissions are also selected.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li class="listnumber">
+                <p>Click <img src="../Images/Icon-Mart-Save.png"></img>.</p>
+            </li>
+        </ol>
+        <p class="bodytext">To edit a profile, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Select the profile and click <img src="../Images/Icon-Mart-EditProfile.png"></img>.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Edit the <b>Name</b>, <b>Description</b>, or <b>Permissions</b>.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <img src="../Images/Icon-Mart-Save.png"></img>.<br></br>If the objects are part of a model, the changed permissions come to effect when the user opens the model the next time. If the objects are part of the Mart, such as catalog, the changed permissions are effective immediately.</p>
+            </li>
+        </ol>
+        <p class="bodytext">To delete a profiles, select a profile and click <img src="../Images/Icon-Mart-Delete.png"></img>.
+</p>
+        <p class="noteAlt">You cannot edit or delete the default profiles.</p>
+    </body>
+</html>

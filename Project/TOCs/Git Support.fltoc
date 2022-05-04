@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Git Support"
+    Link="/Content/Release Notes/Feature Tour/Git Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Connecting to Git Repositories"
+      Link="/Content/Release Notes/Feature Tour/Connecting_to_Git_Repositories.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+    <TocEntry
+      Title="Committing Forward Engineering Scripts"
+      Link="/Content/Release Notes/Feature Tour/Committing_FE_Scripts.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Scenario 1: Committing New or Full FE Scripts"
+        Link="/Content/Release Notes/Feature Tour/CommittingNeworFullScripts.html" />
+      <TocEntry
+        Title="Scenario 2: Committing Alter Scripts"
+        Link="/Content/Release Notes/Feature Tour/CommittingAlterScripts.html" />
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

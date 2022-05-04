@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">If you are using any earlier release of r9 series and you want to upgrade it to the latest release, upgrade the Mart Server application and the Mart database. Once the Mart server program is upgraded, you must implement the upgraded software.</p>
+        <p class="bodytext">
+            <strong>Important!</strong> The current Mart is designed to work with only the current version of erwin Data Modeler. If you try to connect the current Mart with an older version erwin Data Modeler such as r9.0.0, it may corrupt the Mart and cause unexpected behavior.</p>
+        <p class="noteAlt">The following diagram illustrates how System Administrators can upgrade a Mart from any earlier release of r9 series to the latest release:</p>
+        <p class="picture">
+            <img align="bottom" alt="Illustrating  how to upgrade a 9.0 Mart to the latest release" border="0" height="495" hspace="0" id="f462" src="../Images/463.png" vspace="0" width="363" />
+        </p>
+        <p class="noteAlt">Complete the following tasks to upgrade a Mart of any earlier release of r9 series to the latest release:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Review the prerequisites.
+</li>
+            <li class="listnumber">Upgrade the Mart Server application.
+</li>
+            <li class="listnumber">Configure the Mart Server.
+</li>
+            <li class="listnumber">Restart the Mart Server service.
+</li>
+            <li class="listnumber">Log In to erwin Web Admin.
+</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define SQL Azure Domain Properties</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3144" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3137');expand2('3135');expand2('3143');highlight('3144')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t3144">Define SQL Azure Domain Properties</p>
+        <p class="bodytext">In a model based on a SQL Azure target server, you use the SQL Azure tab in the Domain Editor to manage the data type, null option, and other properties for the selected domain.</p>
+        <p class="noteAlt">The options described here are the basic options available for most physical data types. There can be more options available depending on the physical data type you assign to the domain. We recommend that you refer to your SQL Azure documentation for more information about using these properties.</p>
+        <p class="proceduresubheading">To define SQL Azure domain properties</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Domains </span>on the <span class="uielement">Model </span>menu.
+<p class="list2">The Domain Editor opens.</p></li>
+            <li class="listnumber">Select the domain in the Navigation Grid that you want to define.
+<p class="noteAlt">Click <span class="uielement">New </span><img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new domain. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of domains to quickly locate the one that you want to define.</p></li>
+            <li class="listnumber">Click the <span class="uielement">SQL Azure </span>tab and work with the following options:
+<dl><dt>Code Type</dt><dd><p class="normaltermcontinued2">Identifies SQL as the code type for the column.</p></dd><dt>Physical Data type</dt><dd><p class="normaltermcontinued2">Lets you select a data type from the drop-down list to apply to the selected domain. If the selected data type requires a value for precision, scale, or both, enter the value inside the data type parentheses. For example, you can select the DECIMAL() data type and specify a precision of 2 and a scale of 10 inside the parentheses to assign the data type DECIMAL(2,10) to the selected domain.</p></dd><dt>Null Option</dt><dd><p class="normaltermcontinued2">Lets you specify a null option.</p></dd><dt>Average Width</dt><dd><p class="normaltermcontinued2">Lets you enter an estimated average width for columns if variable width is allowed based on the data type you assigned. If it is not allowed, an error is displayed in the Details section at the bottom of the editor. You can later use the Volumetrics dialog to calculate table and database size estimates based on these and other values.</p></dd><dt>Percent Null</dt><dd><p class="normaltermcontinued2">Lets you enter the estimated percentage of nulls used for columns if the option is available. Use whole numbers. You can later use the Volumetrics dialog to calculate table and database size estimates based on these and other values.</p></dd><dt>Populate All Rows With Default Value</dt><dd><p class="normaltermcontinued2">Specifies to populate new rows with default column values. Select the check box to enable this option.</p></dd><dt>Persisted</dt><dd><p class="normaltermcontinued2">Specifies that a computed column is PERSISTED. A column marked PERSISTED is physically stored in a table and not a virtual column. When you select the check box for this option, enter the expression to use to define the value of the computed column in the SQL text area of the Expression option.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">Domain properties are defined and the Domain Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

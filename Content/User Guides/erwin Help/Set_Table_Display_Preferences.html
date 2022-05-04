@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Set_Table_Display_Preferences</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="981" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('2315');highlight('981')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t981">Set Table Display Preferences</h3>
+        <p class="bodytext">You can use the Table tab on the Diagram Editor to set display options for tables. Depending on the model's target database, this tab changes to Table
+, Node, Collection, Record, Document, or JSON object.</p>
+        <p class="proceduresubheading">To set display preferences for tables</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Diagrams on the Diagram menu.
+<p class="listcontinue">The Diagram Editor opens.</p></li>
+            <li class="listnumber">Click the Table, Node, Collection, Record, Document, or JSON Object tab and work with the following options: 
+<dl><dt>Display Level</dt><dd><p class="normaltermcontinued2">Lets you specify the default display level for the physical model. Select one of the following display levels from the drop-down list:</p><p class="list3"><strong>Table/Node/Collection/Record/Document/JSON Object</strong></p><p class="list4">Specifies the display level for the physical model, which displays only the table, node, collection, record, document, or JSON object name in the diagram.</p><p class="list3"><strong>Column/Field</strong></p><p class="list4">Based on the model's target database, specifies to use the Column or Field Display Level for the physical model, which displays the column or field names of the table, node, collection, record, document, or JSON object.</p><p class="list3"><strong>Comment</strong></p><p class="list4">Specifies to use the Comment Display Level for the physical model, which displays comments in the table.</p><p class="list3"><strong>Primary Key</strong></p><p class="list4">Specifies to use the Primary Key Display Level for the diagram, which displays primary key columns in the table.</p><p class="list3"><strong>Physical Order</strong></p><p class="list4">Specifies to display the columns in the same order in which they appear in the physical database. This option lets you mirror the physical structure of your database in the erwin physical model. This display mode contrasts with the Column display level, which corresponds to the index order in the erwin logical model.</p><p class="noteAlt">The physical order may not be preserved when you forward engineer a physical model. When you use the Forward Engineering tool, you can indicate physical order or column order for the generated schema. Column order is used to generate the database schema for Primary Keys and Alter statements. </p><p class="list3"><strong>Icon</strong></p><p class="list4">Specifies to use the Icon Display Level (large entity icon) in the diagram, which displays a bitmap in the diagram.</p><p class="list3"><strong>Key</strong></p><p class="list4">Specifies to use the Key display level in the diagram, which displays the key name in the table box.</p><p class="list3"><b>Graph</b></p><p class="list4">For graph databases (ArangoDB and Neo4j), specifies to display the model in the graph-like representation.</p><p class="list3"><strong>Collapse Fact</strong></p><p class="list4">Specifies to hide fact table columns in a dimensional model. This option is only available if you use the DM (Dimensional Modeling) notation for your physical model.</p><p class="list3"><strong>Collapse Dimension</strong></p><p class="list4">Specifies to hide dimension table columns in a dimensional model. This option is only available if you use the DM (Dimensional Modeling) notation for your physical model.</p></dd><dt>Table Display Options</dt><dd><p class="normaltermcontinued2">Lets you specify display options for tables in the physical model. Select any or all of the following display options:</p><p class="list3"><strong>Show Attributes/Columns as Grid</strong></p><p class="list4">Specifies to display the attributes or columns as a grid.</p><p class="list3"><strong>Display Column Datatype</strong></p><p class="list4">Specifies to display the physical datatype for columns in the physical model. Clear to hide column datatypes. </p><p class="list3"><strong>Display Column Domain</strong> </p><p class="list4">Specifies to display the name of the domain attached to a column after the column name in the physical model. Clear to hide the domain name.</p><p class="list3"><strong>Display Column Null Option</strong> </p><p class="list4">Specifies to display NULL or NOT NULL values for columns in the diagram. Clear to hide NULL or NOT NULL values.</p><p class="list3"><strong>Display Physical Primary Key (PK) Designator</strong> </p><p class="list4">Specifies to display the primary key designator (<img align="bottom" alt="primary key designator for a column" border="0" height="14" hspace="0" id="f982" src="..\..\Resources\Images\984.gif" vspace="0" width="14" />) for columns in the physical model. Clear to hide the primary key designator.</p><p class="list3"><strong>Display Physical Foreign Key (FK) Designator</strong></p><p class="list4">Specifies to display the foreign key designator (FK) for columns in the physical model. Clear to hide the foreign key designator.</p><p class="list3"><strong>Display Physical Alternate Key (AK) Designator</strong></p><p class="list4">Specifies to display the alternate key (AK) and inversion entry (IE) designator for columns in the physical model. Clear this check box to hide the alternate key and inversion entry designators. The Alternate Key Designator (AK) display option displays extended notation to show the order of concatenation as defined in the Index editor.</p><p class="list3"><strong>Dimensional Icon</strong></p><p class="list4">Specifies to display dimensional table icons (Fact, Dimension, and Outrigger) in a dimensional model. Clear to hide dimensional icons. This option is only available if you use the DM (Dimensional Modeling) notation for your physical model.</p><p class="list3"><strong>Display Owner</strong></p><p class="list4">Displays the name of the person who owns a table as a prefix to the table name. A TABLEOWNER.TABLENAME naming convention is used.</p><p class="list3"><strong>Display Owner for Non Current Users</strong></p><p class="list4">Displays the table owner information for tables owned by users other than yourself. A TABLEOWNER.TABLENAME naming convention is used.</p><p class="list3"><strong>Display Ungenerated Tables</strong></p><p class="list4">Displays tables that will not be generated when you generate the schema. A table is generated only when you select the Generate check box in the Tables editor.</p><p class="list3"><strong>Display Ungenerated Indexes</strong></p><p class="list4">Displays indexes that will not be generated when you generate the schema. An index is generated only when you select the Generate check box in the Index editor.</p></dd></dl></li>
+            <li class="listnumber">Click Close to save your changes and close the editor.
+</li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

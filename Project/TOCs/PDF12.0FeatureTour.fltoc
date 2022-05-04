@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="CoverPage"
+    Link="/Content/Release Notes/Feature Tour/CoverPage.html"
+    conditions="General.PDF"
+    BreakType="pageLayout"
+    PageType="title"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue" />
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Installation/Installation/erwin_Install/copyright.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="decimal"
+    PageNumber="(multiple)"
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
+  <TocEntry
+    Title="Contact Customer Support"
+    Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Release Notes/Feature Tour/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    AutoEndOnLeftPage="enabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageType="continue"
+    PageNumber="(multiple)"></TocEntry>
+  <TocEntry
+    Title="12.0FeatureTour"
+    Link="/Project/TOCs/12.0FeatureTour.fltoc" />
+</CatapultToc>

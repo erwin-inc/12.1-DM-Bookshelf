@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p class="bodytext">You can use erwin DM Scheduler to schedule reverse engineering (RE) jobs on a remote instance of erwin Data Modeler. You can configure multiple remote machines as servers and set up jobs to run in parallel on these servers. This saves time and provides you with an improved performance by distributing reverse engineering jobs across multiple servers.</p>
+        <p class="bodytext">To use remote servers to run RE jobs, ensure that:</p>
+        <ul class="listbullet3">
+            <li class="listbullet3">the remote server is running</li>
+            <li class="listbullet3">the remote server configuration is set up on your local Scheduler</li>
+            <li class="listbullet3">the local server configuration is set up on your remote Scheduler</li>
+        </ul>
+        <p class="bodytext">To set up remote server configuration, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">On the ribbon, go to <b>Remote</b> &gt; <b>Remote Server Configuration</b>.<br />The Remote Server Configuration screen appears.<br /><img src="../Images/Scheduler-Remote-Server-Config-Options.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 396px;height: 529px;" /><br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Configure the remote server based on your requirement. Refer to the following table for field descriptions.<br /><table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle"><col class="TableStyle-TableStyle-Column-Column1" /><col class="TableStyle-TableStyle-Column-Column1" /><col class="TableStyle-TableStyle-Column-Column1" /><thead><tr class="TableStyle-TableStyle-Head-Header1"><th class="TableStyle-TableStyle-HeadE-Column1-Header1">Section</th><th class="TableStyle-TableStyle-HeadE-Column1-Header1"><p class="tableheading">Option</p></th><th class="TableStyle-TableStyle-HeadD-Column1-Header1"><p class="tableheading">Description</p></th></tr></thead><tbody><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Local Configuration</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Server (IP)</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the IP address of the local host.</td></tr><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Port</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the service port number for the remote scheduler. This field displays the default port number. Click <b>Change</b> to update the port number.</td></tr><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">Server Configuration</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Server</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the IP address of the remote server.</td></tr><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Port</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1"><p>Specifies the port number for remote server.</p><p><p class="noteAltTable">Ensure that the remote server is running before testing the connection.</p></p></td></tr><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Description</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the description for the remote server.</td></tr><tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1"><td style="color: #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">Label</td><td style="color: #000000;" class="TableStyle-TableStyle-BodyA-Column1-Body1">Specifies the label color to categorize the server configuration.</td></tr></tbody></table></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Once you have added remote server configuration, click <b>Test</b>.<br />The erwin DM Scheduler screen appears on a successful connection.<br /><img src="../Images/Scheduler-Test-Connection-Screen.png" style="width: 232px;height: 158px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Add</b>.<br />The remote server configuration is added to the list of remote servers.<br /><img src="../Images/Remote-Server-Configuration-Added-Configuration.png" style="width: 401px;height: 539px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p>
+                <p>Once you have set up a remote server configuration, use one of the following options:</p>
+                <ul class="listbullet">
+                    <li class="listbullet"><b>New</b>: Use this option to set up another remote server. Selecting this option resets any information entered on the screen.</li>
+                    <li class="listbullet"><b>Save</b>: Use this option to save any changes to selected remote server configuration.</li>
+                    <li class="listbullet"><b>Delete</b>: Use this option to delete any selected remote server configurations.</li>
+                    <li class="listbullet"><b>Import</b>: Use this option to import an existing remote server configuration. Select a server and click <b>Import</b>. This imports the This option is available when server information is configured under Server Configuration section.<p class="noteAltTable">The import replaces the existing server configuration with the latest configuration.</p></li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Once you have set up a remote server configuration, use one of the following options:<ul class="listbullet"><li class="listbullet"><b>New</b>: Use this option to set up another remote server. Selecting this option resets any information entered on the screen.</li><li class="listbullet"><b>Save</b>: Use this option to save any changes to selected remote server configuration.</li><li class="listbullet"><b>Delete</b>: Use this option to delete any selected remote server configurations.</li><li class="listbullet"><b>Import</b>: Use this option to import an existing remote server configuration. Select a server and click <b>Import</b>. This imports the remote server and replaces the existing remote server configurations.<p class="noteAltTable">The import replaces the existing server configuration with the latest configuration.</p></li></ul></p>
+                <p class="bodytext">Click <b>OK</b>.<br />Remote server configuration is saved and is available in the Predefined Server Configuration list on the erwin DM Scheduler Event Details screen.<br /></p>
+                <p>
+                    <img src="../Images/Remote-Server-Config-Predefiend-List-Selection.png" style="width: 513px;height: 256px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                </p>
+            </li>
+        </ol>
+        <p class="bodytext">Once you have set up remote servers, to use them, on the ribbon, in the Remote group, click either of the following options:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><b>Start Remote Services</b>: Use this option start a remote service.</li>
+            <li class="listbullet"><b>Stop Remote Services</b>: Use this option to stop a remote service.</li>
+        </ul>
+        <p>
+            <img src="../Images/Remote-Server-Config-Start-Stop-Service.png" style="width: 492px;height: 107px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+        </p>
+    </body>
+</html>

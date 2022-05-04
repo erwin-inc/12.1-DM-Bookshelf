@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Set General Options</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8319" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6899');expand2('4087');expand2('8318');highlight('8319')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t8319">Set General Options</h4>
+        <p class="bodytext">Use the General tab in the Options dialog to set global defaults for general features for all modeling sessions.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Options on the Tools menu.
+<p class="listcontinue">The Options dialog opens.</p></li>
+            <li class="listnumber">Click the General tab and work with following options:
+<dl><dt>Reset all messages</dt><dd><p class="normaltermcontinued2">Enables you to view popup dialog messages during the modeling session if you previously selected the <em class="italic">Don't show this again</em> option on any popup dialogs.</p></dd><dt>Default model location</dt><dd><p class="normaltermcontinued2">Specifies the default location where your models are saved.</p></dd><dt>Default template location</dt><dd><p class="normaltermcontinued2">Specifies the default location where your templates are saved.</p></dd><dt>Transaction log location</dt><dd><p class="normaltermcontinued2">Specifies the default location to store transaction log binary files temporarily. </p><p class="noteAlt">Transaction log files can be useful for erwin® Data Modeler Technical Support to help resolve issues.</p></dd><dt>Suppress diagram tooltips</dt><dd><p class="normaltermcontinued2">Specifies whether you want to suppress the tooltips that are displayed when you hover over a diagram.</p></dd><dt>Validate previous version metadata in model</dt></dl><dd><p class="normaltermcontinued2">Specifies the way you want to load models created in older version of the product. If selected, it disables demand loading and uses full load and validates all the components of a model. If unselected, it enables demand loading.</p></dd><dl><dt>Enforce Relationship Nullability Rules</dt><dd><p class="normaltermcontinued2">Specifies whether you want to apply nullability rules to relationships based on the Null Option selected for attributes. Following cases are covered under these rules:</p><ul class="listbullet3"><li class="listbullet3">The Null Option of the relationship reflects the Null Option of the migrated attribute.
+</li><li class="listbullet3">In case of compound relationship:
+</li><li class="listbullet3">- If the Null Option of one of the migrated attributes is set to NULL, the Null Option of the relationship is set to NULLS ALLOWED.
+</li></ul><ul class="listbullet3endash"><li class="listbullet3endash">- If the Null Option of all the migrated attributes is set to NOT NULL, the Null Option of the relationship is set to NULLS NOT ALLOWED.
+					</li></ul></dd><dt>Load Diagram with speed mode</dt><dd>Specifies whether you want to bypass relationship-related diagram rendering. Thus, accelerating the diagram load process.</dd><dd><p class="noteAlt">Using this option opens the model with an improper layout. Run the layout operation&#160;(Orthogonal Layout) manually after the model is loaded.</p></dd><dt><p>Load Diagram with entity/table view</p></dt><dd><p>Specifies whether you want display only entity/tables and relationships in your diagram. Thus, accelerating the diagram load process. By default, selecting this option disables the PK-FK highlight feature (Display Diagram Highlight option on the Model Editor dialog box).</p></dd><dt>Supertype-Subtype Transformation</dt><dd><p>Specifies whether you want to enable the SuperType-SubType Rollup Transformation on the Physical side of the model.<div class="noteAlt">For an already transformed target entity, any newly added non-key attributes in the child entity on Logical side are not rolled-up automatically. To roll-up the new attributes, rerun the roll-up action as follows:<ol><li><p>On the Attribute Editor, clear the <b>Logical Only</b> check box and click <b>Close</b>.</p></li><li><p>On the Subtype Symbol Editor of the attribute, set the <b>Transformation Type</b> to RollUp and click <b>Close</b>.</p></li></ol></div></p></dd><dt>Quick Complete Compare</dt><dd><p>Specifies whether you want to bypass the hidden properties comparison. Thus, accelerating the complete compare process.</p></dd><dt>Use Online Help</dt><dd><p class="normaltermcontinued2">Specifies whether you want to display the online help from a website. Select this option if you are connected to the Internet. The website always has the latest online help.</p></dd><dt>Use Local Help</dt><dd><p class="normaltermcontinued2">Specifies whether you want to display the online help from your local computer. Select this option if you are not connected to the Internet. The erwin bookshelf is available in the C:\Program Files\erwin\Data Modeler [r<em class="italic">n</em>]\erwin Bookshelf folder.</p></dd></dl></li>
+            <li class="listnumber">Click OK.
+<p class="listcontinue">General options are set and the Options dialog closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

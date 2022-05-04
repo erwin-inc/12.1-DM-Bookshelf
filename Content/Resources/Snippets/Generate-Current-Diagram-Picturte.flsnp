@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">You can generate a picture of model diagrams in <MadCap:variable name="General.ProductNameDM" /> into multiple formats. This function allows you to generate a picture report of the entire model in the following formats:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Enhanced Metafiles (.emf)</li>
+            <li class="listbullet">PNG (.png)</li>
+            <li class="listbullet">JPG (.jpg)</li>
+            <li class="listbullet">SVG (.svg)</li>
+            <li class="listbullet">PDF (.pdf)
+</li>
+        </ul>
+        <p class="bodytext">To generate a picture of the current model diagram, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the model, go to <b>Tools</b> &gt; <b>Diagram Picture</b> section.<br /><img src="../Images/Generate-Picture-from-Model.png" style="width: 516px;height: 201px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><![CDATA[
+]]></li>
+            <li class="listnumber">On the Diagram Picture section, click the <b>Current</b> option.<p class="listcontinue">The Save As dialog opens.</p></li>
+            <li class="listnumber">On the Save As dialogue box, specify a name, and location for the file.</li>
+            <li class="listnumber">In the <b>Save as type</b> list, select a format. Then, click <b>Save</b>.<br />Once the picture is generated, you can view the complete diagram in the saved file format.<p class="listcontinue">The generated file can be saved in EMF, PNG, JPG, SVG, and PDF file formats.</p></li>
+        </ol>
+    </body>
+</html>

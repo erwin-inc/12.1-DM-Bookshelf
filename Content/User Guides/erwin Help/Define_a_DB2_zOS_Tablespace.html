@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Db2 z/OS Tablespace</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2832" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3067');highlight('2832')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2832">Define a Db2 z/OS Tablespace</h5>
+        <p class="bodytext">Use the Tablespace editor to specify parameters for a Db2 z/OS tablespace.</p>
+        <p class="proceduresubheading">To define a Db2 z/OS tablespace</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Tablespace</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for z/OS Tablespace Editor opens.</p></li>
+            <li class="listnumber">Select a tablespace and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a tablespace. Use the <em class="italic">Enter filter text</em> text box to filter a large list of tablespaces to locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the tablespace.</p></dd><dt>Storage Type</dt><dd><p class="normaltermcontinued2">Specifies the tablespace storage type. Your choice affects the display of the parameters below.</p></dd><dt>Database</dt><dd><p class="normaltermcontinued2">Specifies the database in which to store the tablespace.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Work with the following properties on the <span class="uielement">General</span> tab:
+<dl><dt>Define Data Sets</dt><dd><p class="normaltermcontinued2">Specifies that the data sets are created when the tablespace is created. Clear the check box to indicate DEFINE NO.</p></dd><dt>Suppress Logging </dt><dd><p class="normaltermcontinued2">Indicates that changes to a LOB column in the tablespace are written to the log. Clear the check box to not write changes to the log.</p></dd><dt>Page Number</dt><dd><p class="normaltermcontinued2">Indicates the type of page numbering that is used when you create a partition-by-range table space.</p></dd><dt>Data Set Size (LOB only)</dt><dd><p class="normaltermcontinued2">Indicates the value, in gigabytes, for the maximum size for data sets. Select a data set size from the drop-down list.</p></dd><dt>Use Bufferpool</dt><dd><p class="normaltermcontinued2">Indicates the bufferpool to be used for the tablespace. Select a bufferpool name from the drop-down list.</p></dd><dt>Close</dt><dd><p class="normaltermcontinued2">Indicates that, when the limit on the number of open data sets is reached, the tablespace is eligible for closing before CLOSE NO data sets. Clear the check box to indicate <em class="italic">CLOSE NO</em>.</p></dd><dt>Lock Max</dt><dd><p class="normaltermcontinued2">Specifies the maximum number of page, row, or LOB locks an application process can hold simultaneously in the tablespace.</p></dd><dt>Lock Size</dt><dd><p class="normaltermcontinued2">Specifies the size of locks used within the tablespace. Select a lock size from the drop-down list. Valid Values are: Any, Table, TableSpace, Page, Row, LOB.</p></dd><dt>Track Modified Pages</dt><dd><p class="normaltermcontinued2">Indicates that modified pages in the space map pages are tracked for the partition. Clear the check box to indicate <em class="italic">TRACKMOD NO</em>.</p></dd><dt>CCSId</dt><dd><p class="normaltermcontinued2">Specifies the encoding scheme for table stored in the tablespace. Select a value from the drop-down list. Valid values are: ASCII, EBCDIC, or UNICODE.</p></dd><dt>Is Compressed</dt><dd><p class="normaltermcontinued2">Indicates that data compression applies to the rows of the tablespace or partition. Clear the check box to indicate <em class="italic">COMPRESS NO</em>.</p></dd><dt>Max Rows</dt><dd><p class="normaltermcontinued2">Specifies the maximum number of rows (indicated as an integer) to place on each data page.</p></dd><dt>Segment Size</dt><dd><p class="normaltermcontinued2">Specifies how many pages (indicated as an integer) are to be assigned to each segment.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Partitions</span> tab and work with the following options:
+<dl><dt>Partition Type</dt><dd><p class="normaltermcontinued2">Indicates whether the partition is of type Universal Tablespace(UTS) or Segmented Tablespace (STS).</p></dd><dt>Maximum Partitions</dt><dd><p class="normaltermcontinued2">Indicates the maximum number of partitions to which the tablespace can grow. Enter an integer in the text box.</p></dd><dt>Member Cluster</dt><dd><p class="normaltermcontinued2">Indicates that data is not clustered. Clear the check box to allow Db2 to locate the data in the tablespace based on available space.</p></dd><dt>Partitions Count</dt><dd><p class="normaltermcontinued2">Specifies the number of partitions in the tablespace.</p></dd><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies a name for the partition.</p><p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create a partition element.</p></dd><dt>Partition Number</dt><dd><p class="normaltermcontinued2">Specifies the partition element number. Click the Partition Element Editor icon to define a new partition and its properties. </p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Using Clause</span> tab and work with the following options:
+<dl><dt>Volume Catalog</dt><dd><p class="normaltermcontinued2">Specifies that the first data set of the index is managed by the user. Catalog Name identifies the linear VSAM data sets that are cataloged in an integrated catalog facility catalog.</p></dd><dt>Storage Group</dt><dd><p class="normaltermcontinued2">Specifies that Db2 manages the data set.</p></dd><dt>Primary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum primary space allocated to a Db2-managed data set. If you do not specify any value, Db2 uses a default value.</p></dd><dt>Secondary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum secondary space allocated to a Db2-managed data set. If you do not specify any value, Db2 uses a formula to calculate the value. For more information, refer to IBM Db2 for z/OS documentation.</p></dd><dt>Erase When Deleted</dt><dd><p class="normaltermcontinued2">Specifies whether or not to delete the Db2-managed data sets when the index is dropped while executing a utility or an SQL statement.</p></dd><dt>Free Page Interval</dt><dd><p class="normaltermcontinued2">Specifies the frequency at which you want to leave a page of free space when you create index entries while executing a Db2 utility or when you create an index for a table with existing rows.</p></dd><dt>Percent Free</dt><dd><p class="normaltermcontinued2">Specifies the percentage of free space you want to leave in each nonleaf page and leaf page when you add entries to an index or index partition while executing a Db2 utility or when you create an index for a table with existing rows.</p></dd><dt>For Update</dt><dd><p class="normaltermcontinued2">Specifies the percentage of space to reserve as free space on each page, for use by subsequent update operations.</p></dd><dt>Group Bufferpool</dt><dd><p class="normaltermcontinued2">Specifies the index pages that are written to the group buffer pool and applies to the data sharing environment. Select from the drop-down list; valid values are: Changed, All, None, and System. </p></dd></dl></li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_DB2_zOS_Permissions_DB_Level.html" id="h2752" target="_self" title="Define DB2 z/OS Permissions at Database Level">Permission</a> tab to add and define permissions.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for z/OS Tablespace Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Specify_DB2_zOS_Using_Clause_Parameters.html" target="_self">Specify Db2 z/OS Using Clause Parameters</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Permissions_DB_Level.html" target="_self">Define Db2 z/OS Permissions at Database Level</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_Partition_Elements.html" target="_self">Define Db2 z/OS Table Partition Elements</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_or_Index_Partitions.html" target="_self">Define Db2 z/OS Table or Index Partitions</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

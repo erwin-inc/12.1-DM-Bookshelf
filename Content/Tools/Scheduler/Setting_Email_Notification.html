@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Setting up Email Notifications</title>
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8357" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/11/2018T16:39-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="../../Resources/open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('8356');highlight('8357')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tools" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t8357">Setting up Email Notifications</h1>
+        <p class="bodytext">To set up email notifications, do the following:</p>
+        <ol>
+            <li class="listbullet">On the ribbon, in the Settings group, click <b>Email Notification</b>.<p>The Notification Configuration dialog box opens.</p><p><img src="../../Resources/Images/EmailNotification.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 431px;height: 527px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p></li>
+            <li class="listbullet">Select the <b>E-mail Notification</b> check box.<br />The fields on the dialog box are enabled.<p class="noteAlt">Before you configure and send email notifications, ensure that the SendMail.ps1 file is available in the Config folder at C:\Program Files\erwin\Data Modeler r9\.</p></li>
+            <li class="listbullet">In the Mail Server Configuration section, work on the following:<ul><li class="listbullet"><b>From</b>: Add an email address. Emails are sent to the user from the mentioned email address.</li><li class="listbullet"><b>To and CC</b>: Add an email address or a list of comma-separated email addresses.</li><li class="listbullet"><b>Subject</b>: Enter a notification subject. By default, it is set to erwin DM Scheduler Automation.</li><li class="listbullet"><b>SMTP&#160;Server</b>: Enter your SMTP server name in the mail.domain.com format. Notification emails are sent from this server.</li><li class="listbullet"><b>SMTP Port</b>: Enter the port number of your SMTP server. The default port number is 25. If your organization uses an alternate port number for the mail server, enter the port number.</li><li class="listbullet"><b>Use SSL</b>: Specify whether you want to connect to the server through a secured connection. This check box is enabled only if you have configured SSL on your web server.</li></ul></li>
+            <li class="listbullet">In the User Credentials section, work on the following:<ul><li class="listbullet"><b>Username</b>: Enter the username or email address of the account that you want to use to send notifications. Ensure that this account has the rights to send emails in a batch.</li><li class="listbullet"><b>Password</b>: Enter the password of your account.</li><li class="listbullet"><b>Send test message now</b>: Click Send test message now to verify the settings that you made.<br /></li></ul></li>
+            <li class="listbullet">In the Options section, select the event that triggers an email notification. You can send notifications on job creation, job start, job end,  job end due to an error, and the difference generated during complete compare.</li>
+            <li class="listbullet">Click <b>OK</b>.</li>
+        </ol>
+    </body>
+</html>

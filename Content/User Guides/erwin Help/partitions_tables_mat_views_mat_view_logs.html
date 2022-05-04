@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Partitions for Oracle Tables, Materialized Views, and Materialized View Logs</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8173" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx()">
+        <h5 class="heading5" id="t8173">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Define Partitions for Oracle Tables, Materialized Views, and Materialized View Logs</h5>
+        <p class="proceduresubheading">To define partitions for Oracle tables, materialized views, and materialized view logs</p>
+        <p class="bodytext">Do the following:</p>
+        <ul class="listbullet2">
+            <li class="listbullet2"><strong>Table - </strong>In the Model Explorer, under Tables, right-click Partitions and click New. Or, in the Diagram Area, right-click a table and then click Partition Properties.
+</li>
+            <li class="listbullet2"><strong>Materialized View - </strong>In the Model Explorer, under Materialized Views, right-click Partitions and click New. Or, in the Diagram Area, right-click a materialized view and then click Partition Properties.  
+</li>
+        </ul>
+        <p class="bodytext">The options available depend on the partitioning option you select. For information on the partitioning option that you require, click the appropriate partitioning option below:</p>
+        <ul class="listbullet2">
+            <li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_range.html" id="h2139" target="_self" title="Oracle Partitions Tab - Range">Range</a>
+            </li>
+            <li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_hash.html" id="h2141" target="_self" title="Oracle Partitions Tab - Hash">Hash</a>
+            </li>
+            <li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_list.html" id="h2145" target="_self" title="Oracle Partitions Tab - List">List</a>
+            </li>
+            <li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_composite_hash.html" id="h2149" target="_self" title="Oracle Partitions Tab - Composite-Hash">Composite-Hash</a>
+            </li>
+            <li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_composite_list.html" id="h2153" target="_self" title="Oracle Partitions Tab - Composite-List">Composite-List</a>
+            </li>
+        </ul>
+        <p class="bodytext">For a materialized view log partition:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In the Model Explorer or in the Diagram Area, right-click a table and select Table Properties. The table editor opens.
+</li>
+            <li class="listnumber">Click the Materialized View Log tab.
+</li>
+            <li class="listnumber">Select the Materialized View Log check box and then click Edit Properties. The materialized view log editor opens.
+</li>
+            <li class="listnumber">Click Partitions to open the partition editor.
+</li>
+        </ol>
+        <p class="bodytext">For each of the objects, do the following using the partition editor:</p>
+        <ol class="listnumber">
+            <li class="listnumber">(Optional) Click the <a class="z--jumptemplate" href="define_subpartition_oracle.html" id="h2729" target="_self" title="Define a Subpartition in Oracle 11g">Subpartitions</a> tab and define the subpartitions for the selected partitions.
+</li>
+            <li class="listnumber">(Optional) Click the <a class="z--jumptemplate" href="orcl_database_editor_tablespace_tab.html" id="h2100" target="_self" title="Oracle Database Editor - Tablespace Tab">Tablespace</a> tab and add tablespaces to the selected partitions.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a> </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close, the editor closes.
+</li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

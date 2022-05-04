@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Applying Data Type Standards"
+    Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Applying Data Type Standards.html">
+    <TocEntry
+      Title="Deciding the Method to Apply Standards"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Decide_the_Method_to_Apply_Standards.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Create and Apply Data Type Standards"
+    Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Create and Apply Data Type Standards.html">
+    <TocEntry
+      Title="Define Data Type Standards from Model Explorer"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Define_Data_Type_Standards_from_Model_Explorer.html" />
+    <TocEntry
+      Title="Create a Mapping"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Create_a_Mapping.html"></TocEntry>
+    <TocEntry
+      Title="Apply Data Type Standards to Model"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Apply_Data_Type_Standards_to_the_Model.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Import Data Type Standards from a Previous Version"
+    Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Import Data Type Standards from a Previous Version.html">
+    <TocEntry
+      Title="Import Data Type Standards"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Import Data Type Standards.html" />
+    <TocEntry
+      Title="Apply Data Type Standards to the Model"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Apply Data Type Standards to the Model.html" />
+  </TocEntry>
+  <TocEntry
+    Title="Apply Data Type Standards by Binding a Model Template"
+    Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Apply Data Type Standards by Binding a Model Template.html">
+    <TocEntry
+      Title="Bind a Model Template"
+      Link="/Content/Tutorials/Scenarios/Applying Data Type Standards/Bind_a_Model_Template.html" />
+  </TocEntry>
+</CatapultToc>

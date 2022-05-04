@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Convert Datatypes When Changing the Target DBMS</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="585" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3180');highlight('585')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t585">Convert Datatypes When Changing the Target DBMS</h4>
+        <p class="bodytext">When you change the target DBMS, you can convert the datatype assigned to each attribute to the closest datatype available on the new target server. Specific datatype mapping rules are used when converting datatypes. </p>
+        <p class="proceduresubheading"><strong>To convert datatypes when changing the target DBMS</strong>
+        </p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Target Database on the Actions menu in a physical model.
+<p class="listcontinue">The erwin Data Modeler - Target Server dialog opens.</p></li>
+            <li class="listnumber">Select the target DBMS for the current model in the Target SQL DBMS section.
+</li>
+            <li class="listnumber">Select the target database version from the &lt;Database&gt; Version list and click OK. 
+<p class="listcontinue">If the new database supports user-defined datatypes (and the current database does not), a warning message displays about converting your datatypes.</p></li>
+            <li class="listnumber">Select one of the following options in the warning message dialog:
+<ul class="listbullet2"><li class="listbullet2">Click Yes to convert your domains to user-defined datatypes. All overridden datatypes will be reset to restore domain inheritance. 
+</li><li class="listbullet2">Click No to not convert the datatype settings for domains. The datatypes are maintained from the original DBMS.
+</li></ul></li>
+        </ol>
+        <p class="noteAlt">If you do not automatically convert the domain datatypes, you must manually convert them, or convert to a third DBMS, then convert back to your intended DBMS.</p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" style="mc-hyphenate: never;">
+    <head><title>Generate Reports using a Reporting Tool</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1514" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/10/2018T13:16-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1511');highlight('1514')}">
+        <h2 class="heading2" id="t1514">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Generating REST&#160;Reports</h2>
+        <p class="bodytext">To be able to generate REST reports, ensure that you have the View permissions to the Mart and a bearer token.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber" style="mc-hyphenate: never;">
+            <li class="listnumber">Run the following CURL command to authenticate yourself:<br /><pre xml:space="preserve">curl -X POST "http://<i>&lt;server name&gt;</i>:18170/MartServer/api/report/authenticate" -H 
+"accept: */*" -H "Authorization: Bearer <i>&lt;bearer token&gt;</i>" -H "Content-Type:
+ application/json" -d "{\"password\":\"<i>&lt;password&gt;</i>\",\"username\":\"<i>&lt;username&gt;</i>\"}"
+</pre>In the above command replace <i>&lt;server name&gt;</i>, <i>&lt;bearer token</i>&gt;, <i>&lt;username&gt;</i>, and <i>&lt;password&gt;</i> with your information.			</li>
+            <li class="listnumber">Run the following CURL command to generate a report:<br /><pre xml:space="preserve">curl -X GET "http://<i>&lt;server name&gt;</i>:18170/MartServer/api/report/generateReport/
+<i>&lt;predefined report name&gt;</i>?additionalProp1=string&amp;additionalProp2=string
+&amp;additionalProp3=string" -H "accept: */*" -H "Authorization: Bearer <i>&lt;bearer token&gt;</i>"</pre><p>In the above command replace <i>&lt;server name&gt;</i>, <i>&lt;predefined report name&gt;</i>, and <i>&lt;bearer token</i>&gt; with your information.</p><p>An XML report based on the <i>&lt;predefined report name&gt;</i> parameter is generated. For example, if you replace this parameter with Models, the following report is generated, where the Mart had three models available in it:<br /><img src="../../Resources/Images/RESTReport.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><br /></p></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">In the previous versions, erwin Data Modeler connected to the Mart server directly. Now, erwin Data Modeler connects to the Mart server through a web server. </p>
+        <p class="bodytext">The Mart comprises the following components:</p>
+        <dl>
+            <dt>Database</dt>
+            <dd>
+                <p class="normaltermcontinued">Stores the user data for the Workgroup Edition. You can use PostgreSQL through version 9.6.2 or either of the certified versions such as 9.6.21, 9.6.24, 10.16, 10.20, 11.11, 11.14, 12.6, 12.9, 13.2, 13.5, and 14.1 databases for the Mart database. You can also  use PostgreSQL certified version 11.8 for Amazon RDS and Amazon Aurora.</p>
+            </dd>
+            <dt>Applications</dt>
+            <dd>
+                <p class="normaltermcontinued">Includes a web-based component named erwin Mart Administrator that helps you manage the Mart through a web console. </p>
+            </dd>
+            <dt>Web server</dt>
+            <dd>
+                <p class="normaltermcontinued">Hosts erwin Mart Administrator. You can use a web server of your choice. If you have not installed a web server, use the erwin Mart Server option and install Tomcat.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">If you are using the Workgroup Edition, you must install and configure erwin Mart Administrator. </p>
+        <p class="bodytext">The following diagram illustrates how to install and configure a Mart:</p>
+        <p class="bodytext">
+            <img src="../Images/828.png" />
+        </p>
+        <p class="bodytext">Complete the following steps in the same order to install and configure the Mart:</p>
+        <ol class="listnumber">
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/review_prereq_2.html">Review the Prerequisites for a PostgreSQL Mart</a><![CDATA[
+]]></li>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Create a PostgreSQL Database.html">Create a PostgreSQL Database</a>
+            </li>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/deploy_mart_server_1.html">Install erwin Mart Server</a>
+            </li>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service_1.html">Use Mart Server as a Windows Service</a><![CDATA[
+]]></li>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/initialize_postgreSQL_mart.html">Initialize a PostgreSQL Mart</a>
+            </li>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure_1.html">Log in to erwin Mart Administrator and configure settings
+</a>
+            </li>
+        </ol>
+    </body>
+</html>

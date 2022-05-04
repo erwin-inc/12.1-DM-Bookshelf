@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="erwin DM Connect for DI"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[General.PDF], exclude[General.GitIntegration or General.Online]"
+  PatchHeadingLevels="true"
+  InjectEmptyPages="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
+  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\2021R2\PDF"
+  MasterToc="/Project/TOCs/PDF12.0FeatureTour.fltoc"
+  OutputFile="erwin DM 12.0 Feature Tour">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="doc" />
+  <DocumentProperties
+    Title="erwin DM 12.0 Feature Tour"
+    Author="Quest Software" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true"
+    Tagged="true"
+    PageMode="UseOutlines"
+    RequireOpenPassword="false" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDFOutput.fldes"
+      Publish="true" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="PDF-GuideName-Variables/GuideName">v12 Feature Tour Guide</Variable>
+  </Variables>
+</CatapultTarget>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Add User-Defined Teradata Functions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2761" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2696');highlight('2761')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2761">Add User-Defined Teradata Functions</h5>
+        <p class="bodytext">You can use the Teradata Function Editor to create and maintain the user-defined functions in a Teradata physical model.</p>
+        <p class="proceduresubheading">To add user-defined Teradata functions</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Functions </span>on the <span class="uielement">Model </span>menu.
+<p class="listcontinue">The Teradata Function Editor opens.</p></li>
+            <li class="listnumber">Select a function and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New </span><img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new function. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of functions to quickly locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the function.</p></dd><dt>Database</dt><dd><p class="normaltermcontinued2">Specifies the database or user.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies the type of the function. Select from the drop-down list. Valid values are: Model Level or Table Level.</p></dd><dt>Function Type</dt><dd><p class="normaltermcontinued2">Specifies the function type. Select from the drop-down. Valid values are Scalar or Table.</p></dd><dt>Enabled</dt><dd><p class="normaltermcontinued2">Specifies if the function is enabled or not.</p></dd><dt>Use Replace Syntax</dt><dd><p class="normaltermcontinued2">Lets you select whether Forward Engineering uses the REPLACE command instead of the CREATE command.</p></dd><dt>Attach To New</dt><dd><p class="normaltermcontinued2">Specifies if upon creating a new (table-level only) table, this script will automatically be attached to it.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates DDL for this object during Forward Engineering.</p></dd><dt>Generate As Pre-Script</dt><dd><p class="normaltermcontinued2">Specifies whether you want to generate DDL as pre-script. Valid values are Post Creation and Pre Creation.   </p></dd></dl></li>
+            <li class="listnumber">Complete the following fields on the <span class="uielement">General </span>tab:
+<dl><dt>Function Type</dt><dd><p class="normaltermcontinued2">Specifies the function type. Select from the drop-down. Valid values are Scalar or Table.</p></dd><dt>Specific Name</dt><dd><p class="normaltermcontinued2">Specifies the specific function type selected in the previous field.</p></dd><dt>Return Data Type</dt><dd><p class="normaltermcontinued2">Specifies the data type for the value returned by the function. Distinct and structured UDT's are valid for scalar function only.</p><p class="noteAlt">This property only displays if the function type is set to scalar.</p></dd><dt>Character Set Type</dt><dd><p class="normaltermcontinued2">Specifies the character set type.</p><p class="noteAlt">This property only displays if the function type is set to scalar.</p></dd><dt>Return Cast Data Type</dt><dd><p class="normaltermcontinued2">Specifies casting from data type. </p><p class="noteAlt">This property only displays if the function type is set to scalar.</p></dd><dt>Return Cast User Defined Type</dt><dd><p class="normaltermcontinued2">Specifies the data-type/domain casting from. </p><p class="noteAlt">This property only displays if the function type is set to scalar.</p></dd><dt>Return Cast Character Set Type</dt><dd><p class="normaltermcontinued2">Specifies the character set type casting from.</p><p class="noteAlt">This property displays only if the function type is set to scalar.</p></dd><dt>Return Type</dt><dd><p class="normaltermcontinued2">Specifies the data-type/domain that will be returned.</p><p class="noteAlt">This property only displays if the function type is set to scalar.</p></dd><dt>Return Table Definition (Teradata Version 12 only)</dt><dd><p class="normaltermcontinued2">Defines a reference to a table that will define the table that the function will return. </p><p class="noteAlt">This property only displays if the function type is set to table. </p></dd><dt>Return Table Varying Columns (Teradata Version 12 only)</dt><dd><p class="normaltermcontinued2">Defines a reference to a table that will define the varying columns that the function will return. </p><p class="noteAlt">This property only displays if the function type is set to table.</p></dd></dl></li>
+            <li class="listnumber">Work with other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Add or edit parameters for the selected function on the <a class="z--jumptemplate" href="Specify_Parameters_for_a_Teradata_Method.html" id="h2764" target="_self" title="Specify Parameters for a Teradata Method">Parameters</a> tab.
+</li><li class="listbullet2">Work with data access features for the selected function on the <a class="z--jumptemplate" href="Specify_Data_Access_Options_for_a_Teradata_Function.html" id="h2766" target="_self" title="Specify Data Access Options">Options</a> tab.
+</li><li class="listbullet2">Add a full path for source files for the selected function on the <a class="z--jumptemplate" href="Specify_Source_Files_for_a_Physical_Object.html" id="h2767" target="_self" title="Specify Source Files for a Physical Object">Source Files</a> tab.
+</li><li class="listbullet2">Add external files for the selected function on the <a class="z--jumptemplate" href="Specify_External_Files_for_a_Physical_Object.html" id="h2768" target="_self" title="Specify External Files for a Physical Object">External</a> tab.
+</li><li class="listbullet2">Edit the SQL code related to the selected function on the <a class="z--jumptemplate" href="Define_the_Code_to_a_Stored_Procedure_Function_or_Trigger.html" id="h1811" target="_self" title="Define the Code to a Stored Procedure, Function, or Trigger">Code</a> tab.
+</li><li class="listbullet2">Display fully expanded code that may be shown as code fragments or partial routines on other tabs, on the <a class="z--jumptemplate" href="expanded_tab_options.html" id="h1814" target="_self" title="Expanded Tab">Expanded</a> tab.
+</li><li class="listbullet2">Associate permissions with the selected function on the <a class="z--jumptemplate" href="Add_Permissions_in_a_Teradata_Property_Editor.html" id="h7904" target="_self" title="Add Permissions in a Property Editor">Permission</a> tab.
+</li><li class="listbullet2">Change the object creation order in the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab.
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Teradata Function Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Specify_Data_Access_Options_for_a_Teradata_Function.html" target="_self">Specify Data Access Options</a>
+        </p>
+        <p class="relateditem"><a href="Specify_Source_Files_for_a_Physical_Object.html" target="_self">Specify Source Files for a Physical Object</a>
+        </p>
+        <p class="relateditem"><a href="Specify_External_Files_for_a_Physical_Object.html" target="_self">Specify External Files for a Physical Object</a>
+        </p>
+        <p class="relateditem"><a href="Specify_Parameters_for_the_Selected_Physical_Object.html" target="_self">Specify Parameters for the Selected Physical Object</a>
+        </p>
+        <p class="relateditem"><a href="Edit_Code_in_a_Teradata_Property_Editor.html" target="_self">Edit Code in a Teradata Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="View_Expanded_Code_in_a_Property_Editor.html" target="_self">View Expanded Code in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_Permissions_in_a_Teradata_Property_Editor.html" target="_self">Add Permissions in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Change_the_Object_Creation_Order_in_a_Property_Editor.html" target="_self">Change the Object Creation Order in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

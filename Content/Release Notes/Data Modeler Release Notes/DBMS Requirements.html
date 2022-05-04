@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>DBMS Requirements</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6921" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/24/2018T18:13-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6913');expand2('6919');highlight('6921')}">
+        <p class="bodytext">
+            <MadCap:concept term="Release Notes" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t6921">DBMS Requirements</h3>
+        <p class="bodytext">Before you install erwin Data Modeler to use a MartServer in a workgroup environment, ensure that you are using a supported DBMS as your host server. This release supports the following host DBMSs:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Oracle 12c r2, 18c, 19c, and 21c</li>
+            <li class="listbullet">
+                Microsoft SQL Server 2014 SP3, 2016 SP2, or certified versions 2017 and 2019. You can also use Microsoft SQL Azure 12 and Amazon RDS SQL Server 2019.</li>
+            <li class="listbullet">PostgreSQL through version 9.6.2 or the certified versions 9.6.21, 10.16, and 11.11. You can also use PostgreSQL certified version 11.8 for Amazon RDS and Amazon Aurora.</li>
+        </ul>
+        <p class="bodytext">To create, update, or delete a mart in erwin Data Modeler Workgroup Edition, you must have the following database rights:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Microsoft SQL Server 2014 SP3, 2016 SP2, or certified versions 2017 and 2019 you must be the database owner (dbo).
+<p class="noteAlt">The dbo is no longer required to have the sysadmin role. The SQL Server 2012, 2014, 2014 SP1, 2016, 2016 SP1, 2016 SP2, 2017, and 2019 TRUSTWORTHY database property is no longer required for the mart. After you install this product, you can optionally reset this property to OFF.</p></li>
+            <li class="listbullet">For Oracle, you must be the database schema owner and have the DBA role.
+</li>
+        </ul>
+        <p class="bodytext">Before you install Mart on the server, verify that the DBMS environment is prepared for the installation, and that the server system requirements meet at least the minimum specifications. At least one user with administrative privileges is available on the DBMS.</p>
+        <p class="noteAlt">The dbo role for Microsoft SQL Server is necessary only during the installation or upgrade. You can strip the installer of the dbo role after the installation or upgrade is complete.</p>
+        <p class="bodytext">For more information about preparing the DBMS environment, see the erwin Data Modeler Workgroup Edition Implementation and Administration Guide.</p>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Multiple Occurrences of the Same Fact</title>
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\docsstylesheet.css" />
+        <meta name="componentcd" content="&lt;authorit:componentcd&gt;" />
+        <meta name="objectid" content="3644" />
+        <meta name="basedOnKey" content="260" />
+        <!--metadata variables for XMD: translatable-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="&lt;authorit:ca_keywords&gt;" />
+        <meta name="ca_content_type" content="&lt;authorit:ca_content_type&gt;" />
+        <meta name="ca_context" content="&lt;authorit:ca_context&gt;" />
+        <meta name="ca_role" content="&lt;authorit:ca_role&gt;" />
+        <meta name="ca_language" content="en-US" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta name="ca_offering_name" content="&lt;authorit:ca_offering_name&gt;" />
+        <meta name="ca_product_version" content="&lt;authorit:ca_product_version&gt;" />
+        <meta name="ca_product_family" content="&lt;authorit:ca_product_family&gt;" />
+        <meta name="ca_alias_name" content="&lt;authorit:ca_alias_name&gt;" />
+        <meta name="ca_related_offering" content="&lt;authorit:ca_related_offering&gt;" />
+        <meta name="ca_access_level" content="&lt;authorit:ca_access_level&gt;" />
+        <meta name="ca_date_time" content="8/29/2018T20:00-5:00" />
+        <meta name="ca_creator" content="(supervisor)" />
+        <meta name="ca_source" content="&lt;authorit:ca_source&gt;" />
+        <meta name="ca_format" content="HTML" />
+        <meta name="ca_database" content="&lt;authorit:ca_database&gt;" />
+        <meta name="ca_application_server" content="&lt;authorit:ca_application_server&gt;" />
+        <meta name="ca_operating_system" content="&lt;authorit:ca_operating_system&gt;" />
+        <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
+        <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
+        <script language="javascript" type="text/javascript" src="..\..\Resources\dhtml_toc.js">
+        </script> <script language="javascript" type="text/javascript" src="..\..\Resources\open_parent.js"></script> <script language="javascript" type="text/javascript" src="../../Resources/mailca.js"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3633');expand2('3636');highlight('3644')}">
+        <h3 id="t3644" class="heading3">
+            <MadCap:concept term="References" />Multiple Occurrences of the Same Fact</h3>
+        <p class="bodytext">One of the goals of a relational database is to maximize data integrity. To do so, it is important to represent each fact in the database once and only once, otherwise errors can begin to enter into the data. The only exception to this rule (one fact in one place) is in the case of key attributes, which can appear multiple times in a database. The integrity of keys, however, is managed using referential integrity.</p>
+        <p class="bodytext">Multiple occurrences of the same fact often point to a flaw in the original database design. In the following figure, you can see that including “employee&#8209;address” in the CHILD entity has introduced an error in the database design. If an employee has multiple children, the address must be maintained separately for each child.</p>
+        <p class="picture">
+            <img id="f3645" src="../../Resources/Images/3645.png" alt="" height="106" width="365" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">“employee-address” is information about the EMPLOYEE, not information about the CHILD. In fact, this model violates second normal form, which states that each fact must depend on the entire key of the entity in order to belong to the entity. The example above is not in second normal form because “employee-address” does not depend on the entire key of CHILD, only on the “employee-id” portion, creating a partial key dependency. If you place “employee-address” back with EMPLOYEE, you can ensure that the model is in at least second normal form.</p>
+        <p />
+    </body>
+</html>

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="Scheduler"
+    Link="/Content/Tools/Scheduler/CoverPage.html"
+    conditions="General.PDF"
+    BreakType="pageLayout"
+    PageType="title"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    AutoEndOnLeftPage="disabled" />
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Installation/Installation/erwin_Install/copyright.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="decimal"
+    PageNumber="(multiple)"
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
+  <TocEntry
+    Title="Contact Customer Support"
+    Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Tools/Scheduler/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    StartSection="false"></TocEntry>
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/Tools/Scheduler/Introduction.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumber="(multiple)">
+    <TocEntry
+      Title="Installing erwin DM Scheduler"
+      Link="/Content/Tools/Scheduler/Installing_the_Scheduler.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Getting Started"
+      Link="/Content/Tools/Scheduler/Getting_Started.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Using erwin DM Scheduler"
+      Link="/Content/Tools/Scheduler/Using_the_Scheduler.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)">
+      <TocEntry
+        Title="Scheduling Jobs"
+        Link="/Content/Tools/Scheduler/Scheduling_Jobs.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        PageNumber="(multiple)">
+        <TocEntry
+          Title="Setting Reverse Engineering Options"
+          Link="/Content/Tools/Scheduler/Setting_Reverse_Engineering_Options.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Setting Recurrence"
+          Link="/Content/Tools/Scheduler/Setting_Recurrence.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Connecting to Mart"
+          Link="/Content/Tools/Scheduler/Connecting_to_Mart.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Reading Job Status"
+          Link="/Content/Tools/Scheduler/Reading_Job_Status.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Viewing Event Log"
+          Link="/Content/Tools/Scheduler/Viewing_Event_Log.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Rescheduling, Editing, Copying, and Deleting Jobs"
+          Link="/Content/Tools/Scheduler/ReschedulingEditingCopyingDeleting_Jobs.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Viewing_Scheduler_Event_Reports"
+          Link="/Content/Tools/Scheduler/Viewing_Scheduler_Event_Reports.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Setting Up Remote Server Configurations"
+        Link="/Content/Tools/Scheduler/Setting_Up_Remote_Server_Configurations.html" />
+      <TocEntry
+        Title="Customizing and Configuring the Scheduler"
+        Link="/Content/Tools/Scheduler/Customizing_and_Configuring_the_Scheduler.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        PageNumber="(multiple)">
+        <TocEntry
+          Title="Customizing the Calendar View"
+          Link="/Content/Tools/Scheduler/Customizing_the_Calendar_View.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Setting Calendar Options"
+          Link="/Content/Tools/Scheduler/Setting_Calendar_Options.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Setting Time Scale and Time Zone"
+          Link="/Content/Tools/Scheduler/Setting_TimeScale_TimeZone.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Displaying the Data Picker"
+          Link="/Content/Tools/Scheduler/Displaying_the_DatePicker.html" />
+        <TocEntry
+          Title="Setting up Email Notifications"
+          Link="/Content/Tools/Scheduler/Setting_Email_Notification.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          PageNumber="(multiple)" />
+        <TocEntry
+          Title="Set Up Predefined Reverse Engineering Options"
+          Link="/Content/Tools/Scheduler/Setting_Up_Predefined_Reverse_Engineering_Options.html"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Setting Up Tray Service Options"
+          Link="/Content/Tools/Scheduler/Setting_Up_Tray_Service_Options.html"
+          BreakType="chapter"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+</CatapultToc>

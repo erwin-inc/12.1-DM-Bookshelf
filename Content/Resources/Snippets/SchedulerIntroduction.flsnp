@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">One of the major features of erwin Data Modeler (DM) is its capability to reverse engineer from databases. However, you have to run reverse engineering (RE) processes manually and limit them to your workday. Thus, during the RE process, the other features of erwin DM are unavailable for use. Also, to configure and run another RE process, one needs to wait until the first process is complete.</p>
+        <p class="bodytext">erwin DM Scheduler enables you to schedule RE jobs in advance and run them without supervision. Thus, improving the original capability of reverse engineering. A live log keeps you updated about the job status.</p>
+        <p class="bodytext">Additionally, you can configure the scheduler to save reverse engineered models to a predefined location on your device and on the Mart.</p>
+    </body>
+</html>

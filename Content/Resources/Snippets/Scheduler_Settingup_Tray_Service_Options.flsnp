@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">You can set up custom tooltip name, notification balloon title, and message for your machine using the Tray Service Options pane. The tray service options are applicable for reverse engineering from remote sever connection. Also, ensure the remote service is started to receive system notifications. </p>
+        <p class="bodytext">To set up tray service options, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the ribbon, in the Settings group, click <b>Tray Service Options</b>.<br />The Tray Service Options pane appears.<br /><img src="../Images/Scheduler-Tray-Service-Options.png" style="width: 487px;height: 173px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
+            <li class="listnumber">Under the Remote Service Tooltip  section, enter a tooltip name for the remote service icon.<br /></li>
+            <li class="listnumber">Click <b>Set Tooltip</b>.<br />This sets the new tooltip name for the remote service icon. <br />On the Overflow (Show hidden icons) section of the windows taskbar, hover over the remote service icon to view the updated tooltip.<br /><img src="../Images/Scheduler-Tray-Tooltip-on-Icon.png" style="width: 255px;height: 121px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br /></li>
+            <li class="listnumber">Select <b>Show Job Status Message</b> option to display the message content in the windows notification.<br /></li>
+            <li class="listnumber">Click <b>Done</b>.<br />The tray service options are saved. The windows notification message appears based on the above configuration.<p class="noteAltTable">The tray service options and notifications are available for remote server configurations. For more information on configuring a remote server, refer to the <a href="../../Tools/Scheduler/Setting_Up_Remote_Server_Configurations.html">Setting Up Remote Server Configurations</a> topic.</p>See the below screenshot for a notification message example.<br /><img src="../Images/Scheduler-Windows-Notification.png" style="width: 288px;height: 97px;" /></li>
+        </ol>
+    </body>
+</html>

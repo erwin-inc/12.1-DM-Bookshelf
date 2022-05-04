@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8032" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('8022');expand2('8023');highlight('8032')}">
+        <h1 class="heading1" id="t3067">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Defining Snowflake Tasks</h1>
+        <p class="bodytext">The following properties are applicable to a Snowflake Task object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;vertical-align: middle;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;vertical-align: middle;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="9">
+                    <p class="tablebodytext">General</p>
+                </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Warehouse</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the virtual warehouse that is used to execute the task</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Schedule Type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the schedule for running the task periodically</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Schedule Time</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies an interval (in minutes) of wait time inserted between runs of the task</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">USER_TASK_TIMEOUT_MS</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the time limit (in milliseconds) on a single run of the task before it times out</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">After Task</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the task after which this task must run</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Sql Statement</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1"> Specifies the SQL statement or a call to a stored procedure that must be executed when the task runs</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">When Boolean Expression</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies a Boolean SQL expression that validates the conditions of the expression to determine whether to execute the task</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Stream as Argument</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the stream to be used as an argument for the task</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Clone Task</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies to create a clone of the specified source task</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="24">
+                    <p class="tablebodytext">Session Parameters</p>
+                </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Abort Detached Query</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the action that must be performed for in-progress queries if connectivity is lost due to abrupt termination of a session</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Auto Commit</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifie whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Date Input Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the input format for the DATE data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Date Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the output format for the DATE data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Error On Nondeterministic Merge</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">In cases where the MERGE command is used to update or delete a target row that joins multiple source rows, specifies whether an error must be returned when  the system cannot determine the action to perform on the target row</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Error On Nondeterministic Update</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">In cases where the UPDATE command is used to update or delete a target row that joins multiple source rows, specifies whether an error must be returned when  the system cannot determine the action to perform on the target row</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Lock&#160;Timeout</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the time in seconds to wait while trying to lock a resource, before timing out and aborting the statement</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Query Tag</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1"> Specifies a string that can be used to tag queries and other SQL statements executed within a session</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Row Per Resultset</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the maximum number of rows returned in a result set</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Statement Timeout In Seconds</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the time in seconds, after which the system cancels a running SQL statement</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp Day Is Always 24H</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">For expressions that span multiple days, specifies whether the DATEADD function always considers a day to be  24 hours </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp Input Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the input format for the TIMESTAMP data type alias</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp LTZ Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the display format for the TIMESTAMP_LTZ data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp NTZ Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the display format for the TIMESTAMP_NTZ data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the display format for the TIMESTAMP data type alias</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp Type Mapping</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timestamp TZ Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the display format for the TIMESTAMP_TZ data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Timezone</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the time zone for the session</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Time Input Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the input format for the TIME data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Time Output Format</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the display format for the TIME data type</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Transaction Default Isolation Level</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the isolation level for transactions in the user session</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Two Digit Century Start</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies the century start year for 2-digit years </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Unsupported DDL Action</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies whether an unsupported value specified for a constraint property returns an error</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Used Cached Result</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Specifies whether to reuse cached query results when a matching query is submitted</td>
+            </tr>
+        </table>
+    </body>
+</html>

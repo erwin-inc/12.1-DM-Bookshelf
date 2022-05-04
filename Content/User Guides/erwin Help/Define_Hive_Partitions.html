@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Hive Partitions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8107" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('8022');expand2('8023');highlight('8107')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t8107">Define Hive Partitions</h6>
+        <p class="bodytext">Use the Hive Table Partition Editor to define table partitions in a Hive physical model.</p>
+        <p class="proceduresubheading">To define a Hive partition</p>
+        <ol class="listnumber">
+            <li class="listnumber">In the Model Explorer, under Tables right-click Partitions and click New.
+<p class="listcontinue">An instance of Partition is created.</p></li>
+            <li class="listnumber">Right-click the instance and click Properties.
+<p class="listcontinue">The Hive Table Partition Editor opens.</p></li>
+            <li class="listnumber">In the navigation grid, select the partition that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a partition. Use the <em class="italic">Enter filter text</em> box to filter a very large list of always encrypted keys to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the partition. Set the name of the partition in this field.</p></dd><dt>Archive</dt><dd><p class="normaltermcontinued2">Specifies that the partition's files should be moved into a Hadoop Archive (HAR).</p></dd><dt>Touch</dt><dd><p class="normaltermcontinued2">Specifies whether you want to read metadata and write it back. This is similar to causing pre/post execute hooks to fire.</p></dd></dl></li>
+            <li class="listnumber">On the General tab, work with the following options:
+<dl><dt>Storage Options:</dt><dd></dd><dt>Serde Handler Class</dt><dd><p class="normaltermcontinued2">Specifies the name of a Java class that implements the Hive SerDe interface.</p></dd><dt>Stored As</dt><dd><p class="normaltermcontinued2">Specifies the type of file in which data is to be stored. The file can be a TEXTFILE, SEQUENCEFILE, RCFILE, or BINARY SEQUENCEFILE.</p></dd><dt>Input Format</dt><dd><p class="normaltermcontinued2">Lets you specify your own Java class if you want Hive to read from a different file format. The value of this property depends on the Stored As value.</p></dd><dt>Output Format</dt><dd><p class="normaltermcontinued2">Lets you specify your own Java class if you want Hive to write to a different file format. The value of this property depends on the Stored As value.</p></dd><dt>Serde Properties</dt><dd><p class="normaltermcontinued2">Specifies SerDe properties to be associated with the storage handler class.</p></dd><dt>Other Options:</dt><dd></dd><dt>Concatenate</dt><dd><p class="normaltermcontinued2">Specifies whether multiple small RC or ORC files contained in a table or partition should be merged into larger files.</p></dd><dt>Compact</dt><dd><p class="normaltermcontinued2">Specifies whether data should be compacted periodically to save space and optimize data access. Select the type of compaction from the drop-down list:</p><dl><dt>MAJOR</dt><dd><p class="normaltermcontinued3">Takes one or more delta files and the base file for the bucket and rewrites them into a new base file per bucket.</p></dd><dt>MINOR</dt><dd><p class="normaltermcontinued3">Takes a set of existing delta files and rewrites them to a single delta file per bucket.</p></dd></dl></dd><dt>Partition Exchange:</dt><dd></dd><dt>Destination Table</dt><dd><p class="normaltermcontinued2">Specifies the table to which the partition should be moved to. Select a table from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create one. </p></dd></dl></li>
+            <li class="listnumber">Click the Statistics tab to view the following options: 
+<dl><dt>Number Of Files</dt><dd><p class="normaltermcontinued2">Specifies the number of files the table has.</p></dd><dt>Number Of Rows</dt><dd><p class="normaltermcontinued2">Specifies the number of rows the table has</p></dd><dt>Raw Data Size</dt><dd><p class="normaltermcontinued2">Specifies the size of the original dataset.</p></dd><dt>Total Size</dt><dd><p class="normaltermcontinued2">Specifies the amount of storage the original dataset takes.</p></dd></dl><p class="noteAlt">The above information is fetched only when reverse engineering from database is done and you have chosen to store statistical information.</p></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The partition is defined and the Hive Table Partition Editor closes.</p></li>
+        </ol>
+        <p class="bodytext">For more information, refer to Hive documentation.</p>
+        <p>
+        </p>
+    </body>
+</html>

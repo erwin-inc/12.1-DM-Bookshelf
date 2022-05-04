@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Object Identifiers</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6035" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6023');expand2('6034');highlight('6035')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t6035">Object Identifiers</h3>
+        <p class="bodytext">Each object must bear an identifier, which is a value that uniquely identifies the object instance. Internally, object identifiers are 20 bytes long. They contain two components: a GUID (also known as a UUID) in the first 16 bytes, and a 32-bit unsigned integer suffix in the last 4 bytes.</p>
+        <p class="bodytext">A GUID contains the following components:</p>
+        <ul class="listbullet">
+            <li class="listbullet">One 32-bit unsigned integer
+</li>
+            <li class="listbullet">Two 16-bit unsigned integers
+</li>
+            <li class="listbullet">Eight 8-bit unsigned integers (represented as unsigned characters)
+</li>
+        </ul>
+        <p class="bodytext">These components total of 128 bits, or 16 bytes. Therefore, an object identifier contains an extra 32-bit unsigned integer (the 4 byte suffix) at the end for a total of 160 bits, or 20 bytes.</p>
+        <p class="bodytext">To simplify working with object identifiers and due to COM automation limitations on datatypes, the API uses a string to represent object identifiers.</p>
+        <p class="bodytext">The following table lists aliases used in this guide and in the interface definitions:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="138">
+                    <p class="tableheading">Type Name</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="326">
+                    <p class="tableheading">Format</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="160">
+                    <p class="tableheading">Use</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="138">
+                    <p class="tablebodytext">SC_OBJID</p>
+                </td>
+                <td width="326">
+                    <p class="tablebodytext">{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}+suffix</p>
+                </td>
+                <td width="160">
+                    <p class="tablebodytext">Object identifier</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="138">
+                    <p class="tablebodytext">SC_CLSID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="326">
+                    <p class="tablebodytext">{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}+suffix</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="160">
+                    <p class="tablebodytext">Class (object, property type, and so on) identifier</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="138">
+                    <p class="tablebodytext">SC_MODELTYPEID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="326">
+                    <p class="tablebodytext">{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}+suffix</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="160">
+                    <p class="tablebodytext">Model type identifier</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="138">
+                    <p class="tablebodytext">SC_CREATORID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="326">
+                    <p class="tablebodytext">{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="160">
+                    <p class="tablebodytext">Creator identifier</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The identifiers whose GUID component contains zero is one set of object identifiers that is predefined. If the final 4 bytes of the identifier also contain zero, the identifier represents a null identifier. Other values of the offset are reserved for future use.</p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Undo, Redo, and Reverse Functions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="540" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6899');expand2('4107');highlight('540')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t540">Undo, Redo, and Reverse Functions</h3>
+        <p class="bodytext">You can undo, redo or reverse changes you make to your model. The following summarizes the differences between the available features, and suggests when it is appropriate to use each one. </p>
+        <dl>
+            <dt>Undo</dt>
+            <dd>
+                <p class="normaltermcontinued">Removes the top-most (last) transaction from the log. Undo is a sequential process, moving backward from the last transaction that was performed.</p>
+            </dd>
+            <dt>Redo</dt>
+            <dd>
+                <p class="normaltermcontinued">Recreates the first undone transaction in the log. Redo is a sequential process, moving forward from the last transaction that was performed.</p>
+            </dd>
+            <dt>Reverse</dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you perform an opposite action on an entry appearing in the Details pane. This lets you reverse a specific entry or entries within a transaction (it does not have to be the last transaction). The Reverse function is not sequential, it is an attempt to restore the model to the best state.</p>
+            </dd>
+            <dt>Undo to Selected Transaction</dt>
+            <dd>
+                <p class="normaltermcontinued">Sequentially removes all transactions in a range, or a sequential group of transactions at one time, starting with the latest transaction at the top of the tree and ending with the transaction you select. When you want to undo a range of consecutive transactions, all of the transactions, including the one you select are undone. </p>
+            </dd>
+            <dt>Redo to Selected Transaction</dt>
+            <dd>
+                <p class="normaltermcontinued">Sequentially recreates all transactions in a range, or a sequential group of transactions at one time, starting with the first undone transaction and moving up the tree until all undone transactions are recreated. When you want to redo a range of consecutive transactions, all of the transactions, including the one you select are redone.</p>
+            </dd>
+        </dl>
+        <p>
+        </p>
+    </body>
+</html>

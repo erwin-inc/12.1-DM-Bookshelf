@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Creating User-Defined Properties</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6183" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');expand2('6182');highlight('6183')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t6183">Creating User-Defined Properties</h3>
+        <p class="bodytext">A User-Defined Property (UDP) is an example of a client expanding the erwin DM metadata and involves creating and modifying objects on the metadata level. The structure of the UDP definition is similar to the definition of all native properties. The following diagram shows the metamodel objects involved when you define a UDP:</p>
+        <p class="picture">
+            <img align="bottom" alt="" border="0" height="249px" hspace="0" id="f6184" src="../../Resources/Images/6184.gif" vspace="0" width="470px" />
+        </p>
+        <p class="bodytext">In this diagram an instance of the <em class="italic">Property_Type</em> object defines a UDP class, the <em class="italic">Object_Type</em> object defines an object class with which the UDP is associated, and the <em class="italic">Association_Type</em> object defines the association between object and property classes.</p>
+        <p class="bodytext">You are only required to create an instance of the <em class="italic">Property_Type</em> object to define a UDP. erwin DM populates the rest of the necessary data. The following table describes the properties and tags of the <em class="italic">Property_Type</em> object:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tableheading">Property or Tag Name</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tableheading">Description</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="328">
+                    <p class="tableheading">Valid Arguments</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Property, UDP name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">erwin DM upholds the following convention in naming UDPs to ensure their uniqueness. The convention is a three part name separated with dot (.) symbols:</p>
+                    <p class="tablebodytext">&lt;ObjectClassName&gt;.&lt;Logical/Physical&gt;.&lt;Name&gt;</p>
+                    <p class="tablebodytext">An example of this naming convention is:  <em class="italic">Model.Logical.My UDP</em></p>
+                    <p class="tablebodytext">The erwin DM editors display only the last component.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Data_Type</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Property, SCVT_BSTR</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">The property is read-only and set by erwin DM. All UDP values have a string datatype.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Is_Locally_Defined</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Property, TRUE</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">The property is read-only and set to TRUE for all user-defined metadata.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Definition</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Property, Optional</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Optional � Text that displays the UDP description.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Is_Logical</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag, TRUE or FALSE</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Optional � The tag has a TRUE value for UDPs used in logical modeling.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Is_Physical</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag, TRUE or FALSE</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Optional � The tag has a TRUE value for UDPs used in physical modeling.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Udp_Default_Value</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Optional � A string with the UDP default value.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Udp_Data_Type</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Defines the interpretation for the UDP value in the erwin DM editors. The valid values are:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">1 (Integer)
+</li>
+                        <li class="tablelistbullet">2 (Text)
+</li>
+                        <li class="tablelistbullet">3 (Date)
+</li>
+                        <li class="tablelistbullet">4 (Command)
+</li>
+                        <li class="tablelistbullet">5 (Real)
+</li>
+                        <li class="tablelistbullet">6 (List)
+</li>
+                    </ul>
+                    <p class="tablebodytext">The property value can be:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_I4 � Uses the numeric values listed above.
+</li>
+                        <li class="tablelistbullet">VT_BSTR � Uses the string values listed above.
+</li>
+                    </ul>
+                    <p class="tablebodytext">Assumes the Text type if it is not specified.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Udp_Owner_Type</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Required. Defines an object class to host instances of the UDPs.</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_BSTR � Name of an object class. Indicates the host class by the given class name.
+</li>
+                        <li class="tablelistbullet">VT_BSTR � Class ID of an object class. Indicates the host class by the given identifier.
+</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tablebodytext">tag_Udp_Values_List</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">Tag</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="328">
+                    <p class="tablebodytext">String with comma-separated values. Only values from the list are valid values for a UDP.</p>
+                    <p class="tablebodytext">Valid only if the <em class="italic">tag_Udp_Data_Type</em> tag is set to List.</p>
+                </td>
+            </tr>
+        </table><pre xml:space="preserve"></pre>
+        <p class="bodytext">//the following example was changed in r9.6, because the </p>
+        <p class="bodytext">Example 33</p>
+        <p class="bodytext">The following example illustrates how to use the API to define a UDP using Visual Basic Script:</p><pre xml:space="preserve">
+    Dim oAPI
+</pre><pre xml:space="preserve">
+    Set oAPI = CreateObject("erwin9.SCAPI.9.0")
+</pre><pre xml:space="preserve">
+    Dim oPU
+</pre><pre xml:space="preserve">
+    Set oPU = oAPI.PersistenceUnits.Create(Nothing)
+</pre><pre xml:space="preserve">
+    Dim oSession
+</pre><pre xml:space="preserve">
+    Set oSession = oAPI.Sessions.Add
+</pre><pre xml:space="preserve">
+    SCD_SL_M1 = 1
+</pre><pre xml:space="preserve">
+    call oSession.Open(oPU, SCD_SL_M1)
+</pre><pre xml:space="preserve">
+    Dim TransId
+</pre><pre xml:space="preserve">
+    TransId = oSession.BeginNamedTransaction("Create UDP")
+</pre><pre xml:space="preserve">
+    Dim oUDP
+</pre><pre xml:space="preserve">
+    Set oUDP = oSession.ModelObjects.Add("Property_Type")
+</pre><pre xml:space="preserve">
+    ' Populate properties
+</pre><pre xml:space="preserve">
+	' Add udp with Text type
+</pre><pre xml:space="preserve">
+    Set oUDP = oSession.ModelObjects.Add("Property_Type")
+</pre><pre xml:space="preserve">
+    oUDP.Properties("Name").Value = "Entity.Logical.My UDP1"
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Owner_Type").Value = "Entity"
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Is_Logical").Value = True
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Data_Type").Value = 2
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Default_Value").Value = "Text"
+</pre><pre xml:space="preserve">
+     oUDP.Properties("tag_Order").Value = "1"
+</pre><pre xml:space="preserve">
+	'Add udp with list type
+</pre><pre xml:space="preserve">
+    Set oUDP = oSession.ModelObjects.Add("Property_Type")
+</pre><pre xml:space="preserve">
+    oUDP.Properties("Name").Value = "Entity.Logical.My UDP5"
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Owner_Type").Value = "Entity"
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Is_Logical").Value = True
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Data_Type").Value = 6
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Udp_Values_List").Value = "1,2,3"
+    oUDP.Properties("tag_Udp_Default_Value").Value = "1"
+</pre><pre xml:space="preserve">
+    oUDP.Properties("tag_Order").Value = "1"
+</pre><pre xml:space="preserve">
+    ' Commit changes
+</pre><pre xml:space="preserve">
+    oSession.CommitTransaction (TransId)
+</pre><pre xml:space="preserve">
+    ' Release the session
+</pre><pre xml:space="preserve">
+    oSession.Close
+</pre><pre xml:space="preserve">
+    Set oSession = Nothing
+</pre><pre xml:space="preserve">
+    oAPI.Sessions.Clear
+</pre><pre xml:space="preserve">
+    ' Save to the file
+</pre><pre xml:space="preserve">
+        Call oPU.Save("C:\Temp1\UDP.erwin", "OVF=Yes")
+
+</pre>
+        <p>
+        </p>
+    </body>
+</html>

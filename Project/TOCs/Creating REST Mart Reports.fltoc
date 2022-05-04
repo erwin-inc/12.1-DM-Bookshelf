@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/User Guides/Creating Custom Mart Reports/Custom_reports_Introduction.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumber="(multiple)">
+    <TocEntry
+      Title="Workflow"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Workflow.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+  </TocEntry>
+  <TocEntry
+    Title="Generating Bearer Token"
+    Link="/Content/User Guides/Creating Custom Mart Reports/Generating_Bearer_Token.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Generating REST Reports"
+    Link="/Content/User Guides/Creating Custom Mart Reports/Generating_REST_Reports.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumber="(multiple)" />
+  <TocEntry
+    Title="Creating a Custom Mart Report"
+    Link="/Content/User Guides/Creating Custom Mart Reports/create_custom_mart_report.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumber="(multiple)">
+    <TocEntry
+      Title="Create Custom Mart Reports"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Create_Custom_Mart_Reports.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Define a New Report"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Define_a_New_Report.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+    <TocEntry
+      Title="Define the Report Schema"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Define_the_Report_Schema.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+  </TocEntry>
+  <TocEntry
+    Title="Types of Reports"
+    Link="/Content/User Guides/Creating Custom Mart Reports/Types of Reports.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    PageNumber="(multiple)">
+    <TocEntry
+      Title="Report on Catalogs"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Catalogs.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Model Objects"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Model_Objects.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Additional Support for Object Type Reporting"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Additional_Support_for_Object_Type_Reporting.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Alias"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Alias.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="All Objects Support"
+        Link="/Content/User Guides/Creating Custom Mart Reports/All_Objects_Support.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Sub Object Type Support"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Sub_Object_Type_Support.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Applying Conditions"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Applying_Conditions.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Property Type Alias"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Property_Type_Alias.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Property Inheritance Value"
+        Link="/Content/User Guides/Creating Custom Mart Reports/Property_Inheritance_Value.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="UDP Reports"
+        Link="/Content/User Guides/Creating Custom Mart Reports/UDP_Reports.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumber="1"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumberReset="continue" />
+    </TocEntry>
+    <TocEntry
+      Title="Report on Actions"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Actions.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Locks"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Locks.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Permission Assignment"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Permission_Assignment.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Permissions"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Permissions.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Profile Assignments"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Profile_Assignments.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Profiles"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Profiles.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Securables"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Securables.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Report on Users"
+      Link="/Content/User Guides/Creating Custom Mart Reports/Report_on_Users.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+</CatapultToc>

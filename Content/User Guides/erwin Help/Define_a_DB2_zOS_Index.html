@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Db2 z/OS Index</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2823" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3067');highlight('2823')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2823">Define a Db2 z/OS Index</h5>
+        <p class="bodytext">A primary key (PK) and a foreign key (IF) index is automatically created for each table in your model, based on the primary key and foreign key columns. If you designate columns as an alternate key group (AK) or inversion entry group (IE), the equivalent unique (AK) and non-unique (IE) indexes are also generated.</p>
+        <p class="bodytext">Use the Index editor to create alternate key (unique) and inversion entry (non-unique) indexes for tables in your model. After you create an index, you can use the Index editor to modify its properties, such as the index name, column members, physical properties, user-defined properties, and comments. </p>
+        <p class="proceduresubheading">To define a Db2 z/OS Index</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a table and select <span class="uielement">Index Properties</span> from the shortcut menu.
+<p class="listcontinue">The Table Index Editor opens.</p></li>
+            <li class="listnumber">Select an index and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create an index. Use the <em class="italic">Enter filter text</em> text box to filter a very large list of indexes to locate the one you want to work with.</p><dl><dt><strong>Show FK Indexes</strong></dt><dd><p class="normaltermcontinued2">Displays foreign key indexes in the Index list. </p></dd><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the index.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the default schema for the index.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Shows the key group type. This is a read-only field.</p></dd><dt>Is Unique</dt><dd><p class="normaltermcontinued2">Specifies that the fields defined in the index must be unique.</p></dd><dt>Where Not Null</dt><dd><p class="normaltermcontinued2">Specifies that a table cannot have two or more rows with the same value of the index key; this applies when you select the Is Unique check box. </p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">Lets you select whether the index should be suppressed from a logical model and appear in a physical model only.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd><dt>Generate As Consraint</dt><dd><p class="normaltermcontinued2">Specifies whether or not to enforce the Is Unique option as a constraint while generating the index. </p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Members</span> tab and work with the following options:
+<dl><dt>Index Members</dt><dd><p class="normaltermcontinued2"><b>Column</b>: Specifies the columns that you want to include in the index.</p></dd><dd><p class="bodytext"><b>Index Member Sort Order</b>: Specifies the order in which you want to sort the index columns. Select from the drop-down list; valid values are Ascending, Descending, and Random.</p></dd><dt>Include Columns</dt><dd><p class="normaltermcontinued2">Specifies additional columns that you want to add in the index.</p></dd><dt>Column Expression</dt><dd><p class="normaltermcontinued2">Specifies a key-expression that returns a scalar value. You cannot include the same expression more than once in an index. This field is enabled only when you create a non-unique index. For more information about including key expressions in indexes, see the IBM Db2 for z/OS documentation.</p></dd><dt>Column Editor </dt><dd><p class="normaltermcontinued2">Displays the Column Editor for Db2 for z/OS so that you can edit the selected column.</p></dd><dt>Reset Order </dt><dd><p class="normaltermcontinued2">Displays the Reset Order dialog where you can select the reset option you want to use.</p></dd></dl></li>
+            <li class="listnumber">Work with the following fields on the <span class="uielement">General</span> tab:
+<dl><dt>Constraint Name</dt><dd><p class="normaltermcontinued2">Specifies the constraint associated with the index.</p></dd><dt>Clustered</dt><dd><p class="normaltermcontinued2">Specifies whether the index is clustered or nonclustered.</p></dd><dt>Is Partitioned</dt><dd><p class="normaltermcontinued2">Specified whether or not the index is data partitioned.</p></dd><dt>Db2 z/OS Type</dt><dd><p class="normaltermcontinued2">Specifies the index type. Valid values are Type2, Data Partitioned, and Partitioning.</p></dd><dt>Pad Variable Length Columns</dt><dd><p class="normaltermcontinued2">Specifies that varying-length string columns within the index are always padded with the default pad character to their maximum length. Clear the check box to indicate NOT PADDED.</p></dd><dt>Define Data Sets</dt><dd><p class="normaltermcontinued2">Specifies that the data sets are created when the index is created. Clear the check box to set the DEFINE parameter to NO.</p></dd><dt>Use Bufferpool</dt><dd><p class="normaltermcontinued2">Identifies the buffer pool to use for the index.</p></dd><dt>Close</dt><dd><p class="normaltermcontinued2">Specifies that the index is eligible for closing. The CLOSE parameter specifies whether or not the data set is eligible to be closed when the index is not being used and the limit on the number of open data sets is reached. Select from the drop-down list.</p></dd><dt>Defer</dt><dd><p class="normaltermcontinued2">Specifies whether or not to build the index during the execution of the CREATE INDEX statement. Default is No, which means the index is built.</p></dd><dt>Piece Size</dt><dd><p class="normaltermcontinued2">Specifies the maximum addressability of each data set for a secondary index. Enter a valid integer (see your Db2 z/OS documentation for specific information on valid integers).</p></dd><dt>Copy</dt><dd><p class="normaltermcontinued2">Indicates that the COPY utility is allowed for the index. </p></dd><dt>Is Compressed</dt><dd><p class="normaltermcontinued2">Specifies that the index will use index compression. Clear the check box to set the parameter to COMPRESS NO</p></dd><dt>Business Time Without Overlaps</dt><dd><p class="normaltermcontinued2">Indicates that the values for the non-period columns and expressions of the index key for a row must be unique with respect to the time represented by the BUSINESS_TIME period for the row.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Using Clause</span> tab and work with the following options:
+<dl><dt>Volume Catalog</dt><dd><p class="normaltermcontinued2">Specifies that the first data set of the index is managed by the user. Catalog Name identifies the linear VSAM data sets that are cataloged in an integrated catalog facility catalog.</p></dd><dt>Storage Group</dt><dd><p class="normaltermcontinued2">Specifies that Db2 manages the data set.</p></dd><dt>Primary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum primary space allocated to a Db2-managed data set. If you do not specify any value, Db2 uses a default value.</p></dd><dt>Secondary Space Allocation</dt><dd><p class="normaltermcontinued2">Specifies the minimum secondary space allocated to a Db2-managed data set. If you do not specify any value, Db2 uses a formula to calculate the value. For more information, refer to IBM Db2 for z/OS documentation.</p></dd><dt>Erase When Deleted</dt><dd><p class="normaltermcontinued2">Specifies whether or not to delete the Db2-managed data sets when the index is dropped while executing a utility or an SQL statement.</p></dd><dt>Free Page Interval</dt><dd><p class="normaltermcontinued2">Specifies the frequency at which you want to leave a page of free space when you create index entries while executing a Db2 utility or when you create an index for a table with existing rows.</p></dd><dt>Percent Free</dt><dd><p class="normaltermcontinued2">Specifies the percentage of free space you want to leave in each nonleaf page and leaf page when you add entries to an index or index partition while executing a Db2 utility or when you create an index for a table with existing rows.</p></dd><dt>For Update</dt><dd><p class="normaltermcontinued2">Specifies the percentage of space to reserve as free space on each page, for use by subsequent update operations.</p></dd><dt>Group Bufferpool</dt><dd><p class="normaltermcontinued2">Specifies the index pages that are written to the group buffer pool and applies to the data sharing environment. Select from the drop-down list; valid values are: Changed, All, and None. </p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Partition</span> tab and work with the following options:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies a name for the partition. </p></dd><dt>Partition Number</dt><dd><p class="normaltermcontinued2">Specifies the highest value of the sorting sequences of index columns in a single partition of a partitioning index.</p></dd></dl></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for z/OS Table Index Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Specify_DB2_zOS_Using_Clause_Parameters.html" target="_self">Specify Db2 z/OS Using Clause Parameters</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_Partition_Elements.html" target="_self">Define Db2 z/OS Table Partition Elements</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_zOS_Table_or_Index_Partitions.html" target="_self">Define Db2 z/OS Table or Index Partitions</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

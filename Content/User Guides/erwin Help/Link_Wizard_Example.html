@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Link_Wizard_Example</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2498" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('2482');highlight('2498')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t2498">Link Wizard Example</h3>
+        <p class="bodytext">You can use the Link Wizard to keep similar attributes synchronized across your model. You do this by creating a link object and then associating attributes with it. In this example, we are using the logical side of a Logical/Physical model. There are two entities, E/1 and E/2. E/1 contains PK attribute <em class="italic">attr11</em> and non-key attribute <em class="italic">attr12</em>. E/2 contains PK attribute <em class="italic">attr21</em> and non-key attribute <em class="italic">attr22</em>. We need to link E/1 <em class="italic">attr12</em> to E/2 <em class="italic">attr22</em> to keep the properties synchronized.</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 1_Two Entities Unlinked" border="0" height="95" hspace="0" id="f2499" src="..\..\Resources\Images\2531.gif" vspace="0" width="172" />
+        </p>
+        <p class="bodytext">Right-click attribute <em class="italic">attr12</em> in the E/1 entity and select Attribute Properties. In the Attribute Editor, click the Link tab, and then click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to open the Link Wizard. Click the Link page to define the Link Object. Enter the Link Object name, synchronization direction, and optionally enter a definition. In this example, Two Way synchronization is used, which synchronizes properties in both directions. </p>
+        <p class="examplesubheading">Example: Link Page</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 2_Link Page" border="0" height="307" hspace="0" id="f2500" src="..\..\Resources\Images\2530.gif" vspace="0" width="482" />
+        </p>
+        <p class="bodytext">Click the Target page. Select the Target Owner Table and select or create a target column. In this example, entity E/2 and existing attribute <em class="italic">attr22</em> is selected for the target.</p>
+        <p class="examplesubheading">Example: Target Page</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 3_Target Page" border="0" height="303" hspace="0" id="f2501" src="..\..\Resources\Images\2529.gif" vspace="0" width="477" />
+        </p>
+        <p class="bodytext">Click the Properties page to specify the properties to synchronize. In this example, the properties selected are Comment, Font, Font Size, and Name.</p>
+        <p class="examplesubheading">Example: Properties Page</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard_Select Properties to Synchronize" border="0" height="315" hspace="0" id="f2502" src="..\..\Resources\Images\2528.gif" vspace="0" width="492" />
+        </p>
+        <p class="bodytext">Click Apply to complete the Link Object creation process and close the Link Wizard. When you return to the Attribute Editor, the new Link Object appears on the Link tab as you defined it:</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 5_Link Object in Attribute Editor" border="0" height="417" hspace="0" id="f2503" src="..\..\Resources\Images\2527.gif" vspace="0" width="478" /> </p>
+        <p class="bodytext">Because Two Way synchronization was used the properties are synchronized in both directions. On the diagram, the changed entities display:</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 6A_Changed Entities on the Diagram Window" border="0" height="91" hspace="0" id="f2504" src="..\..\Resources\Images\2526.gif" vspace="0" width="185" />
+        </p>
+        <p class="bodytext">Changes made to one attribute is immediately reflected in the other attribute. For example, renaming one of these attributes on the diagram also renames the linked attribute:</p>
+        <p class="examplesubheading">Example: Rename attribute in E/1</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 7A_Rename attribute in first entity" border="0" height="110" hspace="0" id="f2505" src="..\..\Resources\Images\2525.gif" vspace="0" width="181" />
+        </p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 7B_Rename attribute in first entity" border="0" height="107" hspace="0" id="f2506" src="..\..\Resources\Images\2524.gif" vspace="0" width="199" />
+        </p>
+        <p class="examplesubheading">Example: Rename attribute in E/2</p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 8A_Rename attribute in second entity" border="0" height="104" hspace="0" id="f2507" src="..\..\Resources\Images\2523.gif" vspace="0" width="201" />
+        </p>
+        <p class="picture">
+            <img align="bottom" alt="Link Wizard Example 8B_Rename attribute in second entity" border="0" height="111" hspace="0" id="f2508" src="..\..\Resources\Images\2522.gif" vspace="0" width="212" />
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

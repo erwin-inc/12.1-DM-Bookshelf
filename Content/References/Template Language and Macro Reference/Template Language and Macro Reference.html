@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Template Language and Macro Reference</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6946" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/30/2018T11:18-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('6946')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t6946">Template Language and Macro Reference</h1>
+        <p class="minitocintro">This section contains the following topics</p>
+        <p class="minitocitem"><a href="Template Language and Macro Reference.html#o6947" target="_self">Introduction</a>
+        </p>
+        <p class="minitocitem"><a href="Template Language and Macro Reference.html#o6948" target="_self">Metadata Names</a>
+        </p>
+        <h2 class="heading2" id="t6947">Introduction</h2>
+        <p class="bodytext">Template Language (TLX) is the template or macro language publicly exposed with erwin Data Modeler. It has been present in the product since erwin Data Modeler r7.0. </p>
+        <p class="bodytext">TLX is employed in a number of places in the product using expansion. This includes templates used for forward engineering, metamodel dumps, and Model Explorer and Complete Compare object naming. </p>
+        <h2 class="heading2" id="t6948">Metadata Names</h2>
+        <p class="bodytext">A number of macros make use of class names�the names of metadata objects. The section below describes a few notes on the use of class names; the full listing of all object classes and property classes is located in the document erwin Metamodel Reference bookshelf. </p>
+        <ul class="listbullet">
+            <li class="listbullet">Class names are always case-sensitive. 
+</li>
+            <li class="listbullet">Some object types represent an object in both the logical and the physical model. This is legacy behavior when erwin Data Modeler had only logical/physical models. For these types of objects, display names seen in erwin Data Modeler's user interface change based upon whether you are looking at the logical or physical side. However, class names do not change in a similar manner. Therefore, an entity in the logical model and a table in the physical model both have a class name of Entity.<br /><br />The following list describes the class names that are included in this category:<br /><ul class="listbullet2endash"><li class="listbullet2endash">Attribute 
+</li><li class="listbullet2endash">Default 
+</li><li class="listbullet2endash">Domain 
+</li><li class="listbullet2endash">Entity 
+</li><li class="listbullet2endash">Key_Group 
+</li><li class="listbullet2endash">Relationship 
+</li><li class="listbullet2endash">Validation_Rule 
+</li></ul></li>
+            <li class="listbullet">Local User-Defined Properties (UDPs) have three part class names. All UDPs available in the current release are classified as Local UDPs. erwin Data Modeler allows a given UDP name to be used on a variety of object types, and in both the logical and physical model, with differing data types, defaults, descriptions, and so on. For example, the UDP named "Color" might be a color name on the logical side of an entity, a red-green-blue integer on the physical side, and a Boolean value indicating if a view should be colored on reports. To enable erwin Data Modeler to understand exactly what is being referenced, the actual class name is comprised of: &lt;object type&gt;.&lt;model side&gt;.&lt;name&gt;.
+</li>
+        </ul>
+        <p class="bodytext">For example, the three "Color" values mentioned would be: Entity.Logical.Color, Entity.Physical.Color and View.Physical.Color. Future releases of erwin Data Modeler may also support Global User-Defined Properties where the property has a single data type, default, and so on, no matter where it occurs. Those UDPs will follow the normal naming convention of built-in properties, having a single-part name. </p>
+        <p class="bodytext">
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2709" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');highlight('2709')}">
+        <h1 class="heading1">
+            <MadCap:concept term="Feature Tour" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Snowflake Key-Pair Authentication</h1>
+        <p class="bodytext">You can setup database authentication for Snowflake database using a user based key-pair authentication for reverse engineering and forward engineering models. You need a private key, public key, and password to successfully connect to a database using the key pair authentication method. </p>
+        <p class="bodytext">You can use either of the following methods to authenticate the database connection:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><a href="#Authenti">Authenticate using unencrypted key</a>
+            </li>
+            <li class="listbullet"><a href="#Authenti2">Authenticate using an encrypted key</a>
+            </li>
+        </ul>
+        <h3 class="heading3"><a name="Authenti"></a>Authentication using Unencrypted Key</h3>
+        <p class="bodytext">To set up a database connection using an unencrypted key, you first need to generate a private key and a public key. For more information on generating keys, refer to the Key Pair Authentication &amp; Key Pair Rotation topic in the Snowflake Documentation. Then, run the script on the Snowflake console to establish a successful connection. </p>
+        <p class="bodytext">To authenticate database connection using an unencrypted key, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Once the key is generated, save the key in a folder.</li>
+            <li class="listnumber">In erwin DM, specify the file path in the <b>Private Key File (For Key-Pair)</b> field  while you establish connection during reverse engineering or forward engineering. For more information about database connection parameters, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/SQLDatabases_Connection_Parameters.html">Database Connection Parameters</a> topic.<br />Specify the file path and the file name as shown in the example below.<br /><i style="color: #0064af;">C:\Users\&lt;User&gt;\Documents\Keys\rsa_key.p8</i><br /><img src="../../Resources/Images/Key-Pair-Auth-Unencrypted-Key.png" style="width: 492px;height: 434px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
+        </ol>
+        <h3 class="heading3"><a name="Authenti2"></a>Authentication using an Encrypted Key</h3>
+        <p class="bodytext">To set up a database connection using an encrypted key, you need to generate private key, public key and, set an authentication password. This process also involves creating two private keys that are used to setup authentication using an encrypted key. For more information on generating keys, refer to the Key Pair Authentication &amp; Key Pair Rotation topic in the Snowflake Documentation.  Then, run the script in the Snowflake console to establish a successful connection. </p>
+        <p class="bodytext">To authenticate database connection using an encrypted key, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Once the key is generated, save the key in a folder.</li>
+            <li class="listnumber">In erwin DM, specify the file path in the <b>Private Key File (For Key-Pair Auth)</b> field  while you establish connection during reverse engineering or forward engineering. For more information about database connection parameters, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/SQLDatabases_Connection_Parameters.html">Database Connection Parameters</a> topic.<br />Specify the file path and the file name as shown in the example below.<br /><i style="color: #0064af;">C:\Users\&lt;User&gt;\Documents\Keys\rsa_key.p8</i></li>
+            <li class="listnumber">Enter the password for the Private Key in the <b>Private Key File Password (For Key-Pair Auth)</b>.<br /><img src="../../Resources/Images/Key-Pair-Auth-encrypted-Key-Password.png" style="width: 512px;height: 448px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
+        </ol>
+    </body>
+</html>

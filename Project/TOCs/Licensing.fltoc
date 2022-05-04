@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<article
+  lang="">
+  <TocEntry
+    Title="Licensing"
+    Link="/Content/Licensing/Licensing/Licensing.html">
+    <TocEntry
+      Title="Understand Licensing"
+      Link="/Content/Licensing/Licensing/Understand_Licensing.html" />
+    <TocEntry
+      Title="Obtain and Activate a License"
+      Link="/Content/Licensing/Licensing/Obtain_and_Activate_a_License.html" />
+    <TocEntry
+      Title="View or Return a License"
+      Link="/Content/Licensing/Licensing/View_or_Return_a_License.html" />
+  </TocEntry>
+</article>

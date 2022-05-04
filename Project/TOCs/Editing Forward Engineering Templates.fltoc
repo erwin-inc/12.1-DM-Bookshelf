@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/User Guides/Editing Forward Engineering Templates/Introduction.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Documentation"
+      Link="/Content/User Guides/Editing Forward Engineering Templates/Documentation.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Template Location"
+      Link="/Content/User Guides/Editing Forward Engineering Templates/TemplateLocation.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Terminology"
+      Link="/Content/User Guides/Editing Forward Engineering Templates/Terminology.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Template Editing"
+      Link="/Content/User Guides/Editing Forward Engineering Templates/TemplateEditing.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Opening the Template Editor"
+        Link="/Content/User Guides/Editing Forward Engineering Templates/OpeningtheTemplateEditor.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Option Sets"
+        Link="/Content/User Guides/Editing Forward Engineering Templates/OptionSets.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="The Template Editor"
+        Link="/Content/User Guides/Editing Forward Engineering Templates/TheTemplateEditor.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Template Editing Example"
+    Link="/Content/User Guides/Editing Forward Engineering Templates/TemplateEditingExample.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+</CatapultToc>

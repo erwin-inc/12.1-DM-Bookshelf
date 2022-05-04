@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">You can select table and column subsets for denormalizing  Cassandra database after deriving a model. Using the Advanced denormalization option, you can merge the source tables and columns with the target based on the requirement. </p>
+        <p class="bodytext">The denormalization options for Cassandra appear only when the Advanced Denormalization option is selected while deriving a model. Once the model is derived, the Denormalization Wizard for Cassandra model appears and has different sections. By default, Table section is displayed.</p>
+        <p class="bodytext">To denormalize the model further, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">On the Tables section, click the <b>Target</b> drop-down to select a target table. All the tables will be merged into the target table.</p>
+                <p class="bodytext">
+                    <img src="../Images/Cassandra_Advanced_Denorm_Table_Options.png" style="width: 512px;height: 368px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                </p>
+                <p class="noteAlt">Select <b>Auto Denormalization</b> option to merge tables with the target automatically. This embeds the tables in the model with one-one relationships as User Defined Type and one-to-many relationships as normal columns.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Under <b>Available Tables</b>, select the that you want to merge. Then, click <img src="../Images/SelectArrow.png" />.</p>
+                <br />
+                <p>
+                    <img src="../Images/Cassandra_Advanced_Denorm_Available_Table_list.png" style="width: 229px;height: 142px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                </p>
+                <p class="bodytext">This moves the selected tables under Selected Tables.</p>
+                <p class="bodytext">
+                    <img src="../Images/Cassandra_Advanced_Denorm_Selected_Table_list.png" style="width: 370px;height: 124px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                    <br />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.</p>
+                <p>The Column section appears. It displays a list of available columns.</p>
+                <p>
+                    <img src="../Images/Cassandra_Advanced_Denorm_Column_Options.png" style="width: 513px;height: 369px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Under <b>Available Columns</b>, select the that you want to merge. Then, click <img src="../Images/SelectArrow.png" />.</p>
+                <p>
+                    <br />
+                    <img src="../Images/Cassandra_Advanced_Denorm_Available_Column_list.png" style="width: 244px;height: 170px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                    <br />
+                </p>
+                <p class="bodytext">This moves the selected databases under Selected Columns.<br /></p>
+                <p>
+                    <img src="../Images/Cassandra_Advanced_Denorm_Selected_Column_list.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 375px;height: 141px;" />
+                </p>
+                <br />
+                <p>Once you have added the selected columns, you can use any of the following:<br /></p>
+                <dl>
+                    <dt><strong>New</strong> (<img src="../Images/Icon-New-Column-Adv-Denorm.png" style="width: 18px;height: 18px;" />)</dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Use this option to add a new column under Selected Columns.</p>
+                    </dd>
+                    <dt><strong>Update</strong> (<img src="../Images/Icon-Update-Column.png" style="width: 20px;height: 20px;" />)</dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Use this option to edit column details such as column name, domain parent, and data type for a selected column.</p>
+                    </dd>
+                    <dt><strong>Merge</strong> (<img src="../Images/Icon-Merger-Columns.png" style="width: 25px;height: 20px;" />)</dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Use this option to merge the selected columns and create a new column under Selected Columns.</p>
+                    </dd>
+                    <dt>
+                        <dl>
+                            <dt><strong>Delete</strong> (<img src="../Images/Icon-Delete-Column.png" style="width: 17px;height: 19px;" />)</dt>
+                            <dd>
+                                <p class="normaltermcontinued2">Use this option to delete to the selected columns. </p>
+                            </dd>
+                        </dl>
+                    </dt>
+                </dl>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Options section appears.<br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select an <b>Embedding Type</b>. </p>
+                <p class="bodytext">You can select the following embedding options:</p>
+                <ul>
+                    <li>
+                        <p class="bodytext"><b>Embed as Auto</b>: Use this option to embed tables through an auto-mechanism based on one-to-many and one-to-one relationships.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Embed as Normal</b>: Use this option to embed collections using normal column styles.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Embed as UDT</b>: Use the option to embed collections using a User Defined Type (UDT) styles.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select <b>Relationships</b> option to include table relationships to the model.</p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Select <b>Cascading</b> options to determine how multiple collections are merged into a single collection.<br />Use the following cascading options:</p>
+                <ul>
+                    <li>
+                        <p class="bodytext"><b>All</b>: Use this option to denormalize all relationship levels in a collection into a single collection.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Levels</b>: Use the option to specifies the number of levels up to which collections are denormalized into one collection. For example, if you set Level to 1, all the collections up to level 1 in the relationship hierarchy will be denormalized into a single collection.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Auto Cleanup</b>: Use the option to delete the source collection after denormalization.</p>
+                    </li>
+                </ul>
+                <p class="bodytext">Alternatively, click <b>Commit</b> to apply changes to the model without exiting the Denormalization Wizard.<br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>OK</b>.</p>
+                <p class="bodytext">The denormalization process starts and displays collections based on the denormalization option.</p>
+            </li>
+        </ol>
+    </body>
+</html>

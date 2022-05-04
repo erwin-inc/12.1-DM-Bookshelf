@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Db2 LUW Index</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3075" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');highlight('3075')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t3075">Define a Db2 LUW Index</h5>
+        <p class="bodytext">A primary key (PK) and a foreign key (IF) index is automatically created for each table in your model, based on the primary key and foreign key columns. If you designate columns as an alternate key group (AK) or an inversion entry (IE), the equivalent unique (AK) and non-unique (IE) indexes are also generated.</p>
+        <p class="bodytext">Use the Db2 for LUW Table Index Editor to create alternate key (unique) and inversion entry (non-unique) indexes for tables in your model. After you create an index, you can use the Index editor to modify its properties, such as the index name, column members, physical properties, user-defined properties, and comments. </p>
+        <p class="proceduresubheading">To define a Db2 LUW Index</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a table index in the <span class="uielement">Model Explorer</span> and click <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for LUW Table Index Editor opens.</p></li>
+            <li class="listnumber">Select an index and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a index. Use the <em class="italic">Enter filter text</em> text box to filter a large list of indexes to locate the one you want to work with.</p><dl><dt>Show FK Indexes</dt><dd><p class="normaltermcontinued2">Specifies whether or not to display foreign key indexes in the Index list. </p></dd><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the index.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the default schema for the index.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Shows the key group type. This is a read-only field.</p></dd><dt>Is Unique</dt><dd><p class="normaltermcontinued2">Specifies whether or not the columns defined in the index must be unique.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">Specifies whether or not the index should be suppressed from a logical model and appear in a physical model only.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd><dt>Generate As Constraint</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate a constraint based on the information in the selected index during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">On the <span class="uielement" style="font-weight: bold;">Members</span> tab, select the columns from the table that you want to include in the index. In the Include Column section, select any additional columns that you want to include in the index.
+<p class="listcontinue">You can sort the columns and open the Db2 for LUW Table Column Editor.</p></li>
+            <li class="listnumber">Work with the following fields on the <span class="uielement">General</span> tab:
+<dl><dt>Constraint Name</dt><dd><p class="normaltermcontinued2">Specifies the constraint associated with the index.</p></dd><dt>Clustered</dt><dd><p class="normaltermcontinued2">Specifies that the index is the clustering index of the table.</p></dd><dt>Tablespace</dt><dd><p class="normaltermcontinued2">Specifies the tablespace name in which to create the index.</p></dd><dt>Percent Free</dt><dd><p class="normaltermcontinued2">Specifies the percentage of each index page to leave as free space when building the index.</p></dd><dt>Level 2 Percent Free</dt><dd><p class="normaltermcontinued2">Specifies the percentage of each index level 2 page to leave as free space when building the index. </p></dd><dt>Minimum Percent Used</dt><dd><p class="normaltermcontinued2">Specifies whether index leaf pages are merged online, and the threshold for the minimum percentage of space used on an index leaf page.</p></dd><dt>Allow Index Reverse Scan</dt><dd><p class="normaltermcontinued2">Specifies that an index can support both forward and reverse scans; that is, scanning of the index in the order that was defined at index creation time, and scanning in the opposite order.</p></dd><dt>Page Split Type</dt><dd><p class="normaltermcontinued2">Specifies the index split behavior. Select from the drop-down list. The valid values are symmetric, high, and low.</p></dd><dt>Collect Statistics Type</dt><dd><p class="normaltermcontinued2">Specifies that the index statistics have to be collected at the time of creating the index. Select from the drop-down list. The valid values are Basic, Detailed, Detailed by Sampling, and Detailed by UnSampling.</p></dd><dt>Is Compressed</dt><dd><p class="normaltermcontinued2">Specifies that the index will use index compression. Select from the drop-down list; valid values are True and False.</p></dd><dt>Is Partitioned</dt><dd><p class="normaltermcontinued2">Specifies that a partitioned index should be created.</p></dd><dt>Business Time Without Overlaps</dt><dd>Specifies whether the end column and begin column of the period BUSINESS_TIME are automatically added to the index key in ascending order and enforce that there are no overlaps in time. You can specify this option only for an index that is defined as UNIQUE.</dd><dt>NULL&#160;Keys</dt><dd>Specify whether an index entry is created or not when all parts of the index key contain a null value.</dd><dt>Is Enforced</dt><dd><p class="normaltermcontinued2">Specifies whether validation is enforced on the selected index</p></dd><dt>Is Trusted</dt><dd><p>Specifies whether the data can be trusted to conform to check constraints.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Extend Using</span> tab and work with the following options:
+<dl><dt>Index Extension</dt><dd><p class="normaltermcontinued2">Specifies the name of the index-extension used to manage this index.</p></dd><dt>Expressions</dt><dd><p class="normaltermcontinued2">Specifies values for any required arguments for the index extension. Each expression must be a constant value with a data type that exactly matches the defined data type of the corresponding index extension parameters, including length or precision, and scale.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Permission</span> tab and grant permissions to users or roles on the selected index.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The changes are saved and the Db2 for LUW Table Index Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

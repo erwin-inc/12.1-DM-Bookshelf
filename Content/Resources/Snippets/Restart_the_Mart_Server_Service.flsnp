@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">When you modify the details of the Mart Server and Mart Administration programs, restart the Mart Server service.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Stop MartServer Service to stop the Mart Server service.
+</li>
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" /> , Start MartServer Service to start the Mart Server service.
+</li>
+        </ol>
+    </body>
+</html>

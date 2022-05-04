@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Prepare Your DBMS Environment</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="403" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="&lt;authorit:&gt;" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/10/2018T12:54-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('463');highlight('403')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t403">Create the Mart Database and Perform the Additional Tasks</h2>
+        <p class="bodytext">Perform the following setup tasks in your DBMS environment before you can install and use the software:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Install the DBMS on the server where you plan to store the Mart. 
+<p class="listcontinue">Help ensure that you can create tables, indexes, stored procedures, and public synonyms. For more information about memory and disk space requirements, see the system requirements for each DBMS (Microsoft SQL Server, PostgreSQL, and Oracle).</p></li>
+            <li class="listnumber">Create a database that you want to use as the Mart. To use a pluggable database, see the <a class="z--jumptemplate" href="392.html" id="h391" target="_self" title="Create a Pluggable Database">Use a Pluggable Database</a> topic.
+<p class="listcontinue">Use the DBMS features to create or identify the required storage objects and the mart. The specific requirements vary depending on your DBMS type.</p></li>
+        </ol>
+        <p class="noteAlt">To create, update, or delete a Mart in erwin Data Modeler Workgroup Edition, you must be the database schema owner and you must have the DBA role. </p>
+        <p class="examplesubheading">Additional Tasks</p>
+        <p class="bodytext">The DBA and the system administrator responsible for installing the software on an Oracle database management system performs these tasks. </p>
+        <p class="bodytext">Use graphical tools or SQL *Plus (all versions), SQL*DBA, or the Oracle Enterprise Management Console to perform these tasks. Some SQL commands are included where appropriate. The Data file paths, data file sizes, role names, and user names are included as examples only. </p>
+        <ol class="listnumber">
+            <li class="listnumber">Check the SYSTEM tablespace. 
+<p class="listcontinue">The installation creates several stored procedures. All triggers, stored procedures, and packages are kept in the Oracle SYSTEM tablespace. The standard size of the SYSTEM tablespace assumes that you are not using procedural options, so the SYSTEM tablespace must be often expanded. If other Oracle applications are not using procedural code, then expand the SYSTEM tablespace to 32 MB. If other Oracle applications also use procedural code, expand the SYSTEM tablespace to at least 32 MB.</p></li>
+            <li class="listnumber">Check the Rollback Segment tablespace. 
+<p class="listcontinue">If your instance uses UNDO tablespace, do not create rollback segments.</p><p class="listcontinue">Significant rollback space is required for installing and use. The rollback segments must be in their own separate tablespace and each have at least 16 MB of available space. There must be one rollback segment for every four concurrent users, with a maximum of 50 rollback segments. The available space must scale upward with increasing numbers of rollback segments. Finally, the rollback segment optimal parameter must be set to control rollback segment growth and space consumption.</p><p class="noteAlt">For Steps 3, 4, and 5, use the Dictionary-managed tablespaces.</p></li>
+            <li class="listnumber">Create a data tablespace of at least 32 MB. 
+<p class="listcontinue">For example:</p><pre xml:space="preserve">
+CREATE TABLESPACE MyMart
+</pre><pre xml:space="preserve">
+DATAFILE '/db01/oracle/rdbms9i/data/mymart.ora' SIZE 100M;
+</pre><pre xml:space="preserve">
+Or For Locally Managed extents:
+</pre><pre xml:space="preserve">
+CREATE TABLESPACE Mymart
+</pre><pre xml:space="preserve">
+DATAFILE '/db01/oracle/rdbms9i/data/mymart.ora' SIZE 100M
+</pre><pre xml:space="preserve">
+EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
+</pre></li>
+            <li class="listnumber">Create an index tablespace of at least 32 MB. 
+<p class="listcontinue">For example:</p><pre xml:space="preserve">
+CREATE TABLESPACE MMARTINDEX
+</pre><pre xml:space="preserve">
+DATAFILE '/db02/oracle/rdbms9i/data/mmartindex.ora' SIZE 75M;
+</pre><pre xml:space="preserve">
+Or For Locally Managed extents:
+</pre><pre xml:space="preserve">
+CREATE TABLESPACE MMARTINDEX
+</pre><pre xml:space="preserve">
+DATAFILE '/db02/oracle/rdbms9i/data/mmartindex.ora' SIZE 75M
+</pre><pre xml:space="preserve">
+EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
+</pre></li>
+            <li class="listnumber">Create a temporary tablespace. 
+<p class="listcontinue">For example:</p><pre xml:space="preserve">
+CREATE TEMPORARY TABLESPACE MMTEMP TEMPFILE '/db03/oracle/rdbms9i/data/mmarttemp.ora' SIZE 50M;
+</pre><pre xml:space="preserve">
+Or For Locally Managed extents:
+</pre><pre xml:space="preserve">
+CREATE TEMPORARY TABLESPACE MMTEMP TEMPFILE '/db03/oracle/rdbms9i/data/mmarttemp.ora' SIZE 50M 
+</pre><pre xml:space="preserve">
+EXTENT MANAGEMENT LOCAL UNIFORM SIZE 1M;
+</pre><p class="noteAlt">For more details about syntax and options regarding tablespace creation, see the appropriate Oracle documentation.</p></li>
+            <li class="listnumber">Create an Oracle user with DBA privileges for use by the erwin Data Modeler Workgroup Edition Installer or designated schema owner.
+<p class="listcontinue">Assign the data tablespace to this user as the default tablespace, and the temporary tablespace as the temporary tablespace to the user. </p><p class="listcontinue">For example:</p><pre xml:space="preserve">
+CREATE USER STEVE IDENTIFIED BY STEVE
+</pre><pre xml:space="preserve">
+DEFAULT TABLESPACE MyMart
+</pre><pre xml:space="preserve">
+TEMPORARY TABLESPACE MMTEMP
+</pre><pre xml:space="preserve">
+QUOTA UNLIMITED ON MyMart
+</pre><pre xml:space="preserve">
+QUOTA UNLIMITED ON MMARTINDEX;
+</pre><pre xml:space="preserve">GRANT DBA TO STEVE;</pre></li>
+            <li class="listnumber">Create the erwin Data Modeler Workgroup Edition Installer role. 
+<p class="listcontinue">The following example is the role that the Oracle user requires to install erwin Data Modeler Workgroup Edition.</p><pre xml:space="preserve">
+CREATE ROLE MMINSTALL;
+</pre></li>
+            <li class="listnumber">Grant the Oracle privileges to the Installer role. 
+<p class="listcontinue">The following example shows the Oracle privileges that the erwin Data Modeler Workgroup Edition Installer must install on Oracle. For the last command, log in as sys with the sysdba role in the user-name or the command will fail. </p><pre xml:space="preserve">
+grant create sequence to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant create table to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant create view to MMINSTALL;
+</pre><pre xml:space="preserve">grant create materialized view to MMINSTALL;</pre><pre xml:space="preserve">
+grant drop public synonym to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant create public synonym to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant create procedure to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant select on dba_data_files to MMINSTALL;
+</pre><pre xml:space="preserve">
+grant create session to MMINSTALL;
+</pre><p class="noteAlt">To use the database, an Oracle user needs only the create session privilege. </p></li>
+            <li class="listnumber">Select the erwin Data Modeler Workgroup Edition tablespaces and Installer role. 
+</li>
+        </ol>
+        <p class="note">When prompted for tablespace and role information, select the Workgroup Edition data tablespace, the Workgroup Edition index tablespace, and the Workgroup Edition Installer role.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\408.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

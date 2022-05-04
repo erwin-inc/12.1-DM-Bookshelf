@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Forward Engineering Macros</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6971" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/30/2018T11:18-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('6971')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><span class="browse"><img alt="" class="button" height="16px" src="..\..\Resources\Images\rgtgray14.png" title="" width="16px" /></span>
+        </p>
+        <h1 class="heading1" id="t6971">Forward Engineering Macros</h1>
+        <p class="bodytext">These macros are usable only in the context of the script generation in Forward Engineering and Alter Script.</p>
+        <p class="minitocintro">This section contains the following topics</p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6972" target="_self">ActivateDataPreservation</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6974" target="_self">DataPreservationOption</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6976" target="_self">EndOfStatement</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6977" target="_self">IsAlterScriptGeneration</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6978" target="_self">IsEntityInSubjectArea</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6979" target="_self">IsLastColumn</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6980" target="_self">IsModified</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6981" target="_self">IsSchemaGeneration</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6982" target="_self">NextExistingColumn</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6983" target="_self">Option</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6984" target="_self">OwnerOverride</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6986" target="_self">RecordAlter</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6987" target="_self">RecordCreate</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6988" target="_self">SchemaExecCommand</a>
+        </p>
+        <p class="minitocitem"><a href="Forward Engineering Macros.html#o6989" target="_self">TempTable</a>
+        </p>
+        <h2 class="heading2" id="t6972">ActivateDataPreservation</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro registers an Entity or Attribute object for the Data Preservation mechanism. The context object is added in the Data Preservation objects list. For the context object, data is prepared in the background to be displayed in the Data Preservation Options dialog. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::ActivateDataPreservation 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">The macro will fail if: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The context object is not an Entity or Attribute. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[IsAlterScriptX 
+</pre><pre xml:space="preserve">
+/* Add this entity in the data preservation list. */ 
+</pre><pre xml:space="preserve">
+[ActivateDataPreservation] 
+</pre><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">The entity's data will now be preserved across the alter process. </p>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro inserts a bucket identification token into the script. This token is interpreted by the script processing engine for sorting purposes and then removed. See the document, Editing Forward Engineering Templates.pdf, for a complete description of buckets. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::Bucket( BucketNumber )
+</pre>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="627">
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Status</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Description</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext"><em class="italic">BucketNumber</em>
+                    </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">Req</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">The bucket number.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail if: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The required parameters are not supplied. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::Bucket("90") 
+</pre><pre xml:space="preserve">
+… 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">There will be no visible effect in the script generated by the FE engine, as the bucket tokens are stripped out of the final output. If a template is expanded outside of the FE engine, the output will appear as follows, where �90� is the bucket number. </p><pre xml:space="preserve">
+@@*B=90B*@@  
+</pre>
+        <h2 class="heading2" id="t6974">DataPreservationOption</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro is used to get a specific user selection from the Data Preservation Options dialog. The Data Preservation is enabled when there is a drop and re-create of an entity for the Alter Scripts. </p>
+        <p class="bodytext">The list of options that can be tested is found in the following table. </p>
+        <p class="proceduresubheading">WhereClause </p>
+        <p class="bodytext">Evaluates to the state of the user-specified "Where Condition". </p>
+        <p class="proceduresubheading">DropTempTable </p>
+        <p class="bodytext">Evaluates to the state of the "Drop Temp Table" check box. </p>
+        <p class="proceduresubheading">PreserveData </p>
+        <p class="bodytext">Evaluates to the inverse value of �Do NOT Preserve Data� check box. </p>
+        <p class="proceduresubheading">IsDropRecreate </p>
+        <p class="bodytext">Evaluates to the value of �Force DROP/re-CREATE Table� check box. </p>
+        <p class="proceduresubheading">IsAlterRequired </p>
+        <p class="bodytext">Evaluates to the inverse value of �Force DROP/re-CREATE Table� check box. </p>
+        <p class="proceduresubheading">RegisterEntity </p>
+        <p class="bodytext">This option sets the template flag indicating that the query is generated to transfer the data from the temp table to the new modified table. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::DataPreservationOption( OptionName )
+</pre>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="627">
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Status</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Description</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext"><em class="italic">OptionName</em>
+                    </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">Req</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">The name of the option.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">See the above table for explanations of return values. </p>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample</p>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This emits the erwin Data Modeler-generated triggers for the context entity. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::EmitERwinGeneratedTriggers 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail if: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The erwin Data Modeler triggers cannot be emitted. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template</p><pre xml:space="preserve">
+FE::EmitERwinGeneratedTriggers 
+</pre>
+        <p class="proceduresubheading">Result </p><pre xml:space="preserve">
+create procedure erwin_raise_except(err int,msg varchar(255)) 
+</pre><pre xml:space="preserve">
+raise exception err,0,msg; 
+</pre><pre xml:space="preserve">
+end procedure; 
+</pre><pre xml:space="preserve">
+CREATE TRIGGER tD_E_1 DELETE ON E_1 
+</pre><pre xml:space="preserve">
+…etc. 
+</pre>
+        <h2 class="heading2" id="t6976">EndOfStatement</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro inserts an end-of-statement token into the script. This token is interpreted by the script processing engine and then removed. This should not be confused with macros like %DBMSDelim that insert end of statement delimiters interpreted by the database. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::EndOfStatement 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro always succeeds. </p>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::EndOfStatement 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">There will be no visible effect in the script generated by the FE engine, as the end of statement markers are stripped out of the final output. If a template is expanded outside of the FE engine, the output will appear as follows. </p><pre xml:space="preserve">
+@@*EOS*@@ 
+</pre>
+        <h2 class="heading2" id="t6977">IsAlterScriptGeneration</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro succeeds if the process running the script is Alter Script Generation. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::IsAlterScriptGeneration 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The template is not being expanded as part of Alter Script.
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[ FE:: IsAlterScriptGeneration 
+</pre><pre xml:space="preserve">
+/* Generate alter script-specific stuff */ 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">The Alter Script-specific template will be emitted. </p>
+        <h2 class="heading2" id="t6978">IsEntityInSubjectArea</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro succeeds if current context object is located in the Referenced_Entities_Ref property of the current Subject_Area. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::IsAlterScriptGeneration 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The current context object is not located in the Referenced_Entities_Ref property of the current Subject_Area. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[ FE::IsEntityInSubjectArea 
+</pre><pre xml:space="preserve">
+/* Only do this if the entity is in the current subject area */ 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <h2 class="heading2" id="t6979">IsLastColumn</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This predicate is used by Alter Script processing to determine if the insertion of columns can be done with an ALTER statement, or if the table must be dropped and recreated. </p>
+        <p class="bodytext">It determines if new Attribute objects have been added to the Entity object owning the Attribute object that is the current context object during the current session. </p>
+        <p class="bodytext">If new Attribute objects were added, then the macro checks if subsequent Attribute objects were also newly added. The current FE Option Set is used to determine what ordering is being used. </p>
+        <p class="bodytext">If no Attribute objects were added, the macro returns tests if the current context is the last Attribute based on the settings of the current FE Option Set. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::IsLastColumn 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">Attribute objects were added, but there are Attribute objects later in the current sort order that were not newly added. 
+</li>
+            <li class="listbullet">No Attribute objects were added, but the current context object is not the last one. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[FE::IsLastColumn 
+</pre><pre xml:space="preserve">
+/* We can use ALTER, so emit construct the statement */ 
+</pre><pre xml:space="preserve">
+"ALTER TABLE " … 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">This particular clause will be emitted. </p>
+        <h2 class="heading2" id="t6980">IsModified</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro succeeds functions as does the IsModified macro, except that properties not represented in the database are not considered when testing for modifications. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::IsModified 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The current context object is not modified, or is only modified in properties that are not represented in the database. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="bodytext">The following block will only execute if the object is modified in a database property other than comment. </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::IsModified("Comment")
+</pre>
+        <h2 class="heading2" id="t6981">IsSchemaGeneration</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro succeeds if the process running the script is Schema Generation. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::IsSchemaGeneration 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The template is not being expanded as part of Schema Generation. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[ FE::IsSchemaGeneration 
+</pre><pre xml:space="preserve">
+/* Generate forward engineering script-specific stuff */ 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">The Forward Engineering-specific template will be emitted. </p>
+        <h2 class="heading2" id="t6982">NextExistingColumn</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro is used by the Alter Script mechanism for databases that allow the creation of a column in the middle of a table. It evaluates to the name of the next pre-existing Attribute object after a newly-created Attribute. The current FE Option Set is used to determine the sort order. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::NextExistingColumn 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">There is not a succeeding pre-existing Attribute object. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+"ALTER TABLE " 
+</pre><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+["\r\n" "BEFORE " FE::NextExistingColumn] 
+</pre><pre xml:space="preserve">
+… 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">This particular clause will be emitted. </p>
+        <h2 class="heading2" id="t6983">Option</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This predicate tests whether the specified option is turned on in the current FE Option Set. </p>
+        <p class="bodytext">The list of options that can be tested is found in the following table. For a description of what these options control, consult the Help system for the Forward Engineering dialogs.</p>
+        <p class="tablebodytext">AKConstraintInAlter				AKConstraintInCreate</p>
+        <p class="tablebodytext">AlterStatements					CachedView</p>
+        <p class="tablebodytext">CachedViewCreateFunction			CachedViewCreateFunctionSynonym</p>
+        <p class="tablebodytext">CachedViewCreateMacro			CachedViewCreateOption</p>
+        <p class="tablebodytext">CachedViewCreateProcedure			CachedViewCreateProcedureSynonym</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CachedViewCreateSynonym			CachedViewCreateTrigger</p>
+        <p class="tablebodytext">CachedViewDropFunction			CachedViewDropFunctionSynonym</p>
+        <p class="tablebodytext">CachedViewDropMacro				CachedViewDropOption</p>
+        <p class="tablebodytext">CachedViewDropProcedure			CachedViewDropProcedureSynonym</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CachedViewDropSynonym			CachedViewDropTrigger</p>
+        <p class="tablebodytext">CachedViewLOBStorage			CachedViewPartitions</p>
+        <p class="tablebodytext">CachedViewPhysicalStorage			CachedViewPostScript</p>
+        <p class="tablebodytext">CachedViewPreScript				CachedViewUsingIndexStorage</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">Column						ColumnCheckConstraint</p>
+        <p class="tablebodytext">ColumnCompress				ColumnCreatePrivilege</p>
+        <p class="tablebodytext">ColumnDefaultValue				ColumnLabel</p>
+        <p class="tablebodytext">ColumnLOBStorage				ColumnLogicalName</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">ColumnPhysicalOrder				ColumnTitle</p>
+        <p class="tablebodytext">ColumnUseDomain				Comments</p>
+        <p class="tablebodytext">ConstraintFormat				ConstraintName</p>
+        <p class="tablebodytext">ConstraintState					Create</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">Create						CreateAggregate</p>
+        <p class="tablebodytext">CreateAKIndex					CreateApplicationRole</p>
+        <p class="tablebodytext">CreateAssembly				CreateAssemblySynonym</p>
+        <p class="tablebodytext">CreateAsymmetricKey				CreateAuthorization</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateBufferpool				CreateCachedView</p>
+        <p class="tablebodytext">CreateCachedViewAlternateKeyIndex		CreateCachedViewIndexOption</p>
+        <p class="tablebodytext">CreateCachedViewIndexPartitions		CreateCachedViewIndexPhysicalStorage</p>
+        <p class="tablebodytext">CreateCachedViewInversionEntryIndex		CreateCast</p>
+        <p class="tablebodytext">CreateCertificate				CreateCluster</p>
+        <p class="tablebodytext">CreateClusterIndex				CreateClusterIndexPhysicalStorage</p>
+        <p class="tablebodytext">CreateCollection				CreateCredential</p>
+        <p class="tablebodytext">CreateDatabase					CreateDatabaseLink</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateDatabasePrivilege				CreateDatabaseRole</p>
+        <p class="tablebodytext">CreateDatabaseTrigger				CreateDBPrivilege</p>
+        <p class="tablebodytext">CreateDefault					CreateDirectory</p>
+        <p class="tablebodytext">CreateDiskgroup				CreateDomain</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateFKConstraint				CreateFKIndex</p>
+        <p class="tablebodytext">CreateFulltextCatalog				CreateFulltextIndex</p>
+        <p class="tablebodytext">CreateFunctionSynonym			CreateHashIndex</p>
+        <p class="tablebodytext">CreateIEIndex					CreateIndex</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateIndexOption				CreateLibrary</p>
+        <p class="tablebodytext">CreateLocation					CreateLogin</p>
+        <p class="tablebodytext">CreateMethod					CreateNodegroup</p>
+        <p class="tablebodytext">CreateOrdering					CreatePackage</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreatePackageContext				CreatePackageSynonym</p>
+        <p class="tablebodytext">CreatePartitionFunction				CreatePartitionScheme</p>
+        <p class="tablebodytext">CreatePKConstraint				CreatePKIndex</p>
+        <p class="tablebodytext">CreateProfile					CreateReplicationGroup</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateRole					CreateRollbackSeg</p>
+        <p class="tablebodytext">CreateRule					CreateSchema</p>
+        <p class="tablebodytext">CreateSchemaPrivilege				CreateSegment</p>
+        <p class="tablebodytext">CreateSequence				CreateServerTrigger</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateStogroup					CreateSymmetricKey</p>
+        <p class="tablebodytext">CreateSynonym					CreateTable</p>
+        <p class="tablebodytext">CreateTablespace				CreateTransform</p>
+        <p class="tablebodytext">CreateUniqueConstraint				CreateUserDefinedType</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateUserId					CreateView</p>
+        <p class="tablebodytext">CreateViewIndex				CreateViewIndexAK</p>
+        <p class="tablebodytext">CreateViewIndexClustered			CreateViewIndexIE</p>
+        <p class="tablebodytext">CreateViewIndexPhysicalStorage		CreateViewPrivilege</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">CreateXMLIndex					CreateXMLSchemaCollection</p>
+        <p class="tablebodytext">DeleteRelation					DoNotUseODBC</p>
+        <p class="tablebodytext">Drop						DropAggregate</p>
+        <p class="tablebodytext">DropAggregateSynonym				DropAKIndex</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropApplicationRole				DropAssembly</p>
+        <p class="tablebodytext">DropAssemblySynonym				DropAsymmetricKey</p>
+        <p class="tablebodytext">DropAuthorization				DropCachedView</p>
+        <p class="tablebodytext">DropCachedViewAlternateKeyIndex		DropCachedViewIndex</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropCachedViewInversionEntryIndex		DropCast</p>
+        <p class="tablebodytext">DropCertificate					DropCluster</p>
+        <p class="tablebodytext">DropClusterIndex				DropCredential</p>
+        <p class="tablebodytext">DropDatabase					DropDatabaseLink</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropDatabaseRole				DropDatabaseTrigger</p>
+        <p class="tablebodytext">DropDefault					DropDirectory</p>
+        <p class="tablebodytext">DropDiskgroup					DropFKIndex</p>
+        <p class="tablebodytext">DropFulltextCatalog				DropFulltextIndex</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropFunctionSynonym				DropHashIndex</p>
+        <p class="tablebodytext">DropIEIndex					DropIndex</p>
+        <p class="tablebodytext">DropIndexOption				DropLibrary</p>
+        <p class="tablebodytext">DropLogin					DropMethod</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropOrdering					DropPackage</p>
+        <p class="tablebodytext">DropPackageContext				DropPackageSynonym</p>
+        <p class="tablebodytext">DropPartitionFunction				DropPartitionScheme</p>
+        <p class="tablebodytext">DropPKIndex					DropProfile</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropReplicationGroup				DropRole</p>
+        <p class="tablebodytext">DropRollbackSeg				DropRule</p>
+        <p class="tablebodytext">DropSchema					DropSequence</p>
+        <p class="tablebodytext">DropServerTrigger				DropSymmetricKey</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropSynonym					DropTable</p>
+        <p class="tablebodytext">DropTablespace					DropTransform</p>
+        <p class="tablebodytext">DropUserDefinedType				DropUserId</p>
+        <p class="tablebodytext">DropView					DropViewIndex</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">DropViewIndexAK				DropViewIndexIE</p>
+        <p class="tablebodytext">DropXMLIndex					DropXMLSchemaCollection</p>
+        <p class="tablebodytext">ErwinExceptions				ERwinGeneratedTrigger</p>
+        <p class="tablebodytext">FKConstraintInAlter				FKConstraintInCreate</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">GeneratedTriggerRelationshipOverride		GeneratedTriggerRITypeOverride</p>
+        <p class="tablebodytext">GenerateRI					GenerateUserDefinedTrigger</p>
+        <p class="tablebodytext">Include						IncludeMDXIndex</p>
+        <p class="tablebodytext">IncludeNDXIndex				Index</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">IndexClustered					IndexPartitions</p>
+        <p class="tablebodytext">IndexPhysicalStorage				LabelPKIndex</p>
+        <p class="tablebodytext">LastOption					MaterializedViewLog</p>
+        <p class="tablebodytext">MaterializedViewLogCreateOption		MaterializedViewLogDropOption</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">MaterializedViewLogPartitions			MaterializedViewLogPhysicalStorage</p>
+        <p class="tablebodytext">ModelCreateFunction				ModelCreateMacro</p>
+        <p class="tablebodytext">ModelCreateProcedure				ModelCreateProcedureSynonym</p>
+        <p class="tablebodytext">ModelCreateSynonym				ModelDropFunction</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">ModelDropMacro				ModelDropProcedure</p>
+        <p class="tablebodytext">ModelDropProcedureSynonym			ModelDropSynonym</p>
+        <p class="tablebodytext">ModelOption					ModelPostScript</p>
+        <p class="tablebodytext">ModelPreScript					NoCarraigeReturn</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">ODBC						OnDeleteFKConstraint</p>
+        <p class="tablebodytext">OnUpdateFKConstraint				OtherOptions</p>
+        <p class="tablebodytext">OtherOptionsDatabase				OtherOptionsSchema</p>
+        <p class="tablebodytext">OtherOptionsUserDefinedProperties		OverrideOwnerAll</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">OverrideOwnerAuthorization			OverrideOwnerCachedView</p>
+        <p class="tablebodytext">OverrideOwnerDatabase				OverrideOwnerDefault</p>
+        <p class="tablebodytext">OverrideOwnerDomain				OverrideOwnerEntity</p>
+        <p class="tablebodytext">OverrideOwnerFunction				OverrideOwnerKeyGroup</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">OverrideOwnerMacro				OverrideOwnerOracleCluster</p>
+        <p class="tablebodytext">OverrideOwnerOracleClusterIndex		OverrideOwnerOracleLibrary</p>
+        <p class="tablebodytext">OverrideOwnerOraclePackage			OverrideOwnerSequence</p>
+        <p class="tablebodytext">OverrideOwnerSQLServerAggregate		OverrideOwnerSQLServerApplicationRole</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">OverrideOwnerSQLServerXMLSchemaCollection	OverrideOwnerStoredProcedure</p>
+        <p class="tablebodytext">OverrideOwnerSynonym				OverrideOwnerTrigger</p>
+        <p class="tablebodytext">OverrideOwnerValidationRule			OverrideOwnerView</p>
+        <p class="tablebodytext">PKConstraintInAlter				PKConstraintInCreate</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">QuoteName					RefrentialIntegrity</p>
+        <p class="tablebodytext">RunCheckModel				SchemaCreateOption</p>
+        <p class="tablebodytext">SchemaDropOption				Security</p>
+        <p class="tablebodytext">SequenceCreateSynonym			SequenceDropSynonym</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">SPCreateFKConstraint				SPCreatePKConstraint</p>
+        <p class="tablebodytext">SpecifyOwner					Storage</p>
+        <p class="tablebodytext">StorageCreateOption				StorageDropOption</p>
+        <p class="tablebodytext">StripDelimiter					SuppressParameterNames</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">SuppressPrimaryIndexName			SuppressSecondaryIndexNames</p>
+        <p class="tablebodytext">TabCheck					Table</p>
+        <p class="tablebodytext">TableCheckConstraint				TableCreateFunction</p>
+        <p class="tablebodytext">TableCreateFunctionSynonym			TableCreateMacro</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">TableCreateMaterializedViewLog			TableCreateOption</p>
+        <p class="tablebodytext">TableCreatePrivilege				TableCreateProcedure</p>
+        <p class="tablebodytext">TableCreateProcedureSynonym			TableCreateSynonym</p>
+        <p class="tablebodytext">TableCreateTrigger				TableDropFunction</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">TableDropFunctionSynonym			TableDropMacro</p>
+        <p class="tablebodytext">TableDropMaterializedViewLog			TableDropOption</p>
+        <p class="tablebodytext">TableDropProcedure				TableDropProcedureSynonym</p>
+        <p class="tablebodytext">TableDropSynonym				TableDropTrigger</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">TablePartitions					TablePhysicalStorage</p>
+        <p class="tablebodytext">TablePostScript					TablePreScript</p>
+        <p class="tablebodytext">Trigger						TriggerCreateOption</p>
+        <p class="tablebodytext">TriggerDropOption				UseODBC</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">UserTriggerRelationshipOverride			UserTriggerRITypeOverride</p>
+        <p class="tablebodytext">View						ViewCreateFunction</p>
+        <p class="tablebodytext">ViewCreateFunctionSynonym			ViewCreateMacro</p>
+        <p class="tablebodytext">ViewCreateOption				ViewCreateProcedureSynonym</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">ViewCreateStoredProcedure			ViewCreateSynonym</p>
+        <p class="tablebodytext">ViewCreateTrigger				ViewDropFunction</p>
+        <p class="tablebodytext">ViewDropFunctionSynonym			ViewDropMacro</p>
+        <p class="tablebodytext">ViewDropOption					ViewDropProcedureSynonym</p>
+        <p class="tablebodytext">
+        </p>
+        <p class="tablebodytext">ViewDropStoredProcedure			ViewDropSynonym</p>
+        <p class="tablebodytext">ViewDropTrigger					ViewPostScript</p>
+        <p class="tablebodytext">ViewPreScript					WrapText</p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::Option( OptionName )
+</pre>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="627">
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Status</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Description</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext"><em class="italic">OptionName</em>
+                    </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">Req</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">The name of the option.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">he option is not turned on. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+/* Are we generating in physical order? */ 
+</pre><pre xml:space="preserve">
+[OptionX("ColumnPhysicalOrder") 
+</pre><pre xml:space="preserve">
+ForEachReference("Physical_Columns_Order_Ref") 
+</pre><pre xml:space="preserve">
+{ 
+</pre><pre xml:space="preserve">
+Execute("Column Properties") 
+</pre><pre xml:space="preserve">
+} 
+</pre><pre xml:space="preserve">
+] 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">The code for generating the columns in physical order will be emitted if you have selected this option. </p>
+        <h2 class="heading2" id="t6984">OwnerOverride</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro evaluates to the appropriate Owner Override value specified in the Forward Engineering dialog. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::OwnerOverride( [DefaultToModel [, OwnerLevels]] ) 
+</pre>
+        <p class="proceduresubheading">DefaultToModel </p>
+        <dl>
+            <dt>Status: Opt </dt>
+            <dd>
+            </dd>
+        </dl>
+        <p class="bodytext">If this value is set to �true� and no owner override is specified in the Forward Engineering dialog, then the value found in the DB Owner property of the object will be used. </p>
+        <p class="proceduresubheading">OwnerLevels </p>
+        <dl>
+            <dt><strong>Status</strong>: Opt </dt>
+            <dd>
+            </dd>
+        </dl>
+        <p class="bodytext">If this is specified, the value will be determined for the owning object this number of levels above the current context object. </p>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">There is no owner override specified and DefaultToModel is not present. 
+</li>
+            <li class="listbullet">There is no owner override, DefaultToModel is present, but there is no value specified for the Schema_Name property on the object in the model. 
+</li>
+            <li class="listbullet">OwnerLevels is specified and the current context object is not that deep in the model ownership tree. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="bodytext">Assume the following table is the current context object. The first example results show what would emit if an owner override of �sa2� was in place. The second example results show what would emit if no owner override was in place.</p>
+        <p class="bodytext">
+            <img align="bottom" alt="Illustrating FE-OwnerOverride" border="0" height="155" hspace="0" id="f6985" src="../../Resources/Images/6985.png" vspace="0" width="186" />
+        </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+[FE::OwnerOverride "."] Property("Physical_Name") "\n" 
+</pre><pre xml:space="preserve">
+[FE::OwnerOverride("true") "."] Property("Physical_Name") "\n� 
+</pre><pre xml:space="preserve">
+ForEachOwnee("Attribute") 
+</pre><pre xml:space="preserve">
+{ 
+</pre><pre xml:space="preserve">
+ListSeparator("\n") 
+</pre><pre xml:space="preserve">
+FE::OwnerOverride("true�, "1") "." OwnerProperty("Physical_Name") 
+</pre><pre xml:space="preserve">
+"." Property("Physical_Name�) 
+</pre><pre xml:space="preserve">
+} 
+</pre>
+        <p class="proceduresubheading">Result � Example #1 </p><pre xml:space="preserve">
+sa2.E_1 
+</pre><pre xml:space="preserve">
+sa2.E_1 
+</pre><pre xml:space="preserve">
+sa2.E_1.a 
+</pre><pre xml:space="preserve">
+sa2.E_1.b 
+</pre>
+        <p class="proceduresubheading">Result � Example #2 </p><pre xml:space="preserve">
+E_1 
+</pre><pre xml:space="preserve">
+sa.E_1 
+</pre><pre xml:space="preserve">
+sa.E_1.a 
+</pre><pre xml:space="preserve">
+sa.E_1.b 
+</pre>
+        <h2 class="heading2" id="t6986">RecordAlter</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro inserts an FE Record Alter token into the script. This token is interpreted by the script processing engine when creating Alter scripts. Some changes to a model object can be handled by an ALTER statement, while other changes require the corresponding database object to be dropped and recreated. If a change of the first type is processed before a change of the second type, a redundant ALTER statement is generated. To counter this, all ALTER statements are tagged using this macro. When the FE engine processes the script, it examines the entire state of the object and, if another change forces the drop/recreate, eliminates the ALTER statement. These tags are removed from the final script. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::RecordAlter 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro always succeeds. </p>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::RecordAlter 
+</pre><pre xml:space="preserve">
+… 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">There will be no visible effect in the script generated by the FE engine, as the alter script tokens are stripped out of the final output. If a template is expanded outside of the FE engine, the output will appear as follows, where �189� is an object�s id. </p><pre xml:space="preserve">
+@@*A=189A*@@ 
+</pre>
+        <h2 class="heading2" id="t6987">RecordCreate</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro will attempt to set a global flag that is a concatenation of the context object�s id, the label �Create�and the context object�s type name. The macro will fail if this flag is already set. The flag indicates that the object has been created, which allows the post processing to test for and remove any alter statements which may have been generated for the object. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::RecordCreate 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">The flag is already set. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <p class="bodytext">Forward Engineering Macros </p>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::RecordCreate 
+</pre><pre xml:space="preserve">
+… 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">No visible result. </p>
+        <h2 class="heading2" id="t6988">SchemaExecCommand</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This macro inserts an FE Execute Command token into the script. This token is interpreted by the script processing engine when working against a 4GL such as Access or FoxPro in order to construct the commands to modify the database objects via the 4GL's API. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::SchemaExecCommand( CommandString )
+</pre><pre xml:space="preserve"></pre>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="627">
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Status</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tableheading">Description</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext"><em class="italic">CommandString</em>
+                    </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">Req</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="209">
+                    <p class="tablebodytext">The command string to embed.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro always succeeds. </p>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+FE::SchemaExecCommand("Create Access Field Start") 
+</pre>
+        <p class="proceduresubheading">Result </p>
+        <p class="bodytext">There will be no visible effect in the script generated by the FE engine, as the schema execution tokens are stripped out of the final output. If a template is expanded outside of the FE engine, the output will appear as follows. </p><pre xml:space="preserve">
+@@*SECreate Access Field StartSE*@@ 
+</pre>
+        <h2 class="heading2" id="t6989">TempTable</h2>
+        <p class="examplesubheading">Description </p>
+        <p class="bodytext">This evaluates to the name of the temporary table that the Data Preservation option of Alter Script has created. </p>
+        <p class="examplesubheading">Prototype </p><pre xml:space="preserve">
+FE::TempTable 
+</pre>
+        <p class="examplesubheading">Result </p>
+        <p class="bodytext">This macro will fail in the following circumstances: </p>
+        <ul class="listbullet">
+            <li class="listbullet">Alter Script has not constructed a temporary table. 
+</li>
+        </ul>
+        <p class="examplesubheading">Deprecation Level </p>
+        <p class="bodytext">Active </p>
+        <p class="examplesubheading">Breaking Changes </p>
+        <p class="bodytext">None </p>
+        <p class="examplesubheading">Categories </p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering Macros 
+</li>
+        </ul>
+        <p class="examplesubheading">Sample </p>
+        <p class="proceduresubheading">Template </p><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+"INSERT INTO " … 
+</pre><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+" SELECT " … 
+</pre><pre xml:space="preserve">
+… 
+</pre><pre xml:space="preserve">
+" FROM " TempTable 
+</pre><pre xml:space="preserve">
+[" WHERE " DataPreservationOptions("WhereClause")] 
+</pre>
+        <p>
+        </p>
+    </body>
+</html>

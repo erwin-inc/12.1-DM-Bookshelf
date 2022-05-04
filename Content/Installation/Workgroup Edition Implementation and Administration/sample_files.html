@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" madcap:sourcedocument="D:\Documentation\ProjectRevamp\MadCapFlare\PythonScripts\AIT Files\Workgroup Edition Implementation and Administration\sample_files.html" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Sample Files</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3467" name="objectid" />
+        <meta content="255" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/22/2018T14:20-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('3467')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><span class="browse"><img alt="" class="button" height="16px" src="..\..\Resources\Images\rgtgray6.png" title="" width="16px" /></span>
+        </p>
+        <h1 class="appendixheading" id="t3467">Sample Files</h1>
+        <p class="minitocintro">This section contains the following topics:</p>
+        <p class="minitocitem"><a href="sample_files.html#o3468" target="_self">Sample workers.properties File</a>
+        </p>
+        <p class="minitocitem"><a href="sample_files.html#o3469" target="_self">Sample isapi_redirect.properties File</a>
+        </p>
+        <p class="minitocitem"><a href="sample_files.html#o3470" target="_self">Sample isapi_redirect.reg File</a>
+        </p>
+        <p class="minitocitem"><a href="sample_files.html#o3471" target="_self">Sample uniworkers.properties File</a>
+        </p>
+        <p class="minitocitem"><a href="sample_files.html#o3472" target="_self">Sample uriworkermap.properties File</a>
+        </p><a name="o3468"></a>
+        <h2 class="heading2" id="t3468">Sample workers.properties File</h2>
+        <p class="bodytext">The workers.properties file includes the following parameters:</p><pre xml:space="preserve">
+worker.list
+</pre><pre xml:space="preserve">
+worker.&lt;workername&gt;.host
+</pre><pre xml:space="preserve">
+worker.&lt;workername&gt;.port
+</pre><pre xml:space="preserve">
+worker.&lt;workername&gt;.type
+</pre><pre xml:space="preserve">
+worker.&lt;workername&gt;.connection_pool_size
+</pre>
+        <p class="bodytext">The descriptions of the parameters are as follows:</p>
+        <dl>
+            <dt>workers. list</dt>
+            <dd>
+                <p class="normaltermcontinued">Lists all the workers that are defined. When you start the web server, the plug-in instantiates these workers.</p>
+            </dd>
+            <dt>worker.&lt;workername&gt;.host</dt>
+            <dd>
+                <p class="normaltermcontinued">Defines the IP address of the computer where Tomcat (WA-OP) is installed.</p>
+            </dd>
+            <dt>worker. &lt;workername&gt;.port</dt>
+            <dd>
+                <p class="normaltermcontinued">Defines the port that the AJP workers inside Tomcat listen to. By default, AJP13.Workers listen to port 8009.</p>
+            </dd>
+            <dt>worker. &lt;workername&gt;.type</dt>
+            <dd>
+                <p class="normaltermcontinued">Defines the type of worker. The type of the worker can be ajp13, ajp14, jni, lb, or status.</p>
+            </dd>
+            <dt>worker. &lt;workername&gt;.connection_pool_size</dt>
+            <dd>
+                <p class="normaltermcontinued">Defines the number of connections made to AJP back-end.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">The following is a sample workers.properties file:</p><pre xml:space="preserve">
+# This file provides minimal jk configuration properties needed to
+</pre><pre xml:space="preserve">
+# connect to Tomcat.
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+# The workers that jk should create and work with
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+worker.list=lb,jk-status
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+# Defining a worker named node1 and of type ajp13
+</pre>
+        <p class="backtotop"># Note that the name and the type do not have to match.</p><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+worker.node1.type=ajp13
+</pre><pre xml:space="preserve">
+worker.node1.host=localhost
+</pre><pre xml:space="preserve">
+worker.node1.port=8009
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+# Defining a load balancer
+</pre><pre xml:space="preserve">
+# 
+</pre><pre xml:space="preserve">
+worker.lb.type=lb
+</pre><pre xml:space="preserve">
+worker.lb.balance_workers=node1
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+# Define status worker
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+worker.jk-status.type=status
+</pre>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\Resources\Images\388.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o3469"></a>
+        <h2 class="heading2" id="t3469">Sample isapi_redirect.properties File</h2>
+        <p class="bodytext">The following is a sample isapi_redirect.properties file:</p><pre xml:space="preserve">
+extension_uri=/jakarta/isapi_redirect.dll
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+# Full path to the log file for the ISAPI Redirector 
+</pre><pre xml:space="preserve">
+log_file=&lt;path to the native_iis folder&gt;\native_IIS\logs\isapi_redirect.log
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+# Log level (debug, info, warn, error or trace) 
+</pre><pre xml:space="preserve">
+log_level=info
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+# Full path to the workers.properties file 
+</pre><pre xml:space="preserve">
+worker_file=&lt;path to the native_iis folder&gt;\native_IIS\workers.properties
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+# Full path to the uriworkermap.properties file 
+</pre><pre xml:space="preserve">
+worker_mount_file=&lt;path to the native_iis folder&gt;\native_IIS\uriworkermap.properties
+</pre>
+        <p class="bodytext">In this example, <em class="italic">jakarta </em>refers to the virtual directory you have added before you created the ISAPI filter.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_1" src="..\..\Resources\Images\388.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o3470"></a>
+        <h2 class="heading2" id="t3470">Sample isapi_redirect.reg File</h2>
+        <p class="bodytext">The following is a sample isapi_redirect.reg file:</p><pre xml:space="preserve">
+REGEDIT4
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+[HKEY_LOCAL_MACHINE\SOFTWARE\Apache Software Foundation\Jakarta Isapi Redirector\1.0]
+</pre><pre xml:space="preserve">
+"extension_uri"="/jakarta/isapi_redirect.dll"
+</pre><pre xml:space="preserve">
+"log_file"="&lt;path to the native_iis folder&gt;\\native_IIS\\logs\\isapi.log"
+</pre><pre xml:space="preserve">
+"log_level"="debug"
+</pre><pre xml:space="preserve">
+"worker_file"="&lt;path to the native_iis folder&gt;\\native_IIS\\workers.properties"
+</pre><pre xml:space="preserve">
+"worker_mount_file"="&lt;path to the native_iis folder&gt;\\native_IIS\\uriworkermap.properties"
+</pre>
+        <p class="bodytext">In this example, <em class="italic">jakarta </em>refers to the virtual directory you have added before you created the ISAPI filter.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_2" src="..\..\Resources\Images\388.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o3471"></a>
+        <h2 class="heading2" id="t3471">Sample uniworkers.properties File</h2>
+        <p class="bodytext">The following is a sample uniworkers.properties file:</p><pre xml:space="preserve">
+/MartServer/*=node1
+</pre><a name="o3472"></a>
+        <h2 class="heading2" id="t3472">Sample uriworkermap.properties File</h2>
+        <p class="bodytext">The following is a sample uriworkermap.properties file:</p><pre xml:space="preserve">
+# This file provides sample mappings for example wlb
+</pre><pre xml:space="preserve">
+# worker defined in workermap.properties.minimal
+</pre><pre xml:space="preserve">
+# The general syntax for this file is:
+</pre><pre xml:space="preserve">
+# [URL]=[Worker name]
+</pre><pre xml:space="preserve">
+/*=lb
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+# Mount jkstatus to /jkmanager
+</pre><pre xml:space="preserve">
+# For production servers you will need to
+</pre><pre xml:space="preserve">
+# secure the access to the /jkmanager url
+</pre><pre xml:space="preserve">
+#
+</pre><pre xml:space="preserve">
+/jk-manager=jk-status
+</pre>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382_3" src="..\..\Resources\Images\388.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

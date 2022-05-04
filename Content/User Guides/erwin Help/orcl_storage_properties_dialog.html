@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Oracle Storage Properties Dialog</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1740" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('1740')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t1740">Oracle Storage Properties Dialog</h5>
+        <p class="bodytext">Open the Oracle Storage Properties Dialog when you click on the Storage Properties button in various property editors. Use the Oracle Storage Properties Dialog to assign various storage properties for an Oracle tablespace.</p>
+        <p class="bodytext">The following describes the options for the Oracle Storage Properties Dialog:</p>
+        <dl>
+            <dt><strong>TABLESPACE</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">A drop-down list box where you can select a tablespace from the current model to which you assign storage properties. If you need to edit the properties of a tablespace you select, click the <img align="bottom" alt="" border="0" height="18" hspace="0" id="f970" src="..\..\Resources\Images\972.gif" vspace="0" width="18" /> button to open the <a class="z--jumptemplate" href="orcl_tablespace_editor.html" id="h1741" target="_self" title="Oracle Tablespace Editor">Oracle Tablespace Editor</a>.</p>
+            </dd>
+            <dt><strong>Extents</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Enter values for the following options for Extents:</p>
+                <dl>
+                    <dt><strong>INITIAL </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies in bytes the size of the object's first extent.</p>
+                    </dd>
+                    <dt><strong>NEXT </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies in bytes the size of the next extent to allocate to the object.</p>
+                    </dd>
+                    <dt><strong>PCTINCREASE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies the percent by which the third and subsequent extents grow over the preceding extent.</p>
+                    </dd>
+                    <dt><strong>MINEXTENTS </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies the total number of extents to allocate when the object is created.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Maxextents</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">When you select this option, select one of the following options for Maxextents:</p>
+                <dl>
+                    <dt><strong>UNLIMITED</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                    <dt><strong>VALUE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">If you select this option, enter a value in the text box.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Space Usage</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Enter values for the following options for Space Usage:</p>
+                <dl>
+                    <dt><strong>PCTFREE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specify the limit Oracle should use to determine when additional rows can be added. The value of this parameter is expressed as a whole number and interpreted as a percentage.</p>
+                    </dd>
+                    <dt><strong>PCTUSED </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specify the space to be reserved for each data block for future expansion. The value of this parameter is expressed as a whole number and interpreted as a percentage. This option appears only when you are in the Oracle Table Editor or the Oracle Materialized Views Editor.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Buffer Pool</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Select this check box if you want to specify a default buffer pool. When you select this option, select one of the following options for Buffer Pool: </p>
+                <dl>
+                    <dt><strong>KEEP </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Puts blocks from the segment into the KEEP buffer pool.</p>
+                    </dd>
+                    <dt><strong>RECYCLE </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Puts blocks from the segment into the RECYCLE buffer pool.</p>
+                    </dd>
+                    <dt><strong>DEFAULT </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies DEFAULT to indicate the default buffer pool.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Number Transactions</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Enter the value for the following option for Number Transactions:</p>
+                <dl>
+                    <dt><strong>INITRANS </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specify the initial number of concurrent update transactions allocated for data blocks.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Freelists</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">Enter values for the following options for Freelists:</p>
+                <dl>
+                    <dt><strong>FREELISTS </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">For objects other than tablespaces, specify the number of free lists for each of the free list groups for the table, partition, cluster, or index.</p>
+                    </dd>
+                    <dt><strong>FREE GROUPS </strong>
+                    </dt>
+                    <dd>
+                        <p class="normaltermcontinued2">Specifies the number of groups of free lists for the database object you are creating.</p>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><strong>Redo Log</strong> </dt>
+            <dd>
+                <p class="normaltermcontinued">When you select this option, select one of the following options for Redo Log:</p>
+                <dl>
+                    <dt><strong>LOGGING</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                    <dt><strong>NO LOGGING</strong>
+                    </dt>
+                    <dd>
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+        <p>
+        </p>
+    </body>
+</html>

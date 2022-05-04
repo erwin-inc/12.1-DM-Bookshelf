@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Creating a Sequence in SQL Server</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7840" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');expand2('7841');highlight('7840')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t7840">Creating a Sequence in SQL Server</p>
+        <p class="bodytext">Use the SQL Server Sequence Editor to define sequences in a SQL Server  physical model.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In Model Explorer, right-click Sequences, and click New.
+<p class="listcontinue">A Sequence is created.</p></li>
+            <li class="listnumber">Right-click the Sequence and click Properties.
+<p class="listcontinue">The SQL Server Sequence Editor opens.</p></li>
+            <li class="listnumber">(Optional) Edit the name of the Sequence.
+</li>
+            <li class="listnumber">Select a Schema from the Schema drop-down list.
+</li>
+            <li class="listnumber">Select a data type for the sequence from the Physical Data Type drop-down list.
+</li>
+            <li class="listnumber">(Optional) Select the Generate checkbox to generate a SQL during forward engineering.
+</li>
+            <li class="listnumber">Click the General tab and work with the following options:
+<dl><dt>Starting Value</dt><dd><p class="normaltermcontinued2">Defines the first value that is returned by the sequence object. </p><p class="normaltermcontinued2"><strong>Limit:</strong> Greater than or equal to the minimum sequence object and smaller than or equal to the maximum sequence object.</p><p class="normaltermcontinued2"><strong>Default:</strong> Minimum value for an ascending sequence object and the maximum value for a descending sequence object.</p></dd><dt>Increment By</dt><dd><p class="normaltermcontinued2">Defines the increment value of the sequence object when the Next Value For function is run. The Increment By value cannot be 0 but it can be a negative value.</p></dd><dt>Specify Minimum Value</dt><dd><p class="normaltermcontinued2">Specifies the minimum value for the sequence object</p></dd><dt>Specify Maximum Value</dt><dd><p class="normaltermcontinued2">Specifies the maximum value for the sequence object.</p></dd><dt>Cycle Values</dt><dd><p class="normaltermcontinued2">Specifies that the sequence object restarts the sequence cycle when it exceeds minimum or maximum value.</p></dd><dt>Cache Values</dt><dd><p class="normaltermcontinued2">Specifies that the sequence object creates a cache of sequence values to increase the performance of the application.</p></dd></dl></li>
+            <li class="listnumber">(Optional) Click the Permissions tab to grant server level permission to a user.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The SQL Server Sequence Editor is defined and the SQL Server Sequence Editor closes.</p></li>
+        </ol>
+        <p class="noteAlt">To delete a sequence, right-click the sequence and click Delete. </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Parameter</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection Method</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type of connection you want to use. Using <em class="italic" style="font-weight: bold; font-style: normal;">Direct</em> connects to your database directly. </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Hostname/IP</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Specifies the hostname or IP&#160;address of the server where your database is hosted in one of the following formats:</p>
+                    <ul>
+                        <li>
+                            <p><i style="color: #0064af;">Neo4j://&lt;IP address&gt; </i>
+                            </p>
+                        </li>
+                        <li>
+                            <p><i style="color: #0064af;">Neo4j+s://&lt;IP address&gt;</i>
+                            </p>
+                        </li>
+                        <li>
+                            <p><i style="color: #0064af;"> bolt://&lt;IP address&gt;</i>
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>For example:</p>
+                    <ul>
+                        <li><i>Neo4j://localhost </i>
+                        </li>
+                        <li>
+                            <p><i>Neo4j+s://localhost</i>
+                            </p>
+                        </li>
+                        <li>
+                            <p><i> bolt://localhost</i>
+                            </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Port</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the port for your database based on your Hostname/IP mechanism</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p>Default port number is 7687.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="noteAlt">Other than the above Hostname/IP formats, Neo4j supports the Bolt+s://&lt;IP address&gt; format. However, erwin Data Modeler does not support it at the moment.</p>
+    </body>
+</html>

@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="What's New"
+    Link="/Content/Release Notes/Mart Server Release Notes/New Features and Enhancements in erwin Mart Server.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Character Limitations"
+    Link="/Content/Release Notes/Mart Server Release Notes/Character Limitations.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Mart Server Version Validation"
+    Link="/Content/Release Notes/Mart Server Release Notes/Mart Server Version Validation.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Install and Configure an Oracle Mart"
+    Link="/Content/Release Notes/Mart Server Release Notes/Install and Configure an Oracle Mart.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="How to Install and Configure an Oracle Mart"
+      Link="/Content/Release Notes/Mart Server Release Notes/installing_configuring_mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Mart Architecture"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_architecture.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Install or Upgrade a Mart?"
+        Link="/Content/Release Notes/Mart Server Release Notes/Install or Upgrade a Mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Review the Prerequisites"
+        Link="/Content/Release Notes/Mart Server Release Notes/review_prereq.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Prepare Your DBMS Environment"
+        Link="/Content/Release Notes/Mart Server Release Notes/prepare_dbms_environment.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Install erwin Mart Server"
+        Link="/Content/Release Notes/Mart Server Release Notes/deploy_mart_server.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Use Mart Server as a Windows Service"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Initialize Oracle Mart"
+        Link="/Content/Release Notes/Mart Server Release Notes/initialize_oracle_mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1"></TocEntry>
+      <TocEntry
+        Title="Log In to erwin Mart Administrator and Configure Settings"
+        Link="/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1">
+        <TocEntry
+          Title="Create a Pluggable Database"
+          Link="/Content/Release Notes/Mart Server Release Notes/Create a Pluggable Database.html"
+          BreakType="chapter"
+          PageType="continue"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          StartSection="false"
+          PageNumber="1" />
+        <TocEntry
+          Title="Install erwin Mart Server with a Pluggable Database"
+          Link="/Content/Release Notes/Mart Server Release Notes/Install erwin Mart Server with a Pluggable Database.html"
+          BreakType="chapter"
+          PageType="continue"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          StartSection="false"
+          PageNumber="1" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="Change the Mart Database Server"
+      Link="/Content/Release Notes/Mart Server Release Notes/Change the Mart Database Server.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Troubleshooting"
+      Link="/Content/Release Notes/Mart Server Release Notes/Troubleshooting_Oracle_Mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+  </TocEntry>
+  <TocEntry
+    Title="Install and Configure a PostgreSQL Mart"
+    Link="/Content/Release Notes/Mart Server Release Notes/Install and Configure a PostgreSQL Mart.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="How to Install and Configure a PostgreSQL Mart"
+      Link="/Content/Release Notes/Mart Server Release Notes/installing_configuring_mart_2.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Mart Architecture"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_architecture_2.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Install or Upgrade a Mart?"
+        Link="/Content/Release Notes/Mart Server Release Notes/Install or Upgrade a Mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Review the Prerequisites"
+        Link="/Content/Release Notes/Mart Server Release Notes/review_prereq_2.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Create a PostgreSQL Database"
+        Link="/Content/Release Notes/Mart Server Release Notes/Create a PostgreSQL Database.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Install erwin Mart Server"
+        Link="/Content/Release Notes/Mart Server Release Notes/deploy_mart_server_1.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Use Mart Server as a Windows Service"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Initialize PostgreSQL Mart"
+        Link="/Content/Release Notes/Mart Server Release Notes/initialize_postgreSQL_mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Log In to erwin Mart Administrator and Configure Settings"
+        Link="/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure_1.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="Change the Mart Database Server"
+      Link="/Content/Release Notes/Mart Server Release Notes/Change the Mart Database Server.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Troubleshooting"
+      Link="/Content/Release Notes/Mart Server Release Notes/Troubleshooting_PostgreSQL_Mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+  </TocEntry>
+  <TocEntry
+    Title="Install and Configure a SQL Server Mart"
+    Link="/Content/Release Notes/Mart Server Release Notes/Install and Configure a SQL Server Mart.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="How to Install and Configure a SQL Server Mart"
+      Link="/Content/Release Notes/Mart Server Release Notes/installing_configuring_mart_3.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1">
+      <TocEntry
+        Title="Mart Architecture"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_architecture_3.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Install or Upgrade a Mart?"
+        Link="/Content/Release Notes/Mart Server Release Notes/Install or Upgrade a Mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Review the Prerequisites"
+        Link="/Content/Release Notes/Mart Server Release Notes/review_prereq_3.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Create a SQL Server Database"
+        Link="/Content/Release Notes/Mart Server Release Notes/Create a SQL Server Database.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1">
+        <TocEntry
+          Title="Microsoft SQL Server 2005 Permissions"
+          Link="/Content/Release Notes/Mart Server Release Notes/Microsoft_SQL_Server_2005_Permissions.html"
+          BreakType="chapter"
+          PageType="continue"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          StartSection="false"
+          PageNumber="1" />
+        <TocEntry
+          Title="Specify Use of Foreign Characters With Microsoft SQL Server 2005"
+          Link="/Content/Release Notes/Mart Server Release Notes/Specify Use of Foreign Characters With Microsoft SQL Server 2005.html"
+          BreakType="chapter"
+          PageType="continue"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+          StartSection="false"
+          PageNumber="1" />
+      </TocEntry>
+      <TocEntry
+        Title="Install erwin Mart Server"
+        Link="/Content/Release Notes/Mart Server Release Notes/deploy_mart_server_2.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Use Mart Server as a Windows Service"
+        Link="/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Initialize SQL Server Mart"
+        Link="/Content/Release Notes/Mart Server Release Notes/initialize_SQL_server_mart.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+      <TocEntry
+        Title="Log In to erwin Mart Administrator and Configure Settings"
+        Link="/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure_2.html"
+        BreakType="chapter"
+        PageType="continue"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        StartSection="false"
+        PageNumber="1" />
+    </TocEntry>
+    <TocEntry
+      Title="Change the Mart Database Server"
+      Link="/Content/Release Notes/Mart Server Release Notes/Change the Mart Database Server.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Troubleshooting"
+      Link="/Content/Release Notes/Mart Server Release Notes/Troubleshooting_SQLServer_Mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+  </TocEntry>
+  <TocEntry
+    Title="How to Upgrade any r9 Series Mart to the Current Version"
+    Link="/Content/Release Notes/Mart Server Release Notes/How to Upgrade any r9 Series Mart to the Current Version.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1">
+    <TocEntry
+      Title="Upgrade Performance Considerations"
+      Link="/Content/Release Notes/Mart Server Release Notes/Upgrade Performance Considerations.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="1"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Review the Prerequisites"
+      Link="/Content/Release Notes/Mart Server Release Notes/Review the Prerequisites.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Upgrade the Mart Server"
+      Link="/Content/Release Notes/Mart Server Release Notes/Upgrade the Mart Server.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Configure the Mart Server"
+      Link="/Content/Release Notes/Mart Server Release Notes/Configure the Mart Server.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Restart the Mart Server Service"
+      Link="/Content/Release Notes/Mart Server Release Notes/Restart the Mart Server Service.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+    <TocEntry
+      Title="Log In to erwin Mart Administrator"
+      Link="/Content/Release Notes/Mart Server Release Notes/Log In to erwin Mart Administrator.html"
+      BreakType="chapter"
+      PageType="continue"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      StartSection="false"
+      PageNumber="1" />
+  </TocEntry>
+  <TocEntry
+    Title="Create a Customized Security Message"
+    Link="/Content/Release Notes/Mart Server Release Notes/Create a Customized Security Message.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Prepare to Use IIS with Mart"
+    Link="/Content/Release Notes/Mart Server Release Notes/Prepare to Use IIS with Mart.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Mart Server Log Files"
+    Link="/Content/Release Notes/Mart Server Release Notes/Mart Server Log Files.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+  <TocEntry
+    Title="Documentation Formats and Deliverables"
+    Link="/Content/Release Notes/Mart Server Release Notes/Documentation Formats and Deliverables.html"
+    BreakType="chapter"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    StartSection="false"
+    PageNumber="1" />
+</CatapultToc>

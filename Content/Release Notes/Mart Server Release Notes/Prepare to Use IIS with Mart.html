@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Prepare to Use IIS with Mart</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3372" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/28/2018T12:51-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('3372')}">
+        <p class="bodytext">
+            <MadCap:concept term="Release Notes" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t3372">Prepare to Use IIS with Mart</h1>
+        <p class="bodytext">If you want to use Microsoft Internet Information Services (IIS) as the web server, configure it before deploying Mart Server. </p>
+        <p class="minitocintro">This section contains the following topics</p>
+        <p class="minitocitem"><a href="#Configur" target="_self">Configure IIS Web Server</a>
+        </p>
+        <p class="minitocitem"><a href="#Implemen" target="_self">Implement SSL for IIS</a>
+        </p>
+        <h2 class="heading2"><a name="Configur"></a>Configure IIS Web Server</h2>
+        <p class="bodytext">The Mart Server is built using Java technology. Therefore, if you want to connect to Mart through IIS, configure IIS to use the JK ISAPI redirector plugin. Using this plugin, IIS sends servlet and JSP requests to Tomcat.</p>
+        <p class="noteAlt">This procedure describes how to configure IIS 6.0 for Microsoft Windows Server Enterprise 2008. For more information about configuring other versions of IIS for other operating systems, see the respective vendor documentation.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Help ensure that Tomcat is working properly. Open a browser and type the following in the Address bar:
+<pre xml:space="preserve">
+http://&lt;servername&gt;:18170/MartAdmin
+</pre><p class="listcontinue">The default Tomcat home page appears. &lt;servername&gt; is the name of the computer where you have installed Tomcat. 18170 is the default port number where Tomcat is running. If you are using a different port number, use that port number here. In addition, help ensure that the port number you are using is included in the server.xml file. Typically, the server.xml file is available in the <em class="italic">&lt;Tomcat_Home&gt;/conf </em>folder.</p></li>
+            <li class="listnumber">Install IIS. 
+<p class="noteAlt">For more information about how to install IIS on Windows Server 2008, see Microsoft documentation.<br />Unlike IIS 6, for IIS versions 7, 8, and 10, the following Application Development role services are not installed by default:</p><ul class="listbullet2"><li class="listbullet2">ASP
+</li><li class="listbullet2">CGI
+</li><li class="listbullet2">ISAPI Extensions
+</li><li class="listbullet2">ISAPI Filters
+</li></ul><p class="bodytext">To select these role services explicitly while configuring IIS:</p><ol class="listalpha"><li class="listalpha">Under Server Roles, select Web Server.
+</li><li class="listalpha">Click Add Features.
+</li><li class="listalpha">Next, go to Web Server (IIS) &gt; Role Services.
+</li><li class="listalpha">Under Application Development, select ASP, CGI, ISAPI Extensions, and ISAPI Filters check boxes.
+</li></ol></li>
+            <li class="listnumber">Create a folder, for example <em class="italic">Native_IIS </em>on the computer where you have installed IIS. Download the isapi_redirect.dll file for Windows from the Apache Tomcat website and copy to Native_IIS. If the name of the DLL file is not isapi_redirect.dll, rename it.
+</li>
+            <li class="listnumber">Create the workers.properties, isapi_redirect.properties, uniworkers.properties, uriworkermap.properties, and isapi_redirect.reg files in the Native_IIS folder.
+<p class="noteAlt">See the Appendix for sample workers.properties, uniworkers.properties, isapi_redirect.reg, isapi_redirect.properties, and uriworkermap.properties files.</p></li>
+            <li class="listnumber">Create a folder named Logs under Native_IIS. Create two empty files isapi.log and isapi_redirect.log under Logs.
+</li>
+            <li class="listnumber">Go to the Native_IIS folder, right-click the isapi_redirect.reg file, and click Merge.
+</li>
+            <li class="listnumber">Click Yes on the message.
+<p class="listcontinue">The registry file is updated.</p></li>
+            <li class="listnumber">Follow these steps and create an IIS filter for the DLL placed in Step 5: 
+<ol class="listalpha"><li class="listalpha">From the Windows Start menu, click Run, and then type inetmgr. 
+<p class="listcontinue2">The Internet Information Services (IIS) Manager window opens.</p></li><li class="listalpha">Click the computer name and expand Sites. 
+</li><li class="listalpha">Right-click Default WebSite and select Add Virtual Directory. 
+<p class="listcontinue2">The Add Virtual Directory dialog appears.</p></li><li class="listalpha">Enter jakarta for Alias. Enter the path for the isapi_redirect.dll file in the Physical Path field and click OK. 
+</li><li class="listalpha">Click Default Web Site.
+</li><li class="listalpha">Double-click ISAPI filters and click Add under Action. 
+</li><li class="listalpha">Enter Tomcat for Filter name. Enter the path for the isapi_redirect.dll file in the Executables field. 
+</li><li class="listalpha">Click OK and the new ISAPI filter is added.
+</li><li class="listalpha">Click Default Web Site and then double-click Handler Mappings.
+</li><li class="listalpha">Click Edit Features and Permissions.
+<p class="listcontinue2">The Edit Features and Permissions dialog opens.</p></li><li class="listalpha">Select Execute and then click OK.
+</li><li class="listalpha">Click the computer name and then double-click ISAPI and CGI Restrictions.
+</li><li class="listalpha">Click Add under Actions. 
+</li><li class="listalpha">Select the path for the isapi_redirect.dll file in the ISAPI or CGI Path field.
+</li><li class="listalpha">Select <em class="italic">Allow extension path to execute</em> and then click OK.
+</li></ol></li>
+            <li class="listnumber">Restart the IIS web server. 
+</li>
+            <li class="listnumber">Stop the MartServer service and start it again.
+</li>
+        </ol>
+        <p class="noteAlt">See the Appendix for sample workers.properties, uniworkers.properties, isapi_redirect.reg, isapi_redirect.properties, and uriworkermap.properties files.</p>
+        <h2 class="heading2"><a name="Implemen"></a>Implement SSL for IIS</h2>
+        <p class="bodytext">If you have deployed Mart Server on IIS, you can implement SSL on IIS. SSL lets you access the Mart through a secured connection.</p>
+        <p class="noteAlt">This procedure describes how to enable SSL for IIS 6.0. If you are using a different version of IIS, see the relevant document on the Microsoft website for more information about installing IIS.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open Internet Information Services (IIS) Manager.
+</li>
+            <li class="listnumber">Double-click Server Certificates and then click Create Self-Signed Certificate.
+</li>
+            <li class="listnumber">Enter a name for the certificate and click OK.
+</li>
+            <li class="listnumber">Right-click Default Web Site and click Edit Bindings.
+</li>
+            <li class="listnumber">Click Add and select https in the Type drop-down menu.
+</li>
+            <li class="listnumber">Select the certificate name that you have added in the SSL Certificate drop-down menu and click OK.
+</li>
+            <li class="listnumber">Select Default Web Site and then double-click SSL Settings.
+</li>
+            <li class="listnumber">Select the Require SSL check box and click Apply.
+</li>
+            <li class="listnumber">Restart IIS and then restart Tomcat.
+</li>
+        </ol>
+        <p class="noteAlt">If the validity of the certificate expires, create another certificate.</p>
+        <p>
+        </p>
+    </body>
+</html>

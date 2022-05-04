@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Index Partitions for Tables and Materialized Views</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2732" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx()">
+        <h5 class="heading5" id="t2732">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Define Index Partitions for Tables and Materialized Views</h5>
+        <p class="bodytext">You can select index columns for partitioning for tables and materialized views. </p>
+        <p class="proceduresubheading">To define or modify index partitions for tables or materialized views</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a table or materialized view in the physical model, and select Indexes.
+<ul class="listbullet2"><li class="listbullet2">If you right-click a table and select Indexes, the Oracle Index Editor for Tables opens.
+</li><li class="listbullet2">If you right-click a materialized view and select Indexes, the Oracle Index Editor for Materialized Views opens.
+</li></ul></li>
+            <li class="listnumber">Select the Partitions<strong></strong>tab.
+</li>
+            <li class="listnumber">From the Index Name list, select the index that you want to assign to a partition.
+</li>
+            <li class="listnumber">Select either of the Global partition options - Global-Range or Global-Hash. The index members for the current index appear in the Available Columns list.
+</li>
+            <li class="listnumber">In the Available Columns list, double-click the index members that you want to add to a partition. Those members are moved to the Selected Columns list.
+</li>
+            <li class="listnumber">The next section is where you enter partition information. This section varies slightly depending on the Global partition option you selected in Step 4. Click on one of the links below for specific information about the option: 
+<ul class="listbullet2"><li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_global_range.html" id="h2131" target="_self" title="Oracle Partitions Tab - Global-Range">Global-Range</a></li><li class="listbullet2"><a class="z--jumptemplate" href="orcl_partitions_tab_global_hash.html" id="h2157" target="_self" title="Oracle Partitions Tab - Global-Hash">Global-Hash</a></li></ul></li>
+            <li class="listnumber">Click OK.
+</li>
+        </ol>
+        <p class="noteAlt">In Step 4, instead of a Global option, you can select one of the Local options to specify that the index is partitioned on the same columns, with the same number of partitions, and the same partition bounds as the table.</p>
+        <p>
+        </p>
+    </body>
+</html>

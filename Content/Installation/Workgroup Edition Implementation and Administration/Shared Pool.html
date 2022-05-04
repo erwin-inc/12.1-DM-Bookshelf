@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" madcap:sourcedocument="D:\Documentation\ProjectRevamp\MadCapFlare\PythonScripts\AIT Files\Workgroup Edition Implementation and Administration\Shared Pool.html" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Shared Pool</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3456" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/22/2018T14:20-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3452');expand2('3454');highlight('3456')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t3456">Shared Pool</h3>
+        <p class="bodytext">The shared pool is an area of Oracle memory that includes two main structures:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The library cache, which stores parsed SQL and PL/SQL statements
+</li>
+            <li class="listbullet">The dictionary cache, which stores the Oracle data dictionary (or Oracle metadata)
+</li>
+        </ul>
+        <p class="bodytext">The SHARED_POOL_SIZE parameter is defined in the INIT.ora or INIT&lt;SID&gt;.ora file and is used to regulate the size of the shared pool. Set the SHARED_POOL_SIZE parameter to a minimum of 3500000 (3.5 million). Setting the shared pool to a smaller value can degrade performance, forcing Oracle to do disk I/O to retrieve objects that cannot fit in the shared pool. A larger shared pool may be required, depending on the size and number of models and the number of users.</p><a name="o3457"></a>
+        <h3 class="heading3" id="t3457">Buffer Cache</h3>
+        <p class="bodytext">The buffer cache serves as a memory cache for all data going to and from Oracle data files. When Oracle needs a block of data it first checks whether that block exists in the buffer cache. If it does, Oracle gets the data from the buffer cache�avoiding disk access. Having a large enough buffer cache lets the Oracle server bypass most I/O requests.</p>
+        <p class="bodytext">Buffer cache size is controlled by the DB_BLOCK_BUFFERS parameter defined in the INIT.ora or INIT&lt;SID&gt;.ora file. Set the buffer cache to a minimum of 4 MB. Values smaller than 4 MB force Oracle to do many more I/O requests and significantly degrades the performance. Values larger than 4 MB improve performance and should be used if memory is available.</p>
+        <p class="noteAlt">In Oracle, the DB_BLOCK_BUFFERS parameter is specified as a number of database blocks instead of actual size in bytes. To compute the value of DB_BLOCK_BUFFERS, divide the desired buffer cache size in bytes by the database block size defined by the DB_BLOCK_SIZE parameter in the INIT.ora or INIT&lt;SID&gt;.ora file.</p>
+        <p>
+        </p>
+    </body>
+</html>

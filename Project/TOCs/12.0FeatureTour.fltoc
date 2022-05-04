@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Introduction"
+    Link="/Content/Release Notes/Feature Tour/Introduction.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ReplaceMergeNode="false"
+    PageNumber="(multiple)"></TocEntry>
+  <TocEntry
+    Title="ArangoDB Support"
+    Link="/Content/Release Notes/Feature Tour/ArangoDB Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse Engineering Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)">
+      <TocEntry
+        Title="Reverse Engineering Options for ArangoDB"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_ArangoDB.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward Engineering Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for ArangoDB"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_ArangoDB.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing Changes using Complete Compare.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to ArangoDB Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating Relational Models to NoSQL Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageNumber="(multiple)" />
+  </TocEntry>
+  <TocEntry
+    Title="Amazon Keyspaces Support"
+    Link="/Content/Release Notes/Feature Tour/AWS Keyspaces Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_AWS_Keyspaces.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Reverse Engineering Options for AWS Keyspaces"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_AWS_Keyspaces.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/forward_Engineering_Models_AWS.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for AWS Keyspaces"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_AWS_Keyspaces.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_Complete_Compare_AWS_Keyspaces.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to AWS Keyspaces Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating_Relational_Models_to_AWSKeyspaces_Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Google BigQuery Support"
+    Link="/Content/Release Notes/Feature Tour/Google_BigQuery_Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_Google_BigQuery.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Reverse Engineering Options for Google BigQuery"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Google_BigQuery.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward_Engineering_Models_Google_BigQuery.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for Google BigQuery"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Google_BigQuery.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_Complete_Compare_Google_BigQuery.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to Google BigQuery Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating_Relational_Modelsto_GoogleBigQuery_Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Databricks Support"
+    Link="/Content/Release Notes/Feature Tour/Databricks Support.html">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_Models_Databricks.html">
+      <TocEntry
+        Title="Reverse Engineering Options for Databricks"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Databricks.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward_Engineering_Models_Databricks.html">
+      <TocEntry
+        Title="Forward Engineering Options for Databricks"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Databricks.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_ CompleteCompare_Databricks.html" />
+  </TocEntry>
+  <TocEntry
+    Title="DynamoDB Support"
+    Link="/Content/Release Notes/Feature Tour/DynamoDB_Support.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_DynamoDB.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Reverse Engineering Options for DynamoDB"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_DynamoDB.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward_Engineering_Models_DynamoDB.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for DynamoDB"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_DynamoDB.html"
+        BreakType="chapter"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_Complete_Compare_DynamoDB.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to DynamoDB Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating_Relational_Models_to_DynamoDB_Models.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Neo4j Support"
+    Link="/Content/Release Notes/Feature Tour/Neo4j Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_Models_Neo4j.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Reverse Engineering Options for Neo4j"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Neo4j.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+        PageNumber="(multiple)" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward_Engineering_Models_Neo4j.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for Neo4j"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Neo4j.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_ CompleteCompare_Neo4j.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to Neo4j Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating_Relational_Modelsto_Neo4jModels.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Parquet Support"
+    Link="/Content/Release Notes/Feature Tour/Parquet Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Reverse Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Reverse_Engineering_Parquet.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Reverse Engineering Options for Parquet"
+        Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Parquet.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Forward Engineering Models"
+      Link="/Content/Release Notes/Feature Tour/Forward_Engineering_Parquet.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Forward Engineering Options for Parquet"
+        Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Parquet.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumber="(multiple)"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Comparing Changes using Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Comparing_Changes_using_ CompleteCompare_Parquet.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Migrating Relational Models to Parquet Models"
+      Link="/Content/Release Notes/Feature Tour/Migrating_Relational_Modelsto_ParquetModels.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Couchbase Support"
+    Link="/Content/Release Notes/Feature Tour/Couchbase Support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Central Scheduler"
+    Link="/Content/Release Notes/Feature Tour/Scheduler_Enhancements.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Scheduling Remote Jobs"
+      Link="/Content/Release Notes/Feature Tour/Scheduling_Remote_Jobs.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Running Complete Compare"
+      Link="/Content/Release Notes/Feature Tour/Running_Complete_Compare.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Productivity and UI Enhancements"
+      Link="/Content/Release Notes/Feature Tour/Scheduler_Productivity_Imporvements.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumber="(multiple)"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Git Support"
+    Link="/Content/Release Notes/Feature Tour/Git Support.html">
+    <TocEntry
+      Title="Connecting to Git Repositories"
+      Link="/Content/Release Notes/Feature Tour/Connecting_to_Git_Repositories.html"></TocEntry>
+    <TocEntry
+      Title="Committing Forward Engineering Scripts"
+      Link="/Content/Release Notes/Feature Tour/Committing_FE_Scripts.html">
+      <TocEntry
+        Title="Scenario 1: Committing New or Full FE Scripts"
+        Link="/Content/Release Notes/Feature Tour/CommittingNeworFullScripts.html" />
+      <TocEntry
+        Title="Scenario 2: Committing Alter Scripts"
+        Link="/Content/Release Notes/Feature Tour/CommittingAlterScripts.html" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="MongoDB: Schema Validation"
+    Link="/Content/Release Notes/Feature Tour/MongoDB_Schema_Validation.html" />
+  <TocEntry
+    Title="Snowflake Enhancements"
+    Link="/Content/Release Notes/Feature Tour/Snowflake_Enhancements.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Cassandra Advanced Denormalization"
+    Link="/Content/Release Notes/Feature Tour/Cassandra_Advanced_Denormalization.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Oracle: View and Materialized View Enhancement"
+    Link="/Content/Release Notes/Feature Tour/Oracle_View_MatView.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Azure Synapse: Table Constraint Enhancement"
+    Link="/Content/Release Notes/Feature Tour/AzureSynapse_TableConstraint.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Diagramming: Hide and Unhide Diagram Nodes"
+    Link="/Content/Release Notes/Feature Tour/Diagramming_Hide_Unhide_Nodes.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Data Vault Enhancements"
+    Link="/Content/Release Notes/Feature Tour/DataVault.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Productivity and UI Enhancements"
+    Link="/Content/Release Notes/Feature Tour/Productivity and UI Enhancements.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="DM Connect for DI"
+    Link="/Content/Release Notes/Feature Tour/DM_Connect_for_DI.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="erwin Mart Server Enhancements"
+    Link="/Content/Release Notes/Feature Tour/erwinMartServer.html" />
+</CatapultToc>

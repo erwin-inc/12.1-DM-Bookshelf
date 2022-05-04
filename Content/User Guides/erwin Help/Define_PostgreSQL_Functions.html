@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define PostgreSQL Functions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7902" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7897');expand2('7898');highlight('7902')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7902">Define PostgreSQL Functions</h6>
+        <p class="bodytext">Use the PostgreSQL Function Editor to define a function for a database or table in a PostgreSQL physical model.</p>
+        <p class="noteAlt">Although in the syntax of PostgreSQL function, the "External" option is available for Security of Definer property, this option is not available in the database. Hence, this option is also not available under Security of Definer property. Similarly, the CALLED ON NULL INPUT and RETURNS NULL ON NULL INPUT options too are unavailable on the PostgreSQL Function Editor.
+        </p>
+        <p class="proceduresubheading">To define a PostgreSQL function</p>
+        <ol class="listnumber">
+            <li class="listnumber">In the Model Explorer, right-click Functions and click New.
+<p class="listcontinue">An instance of Function is created.</p></li>
+            <li class="listnumber">Right-click the instance and click Properties. Alternatively, you can also click Functions on the Model menu.
+<p class="listcontinue">The PostgreSQL Function Editor opens.</p></li>
+            <li class="listnumber">In the navigation grid, select the function that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a function. Use the <em class="italic">Enter filter text</em> box to filter a very large list of functions to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the function. Set the name of the function in this field.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd></dl></li>
+            <li class="listnumber">On the PostgreSQL tab, work with the following options:
+<dl><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema for the function. Select a schema from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_1" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> to create one.</p></dd><dt>Owner</dt><dd><p class="normaltermcontinued2">Specifies the owner of the function. Select a role from the drop-down list or click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_2" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> and create one.</p></dd><dt>Language</dt><dd><p class="normaltermcontinued2">Specifies the name of the language that the function is implemented in. It can be SQL, C, internal, or the name of a user-defined procedural language, for example plpgsql.</p></dd><dt>Window Function</dt><dd><p class="normaltermcontinued2">Indicates that the function is a window function rather than a plain function. This is currently only useful for functions written in C.</p></dd><dt>Volatility</dt><dd><p class="normaltermcontinued2">Informs the query optimizer about the behavior of the function. Select one of the following:</p><dl><dt>Immutable</dt><dd><p class="normaltermcontinued3">Indicates that the function cannot modify the database and always returns the same result when given the same argument values. That is, it does not do database lookups or otherwise use information not directly present in its argument list.</p></dd><dt>Stable</dt><dd><p class="normaltermcontinued3">Indicates that the function cannot modify the database, and that within a single table scan it will consistently return the same result for the same argument values, but that its result could change across SQL statements.</p></dd><dt>Volatile</dt><dd><p class="normaltermcontinued3">Indicates that the function value can change even within a single table scan, so no optimizations can be made. Relatively few database functions are volatile in this sense; some examples are random(), currval(), timeofday().</p></dd></dl></dd><dt>Strict</dt><dd><p class="normaltermcontinued2">Indicates that the function always returns null whenever any of its arguments are null. If this parameter is specified, the function is not executed when there are null arguments; instead a null result is assumed automatically.</p></dd><dt>Leak Proof</dt><dd><p class="normaltermcontinued2">Indicates that the function has no side effects. It reveals no information about its arguments other than by its return value.</p></dd><dt>Estimated Cost</dt><dd><p class="normaltermcontinued2">Specifies a positive number giving the estimated execution cost for the function, in units of cpu_operator_cost. If the function returns a set, this is the cost per returned row. If the cost is not specified, 1 unit is assumed for C-language and internal functions, and 100 units for functions in all other languages.</p></dd><dt>Returns Set</dt><dd><p class="normaltermcontinued2">Indicates that the function will return a set of items, rather than a single item.</p></dd><dt>Estimated Rows</dt><dd><p class="normaltermcontinued2">Specifies a positive number giving the estimated number of rows that the planner should expect the function to return. This is only allowed when the function is declared to return a set. The default assumption is 1000 rows.</p></dd><dt>Security Of Definer</dt><dd><p class="normaltermcontinued2">Specifies the privilege that is to be used to execute the function. Select one of the following:</p><dl><dt>Security Invoker</dt><dd><p class="normaltermcontinued3">Indicates that the function is to be executed with the privileges of the user that calls it. That is the default.</p></dd><dt>Security Definer</dt><dd><p class="normaltermcontinued3">Specifies that the function is to be executed with the privileges of the user that created it.</p></dd></dl></dd><dt>Parallel</dt><dd><p class="normaltermcontinued2">Specifies the mode of execution of the function. Select one of the following:</p><dl><dt>Unsafe</dt><dd><p class="normaltermcontinued3"> Indicates that the function can not be executed in parallel mode. The presence of such a function in an SQL statement forces a serial execution plan. This is the default.</p></dd><dt>Restricted</dt><dd><p class="normaltermcontinued3">Indicates that the function can be executed in parallel mode, but the execution is restricted to parallel group leader.</p></dd><dt>Safe</dt><dd><p class="normaltermcontinued3">Indicates that the function is safe to run in parallel mode without restriction.</p></dd></dl></dd><dt>Object File</dt><dd><p class="normaltermcontinued2">Specifies the name of the file containing the dynamically loadable object for C language functions.</p></dd><dt>Link Symbol</dt><dd><p class="normaltermcontinued2">Specifies the function's link symbol, that is, the name of the function in the C language source code. If the link symbol is omitted, it is assumed to be the same as the name of the SQL function being defined.</p></dd><dt>Function Type</dt><dd><p class="normaltermcontinued2">Specifies the type of the function. Select one of the following:</p><dl><dt>Scalar</dt><dd><p class="normaltermcontinued3">Indicates that the default return type will be used and all the parameters will be emitted.</p></dd><dt>Table</dt><dd><p class="normaltermcontinued3">Specifies that the return definition of the function is a table, using this option will only emit IN parameters in the arguments.</p></dd><dt>Trigger</dt><dd><p class="normaltermcontinued3">Specifies that the defined function is a trigger function.</p></dd></dl></dd><dt>Return Data Type</dt><dd><p class="normaltermcontinued2">Specifies the return data type of the function.</p></dd><dt>Return Table Definition</dt><dd><p class="normaltermcontinued2">Specify the referenced table.</p></dd></dl></li>
+            <li class="listnumber">Click the Parameters tab and click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_3" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a parameter. Then, work with the following options:
+<dl><dt>Parameters</dt><dd><p class="normaltermcontinued2">Specifies the name of the parameter.</p></dd><dt>Physical Data Type</dt><dd><p class="normaltermcontinued2">Specifies the return data type of the parameter.</p></dd><dt>Type</dt><dd><p class="normaltermcontinued2">Specifies the type of the parameter. Select one out of IN, OUT, IN OUT, and VARIADIC.</p></dd><dt>Default Value</dt><dd><p class="normaltermcontinued2">Specifies an expression to be used as default value if the parameter is not specified. The expression has to be coercible to the argument type of the parameter. Only input (including IN OUT) parameters can have a default value.</p></dd></dl></li>
+            <li class="listnumber">Click the Variables tab and click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017_4" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a variable. Then, work with the following options:
+<dl><dt>Variables</dt><dd><p class="normaltermcontinued2">Specifies the name of the variable.</p></dd><dt>Variable Value</dt><dd><p class="normaltermcontinued2">Specifies an expression to be used as the variable value.</p></dd></dl></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Define the code type in the <a class="z--jumptemplate" href="Define_the_Code_to_a_Stored_Procedure_Function_or_Trigger.html" id="h1714" target="_self" title="Define the Code to a Stored Procedure, Function, or Trigger">Code</a> tab.
+</li><li class="listbullet2">View expanded code in the <a class="z--jumptemplate" href="expanded_tab_options.html" id="h1827" target="_self" title="Expanded Tab">Expanded</a> tab.
+</li><li class="listbullet2">Define function permissions using the <a class="z--jumptemplate" href="Add_Permissions_in_a_Property_Editor.html" id="h7904" target="_self" title="Add Permissions in a Property Editor" alt="Add Permissions in a Property Editor">Permission</a> tab.
+</li><li class="listbullet2">Specify the order of DDL generation in the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab.
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a> </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The function is defined and the PostgreSQL Function Editor closes.</p></li>
+        </ol>
+        <p class="bodytext">For more information, refer to PostgreSQL documentation.</p>
+        <p>
+        </p>
+    </body>
+</html>

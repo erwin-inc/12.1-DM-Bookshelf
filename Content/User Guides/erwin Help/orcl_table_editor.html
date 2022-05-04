@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><title>Oracle Table Editor</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2226" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('2226')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t2226">Defining Oracle Tables</h1>
+        <p class="bodytext">The following properties are applicable to an Oracle Table object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Section</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tablebodytext">Physical Name</p>
+                </td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Owner</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the database owner</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Type</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table type</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p><b>Object Table</b>: Indicates that the table stores object instances of a particular type</p>
+                    <p><b>XML Table</b>: Indicates that the table maps the result of an XQuery evaluation into relational rows and columns</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Only</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table should only appear in the physical model</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Data Vault 2.0 Component Type</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the Data Vault component type to represent the table in the Data Vault modeling notation</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a SQL statement for the table is generated during forward engineering</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td rowspan="25" style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tablebodytext">General</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="6">Table Options</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Table Options</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table is duplicated, global temporary, or sharded</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Duplicated</b>: Indicates that the table is duplicated on all shards</p>
+                    <p><b>Global Temporary</b>: Indicates that the table is temporary and its definition is visible to all authorized sessions</p>
+                    <p><b>Sharded</b>: Indicates that the table is part of a sharded database</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Commit Type</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table is truncated after each commit or when the session ends</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when Table Options is set to Global Temporary</p>
+                    <p><b>Delete</b>: Indicates that the table is truncated when every time a transaction is committed</p>
+                    <p><b>Preserve</b>: Indicates that the table is truncated only when the session ends</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Sharing Type</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how table data is shared</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Data</b>: Indicates that a data link shares the table and the data stays same for all the containers in the application container</p>
+                    <p><b>Extended Data</b>: Indicates that an extended data link shares the table and the data in the application root is the same for all containers in the application container</p>
+                    <p><b>Metadata</b>: Indicates that a metadata link shares the table’s metadata and the data is unique to each container</p>
+                    <p><b>None</b>: Indicates that the table is not shared</p>
+                    <p class="noteAlt">If the Table Type is set to Object Table or XML Table, you can set the Sharing Type only to Metadata or None.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Collation</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default collation of the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">For Exchange With Table</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an existing partitioned table to which the current table's structure should match</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Parent Table</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the parent table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Storage Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Data Storage Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the storage characteristics of the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Regular</b>: Indicates that the table is a regular table</p>
+                    <p><b>Organized</b>: Indicates that the table rows use an organization type to store rows</p>
+                    <p><b>Cluster</b>: Indicates that the table is a part of the specified cluster</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Data Organization&#160;Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the organization type for Organized data storage and the order in which the data rows of the table are stored</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when Data Storage Type is set to Organized</p>
+                    <p><b>Heap</b>: Indicates that the table is heap-organized and rows do not follow any specific order</p>
+                    <p><b>Index</b>: Indicates that the table is index-organized and rows are held in an index defined on the primary key</p>
+                    <p><b>External</b>: Indicates that the table is read-only and outside the database</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Deferred Segment</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the point at which the database creates table segments</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Immediate</b>: Indicates that a segment is created along with the table</p>
+                    <p><b>Deferred</b>: Indicates that a segment is created only when the first row of data is inserted into the table</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Cluster</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Oracle Cluster</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the cluster to be used</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Data Storage Type is set to Cluster</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Clustering Columns</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Column</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table columns that correspond to the specified cluster's columns</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Data Storage Type is set to Cluster</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Compression</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Compression</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the compression technique to be used to compress data segments</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Data Storage Type is set to Regular or Organized (and Data Organization Type is set to Heap or left blank)</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="6">Index Organization</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Mapping</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether mapping is required to create a bitmap index</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;" rowspan="6">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to Index</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Percent Threshold</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the space blocked in the index block</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Prefix Compression</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether prefix compression is enabled</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Prefix Compression Value</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the number of prefix columns to compress</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Index Overflow</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the row exceeding the Percent Threshold are placed in a data segment</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Including Column</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the column at which a row is divided into index and overflow parts</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="7">External&#160;Organization</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Access Driver&#160;Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the access driver (API) that is used to read an external table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Reject Limit Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the whether unlimited or specific number of conversion errors are allowed while querying external data before an Oracle Database error is returned and the query is aborted</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</p>
+                    <p><b>Unlimited</b>: Indicates that unlimited conversion errors are allowed</p>
+                    <p><b>Value</b>: Indicates that only a certain number of conversion errors are allowed. The default value is 0.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Reject Limit</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the number of conversion errors allowed</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Oracle Directory</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default directory where an external data sources are stored</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Access Parameter Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the access parameter type for the access driver</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</p>
+                    <p><b>Opaque</b>: Indicates all access parameters for the selected access driver</p>
+                    <p><b>Clob</b>: Indicates that access driver parameters and their values are derived using a subquery</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Access Parameters</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the access driver parameters based on the selected Access Parameter Type</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External.</p>
+                    <p>For Opaque type, it specifies field names corresponding to columns in the table definition.</p>
+                    <p>For Clob, it specifies the subquery for parameter and value derivation</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Location</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the external data source</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to External</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="14">Options</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Sizing Information</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Initial Rows</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the initial number of rows in the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Maximum Rows</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the maximum number of rows that the table can contain</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Growth By Month</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the estimated number of rows that will be added to the table per month</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Row Dependencies</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Enable Row Movement</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the database can move a row</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Parallel</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether parallel operations are supported for the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Parallel</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the degree of parallelism (the number of parallel threads)</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Row Dependencies</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the table uses row-level dependency tracking</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Cache</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Cache</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how data blocks are stored in the buffer cache</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>No Cache</b>: Indicates that the blocks fetched for a table are placed at the least recently used end of the least recently used (LRU) list in the buffer cache when a full table scan is performed</p>
+                    <p><b>Cache</b>: Indicates that the blocks fetched for a table are placed at the most recently used end of the LRU list in the buffer cache when a full table scan is performed</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Result Cache Mode</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the caching mode for results of statements and queries</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Default</b>: Indicates that result caching is not done at the table level</p>
+                    <p><b>Force</b>: Indicates that a query is considered for caching if all the tables in the query have the Result Cache Mode set to Force</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Others</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Indexing</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether indexing is on for the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Read Write</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table, partition, or subpartition is created in the read only or read-write mode</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Read Only</b>: Indicates that the table, partition, or subpartition are created in the read only mode and data updates are not allowed</p>
+                    <p><b>Read Write</b>: Indicates that the table, partition, or subpartition are created in the read-write mode and data updates are allowed</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Row Archival</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether row archival is enabled for the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Flashback Archive</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Flashback Archive</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether historical tracking is enabled on the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Flashback Archive</b>: Indicates that historical tracking is enabled on the table</p>
+                    <p><b>No Flashback Archive</b>: Indicates that historical tracking is disabled on the table</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Archive Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the archive name when Flashback Archive is enabled</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Storage</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Storage</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical storage object for the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Index Overflow Storage</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the overflow storage object for an index-organized table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Data Storage Type is set to Organized and Data Organization Type is set to Index</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="8">Clustering</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Clustering Columns</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Column</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the columns to be included in the clustering column group</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Join Expression</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether join attribute clustering is used</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Join Expression</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the join clause to indicate the joined values from other tables on which attribute clustering is based</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when the Use Join Expression check box is selected</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Cluster</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Clustering By</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the ordering type to be used for clustering</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Linear</b>: Indicates that data is stored according to the order of specified columns</p>
+                    <p><b>Interleaved</b>: Indicates that data is stored using multidimensional technique</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Zonemap</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Clustering Zonemap</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a materialized zonemap of the table should be created</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>With Materialized Zonemap</b>: Indicates that a zonemap should be created</p>
+                    <p><b>Without Materialized Zonemap</b>: Indicates that a materialized zonemap should not be created</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Zonemap Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the materialized zonemap</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Specify a zonemap name if Clustering Zonemap is set to With Materialized Zonemap.</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Clustering When</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">On Load</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether attribute clustering is done during direct-path inserts using an INSERT or a MERGE operation</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">On Data Movement</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether attribute clustering is done while data movement operations, such as data redefinition or table partition maintenance</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">Object Properties</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Table of Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Of Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type object for an object table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Table Type is set to Object Table</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Oid Properties</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Object Identifier</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the technique used for the object table's object identifier</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when Table Type is set to Object Table and Of Type is set to a type object</p>
+                    <p><b>System Generated</b>: Indicates that the object identifier is system-generated. This is the default.</p>
+                    <p><b>Primary Key</b>: Indicates that the object identifier is based on the primary key of the table</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Oid Index</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the index for the object identifier column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when  Table Type is set to Object Table, Of Type is set to a type object, and Object Identifier is set to System Generated</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Substitution</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Substitutable</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether row objects corresponding to subtypes can be inserted into the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when  Table Type is set to Object Table and Of Type is set to a type object</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="7">XML Properties</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">XML Schema URL</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the URL of a registered XMLSchema</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Table Type is set to XML Table</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">XML Schema Specifications</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">XML Element</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the XML&#160;element name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Table Type is set to XML Table</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Varrays Storage Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the storage mechanism for varrays in the XML&#160;table or column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when Table Type is set to XML Table</p>
+                    <p><b>Lobs</b>: Indicates that varrays are stored as LOBs</p>
+                    <p><b>Table</b>: Indicates that varrays are stored as tables</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NonSchema</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether non schema-based documents can be stored in the XMLType column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Table Type is set to XML Table</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">AnySchema</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether any schema-based document can be stored in the XMLType column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when Table Type is set to XML Table</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">XML&#160;Storage</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">XML Storage Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the storage format for XMLType data</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when Table Type is set to XML Table</p>
+                    <p><b>Object Relational</b>: Indicates that XMLType data is stored in object-relational columns and that indexes can be defined on these columns to improve query performance</p>
+                    <p><b>Binary XML</b>: Indicates that XMLType data is stored in compact binary XML&#160;format</p>
+                    <p><b>Lobs</b>: Indicates that XMLType data is stored in a CLOB column and that the original content is preserved</p>
+                    <p><b>Tables</b>: Indicates that XMLType data is stored in table columns</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">XML LOB Storage</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the LOB storage object name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when XML Storage Type is set to Binary XML</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="6">Supplemental Logging</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Supplemental Log Group</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a supplemental log group name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Log Always</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the log group is an unconditional log group and all columns are included in the log group</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">Supplemental ID&#160;Key</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">ALL</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies that all the fixed-length maximum size columns of a row are included in the redo log</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Primary Key</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">For all tables with primary keys, specifies whether all columns of the primary key are included in the redo log whenever an update is made</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Unique</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">For all tables with a unique key or a bitmap index, whenever unique key or bitmap index columns are modified, specifies whether all other columns belonging to the unique key or bitmap index are included in the redo log</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Foreign Key</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">For all tables with foreign keys, whenever foreign key columns are modified, specifies whether all other columns belonging to the foreign key are included in the redo log</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="9">Validation</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Validation</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a validation name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Validation&#160;Rule</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the validation rule to be used</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="6">&lt;<i>Validation Rule</i>&gt; Constraint State</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Constraint State</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether constraint enforcement conditions are specified</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Deferrable</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether constraint checking is deferred till the end of transactions using the SET CONSTRAINT statement</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Immediate/Deferred</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default constraint checking behavior for deferrrable constraints</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Immediate</b>: Indicates that the constraint should be checked at the end of each SQL statement</p>
+                    <p><b>Deferred</b>: Indicates that the constraint is checked at the end of transactions</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Rely</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a constraint in the NOVALIDATE mode is considered for query rewrite</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Rely</b>: Indicates that the constraint is considered for query rewrite</p>
+                    <p><b>NoRely</b>: Indicates that the constraint is not considered for query rewrite</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Validate</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether all the new and old data complies with the constraint</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Validate</b>: Indicates that all the data complies with the constraint when it is enabled</p>
+                    <p><b>NoValidate</b>: Indicates that all DML operations on the constrained data comply with the constraint. However, it does not ensure whether existing data complies with the constraint.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Enabled</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the constraint is enabled on table data</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Exception&#160;Table</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table that collects the rowids of all rows that violate the constraint</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Materialized View Log</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Materialized View Log</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a materialized view log is created on the table</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">SQL Statement</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the SQL statement to create a materialized view log</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+        </table>
+        <p class="bodytext">The Oracle Table Editor also includes the following tabs</p>
+        <dl>
+            <dt><a class="z--jumptemplate" href="Define_the_Style_for_a_Table_or_View.html" id="h1089" target="_self" title="Define the Style for a Table, View, or Column">Style</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you work with style sheets, which are used to format the font and other graphical themes used in the display of the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="Specify_Image_Properties.html" id="h1297" target="_self" title="Specify Image Properties">Icon</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you specify the icon style to use for the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="orcl_editors_synonym_tab.html" id="h1828" target="_self" title="Oracle Editors - Synonym Tab">Alias</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you add, modify, or delete synonyms for the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="orcl_editors_comment_tab.html" id="h966" target="_self" title="Oracle Editors Comment Tab">Comment</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you enter any comments that you want to associate with the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you specify the order of DDL generation.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where used</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you view where the table is used in the model.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="orcl_editors_udp_tab.html" id="h968" target="_self" title="Oracle Editors UDP Tab">UDP</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you enter user-defined property values for the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="orcl_editors_history_tab.html" id="h2203" target="_self" title="Oracle Editors - History Tab">History</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you view the history information for the table.</p>
+            </dd>
+            <dt><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a>
+            </dt>
+            <dd>
+                <p class="normaltermcontinued">Lets you view or edit user notes. </p>
+            </dd>
+        </dl>
+    </body>
+</html>

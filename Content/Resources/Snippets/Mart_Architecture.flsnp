@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">The following diagram shows the new architecture:</p>
+        <p class="picture">
+            <img align="bottom" alt="Mart architecture new" border="0" height="399" hspace="0" id="f439" src="../Images/443.png" vspace="0" width="387" />
+        </p>
+        <p class="bodytext">The new architecture has the following benefits:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Separate logical and physical users: In the previous versions, Mart (or Model Manager) users required database level privileges to access the Mart functionality. The Mart database administrators added or deleted users in the Mart database. This approach is changed now. The logical users are separated from physical users, so Mart Administrators can create the Mart users without creating the corresponding database users.
+</li>
+            <li class="listbullet">Authentication through Active Directory services: Earlier, if you wanted to provide access to a user group, you added each user individually. Now, because of the new architecture, you can use the Active Directory services and can provide access to the group. Anyone who is part of the group gets access. 
+</li>
+            <li class="listbullet">Mart administration outside erwin Data Modeler: In the previous versions, Mart Administrators used erwin Data Modeler for administrative activities such as managing permissions. This required non-modelers to know how to use erwin Data Modeler. In the new architecture, the administration component is built on a separate layer on top of erwin Data Modeler and is hosted on a web server. Mart Administrators can access erwin Web Admin from any computer and can perform administrative activities through a web console.
+</li>
+        </ul>
+    </body>
+</html>

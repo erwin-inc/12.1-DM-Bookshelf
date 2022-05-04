@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Db2 z/OS Permissions Object Level</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2986" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3067');highlight('2986')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2986">Define Db2 z/OS Permissions at Object Level</h5>
+        <p class="bodytext">You can use the Db2 for z/OS Permission Editor to add and define permissions at the object level in a Db2 physical model.</p>
+        <p class="proceduresubheading">To define Db2 permissions at the object level</p>
+        <ol class="listnumber">
+            <li class="listnumber">Expand an object (such as a table, schema, tablespace, stored procedure, or a user ID) in the <span class="uielement">Model Explorer</span>, right-click and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for z/OS Editor for the object opens.</p></li>
+            <li class="listnumber">Select the <span class="uielement">Permission</span> tab and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a permission. Use the <em class="italic">Enter filter text</em> text box to filter a large list of permissions to locate the one you want to work with.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the permission.</p></dd><dt>With Grant</dt><dd><p class="normaltermcontinued2">Specifies whether or not the user who has permission on this object can grant this permission to another user. </p></dd></dl></li>
+            <li class="listnumber">Work with the following options on the <span class="uielement">Permissions</span> tab:
+<dl><dt>Permissions</dt><dd><p class="normaltermcontinued2">Specifies the permissions you want to grant. The list of permissions displayed on this tab depends on the object you have selected. Select a check box to select the corresponding permission. </p></dd></dl><p class="listcontinue">Use the <span class="uielement">Select All</span> (icon), <span class="uielement">Select None</span> (icon), or <span class="uielement">Toggle Selection</span> (icon) check boxes to select all the listed permissions, clear all selected permissions, and toggle permissions.</p></li>
+            <li class="listnumber">Work with the following options on the <span class="uielement">Grant/Revoke</span> tab:
+<dl><dt>Users and Groups</dt><dd><p class="normaltermcontinued2">Specifies whether or not the permission is granted to the user. Select the check box to grant the permission.</p></dd><dt>Database Roles</dt><dd><p class="normaltermcontinued2">Specifies whether or not the permission is granted to the database role. Select the check box to grant the permission.</p></dd></dl><p class="listcontinue">Use the <span class="uielement">User Editor</span> (icon) and the <span class="uielement">Database Role Editor</span> (icon) to select grant or revoke permissions.</p></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for z/OS Permission Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

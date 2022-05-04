@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">If you are upgrading a Mart from any earlier release of r9 series to the latest release, upgrade the Mart Server application. </p>
+        <p class="noteAlt">Refer to the Install a Mart or Upgrade a Mart topic before proceeding.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">If you are running MartServer as a Windows service, stop the service and delete it. 
+<p class="noteAlt">If you upgrade the Mart Server application without stopping the service, it may not start after you complete the upgrade process. </p></li>
+            <li class="listnumber">Download and run the EDMMS12.0.exe file from the erwin Support site. 
+<p class="listcontinue">The erwin Mart Server <MadCap:variable name="General.VersionNumber" /> Install Shield Wizard dialog appears.</p></li>
+            <li class="listnumber">Follow the wizard.
+<p class="listcontinue">The Mart Server application is upgraded.</p></li>
+            <li class="listnumber">Restart your computer.
+</li>
+        </ol>
+    </body>
+</html>

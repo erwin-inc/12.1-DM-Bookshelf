@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>%ForEachAtt()</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4875" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4867');expand2('4868');highlight('4875')}">
+        <p class="bodytext">
+        </p>
+        <h4 class="heading4" id="t4875">%ForEachAtt()</h4>
+        <p class="bodytext">Expands the macro code for each of the attributes in an entity, and columns in a table.</p>
+        <p class="noteAlt">This macro is a legacy macro. Depending on your model type, we recommend that you use either %ForEachColumn() or %ForEachAttribute() for new models. For information on legacy macros and their related new macros, see the topic "Legacy Macros."</p>
+        <p class="bodytext"><strong>Syntax</strong>
+        </p>
+        <p class="bodytext">%ForEachAtt() {</p>
+        <p class="bodytext">    &lt;macro code&gt;</p>
+        <p class="bodytext">}</p>
+        <p class="bodytext"><strong>Syntax Example</strong>
+        </p>
+        <p class="bodytext">%ForEachAtt() {</p>
+        <p class="bodytext">    %attFieldName</p>
+        <p class="bodytext">}</p>
+        <p class="bodytext"><strong>Expansion</strong>
+        </p>
+        <p class="bodytext">renting_customer</p>
+        <p class="bodytext">master_number</p>
+        <p class="bodytext">movie_copy_number</p>
+        <p class="bodytext">rental_record_date</p>
+        <p class="bodytext">rental_date</p>
+        <p class="bodytext">due_date</p>
+        <p class="bodytext">rental_status</p>
+        <p class="bodytext">payment_amount</p>
+        <p class="bodytext">payment_date</p>
+        <p class="bodytext">payment_status</p>
+        <p class="bodytext">overdue_charge</p>
+        <p class="bodytext"><strong>Full Syntax</strong>
+        </p>
+        <p class="bodytext">%ForEachAtt(&lt;table&gt;,&lt;separator&gt;,&lt;sort order&gt;) { </p>
+        <p class="bodytext">    &lt;macro code&gt; </p>
+        <p class="bodytext">}</p>
+        <p class="bodytext"><strong>Full Syntax Example</strong>
+        </p>
+        <p class="bodytext">%ForEachAtt(Parent, ", ") {%AttFieldName}</p>
+        <p class="bodytext"><strong>Expansion</strong>
+        </p>
+        <p class="bodytext">master_number, movie_copy_number, general_condition</p>
+        <p class="bodytext"><strong>Usage</strong>
+        </p>
+        <p class="bodytext">Classified as an Entity macro that you can use to create a Trigger Override in the Table Trigger Editor (Triggers dialog). An entity must be in scope; &lt;table&gt; can be Parent or Child (if a relationship is in scope), or empty. &lt;separator&gt; is optional.</p>
+        <p>
+        </p>
+    </body>
+</html>

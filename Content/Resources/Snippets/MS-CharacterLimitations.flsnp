@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p class="bodytext">There is a limitation on the number of characters you can use for certain Mart Server parameters. The following table gives information about such parameters:</p>
+        <table border="1" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;border: 1px solid #010101;">
+            <!--<table class="tableintopic" width="1256" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">-->
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" valign="middle" width="628">
+                    <p class="tableheading">Parameter/Field</p>
+                </td>
+                <td style="border: 1px solid #010101;" valign="middle" width="628">
+                    <p class="tableheading">Character Limitation</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Username</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">450 (Server User, Windows User, and Group)</p>
+                    <p class="tablebodytext">Also, refer to the special character limitations below.</p>
+                    <p class="noteAltTable">For international OS (I18N), if the character set being used is Double byte Character Set (DBCS) then the character limit is 225.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Password</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">130</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Email Address</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">130</p>
+                    <p class="tablebodytext">Also, refer to the special character limitations below.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Profile Name</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">130</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Profile Description</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">2000</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Catalog Name</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">255</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Catalog Description</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">4000</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">Apart from the above character limits, for the User Name and Email Address parameters, following are the permitted special characters:</p>
+        <table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border: 1px solid #010101;margin-left: 0;margin-right: auto;">
+            <col />
+            <col />
+            <!--<table class="tableintopic" width="1256" cellpadding="2" cellspacing="0" border="1" style="border-collapse: collapse;border: 1px solid #010101;">-->
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" valign="middle" width="628">
+                    <p class="tableheading">Parameter/Field</p>
+                </td>
+                <td style="border: 1px solid #010101;" valign="middle" width="628">
+                    <p class="tableheading">Permitted Special Characters</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Username</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext"><b>Server User</b>: . (dot), _ (underscore), - (hyphen), ~ (tilde), ^ (carat), # (hash), ! (exclamation mark)</p>
+                    <p class="tablebodytext"><b>Windows User</b>: \ (backslash), . (dot), _ (underscore), - (hyphen), ~ (tilde), ^ (carat), # (hash), ! (exclamation mark)</p>
+                    <p class="tablebodytext"><b>Group User</b>: . (dot), _ (underscore), - (hyphen), ~ (tilde), ^ (carat), # (hash), ! (exclamation mark), + (plus), % (percent)</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext">Email Address</p>
+                </td>
+                <td style="border: 1px solid #010101;" width="628">
+                    <p class="tablebodytext"><b>Server User</b>: @ (at sign), - (hyphen), % (percent), _ (underscore), + (plus), . (dot), ~ (tilde), ^ (carat), # (hash), ! (exclamation mark)</p>
+                    <p class="tablebodytext"><b>Windows User</b>: @ (at sign), % (percent), + (plus), . (dot), _ (underscore), - (hyphen), ~ (tilde), ^ (carat), # (hash), ! (exclamation mark)</p>
+                    <p class="tablebodytext"><b>Group User</b>: . (dot), - (hyphen)</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

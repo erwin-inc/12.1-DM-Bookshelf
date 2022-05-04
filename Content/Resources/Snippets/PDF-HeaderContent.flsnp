@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table style="width: 100%;border-collapse: collapse;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #fb4f14;margin-left: auto;margin-right: 0;">
+            <col />
+            <tbody>
+                <tr>
+                    <td><MadCap:variable name="System.Title" class="pdfheaderfooter" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

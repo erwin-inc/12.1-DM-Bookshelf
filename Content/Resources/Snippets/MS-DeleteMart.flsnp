@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">Go to <b>Application Menu</b> &gt; <b>Delete</b>.<br />A warning message appears.<br /><img src="../Images/Delete-Mart.png" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;width: 399px;height: 256px;" /></p>
+            </li>
+            <li class="listnumber">Type YES and click <b>Submit</b>.
+<p class="listcontinue">Mart is deleted and the Initialize Mart page for your database appears.</p></li>
+        </ol>
+    </body>
+</html>

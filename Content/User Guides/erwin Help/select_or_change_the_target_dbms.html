@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Select or Change the Target DBMS</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8006" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3180');highlight('8006')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t8006">Select or Change the Target DBMS</h4>
+        <p class="bodytext">While working with a physical model, you can select or change the target DBMS for the physical schema, and define default settings to use when you generate the schema. </p>
+        <p class="proceduresubheading"><strong>To select or change the target DBMS</strong>
+        </p>
+        <ol class="listnumber">
+            <li class="listnumber">Open your physical model and do one of the following:<ul><li class="listnumber">On the ribbon, go to the <b>Actions</b> tab and click <b>Target Database</b>.
+</li><li class="listnumber"><p class="listcontinue">On the status bar, click the database name.</p></li></ul><p>The erwin Data Modeler -- Target Server dialog box opens.<br /></p></li>
+            <li class="listnumber">Set the DBMS and its corresponding properties using the following options:
+<dl><dt>Database</dt><p class="normaltermcontinued2">Lets you specify the target DBMS.</p><ul><li><p class="normaltermcontinued2">If your current database is a relational database and you select a NoSQL database, the Auto Denormalization check box appears.<br /><img src="../../Resources/Images/TargetServerScreen-MongoDB.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 544px;height: 255px;" /><br /></p></li><li><p class="normaltermcontinued2">If your current database is a NoSQL database and you select a relational database, the Auto Normalization, Relationships, and Single Subitem check boxes appear.<br /><img src="../../Resources/Images/TargetDBNoSQLRelational.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 545px;height: 250px;" /></p></li></ul><p class="normaltermcontinued2">Use these options to migrate your models from relational to NoSQL and vice versa. However, this migration method overwrites the existing model once you save it. Hence, it is recommended that you keep a backup of your original model.<br /></p></dl><p class="normaltermcontinued"><strong>&lt;Database&gt; Version</strong></p><p class="normaltermcontinued2">Lets you specify the software version for the DBMS you selected for the Target DBMS option.</p><dl><dt>Trigger Delimiter</dt><dd><p class="normaltermcontinued2">Lets you specify the delimiter for trigger code that you want to appear in the schema DDL for Db2 LUW and Db2/zOS.</p></dd><dt>Trigger Directory</dt><dd><p class="normaltermcontinued2">Lets you specify the location of create, write, and delete triggers for Progress DBMS.</p></dd><dt><strong>Decimal Point Indicator</strong></dt><dd><p class="normaltermcontinued2">Lets you select the decimal point indicator to use when you add a column to a Db2/zOS model.</p></dd><dt><strong>Library</strong> </dt><dd><p class="normaltermcontinued2">Lets you specify the connection library (dblib or ctlib) to use to connect to your SAP ASE and SAP IQ database.</p></dd><dt>Default &lt;Database&gt; Datatype</dt><dd><p class="normaltermcontinued2">Lets you specify the default datatype to use when you add a column to the model.</p></dd><dt>Default Non-Key Null Option or Null Option</dt><dd><p class="normaltermcontinued2">Specifies the default null option that you want to assign when you add a column to the model. The default null options include: </p><p class="list3">NOT NULL - This option is available for all target databases.</p><p class="list3">NULL - This option is only available for SAP ASE, MySQL, SQL Server, and Oracle.</p></dd></dl></li>
+            <li class="listnumber">Click <b>OK</b>.
+<p class="listcontinue">Your selections are saved and the erwin Data Modeler -- Target Server dialog box closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Generic_Open_Database_Connectivity.html" target="_self">Generic Open Database Connectivity (ODBC)</a>
+        </p>
+        <p class="relateditem"><a href="specify_default_trigger_directories_for_progress.html" target="_self">Specify Default Trigger Directories for Progress</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

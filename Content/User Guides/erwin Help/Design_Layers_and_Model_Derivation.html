@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Design Layers and Model Derivation</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4641" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4676');highlight('4641')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4641">Design Layers and Model Derivation</h3>
+        <p class="bodytext">The application development process typically begins with a logical model that captures business requirements. Then, to transition from one design layer to another, for example, from a logical model to a physical model, you derive a new model from an existing model. In this scenario, each model represents a design layer in the application development process.</p>
+        <p class="bodytext">You can derive any model type from an existing model. Some of the more common derive scenarios are:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Multiple physical models from a logical model. You can use a single conceptual logical model to derive a physical model for different target servers.
+</li>
+            <li class="listbullet">A generic physical model from a logical model. A generic physical model is a model in which you specify DBMS-independent design decisions, and indicate ODBC/generic as the target server. 
+</li>
+            <li class="listbullet">A physical model from a logical model. Your new physical model can be customized for a target database and version, and to enforce naming standards.
+</li>
+            <li class="listbullet">A logical model from a logical model. For example, you can derive a new logical model based on a subject area from the source model.
+</li>
+        </ul>
+        <p class="bodytext">The model that you open before you use the wizard is known as the source model. The source model contains all model objects that you can include in a derived, or target model. When you derive a model, the source and target models are automatically linked. Because the objects in the source and target model are linked, you can change the objects in either model, and at any time, synchronize the two models. This allows you to maintain your design layer hierarchy.</p>
+        <p class="bodytext">If you choose to maintain historical information, the history for each entity, attribute, table, and column in a derived model is maintained. You can select a model object from a derived model and review the model objects used to create the object.</p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="how_to_derive_a_model.html" target="_self">How to Derive a Model</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Use the following guidelines to determine if you must install a Mart or upgrade a Mart:</p>
+        <p class="bodytext">If you are new to erwin Data Modeler and have purchased the current version of Workgroup Edition, then install the current version of the Mart. Use the How to Install and Configure a Mart procedure that is appropriate for your Mart database. </p>
+        <p class="noteAlt">If you have an existing Mart and the version is r7.3 through r8.2.9, install the current version Mart. Use the How to Install and Configure a Mart procedure that is appropriate for your Mart database. After installing the Mart, use the Upgrade Mart utility to upgrade the Mart models from r7.3 through r8.2.9 to the current version.</p>
+    </body>
+</html>

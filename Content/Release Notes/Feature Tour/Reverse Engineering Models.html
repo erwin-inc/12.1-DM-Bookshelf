@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2709" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');highlight('2709')}">
+        <h1 class="heading1" id="t2709">
+            <MadCap:concept term="Feature Tour" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Reverse Engineering Models</h1>
+        <p class="bodytext">You can create a data model from a database or a script using the Reverse Engineering process.</p>
+        <p class="bodytext">This topic walks you through the steps to reverse engineer an ArangoDB model. For detailed description of reverse engineering options, refer to the <a href="../../User Guides/erwin Help/Reverse_Engineering_Options_ArangoDB.html">Reverse Engineering Options</a> topic.</p>
+        <p class="bodytext">To reverse engineer a model:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">In erwin Data Modeler (DM), click <b>Actions</b> &gt; <b>Reverse Engineer</b>.<br />The New Model screen appears.<br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Logical/Physical</b> and set <b>Database</b> to ArangoDB.</p>
+            </li>
+            <p>
+                <img src="../../Resources/Images/NewModel-ArangoDB.png" style="width: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 270px;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Reverse Engineer Process Wizard appears.<br /><img src="../../Resources/Images/REMongoDB.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 544px;height: 430px;" /><br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click one of the following options:</p>
+                <ul>
+                    <li>
+                        <p class="bodytext"><b>Database</b>: Use this option to reverse engineer a model from your database.</p>
+                        <p class="noteAlt">If you click <b>Database</b>, continue to step 5.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Script File</b>: Use this option to reverse engineer a model from a script. Selecting this option enables the File field. Click <b>Browse</b> and select the necessary JSON file.<br /><p class="noteAlt">If you click <b>Script File</b>, see step 13 below and ensure that Document Count or Document % is not set to zero (0).</p></p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">Click <b>Next</b>.
+</li>
+            <p class="bodytext">The Connection tab appears.</p>
+            <p class="bodytext">
+                <img src="../../Resources/Images/REConnection-ArangoDB.png" style="width: 500px;height: 500px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="bodytext">Use this tab to connect to the database from which you want to reverse engineer the model. You can connect to the database directly. The following table explains the connection parameters:</p>
+            <MadCap:snippetBlock src="../../Resources/Snippets/ArangoDB_ConnectionParameters.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Connect</b>.<br />On successful connection, your connection information is displayed under Recent Connections.</p>
+                <p class="bodytext">
+                    <img src="../../Resources/Images/Recent-Connections-ArangoDB.png" style="height: 150px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 520px;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                    <br />
+                </p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.</p>
+                <p>The Databases tab appears. It displays a list of available databases.<br /><img src="../../Resources/Images/REDatabases-ArangoDB.png" style="height: 409px;width: 544px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br /></p>
+            </li>
+            <li class="listnumber">
+                Under <b>Available Databases</b>, select the databases that you want to reverse engineer. Then, click <img src="../../Resources/Images/SelectArrow.png" />.<p><img src="../../Resources/Images/REAvailableDatabases-ArangoDB.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 350px;height: 270px;" /></p><p>This moves the selected databases under Selected Databases.<br /><img src="../../Resources/Images/RESelectedDatabases-ArangoDB.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 430px;height: 160px;" /></p></li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Collections tab appears. It displays a list of available collections in the databases that you selected in step 8.<br /><img src="../../Resources/Images/RECollections-ArangoDB.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="height: 421px;width: 544px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Use the following options:<br /></p>
+                <ul>
+                    <li>
+                        <p class="bodytext"><b>Document Count</b>/<b>Document (%)</b>: Use this option to specify the number of documents or percentage of total records that the newly generated model schema would contain.</p>
+                    </li>
+                    <li>
+                        <p class="bodytext"><b>Sampling</b>: Use the Sequence sampling method to sample records in the selected collections. Sampling enables you to retrieve right estimates for accurate collection schema generation.</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="listnumber">
+                <p>Under <b>Available Collections</b>, select the collections that you want to reverse engineer. Then, click <img src="../../Resources/Images/SelectArrow.png" />.<br /><img src="../../Resources/Images/REAvailableCollections-ArangoDB.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 350px;height: 330px;" /><br />This moves the selected collections under Selected Collections.<br /><img src="../../Resources/Images/RESelectedCollections-ArangoDB.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 430px;height: 200px;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Option Set tab appears. It displays the default option set. You can either use the default  or a custom option set.<br /><img src="../../Resources/Images/REOptionsSet-ArangoDB.png" style="width: 544px;height: 421px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>Next</b>.<br />The Detailed Options tab appears. Set up appropriate options based on your requirement.<br /><img src="../../Resources/Images/REDetailedOptions-ArangoDB.png" style="width: 544px;height: 421px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <b>OK</b>.</p>
+                <p class="bodytext">The reverse engineering process starts.<br /><img src="../../Resources/Images/ReverseEngineeringProcess-ArangoDB.png" style="width: 445px;height: 346px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br />Once the process is complete, based on your selections, a schema is generated and a model is created.<br /><img src="../../Resources/Images/RESchemaGenerated-ArangoDB.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 550px;height: 260px;" /></p>
+                <p class="bodytext">ArangoDb has two types of collections:</p>
+                <ul class="listbullet">
+                    <li class="listbullet"><b>Documents</b>: Documents contain data or schema. They are represented by rectangles in the ER diagram. For example, in the above model, <b>female</b> is a document.</li>
+                    <li class="listbullet"><b>Edges</b>: Edges contain relationship between document data points. They are represented by curved rectangles in the ER diagram. For example, in the above model, imdb_edge_movies is an edge.</li>
+                </ul>
+                <p>The ER diagram displays the relationship between two documents via edges. For example, in the following model  Characters is rated to Locations via the GOT_Character_Resides edge.</p>
+                <p>
+                    <img src="../../Resources/Images/Relations-DocumentEdgeArangoDB.png" style="width: 300px;height: 300px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

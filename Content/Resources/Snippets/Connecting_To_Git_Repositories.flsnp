@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p class="bodytext">A Git repository may be hosted on GitLab or GitHub. For a successful connection to these repositories, following are the prerequisites:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><b>erwin Mart</b>: Ensure that,
+				<ul class="listbullet"><li class="listbullet"> erwin DM is connected to erwin Mart Server.
+For more information on connecting erwin DM to Mart Server, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</li><li class="listbullet">the DM Connect for Git permission is enabled for your Mart user profile at the root, Mart level. By default, this permission is enabled for the out-of-box Admin profile.</li><p><img src="../Images/DM-ConnectforGit-Permission.png" style="width: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 350px;" /></p><p class="noteAlt">This permission is not available for other out-of-box profiles.</p></ul></li>
+            <li class="listbullet"><![CDATA[
+                ]]><b>Personal Access Token</b>: Ensure that you have created the required personal access token. To know how to create personal access tokens for GitLab, refer to the GitLab documentation. To know how to create personal access tokens for GitHub, refer to the GitHub documentation.</li>
+        </ul>
+        <p class="bodytext">Once, these prerequisites are in place, to connect Git repositories to erwin DM, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the ribbon, click <b>Mart</b>.</li>
+            <p class="bodytext">
+                <img src="../Images/Mart-ConnectToGit.png" style="width: 550px;height: 100px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+            </p>
+            <li class="listnumber">Click <b>Git Connections</b>.</li>
+            <p class="bodytext">The Git Connection Manager page appears.</p>
+            <p class="bodytext">
+                <img src="../Images/Connect-To-Git.png" style="width: 400px;height: 450px;border-left-style: solid;border-left-width: 0px;border-left-color: ;border-right-style: solid;border-right-width: 0px;border-right-color: ;border-top-style: solid;border-top-width: 0px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: ;" />
+            </p>
+            <li class="listnumber">Enter appropriate values in the fields. Refer to the following table for field descriptions.</li>
+            <table style="mc-table-style: url('../TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle" cellspacing="0">
+                <col class="TableStyle-TableStyle-Column-Column1">
+                </col>
+                <col class="TableStyle-TableStyle-Column-Column1">
+                </col>
+                <col class="TableStyle-TableStyle-Column-Column1">
+                </col>
+                <thead>
+                    <tr class="TableStyle-TableStyle-Head-Header1">
+                        <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Field Name</th>
+                        <th class="TableStyle-TableStyle-HeadE-Column1-Header1">Description</th>
+                        <th class="TableStyle-TableStyle-HeadD-Column1-Header1">Additional Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection Name</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a user defined connection name</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p>For example, ConnectGit.</p>
+                            <p>You can create multiple connections one for each Git repository.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Git Hosting Service</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the Git hosting service to which erwin DM connects</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p><b>GitLab</b>: Indicates that erwin DM connects to GitLab</p>
+                            <p><b>GitHub</b>: Indicates that erwin DM connects to GitHub</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">User Name</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the username to log on to the Git hosting service</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">This field is not mandatory.</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Password</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the password to log on to the Git hosting service</td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">This field is not mandatory.</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Personal Access Token</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the personal access token to connect to the Git hosting service </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Git Repository</td>
+                        <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            Specifies the URL of a Git repository where you want to push the forward engineering script
+                        </td>
+                        <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p class="bodytext">For example, https://gitlab.com/d4215/GitLabIntegration or</p>
+                            <p class="bodytext">https://github.com/poly-inc/poly-main-MCL</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-TableStyle-Body-Body1">
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">Git Branch</td>
+                        <td class="TableStyle-TableStyle-BodyB-Column1-Body1">Specifies the branch that is used to push the forward engineering script</td>
+                        <td class="TableStyle-TableStyle-BodyA-Column1-Body1">For example, main.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <li class="listnumber">Click <b>Save</b>.</li>
+            <p class="bodytext">On successful connection, the connection name appears under Recent Connections. </p>
+            <p class="bodytext">
+                <img src="../Images/Connect-To-Git-ConnectionParam.png" style="width: 400px;height: 450px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+            </p>
+        </ol>
+        <h2 class="heading2">Troubleshooting</h2>
+        <p class="bodytext">While setting up your connection, you may encounter the following error:</p>
+        <p class="bodytext">
+            <img src="../Images/Error-Git-Connection.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 100px;width: 270px;" />
+        </p>
+        <p class="bodytext">To resolve this error, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On your system, go to <b>Control Panel</b> &gt; <b>Internet Options</b> &gt; <b>Advance Tab</b>.</li>
+            <li class="listnumber">Clear the <b>Warn if changing between secure and not secure mode</b> check box.</li>
+            <p>
+                <img src="../Images/GitToubleshooting-ClearCheckbox.png" style="width: 300px;height: 400px;" />
+            </p>
+            <li class="listnumber">Click <b>OK</b>.</li>
+            <li class="listnumber">Close and reopen erwin DM.</li>
+            <li class="listnumber">Connect erwin DM to Mart Server.</li>
+            <li class="listnumber">Launch the Git Connection Manager page and configure the Git connection.</li>
+        </ol>
+    </body>
+</html>

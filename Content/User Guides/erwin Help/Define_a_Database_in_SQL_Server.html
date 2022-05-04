@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Database in SQL Server</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7843" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');highlight('7843')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7843">Define a Database in SQL Server</h6>
+        <p class="bodytext">Use the SQL Server Database Editor for the following tasks:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Create databases
+</li>
+            <li class="listbullet">Define the files that are used to store an existing database
+</li>
+            <li class="listbullet">Create a database snapshot
+</li>
+            <li class="listbullet">Attach a database from the detached files of an existing detached database
+</li>
+            <li class="listbullet">Define database properties in a SQL Server physical model
+</li>
+        </ul>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Model, Target Server, Databases to open the SQL Server Database Editor.
+</li>
+            <li class="listnumber">Click New to create a database or select an existing database name.
+</li>
+            <li class="listnumber">Work with the following options:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the database.</p></dd><dt>Database Type</dt><dd><p class="normaltermcontinued2">Specifies the type of database. Select one of the following options:</p><dl><dt>Primary</dt><dd><p class="normaltermcontinued3">Indicates that the specified files are primary files. If you do not specify Primary, the first file specified in the File Groups is considered as the primary file.</p></dd><dt>Mirror</dt><dd><p class="normaltermcontinued3">Indicates that you want to use the database for mirroring.</p></dd><dt>Snapshot</dt><dd><p class="normaltermcontinued3">Indicates that you want to create a snapshot of the database. A snapshot is typically created on a mirror database.</p></dd></dl></dd><dt>Containment</dt><dd><p class="normaltermcontinued2">Specifies the containment status of the database. Select from one of the following options:</p><dl><dt>None</dt><dd><p class="normaltermcontinued3">Indicates that the database is a noncontained database.</p></dd><dt>Partial</dt><dd><p class="normaltermcontinued3">Indicates that the database is a partially contained database.</p></dd></dl></dd><dt>Compatibility Level</dt><dd><p class="normaltermcontinued2">Specifies the SQL Server version compatibility.</p></dd><dt>Collation</dt><dd><p class="normaltermcontinued2">Specifies the default collation for the database. If collation is not specified, the default collation of SQL Server is assigned. Enter either a Windows collation name or a SQL collation name. </p></dd></dl><p class="noteAlt">If you have specified the FOR ATTACH or FOR ATTACH_REBUILD clauses, you cannot specify a collation name. In addition, you cannot specify a collation name on a database snapshot.</p><dl><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL statements during forward engineering.</p></dd></dl></li>
+            <li class="listnumber">Click the General tab and work with the following options: 
+<dl><dt>SQL Options</dt><dd><dl><dt>ANSI Nulls Default</dt><dd><p class="normaltermcontinued3">Specifies the default value of a column, alias data type, or CLR user-defined type for which nullability is not explicitly defined. Columns that are defined with constraints follow those constraints regardless of this setting. A TRUE value specifies that the default is NULL and FALSE is NOT NULL.</p></dd><dt>ANSI Nulls</dt><dd><p class="normaltermcontinued3">Specifies how comparisons to a NULL value are handled. A TRUE value specifies UNKNOWN comparison and a FALSE value specifies TRUE comparison.</p></dd><dt>ANSI Padding</dt><dd><p class="normaltermcontinued3">Specifies whether strings are padded to the same length before a conversion or insertion to a varchar or nvarchar data type. </p></dd><dt>ANSI Warnings</dt><dd><p class="normaltermcontinued3">Specifies whether errors or warnings are issued when conditions such as divide-by-zero occur or NULL values appear in aggregate functions. A TRUE value specifies that an error or warning is issued. A FALSE value specifies that no warnings are issued.</p></dd><dt>Arithmetic Abort</dt><dd><p class="normaltermcontinued3">Specifies whether a query ends when an overflow or divide-by-zero error occurs. A TRUE value specifies that the query ends. A FALSE value specifies that a warning message is issued and querying continues.</p></dd><dt>Concatenate Nulls Yields Nulls</dt><dd><p class="normaltermcontinued3">Specifies whether you want to consider concatenation results as nulls or empty strings. TRUE specifies that the concatenation operation returns NULL. FALSE specifies that the concatenation operation treats NULL as an empty string and returns the parameter that was not NULL.</p></dd><dt>Numeric Round Abort</dt><dd><p class="normaltermcontinued3">Specifies whether an error is generated when a loss of precision occurs in an expression.</p></dd><dt>Quoted Identifier</dt><dd><p class="normaltermcontinued3">Specifies whether double quotation marks can be used to enclose delimited characters. A TRUE value specifies that double quotation marks are permitted. A FALSE value specifies that double quotation marks are not permitted. </p></dd></dl></dd></dl><p class="noteAlt">SQL Server also allows square brackets as delimiters for identifiers, regardless of the value of this property. </p><dl><dt>Recursive Triggers</dt><dd><p class="normaltermcontinued3">Specifies whether the recursive firing of AFTER triggers is allowed.</p></dd></dl><dl><dt>Snapshot Options</dt><dd><dl><dt>Database</dt><dd><p class="normaltermcontinued3">Specifies the snapshot database. This option is available if you have selected Snapshot for Database Type.</p></dd></dl></dd><dt>FileStream Access Options</dt><dd><dl><dt>Non Transacted Access</dt><dd><p class="normaltermcontinued3">Specifies the level of access that is ranted to Filestream data for nontransactional processes. Select from the following options:</p></dd></dl><ul class="listbullet3"><li class="listbullet3">OFF: Indicates that access to nontransactional processes is disabled.
+</li><li class="listbullet3">READONLY: Indicates that the nontransactional processes can read the FILESTREAM data in this database.
+</li><li class="listbullet3">FULL: Indicates that full access to FILESTREAM FileTables is enabled for nontransactional processes.
+</li></ul><dl><dt>Directory Name</dt><dd><p class="normaltermcontinued3">Specifies the directory name for the Filestream data. Enter a name that is unique among all the Database_Directory names in the SQL Server instance. Set this option before creating a FileTable in this database.</p></dd></dl></dd><dt>Database Options</dt><dd><dl><dt>State</dt><dd><p class="normaltermcontinued3">Specifies the database state. The state can have one of the following values:</p></dd></dl><ul class="listbullet3"><li class="listbullet3">Online: Indicates that the database is available for access.
+</li><li class="listbullet3">Offline: Indicates that the database is not available for access. 
+</li><li class="listbullet3">Emergency: Indicates that the database is in single user mode. Typically, users change the database and set to Emergency to indicate that the database is repaired or restored.
+</li></ul><dl><dt>DB Chaining</dt><dd><p class="normaltermcontinued3">Specifies whether the database can participate in a cross-database ownership chain. </p></dd><dt>Trustworthy</dt><dd><p class="normaltermcontinued3">Specifies if the instance of SQL Server trusts the database and its contents. This property also determines whether views, user-defined functions, or stored procedures can access the database when they use an impersonation context.</p></dd><dt>Allow Snapshot Isolation</dt><dd><p class="normaltermcontinued3">Specifies whether database transactions can specify the SNAPSHOT transaction isolation level. A TRUE value specifies that transactions can specify the SNAPSHOT transaction isolation level. A FALSE value specifies that transactions cannot specify the SNAPSHOT transaction isolation level.</p></dd><dt>Read Committed Snapshot</dt><dd><p class="normaltermcontinued3">Specifies whether database transactions that specify the READ COMMITTED isolation level use row versioning instead of locking. A TRUE value specifies that the READ COMMITTED isolation level use row versioning. A FALSE value specifies that the READ COMMITTED isolation level use locking.</p></dd><dt>Vardecimal Storage Format</dt><dd><p class="normaltermcontinued3">Specifies whether to enable the database for vardecimal storage format. A TRUE value specifies that vardecimal storage format is permitted. This means that a table can store decimal and numeric columns using a variable-length storage format. A FALSE value specifies that vardecimal storage format is not permitted.</p></dd><dt>Is Encrypted</dt><dd><p class="normaltermcontinued3">Specifies whether encryption is enabled or disabled at the database level.</p></dd><dt>Is Change Data Capture Enabled</dt><dd><p class="normaltermcontinued3">Specifies whether you want to record activities such as insert, update, and delete.</p></dd><dt>Delayed Durability</dt><dd></dd></dl><p class="normaltermcontinued2">Specifies the way in which Delayed Durability should be implemented at the database level. Available SQL Server 2014 onward.</p></dd><dt>Change Tracking Options</dt><dd><dl><dt>Change Tracking</dt><dd><p class="normaltermcontinued3">Specifies whether to enable or disable tracking changes for the database.</p></dd><dt>Auto Cleanup</dt><dd><p class="normaltermcontinued3">Specifies whether to enable automatic removal of the change tracking information from the database. An ENABLE value specifies that change tracking information is automatically removed from the database after the specified retention period. A DISABLE value specifies that change tracking information is not removed from the database.</p></dd><dt>Change Retention Period Type</dt><dd><p class="normaltermcontinued3">Specifies the timeframe for which you want to maintain tracking information. You can select minutes, hours, or days from the drop-down list.</p></dd><dt>Change Retention Period</dt><dd><p class="normaltermcontinued3">Specifies a number that corresponds to the timeframe you select in the Change Retention Period Type drop-down list. For example, you can enter 10 in this field, and then specify whether 10 is minutes, hours, or days in Change Retention Period Type.</p></dd></dl></dd></dl><p class="noteAlt">The Change Tracking Options section is displayed if Containment is not selected, or is None. The External Access Options section is displayed if Containment is Partial. Change tracking information is removed only if the Auto Cleanup option is enabled.</p><dl><dt>External Access Options</dt><dd><dl><dt>Nested Triggers</dt><dd><p class="normaltermcontinued3">Specifies whether you want to include cascading triggers. </p></dd><dt>Transform Noise Words</dt><dd><p class="normaltermcontinued3">Specifies whether you want to suppress error messages if noise words or stopwords cause a Boolean operation on a full-text query to fail.</p></dd><dt>Two Digit Year Cutoff</dt><dd><p class="normaltermcontinued3">Specifies an integer that represents the cutoff year to interpret two-digit years as four-digit years.</p></dd><dt>Default Fulltext Language</dt><dd><p class="normaltermcontinued3">Specifies the default language that you want to use for full-text indexed columns. Enter the local id, language, or the language alias.</p></dd><dt>Default Language</dt><dd><p class="normaltermcontinued3">Specifies the default language that you want to use for all newly created logins. Language can be specified by providing the local id (lcid), the language name, or the language alias.</p></dd></dl></dd></dl></li>
+            <li class="listnumber">Click the Files tab to define the filegroups and log files for the database.
+</li>
+            <li class="listnumber">Click the Options tab to define more options for the database.
+</li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab to define the permissions for the database.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a> </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The database is defined and the SQL Server Database Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

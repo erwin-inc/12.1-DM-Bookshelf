@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">If you are a DBA or a system administrator responsible for installing the software on a Microsoft SQL Server database management system, perform the following tasks:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Use a graphical user interface (GUI) tool, ISQL (all versions), SQL Administrator, or Enterprise Manager to create the Mart database. If a GUI tool is not available, you can use ISQL to type in the appropriate commands manually.
+<p class="listcontinue">Your database<strong></strong> should meet the following criteria:</p><ul class="listbullet2"><li class="listbullet2">The initial size of the database file should be set to 60 MB.
+</li><li class="listbullet2">The initial size of the transaction log file should be set to 50 MB.
+</li><li class="listbullet2">Set the maximum file size to unrestricted file growth for both files (recommended, but not required).
+</li><li class="listbullet2">Increase the Set Auto grow file by 10 percent (recommended, but not required).
+</li></ul><p class="listcontinue">The new database is <em class="italic">owned</em> by the user who created it.</p><p class="listcontinue">Set the Truncate Log on Checkpoint option and have the server generate checkpoints frequently. By selecting this option, the log is emptied periodically and should not fill up and cause rollbacks.</p><p class="noteAlt">For best performance ensure that separate devices are used to store the data and the transaction log.</p></li>
+            <li class="listnumber">Verify tempdb size.
+<p class="listcontinue">Significant temporary space is required for installation and use. The temporary segments need at least 16 MB of available space. You should also increase available space as the number of concurrent users increase.</p></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define_a_DB2_LUW_Table</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2921" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3072');highlight('2921')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2921">Define a Db2 LUW Table</h5>
+        <p class="bodytext">Use the Db2 for LUW Table Editor to create a table, or work with table properties for an existing Db2 LUW table.</p>
+        <p class="proceduresubheading">To define a Db2 LUW table</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a <span class="uielement">Table</span> in the <span class="uielement">Model Explorer</span> and select <span class="uielement">Properties</span>.
+<p class="listcontinue">The Db2 for LUW Table Editor opens.</p></li>
+            <li class="listnumber">Select a table and work with the following options:
+<p class="noteAlt">Click <span class="uielement">New</span> <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a table. Use the <em class="italic">Enter filter text</em> text box to filter a large list of names to locate the one you want to work with.</p><dl><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name for the table.</p></dd><dt>Schema</dt><dd><p class="normaltermcontinued2">Specifies the schema associated with the selected table. Select a schema from the drop-down list.</p></dd><dt>Db2/LUW Type</dt><dd><p class="normaltermcontinued2">Specifies the table type. Select a value from the drop-down list: Permanent, Global Temporary, Nickname. The tabs on this dialog are enabled or disabled based on this value.</p></dd><dt>Use Replace Syntax</dt><dd><p class="normaltermcontinued2">Specifies whether or not to use the CREATE or REPLACE command instead of the CREATE command during Forward Engineering. You can select this check box only if you selected the Db2 LUW Type as Nickname.</p><p class="noteAlt">This field applies to Db2 for LUW version 9.7 only.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">In a Logical/Physical model, specifies that the table does not appear on the logical side as an entity.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Specifies whether or not to generate DDL for this object during Forward Engineering.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Dimensional</span> tab and work with the following options:
+<p class="noteAlt">This tab is displayed when you select the Is Dimensional check box on the General tab of the Model Editor.</p><dl><dt>Dimensional Notation Rule Type</dt><dd><p class="normaltermcontinued2">Specifies the role assigned to the table for dimensional modeling. Select from the drop-down list; valid values are Fact, Dimension, and Outrigger.</p></dd><dt>Dimensional Notation Update Type</dt><dd><p class="normaltermcontinued2">Specifies the type of update you want to use to update dimensional notations. Select from the drop-down list; valid values are Fixed, Type 1, Type 2, and Type 3.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Data Movement Rule</span> tab and work with the following options:
+<p class="noteAlt">This tab is displayed when you select the Data Movement check box on the General tab of the Model Editor.</p><dl><dt>Refresh Rule</dt><dd></dd><dt>Append Rule</dt><dd></dd><dt>Backup Rule</dt><dd></dd><dt>Recovery Rule</dt><dd></dd><dt>Archive Rule</dt><dd></dd><dt>Purge Rule</dt><dd></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">General </span>tab and work with the following options:
+<dl><dt>Value Compression (check box)</dt><dd><p class="normaltermcontinued2">Specifies whether or not the row format is used. For more information about value compression, see the IBM Db2 documentation.</p></dd><dt>Compress Yes</dt><dd>Specifies whether data compression is applicable to table rows. Select from the drop-down list; valid values are Adaptive and Static.</dd><dt>Is Table Row Compressed</dt><dd><p class="normaltermcontinued2">Specifies whether or not data compression applies to the rows of the table. Select from the drop-down list; valid values are True and False.</p></dd><dt>Data Capture </dt><dd><p class="normaltermcontinued2">Indicates whether extra information for data replication is written to the log. Valid Values: None, Changes, Changes (including long vars).</p></dd><dt>Has Restriction On Drop</dt><dd><p class="normaltermcontinued2">Indicates that the selected table has the restriction on drop. Clear the check box to remove the restriction on dropping the table and the tablespace that contain the table.</p></dd><dt>Is Logging Index Builds </dt><dd><p class="normaltermcontinued2">Specifies whether or not to log any index build operations on this table. Select from the drop-down list; valid values are True and False.</p></dd><dt>Not Logged Initially (check box)</dt><dd><p class="normaltermcontinued2">Specifies whether or not to log changes made by an Insert, Delete, Update, Create Index, Drop Index, or Alter Table operation in the same unit of work in which the table is created.</p></dd><dt>Lock Type</dt><dd><p class="normaltermcontinued2">Specifies the granularity of locks used when the table is accessed. Valid Values are row, table, and block insert.</p></dd><dt>Coded Character Set Identifier (CCSID)</dt><dd><p class="normaltermcontinued2">Specifies the encoding scheme for string data stored in the table. Valid Values are ASCII and UNICODE.</p></dd><dt>Security Policy </dt><dd><p class="normaltermcontinued2">Specifies the security policy to associate with the selected table. Select a security policy from the drop-down list.</p></dd><dt>Has Volatile Cardinality</dt><dd><p class="normaltermcontinued2">Specifies that index access should be used on this table wherever possible for SQL operations. Clear the check box to specify <em class="italic">NOT VOLATILE</em>.</p></dd><dt>Is Appendable</dt><dd><p class="normaltermcontinued2">Specifies that append processing is used for the selected table. Clear the check box to indicate <em class="italic">APPEND NO</em>.</p></dd><dt>Audit Policy</dt><dd><p class="normaltermcontinued2">Specifies the audit policy for the selected table. Select from the drop-down list.</p></dd><dt>Percent Free</dt><dd><p class="normaltermcontinued2">Specifies the percentage of each page that you want to leave as free space.</p></dd><dt>Row Access Control</dt><dd><p class="normaltermcontinued2">Specifies whether row-level access control is activated on the table.</p></dd><dt>Column Access Control</dt><dd><p class="normaltermcontinued2">Specifies whether column-level access control is activated on the table.</p></dd></dl></li>
+            <li class="listnumber">
+                <p>Work with the following fields on the Period Clause tab:</p>
+                <dt>Period System Time</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Defines a period for the table with the name SYSTEM_TIME. Period System Time  datatype needs a pair of NOT NULL TIMESTAMP(12) columns (one defined as Row Begin, one defined as Row End) and one defined as transaction start ID.</p>
+                </dd>
+                <dt>ST Begin Column</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Specifies the period start column. This column must be defined as AS ROW BEGIN in the column properties.</p>
+                </dd>
+                <dt>ST End Column</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Specifies the period end column. This column must be defined as AS ROW END in the column properties.</p>
+                </dd>
+                <dt>Period Business Time</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Defines an application period with the name BUSINESS_TIME.</p>
+                </dd>
+                <dt>BT Begin Column</dt>
+                <dd>
+                    <p>Identifies the column that records the beginning of the period of time in which a row is valid. The column must not be defined with a GENERATED clause.</p>
+                </dd>
+                <dt>BT End Column</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Identifies the column that records the end of the period of time in which a row is valid. The column must not be defined with a GENERATED clause.</p>
+                </dd>
+                <dt>History Table</dt>
+                <dd>
+                    <p class="normaltermcontinued2">Specifies or lets you create a history table and is enabled only when you set Period System Time. A history table is associated with a system-period temporal table and is used to store the historical versions of the rows from the associated system-period temporal table.</p>
+                    <p class="normaltermcontinued2">For example, consider the following scenario:</p>
+                    <ul>
+                        <li>A table, E1 has a Period System Time set.</li>
+                        <li>A table, E2 is created as a history table and is set as E1's history table.</li>
+                    </ul>
+                    <p class="normaltermcontinued2">Then, E2 stores a replica of E1 along with its versions. Therefore, a dependency is created between tables E1 and E2.</p>
+                </dd>
+            </li>
+            <li class="listnumber">On the <span class="uielement">Organize By</span> tab, select an organization type (Dimension, Key Sequence, Row, Column, and InsertTime), and then work with the following options:
+<p class="list2"><strong>For the Key Sequence Organization Type:</strong></p><dl><dt>Is Key Sequence Overflow Allowed</dt><dd><p class="normaltermcontinued3">Specifies whether or not the range-clustered table allows rows with key values that are outside of the defined range of values.</p></dd><dt>Key Sequence Percent Free</dt><dd><p class="normaltermcontinued3">Specifies the percentage of each page that you want to leave as free space.</p></dd><dt>Column</dt><dd><p class="normaltermcontinued3">Specifies a column of the table that is included in the unique key that determines the sequence of the range-clustered table.</p></dd><dt>Sequence Starting Value</dt><dd><p class="normaltermcontinued3">Specifies the constant value at the lower end of the range for column-name.</p></dd><dt>Sequence Ending Value</dt><dd><p class="normaltermcontinued3">Specifies the constant value at the higher end of the range for column-name.</p><p class="list2"><strong>For the Dimension Organization Type:</strong></p></dd><dt>Dimension Groups</dt><dd><p class="normaltermcontinued3">Specifies a dimension for each column or group of columns that you have used to cluster the table data.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Tablespace</span> tab and work with the following options:
+<dl><dt>Table Tablespaces</dt><dd><p class="normaltermcontinued2">Specifies the name of the tablespace where you want to store the table.</p></dd><dt>Cycle Tablespaces</dt><dd><p class="normaltermcontinued2">When selected, specifies that if the number of data partitions with no explicit tablespace exceeds the number of specified table spaces, the table spaces are assigned to data partitions in a round-robin fashion.</p></dd><dt>Long In Tablespaces</dt><dd><p class="normaltermcontinued2">Specifies the tablespace where you want to store the values of long column.</p></dd><dt>Index In Tablespace</dt><dd><p class="normaltermcontinued2">Specifies the tablespace where you want any indexes on a nonpartitioned table or nonpartitioned indexes on a partitioned table to be created.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Distribution</span> tab and work with the following options:
+<dl><dt>Distribute By</dt><dd><p class="normaltermcontinued2">Specifies the default distribution method across database partitions.</p></dd><dt>Distribution Key Columns</dt><dd><p class="normaltermcontinued2">Specifies the columns on which you want to use the distribution method.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Partition</span> tab and work with the following options:
+<dl><dt>Partition Columns</dt><dd><p class="normaltermcontinued2">Specifies the columns of the selected table that participate in the partition and whether nulls compare high or low.</p></dd><dt>Partition Elements</dt><dd><p class="normaltermcontinued2">Specifies the data range for the partition and the tablespace where you want to store the rows of the table in the specified data range.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Table Options</span> tab.
+<p class="listcontinue">You use the Table Options tab to identify the remote base table. Work with the following options</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the table option. </p></dd><dt>Value</dt><dd><p class="normaltermcontinued2">Specifies the setting for the table option.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Validation</span> tab and work with the following options:
+<dl><dt>Validation</dt><dd><p class="normaltermcontinued2">Specifies the validation check constraint that you want to enforce on the selected table.</p></dd><dt>Is Enforced</dt><dd><p class="normaltermcontinued2">Specifies whether validation is enforced on the selected table.</p></dd><dt>Is Trusted</dt><dd><p>Specifies whether the data can be trusted to conform to check constraints.</p></dd><dt>Is Query Optimization Disabled</dt><dd><p class="normaltermcontinued2">Specifies whether using the constraint for query optimization when appropriate is disabled.</p></dd><dt>Validation Rule</dt><dd><p class="normaltermcontinued2">Specifies the validation rule for the selected validation.</p></dd></dl></li>
+            <li class="listnumber">Work with the other tabs in the editor to access additional design features, for example:
+<ul class="listbullet2"><li class="listbullet2">Specify an alias for the current table on the <span class="uielement"><a class="z--jumptemplate" href="Define_a_DB2_LUW_Alias.html" id="h2923" target="_self" title="Define a DB2 LUW Alias">Alias</a></span> tab.
+</li><li class="listbullet2">Associate permissions with the selected table on the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab.
+</li><li class="listbullet2">Specify volumetrics options on the <span class="uielement"><a class="z--jumptemplate" href="Specify_Volumetric_Information_for_a_Table.html" id="h2925" target="_self" title="Specify Volumetric Information for a Table">Volumetrics</a></span> tab.
+</li><li class="listbullet2">Preview the forward engineering script for a table in the <span class="uielement"><a class="" href="Preview_the_FE_Script.html" id="h8129" target="_self" title="Preview the FE Script">SQL</a></span> tab.
+</li><li class="listbullet2">Specify a theme for the table on the <a class="z--jumptemplate" href="Define_the_Style_for_a_Table_or_View.html" id="h1089" target="_self" title="Define the Style for a Table, View, or Column">Style</a> tab.
+</li><li class="listbullet2">Select an icon for the current table on the <a class="z--jumptemplate" href="Specify_Image_Properties.html" id="h1297" target="_self" title="Specify Image Properties">Icon</a> tab.
+</li><li class="listbullet2">Change the object creation order on the <a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> tab.
+</li></ul></li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Where Used</span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">History </span>tab to view the history information for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click <span class="uielement">Close</span>.
+<p class="listcontinue">The Db2 for LUW Table Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More Information:</p>
+        <p class="relateditem"><a href="Define_a_DB2_LUW_Tablespace.html" target="_self">Define a Db2 LUW Tablespace</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_LUW_Table_Partition_Elements.html" target="_self">Define Db2 LUW Table Partition Elements</a>
+        </p>
+        <p class="relateditem"><a href="Specify_Volumetric_Information_for_a_Table.html" target="_self">Specify Volumetric Information for a Table</a>
+        </p>
+        <p class="relateditem"><a href="Define_DB2_LUW_Permissions_DB_Level.html" target="_self">Define Db2 LUW Permissions at Database Level</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

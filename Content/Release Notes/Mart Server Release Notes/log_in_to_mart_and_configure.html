@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Log In to erwin Mart Administrator and Configure Settings</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8230" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/28/2018T12:51-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6853');expand2('463');highlight('8230')}">
+        <p class="bodytext">
+            <MadCap:concept term="Release Notes" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t8230">Log In to erwin Mart Administrator and Configure Settings</h3>
+        <MadCap:snippetBlock src="../../Resources/Snippets/LogIn_erwinMart_Admin_Configure_Settings.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <h3 class="heading3"><a name="Use"></a>Use a Pluggable Database</h3>
+        <p class="bodytext">This information applies to Oracle 12c.</p>
+        <p class="bodytext">You can use the pluggable database concept of Oracle 12c and create multiple Marts of the same Mart release in a single Oracle instance. For example, you can create two pluggable databases erwin_test and erwin_production in an Oracle global database erwin. You can configure these databases with the Mart Server one after the other and connect to one of them at a time.</p>
+        <p class="proceduresubheading">Follow these steps to use multiple pluggable databases:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Create multiple pluggable databases, for example, erwin_test and erwin_production.
+</li>
+            <li class="listnumber">Install erwin Mart Server for the first pluggable database, for example, erwin_test.
+</li>
+            <li class="listnumber">Initialize the Mart for the first pluggable database, erwin_test. For more information on how to initialize the Mart, see the Initialize an Oracle Mart topic.
+</li>
+            <li class="listnumber">Log in to the Mart and create the models that you want to store in the test Mart.
+</li>
+            <li class="listnumber">To use the second pluggable database, follow these steps:
+<ol class="listalpha"><li class="listalpha">Stop the Mart server or the Mart server service. 
+</li><li class="listalpha">Repeat Steps 1, 2, and 3 for the second pluggable database, erwin_production.
+</li><li class="listalpha">Start the Mart server or the Mart server service.
+</li><li class="listalpha">Log in to the Mart and create the models as required.
+</li></ol></li>
+        </ol>
+        <p />
+    </body>
+</html>

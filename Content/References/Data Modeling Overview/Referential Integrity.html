@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Referential Integrity</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3753" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T20:00-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3737');highlight('3753')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t3753">Referential Integrity</h2>
+        <p class="bodytext">Because a relational database relies on data values to implement relationships, the integrity of the data in the key fields is important. For example, if you change a value in a primary key column of a parent table, reflect this change in each child table where the column appears as a foreign key. The action that is applied to the foreign key value varies depending on the rules defined by the business.</p>
+        <p class="bodytext">For example, a business that manages multiple projects might track its employees and projects in a model similar to the one in the following example. The business has determined that the relationship between PROJECT and PROJECT EMPLOYEE is identifying, so the primary key of PROJECT becomes a part of the primary key of PROJECT EMPLOYEE.</p>
+        <p class="picture">
+            <img align="bottom" alt="Reference integrity example" border="0" height="349" hspace="0" id="f3754" src="../../Resources/Images/3754.gif" vspace="0" width="503" />
+        </p>
+        <p class="bodytext">The business also decides that for each instance of PROJECT EMPLOYEE there is exactly one instance of PROJECT, which indicates PROJECT EMPLOYEE is existence-dependent on PROJECT.</p>
+        <p class="bodytext">What would happen if you were to delete an instance of PROJECT? If the business does not want to track instances in PROJECT EMPLOYEE if PROJECT is deleted, delete all instances of PROJECT EMPLOYEE that inherited part of their key from the deleted PROJECT.</p>
+        <p class="bodytext">The rule that specifies the action taken when a parent key is deleted is known as <em class="italic">referential integrity</em>. The referential integrity option chosen for this action in this relationship is <em class="italic">Cascade</em>. Each time an instance of PROJECT is deleted, this <em class="italic">Delete</em> cascades to the PROJECT EMPLOYEE table. The Delete action also deletes all related instances in PROJECT EMPLOYEE. </p>
+        <p class="bodytext">Available actions for referential integrity include the following:</p>
+        <dl>
+            <dt>Cascade</dt>
+            <dd>
+                <p class="normaltermcontinued">If an instance in the parent entity is deleted, each related instance in the child entity must also be deleted.</p>
+            </dd>
+            <dt>Restrict</dt>
+            <dd>
+                <p class="normaltermcontinued">Deletion of an instance in the parent entity is prohibited if the following is true:</p>
+                <ul class="listbullet2">
+                    <li class="listbullet2">One or more related instances in the child entity exist.
+</li>
+                    <li class="listbullet2">Deletion of an instance in the child entity is prohibited if there is a related instance in the parent entity.
+</li>
+                </ul>
+            </dd>
+            <dt>Set Null</dt>
+            <dd>
+                <p class="normaltermcontinued">If an instance in the parent entity is deleted, the foreign key attributes in each related instance in the child entity are set to NULL.</p>
+            </dd>
+            <dt>Set Default</dt>
+            <dd>
+                <p class="normaltermcontinued">If an instance in the parent entity is deleted, the foreign key attributes in each related instance in the child entity are set to the specified default value.</p>
+            </dd>
+            <dt>&lt;None&gt;</dt>
+            <dd>
+                <p class="normaltermcontinued">No referential integrity action is required. Not every action must have a referential integrity rule associated with it. For example, a business may decide that referential integrity is not required when deleting an instance in a child entity. This business rule is valid where the cardinality is zero, one to zero, or one or more, because instances in the child entity can exist even if there are no related instances in the parent entity.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">Although referential integrity is not a formal part of the IDEF1X or IE languages, it does capture business rules that indicate how the completed database works. Referential integrity is a critical part of data modeling and provides a method for both capture and display of referential integrity rules.</p>
+        <p class="bodytext">Once referential integrity is defined, the facilitator or analyst tests the referential integrity rules defined by the business users. The facilitator or analyst asks questions or works through different scenarios that show the results of the business decision. When the requirements are defined and fully understood, specific referential integrity actions, such as <em class="italic">Restrict</em> or <em class="italic">Cascade</em> can be recommended.</p>
+        <p>
+        </p>
+    </body>
+</html>

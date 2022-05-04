@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <table style="width: 100%;border-top-style: solid;border-top-width: 2px;border-top-color: #fb4f14;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #fb4f14;border-collapse: separate;margin-left: auto;margin-right: 0;">
+            <col style="width: 1261px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="text-align: right;border-right-style: solid;border-right-width: 2px;border-right-color: #fb4f14;"><MadCap:variable name="PDF-GuideName-Variables.GuideName" class="pdfheaderfooter" />
+                    </td>
+                    <td style="text-align: right;"><MadCap:variable name="System.PageNumber" class="pdfheaderfooter" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

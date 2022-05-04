@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>ISCPropertyBag Interface</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6076" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');expand2('6070');expand2('6071');highlight('6076')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t6076">ISCPropertyBag Interface</h4>
+        <p class="bodytext">The following table contains information on the <em class="italic">ISCPropertyBag</em> interface:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="192">
+                    <p class="tableheading">Signature</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="176">
+                    <p class="tableheading">Description</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="256">
+                    <p class="tableheading">Valid Arguments</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td width="192">
+                    <p class="tablebodytext">long Count()</p>
+                </td>
+                <td width="176">
+                    <p class="tablebodytext">Returns the number of properties</p>
+                </td>
+                <td width="256">
+                    <p class="tablebodytext">None</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="192">
+                    <p class="tablebodytext">VARIANT Value(VARIANT Property)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="176">
+                    <p class="tablebodytext">Retrieves the indicated property in the bag</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="256">
+                    <p class="tablebodytext">Property:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_BSTR � Name of property. Value of the property with the given name in the property bag.
+</li>
+                        <li class="tablelistbullet">VT_I4 � Zero-based property index. Value of the property with the given index in the property bag. 
+</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="192">
+                    <p class="tablebodytext">BSTR Name(long</p>
+                    <p class="tablebodytext">PropertyIdx)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="176">
+                    <p class="tablebodytext">Retrieves the indicated property name with the given index. Range of indices is from 0 to size-1.</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="256">
+                    <p class="tablebodytext">None</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">Example 3</p>
+        <p class="bodytext">The following example illustrates how to use the API as an add-in tool to iterate through the open models using C++. The example uses the <em class="italic">Application</em> object created in Example 1:</p><pre xml:space="preserve">
+void IteratePersistenceUnits(ISCApplicationPtr &amp; scAppPtr)
+{   
+    ISCPersistenceUnitCollectionPtr scPUnitColPtr;
+    scPUnitColPtr = scAppPtr-&gt;GetPersistenceUnits();
+    
+    ISCPersistenceUnitPtr scPUnit = 0;
+    long lCnt = scPUnitColPtr-&gt;GetCount();
+    
+    for(long i = 0; i &lt; lCnt; i++)
+    {   
+        scPUnit = scPUnitColPtr-&gt;GetItem(i);
+        CString csName = scPUnit-&gt;GetName();   // name of model
+        ISCPropertyBagPtr scPropBag = scPUnit-&gt;GetPropertyBag("Locator;Active  Model");
+        long index = 0;
+        CComVariant vPathName = scPropBag-&gt;GetValue(ColeVariant(index));  // full
+        //path of model       
+        index = 1;
+        CComVariant cActiveModel = scPropBag-&gt;GetValue(COleVariant(index)); // true if active model
+        // …
+    }
+}
+</pre>
+        <p class="bodytext">The following example illustrates how to use the API as an add-in tool to iterate through the open models using Visual Basic .NET. The example uses the <em class="italic">Application</em> object created in Example 1:</p><pre xml:space="preserve">
+Public Sub IteratePersistenceUnits(ByRef scApp As SCAPI.Application)
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+      Dim scPersistenceUnitCol as SCAPI.PersistenceUnits    
+      
+      Dim numUnits As Integer
+      Dim scPUnit As SCAPI.PersistenceUnit
+      
+      scPersistenceUnitCol = scApp.PersistenceUnits
+      
+      ' Count open units
+      numUnits = scPersistenceUnitCol.Count
+      If (numUnits &gt; 0) Then
+	For Each scPUnit In scPersistenceUnitCol
+	      Dim propBag As SCAPI.PropertyBag
+                  
+	      propBag = scPUnit.PropertyBag("Locator")
+	      Console.WriteLine( persUnit.Name )   ' name of model
+	      Console.WriteLine( propBag.Value(0)) ' full path of model
+	       ' …
+	 Next
+      End If
+End Sub
+</pre>
+        <p>
+        </p>
+    </body>
+</html>

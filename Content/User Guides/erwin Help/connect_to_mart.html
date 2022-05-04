@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Connect to Mart</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8280" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('756');highlight('8280')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t8280">Connect to Mart</h2>
+        <p class="bodytext">If you are using erwin® Data Modeler Workgroup Edition, you connect to the Mart to access models and perform administrative functions. </p>
+        <p class="bodytext">The way erwin® Data Modeler connects to the Mart has been redesigned now. In the previous versions, erwin® Data Modeler would connect to the Mart (database) server directly. Now, erwin® Data Modeler connects to the Mart through a web server. You can connect multiple instances of erwin DM to the Mart from your computer. </p>
+        <p class="noteAlt">From erwin Data Modeler (DM) and erwin Mart Server (MS) 2019R1 onward, while connecting to erwin MS from erwin DM, version validation has been implemented as follows:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Connecting from erwin DM 2019R1 to erwin MS lower than 2019R1 is not allowed.</li>
+            <li class="listnumber">Connecting from erwin DM lower than 2019R1 to erwin MS 2019R1 is not allowed.</li>
+        </ol>
+        <p class="bodytext">At the time of logging on to Mart, you must provide the details about the web server and the Mart.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <img align="bottom" alt="MartConnect" border="0" height="22" hspace="0" id="f8126" src="..\..\Resources\Images\8129.png" vspace="0" width="23" /> on the toolbar, or on the ribbon, click <b>Mart</b> &gt; <b>Connect</b>.
+<p class="listcontinue">The Connect to Mart dialog opens.</p></li>
+            <li class="listnumber">Complete the following fields:
+<dl><dt>Server Name</dt><dd><p class="normaltermcontinued2">Defines the name of the web server where you have installed the Mart.</p></dd><dt>Port</dt><dd><p class="normaltermcontinued2">Specifies the port number to access the web server.</p><p class="normaltermcontinued2"><strong>Default: </strong>18170</p></dd><dt>Use IIS</dt><dd><p class="normaltermcontinued2">Specifies that you want to use the IIS web server to connect to Mart. This check box is enabled only if you have configured IIS. For more information about configuring IIS, see the Implementation Guide (Workgroup Edition).</p><p class="noteAlt">If you use IIS, open server.xml file available at C:\Program Files\erwin\Mart Server r9\Tomcat64\conf and un-comment &lt;Connector port="8009" protocol="AJP/1.3" allowedRequestAttributesPattern=".*" redirectPort="8443" secretRequired="false"/&gt;.</p></dd><dt>IIS Port</dt><dd><p class="normaltermcontinued2">Specify the IIS port number that you want to use. This field is enabled only if you select the Use IIS check box. The default is 80.</p></dd><dt>Use SSL</dt><dd><p class="normaltermcontinued2">Specifies that you want to connect to the Mart through a secured connection. SSL lets you access the Mart through a secured connection. This check box is enabled only if you have configured SSL on your web server. For more information about configuring SSL, see the Implementation Guide (Workgroup Edition).</p><p class="noteAlt">If you use IIS with SSL, open server_ssl.xml file, which is available at C:\Program Files\erwin\Mart Server r9\Tomcat64\conf and un-comment Connector port="8009" protocol="AJP/1.3" allowedRequestAttributesPattern=".*" redirectPort="8443" secretRequired="false"/&gt;.</p></dd><dt>Application Name</dt><dd><p class="normaltermcontinued2">Defines the application name of the Mart that you want to connect to.</p><p class="normaltermcontinued2"><strong>Default: </strong>MartServer</p></dd><dt>Authentication</dt><dd><p class="normaltermcontinued2">Specifies the type of authentication you want to use. You can use a user name that is authenticated either by the Mart Server application or by Windows.</p></dd><dt>User Name</dt><dd><p class="normaltermcontinued2">Defines the name of the user that has access to the Mart. If you are using a Windows-authenticated user name, enter it in the &lt;domain name&gt;/&lt;user name&gt; format.</p><p class="noteAlt">A local Windows user who does not belong to a domain or who is not part of an Active Directory cannot log in to the Mart as a Windows user.  </p></dd><dt>Password</dt><dd><p class="normaltermcontinued2">Defines the password of the user.</p><div class="noteAlt">A password should fulfill the following criteria:<ul><li><p>Contains at least 1 lowercase character
+</p></li><li><p>Contains at least 1 uppercase character</p></li><li><p>Contains at least 1 number
+</p></li><li><p>Is minimum 6 characters in length
+</p></li><li><p>Is maximum 130 characters in length
+</p></li></ul>Apart from the above criteria, special characters are optional.</div><p class="listnote2">Also, if you enter an incorrect password five consecutive times, your account will be locked for five minutes (300 seconds) by default.<br />You can change the time for which the account stays locked as follows:</p></dd></dl><ol class="listnumber2"><li class="listnumber2">From Windows Start menu, click All Programs, erwin, Mart Server <MadCap:variable name="General.VersionNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> , Configure MartServer.
+<p class="listcontinue2">The erwin Mart Configuration dialog appears.</p></li><li class="listnumber2">On the Mart Administrator tab, edit the value of the Account Lockout Duration (Seconds) field to an appropriate value. At the most, you can set it to 30 days (2592000 seconds).
+</li></ol></li>
+            <li class="listnumber">Click Connect.
+<p class="listcontinue">If you have selected Use SSL and the security certificate is installed, you are connected to the Mart. </p><p class="noteAlt">After you connect to the Mart, if you click Connect to Model Manager again, a dialog opens seeking your permission to disconnect from the Mart.</p><p class="listcontinue">If your security certificate is not installed, a message, The certificate authority is invalid or incorrect, appears. You must install the security certificate to proceed.</p><ol class="listalpha"><li class="listalpha">Click OK on the message.
+<p class="listcontinue2">The SSL Certificate Install dialog appears.</p></li><li class="listalpha">Click Install.
+<p class="listcontinue2">The Certificate dialog appears.</p></li><li class="listalpha">Click Install Certificate. 
+<p class="listcontinue2">The Certificate Import Wizard dialog appears.</p></li><li class="listalpha">Click Next.
+</li><li class="listalpha">Click the Place all certificates in the following store option button and click Browse.
+</li><li class="listalpha">In the Select Certificate Store dialog, select Trusted Root Certification Authorities and click OK.
+</li><li class="listalpha">Click Finish.
+<p class="listcontinue2">The security certificate is installed and you are connected to the Mart.</p></li></ol></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="mart_architecture.html" target="_self">Mart Architecture</a>
+        </p>
+        <p class="relateditem"><a href="disconnect_mart.html" target="_self">Disconnect from Mart</a>
+        </p><a name="o383"></a>
+        <h3 class="heading3" id="t383">SSL Security Certificate</h3>
+        <p class="bodytext">If your Mart is SSL security-enabled, you must install the security certificate, when you access the Mart for the first time. The System Administrator creates the security certificate while implementing SSL. Install the certificate on every computer that you use to connect to the Mart.</p>
+        <p class="bodytext">Be sure to install the certificate under the <em class="italic">Trusted Root Certification Authorities</em> certificate store.</p>
+        <p>
+        </p>
+    </body>
+</html>

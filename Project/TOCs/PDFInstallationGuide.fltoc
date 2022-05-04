@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="Installation Guide"
+    Link="/Content/Installation/Installation/erwin_Install/CoverPage.html"
+    BreakType="pageLayout"
+    PageType="title"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)" />
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Installation/Installation/erwin_Install/copyright.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="decimal"
+    PageNumber="(multiple)"
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
+  <TocEntry
+    Title="Contact Customer Support"
+    Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Installation/Installation/erwin_Install/PDF_InstallationTOC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumber="(multiple)"
+    BreakType="chapter"
+    PageType="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl" />
+  <TocEntry
+    Title="erwin_Installation Guide"
+    Link="/Project/TOCs/erwin_Installation Guide.fltoc" />
+</CatapultToc>

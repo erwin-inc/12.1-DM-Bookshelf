@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  conditions="General.PDF">
+  <TocEntry
+    Title="Template Language and Macro Reference"
+    Link="/Content/References/Template Language and Macro Reference/CoverPage.html"
+    BreakType="pageLayout"
+    PageType="title"
+    AutoEndOnLeftPage="disabled"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+  <TocEntry
+    Title="Copyright"
+    Link="/Content/Installation/Installation/erwin_Install/copyright.html"
+    BreakType="chapter"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false"
+    PageNumberFormat="decimal"
+    PageNumber="(multiple)"
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
+  <TocEntry
+    Title="Contact Customer Support"
+    Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    PageNumberReset="continue"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    PageNumber="(multiple)"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/References/Template Language and Macro Reference/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumber="(multiple)"
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl" />
+  <TocEntry
+    Title="Template Language and Macro Reference"
+    Link="/Content/References/Template Language and Macro Reference/Template Language and Macro Reference.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="TLX Syntax"
+    Link="/Content/References/Template Language and Macro Reference/TLX Syntax.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="TLX Expansion"
+    Link="/Content/References/Template Language and Macro Reference/TLX Expansion.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Macro Overview"
+    Link="/Content/References/Template Language and Macro Reference/Macro Overview.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Standard Macros"
+    Link="/Content/References/Template Language and Macro Reference/Standard Macros.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  <TocEntry
+    Title="Forward Engineering Macros"
+    Link="/Content/References/Template Language and Macro Reference/Forward Engineering Macros.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+</CatapultToc>

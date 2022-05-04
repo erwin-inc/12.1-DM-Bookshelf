@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="erwin DM Scheduler"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[General.PDF] exclude[General.Online] "
+  PatchHeadingLevels="true"
+  InjectEmptyPages="true"
+  MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
+  OutputFolder="C:\My Project\DMPublish_21R2"
+  MasterToc="/Project/TOCs/PDFScheduler.fltoc"
+  OutputFile="Scheduler">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="false"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false" />
+  <DocumentProperties
+    Title="erwin DM Scheduler"
+    Author="Quest Software" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="75"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true"
+    Tagged="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/PDFOutput.fldes"
+      Publish="true" />
+  </Destinations>
+  <Variables>
+    <Variable
+      Name="PDF-GuideName-Variables/GuideName">erwin DM Scheduler Guide</Variable>
+  </Variables>
+</CatapultTarget>

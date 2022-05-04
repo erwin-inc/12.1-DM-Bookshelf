@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><title>Oracle Views Editor</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2236" name="objectid" />
+        <meta content="514" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('2236')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t2236">Oracle Views Editor</h5>
+        <p class="bodytext">In a physical model, you can create views, which are SQL queries that are permanently stored in the database under assigned names. The result of a view query is a virtual table. To the database user, a view appears just like a real table with a set of named columns and rows of data. However, a view is not a permanently stored set of data values. The rows and columns of data visible through the view are the result of the database query that defines the view.</p>
+        <p class="bodytext">You can use views in SQL to:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Create a customized presentation of the data stored in a database.
+</li>
+            <li class="listbullet">Restrict access to data, allowing different users access to only certain rows or columns of a table.
+</li>
+            <li class="listbullet">Simplify database access by creating customized structures tailored to the needs of individual users. A user can write a simple query on a view rather than a complex query on the actual database tables.
+</li>
+        </ul>
+        <p class="bodytext">Views are supported in the following features:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Forward Engineering. When you forward-engineer your data model, the SQL code defining the view is generated to the database.
+</li>
+            <li class="listbullet">Reverse Engineering. When you reverse-engineer an existing database that includes one or more views, each view is imported, the view syntax is parsed, and where possible, view relationships to the tables referenced by the view are created.
+			<p class="noteAlt">If the Create Table statement is not present or not present before the Create View statement in the reverse engineering script, the table from which the view is derived, is converted to a view.</p></li>
+            <li class="listbullet">Complete Compare. When you use complete compare and update a view either in the model or in the database, you can keep the model view specification in sync with the database view specification.
+</li>
+        </ul>
+        <p class="bodytext">When you add a view to a model, the view graphically appears in the model as a box with a dotted outline and round corners, and a view relationship as a dotted line with circle at the view end of the line. A view relationship between a table, materialized view, or view and a view indicates that the view references one or more of the columns from that table, materialized view, or view.</p>
+        <p class="bodytext">If you delete a table column that is referenced by a view, you also deletes the corresponding view column. If you delete a table that is referenced by a view, you also delete the corresponding view columns.</p>
+        <p class="bodytext">Use the Oracle Views Editor to add and change the properties of a view.</p>
+        <p class="bodytext">The following properties are applicable to an Oracle View object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Section</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tablebodytext">Name</p>
+                </td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the view</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Owner</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the database owner</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Force Create</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is created irrespective whether the base tables of the view or the referenced object types exist or the owner of the schema containing the view has privileges on them.</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">View Type</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is an object view or an XML view</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Editionable</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is an editioned or noneditioned object when editioning is enabled</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Editioning</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is single-table view that selects all rows from the base table and displays a subset of the base table columns</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Use Replace&#160;Syntax</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is recreated if it already exists</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a SQL statement for the view is generated during forward engineering</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td rowspan="15" style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tablebodytext">General</p>
+                </td>
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="5">View Properties</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Default Collation</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default collation for the view</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Bequeath Rights</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the functions referenced in the view are executed using the view invoker's rights or the view definer's rights</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Current_User</b>: Indicates that the functions referenced by the view are executed using invoker's right</p>
+                    <p><b>Definer</b>: Indicates that the functions referenced by the view are executed using view definer's right</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p>Sharing</p>
+                </td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how view data is shared </td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p><b>Metadata</b>: Indicates that a metadata link shares the view’s metadata and the data is unique to each container</p>
+                    <p><b>Data</b>: Indicates that a data link shares the view and the data stays same for all the containers in the application container</p>
+                    <p><b>Extended Data</b>: Indicates that an extended data link shares the view and the data in the application root is the same for all containers in the application container</p>
+                    <p><b>None</b>: Indicates that the view is not shared</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Container_Map</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view can be queries using a container map</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Container_Default</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the view is enabled for the CONTAINERS clause</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Other Properties</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Create Table As</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">	
+Specifies whether the table should be created based on the results of a SELECT statement</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Object and XML View Properties</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Of Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the user defined type name used to create an object or XML view</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">Object Identifier</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Object Identifier</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the attributes to be used as a key to identify each row in the object view</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Expression/Attribute</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an expression or attribute of the object type from which the object view should be created</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Under Superview</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the view name of which the current view is a subview</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">XML Schema URL</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the URL of a registered XMLSchema</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when View Type is set to XML View</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">XML Schema Specifications</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">XML Element</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the XML&#160;element name</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when View Type is set to XML View</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Varrays Storage Type</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the storage mechanism for varrays in the XML view or column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Available only when View Type is set to XML View</p>
+                    <p><b>Lobs</b>: Indicates that varrays are stored as LOBs</p>
+                    <p><b>Table</b>: Indicates that varrays are stored as tables</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NonSchema</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether non schema-based documents can be stored in the XMLType column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when View Type is set to XML View</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">AnySchema</td>
+                <td style="color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether any schema-based document can be stored in the XMLType column</td>
+                <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Available only when View Type is set to XML View</td>
+            </tr>
+        </table>
+        <p class="bodytext">The Oracle View Editor also includes the following tabs:</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_select_tab.html" id="h2205" target="_self" title="Oracle Select Tab">Select</a> Add tables, views, and materialized views to a view column and create aliases and expressions.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_from_tab.html" id="h2206" target="_self" title="Oracle Editors - From Tab">From</a> Specify the source tables, views, or materialized views.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_where_tab.html" id="h2207" target="_self" title="Oracle Editors - Where Tab">Where</a> Specify the search conditions and criteria to use when you generate the SQL code for a view.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="Edit_the_User_Defined_SQL_Code.html" id="h2237" target="_self" title="Edit the User Defined SQL Code">User Defined SQL</a> Change a user-provided DDL statement. This tab will be blank if no override has been provided.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="View_SQL_Code_for_a_Physical_Object.html" id="h2208" target="_self" title="View SQL Code for a Physical Object">SQL</a> View the SQL code that is used during Forward Engineering.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_synonym_tab.html" id="h1828" target="_self" title="Oracle Editors - Synonym Tab">Alias</a>
+                
+                    Lets you add, modify, or delete synonyms for the view.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="Define_the_Style_for_a_Table_or_View.html" id="h1089" target="_self" title="Define the Style for a Table, View, or Column">Style</a> lets you specify the styles for the entity. The styles are used to format the font and other graphical themes used in the display of the entity.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="attach_icons_to_an_entity.html" id="h2238" target="_self" title="Attach Icons to an Entity">Icon</a> lets you specify the icon to use for the entity.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_synonym_tab.html" id="h1725" target="_self" title="Oracle Editors - Synonym Tab">Synonym</a> Create, edit, or delete synonyms that apply to the selected table.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_comment_tab.html" id="h966" target="_self" title="Oracle Editors Comment Tab">Comment</a> Add or edit comments for a view.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="object_creation_order_tab_options.html" id="h1812" target="_self" title="Object Creation Order Tab">Object Creation Order</a> lets you specify the order of DDL generation for stored procedures, functions, or packages by moving the selected object up or down in the hierarchy using the up or down arrow buttons provided.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="orcl_editors_udp_tab.html" id="h968" target="_self" title="Oracle Editors UDP Tab">UDP</a> Enter user-defined property values for a view.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="View_History_in_a_Property_Editor.html" id="h1145" target="_self" title="View History in a Property Editor">History</a> lets you view the history information for the entity.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a> View or edit user notes.</p>
+            </li>
+        </ul>
+    </body>
+</html>

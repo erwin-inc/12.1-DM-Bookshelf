@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Symmetric Key in SQL Server</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7816" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');highlight('7816')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7816">Define a Symmetric Key in SQL Server</h6>
+        <p class="bodytext">Use the SQL Server Symmetric Key Editor to define symmetric keys at the database level in a SQL Server physical model.</p>
+        <p class="proceduresubheading">To define a symmetric key in SQL Server</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Target - SQL Server, Security, Symmetric Keys on the Model menu.
+<p class="listcontinue">The SQL Server Symmetric Key Editor opens.</p></li>
+            <li class="listnumber">Select the symmetric key in the Navigation Grid that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new symmetric key. Use the <em class="italic">Enter filter text</em> box to filter a very large list of symmetric keys to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Displays the symmetric key name. You can change the symmetric key name in this field.</p></dd><dt>Algorithm</dt><dd><p class="normaltermcontinued2">Specifies to use an algorithm for the symmetric key. Select an algorithm from the drop-down list.</p></dd><dt>Authorization</dt><dd><p class="normaltermcontinued2">Specifies the owner of the symmetric key. Select a name from the drop-down list.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd></dl></li>
+            <li class="listnumber">Click the General tab and work with the following options:
+<dl><dt>Using Certificates</dt><dd><p class="normaltermcontinued2">Specifies the certificates that will be part of the symmetric key. You can select one, multiple, or no certificates. Click the icon on the toolbar to open the SQL Server Certificate Editor to work with certificates.</p></dd><dt>Using Asymmetric Keys</dt><dd><p class="normaltermcontinued2">Specifies the asymmetric keys that will be part of the symmetric key. You can select one, multiple, or no asymmetric keys. Click the icon on the toolbar to open the SQL Server Asymmetric Key Editor to work with asymmetric keys.</p></dd><dt>Using Symmetric Keys</dt><dd><p class="normaltermcontinued2">Specifies another symmetric key to reference. You can select one, multiple, or no symmetric keys.</p></dd></dl></li>
+            <li class="listnumber">Click the Provider tab to specify provider key options.
+</li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_Permissions_for_an_Object_in_a_SQL_Server_Property_Editor.html" id="h1035" target="_self" title="Define Permissions for an Object in a SQL Server Property Editor">Permission</a> tab to define the permissions for the symmetric key.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a> </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The symmetric key is defined and the SQL Server Symmetric Key Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>XML Schema</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6324" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6314');highlight('6324')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t6324">XML Schema</h2>
+        <p class="bodytext">You can use the XML schema provided with this product to view metadata descriptions.</p>
+        <p class="bodytext">An XML schema is a document or a set of documents that defines the XML file's structure and legal elements. XML schemas can be used to ensure that an XML file is syntactically correct and conforms to the defined schema. erwin DM provides such a schema and uses the schema to validate XML files when they are opened in the tool.</p>
+        <p class="bodytext">The erwin DM installation places the complete set of XML schema files necessary for an XML file validation into the \Doc directory. The schema files have .xsd extensions and are described in the following list:</p>
+        <ul class="listbullet">
+            <li class="listbullet">erwinSchema.xsd is the top level schema file.
+</li>
+            <li class="listbullet">UDP.xsd is the schema file for UDP definitions.
+</li>
+            <li class="listbullet">EMX.xsd is the schema file for object hierarchy.
+</li>
+            <li class="listbullet">EM2.xsd is the schema file for non-transactional data.
+</li>
+            <li class="listbullet">EMXProps.xsd is the schema file for object properties and UDP instances.
+</li>
+        </ul>
+        <p class="bodytext">XML schemas contain descriptions of model object and property classes and define property containment by object classes. Schema definitions for EMX and EM2 classes are provided. XML schemas do not include deprecated classes.</p>
+        <p class="bodytext">The following diagram illustrates the five erwin DM XML schema files:</p>
+        <p class="picture">
+            <img align="bottom" alt="" border="0" height="338px" hspace="0" id="f6325" src="../../Resources/Images/6325.gif" vspace="0" width="476px" />
+        </p>
+        <p class="bodytext">The schema files under the \Doc directory are not database-specific and represent the entire erwin DM metamodel. The schema contains all possible objects and properties for all valid database targets. If you need database-specific schema, those files are located in the Doc\DBMS_schemas directory. Within the Doc\DBMS_schemas directory, there is a folder for each supported target database. The database-specific schema files are stored in that folder and only consist of objects and properties that are valid for the given database target.</p>
+        <p class="noteAlt">The XML schema that is in the \Doc directory is always used by erwin DM to validate an XML file; the database-specific schema is not used. The database-specific schemas are provided for documentation purposes and to assist third-party tool integrators to determine the valid objects and properties for a given database target. An external XML validation tool can be used to validate an XML file against a database-specific schema.</p>
+        <p>
+        </p>
+    </body>
+</html>

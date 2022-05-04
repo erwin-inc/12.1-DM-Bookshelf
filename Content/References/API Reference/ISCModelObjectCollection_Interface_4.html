@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>ISCModelObjectCollection Interface</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6143" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');expand2('6141');highlight('6143')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t6143">ISCModelObjectCollection Interface</h3>
+        <p class="bodytext">The following table contains information on the <em class="italic">ISCModelObjectCollection</em> interface, which is used when you create a new model object:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="624">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Signature</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="128">
+                    <p class="tableheading">Description</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="328">
+                    <p class="tableheading">Valid Arguments</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">ISCModelObjectCollection * Collect(VARIANT Root, VARIANT ClassId [optional], VARIANT Depth [optional], VARIANT MustBeOn [optional], VARIANT MustBeOff[optional])</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="128">
+                    <p class="tablebodytext">Creates a <em class="italic">Model Objects</em> collection, which represents a subcollection of itself</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="328">
+                    <p class="tablebodytext">Root:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_UNKNOWN � The <em class="italic">ISCModelObject</em> pointer of the root object. Returns the descendants of the given object.
+</li>
+                        <li class="tablelistbullet">VT_BSTR � The ID of the root object. Returns the descendants of the object with the given object identifier.
+</li>
+                    </ul>
+                    <p class="tablebodytext">ClassId:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">Empty � Not needed when obtaining the children of an object.
+</li>
+                    </ul>
+                    <p class="tablebodytext">Depth:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_I4 � Set depth to 1 when obtaining the immediate children of an object.
+</li>
+                    </ul>
+                    <p class="tablebodytext">MustBeOn:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">Empty � Not needed when obtaining the children of an object.
+</li>
+                    </ul>
+                    <p class="tablebodytext">MustBeOff:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">Empty � Not needed when obtaining the children of an object.
+</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">ISCModelObject * Add(VARIANT Class, VARIANT ObjectId [optional])</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="128">
+                    <p class="tablebodytext">Adds an object of type <em class="italic">Class</em> to the model</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="328">
+                    <p class="tablebodytext">Class:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">VT_BSTR � Name of a class. Creates an object of the given class name.
+</li>
+                        <li class="tablelistbullet">VT_BSTR � Class ID of an object type. Creates an object of the class with the given identifier.
+</li>
+                    </ul>
+                    <p class="tablebodytext">ObjectId:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet">Empty � The API assigns an object identifier for a new object.
+</li>
+                        <li class="tablelistbullet">VT_BSTR � ID for a new object. The API assigns the given object identifier to the new object.
+</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">Example 20</p>
+        <p class="bodytext">The following example illustrates how to create objects using C++. The example uses a <em class="italic">Session</em> object from Example 6:</p><pre xml:space="preserve">
+<p class="noteAlt">ISCSession::BeginTransaction() must be called prior to calling this function</p>
+// ISCSession::CommitTransaction() must be called upon returning from this 
+// function
+void CreateObject(ISCSessionPtr &amp; scSessionPtr, CString &amp; csType,
+                                                     ISCModelObjectPtr &amp; parentObj)
+{    
+    variant_t transactionId;   // transaction ID for the session
+    VariantInit(&amp;transactionId);
+    transactionId = scSessionPtr-&gt;BeginTransaction();
+    ISCModelObjectCollectionPtr childObjColPtr = scSessionPtr-&gt;GetModelObject()-&gt;Collect(parentObj-&gt;GetObjectId(),vtMissing,(long)1);  // get 
+    // child objects
+    // Add child object to collection
+    ISCModelObjectPtr childObjPtr = childObjColPtr-&gt;Add(COleVariant(csType));
+    // …
+    scSessionPtr-&gt;CommitTransaction(transactionId);
+}
+</pre>
+        <p class="bodytext">The following example illustrates how to create objects using Visual Basic .NET. The example uses a <em class="italic">Session</em> object from Example 6:</p><pre xml:space="preserve">
+Public Sub AddNewObject(ByRef scSession As SCAPI.Session, _
+             ByRef parentObj As SCAPI.ModelObject, type As String)
+    Dim scObj as SCAPI.ModelObject
+    Dim scChildObjCol As SCAPI.ModelObjects
+    Dim transactionID as Variant
+    
+    transactionID = scSession.BeginTransaction
+    scChildObjCol = scSession.ModelObjects.Collect(parentObj, , 1)   ' child objects collection
+    scObj = scChildObjCol.Add(type)    ' add new object to the child object collection
+     
+    scSession.CommitTransaction( transactionID )
+End Sub
+</pre>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber2">
+            <li class="listnumber2">Select either a Named version or a Delta version of a data model and click <img src="../Images/Icon-Mart-MarkVersion.png" />.
+<p class="listcontinue2">A Named version is created.</p></li>
+            <li class="listnumber2">In the Catalog Details pane, edit the <b>Name</b> and <b>Description</b>.</li>
+            <li class="listnumber2">Click <img src="../Images/Icon-Mart-Save.png" />.
+<p class="listcontinue2">The name and description of the Named version is updated.</p></li>
+        </ol>
+    </body>
+</html>

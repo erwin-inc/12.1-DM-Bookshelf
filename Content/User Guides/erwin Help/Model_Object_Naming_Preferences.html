@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Model Object Naming Preferences</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4798" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4594');highlight('4798')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4798">Model Object Naming Preferences</h3>
+        <p class="bodytext">To share and reuse model objects within your organization, develop naming standards for logical and physical model objects so that everyone in your organization uses names consistently and correctly. If you do not use naming standards, you may get errors when you run queries to extract data. For this reason, set model object naming preferences and enforce naming standards.</p>
+        <p class="bodytext">You can set model object naming preferences to control how:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Logical model objects are named.
+</li>
+            <li class="listbullet">Physical model objects are named.
+</li>
+            <li class="listbullet">Physical model object names are derived from logical object names.
+</li>
+            <li class="listbullet">Unique names for entities, tables, views, attributes, and columns are enforced.
+</li>
+        </ul>
+        <p class="bodytext">Logical naming options are for names of entities, domains, attributes, relationships, key groups, and validation rules. Maximum length is not required in the logical model, but you may enforce a maximum.</p>
+        <p class="bodytext">Physical naming options are for the names of tables, domains, columns, relationships, indexes, and validation rules. Maximum length is set, by default, to the maximum length that your target DBMS allows. You can change the maximum length to a smaller number. For example, suppose that you are managing a multiple target DBMS environment and you want to use a lowest common denominator approach. As you enter physical names (as opposed to deriving physical names based upon logical names), special characters may be allowed or disallowed.</p>
+        <p class="bodytext">Attach naming standards to a model, if you plan to use abbreviations and alternate abbreviations. You specify words, abbreviations, and alternate abbreviations in the naming standards glossary.</p>
+        <p class="bodytext">The macro language is used with the Naming Standards Model glossary. For example, if the macro is %EntityName, the terms looked up in the glossary are the terms related to Entity Names.</p>
+        <p class="noteAlt">Certain name changes override other name standards that you have in place. Any name changes applied to the physical side of a model, such as the table name overrides, take precedence over the options on the Name Mapping tab. For the default logical to physical name conversion, options within the Name Mapping tab are applied left to right. That is, although you select Use Glossary, the match is based upon the macro in the Macro column. A prefix or suffix can still be added.</p>
+        <p class="bodytext">You can set model object naming preferences for each model that you create using the Model Naming Options dialog.</p>
+        <p class="bodytext">The model object naming preferences are used when you:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Derive a physical model from a logical model, derive a physical model from a physical model, or derive a logical model from a physical model.
+</li>
+            <li class="listbullet">Add a model source.
+</li>
+            <li class="listbullet">Create a logical and physical model, and switch from the logical model to the physical model. 
+</li>
+            <li class="listbullet">Create a logical and physical model by reverse engineering from a DBMS or script file. Information is extracted from the DBMS or script file, and you can have it automatically derive logical model object names from the physical names in the DBMS or script file.
+</li>
+        </ul>
+        <p>
+        </p>
+    </body>
+</html>

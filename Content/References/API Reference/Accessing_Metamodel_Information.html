@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Accessing Metamodel Information</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6167" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6060');highlight('6167')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t6167">Accessing Metamodel Information</h2>
+        <p class="bodytext">You can obtain the metamodel of erwin DM by using the API. The metamodel can be accessed in the same manner as an erwin DM model. As in the case with model data, the <em class="italic">ISCPersistenceUnit</em> or <em class="italic">ISCModelSet</em> pointer in an <em class="italic">ISCSession::Open</em> call indicates the model set with which you are working.</p>
+        <p class="bodytext">There is a special case for the intrinsic metamodel. To obtain the intrinsic metamodel for a specific class of metadata, you can use the Property Bag component created with the <em class="italic">PropertyBag</em> method of the <em class="italic">ISCApplicationEnvironment</em> interface. A Property Bag instance populated with <em class="italic">EMX_Metadata_Class</em> or <em class="italic">EM2_Metadata_Class</em> properties from the <em class="italic">Application</em> category indicates the type of the intrinsic metamodel to access. The instance must be submitted as the first parameter in an <em class="italic">ISCSession::Open</em> call, instead of <em class="italic">ISCPersistenceUnit</em> or <em class="italic">ISCModelSet</em> pointers. If the first parameter in an <em class="italic">ISCSession::Open</em> call is NULL, then the intrinsic metamodel for the top model set in a persistence unit, the EMX class metadata, will be accessed.</p>
+        <p class="bodytext">To indicate that a session will access metamodel information, you set the <em class="italic">Level</em> parameter of the <em class="italic">Open</em> method to <em class="italic">SCD_SL_M1</em>.</p>
+        <p>
+        </p>
+    </body>
+</html>

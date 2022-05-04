@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Application.API.MessageLog Category</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6295" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6062');expand2('6288');expand2('6043');highlight('6295')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t6295">Application.API.MessageLog Category</h4>
+        <p class="bodytext">The following table describes the <em class="italic">Application.API.MessageLog</em> category, which provides access to additional messages registered during API operations:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="552">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tableheading">Property Name</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">Type</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="288">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="168">
+                    <p class="tablebodytext">Is_Empty</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Boolean</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="288">
+                    <p class="tablebodytext">Returns TRUE if the message log is not empty. The log is reset before the beginning of every API operation. </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="168">
+                    <p class="tablebodytext">Log</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">SAFEARRAY(VARIANT)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="288">
+                    <p class="tablebodytext">Returns the content of the log.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The Property Log from the <em class="italic">MessageLog</em> category is organized as a one-dimensional <em class="italic">SAFEARRAY</em> with <em class="italic">VARIANT</em> type as elements. The array has the following structure:</p>
+        <p class="picture">
+            <img align="bottom" alt="" border="0" height="129px" hspace="0" id="f6296" src="../../Resources/Images/6296.gif" vspace="0" width="476px" />
+        </p>
+        <p class="bodytext">The following table describes the elements of the array:</p>
+        <p class="beforetablefull">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="552">
+            <tr align="left" valign="top">
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="156">
+                    <p class="tableheading">Message Log Element</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="126">
+                    <p class="tableheading">Type</p>
+                </th>
+                <th style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="270">
+                    <p class="tableheading">Description</p>
+                </th>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Total Number</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">Long</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">Total number of messages in the array. The value can be zero if there were no messages when the <em class="italic">Log</em> property was requested.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Error Code</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">BSTR</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">A message string identifier.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Severity Code</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">Long</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">The following are the SC_MessageLogSeverityLevels severity codes:</p>
+                    <ul class="tablelistbullet">
+                        <li class="tablelistbullet"><em class="italic">SCD_ESL_NONE</em> � No severity code was assigned.
+</li>
+                        <li class="tablelistbullet"><em class="italic">SCD_ESL_INFORMATION</em> � Information message.
+</li>
+                        <li class="tablelistbullet"><em class="italic">SCD_ESL_WARNING</em> � Warning message.
+</li>
+                        <li class="tablelistbullet"><em class="italic">ESD_ESL_ERROR</em> � Error message.
+</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Message</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">BSTR</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">Message text.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Model Set Id</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">SC_MODELSETID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">An identifier of a model set associated with a message. An element has the <em class="italic">VARIANT</em> type <em class="italic">VT_EMPTY</em> if no data was provided.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Object Type</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">SC_CLSID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">Class identifier for a model object associated with a message. An element has the <em class="italic">VARIANT</em> type <em class="italic">VT_EMPTY</em> if no data was provided.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Object Id</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">SC_OBJID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">Identifier for a model object associated with a message. The identifier is unique in the scope of the model set. An element has the <em class="italic">VARIANT</em> type <em class="italic">VT_EMPTY</em> if no data was provided.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="156">
+                    <p class="tablebodytext">Property Type</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="126">
+                    <p class="tablebodytext">SC_CLSID</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="270">
+                    <p class="tablebodytext">Class identifier for a property associated with a message. An element has the <em class="italic">VARIANT</em> type <em class="italic">VT_EMPTY</em> if no data was provided.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="156">
+                    <p class="tablebodytext">Reserved</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="126">
+                    <p class="tablebodytext">�</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="270">
+                    <p class="tablebodytext">Always marked as <em class="italic">VT_EMPTY</em>.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="noteAlt">For information about object class identifiers and property class identifiers, see the HTML document <em class="italic">erwin Metamodel Reference</em>, in the Metamodel Reference Bookshelf located in the erwin� Data Modeler installation folder. More information about using the <em class="italic">Model Set Identifier</em> to locate a model set is located in the <a class="z--jumptemplate" href="Accessing_a_Model.html" id="h6298" target="_self" title="Accessing a Model">Accessing a Model</a> and <a class="z--jumptemplate" href="Accessing_a_Model_Set.html" id="h6299" target="_self" title="Accessing a Model Set">Accessing a Model Set</a> sections. More information about using the <em class="italic">Class Identifier</em> to learn more about object types and property types is located in the <a class="z--jumptemplate" href="Accessing_Metamodel_Information.html" id="h6300" target="_self" title="Accessing Metamodel Information">Accessing Metamodel Information</a> section. More information about using the <em class="italic">Object Identifier</em> to access the associated model object is located in the <a class="z--jumptemplate" href="Accessing_Objects_in_a_Model.html" id="h6301" target="_self" title="Accessing Objects in a Model">Accessing Objects in a Model</a> section.</p>
+        <p>
+        </p>
+    </body>
+</html>

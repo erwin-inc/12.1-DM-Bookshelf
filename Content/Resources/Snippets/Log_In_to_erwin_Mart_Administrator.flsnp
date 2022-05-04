@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">Log in to erwin Mart Administrator to verify if you have successfully upgraded the Mart Server from any earlier release of r9 series to the latest release.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">From the Windows Start menu, click All Programs, erwin, erwin Mart Server <MadCap:variable name="General.VersionNumber" />, erwin Mart Administrator <MadCap:variable name="General.VersionNumber" /> .
+<p class="listcontinue">The erwin Mart Administrator log in page appears. If you have implemented SSL, HTTPS appears in the address bar.</p></li>
+            <li class="listnumber">Use the credentials with which you initialized the Mart and log in.
+<p class="listcontinue">The erwin Mart Administrator home page appears. </p></li>
+        </ol>
+        <p class="bodytext">The models that are created in any earlier release of r9 series are upgraded when a user connects to the latest release Mart and opens the models.</p>
+    </body>
+</html>

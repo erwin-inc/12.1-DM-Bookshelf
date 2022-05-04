@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>How to Reverse Engineer a Model from a Database or a Script</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="597" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');highlight('597')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t597">How to Reverse Engineer a Model from a Database or a Script</h2>
+        <p class="bodytext">Reverse engineering is the process of creating a data model from a database or a script. The modeling tool creates a graphical representation of the selected database objects and the relationships between the objects. This graphical representation can be a logical or a physical model. </p>
+        <p class="noteAlt">
+            You can reverse engineer only into a blank model. You cannot reverse engineer into a model that has objects in it.</p>
+        <p class="bodytext">A database can be reverse engineered for the following reasons:</p>
+        <ul class="listbullet">
+            <li class="listbullet">To understand how the objects are related to each other and then to build upon it
+</li>
+            <li class="listbullet">To demonstrate the database structure 
+</li>
+        </ul>
+        <p class="bodytext">After the reverse engineering process completes, you can perform the following tasks:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Add new database objects
+</li>
+            <li class="listbullet">Create the system documentation
+</li>
+            <li class="listbullet">Redesign the database structure to suit your requirements
+</li>
+        </ul>
+        <p class="bodytext">Most of the information that you reverse engineer is explicitly defined in the physical schema. However, reverse engineering also derives information from the schema and incorporates it into the model. For example, if the target DBMS supports foreign key declarations, the reverse engineering process derives identifying and non-identifying relationships and default role names.</p>
+        <p class="bodytext">You can derive all the major model information, except subtype relationships, because currently no SQL database management system supports it. However, the target databases vary in the amount of logical data model information that is included in the physical schema. For this reason, the resulting models can vary depending on the target database that is selected. You can also infer some logical information including primary keys, foreign keys, and table relationships. You can use the table index definitions or column names to infer these keys and relationships.</p>
+        <p class="bodytext">You can include or exclude RI triggers in the reverse engineering process. You can select to treat RI triggers as model objects or use the forward engineering option to include RI triggers in the schema. You can also choose to include or exclude these options during reverse engineering.</p>
+        <p class="bodytext">When you reverse engineer a database, you can set a trace file to record the queries that are executed to retrieve objects. You can review the queries after the reverse engineering process completes.</p>
+        <p class="bodytext">The following diagram illustrates the steps to reverse engineer a model from a database or a script:</p>
+        <p class="picture"> <img align="bottom" alt="Illustrating the reverse-engineering process" border="0" height="506" hspace="0" id="f599" src="..\..\Resources\Images\601.png" vspace="0" width="335" /></p>
+        <p class="bodytext">Complete the following steps to reverse engineer a model:</p>
+        <ol class="listnumber">
+            <li class="listnumber"><a class="z--jumptemplate" href="Save_Database_Queries_to_a_Trace_File.html" id="h592" target="_self" title="Save Database Queries to a Trace File">(Optional) Save database queries to a trace file</a>.
+</li>
+            <li class="listnumber"><a class="z--jumptemplate" href="select_template_for_mart_model.html" id="h589" target="_self" title="Select Model Details">Select model details</a>.
+</li>
+            <li class="listnumber">Select the reverse engineering options.
+</li>
+            <li class="listnumber">Connect to a database and reverse engineer.
+</li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Inference_Table_for_Reverse_Engineer.html" target="_self">Inference Table for Reverse Engineer</a>
+        </p>
+        <p class="relateditem"><a href="Save_Database_Queries_to_a_Trace_File.html" target="_self">Save Database Queries to a Trace File</a>
+        </p><a name="o6714"></a>
+        <h3 class="heading3" id="t6714">Reverse Engineering Specific Objects</h3>
+        <p class="bodytext">This section includes details about how the reverse engineering process works for different database objects.</p>
+        <p class="examplesubheading">Index</p>
+        <p class="bodytext">When you reverse-engineer a database, the name, definition, and parameters of each index that is defined on the server are imported. When you import the index information from a server, the storage location information for each index is maintained. Therefore, you can recreate the database using the same storage assignments. You do not have to reassign the storage location for each index manually.</p>
+        <p class="bodytext">After you import indexes, you can view or modify the index properties, definitions, and table associations in the Indexes dialog. You can assign an index to a physical storage object in the Indexes dialog for a Db2 z/OS, Informix, Oracle, SQL Server, and SAP ASE database. If your target database is Db2 z/OS, Informix, and Oracle, you can also modify the storage parameters in the Indexes dialog. </p>
+        <p class="bodytext">If a physical storage option is selected for a Db2 z/OS, Informix, Oracle, or SAP ASE database, then the schema includes index physical storage parameters.</p>
+        <p class="examplesubheading">Physical Storage Object</p>
+        <p class="bodytext">When you reverse-engineer a database, you can import the names and definitions of physical storage objects you have defined on the target server. The import happens in the same way that physical tables, indexes, and other physical schema information is imported. After you import physical storage objects, you can view or modify the object definitions and table associations using the standard editors.</p>
+        <p class="examplesubheading">Validation Rule</p>
+        <p class="bodytext">When reverse-engineering from a schema file, script, or system catalog, validation rules are imported and attached to the appropriate table or column in the resulting model. The convention that is used to name the imported validation rules is as follows:</p>
+        <p class="bodytext">VALID_RULE<em class="italic">n</em></p>
+        <p class="bodytext">Here <em class="italic">n </em>is a sequential number starting at zero. The first validation rule that is encountered is named VALID_RULE0, the next rule VALID_RULE1, and so forth, until the entire schema is processed.</p>
+        <p>
+        </p>
+    </body>
+</html>

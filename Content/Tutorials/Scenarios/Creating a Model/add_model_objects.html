@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Add Model Objects</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1076" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/31/2018T21:50-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1354');highlight('1076')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t1076">Model Objects</h2>
+        <p class="bodytext">A model includes some or all of the following model objects:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Entities (Tables)
+<p class="listcontinue">An entity is any person, place, thing, event, or concept about which you want to maintain information. More precisely, an entity is a set or collection of similar individual objects that are known as instances. An instance (row) is a single occurrence of a given entity. An example of an entity is Customer.</p></li>
+            <li class="listbullet">Attributes (Columns)
+<p class="listcontinue">An attribute is a property of an entity. For example, if Customer is an entity, Customer First Name is an attribute. Similarly, if Customer is a table, Customer First Name is a column. When you create a relationship, a primary key or an alternate key of the parent object migrates into the child object as a foreign key. By default, all properties of the primary key or the alternate key migrate to the foreign key in the child entity.</p></li>
+            <li class="listbullet">Views
+<p class="listcontinue">A view is a SQL query that is permanently stored in the database under an assigned name. The result of a view query is a virtual table. However, a view is not a permanently stored set of data values. The rows and columns of data that are visible through a view are the result of the database query that defines the view.</p></li>
+            <li class="listbullet">Indexes
+<p class="listcontinue">An index is a special type of object designator that speeds up data retrieval in a relational database. An index is managed at the physical level and points to all the rows where a particular column value is stored. At the logical level, the key groups that are defined for entities transform into alternate key and inversion entry indexes at the physical level.</p></li>
+            <li class="listbullet">Subject areas
+<p class="listcontinue">A subject area is a subset of objects that are taken from the whole pool of objects in your model. You can create multiple subject areas in your model. When you create a subject area for the logical side of a logical/physical model, a similar subject area is created for the physical side. The reverse of this statement is also true. If you add or remove members from a subject area, the changes show in the corresponding physical or logical side of the model. However, the change does not affect the membership of any other subject area. If you add or delete objects in one subject area, it does not change other subject areas.</p></li>
+            <li class="listbullet">ER diagrams
+<p class="listcontinue">Diagrams are used to arrange, view, and work on the objects in your model. You can create diagrams at the model level and at the subject area level. Further, you can create multiple diagrams for each subject area in your model. In a logical/physical model, when you create a diagram for the logical model, a similar diagram is created for the physical model. Define the properties for both, Entity and Table objects in their respective tabs. </p></li>
+            <li class="listbullet">Relationships
+<p class="listcontinue">A relationship is used to show the association or link between two entities (or tables), or between an entity (a table) and itself. Relationships are represented as one or more foreign key attributes. A new relationship is labeled R_n, where R stands for relationship and n is a unique number. Relationship numbers are calculated beginning with the number zero. Foreign key attributes automatically migrate across relationships. On deleting a relationship, the contributed foreign key attributes, foreign key columns, or view columns are automatically removed from the child object. </p></li>
+            <li class="listbullet">Drawing objects
+<p class="listcontinue">Drawing objects enhance the appearance of your model and add meaningful graphic or text annotations. For example, to prepare a model for analysis and presentation, circle the tables that you want to focus on. You can use the Drawing Objects editor to add text, change the text properties, or change the color of a drawing object. You can layer multiple drawing objects and then arrange the order as needed.</p></li>
+            <li class="listbullet">Annotations
+<p class="listcontinue">You can add annotations to a diagram to identify or clarify model elements. Annotations can include any text that you choose including diagram version numbers, notes, titles, and captions.</p></li>
+            <li class="listbullet">Naming and data type standards
+<p class="listcontinue">Naming standards help you use names of entities, tables, columns, or attributes consistently across your organization. To define naming standards, create NSM Option objects using the NSM Option editor. You can create multiple NSM Option objects and can apply one of them to a model. Each NSM Option object includes the naming standards for logical and physical model objects, and the word glossary. The word glossary includes glossary words, their abbreviations and alternate abbreviations. A logical or physical model object name comprises prime, modifier, or class. Specify the components and the order in which they are presented to define naming standards for entities, tables, attributes, columns, and domains. </p><p class="listcontinue">Create data type standards (or DSM Option objects) to use data types consistently across your organization. When you create a DSM Option object, it is preloaded with default logical data types. Use the DSM Options Editor to create data types and mappings. You can create multiple DSM Option objects but you can apply only one of them to the model.</p></li>
+            <li class="listbullet">User defined properties
+<p class="listcontinue">A user-defined property (UDP) can be anything that you consider useful and important with respect to managing a specific object class. You can assign UDPs for any object class from within the object editor. All object editors have a UDP tab that lets you assign UDPs. You can view each UDP name and you can add the property values. UDPs are not generated into your database; you use them as a tool to manage the details of your model. You can, however, use UDPs for UDP macros and include UDPs in model object reports and reports on UDP definitions.</p></li>
+            <li class="listbullet">Domains
+<p class="listcontinue">A domain is an independent model object that you can use to assign properties to an attribute or column quickly. You can define both logical and physical domains in the Domain Editor. You can define a domain once and can use it in both the physical and the logical model. With domains, you can also change multiple attributes and columns quickly. When you change a domain property in the Domain Editor, all the owned attributes or columns that are based on the domain are also changed. </p></li>
+            <li class="listbullet">Database-specific objects
+<p class="listcontinue">If you are creating a physical or a logical/physical model, you can add objects that are specific to the selected database. Use the corresponding object editor to add the object.</p></li>
+        </ul>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\394.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

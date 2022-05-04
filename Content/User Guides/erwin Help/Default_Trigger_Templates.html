@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Default Trigger Templates</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2606" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2600');highlight('2606')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t2606">Default Trigger Templates</h4>
+        <p class="bodytext">erwin® Data Modeler includes a set of default referential integrity (RI) trigger templates that generate SQL code, so you do not have to manually enter the required SQL code on the server. If your target DBMS supports triggers, default trigger templates are included that correctly implement referential integrity according to the relationships in a model and the options that you select. Some examples of the default trigger templates are:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Table's role in the relationship: PARENT or CHILD
+</li>
+            <li class="listbullet">SQL command type: INSERT, UPDATE, or DELETE
+</li>
+            <li class="listbullet">Referential integrity action: CASCADE, RESTRICT, SET NULL, SET DEFAULT, NO ACTION
+</li>
+            <li class="listbullet">NONE as the trigger type if you do not want to generate a trigger for the selected triggering action
+</li>
+        </ul>
+        <p class="bodytext">Each default trigger template contains text, SQL code, and macros that you can apply to any table or relationship in a model. The macros in the template act as placeholders. During schema generation, macros are expanded into physical table, column, and relationship names. Each macro derives its value based on the context of the relationship to which the template is attached. By attaching a template to a table that is either the PARENT or CHILD table in a relationship, you define the context for macro expansion.</p>
+        <p class="bodytext">Because there is a built-in template associated with each RI rule type, you can generate default trigger code for a model without any further work. If you use the default templates, the default trigger code is composed using a fixed internal scheme for combining the different built-in templates.</p>
+        <p class="noteAlt">In erwin® Data Modeler version r7.3 and later, you can select to treat erwin-generated triggers as model objects. In earlier versions of the product, referential integrity information for erwin-generated triggers was generated as a comment in the body of the trigger. This mechanism stripped out erwin-generated triggers and parsed the referential integrity constraints during a "round trip" of the data model. A "round trip" occurs when you forward engineer a model to a database or script, then reverse engineer that database or script back to the model. You can now select to both forward-engineer and reverse-engineer erwin-generated triggers.</p>
+        <p class="bodytext">The Trigger Template editor contains the following tabs:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><a class="z--jumptemplate" href="Change_the_template_attached_to_an_RI_action.html" id="h2609" target="_self" title="Change the Template Attached to an RI Action">Referential Integrity Type</a>
+            </li>
+            <li class="listbullet"><a class="z--jumptemplate" href="Define_the_Code_to_a_Stored_Procedure_Function_or_Trigger.html" id="h1811" target="_self" title="Define the Code to a Stored Procedure, Function, or Trigger">Code</a>
+            </li>
+            <li class="listbullet"><a class="z--jumptemplate" href="Add_a_User_Defined_Property_to_a_Logical_Object.html" id="h1088" target="_self" title="Add a User-Defined Property to a Logical Object">UDP</a>
+            </li>
+            <li class="listbullet"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a>
+            </li>
+        </ul>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Triggers.html" target="_self">Triggers</a>
+        </p>
+        <p class="relateditem"><a href="Default_Trigger_Templates_Example.html" target="_self">Default Trigger Templates Example</a>
+        </p>
+        <p class="relateditem"><a href="Create_Erwin_Generated_Triggers_As_Model_Objects.html" target="_self">Create erwin-Generated Triggers As Model Objects</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

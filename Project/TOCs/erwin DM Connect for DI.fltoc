@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="DM Connect for DI"
+    Link="/Content/Tools/DM Connect for DI/DM Connect for DI.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Prerequisites"
+      Link="/Content/Tools/DM Connect for DI/Prerequisites.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+    <TocEntry
+      Title="Configuration"
+      Link="/Content/Tools/DM Connect for DI/Configuration.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Scenario: Schedule Jobs to Export Data Models to erwin DI Suite"
+      Link="/Content/Tools/DM Connect for DI/Scenario Schedule Jobs.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Scenario: Import Source and Target Data into Mapping Manager"
+      Link="/Content/Tools/DM Connect for DI/Scenario Import Data Sources to Mapping Manager.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Scenario: NSM Files"
+      Link="/Content/Tools/DM Connect for DI/Scenario NSM Files.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Scenario: View Logs"
+      Link="/Content/Tools/DM Connect for DI/Scenario View Logs.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Reference: Data Sharing between erwin DM and erwin DI Suite"
+      Link="/Content/Tools/DM Connect for DI/Reference Data Sharing.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Limitations"
+      Link="/Content/Tools/DM Connect for DI/Limitations.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+</CatapultToc>

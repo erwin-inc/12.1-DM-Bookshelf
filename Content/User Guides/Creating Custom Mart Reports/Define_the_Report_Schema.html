@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define the Report Schema</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1519" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/10/2018T13:16-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6464');highlight('1519')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" />
+        </p>
+        <h2 class="heading2" id="t1519">Define the Report Schema</h2>
+        <p class="bodytext">A schema defines the expected output. The report schema for all Mart reports is defined in the reports-schema.xml file. This file is available in the MartServer\WEB-INF folder. Help ensure that the report data output always confers to the schema definition.</p>
+        <p class="bodytext">Report schemas have the following characteristics:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Report schemas are created in XML format. 
+</li>
+            <li class="listbullet">Report schemas have a unique name that identifies the schema. We recommend that you have this name same as that of the report name.
+</li>
+            <li class="listbullet">Reports are defined using XML elements. 
+</li>
+        </ul>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the MartServer\WEB-INF\Reports-schema.xml file.
+</li>
+            <li class="listnumber">Enclose report schema definition within the &lt;report_schema&gt; element.
+</li>
+            <li class="listnumber">Define a name for the report schema within the &lt;Name&gt; element.
+</li>
+            <li class="listnumber">Define the Schema within the &lt;schema&gt; element in the CDATA section. 
+</li>
+            <li class="listnumber">Defining a schema definition within the CDATA section helps XML accept the XML related information within an XML definition. 
+</li>
+        </ol>
+        <p class="noteAlt">There are various tools to generate Schema Definition (that is, XSD) information from a XML. You can generate the schema definition using a tool of your choice and include it in the reports-schema.xml file.</p>
+        <p class="bodytext">An example of defining a report schema on Users is shown below.</p><pre xml:space="preserve">
+&lt;report_schema&gt;
+</pre><pre xml:space="preserve">
+&lt;Name&gt; Users &lt;/Name&gt;
+</pre><pre xml:space="preserve">
+&lt;schema&gt;
+</pre><pre xml:space="preserve">
+&lt;Report_Output&gt;
+</pre><pre xml:space="preserve">
+&lt;![CDATA[&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:element name="report_root"&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:complexType&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:sequence&gt;
+</pre><pre xml:space="preserve">&lt;xs:element name = "User" maxOccurs="unbounded"&gt;
+</pre><pre xml:space="preserve">&lt;xs:complexType&gt;
+</pre><pre xml:space="preserve">&lt;xs:sequence&gt;
+</pre><pre xml:space="preserve">&lt;xs:element name = "Id" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:element name ="Username" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:element name ="EmailId" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:element name ="UserType" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">&lt;xs:element name = "IsInternal" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">
+&lt;xs:element name = "IsDeleted" type="xs:string"/&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:sequence&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:complexType&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:element&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:sequence&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:complexType&gt;
+</pre><pre xml:space="preserve">
+&lt;/xs:element&gt;
+</pre><pre xml:space="preserve">&lt;/xs:schema&gt;]]&gt;
+</pre><pre xml:space="preserve">&lt;/schema&gt;
+</pre><pre xml:space="preserve">
+&lt;/report_schema&gt;
+</pre>
+        <p />
+    </body>
+</html>

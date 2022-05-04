@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define General Properties for an Attribute</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1159" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3176');expand2('1152');highlight('1159')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t1159">Define General Properties for an Attribute</h4>
+        <p class="bodytext">You can use the options in the General tab of the Attribute Editor to view and update the general information about an attribute.</p>
+        <p class="proceduresubheading">To define general information for an attribute</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click the attribute on the diagram that you want to define and click Attribute Properties.
+<p class="listcontinue">The Attribute Editor opens.</p></li>
+            <li class="listnumber">Click the General tab and work with the following options.
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new attribute.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Displays the attribute name. You can change the attribute name in this field.</p></dd><dt><strong>Parent Domain</strong></dt><dd><p class="normaltermcontinued2">Displays the parent domain associated with the attribute. You can change the parent domain or open the Domain Editor to create a new one using the drop-down.</p></dd><dt>Logical Data Type</dt><dd><p class="normaltermcontinued2">Specifies the logical data type for the attribute. You can change the data type using the drop-down. The drop-down list contains the data types related to the current domain.</p></dd><dt><strong>Primary Key</strong></dt><dd><p class="normaltermcontinued2">Specifies whether to include the attribute in the primary key. Select this check box if you want to include the selected attribute in the primary key. Clear this check box if you want the attribute to be a non-key attribute.</p></dd><dt><strong>Logical Only</strong></dt><dd><p class="normaltermcontinued2">Specifies whether the attribute should only appear in the logical model. Select this check box if you want the selected attribute to appear in the logical model only. Clear this check box if you want the selected attribute to have a corresponding column in the physical model. If you are working with a logical-only model and select this check box, when you derive a new physical-only model, the selected attributes do not appear in the new model.</p><p class="noteAlt">When you select or clear the check box in the Navigation Grid, your selection is automatically reflected in the Logical Only check box in the General tab.</p></dd><dt><strong>Domain</strong></dt><dd><p class="normaltermcontinued2">Select a domain from the list to attach it to the selected attribute. When you attach a domain to an attribute, you are specifying the logical data type for the selected attribute. Standard domains include: <em class="italic">Default</em>, <em class="italic">Blob</em>, <em class="italic">Datetime</em>, <em class="italic">Number</em>, and <em class="italic">String</em>. This list can also include user-defined logical data types that you create in the Domain Editor. When you attach a domain to an attribute, the related column automatically inherits any physical model properties that you assign to the domain as well. For example, you can assign a <em class="italic">Currency</em> domain to an attribute, which can then optionally inherit its definition from that domain. The same domain, <em class="italic">Currency</em>, is attached to the corresponding column in the physical model, including the inherited domain characteristics such as data type and null option. The Domain option contains a toolbar that includes the following options:</p><p class="normaltermcontinued2"><img align="bottom" alt="Attribute Editor General Tab_Domain Option_Sort Button" border="0" height="13" hspace="0" id="f1161" src="..\..\Resources\Images\1204.gif" vspace="0" width="15" /></p><p class="list4">Lets you specify to sort the list of domains alphabetically, in reverse alphabetical order, or by domain hierarchy.</p><p class="normaltermcontinued2"><img align="bottom" alt="Attribute Editor General Tab_Domain Option_Restore Inheritance from Definition Button" border="0" height="14" hspace="0" id="f1157" src="..\..\Resources\Images\1159.gif" vspace="0" width="14" /></p><p class="list4">Restores inheritance from definition. If this attribute is a FK, the domain may be inherited or overridden to a different domain.</p><p class="normaltermcontinued2"><img align="bottom" alt="Attribute Editor General Tab_Domain Option_Domain Editor Button" border="0" height="15" hspace="0" id="f1162" src="..\..\Resources\Images\1203.gif" vspace="0" width="15" /></p><p class="list4">Opens the Domain Editor in logical edit mode.</p></dd><dt><strong>Image</strong></dt><dd><p class="normaltermcontinued2">Specifies the image that you want to use to represent the domain from the list.</p></dd><dt><strong>Logical Only</strong></dt><dd><p class="normaltermcontinued2">Specifies whether the selected attribute appears in the logical model only. Select this check box if you want the attribute to appear in the logical model only. Clear this check box if you want the attribute to have a corresponding column in the physical model. If you are working with a logical-only model and select this check box, when you derive a new physical-only model, the selected attributes will not appear in the new model.</p><p class="noteAlt">When you select or clear the check box in the General tab, your selection is automatically reflected in the Logical Only check box in the Navigation Grid.</p></dd><dt><strong>Name</strong></dt><dd><p class="normaltermcontinued2">Displays the attribute name. You can change the attribute name directly in this field, or click the Expand button to open the Text Editor. You can also click the Inheritance button to either inherit, override, or harden the attribute's name. This button changes to provide you with a visual cue of the current inheritance setting for the attribute name. </p></dd><dt>Logical Data Type</dt><dd><p class="normaltermcontinued2">Displays the attribute data type. You can change the data type using the drop-down control. You can also click the Inheritance button to either inherit, override, or harden the attribute's data type. This button changes to provide you with a visual cue of the current inheritance setting for the attribute data type. </p></dd><dt>Null Option</dt><dd><p class="normaltermcontinued2">Displays the attribute null option. You can change the null option using the drop-down control. You can also click the Inheritance button to either inherit or override the attribute's null option. This button changes to provide you with a visual cue of the current inheritance setting for the attribute null option.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">General information is defined for the attribute and the Attribute Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="attributes.html" target="_self">Attributes</a>
+        </p>
+        <p class="relateditem"><a href="Rename_an_attribute_using_the_Attribute_Editor.html" target="_self">Rename an Attribute Using the Attribute Editor</a>
+        </p>
+        <p class="relateditem"><a href="The_Text_Editor.html" target="_self">The Text Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

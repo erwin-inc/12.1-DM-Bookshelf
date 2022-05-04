@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Model Templates</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8325" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4109');highlight('8325')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t8325">Model Templates</h2>
+        <p class="bodytext">A template can store model objects, display settings, and preferences. erwin® Data Modeler uses two file extensions for templates, *.erwin_tmpl and *.erwin (starting in r8.2). </p>
+        <p class="bodytext">You can save any model as a template to save its settings and contents for quick reuse. In this way, templates provide the ideal way of maintaining consistency across different models. After you save a template, you can: </p>
+        <ul class="listbullet">
+            <li class="listbullet">Use it as the basis for creating new models
+</li>
+            <li class="listbullet">Load the model objects from another model template into your current model
+</li>
+            <li class="listbullet">Synchronize changes made in a template with all models that use it
+</li>
+        </ul>
+        <p class="noteAlt">You can use either *.erwin_tmpl or *.erwin extensions as a template for creating models. However, to achieve synchronization of model objects between a model template and a data model, you bind the model template to the model. </p>
+        <p class="bodytext">Model template functionality includes the following features:</p>
+        <dl>
+            <dt>Bind, unbind and rebind model template </dt>
+            <dd>
+                <p class="normaltermcontinued">To use a model template for a model, you bind the model template to the model. At any time you can unbind, or remove, the model template. Whenever you open a model with a bound model template, confirm whether to synchronize any model template changes with the objects used in the model.</p>
+            </dd>
+            <dt>Detection of model template changes</dt>
+            <dd>
+                <p class="normaltermcontinued">Whenever you open a model with a bound model template, confirm whether to synchronize any model template changes with the objects used in the model. You can also refresh your model with any model template changes at any time using the <em class="italic">Refresh Template</em> option.</p>
+            </dd>
+            <dt>Filtering of template objects</dt>
+            <dd>
+                <p class="normaltermcontinued">Filters the object display in the Model Template dialog. Filtering the objects to create a shorter list makes it easier for you to define the model objects that you want in your template.</p>
+            </dd>
+            <dt>Importing new template objects</dt>
+            <dd>
+                <p class="normaltermcontinued">When you change a model template, or want to include objects in a model template you previously did not include, refresh the model template.</p>
+            </dd>
+            <dt>Synchronization of model objects</dt>
+            <dd>
+                <p class="normaltermcontinued">Any changes you make to a model template are synchronized with the models that use the template in the Model Template Synchronization Wizard. Select the <em class="italic">Synchronize on Model Load</em> option so that when a model is opened, it is updated with any changes that have been made to the associated template. To review the changes made to the model template, do the following:</p>
+                <ol class="listnumber">
+                    <li class="listnumber">On the Home tab, click <b>Model Template</b>.</li>
+                    <li class="listnumber">Click <b>Refresh Template</b>.<br />This will open the Model Template Synchronization Wizard, where you can review the changes made to the template. </li>
+                </ol>
+            </dd>
+            <dt>Template removal</dt>
+            <dd>
+                <p class="normaltermcontinued">You can delete model templates. Any objects brought in to a model by the template can remain in the model, or you can remove them when the template is unbound. If you keep the objects, any changes made to the objects are performed directly in the model because the template no longer exists.</p>
+            </dd>
+        </dl>
+        <p class="relatedheading">More information:</p>
+        <p class="relateditem"><a href="Reverse_Engineer.html" target="_self">How to Reverse Engineer a Model from a Database or a Script</a>
+        </p>
+        <p class="relateditem"><a href="Save_a_Model_as_a_Template.html" target="_self">Save a Model as a Template</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

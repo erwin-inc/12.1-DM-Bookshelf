@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="8357" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/11/2018T16:39-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="../../Resources/open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('8356');highlight('8357')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tools" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t8357">Setting Recurrence</h1>
+        <p class="bodytext">You can set a recurrence schedule for reverse engineering (RE) jobs that you run repeatedly.</p>
+        <p class="bodytext">To set recurrence while scheduling a new RE job, do the following:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the erwin DM Scheduler Event Details dialog box, click <b>Recurrence</b>.<br />The Scheduling Recurrence dialog box opens.<br /><img src="../../Resources/Images/Scheduler_Recurrence.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
+            <li class="listnumber">Work with the following options:<br /><dl><dt>Schedule time</dt><dd><p class="normaltermcontinued2">By default, the time and duration that you set on the erwin DM Scheduler Event Details dialog box is set at the recurrence start and end time, and duration.</p></dd><dt>Recurrence pattern</dt><dd>Specifies whether the job should run daily, weekly, or monthly. Depending on the pattern that you select, further settings are available as follows:</dd><ul class="listbullet"><li class="listbullet"><b>Daily</b>: Set the day interval at which the job should run. Or, set it to run every work day. For example:<ul><li class="listbullet">Run the job every 2 days.</li><li class="listbullet">Run the job every work day (Monday-Friday).</li></ul><p class="noteAlt">For the Daily-WorkDays combination to work, ensure that you have strictly set the work days to Monday through Friday in Calendar Options. For more information on setting work days, refer to the <a href="../../Tools/Scheduler/Setting_Calendar_Options.html">Setting Calendar Options</a> topic.</p></li><li class="listbullet"><p><b>Weekly</b>: Select the weekly interval and the days of the weeks on which the job should run. For example, run the job every 2 weeks on Monday and Thursday.</p></li></ul><ul class="listbullet"><li class="listbullet"><p><b>Monthly</b>: Select the day of the month and the monthly interval at which the job should run. For example:</p><ul><li>Run the job every second day, every two months.</li><li>Run the job second Thursday, every two months.</li></ul></li></ul><dt>Range of recurrence</dt><dd>Set the start date of the recurrence. Also, set either the end date or the number of occurrences of the job that you want to run.</dd></dl></li>
+            <li class="listnumber"> Click <b>OK</b>.</li>
+        </ol>
+        <p class="bodytext"> To set recurrence for an existing job that has been scheduled, do the following:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a job event and click <b>Properties</b>.<br />The erwin DM Scheduler Event Details dialog box opens.</li>
+            <li class="listnumber">Click <b>Recurrence</b>.<br />The Scheduling Recurrence dialog box opens.</li>
+            <li class="listnumber">Follow step 2 given above.</li>
+        </ol>
+        <h4 class="heading4">Stopping Recurrence</h4>
+        <p class="bodytext">To stop recurrence for a job, do the following:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a job event and click <b>Properties</b>.<br />The erwin DM Scheduler Event Details dialog box opens.</li>
+            <li class="listnumber">Click <b>Recurrence</b>.<br />The Scheduling Recurrence dialog box opens.</li>
+            <li class="listnumber">Click <b>Remove recurrence</b>.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

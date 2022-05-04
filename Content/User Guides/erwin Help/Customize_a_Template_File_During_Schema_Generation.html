@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Customize a Template File During Schema Generation</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4784" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4622');expand2('1364');highlight('4784')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t4784">Customize a Template File During Schema Generation</h4>
+        <p class="bodytext">You can customize your schema generation options by modifying a default forward engineering template file in the Template Editor. Your customizations can add to or modify the options that are set in the Forward Engineer and Alter Script dialogs. For example, you can add or modify templates to navigate or extract content from your model.</p>
+        <p class="bodytext">Each database has a corresponding forward engineering template file. The template files are automatically installed to the \Program Files (x86)\erwin\Data Modeler r9\BackupFiles\Templates folder. These template files are quite extensive so they cover all of the SQL required for erwin Data Modeler's processes. Therefore, when you customize a template file, you should begin with the default template file and modify it for your specific needs. Save the template file using either the existing file name or providing a new name, and then associate it with a model for schema generation tasks.</p>
+        <p class="noteAlt">When you save a forward engineering template file using the default file name provided in this product, you are overwriting the template file. If you need to revert to the original, unchanged forward engineering template file, read-only backup copies are located in the \BackupFiles\Templates folder.</p>
+        <p class="bodytext">Rather than customizing a template file for schema generation outside of the schema generation process, you can customize a template file as you begin the schema generation process. Follow these steps to customize a template file during schema generation:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open the Template Editor in either of the following ways, depending whether you are performing Forward Engineering or Alter Script/Schema Generation:
+<ul class="listbullet2"><li class="listbullet2">Click Forward Engineer, Schema on the Actions menu and click the Edit button in the Forward Engineer Schema Generation dialog.
+</li><li class="listbullet2">Click Forward Engineer, Alter Script on the Actions menu and click the Edit button in the Alter Script Schema Generation dialog.
+</li></ul></li>
+            <li class="listnumber">Select the template file that you want to customize. By default, the Template Editor opens using the default template file for the target database of your model. If you want to use a different template file, click the Open Template File icon to open the Open dialog and select the template file that you want.
+</li>
+            <li class="listnumber">Customize the template using any of the following features in the Template Editor:
+<ul class="listbullet2"><li class="listbullet2">Use the Sample Context box to select the starting object to use for the expansion of the template. You can change this selection at any time to view the impact of changes to a template. You can select the Show all check box so that all objects that are valid as sample contexts are added to the Sample Context box.
+</li><li class="listbullet2">Use the Templates pane to select a template and double-click it to add the template content (code) to the Template Source pane.
+</li><li class="listbullet2">Use the Template Source pane to navigate and edit the code, insert macros, or print the text. The code is syntax-colored for the brand of SQL of the current model. You can also use the Toggle Auto Indent tool to automatically indent the code as needed.  
+</li><li class="listbullet2">Use the Macros pane to select a macro to insert into the Template Source pane. Highlight (select) the area in the template source where you want to insert the macro and then double-click the macro to insert it. You can also use the Toggle Macro Categories tool to toggle between alphabetical and category display. Use the Edit Macro Categories tool create new macros.
+</li><li class="listbullet2">Use the Expanded Text pane to view the read-only results of expanding the current template against the currently selected sample context object. The results are syntax-colored for the brand of SQL of the current model. You can change the sample context object by selecting a new object from the Sample Context drop-down list. Once you begin making changes to the template, the Expanded Text pane clears to recalculate and display the new results. The results include information about the parsing and execution status (failure or success). If the current TLX template does not parse correctly, it will display parser information.
+</li></ul></li>
+            <li class="listnumber">Click the Save Template File icon when you are done customizing the template.
+</li>
+            <li class="listnumber">Enter a file name to save it as a new (*.fet) template file or use the existing file name and click Save.
+</li>
+            <li class="listnumber">Click Close to close the Template Editor.
+</li>
+            <li class="listnumber">Click the Browse button to select the template file you just customized. The path for this file should display in the Database Template box. When you select the template it is associated with the model, and you can continue the schema generation process using the customized template file.
+</li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="The_Template_Editor.html" target="_self">The Template Editor</a>
+        </p>
+        <p class="relateditem"><a href="UsingOptionSets.html" target="_self">Using Option Sets</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

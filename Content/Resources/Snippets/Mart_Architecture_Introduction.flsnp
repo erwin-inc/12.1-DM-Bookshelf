@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">In the previous versions, erwin DM connected to the Mart database through the database client software. Now, the application connects to the Mart database through a web server. The database client software is no longer required. The web server includes a web-based administration console erwin Mart Administrator. If you are using the Workgroup Edition, you must install and configure erwin Mart Administrator. </p>
+    </body>
+</html>

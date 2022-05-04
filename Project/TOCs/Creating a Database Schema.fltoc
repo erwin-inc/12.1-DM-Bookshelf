@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="How to Create a Database Schema"
+    Link="/Content/Tutorials/Scenarios/Creating a Database Schema/creating_a_database_schema.html">
+    <TocEntry
+      Title="Open the Model and Validate It"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/open_the_model_and_validate_it.html" />
+    <TocEntry
+      Title="Select the Schema Generation Options"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/Select_schema_generation_options_Forward_Engineering.html">
+      <TocEntry
+        Title="Save an Option Set"
+        Link="/Content/Tutorials/Scenarios/Creating a Database Schema/save_an_option_set.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Use a Custom Template File"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/use_custom_template_file.html" />
+    <TocEntry
+      Title="Review Schema Generation Options (Forward Engineering)"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/Review_schema_generation_options_Forward_Engineering.html" />
+    <TocEntry
+      Title="Preview the Script (Forward Engineering)"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/Preview_the_schema_DDL_script_FE.html" />
+    <TocEntry
+      Title="Change Schema Generation Options (Forward Engineering)"
+      Link="/Content/Tutorials/Scenarios/Creating a Database Schema/Change_schema_generation_options_Forward_Engineering.html" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Adding a User"
+    Link="/Content/Tutorials/Scenarios/Adding a User to Mart/scn_adding_a_user.html">
+    <TocEntry
+      Title="Add a User"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/add_a_user.html">
+      <TocEntry
+        Title="Mart Users"
+        Link="/Content/Tutorials/Scenarios/Adding a User to Mart/mart_users.html" />
+      <TocEntry
+        Title="Best Practices to Add a Group User"
+        Link="/Content/Tutorials/Scenarios/Adding a User to Mart/group_user_best_practices.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Verify if an Existing Profile Suits the User"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/verify_if_existing_profile_suits.html">
+      <TocEntry
+        Title="How Profiles Work"
+        Link="/Content/Tutorials/Scenarios/Adding a User to Mart/how_profiles_work.html" />
+    </TocEntry>
+    <TocEntry
+      Title="Create a Profile"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/Create a Profile.html" />
+    <TocEntry
+      Title="Verify if the Required Catalog or Library Exists"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/verify_if_req_catalog_library_exists.html" />
+    <TocEntry
+      Title="Create a Library"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/create_a_library.html" />
+    <TocEntry
+      Title="Assign Permissions to a User"
+      Link="/Content/Tutorials/Scenarios/Adding a User to Mart/assign_permissions_to_a_user.html" />
+  </TocEntry>
+</CatapultToc>

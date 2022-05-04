@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Database in SQL Azure</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3138" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('3137');expand2('3135');expand2('2997');highlight('3138')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t3138">Define a Database in SQL Azure</p>
+        <p class="bodytext">The SQL Azure Database Editor is used to create new databases and define database properties in a SQL Azure physical model.</p>
+        <p class="proceduresubheading">To define a database in SQL Azure</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click <span class="uielement">Target - SQL Azure, Databases</span> on the <span class="uielement">Model </span>menu.
+<p class="listcontinue">The SQL Azure Database Editor opens.</p></li>
+            <li class="listnumber">Select the database in the Navigation Grid that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new database. Use the <em class="italic">Enter filter text</em> box to filter a very large list of databases to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the database. Change the name of the database in this field.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">General </span>tab and work with the following options:
+<dl><dt>EDITION</dt><dd><p class="normaltermcontinued2">Specifies the edition of the database, either Web for Web Edition or Business for Business Edition. </p><p class="normaltermcontinued2">When EDITION is specified but MAXSIZE is not specified, MAXSIZE will be set to the most restrictive size that the edition supports (1 GB for Web Edition and 10 GB for Business Edition).</p></dd><dt>MAXSIZE</dt><dd><p class="normaltermcontinued2">Specifies the maximum size of the database. MAXSIZE must be valid for the specified EDITION. </p><p class="normaltermcontinued2"><strong>Valid values (Web Edition):</strong></p><ul class="listbullet3"><li class="listbullet3">1GB
+</li><li class="listbullet3">5GB 
+</li></ul><p class="normaltermcontinued2"><strong>Valid values (Business Edition):</strong></p><ul class="listbullet3"><li class="listbullet3">10GB
+</li><li class="listbullet3">20GB
+</li><li class="listbullet3">30GB
+</li><li class="listbullet3">40GB
+</li><li class="listbullet3">50GB 
+</li></ul><p class="listnote2"><strong>Notes:</strong></p><ul class="listbullet3endash"><li class="listbullet3endash">If MAXSIZE is set to a value of 1GB or 5GB, and EDITION is not specified, the database edition is automatically set to Web Edition. 
+</li><li class="listbullet3endash">If MAXSIZE is set to a value of 10GB, 20GB, 30GB, 40GB, or 50GB, and EDITION is not specified, the database edition is automatically set to Business Edition. 
+</li><li class="listbullet3endash">If neither MAXSIZE or EDITION are specified, a Web Edition database of size 1GB is created.
+</li></ul></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement">Permission </span>tab to define the permissions for the database.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The database is defined and the SQL Azure Database Editor closes.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="View_the_Where_Used_Information_for_a_Physical_Object.html" target="_self">View the Where Used Information for a Physical Object</a>
+        </p>
+        <p class="relateditem"><a href="Def_Perm_Azure_Obj_in_an_Editor.html" target="_self">Define Permissions for an Object in a SQL Azure Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_Comment_in_a_Property_Editor.html" target="_self">Add a Comment in a Property Editor</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_UDP_in_a_Property_Editor.html" target="_self">Add a UDP in a Physical Property Editor</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

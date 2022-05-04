@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">The Scheduler generates an event log for each RE&#160;job that you run. To view the event log for all the jobs, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">On the ribbon, click <b>Scheduler Events Report</b>.<br />The Scheduler Events Report screen appears. It displays the list of jobs and their status.<br /><img src="../Images/Scheduler_Events_Report.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 540px;height: 361px;" /></li>
+        </ol>
+        <p class="bodytext">Use the following options to filter and view the event log:</p>
+        <ul>
+            <li class="listalpha"><b>Job Status</b>: Select one or more options to filter events log based on the job status. You can filter based on successful, failed, canceled, or jobs in progress, with or without recurrence.</li>
+            <li class="listalpha"><b>Scheduled Date</b>: Select a date range to view event logs within start and end date.</li>
+        </ul>
+    </body>
+</html>

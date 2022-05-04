@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">Select the subject area for which you want to generate the schema. If you skip this step, the Main Subject Area is selected by default. 
+</li>
+            <li class="listnumber">On the Actions tab, click <b>Schema</b>.
+<p class="listcontinue">The Forward Engineer Schema Generation Wizard opens.</p></li>
+            <li class="listnumber">Click the <b>Option Selection</b> tab.<br /></li>
+            <li class="listnumber">Select an <b>Option Set</b> or click <b>Open</b> to use an option set you saved as an XML file.
+<p class="listcontinue">Your selections are applied to the schema generation options.</p></li>
+            <li class="listnumber">Select an option group from the &lt;Database&gt; Schema Generation list.</li>
+            <li class="listnumber">Select the options for the schema from the Schema list.
+<ul class="listbullet2"><li class="listbullet2">To preview your schema DDL script, click Preview. 
+</li><li class="listbullet2">To change your schema generation options, click the Summary tab then select Edit Options. The options list displays the choices you made in the Options tab in a single tree.
+</li></ul></li>
+            <li class="listnumber">Click <b>Generate</b> to generate the schema to the target server.
+</li>
+        </ol>
+    </body>
+</html>

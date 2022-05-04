@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Validation Criteria for Oracle Models</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1408" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4622');expand2('1407');highlight('1408')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t1408">Validation Criteria for Oracle Models</h4>
+        <p class="bodytext">The Check Model/Validate SQL option allows you to reduce occurrences of syntax errors during forward engineering. For Oracle physical models, the following objects and properties are validated during the Check Model process:</p>
+        <dl>
+            <dt>Tables</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">At least 1 column.
+</li>
+            <li class="listbullet">Only 1 LONG column.
+</li>
+            <li class="listbullet">LOB segments containing more than 1 column are unnamed.
+</li>
+        </ul>
+        <dl>
+            <dt>Clustered tables</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">No cluster columns specified.
+</li>
+            <li class="listbullet">Number of cluster columns do not match the number of columns in the cluster.
+</li>
+            <li class="listbullet">Datatype of table cluster column matches datatype of cluster column (only data type is checked, not precision/scale).
+</li>
+        </ul>
+        <dl>
+            <dt>Index organized tables</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">No LONG columns.
+</li>
+            <li class="listbullet">Primary key constraint exists.
+</li>
+            <li class="listbullet">Overflow is specified if a UROWID column exists.
+</li>
+            <li class="listbullet">Overflow is specified if there is a LOB with enable storage in row.
+</li>
+            <li class="listbullet">Pctused is not specified.
+</li>
+            <li class="listbullet">Partition columns are part of the primary key.
+</li>
+        </ul>
+        <dl>
+            <dt>External Tables</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Column data types are valid.
+</li>
+            <li class="listbullet">No constraints.
+</li>
+            <li class="listbullet">No defaults on columns.
+</li>
+            <li class="listbullet">No LOBs.
+</li>
+        </ul>
+        <dl>
+            <dt>Materialized Views</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Table specified in select statement has a primary key.
+</li>
+            <li class="listbullet">LOB segments containing more than 1 column are unnamed.
+</li>
+            <li class="listbullet">Refresh Fast valid only if 1 master table and materialized view log exists on master table.
+</li>
+            <li class="listbullet">Refresh Fast with Primary Key is not valid if materialized view log is recording only rowed.
+</li>
+            <li class="listbullet">Refresh Fast with Rowid is valid only if materialized view log is recording rowid.
+</li>
+        </ul>
+        <dl>
+            <dt>Clustered materialized views</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Clustered materialized views have no LOB columns.
+</li>
+        </ul>
+        <dl>
+            <dt>Index organized materialized views</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Only 1 master table.
+</li>
+            <li class="listbullet">Primary key constraint exists.
+</li>
+        </ul>
+        <dl>
+            <dt>Materialized Views on prebuilt tables</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Table in select statement is has a different name from the view.
+</li>
+            <li class="listbullet">No LONG columns.
+</li>
+        </ul>
+        <dl>
+            <dt>Indexes</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Compress Prefix length for unique index is greater than or equal to 1 and less than the number of key columns.
+</li>
+            <li class="listbullet">Compress Prefix length for non-unique index is greater than or equal to 1 and less than or equal to the number of key columns.
+</li>
+            <li class="listbullet">Function bitmap index not valid on index organized table.
+</li>
+            <li class="listbullet">Index members have valid datatypes.
+</li>
+            <li class="listbullet">No duplicate indexes.
+</li>
+        </ul>
+        <dl>
+            <dt>Partitions</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Partition names are unique.
+</li>
+            <li class="listbullet">Partition columns reference attributes in the table.
+</li>
+            <li class="listbullet">Partition columns are of valid datatype.
+</li>
+            <li class="listbullet">Partition values are specified for Composite, Range and List partitions.
+</li>
+            <li class="listbullet">LOB segments containing more than 1 column are unnamed.
+</li>
+        </ul>
+        <dl>
+            <dt>Composite Partitions</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">If a subpartition template is specified, partitions do not specify STORE IN or SUBPARTITIONS clauses.
+</li>
+            <li class="listbullet">If a subpartition template is specified, all subpartitions must specify a tablespace if any do.
+</li>
+            <li class="listbullet">Subpartition templates must all contain the same LOB segments.
+</li>
+            <li class="listbullet">Subpartition templates must have unique LOB segment names.
+</li>
+        </ul>
+        <dl>
+            <dt>Range Partitions</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">MAXVALUE is specified for the last partition's values.
+</li>
+        </ul>
+        <dl>
+            <dt>List Partitions</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">DEFAULT is specified for the last partition's value
+</li>
+        </ul>
+        <dl>
+            <dt>Index Global Partition</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Partition columns are a prefix of the index members.
+</li>
+            <li class="listbullet">MAXVALUE is specified for the last partition's values when a range partition.
+</li>
+        </ul>
+        <dl>
+            <dt>Index Local Partition</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Number of partitions matches the number of table partitions.
+</li>
+            <li class="listbullet">Number of subpartitions matches the number of table subpartitions.
+</li>
+            <li class="listbullet">Partition type matches the partition type of the table.
+</li>
+            <li class="listbullet">For a unique index, the table partition and subpartition columns are part of the index.
+</li>
+        </ul>
+        <dl>
+            <dt>Views</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Foreign key constraint specified with RELY requires the primary key of the parent table to have RELY specified.
+</li>
+        </ul>
+        <dl>
+            <dt>Materialized View Logs</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Parent table contains a primary key.
+</li>
+            <li class="listbullet">Selected columns can not be part of the primary key if primary key is selected.
+</li>
+            <li class="listbullet">Partition columns must be log filtering columns or part of the primary key of the master table.
+</li>
+        </ul>
+        <dl>
+            <dt>Clusters</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">If single table only 1 table is attached to the cluster.
+</li>
+            <li class="listbullet">If sorted hash cluster no more than 2 tables are attached to the cluster.
+</li>
+            <li class="listbullet">If single table or hash expression is specified, hash keys is also specified
+</li>
+        </ul>
+        <dl>
+            <dt>Relationships</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Temporary table is not a child table.
+</li>
+            <li class="listbullet">If parent table is a temporary table, child table must be a view or materialized view.
+</li>
+            <li class="listbullet">If relationship is from a table to materialized view, only one can be clustered.
+</li>
+        </ul>
+        <dl>
+            <dt>Sequences</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">The Min value is less than or equal to Initial value.
+</li>
+            <li class="listbullet">The Min value is less than the Max value.
+</li>
+            <li class="listbullet">The Max value is greater than the Initial value.
+</li>
+            <li class="listbullet">The Increment is less than the range of values.
+</li>
+            <li class="listbullet">If Cycle specified – Max value must be specified for ascending sequence, Min value must be specified for descending sequence.
+</li>
+            <li class="listbullet">If Cycle specified – number of possible values is greater than the number of values in cycle.
+</li>
+            <li class="listbullet">If Max On specified – Max value must be specified.
+</li>
+            <li class="listbullet">If Min On specified – Min value must be specified.
+</li>
+            <li class="listbullet">If Cache On specified – Cache value must be specified.
+</li>
+        </ul>
+        <dl>
+            <dt>Rollback Segment</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Referenced tablespace is marked online.
+</li>
+        </ul>
+        <dl>
+            <dt>Disk Group</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Normal redundancy has at least 2 fail groups.
+</li>
+            <li class="listbullet">High redundancy has as least 3 fail groups.
+</li>
+            <li class="listbullet">External redundancy has only 1 fail group which is unnamed.
+</li>
+        </ul>
+        <dl>
+            <dt>DB Link</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Shared links specify an authorized user.
+</li>
+            <li class="listbullet">Non-shared links do not specify an authorized user.
+</li>
+        </ul>
+        <dl>
+            <dt>Supplemental Log Group</dt>
+            <dd>
+            </dd>
+        </dl>
+        <ul class="listbullet">
+            <li class="listbullet">Contains at least 1 log column.
+</li>
+        </ul>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Model_Validation_Check.html" target="_self">Model Validation Check</a>
+        </p>
+        <p class="relateditem"><a href="Check_your_model_validate_SQL.html" target="_self">Check Your Model/Validate SQL</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

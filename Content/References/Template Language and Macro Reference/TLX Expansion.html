@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>TLX Expansion</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6957" name="objectid" />
+        <meta content="249" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/30/2018T11:18-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" src="..\..\Resources\dhtml_toc.js" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('6957')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h1 class="heading1" id="t6957">TLX Expansion</h1>
+        <p class="minitocintro">This section contains the following topics</p>
+        <p class="minitocitem"><a href="TLX Expansion.html#o6961" target="_self">Phantom Objects</a>
+        </p>
+        <p class="bodytext">When macros are evaluating, they are generally operating on objects in the model. For example, the Property macro reads the value from a property on the "current" object. This current object is referred to as the context object. Objects become the current object by placing them on the context stack. This is an ordered list that operates in a Last In/First Out manner�objects are added to the list by pushing and removed from the list by popping them. </p>
+        <p class="bodytext">If you are familiar with erwin Data Modeler's Macro Language, this concept has been present since the earliest days. For example, in erwin Data Modeler r7.2 you could write %ForEachEntity(E_1). This would establish 'E_1' as the current object for subsequent macro calls. Additionally, many macros such as %JoinFKPK or %RelRI would only operate inside certain iterators or editors. This was because they required a certain context stack to be in existence internally. </p>
+        <p class="bodytext">This concept is simply being exposed more fully now to provide you more control. </p>
+        <p class="bodytext">As an illustration, suppose the TLX parser is invoked with an Attribute as the starting object. The context stack would have one entry:</p>
+        <p class="bodytext">
+            <img align="bottom" alt="Content Stack Entity" border="0" height="279" hspace="0" id="f6959" src="../../Resources/Images/6959.png" vspace="0" width="459" />
+        </p>
+        <p class="bodytext">Now a macro is used that pushes the Attribute object's owning Entity onto the stack. The stack will now have two entries, with the Entity being the current object.</p>
+        <p class="bodytext">
+            <img align="bottom" alt="Content Stack with Two Entities" border="0" height="259" hspace="0" id="f6960" src="../../Resources/Images/6960.png" vspace="0" width="459" />
+        </p>
+        <p class="bodytext">Now another macro is used that pops the last object from the stack. The stack now reverts to having only the Attribute in it and it is the current object.</p>
+        <p class="bodytext">
+            <img align="bottom" alt="Content Stack Entity" border="0" height="279" hspace="0" id="f6959_1" src="../../Resources/Images/6959.png" vspace="0" width="459" />
+        </p>
+        <p class="bodytext">Many macros operate upon the current context object. The Property macro is an example of this. </p>
+        <p class="bodytext">Other macros are capable of operating on objects deeper down the context stack. The PropertyFrom macro is an example of this type. </p>
+        <p class="bodytext">There are also a variety of macros that push objects onto the context stack and remove them. Macros with the words "Push" and "Pop" in their names are of this variety. </p>
+        <p class="bodytext">The bottommost (first) object on the stack is known as the anchor object and cannot be popped from the stack. This ensures that macros always have some object as the context. For example, assume that an Entity is the anchor object: </p><pre xml:space="preserve">
+PushOwner /* pushes the model onto the stack */ 
+</pre><pre xml:space="preserve">
+Pop /* pops the model from the stack */ 
+</pre><pre xml:space="preserve">
+Pop /* fails - entity is the anchor object */ 
+</pre>
+        <p class="bodytext">An object can appear in the stack more than once. If the object happens to be the anchor object, only its earliest appearance cannot be popped�other appearances can be popped at will. For example, assume that an Entity is the anchor object: </p><pre xml:space="preserve">
+PushOwner /* pushes the model onto the stack */ 
+</pre><pre xml:space="preserve">
+Repush( "1" ) /* pushes entity a second time */ 
+</pre><pre xml:space="preserve">
+Pop /* pops second occurrence of the entity */ 
+</pre><pre xml:space="preserve">
+Pop /* pops the model from the stack */ 
+</pre><pre xml:space="preserve">
+Pop /* fails - entity is the anchor object */ 
+</pre>
+        <p class="bodytext">Iteration macros that operate on objects implicitly push the current iteration object onto the stack. This frees you from having to write explicit push and pop macro calls. For example, assume that an Entity is the anchor object: </p><pre xml:space="preserve">
+Property("Name") /* &lt;- reads the entity name */ 
+</pre><pre xml:space="preserve">
+ForEachOwnee("Attribute") 
+</pre><pre xml:space="preserve">
+{ 
+</pre><pre xml:space="preserve">
+Property("Name") /* &lt;- reads an attribute's name */ 
+</pre><pre xml:space="preserve">
+} 
+</pre><pre xml:space="preserve">
+Property("Name") /* &lt;- back to reading the entity name */ 
+</pre>
+        <h2 class="heading2" id="t6961">Phantom Objects</h2>
+        <p class="bodytext">In certain processes in erwin Data Modeler, objects that are not actually in the model are simulated so that they can be used by macros. The most notable example of this situation is when evaluating a TLX template for generating an Alter Script. These objects are referred to as phantom objects. Generally, they can be treated exactly like a regular object. However, certain macros behave differently or do not function when the context object is a phantom object. These situations are noted in the macros' descriptions. </p>
+        <p>
+        </p>
+    </body>
+</html>

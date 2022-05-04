@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" madcap:sourcedocument="D:\Documentation\ProjectRevamp\MadCapFlare\PythonScripts\AIT Files\Workgroup Edition Implementation and Administration\Increase Space in Redo Logs.html" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Increase Space in Redo Logs</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3459" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/22/2018T14:20-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3452');expand2('3454');highlight('3459')}">
+        <p class="bodytext">
+            <MadCap:concept term="Installation" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t3459">Increase Space in Redo Logs</h3>
+        <p class="bodytext">The number and size of the Redo log files is an important performance consideration. Redo log files are created when the database is created.</p>
+        <p class="proceduresubheading">To increase space in the Redo logs</p>
+        <ol class="listnumber">
+            <li class="listnumber">Log in to Oracle using SQL*Plus as SYSDBA or SYSOPER and run the following script to create eight Redo logs that are 2 MB each:
+<pre xml:space="preserve">
+rem -- parm1 -- temp dir
+</pre><pre xml:space="preserve">
+rem Generate creation script
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_11.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_11.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_12.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_12.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_13.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_13.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_14.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_14.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_15.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_15.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_16.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_16.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_17.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_17.LOG' )
+ UNION
+</pre><pre xml:space="preserve">
+SELECT 'ALTER DATABASE ADD LOGFILE '''
+    ||  SUBSTR ( MEMBER , 1 , INSTR ( MEMBER , '\' , -1 , 1 ) )
+    || 'REDO_18.LOG'' SIZE 2M ;'
+  from V$LOGFILE
+ where ROWNUM = 1
+   and not exists ( SELECT 1 from V$LOGFILE where MEMBER like '%REDO_18.LOG' )
+.
+ Spool &amp;1.AddLog.ORA
+/
+Spool Off
+COMMIT ;
+</pre><pre xml:space="preserve">
+SELECT 'ALTER SYSTEM SWITCH LOGFILE ;' from V$LOG where ROWNUM &lt; 5
+.
+ Spool &amp;1.SwtchLog.ORA
+/
+Spool Off
+COMMIT ;
+</pre><pre xml:space="preserve">
+rem Generate Deletion script
+SELECT 'ALTER DATABASE DROP LOGFILE GROUP ' || TO_CHAR ( GROUP# ) || ' ;' from V$LOG where BYTES &lt; 2097152
+.
+ Spool &amp;1.DropLog.ORA
+/
+Spool Off
+COMMIT ;
+</pre><pre xml:space="preserve">
+@&amp;1.AddLog.ORA
+$Del &amp;1.AddLog.ORA
+COMMIT ;
+ 
+@&amp;1.SwtchLog.ORA
+$Del &amp;1.SwtchLog.ORA
+COMMIT ;
+ 
+@&amp;1.DropLog.ORA
+$Del &amp;1.DropLog.ORA
+COMMIT ;
+</pre></li>
+            <li class="listnumber">Run the following query to verify the new Redo log configuration:
+<pre xml:space="preserve">
+SQLWKS&gt; select group#, status, bytes from v$log;
+</pre></li>
+        </ol>
+        <p class="noteAlt">Oracle does not let you drop an older Redo log file that is still ACTIVE. If you must drop an older Redo log file that is still ACTIVE, drop that log file manually.</p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Table Index in SQL Server</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7821" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('7793');highlight('7821')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h6 class="heading6" id="t7821">Define a Table Index in SQL Server</h6>
+        <p class="bodytext">Use the SQL Server Table Index Editor to define table indexes in a SQL Server physical model.</p>
+        <p class="proceduresubheading">To define a table index in SQL Server</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click a table index in the Model Explorer and click Properties.
+<p class="listcontinue">The SQL Server Table Index Editor opens.</p></li>
+            <li class="listnumber">Select the table from the Table drop-down that contains the index that you want to define.
+</li>
+            <li class="listnumber">Select the index in the Navigation Grid that you want to define and work with the following options:
+<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create either a new unique (alternate key, or AK) or non-unique (inverted entry, or IE) index. Use the <em class="italic">Enter filter text</em> box to filter a very large list of indexes to quickly locate the one that you want to define.</p><dl><dt>Show FK Indexes</dt><dd><p class="normaltermcontinued2">Specifies to display FK (foreign key) indexes in the Navigation Grid.</p></dd><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name of the index. Change the physical name of the index in this field.</p></dd><dt>AK ID</dt><dd><p class="normaltermcontinued2">Displays key designation of the index.</p></dd><dt>Disabled</dt><dd><p class="normaltermcontinued2">Specifies whether the index is enabled or disabled.</p></dd><dt>Is Unique</dt><dd><p class="normaltermcontinued2">Specifies if the index is unique or non-unique. Select the check box if it is a unique index.</p></dd><dt>Physical Only</dt><dd><p class="normaltermcontinued2">Specifies whether the index should be suppressed from a logical model and appear in a physical model only.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd><dt>Generate As Constraint</dt><dd><p class="normaltermcontinued2">Generates the index as a constraint. Select the check box to enable this option. When this option is enabled, the Constraint Name field on the General tab is populated with the index name.</p></dd></dl></li>
+            <li class="listnumber">Click the General tab and work with the following options:
+<dl><dt>Hash Index</dt><dd><p class="normaltermcontinued2">Specifies whether the index is a hash index.</p></dd><dt>Bucket Count</dt><dd><p class="normaltermcontinued2">Specifies the number of buckets in a hash index.</p></dd><dt>Clustered</dt><dd><p class="normaltermcontinued2">Specifies whether the index is clustered or nonclustered.</p></dd><dt>Constraint Name</dt><dd><p class="normaltermcontinued2">Defines the index name when you have specified to generate it as a constraint.</p></dd><dt>Where</dt><dd><p class="normaltermcontinued2">Specifies the filtering criteria for the index, which defines the rows of the table that are included in the index.</p></dd></dl></li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Reorder_index_members.html" id="h1960" target="_self" title="Reorder Index Members">Members</a> tab and work with the following options:
+<dl><dt>Index Members</dt><dd><p class="normaltermcontinued2">Lists the columns defined to the table and lets you specify the columns to place into the index. You can use the toolbar to specify sort order, move columns up or down in the list, invoke the Column Editor to manage column properties, or open the Reset Order dialog to reset column order.</p></dd><dt>Also Include</dt><dd><p class="normaltermcontinued2">Specifies other non-key columns to include in the index. These columns are not part of the index but are stored along with the index columns in the index data area for fast retrieval. This optimizes retrieval speed because a read of this column is satisfied from the index data area, without accessing the row from the row data area. You can use the toolbar to specify sort order, move columns up or down in the list, or invoke the Column Editor to manage column properties.</p></dd></dl></li>
+            <li class="listnumber">Click the <span class="uielement"><a href="Define_Options_for_a_SQL_Server_Table_Index.html">Options</a></span>tab to further define the table index.
+</li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_Data_Compression_for_SQL_Server.html" id="h1948" target="_self" title="Define Data Compression for Tables, Table Indexes, or View Indexes in SQL Server">DataCompression</a><span class="uielement"></span>tab to define how data is compressed to reduce the amount of storage space it needs.
+</li>
+            <li class="listnumber">Click the <a class="z--jumptemplate" href="Define_a_Partition_for_a_SQL_Server_Table.html" id="h1946" target="_self" title="Define a Partition for a SQL Server Table">Partitions</a><span class="uielement"></span>tab to define partition columns.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_Comment_in_a_Property_Editor.html" id="h1041" target="_self" title="Add a Comment in a Property Editor">Comment</a></span><span class="uielement"></span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="View_the_Where_Used_Information_for_a_Physical_Object.html" id="h1043" target="_self" title="View the Where Used Information for a Physical Object">Where Used</a></span> tab to view where the object is used within the model.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Add_a_User-Defined_Property_to_a_Physical_Object.html" id="h1046" target="_self" title="Add a User-Defined Property to a Physical Object">UDP</a></span><span class="uielement"></span>tab to work with user-defined properties for the object. 
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="Notes_tab.html" id="h1049" target="_self" title="The Notes Tab">Notes</a></span><span class="uielement"></span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement"><a class="z--jumptemplate" href="extended_notes.html" id="h1052" target="_self" title="The Extended Notes Tab">Extended Notes</a></span> tab to view or edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The table index is defined and the SQL Server Table Index Editor closes. </p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Define_Data_Compression_for_SQL_Server.html" target="_self">Define Data Compression for Tables, Table Indexes, or View Indexes in SQL Server</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Missing Information</title>
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\docsstylesheet.css" />
+        <meta name="componentcd" content="&lt;authorit:componentcd&gt;" />
+        <meta name="objectid" content="3650" />
+        <meta name="basedOnKey" content="260" />
+        <!--metadata variables for XMD: translatable-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="&lt;authorit:ca_keywords&gt;" />
+        <meta name="ca_content_type" content="&lt;authorit:ca_content_type&gt;" />
+        <meta name="ca_context" content="&lt;authorit:ca_context&gt;" />
+        <meta name="ca_role" content="&lt;authorit:ca_role&gt;" />
+        <meta name="ca_language" content="en-US" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta name="ca_offering_name" content="&lt;authorit:ca_offering_name&gt;" />
+        <meta name="ca_product_version" content="&lt;authorit:ca_product_version&gt;" />
+        <meta name="ca_product_family" content="&lt;authorit:ca_product_family&gt;" />
+        <meta name="ca_alias_name" content="&lt;authorit:ca_alias_name&gt;" />
+        <meta name="ca_related_offering" content="&lt;authorit:ca_related_offering&gt;" />
+        <meta name="ca_access_level" content="&lt;authorit:ca_access_level&gt;" />
+        <meta name="ca_date_time" content="8/29/2018T20:00-5:00" />
+        <meta name="ca_creator" content="(supervisor)" />
+        <meta name="ca_source" content="&lt;authorit:ca_source&gt;" />
+        <meta name="ca_format" content="HTML" />
+        <meta name="ca_database" content="&lt;authorit:ca_database&gt;" />
+        <meta name="ca_application_server" content="&lt;authorit:ca_application_server&gt;" />
+        <meta name="ca_operating_system" content="&lt;authorit:ca_operating_system&gt;" />
+        <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
+        <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
+        <script language="javascript" type="text/javascript" src="..\..\Resources\dhtml_toc.js">
+        </script> <script language="javascript" type="text/javascript" src="..\..\Resources\open_parent.js"></script> <script language="javascript" type="text/javascript" src="../../Resources/mailca.js"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3633');expand2('3636');highlight('3650')}">
+        <h3 id="t3650" class="heading3">
+            <MadCap:concept term="References" />Missing Information</h3>
+        <p class="bodytext">Missing information in a model can sometimes result from efforts to normalize the data. In the example, adding the SPOUSE entity to the EMPLOYEE-CHILD model improves the design, but destroys the implicit relationship between the CHILD entity and the SPOUSE address. It is possible that the reason that “emp&#8209;spouse&#8209;address” was stored in the CHILD entity in the first place was to represent the address of the other parent of the child (which was assumed to be the spouse). If you need to know the other parent of each of the children, then you must add this information to the CHILD entity.</p>
+        <p class="picture">
+            <img id="f3651" src="../../Resources/Images/3651.png" alt="" height="189" width="308" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">The following three tables are sample instance tables for EMPLOYEE, CHILD, and SPOUSE:</p>
+        <p class="bodytext"><strong>EMPLOYEE</strong>
+        </p>
+        <table class="tableintopic" width="480" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="136">
+                    <p class="tableheading">emp-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tableheading">emp-name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="192">
+                    <p class="tableheading">emp-address</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="136">
+                    <p class="tablebodytext">E1</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Tom </p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="192">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="136">
+                    <p class="tablebodytext">E2 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Don</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="192">
+                    <p class="tablebodytext">Berkeley </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="136">
+                    <p class="tablebodytext">E3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">Bob</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="192">
+                    <p class="tablebodytext">Princeton</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="136">
+                    <p class="tablebodytext">E4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tablebodytext">Carol</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="192">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext"><strong>CHILD</strong>
+        </p>
+        <table class="tableintopic" width="480" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tableheading">emp-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="104">
+                    <p class="tableheading">child-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tableheading">child-name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tableheading">other-parent-id</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">E1</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="104">
+                    <p class="tablebodytext">C1 </p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Jane</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="104">
+                    <p class="tablebodytext">C1 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Tom</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">S1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="104">
+                    <p class="tablebodytext">C2 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Dick</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">S1</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="104">
+                    <p class="tablebodytext">C3 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Donna</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="152">
+                    <p class="tablebodytext">S2</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tablebodytext">E4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="104">
+                    <p class="tablebodytext">C1</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tablebodytext">Lisa </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="152">
+                    <p class="tablebodytext">S1</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext"><strong>SPOUSE</strong>
+        </p>
+        <table class="tableintopic" width="480" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">emp-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">spouse-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tableheading">spouse-address</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tableheading">current-or-not</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">S1 </p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Y</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">S2 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Cleveland</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">N</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">E3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">S1 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Princeton</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Y</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">E4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">S1 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">New York</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="144">
+                    <p class="tablebodytext">Y</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">E5</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">S1 </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="144">
+                    <p class="tablebodytext">Y</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">However, the normalization of this model is not complete. In order to complete it, you must ensure that you can represent all possible relationships between employees and children, including those where both parents are employees.</p>
+        <p />
+    </body>
+</html>

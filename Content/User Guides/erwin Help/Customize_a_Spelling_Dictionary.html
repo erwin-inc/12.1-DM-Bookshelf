@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Customize a Spelling Dictionary</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2886" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7790');expand2('2733');expand2('3065');highlight('2886')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t2886">Customize a Spelling Dictionary</p>
+        <p class="bodytext">You can customize a spelling dictionary to indicate the action that is performed on specific words. For example, you can add the word "erwin" to a dictionary and indicate that the word is ignored (skipped) during a spell check. </p>
+        <p class="bodytext">Other options allow you indicate that a specific word is replaced with another word during the spell check operation. For example, you could indicate the instances of the word "erwin" be replaced with the word "erwin". </p>
+        <p class="bodytext">You can also indicate if the change is automatic (change without a prompt) or conditioned (prompt you to confirm the change). </p>
+        <p class="bodytext">You can build your dictionary over time, and add or delete words and the associated action when necessary. You can use the Import option to import an external text file into the dictionary word list, and use the Export option to export a text file of the dictionary word list. You can also add a dictionary file created in another copy of erwin® Data Modeler and save it with the active dictionary.</p>
+        <p class="bodytext">Use the following process to create a dictionary, add words, and set a spell check action:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Click the Spell Check icon <img align="bottom" alt="Spell Check Icon" border="0" height="15" hspace="0" id="f1176" src="..\..\Resources\Images\1178.png" vspace="0" width="16" /> in the Comment tab of a property editor to open the Check Spelling dialog, then click the Dictionaries button.
+</li>
+            <li class="listbullet">In the Spelling Dictionaries dialog click the New Dictionary button to create a dictionary (TLX) file. 
+</li>
+            <li class="listbullet">Select a language and click OK. 
+</li>
+            <li class="listbullet">Work with the Words, Other word, and Action options to indicate how a specific word is treated. For example, enter a word in the Words box (for example, "erwin"). Enter the word you want to replace this word with, in the Other word box (for example, "erwin"). Select the way you want the spell check to act when it encounters this word, in the Actions drop-down list. The following actions are available:
+<dl><dt>Auto change (use case of other word)</dt><dd><p class="normaltermcontinued2">Specifies that when the spell check finds the word, it automatically changes it to the word indicated in the Other word box and applies the capitalization rules of the word in the Other word box. For example, if you have specified to change recieve to receive, regardless of whether your comments box has Recieve (first letter captial) or recieve, it is automatically changed to receive. </p></dd><dt>Auto change (use case of checked word)</dt><dd><p class="normaltermcontinued2">Specifies that when the spell check finds the word, it automatically changes all instances to the spelling indicated in the Words box, including the capitalization of the word. For example, if you have specified to change recieve to receive, if your comments box has Recieve (first letter captial), it is automatically changed to Receive. </p></dd><dt>Conditionally change (use case of other word)</dt><dd><p class="normaltermcontinued2">Specifies that when the spell check finds the word, it presents the option to change it to the word indicated in the Other word box.</p></dd><dt>Conditionally change (use case of checked word)</dt><dd><p class="normaltermcontinued2">Specifies that when the spell check finds the word, it presents the option to change it to the word indicated in the Words box.</p></dd><dt>Ignore (skip)</dt><dd><p class="normaltermcontinued2">Specifies that the spell check will skip the word.</p></dd><dt>Exclude (treat as misspelled)</dt><dd><p class="normaltermcontinued2">Specifies that you want the word excluded from the dictionary, and treated as a mis-spelled word during each spell check.</p></dd></dl></li>
+        </ul>
+        <p class="bodytext">Use the other options in the Spelling Dictionaries dialog to import or export a text file of words, and add an external dictionary file:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Click Import to import a text file of words to the Words list. 
+</li>
+            <li class="listbullet">Click Export to export the current Words list to a text file.
+</li>
+            <li class="listbullet">Click Add Dictionary to add a dictionary (TLX) file you may have created on another computer or installation of erwin® Data Modeler to add it to the list of dictionary files.
+</li>
+        </ul>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="2887.html" target="_self">Import or Export Spelling Dictionary Words</a>
+        </p>
+        <p class="relateditem"><a href="2888.html" target="_self">Add a Dictionary File to the Spelling Dictionary</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Install erwin DM</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7752" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/25/2018T09:27-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('8045');expand2('8050');highlight('7752')}">
+        <h3 class="heading3" id="t7752">Install erwin Data Modeler</h3>
+        <p class="bodytext">You many choose to install erwin Data Modeler (DM) in one of the following ways:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Silent installation</li>
+            <li class="listbullet">Installation using the executable file</li>
+        </ul>
+        <p class="bodytext">For the Workgroup Edition, install erwin DM on each computer that accesses Mart.</p>
+        <h4 class="heading4">Silent Installation</h4>
+        <p class="bodytext">To install erwin DM&#160;using a silent installation, run the following command:</p>
+        <p class="bodytext">"&lt;<i>erwinDM .exe location</i>&gt;\&lt;<i>executable-name</i>&gt;.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=&lt;<i>code</i>&gt; /norestart /qn /L &lt;<i>erwinDM .exe location</i>&gt;\&lt;<i>log-file-name</i>&gt;.log"</p>
+        <p class="bodytext">This command takes the location of the executable file and the license code as parameters. It installs erwin DM without restarting your system and creates a log file at the specified location.</p>
+        <p class="noteAlt">Silent Installation does not work for upgrading erwin DM. To upgrade to a newer version of erwin DM, first uninstall the existing version and then use the steps for Silent Installation to install the newer version.</p>
+        <p class="bodytext">For example, assume the following:</p>
+        <ol>
+            <li class="listnumber">erwin DM executable is named <b>EDM12.0-b8020-64bit.exe</b>.</li>
+            <li class="listnumber">erwin DM executable is present at <b>C:\Build\</b>. This location may differ on your computer.</li>
+            <li class="listnumber">License code is 123456789012345678.</li>
+            <li class="listnumber">Log file is named install.log.</li>
+        </ol>
+        <p class="bodytext">Based on the above assumptions, the command is as follows:</p>
+        <p class="bodytext">"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</p>
+        <p class="bodytext">Following are the scenarios and the respective commands that you can follow:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><b>With restart</b>: Set "REBOOT=Force" and remove "/norestart". For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=Force LICENSECODE=123456789012345678  /qn /L C:\Build\install.log"<br /></li>
+            <li class="listbullet"><b>Without restart</b>: Set "REBOOT=Really Suppress" and add "/norestart" after the license code. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"<br /></li>
+            <li class="listbullet"><b>With log</b>: Add "/L &lt;location and name of the log file&gt;" to the command. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</li>
+            <li class="listbullet"><b>Without log</b>: Exclude "/L &lt;location and name of the log file&gt;" in the command. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn"</li>
+        </ul>
+        <h4 class="heading4">Installation using the Executable File</h4>
+        <p class="bodytext">Use the same executable file for Standard and Workgroup Editions.</p>
+        <p class="bodytext">To install erwin DM using the executable file:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Log in to the computer where you want to install the product as an Administrator user.
+<p class="listcontinue">If you run an install without Administrative privileges, all files may not be installed or upgraded, and users can encounter problems when running the software.</p></li>
+            <li class="listnumber">
+                <p>Download the erwin.exe file from the online erwin product page and run it.
+</p>
+                <p class="listcontinue">The Installation Wizard opens.</p>
+            </li>
+            <li class="listnumber">Follow the instructions on the wizard pages.<br />(Optional) Enter the License Code if available.<br /><img src="../../../Resources/Images/DMInstaller.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 462px;height: 351px;" /><br /><p class="listcontinue">The program files are copied and erwin DM is installed.</p></li>
+        </ol>
+        <p class="noteAlt">You can install erwin DM Navigator using the erwin.exe file or  a separate Navigator.exe file.</p>
+        <MadCap:pageBreak xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <p class="heading3">Samples</p>
+        <p class="bodytext">erwin DM provides sample models with the installer for your use. You can use these models to learn data modeling and to get familiar with erwin DM. By default, the installer installs the eMovies and PublicationSystemSample models. To install CDM models, you need to select them for installation on the Custom Setup screen of the installation wizard.</p>
+        <p class="bodytext">To install CDM models, follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">
+                <p class="bodytext">On the Custom Setup screen, select <b>Samples</b>&#160;&gt; <b>CDM Models</b>.<br /><img src="../../../Resources/Images/InstallerCDMModels.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 432px;height: 329px;" /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Click <img src="../../../Resources/Images/Icon-InstallerOptionSelection.png" />. Then, click <b>This feature will be installed on the local hard drive</b>.<br /><img src="../../../Resources/Images/InstallerCDMModelsSelected.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="width: 433px;height: 329px;" /><br /></p>
+            </li>
+            <li class="listnumber">
+                <p class="bodytext">Follow the installation wizard to complete the installation.</p>
+            </li>
+        </ol>
+        <p class="bodytext">Once installation is completed, CDM&#160;models are available at one of the following locations depending on your erwin DM version:</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p>C:\Program Files\erwin\Data Modeler r9\BackupFiles\Samples\CDM Models</p>
+            </li>
+            <li class="listbullet">
+                <p>C:\ProgramData\erwin\Data Modeler\9.96\Samples\CDM Models</p>
+            </li>
+        </ul>
+        <p class="bodytext">&#160;</p>
+    </body>
+</html>

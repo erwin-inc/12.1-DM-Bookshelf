@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define a Partition Element in Oracle</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="3222" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('2709');highlight('3222')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h5 class="heading5" id="t3222">Define a Partition Element in Oracle</h5>
+        <p class="bodytext">Use the Oracle Partition Element Editor to define the boundary, subpartition element, and storage properties for a partition. The partition properties you can assign are identical to those you can assign in the General tab in the Oracle Table Editor, Oracle Materialized Views Editor, and Oracle Materialized View Log Editor. The partition properties however, apply only to the specific partition, and not the entire table, materialized view, or materialized view log.</p>
+        <p class="bodytext">To open the Oracle Partition Element Editor, click Partition Element in the Oracle Table Partition Editor dialog.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Select the partition for which you want to define partition elements.
+</li>
+            <li class="listnumber">Click New and a new partition element is added with a default name.
+</li>
+            <li class="listnumber">Complete the fields on the Boundaries tab.
+</li>
+            <li class="listnumber">Complete the fields on the Subpartition Elements tab.
+</li>
+            <li class="listnumber">Complete the fields on the Regular Storage tab.
+</li>
+            <li class="listnumber">Complete the fields on the Overflow Storage tab.
+</li>
+            <li class="listnumber">Click the Where Used tab to review where the selected table partition element is used.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Comment </span>tab and enter any comments that you want to associate with the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">UDP </span>tab to work with user-defined properties for the object.
+</li>
+            <li class="listnumber">(Optional) Click the <span class="uielement">Notes </span>tab to view and edit user notes.
+</li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The Oracle Partition Element Editor closes.</p></li>
+        </ol><a name="o3223"></a>
+        <h6 class="heading6" id="t3223">Define Partition Boundaries in Oracle</h6>
+        <p class="bodytext">The Oracle Partition Element Editor dialog opens when you click Partition Element Editor in the Partition Elements section of the Oracle Table Partition Editor dialog. </p>
+        <p class="bodytext">The partition properties you can assign are identical to those you can assign in the General tab in the Oracle Table Editor, Oracle Materialized Views Editor, and Oracle Materialized View Log Editor. The partition properties however, apply only to the specific partition, and not the entire table, materialized view, or materialized view log.</p>
+        <p class="bodytext">The Boundaries tab lets you define the ending value for a partition element.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Complete the following fields in the Boundaries tab:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the boundary.</p></dd><dt>Partition Column</dt><dd><p class="normaltermcontinued2">Specifies the column that is participating in the partition. This field is populated automatically.</p></dd><dt>Ending Value</dt><dd><p class="normaltermcontinued2">Specifies the upper limit for the partition boundary.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The Oracle Partition Element Editor closes.</p></li>
+        </ol><a name="o3224"></a>
+        <h6 class="heading6" id="t3224">Define Valid Values for Partition Elements in Oracle</h6>
+        <p class="bodytext">The Oracle Partition Element Editor dialog opens when you click Partition Element Editor in the Partition Elements section of the Oracle Table Partition Editor dialog. </p>
+        <p class="bodytext">The partition properties you can assign are identical to those you can assign in the General tab in the Oracle Table Editor, Oracle Materialized Views Editor, and Oracle Materialized View Log Editor. The partition properties however, apply only to the specific partition, and not the entire table, materialized view, or materialized view log.</p>
+        <p class="bodytext">The Valid Values tab lets you define the values for a list type of partition element. The tab is displayed only if you are creating a List type of partition or subpartition.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Complete the following fields in the Valid Values tab:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the value. This field is read-only</p></dd><dt>Display</dt><dd><p class="normaltermcontinued2">Specifies the partition value of the list type of partition.</p></dd><dt>Definition</dt><dd><p class="normaltermcontinued2">Specifies the definition for the corresponding value. Click the editor icon to cut, copy, paste, or print the definition.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The Oracle Partition Element Editor closes.</p></li>
+        </ol><a name="o3225"></a>
+        <h6 class="heading6" id="t3225">Define a Subpartition Element in Oracle</h6>
+        <p class="bodytext">The Oracle Partition Element Editor dialog opens when you click Partition Element Editor in the Partition Elements section of the Oracle Table Partition Editor dialog. </p>
+        <p class="bodytext">The partition properties you can assign are identical to those you can assign in the General tab in the Oracle Table Editor, Oracle Materialized Views Editor, and Oracle Materialized View Log Editor. The partition properties however, apply only to the specific partition, and not the entire table, materialized view, or materialized view log.</p>
+        <p class="bodytext">The Subpartition Element tab lets you define subpartition elements for a partition element.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click New in the Subpartition Elements tab and a new subpartition element is added.
+</li>
+            <li class="listnumber">Click Partition Element Editor to add subpartition elements to the selected partition element.
+</li>
+            <li class="listnumber">Complete the following fields:
+<dl><dt>Name</dt><dd><p class="normaltermcontinued2">Specifies the name of the subpartition element.</p></dd><dt>Partition Value</dt><dd><p class="normaltermcontinued2">Specifies the value of the subpartition. This field is populated automatically.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">The Oracle Partition Element Editor closes.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

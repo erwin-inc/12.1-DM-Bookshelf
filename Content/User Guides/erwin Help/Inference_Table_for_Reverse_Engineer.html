@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Inference Table for Reverse Engineer</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="598" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('597');expand2('6714');highlight('598')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t598">Inference Table for Reverse Engineer</h4>
+        <p class="bodytext">The following table lists the criteria that are used to infer primary keys, foreign keys, and relationships during reverse engineering.</p>
+        <p class="beforetable">
+        </p>
+        <table border="0" cellpadding="2" cellspacing="0" class="tableintopic" style="border-collapse: collapse;" width="474">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #808080;border-bottom: 1px solid #808080;" width="129">
+                    <p class="tableheading">Database Item</p>
+                </td>
+                <td style="border-top: 2px solid #808080;border-bottom: 1px solid #808080;" width="345">
+                    <p class="tableheading">Inference Rule</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="129">
+                    <p class="tablebodytext">Primary Key</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="345">
+                    <p class="tablebodytext">If a table includes one index that is defined as unique or primary for that table. Note that the primary key is inferred when the table is imported and created.</p>
+                    <p class="tablebodytext">If multiple tables have the same primary key, the application searches for other criteria such as the number of primary keys each table has. Suppose that one table has just one primary key, the other one has multiple primary keys, and a primary key is common for the tables. In this case, the table with one primary key is created as the parent table. In general, if there are multiple tables with the same primary key and the application cannot determine the relationship with certainty, then the application does not create the relationship.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="129">
+                    <p class="tablebodytext">Relationship</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="345">
+                    <p class="tablebodytext">Infer from Indexes:</p>
+                    <p class="tablebodytext">If a table includes an index that includes the same index members in the same order as an index identified as a primary key in a different table, and also includes additional columns not found in the primary key.</p>
+                    <p class="tablebodytext">Infer from Names:</p>
+                    <p class="tablebodytext">If a table includes an index that has the same name as an index identified as a primary key in a different table.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="129">
+                    <p class="tablebodytext">Parent/Child </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="345">
+                    <p class="tablebodytext">After inferring a relationship, it is determined that the larger index (more columns) belongs to the child table and the smaller index (fewer columns) belongs to the parent.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="129">
+                    <p class="tablebodytext">Foreign Key</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="345">
+                    <p class="tablebodytext">After inferring a relationship, it is determined that the index members in the child table that match those in the primary key of the parent table comprise the foreign key.</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #808080;" width="129">
+                    <p class="tablebodytext">Identifying or Non-Identifying</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #808080;" width="345">
+                    <p class="tablebodytext">After inferring a relationship, it is determined that a non-identifying relationship exists if the index columns do not appear in the primary key in the child table and an identifying relationship exists if the index columns do appear in the primary key in the child table.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">If you infer primary keys or relationships for a database and they are defined in the database, the application attempts to infer more information. For example, when a schema contains information about a primary key and it is not explicitly defined for a table, then the primary key is inferred automatically.</p>
+        <p class="noteAlt">In general, the criteria that are used for inferring primary key and relationship information leads to correct inferences. However, there is no guarantee that these inferences are always correct.</p>
+        <p>
+        </p>
+    </body>
+</html>

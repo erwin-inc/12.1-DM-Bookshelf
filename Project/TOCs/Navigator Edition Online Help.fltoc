@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Working with erwin Data Modeler Navigator Edition"
+    Link="/Content/User Guides/Navigator Edition Online Help/Working with erwin Data Modeler Navigator Edition.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Intended Audience"
+      Link="/Content/User Guides/Navigator Edition Online Help/Intended Audience.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="erwin Data Modeler Navigator Edition"
+      Link="/Content/User Guides/Navigator Edition Online Help/erwin Data Modeler Navigator Edition.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Modeling Overview"
+      Link="/Content/User Guides/Navigator Edition Online Help/Modeling Overview.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="The Application Development Cycle"
+      Link="/Content/User Guides/Navigator Edition Online Help/The Application Development Cycle.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Installation"
+    Link="/Content/User Guides/Navigator Edition Online Help/Installation.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Install erwin Data Modeler Navigator Edition"
+      Link="/Content/User Guides/Navigator Edition Online Help/Install erwin Data Modeler Navigator Edition.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Uninstall the Navigator Edition"
+        Link="/Content/User Guides/Navigator Edition Online Help/Uninstall the Navigator Edition.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Post-Installation"
+      Link="/Content/User Guides/Navigator Edition Online Help/Post-Installation.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Install the SSL Certificate"
+      Link="/Content/User Guides/Navigator Edition Online Help/Install the SSL Certificate.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+  <TocEntry
+    Title="Navigating Data Models"
+    Link="/Content/User Guides/Navigator Edition Online Help/Navigating Data Models.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Data Models"
+      Link="/Content/User Guides/Navigator Edition Online Help/Data Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Basic Data Modeling Concepts"
+      Link="/Content/User Guides/Navigator Edition Online Help/Basic Data Modeling Concepts.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Model Types"
+        Link="/Content/User Guides/Navigator Edition Online Help/Model Types.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Entities"
+        Link="/Content/User Guides/Navigator Edition Online Help/Entities.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Tables"
+        Link="/Content/User Guides/Navigator Edition Online Help/Tables.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Types of Entities/Tables"
+          Link="/Content/User Guides/Navigator Edition Online Help/Types of Entities-Tables.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Attributes and Columns"
+        Link="/Content/User Guides/Navigator Edition Online Help/Attributes and Columns.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Primary Key and Non-Keys"
+        Link="/Content/User Guides/Navigator Edition Online Help/Primary Key and Non-Keys.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Relationships"
+        Link="/Content/User Guides/Navigator Edition Online Help/Relationships.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Types of Relationships"
+          Link="/Content/User Guides/Navigator Edition Online Help/Types of Relationships.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Other Relationship Types"
+          Link="/Content/User Guides/Navigator Edition Online Help/Other Relationship Types.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Foreign Key"
+        Link="/Content/User Guides/Navigator Edition Online Help/Foreign Key.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Workplace Panes"
+      Link="/Content/User Guides/Navigator Edition Online Help/Workplace Panes.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Overview of Model Explorer"
+        Link="/Content/User Guides/Navigator Edition Online Help/Overview of Model Explorer.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Model View"
+          Link="/Content/User Guides/Navigator Edition Online Help/Model View.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Subject Area View"
+          Link="/Content/User Guides/Navigator Edition Online Help/Subject Area View.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="The Model Explorer Shortcut Menu"
+          Link="/Content/User Guides/Navigator Edition Online Help/The Model Explorer Shortcut Menu.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="The Model Explorer Toolbar"
+          Link="/Content/User Guides/Navigator Edition Online Help/The Model Explorer Toolbar.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="The erwin Toolbox"
+          Link="/Content/User Guides/Navigator Edition Online Help/The erwin Toolbox.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Alignment Toolbar"
+          Link="/Content/User Guides/Navigator Edition Online Help/Alignment Toolbar.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Drawing Toolbar"
+          Link="/Content/User Guides/Navigator Edition Online Help/Drawing_Toolbar.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="The Go to Diagram Option"
+          Link="/Content/User Guides/Navigator Edition Online Help/The Go to Diagram Option.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Object Properties"
+          Link="/Content/User Guides/Navigator Edition Online Help/Object Properties.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Object Moving, Copying, and Deleting"
+          Link="/Content/User Guides/Navigator Edition Online Help/Object Moving, Copying, and Deleting.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Action Log"
+        Link="/Content/User Guides/Navigator Edition Online Help/Action Log.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Action Log Panes"
+          Link="/Content/User Guides/Navigator Edition Online Help/Action Log Panes.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+          <TocEntry
+            Title="Details Pane"
+            Link="/Content/User Guides/Navigator Edition Online Help/Details Pane.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+          <TocEntry
+            Title="Summary Pane"
+            Link="/Content/User Guides/Navigator Edition Online Help/Summary Pane.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+        </TocEntry>
+        <TocEntry
+          Title="Action Log Shortcut Menu"
+          Link="/Content/User Guides/Navigator Edition Online Help/Action Log Shortcut Menu.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Action Log Tasks"
+          Link="/Content/User Guides/Navigator Edition Online Help/Action Log Tasks.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Locate Text Using the Find Feature"
+          Link="/Content/User Guides/Navigator Edition Online Help/Locate Text Using the Find Feature.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Use Extended Find and Filter"
+          Link="/Content/User Guides/Navigator Edition Online Help/Use Extended Find and Filter.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Undo a Transaction"
+          Link="/Content/User Guides/Navigator Edition Online Help/Undo a Transaction.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Redo a Transaction"
+          Link="/Content/User Guides/Navigator Edition Online Help/Redo a Transaction.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Reverse a Transaction"
+          Link="/Content/User Guides/Navigator Edition Online Help/Reverse a Transaction.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Undo and Redo to Selected Transaction"
+          Link="/Content/User Guides/Navigator Edition Online Help/Undo and Redo to Selected Transaction.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Undo/Reverse Comparison"
+          Link="/Content/User Guides/Navigator Edition Online Help/Undo-Reverse Comparison.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Generate a Session Activity Report"
+          Link="/Content/User Guides/Navigator Edition Online Help/Generate a Session Activity Report.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Advisories Pane"
+        Link="/Content/User Guides/Navigator Edition Online Help/Advisories Pane.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Overview Pane"
+        Link="/Content/User Guides/Navigator Edition Online Help/Overview_Pane.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Bulk Editor Pane"
+        Link="/Content/User Guides/Navigator Edition Online Help/Bulk_Editor_Pane.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Open an Existing Model"
+      Link="/Content/User Guides/Navigator Edition Online Help/how_you_open_an_existing_model.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Open a Model Saved in XML Format (XML Import)"
+      Link="/Content/User Guides/Navigator Edition Online Help/Open_Model_in_XML_Format.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Connect to Mart"
+      Link="/Content/User Guides/Navigator Edition Online Help/connect_to_mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Open a Model from the Mart"
+      Link="/Content/User Guides/Navigator Edition Online Help/Open_a_model_from_the_mart.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Customizing the Appearance of Data Models"
+      Link="/Content/User Guides/Navigator Edition Online Help/Customizing the Appearance of Data Models.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Display Levels"
+        Link="/Content/User Guides/Navigator Edition Online Help/Display Levels.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Logical Display Levels"
+          Link="/Content/User Guides/Navigator Edition Online Help/Logical Display Levels.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Physical Display Levels"
+          Link="/Content/User Guides/Navigator Edition Online Help/Physical Display Levels.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Display Options"
+          Link="/Content/User Guides/Navigator Edition Online Help/Display Options.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+          <TocEntry
+            Title="Entity or Table Display Options"
+            Link="/Content/User Guides/Navigator Edition Online Help/Entity or Table Display Options.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+          <TocEntry
+            Title="Relationship Display Option"
+            Link="/Content/User Guides/Navigator Edition Online Help/Relationship Display Option.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Font and Color Change for Individual Objects"
+        Link="/Content/User Guides/Navigator Edition Online Help/Font and Color Change for Individual Objects.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Customize Object Fonts and Colors"
+          Link="/Content/User Guides/Navigator Edition Online Help/Customize Object Fonts and Colors.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="Changing the Diagram Window Magnification Level"
+        Link="/Content/User Guides/Navigator Edition Online Help/Change_the_diagram_magnification_level.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+    <TocEntry
+      Title="Print a Data Model"
+      Link="/Content/User Guides/Navigator Edition Online Help/Print a Data Model.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Print Only What You Want"
+        Link="/Content/User Guides/Navigator Edition Online Help/Print Only What You Want.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Set Printer Options"
+        Link="/Content/User Guides/Navigator Edition Online Help/Set_Printer_Options.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Specify an Exact Print Scale Value"
+        Link="/Content/User Guides/Navigator Edition Online Help/Specify_an_Exact_Print_Scale_Value.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Add a Page Header or Footer"
+        Link="/Content/User Guides/Navigator Edition Online Help/Add_a_Page_Header_or_Footer.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Page Margins"
+        Link="/Content/User Guides/Navigator Edition Online Help/Page_Margins.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Page Boundaries"
+        Link="/Content/User Guides/Navigator Edition Online Help/adjust_page_print_boundaries.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      <TocEntry
+        Title="Set Print Margins"
+        Link="/Content/User Guides/Navigator Edition Online Help/Set Print Margins.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Reporting"
+    Link="/Content/User Guides/Navigator Edition Online Help/Reporting.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="Data Model Reporting"
+      Link="/Content/User Guides/Navigator Edition Online Help/Data Model Reporting.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="The Query Tool"
+        Link="/Content/User Guides/Navigator Edition Online Help/The_Query_Tool.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Create a Query"
+          Link="/Content/User Guides/Navigator Edition Online Help/Create_a_Query.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Open a Query"
+          Link="/Content/User Guides/Navigator Edition Online Help/Open_a_Query.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Save a Query"
+          Link="/Content/User Guides/Navigator Edition Online Help/Save_a_Query.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Execute a Query"
+          Link="/Content/User Guides/Navigator Edition Online Help/Execute_a_Query.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Execute a Query Against a Database"
+          Link="/Content/User Guides/Navigator Edition Online Help/Execute_a_Query_Against_a_Database.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+        <TocEntry
+          Title="Execute a Query Against erwin ODBC"
+          Link="/Content/User Guides/Navigator Edition Online Help/Execute_a_Query_Against_erwin_ODBC.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Change the Instance of an ODBC Connection"
+          Link="/Content/User Guides/Navigator Edition Online Help/ChangetheInstanceofanODBCConnection.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Restrict Row Count in Query Results"
+          Link="/Content/User Guides/Navigator Edition Online Help/Restrict_Row_Count_in_Query_Results.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Save a Result Set to a CSV File"
+          Link="/Content/User Guides/Navigator Edition Online Help/Save_a_Result_Set_to_a_CSV_File.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+      <TocEntry
+        Title="The Report Designer"
+        Link="/Content/User Guides/Navigator Edition Online Help/create_rep_report_designer.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Report Designer Features"
+          Link="/Content/User Guides/Navigator Edition Online Help/Report Designer Features.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Subject Area Reports"
+          Link="/Content/User Guides/Navigator Edition Online Help/Subject Area Reports.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Change the Logo on the HTML Report"
+          Link="/Content/User Guides/Navigator Edition Online Help/Change the Logo on the HTML Report.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Generating TLX Reports"
+          Link="/Content/User Guides/Navigator Edition Online Help/Generating TLX Reports.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Dimensional Modeling"
+          Link="/Content/User Guides/Navigator Edition Online Help/dimensional_modeling.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+          <TocEntry
+            Title="Report on Data Sources, Target Columns, and Transformations"
+            Link="/Content/User Guides/Navigator Edition Online Help/report_data_sources.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+          <TocEntry
+            Title="Report on Data Lineage with Diagrams"
+            Link="/Content/User Guides/Navigator Edition Online Help/report_data_lineage.html"
+            BreakType="chapter"
+            PageType="continue"
+            StartSection="false"
+            PageNumberReset="continue"
+            PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Product Differences"
+    Link="/Content/User Guides/Navigator Edition Online Help/Product Differences.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+    <TocEntry
+      Title="erwin Data Modeler Navigator Edition Differences"
+      Link="/Content/User Guides/Navigator Edition Online Help/erwin Data Modeler Navigator Edition Differences.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <TocEntry
+      Title="Data Model Disabled Menu Items and Toolbar Icons"
+      Link="/Content/User Guides/Navigator Edition Online Help/Data Model Disabled Menu Items and Toolbar Icons.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">There are two scenarios in which you commit Forward Engineering (FE) scripts to a Git repository:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><b>Scenario 1: Committing new or full FE scripts</b>: </li>
+            <p class="bodytext">Use the Forward Engineer Schema Generation Wizard to <a href="../../Release Notes/Feature Tour/CommittingNeworFullScripts.html">commit a physical database schema or FE script</a> from a Mart Model.</p>
+            <p class="noteAlt">To avoid script files from being overwritten, ensure that you use unique file names.</p>
+            <li class="listbullet"><b>Scenario 2: Committing alter scripts</b>: </li>
+            <p class="bodytext">Use the Forward Engineer Alter Script Schema Generation Wizard to commit an alter script after you make changes to a Mart Model. You can commit an alter script in two ways:</p>
+            <ul class="listbullet">
+                <li class="listbullet"><b>Commit and append an alter script to an existing script file</b> </li>
+                <li class="listbullet"><b>Commit and create a new alter script file in the Git repository</b> </li>
+            </ul>
+            <p class="bodytext">For more information, refer to the <a href="../../Release Notes/Feature Tour/CommittingAlterScripts.html">Scenario 2: Committing Alter Scripts</a> topic.</p>
+        </ul>
+    </body>
+</html>

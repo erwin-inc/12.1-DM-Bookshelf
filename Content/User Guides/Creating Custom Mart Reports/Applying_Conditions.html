@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Applying Conditions</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1527" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/10/2018T13:16-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1520');expand2('1522');highlight('1527')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" />
+        </p>
+        <h3 class="heading3" id="t1527">Applying Conditions</h3>
+        <p class="bodytext">Sometimes, you apply conditions to filter data. When you apply conditions, the efficiency of reports is improved, as conditions remove the invalid objects in context in the output XML. The conditions are applied on the object in context. As given in the example below, the &lt;Condition Compare="Comparison_Strategy"&gt; tag is defined within the &lt;Object_Type&gt; tag. The "Compare" attribute defines the comparison strategy. </p>
+        <p class="bodytext">The comparison strategy defines the following strategies: </p>
+        <ul class="listbullet">
+            <li class="listbullet">Exact: Compares with the exact value defined in the &lt;Value&gt; tag.
+</li>
+            <li class="listbullet">BeginsWith: Value begins with the value defined in the &lt;Value&gt; tag.
+</li>
+            <li class="listbullet">EndsWith: Value ends with the value defined in the &lt;Value&gt; tag.
+</li>
+            <li class="listbullet">Contains: Value contains with the value defined in the &lt;Value&gt; tag.
+</li>
+            <li class="listbullet">NotEqual: Value does not match the value defined in the &lt;Value&gt; tag. 
+</li>
+            <li class="listbullet">Null: Property value is NULL. The &lt;Value&gt; tag is not required in this strategy.
+</li>
+            <li class="listbullet">NotNull: Property value exists. The &lt;Value&gt; tag is not required in this strategy.
+</li>
+        </ul>
+        <p class="bodytext">Syntax:</p><pre xml:space="preserve">
+   &lt;Object_Type&gt;
+</pre><pre xml:space="preserve">
+    &lt;Name&gt;Attribute&lt;/Name&gt;
+</pre><pre xml:space="preserve">
+        &lt;Condition Compare = "Exact"&gt;
+</pre><pre xml:space="preserve">
+               	&lt;Property&gt;
+</pre><pre xml:space="preserve">
+            		&lt;Type&gt;Tpye&lt;/Type&gt;
+</pre><pre xml:space="preserve">
+             		&lt;Value&gt;0&lt;/Value&gt;	&lt;!--0 = PK Attribute Type--&gt;	
+</pre><pre xml:space="preserve">
+               	&lt;/Property&gt;
+</pre><pre xml:space="preserve">
+        &lt;/Condition&gt;
+</pre><pre xml:space="preserve">
+	&lt;Report_Output&gt;
+</pre><pre xml:space="preserve">
+		&lt;Property&gt;
+</pre><pre xml:space="preserve">
+			&lt;Type&gt;ID&lt;/Type&gt;
+</pre><pre xml:space="preserve">
+             		&lt;Type&gt;Parent_Relationship_Ref&lt;/Type&gt;
+</pre><pre xml:space="preserve">
+                &lt;/Property&gt;
+</pre><pre xml:space="preserve">
+        &lt;/Report_Output&gt;
+</pre><pre xml:space="preserve">
+    &lt;/Object_Type&gt;
+</pre>
+        <p />
+    </body>
+</html>

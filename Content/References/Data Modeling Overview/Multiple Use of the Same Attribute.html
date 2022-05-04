@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Multiple Use of the Same Attribute</title>
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\docsstylesheet.css" />
+        <meta name="componentcd" content="&lt;authorit:componentcd&gt;" />
+        <meta name="objectid" content="3640" />
+        <meta name="basedOnKey" content="260" />
+        <!--metadata variables for XMD: translatable-->
+        <meta name="description" content="" />
+        <meta name="keywords" content="&lt;authorit:ca_keywords&gt;" />
+        <meta name="ca_content_type" content="&lt;authorit:ca_content_type&gt;" />
+        <meta name="ca_context" content="&lt;authorit:ca_context&gt;" />
+        <meta name="ca_role" content="&lt;authorit:ca_role&gt;" />
+        <meta name="ca_language" content="en-US" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta name="ca_offering_name" content="&lt;authorit:ca_offering_name&gt;" />
+        <meta name="ca_product_version" content="&lt;authorit:ca_product_version&gt;" />
+        <meta name="ca_product_family" content="&lt;authorit:ca_product_family&gt;" />
+        <meta name="ca_alias_name" content="&lt;authorit:ca_alias_name&gt;" />
+        <meta name="ca_related_offering" content="&lt;authorit:ca_related_offering&gt;" />
+        <meta name="ca_access_level" content="&lt;authorit:ca_access_level&gt;" />
+        <meta name="ca_date_time" content="8/29/2018T20:00-5:00" />
+        <meta name="ca_creator" content="(supervisor)" />
+        <meta name="ca_source" content="&lt;authorit:ca_source&gt;" />
+        <meta name="ca_format" content="HTML" />
+        <meta name="ca_database" content="&lt;authorit:ca_database&gt;" />
+        <meta name="ca_application_server" content="&lt;authorit:ca_application_server&gt;" />
+        <meta name="ca_operating_system" content="&lt;authorit:ca_operating_system&gt;" />
+        <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
+        <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
+        <script language="javascript" type="text/javascript" src="..\..\Resources\dhtml_toc.js">
+        </script> <script language="javascript" type="text/javascript" src="..\..\Resources\open_parent.js"></script> <script language="javascript" type="text/javascript" src="../../Resources/mailca.js"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3633');expand2('3636');highlight('3640')}">
+        <h3 id="t3640" class="heading3">
+            <MadCap:concept term="References" />Multiple Use of the Same Attribute</h3>
+        <p class="bodytext">It is also a problem when a single attribute can represent one of two facts, and there is no way to understand which fact it represents. For example, the EMPLOYEE entity contains the attribute “start&#8209;or&#8209;termination&#8209;date” where you can record this information for an employee as follows: </p>
+        <p class="picture">
+            <img id="f3641" src="../../Resources/Images/3641.png" alt="" height="102" width="152" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">The following sample instance table shows start-or-termination date:</p>
+        <p class="bodytext"><strong>EMPLOYEE</strong>
+        </p>
+        <table class="tableintopic" width="480" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="88">
+                    <p class="tableheading">emp-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">emp-name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tableheading">emp-address</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="184">
+                    <p class="tableheading">start-or-termination-date</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="88">
+                    <p class="tablebodytext">E1</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Tom </p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="184">
+                    <p class="tablebodytext">January 10, 2004</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="88">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Don </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="184">
+                    <p class="tablebodytext">May 22, 2002</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="88">
+                    <p class="tablebodytext">E3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Bob </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Princeton</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="184">
+                    <p class="tablebodytext">March 15, 2003</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="88">
+                    <p class="tablebodytext">E4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">John </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">New York</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="184">
+                    <p class="tablebodytext">September 30, 2003</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="88">
+                    <p class="tablebodytext">E5</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Carol </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="112">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="184">
+                    <p class="tablebodytext">April 22, 2000</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="88">
+                    <p class="tablebodytext">E6</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">George </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="112">
+                    <p class="tablebodytext">Pittsburgh</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="184">
+                    <p class="tablebodytext">October 15, 2002</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">The problem in the current design is that there is no way to record both a start date, <em class="italic">the date that the EMPLOYEE started work</em>, and a termination date, <em class="italic">the date on which an EMPLOYEE left the company</em>, in situations where both dates are known. This is because a single attribute represents two different facts. This is also a common structure in legacy COBOL systems, but one that often resulted in maintenance nightmares and misinterpretation of information.</p>
+        <p class="bodytext">The solution is to allow separate attributes to carry separate facts. The following figure is an attempt to correct the problem. It is still not quite right. To know the start date for an employee, for example, you have to derive what kind of date it is from the “date-type” attribute. While this may be efficient in terms of physical database space conservation, it creates confusion with query logic.</p>
+        <p class="picture">
+            <img id="f3642" src="../../Resources/Images/3642.png" alt="" height="107" width="138" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">In fact, this solution actually creates a different type of normalization error, since “date-type” does not depend on “employee-id” for its existence. This is also poor design since it solves a technical problem, but does not solve the underlying business problem-how to store two facts about an employee.</p>
+        <p class="bodytext">When you analyze the data, you can quickly determine that it is a better solution to let each attribute carry a separate fact, as in the following figure:</p>
+        <p class="picture">
+            <img id="f3643" src="../../Resources/Images/3643.png" alt="" height="114" width="115" vspace="0" hspace="0" align="bottom" border="0" />
+        </p>
+        <p class="bodytext">The following table is a sample instance table showing “start-date” and “termination&#8209;date”:</p>
+        <p class="bodytext"><strong>EMPLOYEE</strong>
+        </p>
+        <table class="tableintopic" width="483" cellpadding="2" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr align="left" valign="top">
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="54">
+                    <p class="tableheading">emp-id</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="91">
+                    <p class="tableheading">emp-name</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tableheading">emp-address</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="125">
+                    <p class="tableheading">start-date</p>
+                </td>
+                <td style="border-top: 2px solid #010101;border-bottom: 2px solid #010101;" width="118">
+                    <p class="tableheading">termination-date</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-bottom: 1px solid #010101;" width="54">
+                    <p class="tablebodytext">E1</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="91">
+                    <p class="tablebodytext">Tom </p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="125">
+                    <p class="tablebodytext">January 10, 2004</p>
+                </td>
+                <td style="border-bottom: 1px solid #010101;" width="118">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="54">
+                    <p class="tablebodytext">E2</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="91">
+                    <p class="tablebodytext">Don </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="125">
+                    <p class="tablebodytext">May 22, 2002</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="118">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="54">
+                    <p class="tablebodytext">E3</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="91">
+                    <p class="tablebodytext">Bob </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Princeton</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="125">
+                    <p class="tablebodytext">March 15, 2003</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="118">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="54">
+                    <p class="tablebodytext">E4</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="91">
+                    <p class="tablebodytext">John </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">New York</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="125">
+                    <p class="tablebodytext">September 30, 2003</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="118">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="54">
+                    <p class="tablebodytext">E5</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="91">
+                    <p class="tablebodytext">Carol </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Berkeley</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="125">
+                    <p class="tablebodytext">April 22, 2000</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="118">
+                    <p class="tablebodytext">-</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="54">
+                    <p class="tablebodytext">E6</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="91">
+                    <p class="tablebodytext">George </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="96">
+                    <p class="tablebodytext">Pittsburgh</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="125">
+                    <p class="tablebodytext">October 15, 2002</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 2px solid #010101;" width="118">
+                    <p class="tablebodytext">Nov 30, 2003</p>
+                </td>
+            </tr>
+        </table>
+        <p class="bodytext">Each of the two previous situations contained a first normal form error. By changing the structures, an attribute now appears only once in the entity and carries only a single fact. If you make sure that all the entity and attribute names are singular and that no attribute can carry multiple facts, you have taken a large step toward assuring that a model is in first normal form.</p>
+        <p />
+    </body>
+</html>

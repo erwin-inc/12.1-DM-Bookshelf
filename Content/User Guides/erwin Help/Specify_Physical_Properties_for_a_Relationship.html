@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Specify Physical Properties for a Relationship</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4582" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4758');expand2('4577');highlight('4582')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t4582">Specify Physical Properties for a Relationship</h3>
+        <p class="bodytext">Use the General tab in the Relationships Editor in the physical model to specify the properties of a relationship such as its constraint name, cardinality, type, and null options. </p>
+        <p class="noteAlt">The options described are available for all relationships in a physical model. However, some target databases can have additional physical properties that you can specify. For more information about using these properties, see your vendor's SQL documentation. </p>
+        <p class="proceduresubheading">To specify physical properties for a relationship</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Relationships on the Model menu.
+<p class="listcontinue">The Relationships Editor opens.</p></li>
+            <li class="listnumber">Select a relationship in the Navigation Grid for which you want to specify properties and work with the following options:
+<dl><dt>Foreign Key Constraint Name </dt><dd><p class="normaltermcontinued2">Lets you enter or edit the foreign key constraint name for the parent-to-child and child-to-parent relationship.</p><p class="noteAlt">For Logical/Physical models, you can click the Reset button to inherit the constraint name from the logical name. If you delete the text from the Foreign Key Constraint Name field, the constraint name is set to an empty string.</p></dd><dt>Parent</dt><dd><p class="normaltermcontinued2">Specifies the parent of the selected relationship. This column is read-only.</p></dd><dt>Child</dt><dd><p class="normaltermcontinued2">Specifies the child of the selected relationship. This column is read-only.</p></dd><dt>Physical Only </dt><dd><p class="normaltermcontinued2">Lets you specify whether or not the relationship should display in the physical model only. Select this check box if you want the relationship to appear in the physical model only. Clear this check box if you want the relationship to appear in both the physical and logical model. Physical-only relationships do not appear when you switch to the logical model, but the parent table's primary key still migrates as a foreign key to the child table.</p></dd><dt>Generate </dt><dd><p class="normaltermcontinued2">Specifies to use the preferences selected in the Relationship Editor when DDL is generated during Forward Engineering. Select the check box to enable this option.</p></dd></dl></li>
+            <li class="listnumber">Work with the following options on the General tab:
+<dl><dt>Type </dt><dd><p class="normaltermcontinued2">Specifies the type of the relationship. Select from the drop-down list; valid values are Identifying and Non-identifying.</p></dd><dt>Null Option </dt><dd><p class="normaltermcontinued2">Specifies whether null values are allowed for non-identifying relationships.</p></dd><dt>Physical Name</dt><dd><p class="normaltermcontinued2">Specifies the physical name of the object. This field appears only when you are working with a physical model. You can choose to inherit, override, or harden the name.</p></dd><dt>Cardinality </dt><dd><p class="normaltermcontinued2">Lets you specify the cardinality for the relationship. Select one of the following options:</p><p class="list3"><strong>Zero, One or More</strong></p><p class="list4">Specifies that each parent table is connected to zero, one, or more instances of the child table.</p><p class="list3"><strong>One or More (P)</strong></p><p class="list4">Specifies that each parent table is connected to one or more instances of the child table.</p><p class="list3"><strong>Zero or One (Z)</strong></p><p class="list4">Specifies that each parent table is connected to zero or one instance of the child table.</p></dd><dt>Cardinality Value</dt><dd><p class="normaltermcontinued2">Specifies the exact number of child entity instances that each parent entity is connected to. Enter an integer. </p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">Physical properties are specified for the relationship and the Relationship Editor closes.</p><p class="noteAlt">Other tasks you can perform in the Relationship Editor include entering a comment, defining rolenames for migrated keys, and defining referential integrity trigger actions.</p></li>
+        </ol>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Identifying_Relationships_in_a_Physical_Model.html" target="_self">Identifying Relationships in a Physical Model</a>
+        </p>
+        <p class="relateditem"><a href="Non-Identifying_Relationships_in_the_Physical_Model.html" target="_self">Non-Identifying Relationships in the Physical Model</a>
+        </p>
+        <p class="relateditem"><a href="Set_Relationship_Cardinality.html" target="_self">Set Relationship Cardinality</a>
+        </p>
+        <p class="relateditem"><a href="Set_the_Default_Null_Option_for_a_Non_Identifying_Relationship.html" target="_self">Set the Default Null Option for a Non-Identifying Relationship</a>
+        </p>
+        <p class="relateditem"><a href="Enter_a_Foreign_Key_Comment_to_a_Relationship.html" target="_self">Enter a Foreign Key Comment to a Relationship</a>
+        </p>
+        <p class="relateditem"><a href="Assign_a_Rolename_to_a_Migrated_Index.html" target="_self">Assign a Rolename to a Migrated Index</a>
+        </p>
+        <p class="relateditem"><a href="Define_Referential_Integrity_Trigger_Actions_for_Relationships.html" target="_self">Define Referential Integrity Trigger Actions for Relationships</a>
+        </p>
+        <p class="relateditem"><a href="Assign_Relationship_UDP_Values_in_a_Physical_Model.html" target="_self">Assign Relationship UDP Values in a Physical Model</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

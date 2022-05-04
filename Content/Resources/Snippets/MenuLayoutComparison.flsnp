@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="mc-table-style: url('../TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;" class="TableStyle-TableStyle" cellspacing="0">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-TableStyle-Head-Header1">
+                    <th style="vertical-align: middle;text-align: left;" class="TableStyle-TableStyle-HeadE-Column1-Header1">
+                        <p class="tableheading" style="text-align: center;">Component</p>
+                    </th>
+                    <th style="vertical-align: middle;text-align: left;" class="TableStyle-TableStyle-HeadE-Column1-Header1">
+                        <p class="tableheading" style="text-align: center;">2019 R1<br />Location on Menu</p>
+                    </th>
+                    <th style="vertical-align: middle;text-align: left;" class="TableStyle-TableStyle-HeadD-Column1-Header1">
+                        <p class="tableheading" style="text-align: center;">2020 R1 (onward) <br />Location on Ribbon/Toolbar</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Model Templates</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">File</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Home</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">erwin DM NoSQL</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">File &gt; erwin Edge</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Tools &gt; Launch erwin DM NoSQL</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Mart components</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">File &gt; Mart</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Mart</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Editing options</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Edit</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Home</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Toolbox toolbar</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">View &gt; Toolbars</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Home</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Logical Model</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">View</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Display Toolbar</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Model</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">View</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Display Toolbar</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Windows</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">View &gt; Windows</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View &gt; Panes</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Vertical Split</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NA</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View &gt; Vertical Split</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Review Changes</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Actions</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Mart</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Manage Name Hardening</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Actions</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Tools</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Model Naming Options</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Actions</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Tools</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Query Tool</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NA</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Tools</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">erwin DM Scheduler</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NA</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Tools</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Customize</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Tools</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Quick Access Toolbar</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Manage Windows</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Window</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Cascade</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Window</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Tile</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Window</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Arrange Icons</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Window</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">View</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Diagram selector</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Window</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Editor pane-toggle using model specific tabs.</td>
+                </tr>
+                <tr class="TableStyle-TableStyle-Body-Body1">
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">Bridges</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyB-Column1-Body1">NA</td>
+                    <td style="color: #000000;" class="TableStyle-TableStyle-BodyA-Column1-Body1">Tools</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

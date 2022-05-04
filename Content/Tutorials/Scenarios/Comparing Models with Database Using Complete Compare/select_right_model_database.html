@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Select the Right Model or Database</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1556" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="9/3/2018T12:03-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('1570');highlight('1556')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t1556">Select the Right Model</h2>
+        <p class="bodytext">The right model can be a local or a Mart model, or it can be a model that is reverse-engineered from a database or a script. However, as this section describes how to compare a model with a database, it describes reverse-engineering a model from a database for the right model.  </p>
+        <p class="bodytext">To generate the right model, you reverse engineer a database. When you save the database schema, you can use this schema to generate the right model. The reverse engineered model displays in the right pane of the Resolve Difference dialog. Help ensure that you have read and write permissions on all the objects that you want to reverse engineer from the database.</p>
+        <p class="noteAlt">In the following procedure, SQL Server is selected as the database. </p>
+        <p class="bodytext">For example, consider Org_New.erwin for the right model. Reverse engineer the Org_New database from SQL Server to get the model as shown in the following diagram:</p>
+        <p class="picture">
+            <img align="bottom" alt="Illustrating the Right Model for comparing models" border="0" height="243" hspace="0" id="f1437" src="..\..\..\Resources\Images\1438.png" vspace="0" width="476" />
+        </p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">In the Right Model Selection pane of the Complete Compare wizard, select Database/Script, select Allow Demand Loading, and click Load.
+<p class="listcontinue">The New Model dialog opens.</p><p class="listcontinue">The Allow Demand Loading option loads only the names of tables. It then checks the table names that are matching in the Left Model and populates other properties such as columns and relationships. This helps the model to load faster initially. When the tables or properties that are not matching are imported to the Left model, this process accesses the database again and retrieves the rest of the properties.</p></li>
+            <li class="listnumber">Select the <span class="uielement">Type</span> as Logical/Physical, Target Server as SQL Server, Template, and click Next.
+<p class="listcontinue">The Reverse Engineer Set Options dialog opens. You can also select Database when comparing against a script or a database.</p></li>
+            <li class="listnumber">Work with the following options:
+<dl><dt><span class="uielement">Reverse Engineer From</span></dt><dd><p class="normaltermcontinued2">Specifies whether you want to reverse engineer from a database or a script. If you choose the script, click <span class="uielement">Browse</span> to select the file.</p><p class="noteAlt">To reverse engineer from a script, select a file that is saved either in ANSI or ASCII format. </p></dd><dt><span class="uielement">Items to Reverse Engineer</span></dt><dd><p class="normaltermcontinued2">Displays the default option set, which includes all the objects and properties for the selected target database. You can change the default option set and save it for future use. The option set can be saved as a model or as an XML file. If you save the option set as a model, the options are applicable only to that model. If you save the option set as an XML file, you can use it with other models as well. </p></dd></dl><p class="normaltermcontinued"><span class="uielement">Reverse Engineer </span></p><p class="normaltermcontinued2">Specifies whether you want to reverse engineer system objects and user tables, or only user tables. If you select the System Objects check box the system tables, views and stored procedures related to system tables are reverse engineered.</p><dl><dt><span class="uielement">Table/Views Owned By</span></dt><dd><p class="normaltermcontinued2">Reverse engineers tables and views by ownership. You must have read and write privileges on all the tables that you want to reverse engineer, regardless of whether you are the owner of the table. Select <em class="italic">one</em> of the following ownership options:</p><dl><dt><span class="uielement">All</span></dt><dd><p class="normaltermcontinued3">Reverse engineers all tables and views in the database for which you have the necessary permissions, regardless of the owner.</p></dd><dt><span class="uielement">Current User</span></dt><dd><p class="normaltermcontinued3">Reverse engineers only those tables and views that are owned by the current user. The current user details are entered in the &lt;Database&gt; Connection dialog.</p></dd><dt><span class="uielement">Owners (comma separated)</span> </dt><dd><p class="normaltermcontinued3">Reverse engineers the tables and views that are owned by the users that are specified here. Enter the user names in capital letters.</p></dd></dl></dd><dt><span class="uielement">Infer</span></dt><dd><p class="normaltermcontinued2">Specifies whether you want to infer primary keys or relationships, or both, during reverse engineering. Work with the following options:</p><dl><dt><span class="uielement">Primary Keys</span> </dt><dd><p class="normaltermcontinued3">Infers primary key columns for the tables that are based on defined indexes.</p></dd><dt><span class="uielement">Relations</span><strong> </strong></dt><dd><p class="normaltermcontinued3">Infers the relationships between tables that are based on either primary key column names or defined indexes. Select this option and then specify whether to use primary key column names or defined indexes:</p><p class="listcontinue3"><span class="uielement">Indexes</span> </p><p class="listcontinue3">Infers the relationships from the table indexes. Relationships are inferred from table indexes only if the primary key columns of the parent table are part of the index in the child table.</p><p class="listcontinue3"><span class="uielement">Names</span> </p><p class="listcontinue3">Infers the relationships from the primary key column names. Relationships are inferred from columns names only if all of the primary key columns of the parent are in the child table.</p><p class="noteAlt">If the target database or script supports primary and foreign key declarations, you do not need to use the Primary Keys, Relations, Indexes, or Names options.</p></dd></dl></dd><dt><span class="uielement">Case Conversion of Physical Names</span></dt><dd><p class="normaltermcontinued2">Specifies how the case conversion of physical names is handled during reverse engineering. Work with the following options: </p><dl><dt><span class="uielement">None</span></dt><dd><p class="normaltermcontinued3">Preserves the case exactly as it appears in the script file or database.</p></dd><dt><span class="uielement">lower</span></dt><dd><p class="normaltermcontinued3">Converts the names to lower case.</p></dd><dt><span class="uielement">UPPER</span></dt><dd><p class="normaltermcontinued3">Converts the names to upper case.</p></dd><dt><span class="uielement">Force</span> </dt><dd><p class="normaltermcontinued3">Overrides the physical name property for all objects in logical/physical models automatically during reverse engineering.</p><p class="normaltermcontinued3">If this option is not enabled, all logical and physical names are set to the same value after the process completes. If this option is enabled, the logical/physical link is broken between the logical and physical name.</p></dd></dl></dd><dt><span class="uielement">Case Conversion of Logical Names</span></dt><dd><p class="normaltermcontinued2">Specifies how the case conversion of logical names is handled during reverse engineering. Work with the following options:</p><dl><dt><span class="uielement">None</span></dt><dd><p class="normaltermcontinued3">Preserves the case exactly as it appears in the script file or database.</p></dd><dt><span class="uielement">lower</span></dt><dd><p class="normaltermcontinued3">Converts the names to lower case.</p></dd><dt><span class="uielement">UPPER</span></dt><dd><p class="normaltermcontinued3">Converts the names to upper case.</p></dd><dt><span class="uielement">Mixed</span> </dt><dd><p class="normaltermcontinued3">Preserves mixed-case logical names.</p></dd></dl></dd><dt><span class="uielement">Include Generated Triggers</span></dt><dd><p class="normaltermcontinued2">Specifies whether erwin-generated triggers are loaded during the reverse engineer process. This option is linked to the <em class="italic">Automatically Create RI Triggers</em> setting in the Model Editor, RI Defaults tab. When you choose to create RI triggers automatically, the triggers are treated as model objects. These objects can be forward-engineered into a model, database, or script file. You can include or exclude automatically generated triggers when you reverse engineer. </p></dd></dl></li>
+            <li class="listnumber">Click <span class="uielement">Next</span>.
+<p class="listcontinue">One of the following actions occur based on the selection for the Reverse Engineer From option:</p><ul class="listbullet2"><li class="listbullet2">When you select Database, the SQL Server Connection dialog opens. 
+</li><li class="listbullet2">When you select Script File, you do not have to connect to the database. The script is reverse engineered and the model opens. Continue to Step 8.
+</li></ul></li>
+            <li class="listnumber">Enter your database connection credentials and click <span class="uielement">Connect</span>.
+<p class="listcontinue">The reverse engineering process runs, and your database appears as the Right Model in the Complete Compare wizard.</p></li>
+            <li class="listnumber">Click <span class="uielement">Next</span> to save the right model selection and open the Type Selection pane.
+</li>
+        </ol>
+        <p class="bodytext">The right model is selected.</p>
+        <p class="bodytext"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\400.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

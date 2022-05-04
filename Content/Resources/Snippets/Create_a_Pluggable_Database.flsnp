@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">You can use the pluggable database concept in Oracle 12c and create multiple Marts of the same Mart release.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Create a pluggable database in Oracle 12c.
+<p class="listcontinue">For example, provide the Global Database Name as erwin and the Pluggable Database Name as erwin_test.</p><p class="noteAlt">For more information on how to create a pluggable database, see the Oracle documentation.</p></li>
+            <li class="listnumber">Run the following script on the computer where Oracle 12c is installed:
+<pre xml:space="preserve">
+DROP TABLESPACE MMDATA INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+</pre><pre xml:space="preserve">
+DROP TABLESPACE MMINDEX INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+</pre><pre xml:space="preserve">
+DROP TABLESPACE marttemp INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+</pre><pre xml:space="preserve">
+ALTER SESSION SET CONTAINER=erwin_test;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+CREATE TABLESPACE MMDATA datafile 'c:\r9mart2\MMDATA.dbf' size 300m autoextend on;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+CREATE TABLESPACE MMINDEX datafile 'c:\r9mart2\MMINDEX.dbf' size 300m autoextend on;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+CREATE TEMPORARY TABLESPACE marttemp tempfile 'c:\r9mart2\tempdata.dbf' size 300m autoextend on;
+</pre><pre xml:space="preserve">
+DROP USER MMADMIN CASCADE;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+CREATE USER MMADMIN IDENTIFIED BY MMADMIN DEFAULT TABLESPACE MMDATA TEMPORARY TABLESPACE MARTTEMP QUOTA UNLIMITED ON MMDATA QUOTA UNLIMITED ON MMINDEX;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+DROP ROLE MMINSTALL;
+</pre><pre xml:space="preserve">
+CREATE ROLE MMINSTALL;
+</pre><pre xml:space="preserve">
+GRANT CREATE SEQUENCE TO MMINSTALL;
+</pre><pre xml:space="preserve">
+GRANT CREATE TABLE TO MMINSTALL;
+</pre><pre xml:space="preserve">
+GRANT CREATE VIEW TO MMINSTALL;
+</pre><pre xml:space="preserve">GRANT CREATE MATERIALIZED VIEW TO MMINSTALL;</pre><pre xml:space="preserve">
+GRANT DROP PUBLIC SYNONYM TO MMINSTALL;
+</pre><pre xml:space="preserve">
+GRANT CREATE PUBLIC SYNONYM TO MMINSTALL;
+</pre><pre xml:space="preserve">
+GRANT CREATE PROCEDURE TO MMINSTALL;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+GRANT CREATE SESSION TO MMINSTALL;
+</pre><pre xml:space="preserve"></pre><pre xml:space="preserve"></pre><pre xml:space="preserve">
+GRANT MMINSTALL TO MMADMIN;
+</pre><pre xml:space="preserve">
+GRANT DBA TO MMADMIN;
+</pre></li>
+        </ol>
+    </body>
+</html>

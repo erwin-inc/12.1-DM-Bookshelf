@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define Schema Generation Table Options</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4773" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4772');expand2('4622');expand2('1414');highlight('4773')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h4 class="heading4" id="t4773">Define Schema Generation Table Options</h4>
+        <p class="proceduresubheading">To define schema generation table options</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Forward Engineer, Schema... on the Actions menu.
+<p class="listcontinue">The Forward Engineer Schema Generation dialog opens on the Options tab.</p></li>
+            <li class="listnumber">Select the name of the current option set and choose from the following options:
+<dl><dt>CREATE TABLE</dt><dd><p class="normaltermcontinued2">Include a Create Table statement for each selected table in the generated schema.</p></dd><dt>Entity Integ</dt><dd><p class="normaltermcontinued2">Include SQL statements that create constraint rules for each table.</p></dd><dt>DROP TABLE</dt><dd><p class="normaltermcontinued2">Execute DROP TABLE or DELETE TABLE statements before executing CREATE TABLE statements when generating the schema. A DROP TABLE statement is executed for each CREATE TABLE statement in the schema.</p></dd><dt>Physical Storage</dt><dd><p class="normaltermcontinued2">Include physical storage objects and parameters in the generated schema.</p><p class="noteAlt">This option is not available for SQL Azure.</p></dd><dt>Table CHECK</dt><dd><p class="normaltermcontinued2">Include SQL statements that create constraint rules for each table.</p></dd><dt>Pre-Script</dt><dd><p class="normaltermcontinued2">Execute prescripts attached to a table immediately before generating the table.</p></dd><dt>Post-Script</dt><dd><p class="normaltermcontinued2">Execute postscripts attached to a table immediately after generating the table.</p></dd><dt>Table Validation</dt><dd><p class="normaltermcontinued2">Include any validation rules associated with tables in the generated schema as table-level check constraints. This option is only available in Progress when you choose to generate the schema using the Progress 4GL option.</p></dd><dt>CREATE ALIAS</dt><dd><p class="normaltermcontinued2">Include any user-defined table alias names in the generated schema. This option is available for Db2 LUW and Db2 z/OS.</p></dd><dt>DROP ALIAS</dt><dd><p class="normaltermcontinued2">Include statements that drop previously defined alias table names. A DROP statement is executed for each CREATE alias statement in the generated schema. This option is available for Db2 LUW and Db2 z/OS.</p></dd><dt>Create Macro</dt><dd><p class="normaltermcontinued2">Include Teradata macro statements in the generated schema.</p></dd><dt>Drop Macro</dt><dd><p class="normaltermcontinued2">Include statements that drop previously defined Teradata macros. A DROP statement is executed for each CREATE macro statement in the generated schema.</p></dd><dt>CREATE SYNONYM</dt><dd><p class="normaltermcontinued2">Include your defined synonym table names in the generated schema.</p></dd><dt>Drop SYNONYM</dt><dd><p class="normaltermcontinued2">Include statements that drop previously defined synonym table names. A DROP statement is executed for each CREATE synonym statement in the generated schema.</p></dd><dt>Create Procedure</dt><dd><p class="normaltermcontinued2">Include any table-level stored procedures in the generated schema.</p></dd><dt>Drop Procedure</dt><dd><p class="normaltermcontinued2">Include statements that drop previously defined table-level stored procedures in the generated schema. A DROP statement is executed for each CREATE procedure statement in the generated schema.</p></dd><dt>Partitions</dt><dd><p class="normaltermcontinued2">Include partition clause statements in the generated schema. This option is only available for Oracle. </p></dd><dt>Override Owner</dt><dd><p class="normaltermcontinued2">Override the owner name indicated either in the Table Editor, or in the Model Editor, Defaults tab. When you click the Override Owner option, a new dialog opens, in which you indicate the owner name to use for the override. When you generate the schema during forward engineering, this name overrides other owner names you previously indicated.</p></dd></dl><p class="listcontinue">Click Generate to start the schema generation process for forward engineering or alter script generation or OK to save the changes and close the dialog. </p></li>
+        </ol>
+        <p class="noteAlt">When you generate a schema on the server, any changes made to table properties, such as changing the table's name, columns, or relationships, are not updated on the server unless you select the DROP TABLE and CREATE TABLE options.</p>
+        <p>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Apply Naming Standards to a Model</title>
+        <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="4813" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/31/2018T19:47-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" src="../../../Resources/mailca.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('7053');highlight('4813')}">
+        <p class="bodytext">
+            <MadCap:concept term="Tutorials" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h2 class="heading2" id="t4813">Apply Naming Standards to a Model</h2>
+        <p class="bodytext">After you define naming standards using the <span class="uielement">NSM Option Editor</span>, select individual model objects and apply the standards. The glossary words and abbreviations (or alternate abbreviations) that are defined in the active NSM Option object are applied as naming standards to a model.</p>
+        <p class="proceduresubheading">Follow these steps:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Open a model that includes an active Naming Standard Option object.
+</li>
+            <li class="listnumber">Click <span class="uielement">Tools</span>, <span class="uielement">Model Naming Options</span>.
+<p class="listcontinue">The <span class="uielement">Model Naming Options</span> dialog opens.</p></li>
+            <li class="listnumber">Click the <span class="uielement">Name Mapping</span> tab.
+</li>
+            <li class="listnumber">For each model object type that you want to use the glossary, select the <span class="uielement">Use Glossary</span> check box and select the type of abbreviation. Click <span class="uielement">OK</span>.
+<p class="listcontinue">The naming standards are applied when you switch from a logical model to a physical model.</p><p class="listcontinue">In a Logical/Physical model, define the naming standards, create the abbreviations, and select the object that uses the glossary in the Logical view. Switch from the Logical view to the Physical view and the standards are applied.</p><p class="listcontinue">In a Logical Only (LO) or a Physical Only (PO) model, define the naming standards, create the abbreviations, select the object that uses the glossary, and then derive a PO or an L/P model. In the Derive Model wizard, go to Naming Standards. Select the model that has an active NSM object as the active model template. The naming standards are applied to the derived model.</p></li>
+        </ol>
+        <p class="noteAlt">The translation from logical to physical through the NSM Option Object works only if the physical name is inherited from the logical name. That is, only if the names have not been manually changed in the physical model. If a physical name is modified in a logical/physical model, the inheritance from the logical side to the physical side is overridden. The naming standards no longer work. However, you can reset the override property to inherit from the logical name to restore this inheritance. </p>
+        <p class="examplesubheading">NSM File Attached to an Older Version Model</p>
+        <p class="note">When you open a model from an older version of the product, it is upgraded to the current release. If an NSM file was attached to the model, the file is not imported and attached to the model automatically. Import the NSM file to a template and attach the template to the model manually.</p>
+        <p class="backtotop"><a class="" href="#" target="_self" title=""><img align="middle" alt="" border="0" height="15px" hspace="0" id="f382" src="..\..\..\Resources\Images\393.png" vspace="0" width="10px" /></a><a class="" href="#" target="_self" title="">Back to Top</a>
+        </p><a name="o7062"></a>
+        <h2 class="heading2" id="t7062">Example</h2>
+        <p class="bodytext">Use this example to create database specific templates and standardize database specific properties across all your data models. If you want to include the Naming Standards in each database specific target template, you must change the naming standards glossary list for each template. You must change the glossary for each template, because the Naming Standards information is stored within a model. This section describes how you can manage Naming Standards from a single source.</p>
+        <p class="proceduresubheading">Follow this process:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Create a logical-only model template with general model set up criteria and include the Naming Standards information.
+</li>
+            <li class="listbullet">[Optional] Create a database specific template and use this template as the binding source and select the �Synchronize on Model Load� option.
+</li>
+            <li class="listbullet">Attach this template as the binding template source for your model and select the Synchronize on Model Load option.
+<p class="listcontinue">If you have to change something in the glossary, you just change the Naming Standards object in the logical model template and save the template. When you open a model, if the auto-synchronize option is enabled, the database specific template model is opened. Next, the logical model template is opened and the Naming Standards object is synchronized with the database specific template. The remaining template information is also populated in the new model.</p></li>
+        </ul>
+        <p class="proceduresubheading">Example</p>
+        <p class="bodytext">This section includes two examples with two different databases�Db2 and Oracle. The examples use templates that are stored in a Mart.</p>
+        <ol class="listnumber">
+            <li class="listnumber">Create a logical model template that includes the following basic standards desired for all data models:
+<ul class="listbullet2endash"><li class="listbullet2endash">A standard theme.
+</li><li class="listbullet2endash">An Annotation that enables the model name to be presented on diagrams (a type of legend).
+</li><li class="listbullet2endash">Standard Domains.
+</li><li class="listbullet2endash">Standard Entity level User Defined Properties (UDP) that can be shared among all data models.
+</li><li class="listbullet2endash">A set of start-up diagrams. Each diagram includes a diagram shape to enable the presentation of the diagram name in each diagram.
+</li><li class="listbullet2endash">A Naming Standards object.
+</li></ul></li>
+            <li class="listnumber">Open this model and save it to a Mart as a template; provide the name �TmplGeneral�.
+<p class="listcontinue">To create each database specific template in erwin:</p><ol class="listalpha"><li class="listalpha">Click File, New.
+</li><li class="listalpha">Select Type as Logical/Physical.
+</li><li class="listalpha">Select the Target Database as Oracle.
+</li><li class="listalpha">Select TmplGeneral for Model template.
+</li><li class="listalpha">Select Preserve the template binding.
+</li></ol><p class="listcontinue">You now have a logical/physical model with all the pre-populated information from the TmplGeneral logical model template. You can add any common Db2 characteristics that you want all your Db2 models to share.</p></li>
+        </ol>
+        <p class="bodytext">In addition, make the following changes:</p>
+        <ol class="listnumber">
+            <li class="listnumber">Click Model, Model Properties and change the model name to TmplDb2.
+</li>
+            <li class="listnumber">Click Model Explorer, Annotations - Change the Annotation to reflect the model name:
+</li>
+            <li class="listnumber">Perform the following steps to prevent the over writing of model names during synchronization:
+<ol class="listalpha"><li class="listalpha">Click File, Model Template, Run the Template Wizard. The Model Template Synchronization Wizard appears.
+</li><li class="listalpha">Go to the Model page and change the action of the Annotation object named �ModelLegend� to Ignore. This setting bypasses synchronizing the model name.
+</li><li class="listalpha">In the Settings page, select the Ignore synchronization of the root model object option. This setting prevents over writing of the model level properties from the logical only model.
+</li><li class="listalpha">	Click Finish.
+</li></ol></li>
+            <li class="listnumber">Click Tools, Model Naming Options. Verify whether the Use Glossary option in the Name Mapping tab is set for the model objects for which you want to leverage the naming standards glossary.
+</li>
+            <li class="listnumber">Also, as these diagrams were synchronized from a logical only model, go to the Diagram Properties dialog for the Physical Overview and Relational Key diagrams and change the View Mode to �Physical�.
+</li>
+            <li class="listnumber">Save this model to your mart library as model name �TmplDB2� (with the Mark as Template option)
+</li>
+            <li class="listnumber">Repeat these steps for each database specific template (i.e. SQL Server, Oracle, Teradata, etc.). With this, you can add any database specific properties in your templates to use across all application data models.
+<p class="listcontinue">You can now use these database specific templates for your application data models. Either create a new model, or, bind an existing data model to the database specific template model manually. If you are binding an existing model, review the model to verify that no properties in the template model will cause issues with the existing model when synchronized.</p></li>
+        </ol>
+        <p class="bodytext">In this example, creating a new application data model using the template is used as a starting point.</p>
+        <ol class="listnumber">
+            <li class="listnumber">Select File, New.
+</li>
+            <li class="listnumber">Select Match template.
+</li>
+            <li class="listnumber">Select the TmplDB2 template model from the Mart.
+</li>
+            <li class="listnumber">Select Preserve the template binding option.
+</li>
+            <li class="listnumber">Click OK.
+<p class="listcontinue">Now you have a Db2 application data model with all the properties from both the TmplGeneral template and the TmplDB2 template.</p></li>
+            <li class="listnumber">If you use the Annotation ModelLegend text box, select Ignore in the template. Selecting ignore prevents this object from being updated during synchronization.
+</li>
+            <li class="listnumber">Save this model to your Mart library. To follow this example, save it as model �AppModelDB2�.
+</li>
+            <li class="listnumber">To test the synchronization process, add a few Entities in the �Logical Overview� diagram and drag/drop the domain �Identification� as primary keys to both Entities. (Select the Identification domain and drag it to the primary key locations in each Entity).
+</li>
+            <li class="listnumber">Select the �Physical Overview� diagram. Notice that the word Identification changed to its abbreviation from the Naming Standards Glossary.
+</li>
+            <li class="listnumber">Save and Close the model as AppModelDB2.
+</li>
+            <li class="listnumber">Open the original model template TmplGeneral and change the abbreviation for Identification from �Id� to �Idnt�.
+</li>
+            <li class="listnumber">Save and close this model.
+</li>
+            <li class="listnumber">Open model AppModelDB2.
+<p class="listcontinue">Notice that the abbreviation is automatically applied through the template hierarchy to this application data model for Db2.</p></li>
+        </ol>
+        <p>
+        </p>
+    </body>
+</html>

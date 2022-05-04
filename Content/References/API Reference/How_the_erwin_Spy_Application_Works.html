@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>How the erwin Spy Application Works</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="6456" name="objectid" />
+        <meta content="306" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="8/29/2018T10:23-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" src="..\..\Resources\open_parent.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('6023');expand2('6455');highlight('6456')}">
+        <p class="bodytext">
+            <MadCap:concept term="References" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t6456">How the erwin Spy Application Works</h3>
+        <p class="bodytext">To see how erwin Spy can help you visualize metadata information, do the following:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Start with an empty logical-physical model.
+</li>
+            <li class="listbullet">Click erwin Spy on the Tools, Add-Ins menu to launch erwin Spy.
+<p class="noteAlt">Ensure that you have added the erwin Spy application as a erwin DM add-in application on the Tools, Add-Ins menu. See the Add-In Manager online help for more information on defining an add-in software application. </p></li>
+            <li class="listbullet">Select the top item on the Models menu in erwin Spy, which should be your empty model.
+</li>
+            <li class="listbullet">Double-click the Model object in the left pane to expand it. You should see a picture similar to the following illustration:
+<p class="picturefull"><img align="bottom" alt="" border="0" height="327px" hspace="0" id="f6056" src="../../Resources/Images/6056.png" vspace="0" width="638px" /></p></li>
+        </ul>
+        <p class="bodytext">There are many objects listed by erwin Spy. Even though the model is empty, you still see objects there that represent erwin DM defaults, such as <em class="italic">Domains</em>, <em class="italic">Main Subject Area</em>, <em class="italic">Trigger Templates</em>, and so on. All default objects are marked with a { Default; } flag to the right of the type of the model object.</p>
+        <p class="bodytext">The right pane of erwin Spy displays object properties. To see a specific object's properties, select the object, click the button located in the center of the screen, and the selected object's properties display in the right panel. The following illustration shows the properties of a specific entity that was added to this model:</p>
+        <p class="picturefull">
+            <img align="bottom" alt="" border="0" height="414px" hspace="0" id="f6057" src="../../Resources/Images/6057.png" vspace="0" width="638px" />
+        </p>
+        <p class="bodytext">The first column shows property names, such as <em class="italic">Name</em>, <em class="italic">Long ID</em>, <em class="italic">Type</em>, <em class="italic">Physical Name</em>, and so on.</p>
+        <p class="bodytext">The second column, DT, shows property datatypes, such as <em class="italic">Str</em> for a string, <em class="italic">I4</em> for a number, <em class="italic">Bool</em> for Boolean, <em class="italic">Id</em> for a reference to another object, and so on.</p>
+        <p class="bodytext">The third column, Value, displays the property value in native format.</p>
+        <p class="bodytext">The fourth column, As String, displays the property value reinterpreted as a string. To understand this better, look at Physical Name in the left column. Its value in the Value column is <em class="italic">%EntityName()</em>, which is a macro, while As String holds the macro expansion, <em class="italic">Entity_1</em>.</p>
+        <p class="bodytext">The rest of the columns in the right pane represent property flags. The following list describes the meaning of these columns:</p>
+        <dl>
+            <dt>NL</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays properties with NULL/no value. </p>
+                <p class="noteAlt">The flag is never on for erwin Spy.</p>
+            </dd>
+            <dt>UD</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays user-defined properties.</p>
+            </dd>
+            <dt>VC</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays vector properties.</p>
+            </dd>
+            <dt>TL</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays properties that are maintained by erwin DM and that cannot be changed directly using the API.</p>
+            </dd>
+            <dt>RO</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays read-only properties.</p>
+            </dd>
+            <dt>DR</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays derived properties whose value was inherited (from a parent domain, for example).</p>
+            </dd>
+            <dt>Facets True</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays the facet value of a property that is set to True.</p>
+            </dd>
+            <dt>Facets False</dt>
+            <dd>
+                <p class="normaltermcontinued">Displays the facet value of a property that is set to False.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">In the previous illustration, a primary key attribute named <em class="italic">ATTR01</em> was added to <em class="italic">Entity_1</em>. It was migrated to <em class="italic">Entity_2</em> by creating an identifying relationship. When you double-click <em class="italic">Entity_2</em>, and then select <em class="italic">ATTR01</em>, you can see how erwin Spy displays the information. You can click the button in the center of the screen to view its properties on the right.</p>
+        <p class="picturefull">
+            <img align="bottom" alt="" border="0" height="295px" hspace="0" id="f6058" src="../../Resources/Images/6058.png" vspace="0" width="663px" />
+        </p>
+        <p class="bodytext">Since the attribute for the <em class="italic">Parent_Relationship_Ref</em> property is a product of foreign key migration, this property shows which relationship object is used to store data about it. The value Id in the DT column shows that the property is a reference, which means that the value is a unique ID of the involved relationship object.</p>
+        <p class="bodytext">Look at the name in the As String column or locate an object by its unique ID to traverse back to the relationship object. To see object IDs, click Show Ids on the File, Options menu. With this option enabled, when the cursor is positioned over an object in the left panel, that object's unique ID is displayed in a popup window, as shown in the following illustration:</p>
+        <p class="picture">
+            <img align="bottom" alt="" border="0" height="409px" hspace="0" id="f6059" src="../../Resources/Images/6059.png" vspace="0" width="353px" />
+        </p>
+        <p class="bodytext">Now compare the <em class="italic">Parent_Relationship_Ref</em> property with the <em class="italic">Parent_Attribute_Ref</em> and the <em class="italic">Master_Attribute_Ref</em> properties. The <em class="italic">Master_Attribute_Ref</em> property is read-only. This means that it is displayed for informational purposes only and cannot be changed using the API. As you build your model, you can expand objects in the model to see how erwin DM uses their properties to represent different relationships in the model.</p>
+        <p class="bodytext">Use the erwin Spy utility to see and understand the details of the data in a erwin DM model that is available through the API. If you need to learn how particular data is represented in a erwin DM model, you can use the scenarios that were just described. Start with an empty model, create the minimum model that is necessary to represent the feature in question, and then use erwin Spy to look at the details of the data representation.</p>
+        <p>
+        </p>
+    </body>
+</html>

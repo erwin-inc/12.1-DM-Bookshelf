@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol class="listnumber">
+            <li class="listnumber">On the Actions tab, click Schema.<![CDATA[
+]]><p class="listcontinue">The Forward Engineer Schema Generation Wizard opens.</p></li>
+            <li class="listnumber">Click the <b>Option Selection</b> tab.<br></br></li>
+            <li class="listnumber">Select an <b>Option Set</b> or click <b>Open</b> to use an option set you saved as an XML file.
+<p class="listcontinue">Your selections are applied to the schema generation options.</p></li>
+            <li class="listnumber">Click the <b>Summar</b>y tab to view schema generation options based on the selected option set.</li>
+            <li class="listnumber">Click <b>Edit Options</b> to change the selected schema generation options.
+</li>
+            <li class="listnumber">Click the <b>Preview</b> tab and view the schema DDL script.</li>
+            <li class="listnumber">Click <b>Generate</b> to start the schema generation process for forward engineering or alter script generation or click <b>OK</b> to save the changes and close the dialog. </li>
+        </ol>
+    </body>
+</html>

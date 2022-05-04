@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Domains in the Logical Model</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="1330" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('4758');expand2('4727');highlight('1330')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t1330">Domains in the Logical Model</h3>
+        <p class="bodytext">A domain includes both logical and physical properties. When you work in a logical model, you work with just the logical properties of the domain: logical name, icon, data type, validation rule, default value, definition, and logical user-defined property value. This is working in <em class="italic">logical edit mode</em>. You can define these properties in the Domain Editor. You can assign domains to attributes to enforce business decisions on data type, and, if additional physical model characteristics are assigned to that domain, to speed the creation of a corresponding physical model.</p>
+        <p class="bodytext">All domains defined in the logical edit mode are added beneath the Domains icon in the Model Explorer. You can drag a Domain to an entity to create an attribute. The new attribute inherits all its properties from the domain. You can also assign a logical domain to an existing attribute in the Attribute Editor. The attribute inherits all its properties, except its name, from the domain. You can then change any properties in the Attribute Editor.</p>
+        <p class="bodytext">The following pre-defined domains are available in the logical model:</p>
+        <ul class="listbullet">
+            <li class="listbullet">The <em class="italic">&lt;default&gt;</em> domain is the root domain in the logical domain hierarchy. The <em class="italic">&lt;default&gt;</em> domain is assigned automatically to all attributes when you create them. 
+</li>
+            <li class="listbullet">The <em class="italic">String</em>, <em class="italic">Number</em>, <em class="italic">Datetime</em>, and <em class="italic">Blob</em> domains are children of the <em class="italic">&lt;default&gt;</em> domain. You can assign a domain to an attribute in the logical model to define a logical data type for that attribute.
+</li>
+        </ul>
+        <p class="bodytext">You can change the domain assignment for attributes at any point during a modeling session. You can also create domains that more clearly define the properties you want to assign to an attribute – or its corresponding column in the physical model. For example, if you want to indicate that an attribute represents money, you can create a <em class="italic">Money</em> domain and assign it to the attribute.</p>
+        <p class="bodytext">Every standard and user-defined domain is also available in the physical model, and can be used to define physical data type and additional column properties, such as null option, display format, validation rule, or default value. </p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Add_a_domain_in_the_logical_edit_mode.html" target="_self">Add a Domain in the Logical Edit Mode</a>
+        </p>
+        <p class="relateditem"><a href="Specify_that_a_domain_appears_in_the_logical_model_only.html" target="_self">Specify That a Domain Appears in the Logical Model Only</a>
+        </p>
+        <p class="relateditem"><a href="Change_a_logical_domain_name.html" target="_self">Change a Logical Domain Name</a>
+        </p>
+        <p class="relateditem"><a href="Specify_a_Data_Type_for_a_Domain.html" target="_self">Specify a Data Type for a Domain</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

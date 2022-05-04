@@ -1,0 +1,4 @@
+This Product is distributed with Oracle 11G JDBC Driver release 2 from Oracle USA, Inc. ('Oracle') 
+
+The following additional terms and conditions apply to your use of the Oracle software product ("Oracle Product"): 
+(1) you may only use the Oracle Product to run the erwin Inc. Product; (2) to the extent permitted by applicable law, Oracle disclaims liability for any damages, whether direct, indirect, incidental, or consequential, arising from your use of the Oracle Product; (3) at the termination of this Agreement, you must discontinue use and destroy or return to erwin Inc. all copies of the Product; (4) Oracle is not obligated to provide technical support, phone support, or updates to the Oracle Product hereunder; (5) erwin Inc. reserves the right to audit your use of the Oracle Product and report such use to Oracle or to assign this right to audit your use of the Oracle Product to Oracle; (6) Oracle shall be a third party beneficiary of this Agreement. 

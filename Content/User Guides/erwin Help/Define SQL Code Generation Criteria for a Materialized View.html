@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Define SQL Code Generation Criteria for a Materialized View</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="7910" name="objectid" />
+        <meta content="305" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('7897');expand2('7898');expand2('7905');highlight('7910')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="heading7" id="t7910">Define SQL Code Generation Criteria for a Materialized View</p>
+        <p class="bodytext">Use the Clauses tab in the PostgreSQL Materialized View Editor to specify the search conditions and criteria used to generate the SQL code for a materialized view.</p>
+        <p class="proceduresubheading">To define SQL code generation criteria for a materialized view</p>
+        <ol class="listnumber">
+            <li class="listnumber">Right-click the materialized view for which you want to define SQL code generation criteria and click Properties.
+<p class="listcontinue">The PostgreSQL Materialized View Editor opens.</p></li>
+            <li class="listnumber">Click the Clauses tab and work with the following options:
+<dl><dt>Where</dt><dd><p class="normaltermcontinued2">Lets you enter the search condition that must be satisfied by the results of the view query. The text you enter becomes the <em class="italic">WHERE</em> clause in the SQL code that is generated for the selected view.</p></dd><dt>Group By</dt><dd><p class="normaltermcontinued2">Lets you enter the criteria that you want to use to group rows returned by the view query. The text you enter becomes the <em class="italic">GROUP BY</em> clause in the SQL code that is generated for the selected view.</p></dd><dt>Having</dt><dd><p class="normaltermcontinued2">Lets you enter the search condition that is applied to each row group, and filter out rows that do not meet the specified search condition. The text you enter becomes the <em class="italic">HAVING</em> clause in the SQL code that is generated for the selected view. </p><p class="noteAlt">This option is only available if your target DBMS supports the <em class="italic">HAVING</em> clause.</p></dd></dl></li>
+            <li class="listnumber">Click Close.
+<p class="listcontinue">SQL code generation criteria is defined for the selected materialized view and the PostgreSQL Materilaized View Editor closes.</p></li>
+        </ol>
+        <p class="bodytext">
+        </p>
+        <p>
+        </p>
+    </body>
+</html>

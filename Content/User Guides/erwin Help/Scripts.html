@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Scripts</title>
+        <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
+        <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
+        <meta content="2673" name="objectid" />
+        <meta content="260" name="basedOnKey" />
+        <!--metadata variables for XMD: translatable-->
+        <meta content="" name="description" />
+        <meta content="&lt;authorit:ca_keywords&gt;" name="keywords" />
+        <meta content="&lt;authorit:ca_content_type&gt;" name="ca_content_type" />
+        <meta content="&lt;authorit:ca_context&gt;" name="ca_context" />
+        <meta content="&lt;authorit:ca_role&gt;" name="ca_role" />
+        <meta content="en-US" name="ca_language" />
+        <!--metadata variables for XMD: do not translate-->
+        <meta content="&lt;authorit:ca_offering_name&gt;" name="ca_offering_name" />
+        <meta content="&lt;authorit:ca_product_version&gt;" name="ca_product_version" />
+        <meta content="&lt;authorit:ca_product_family&gt;" name="ca_product_family" />
+        <meta content="&lt;authorit:ca_alias_name&gt;" name="ca_alias_name" />
+        <meta content="&lt;authorit:ca_related_offering&gt;" name="ca_related_offering" />
+        <meta content="&lt;authorit:ca_access_level&gt;" name="ca_access_level" />
+        <meta content="7/23/2018T13:56-5:00" name="ca_date_time" />
+        <meta content="(supervisor)" name="ca_creator" />
+        <meta content="&lt;authorit:ca_source&gt;" name="ca_source" />
+        <meta content="HTML" name="ca_format" />
+        <meta content="&lt;authorit:ca_database&gt;" name="ca_database" />
+        <meta content="&lt;authorit:ca_application_server&gt;" name="ca_application_server" />
+        <meta content="&lt;authorit:ca_operating_system&gt;" name="ca_operating_system" />
+        <meta content="&lt;authorit:ca_star_code&gt;" name="ca_star_code" />
+        <meta content="&lt;authorit:ca_cms_id&gt;" name="ca_cms_id" />
+        <script language="javascript" type="text/javascript">
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
+    <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');highlight('2673')}">
+        <p class="bodytext">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <h3 class="heading3" id="t2673">Scripts</h3>
+        <p class="note">SQL scripts are executed either before or after the rest of the schema is generated, or included before or after the CREATE TABLE statement.</p>
+        <p class="note">It is necessary to write scripts to provide for proper schema generations, but it also can involve a lot of copying, pasting, and renaming to put it all in place. Macro support lets you generate scripts by writing these scripts using a combination of regular SQL and, whenever possible, macros to guarantee reusability and avoid the repetitive copying, pasting, and renaming. Scripts are supported for:</p>
+        <ul class="listbullet">
+            <li class="listbullet"><strong>Schema Generation.</strong> You can create a script and execute it at the beginning or end of the schema generation script.
+</li>
+            <li class="listbullet"><strong>Tables.</strong> You can create a script and include it before or after the CREATE TABLE statement in the schema generation script. For Db2 LUW and Db2 z/OS, scripts are supported for materialized query tables.
+</li>
+            <li class="listbullet"><strong>Views.</strong> You can create a script and include it before or after the CREATE VIEW statement in the schema generation script.
+</li>
+            <li class="listbullet"><strong>Materialized Views.</strong> If your target server is Oracle, you can create scripts for materialized views. 
+</li>
+        </ul>
+        <p class="bodytext">You can create scripts using templates, which can contain both SQL code and macros. The macros help you add the name and properties of objects in the script code. The macros are expanded based on the current state of a model when it generates the schema to the target database. </p>
+        <p class="bodytext">Scripts have the following characteristics:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Become part of your DDL script
+</li>
+            <li class="listbullet">Are used to automate a certain amount of your DDL script code
+</li>
+            <li class="listbullet">Are written using a combination of regular SQL code and erwin® Data Modeler macros
+</li>
+            <li class="listbullet">Can be used for internal model checks/validation (cannot be forward engineered) 
+</li>
+        </ul>
+        <p class="bodytext">erwin® Data Modeler macros provide a method to create scripts that are reusable. Here are some examples of the script use:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Create user permissions at the model or table level
+</li>
+            <li class="listbullet">Drop tables based on owner information
+</li>
+            <li class="listbullet">Drop table constraints
+</li>
+            <li class="listbullet">Create generic database views
+</li>
+        </ul>
+        <p class="noteAlt">Scripts can be saved in a erwin® Data Modeler template for easy reuse.</p>
+        <p class="relatedheading">More information: </p>
+        <p class="relateditem"><a href="Schema_Prescript_Example.html" target="_self">Schema Script Example</a>
+        </p>
+        <p class="relateditem"><a href="Add_a_New_Script.html" target="_self">Add a New Script</a>
+        </p>
+        <p class="relateditem"><a href="Define_a_Script.html" target="_self">Define a Pre &amp; Post Script</a>
+        </p>
+        <p class="relateditem"><a href="Define_Script_SQL_Code.html" target="_self">Define Script SQL Code</a>
+        </p>
+        <p class="relateditem"><a href="Enter_a_Comment_for_a_Pre_Post_Script.html" target="_self">Enter a Script Comment</a>
+        </p>
+        <p class="relateditem"><a href="Add_UDP_for_Script.html" target="_self">Define Script User-Defined Property Values</a>
+        </p>
+        <p>
+        </p>
+    </body>
+</html>
