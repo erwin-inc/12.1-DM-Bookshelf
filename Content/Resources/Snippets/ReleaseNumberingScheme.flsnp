@@ -6,6 +6,6 @@
             <img align="bottom" alt="About erwin Data Modeler" border="0" hspace="0" id="f8285" src="../Images/AbouterwinDM.png" vspace="0" style="width: 510px;height: 370px;">
             </img>
         </p>
-        <p class="bodytext">Release indicates the main (GA) release number and the second number (if available) indicates the patch or service pack number of the main release. Build indicates the build number of the product. For example, "Release: <MadCap:variable name="General.VersionNumber" /> Build: 28468" on the above screen indicates Release 12,  Build 28468.</p>
+        <p class="bodytext">Release indicates the main (GA) release number and the second number (if available) indicates the patch or service pack number of the main release. Build indicates the build number of the product. For example, "Release: <MadCap:variable name="General.VersionNumber" /> Build: 29121" on the above screen indicates Release 12, Patch 1,  Build 29121.</p>
     </body>
 </html>
