@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">In the previous versions, erwin Data Modeler connected to the Mart server directly. Now, erwin Data Modeler connects to the Mart server through a web server. </p>
@@ -24,17 +24,17 @@
         </p>
         <p class="bodytext">Complete the following steps in the same order to install and configure the Mart:</p>
         <ol class="listnumber">
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/review_prereq_2.html">Review the Prerequisites for a PostgreSQL Mart</a><![CDATA[
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/review_prereq_2.html">Review the Prerequisites for a PostgreSQL Mart</a><![CDATA[
 ]]></li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Create a PostgreSQL Database.html">Create a PostgreSQL Database</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Create a PostgreSQL Database.html">Create a PostgreSQL Database</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/deploy_mart_server_1.html">Install erwin Mart Server</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/deploy_mart_server_1.html">Install erwin Mart Server</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service_1.html">Use Mart Server as a Windows Service</a><![CDATA[
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service_1.html">Use Mart Server as a Windows Service</a><![CDATA[
 ]]></li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/initialize_postgreSQL_mart.html">Initialize a PostgreSQL Mart</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/initialize_postgreSQL_mart.html">Initialize a PostgreSQL Mart</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure_1.html">Log in to erwin Mart Administrator and configure settings
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure_1.html">Log in to erwin Mart Administrator and configure settings
 </a>
             </li>
         </ol>

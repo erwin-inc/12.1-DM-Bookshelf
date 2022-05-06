@@ -13,7 +13,7 @@
                 <img src="../Images/ModelProperties.png" style="width: 580px;height: 544px;">
                 </img>
             </p>
-            <p class="bodytext">Once enabled, Data Vault 2.0 components are available via the Model Explorer and on the table editor. You can now <a href="https://erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Converting_Models_DataVault.html">convert your model to a Data Vault model</a>.</p>
+            <p class="bodytext">Once enabled, Data Vault 2.0 components are available via the Model Explorer and on the table editor. You can now <a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Converting_Models_DataVault.html">convert your model to a Data Vault model</a>.</p>
             <p class="bodytext">You can also create custom components and apply them to tables. However, these custom components do not appear on the ribbon.</p>
         </ol>
     </body>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">In the previous versions, erwin DM connected to the Mart database through the database client software. Now, the application connects to the Mart database through a web server. The database client software is no longer required. </p>
@@ -22,19 +22,19 @@
             </dd>
         </dl>
         <ol class="listnumber">
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/review_prereq.html">Review the Prerequisites for an Oracle Mart</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/review_prereq.html">Review the Prerequisites for an Oracle Mart</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/prepare_dbms_environment.html">Create the Mart Database and perform the additional tasks</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/prepare_dbms_environment.html">Create the Mart Database and perform the additional tasks</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/deploy_mart_server.html">Install erwin Mart Server</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/deploy_mart_server.html">Install erwin Mart Server</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service.html">Use Mart Server as a Windows Service</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/mart_server_windows_service.html">Use Mart Server as a Windows Service</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/initialize_oracle_mart.html">Initialize an Oracle Mart</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/initialize_oracle_mart.html">Initialize an Oracle Mart</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure.html">Log in to erwin Mart Administrator and configure settings</a><![CDATA[
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure.html">Log in to erwin Mart Administrator and configure settings</a><![CDATA[
 ]]></li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure.html#Use">Use a Pluggable Database</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/log_in_to_mart_and_configure.html#Use">Use a Pluggable Database</a>
             </li>
         </ol>
     </body>

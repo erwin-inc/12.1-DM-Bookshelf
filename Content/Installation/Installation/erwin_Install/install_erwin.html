@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title>Install erwin DM</title>
+    <head>
+        <title>Install erwin DM</title>
         <link href="..\..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
         <link href="..\..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
         <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
@@ -46,19 +47,23 @@
         <p class="noteAlt">Silent Installation does not work for upgrading erwin DM. To upgrade to a newer version of erwin DM, first uninstall the existing version and then use the steps for Silent Installation to install the newer version.</p>
         <p class="bodytext">For example, assume the following:</p>
         <ol>
-            <li class="listnumber">erwin DM executable is named <b>EDM12.0-b8020-64bit.exe</b>.</li>
+            <li class="listnumber">erwin DM executable is named <b>EDM12.1-b8020-64bit.exe</b>.</li>
             <li class="listnumber">erwin DM executable is present at <b>C:\Build\</b>. This location may differ on your computer.</li>
             <li class="listnumber">License code is 123456789012345678.</li>
             <li class="listnumber">Log file is named install.log.</li>
         </ol>
         <p class="bodytext">Based on the above assumptions, the command is as follows:</p>
-        <p class="bodytext">"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</p>
+        <p class="bodytext">"C:\Build\EDM12.1-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</p>
         <p class="bodytext">Following are the scenarios and the respective commands that you can follow:</p>
         <ul class="listbullet">
-            <li class="listbullet"><b>With restart</b>: Set "REBOOT=Force" and remove "/norestart". For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=Force LICENSECODE=123456789012345678  /qn /L C:\Build\install.log"<br /></li>
-            <li class="listbullet"><b>Without restart</b>: Set "REBOOT=Really Suppress" and add "/norestart" after the license code. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"<br /></li>
-            <li class="listbullet"><b>With log</b>: Add "/L &lt;location and name of the log file&gt;" to the command. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</li>
-            <li class="listbullet"><b>Without log</b>: Exclude "/L &lt;location and name of the log file&gt;" in the command. For example,<br />"C:\Build\EDM12.0-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn"</li>
+            <li class="listbullet">
+                <b>With restart</b>: Set "REBOOT=Force" and remove "/norestart". For example,<br />"C:\Build\EDM12.1-b8020-64bit.exe" /s /v"REBOOT=Force LICENSECODE=123456789012345678  /qn /L C:\Build\install.log"<br /></li>
+            <li class="listbullet">
+                <b>Without restart</b>: Set "REBOOT=Really Suppress" and add "/norestart" after the license code. For example,<br />"C:\Build\EDM12.1-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"<br /></li>
+            <li class="listbullet">
+                <b>With log</b>: Add "/L &lt;location and name of the log file&gt;" to the command. For example,<br />"C:\Build\EDM12.1-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn /L C:\Build\install.log"</li>
+            <li class="listbullet">
+                <b>Without log</b>: Exclude "/L &lt;location and name of the log file&gt;" in the command. For example,<br />"C:\Build\EDM12.1-b8020-64bit.exe" /s /v"REBOOT=ReallySuppress LICENSECODE=123456789012345678 /norestart /qn"</li>
         </ul>
         <h4 class="heading4">Installation using the Executable File</h4>
         <p class="bodytext">Use the same executable file for Standard and Workgroup Editions.</p>

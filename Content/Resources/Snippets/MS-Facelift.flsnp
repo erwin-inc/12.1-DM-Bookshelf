@@ -3,6 +3,6 @@
     <body>
         <p class="bodytext">erwin Mart Administrator now comes with a brand new UI that follows Google’s Material Design principles. The redesigned UI offers an improved user experience with its modern look and feel, dark and light modes, and graphical buttons and icons.</p>
         <p class="bodytext">Apart from the overall facelift, the wiki-like editable Home page lets you add information, such as key text, process diagrams, important hyperlinks, resources, and much more. Also, the configurable Dashboard let’s you add and view a pictorial presentation of your data and actions on the Mart. You can add charts for your data footprint, model overview and history, profile data, and session overview.</p>
-        <p class="bodytext">For more information, refer to the <a href="https://erwin.com/bookshelf/public_html/12.0/Content/User Guides/Mart Online Help/Online Help.html">erwin Mart Online Help</a>.</p>
+        <p class="bodytext">For more information, refer to the <a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/Online Help.html">erwin Mart Online Help</a>.</p>
     </body>
 </html>

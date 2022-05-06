@@ -11,7 +11,7 @@
             </dd>
         </dl>
         <h4 class="heading4">Connection Tab</h4>
-        <p class="bodytext">Based on your database, configure appropriate database connection parameters. <br />For more information, refer to the <a href="https://erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Database_Connection_Parameters.html" target="_blank">Database Connection Parameters</a> topic.<br /></p>
+        <p class="bodytext">Based on your database, configure appropriate database connection parameters. <br />For more information, refer to the <a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Database_Connection_Parameters.html" target="_blank">Database Connection Parameters</a> topic.<br /></p>
         <h4 class="heading4">Schemas, Keypaces, Database, or Buckets Tab</h4>
         <li class="listnumber">Based on your target database, select the databases to reverse engineer. To reverse engineer system tables, views, and stored procedures related to system tables, select the <b>System Objects</b> check box.<br /></li>
         <p class="normaltermcontinued2">Use the following target database-specific options:</p>

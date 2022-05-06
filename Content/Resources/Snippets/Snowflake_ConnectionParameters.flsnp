@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -82,7 +82,7 @@
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
                     <p>For example: <i style="color: #0064af;">C:\Users\&lt;User&gt;\Documents\Keys\rsa_key.p8</i></p>
                     <p>This option is available when Connection Method is set to JDBC.</p>
-                    <p class="noteAlt">Ensure that you generate a public key and private key for using key pair authentication. To generate key, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Snowflake_Key-Pair_Authentication.html">Snowflake Key-Pair Authentication</a> topic.</p>
+                    <p class="noteAlt">Ensure that you generate a public key and private key for using key pair authentication. To generate key, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Snowflake_Key-Pair_Authentication.html">Snowflake Key-Pair Authentication</a> topic.</p>
                 </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">

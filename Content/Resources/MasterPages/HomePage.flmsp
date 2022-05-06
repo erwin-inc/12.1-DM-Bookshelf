@@ -28,7 +28,7 @@
             <div class="footer center">
                 <div class="HomeMasterPageFooter outer-row">
                     <div>
-                        <p class="Copyright" style="color: #ffffff;"><span>Copyright © </span><span> <MadCap:variable name="General.Year" /> Quest Software <br />All rights reserved.</span>
+                        <p class="Copyright" style="color: #ffffff;"><span>Copyright © </span><span> <MadCap:variable name="General.Year" /> <MadCap:variable name="General.CompanyName" /><br />All rights reserved.</span>
                         </p>
                     </div>
                     <div>

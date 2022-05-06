@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">If you are using any earlier release of r9 series and you want to upgrade it to the latest release, upgrade the Mart Server application and the Mart database. Once the Mart server program is upgraded, you must implement the upgraded software.</p>
@@ -9,15 +9,15 @@
         </p>
         <p class="bodytext">Complete the following tasks to upgrade a Mart of any earlier release of r9 series to the latest release:</p>
         <ol class="listnumber">
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Review the Prerequisites.html">Review the prerequisites</a><![CDATA[
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Review the Prerequisites.html">Review the prerequisites</a><![CDATA[
 ]]></li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Upgrade the Mart Server.html">Upgrade the Mart Server application</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Upgrade the Mart Server.html">Upgrade the Mart Server application</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Configure the Mart Server.html">Configure the Mart Server</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Configure the Mart Server.html">Configure the Mart Server</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Restart the Mart Server Service.html">Restart the Mart Server service</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Restart the Mart Server Service.html">Restart the Mart Server service</a>
             </li>
-            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/Release Notes/Mart Server Release Notes/Log In to erwin Mart Administrator.html">Log in to erwin Web Admin</a>
+            <li class="listnumber"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Release Notes/Mart Server Release Notes/Log In to erwin Mart Administrator.html">Log in to erwin Web Admin</a>
             </li>
         </ol>
     </body>

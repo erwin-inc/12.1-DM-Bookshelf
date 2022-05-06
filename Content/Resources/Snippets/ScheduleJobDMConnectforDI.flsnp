@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">A  job converts a model to erwin DI Suite compatible format and then,</p>
@@ -10,7 +10,7 @@
             </li>
             <li class="listbullet">If the model has an associated NSM file, it exports the file to the Business Glossary Manager</li>
         </ul>
-        <p class="bodytext">For more information about data sharing between erwin Data Modeler (DM) and erwin Data Intelligence Suite (DI Suite), refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/Mart Online Help/data_sharing_dmconnectdi.html">Data Sharing</a> topic.</p>
+        <p class="bodytext">For more information about data sharing between erwin Data Modeler (DM) and erwin Data Intelligence Suite (DI Suite), refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/data_sharing_dmconnectdi.html">Data Sharing</a> topic.</p>
         <p class="bodytext">By default the DM Connect for DI&#160;module opens in the Calendar view. You can toggle the page view between the List View (<img src="../Images/Icon-ListView.png" />) or Calendar View (<img src="../Images/Icon-CalendarView.png" />) using the respective buttons on the page toolbar.</p>
         <p class="bodytext">To schedule a job, follow these steps:</p>
         <ol class="listnumber">
