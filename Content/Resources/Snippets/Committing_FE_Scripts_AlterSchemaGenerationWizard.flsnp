@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -28,7 +28,7 @@
                 <img src="../Images/FEAlterScriptSchema-Git.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 550px;height: 300px;" />
             </p>
             <li class="listnumber">On the <b>Forward Engineer Alter Schema Generation Wizard</b>, click the <b>Preview</b> section.</li>
-            <p class="bodytext">The alter script appears. For more information on generating alter scripts, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/erwin Help/Alter_Script_Schema_Generation.html">Generating Alter Script for Databases</a> topic.</p>
+            <p class="bodytext">The alter script appears. For more information on generating alter scripts, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Alter_Script_Schema_Generation.html">Generating Alter Script for Databases</a> topic.</p>
             <p class="bodytext">For example, in the following image the Preview section displays an alter script of a Databricks database. </p>
             <p class="bodytext">
                 <img src="../Images/FEAlterScriptSchema-PreviewGit.png" style="width: 570px;height: 350px;" />

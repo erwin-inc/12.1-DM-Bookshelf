@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol class="listnumber">
@@ -94,6 +94,6 @@ Enter a new password and click <b>Submit</b>.			</p>
         <p class="listcontinue">If you have configured an SMTP server for emails, new passwords are generated and sent to the registered email address. </p>
         <p class="listcontinue">In the absence of an SMTP server for emails, the password is reset to the default password mentioned in the Settings page. No email is sent automatically.</p>
         <p class="noteAlt">In the absence of an SMTP server for emails, if users forget their passwords, they cannot use the Forgot Password link on the Login Page. Use this option and reset the passwords manually. </p>
-        <p class="bodytext">If you enter an incorrect password five consecutive times, your account will be locked for five minutes (300 seconds) by default.<br />You can change the time for which the account stays locked. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.0/Content/User Guides/Mart Online Help/log_in_to_mart.html">Log In to erwin Mart Administrator and Configure Settings</a> topic.</p>
+        <p class="bodytext">If you enter an incorrect password five consecutive times, your account will be locked for five minutes (300 seconds) by default.<br />You can change the time for which the account stays locked. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/log_in_to_mart.html">Log In to erwin Mart Administrator and Configure Settings</a> topic.</p>
     </body>
 </html>

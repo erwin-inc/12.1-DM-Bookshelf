@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="erwin DM Connect for DI"
@@ -12,7 +12,7 @@
   MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
   OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\2021R2\PDF"
   MasterToc="/Project/TOCs/PDF12.0FeatureTour.fltoc"
-  OutputFile="erwin DM 12.0 Feature Tour">
+  OutputFile="erwin DM 12.1 Feature Tour">
   <PrintedOutput
     CollapseMargins="true"
     ExpandingTextConversion="expand"
@@ -22,7 +22,7 @@
     GenerateGlossaryProxy="false"
     OutputFormat="doc" />
   <DocumentProperties
-    Title="erwin DM 12.0 Feature Tour"
+    Title="erwin DM 12.1 Feature Tour"
     Author="Quest Software" />
   <PDF
     ShowUsedBookmarks="false"
