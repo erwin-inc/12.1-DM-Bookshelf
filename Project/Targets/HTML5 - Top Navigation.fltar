@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="MadCap HTML5 Target"
@@ -17,7 +17,7 @@
   EnableSitemap="false"
   SitemapWebUrl="http://erwin.com/bookshelf/public_html/12.1/Content/"
   EquationsOutputType="PNG"
-  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\2021R2\erwin Bookshelf"
+  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1DM\erwin Bookshelf"
   MasterPage="/Content/Resources/MasterPages/OtherTopics.flmsp"
   SearchEngine="MadCapSearch"
   IncludeCSHRuntime="false"
