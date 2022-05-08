@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="minitocintro">Following new features and enhancements are available in erwin Data Modeler (DM) and erwin Mart Server <MadCap:variable name="General.VersionNumber" />.</p>
@@ -24,7 +24,7 @@
         </p>
         <p class="minitocitem"><a href="#MongoDB:">MongoDB: Schema Validation</a>
         </p>
-        <p class="minitocitem"><a href="#Snowflak">Snowflake Enhancements</a>
+        <p class="minitocitem"><a href="#Snowflak">OKTA support for Snowflake</a>
         </p>
         <p class="minitocitem"><a href="#PostgreS">PostgreSQL Support</a>
         </p>
@@ -80,13 +80,8 @@
         <p class="bodytext">You can now connect to a Git repository hosted on GitLab or GitHub. This enables you to push forward engineering scripts for a Mart Model to a Git repository. Using Git repositories enables you to utilize Git features, such as version control and collaboration with team members. For information on connecting to Git, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Connecting_to_GitRepositories.html">Connecting to Git Repositories</a> topic.</p>
         <h2 class="heading2"><a name="MongoDB:"></a>MongoDB: Schema Validation</h2>
         <p class="bodytext">erwin DM now supports schema validation for fields in a table based on the selected data type. The scripts are not generated if the data in the fields are not inline with the data type. You can exclude validations for one or more fields in a table when you generate a script for forward engineering and reverse engineering. For more information, refer to <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/MongoDB_Schema_Validation.html">MongoDB: Schema Validation</a> topic.</p>
-        <h2 class="heading2"><a name="Snowflak"></a>Snowflake Enhancements</h2>
-        <p class="bodytext">erwin DM 12.1 brings the following enhancements to the Snowflake database:</p>
-        <ul class="listbullet">
-            <li class="listbullet"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Defining_Snowflake_Tags.html">Object Tagging</a>: You can tag Snowflake objects using the Tags feature.</li>
-            <li class="listbullet"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Reverse_Engineering_Options_Snowflake.html">Reverse engineering enhancements</a>: Snowflake Reverse Engineering Wizard adds filters for objects such as Tables, Views, and Materialized Views for the  schema.</li>
-            <li class="listbullet"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Snowflake_Key-Pair_Authentication.html">Key-Pair Authentication</a>: Snowflake now supports user based key pair authentication while using JDBC connection method for reverse and forward engineering.</li>
-        </ul>
+        <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>
+        <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
         <h2 class="heading2"><a name="PostgreS"></a>PostgreSQL Support</h2>
         <p class="bodytext">erwin DM is now certified for PostgreSQL versions 9.6.24, 10.20, 11.14, 12.9 and 13.5.</p>
         <h2 class="heading2"><a name="Cassandr"></a>Cassandra: Deriving Models and Advanced Denormalization</h2>
