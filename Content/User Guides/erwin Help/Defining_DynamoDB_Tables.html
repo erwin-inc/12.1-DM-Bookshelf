@@ -59,7 +59,7 @@
                 </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="141">General</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="142">General</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Physical Name*</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the physical name of the table  </td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Ensure that the table name is unique for the current AWS account and region. For example, if you create 2 tables, with the table name Customer for 2 different regions, these tables are identified entirely different from each other. </td>
@@ -101,6 +101,14 @@
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">TTL Attribute</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1"> Specifies the name of the TTL attribute used to store the expiration time for items in the table</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available when the Time to Live option is set to Enabled</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Class</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table class to use for storage cost optimization</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p><b>STANDARD</b>: Indicates that storage costs are optimized for generic data. This is the default storage optimization technique.</p>
+                    <p><b>STANDARD_INFREQUENT_ACCESS</b>: Indicates that storage costs are optimized for rarely-accessed data.</p>
+                </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">SSE Enabled</td>
@@ -389,7 +397,7 @@
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Stream View Type</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the information type captured in the stream when the table is modification</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the information type captured in the stream when the table is modified</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
                     <p>Available when Stream Enabled is set to True.</p>
                     <p><b>KEYS_ONLY</b>: Indicates that only the key attributes  of a modified item is captured</p>
