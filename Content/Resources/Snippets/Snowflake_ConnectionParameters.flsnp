@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -73,7 +73,7 @@
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the authentication URL</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
                     <p>This option is available when Connection Method is set to JDBC.</p>
-                    <p>Set the value as EXTERNALBROWSER when you connect using AzureAD.</p>
+                    <p>Set the value as EXTERNALBROWSER when you connect using OKTA or AzureAD.</p>
                 </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
