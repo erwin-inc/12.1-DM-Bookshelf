@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="Data Modeler Release Notes"
@@ -10,7 +10,7 @@
   InjectEmptyPages="true"
   MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
   MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
-  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\2021R2\PDF"
+  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1\PDF"
   MasterToc="/Project/TOCs/PDFDataModelerReleaseNotes.fltoc"
   OutputFile="Data Modeler Release Notes">
   <PrintedOutput
