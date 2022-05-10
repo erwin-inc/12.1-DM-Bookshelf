@@ -27,7 +27,7 @@
    if (qloc != -1) {
     part2 = part2.substring(0,qloc); 
    }
-   top.location.href="mailto:techpubs@erwin.com?subject=Comment about erwin Data Modeler 12.0 topic '"+document.title+"' in '"+part1+"'&body="+escape(ratingstr);
+   top.location.href="mailto:techpubs@erwin.com?subject=Comment about erwin Data Modeler 12.1 topic '"+document.title+"' in '"+part1+"'&body="+escape(ratingstr);
   }
  }
 }

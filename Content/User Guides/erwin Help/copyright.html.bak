@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html lang="en" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title>Legal Notices</title>
         <link rel="stylesheet" type="text/css" href="..\..\Resources\StyleSheets\stylesheet.css" />
@@ -30,7 +30,7 @@
         <meta name="ca_star_code" content="&lt;authorit:ca_star_code&gt;" />
         <meta name="ca_cms_id" content="&lt;authorit:ca_cms_id&gt;" />
         <script language="javascript" type="text/javascript">
-        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript" src="..\..\Resources\mailca.js"></script> <script language="javascript" type="text/javascript"></script></head>
+        </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" type="text/javascript" src="..\..\Resources\mailerwin.js"></script> <script language="javascript" type="text/javascript"></script></head>
     <body onload="loadParent();highlightx();if (isTOCLoaded()) {highlight('8201')}">
         <p class="bodytext">
             <MadCap:concept term="User Guides" /><a class="browse" href="2382960.html" title="Previous Topic: Online Help" target="_self"><img class="button" src="..\..\Resources\Images\580.png" alt="Previous Topic: Online Help" height="16px" width="16px" /></a><a class="browse" href="6884.html" title="Next Topic: erwin Product References" target="_self"><img class="button" src="..\..\Resources\Images\579.png" alt="Next Topic: erwin Product References" height="16px" width="16px" /></a>

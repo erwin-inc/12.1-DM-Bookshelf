@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <HtmlImport
   KeepSourceLinks="false"
   ProjectName="erwin Bookshelf"
@@ -5647,7 +5647,7 @@
       Source="../../Content/User Guides/Online Help--erwin Data Modeler/highlight.js"
       TimeStamp="9/6/2012 8:49:46 PM" />
     <Url
-      Source="../../Content/User Guides/Online Help--erwin Data Modeler/mailca.js"
+      Source="../../Content/User Guides/Online Help--erwin Data Modeler/mailerwin.js"
       TimeStamp="12/2/2016 4:06:20 PM" />
     <Url
       Source="../../Content/User Guides/Online Help--erwin Data Modeler/open_parent.js"
