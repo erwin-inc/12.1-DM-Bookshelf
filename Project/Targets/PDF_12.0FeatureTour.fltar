@@ -10,7 +10,7 @@
   InjectEmptyPages="true"
   MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
   MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
-  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\2021R2\PDF"
+  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1\PDF"
   MasterToc="/Project/TOCs/PDF12.0FeatureTour.fltoc"
   OutputFile="erwin DM 12.1 Feature Tour">
   <PrintedOutput
