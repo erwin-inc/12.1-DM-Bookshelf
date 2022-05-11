@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <HtmlImport
   KeepSourceLinks="true"
   ProjectName="erwin Bookshelf"
@@ -307,7 +307,7 @@
       Source="../../Content/Resources/highlight.js"
       TimeStamp="9/6/2012 8:49:46 PM" />
     <Url
-      Source="../../Content/Resources/mailca.js"
+      Source="../../Content/Resources/mailerwin.js"
       TimeStamp="12/2/2016 4:06:20 PM" />
     <Url
       Source="../../Content/Resources/open_parent.js"
