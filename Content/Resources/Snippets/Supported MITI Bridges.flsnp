@@ -34,8 +34,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Alteryx - Beta Bridge</p>
-                    <p class="tablebodytext">Alteryx Repository - Beta Bridge</p>
+                    <p class="tablebodytext">Alteryx - Unsupported Beta Bridge</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -43,9 +42,55 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Amazon Web Services (AWS) S3 Storage</p>
-                    <p class="tablebodytext">Amazon Web Services (AWS) Glue ETL - Beta Bridge</p>
+                    <p class="tablebodytext">Alteryx Repository - Unsupported Beta Bridge</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Amazon Web Services (AWS) Athena / Generic Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Amazon Web Services (AWS) Athena Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Amazon Web Services (AWS) Aurora / MySQL Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Amazon Web Services (AWS) Aurora / PostgreSQL Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Amazon Web Services (AWS) RedShift Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Amazon Web Services (AWS) Simple Storage Service (S3) File System</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -54,25 +99,70 @@
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Apache Avro File (JSON)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Apache Cassandra NoSQL Database</p>
-                    <p class="tablebodytext">Apache CouchDb Database (JSON)</p>
-                    <p class="tablebodytext">Apache Hadoop Hive Native bridges include: </p>
-                    <p class="tablebodytext">Apache Hadoop Hive Database (Hive Metastore via JDBC)</p>
-                    <p class="tablebodytext">Apache Hadoop Hive Database (HCatalog via JDBC)</p>
-                    <p class="tablebodytext">Apache Hadoop Hive Database (Web Hcatalog)</p>
-                    <p class="tablebodytext">Apache Hadoop HiveQL DDL</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Apache CouchDB NoSQL Database</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Apache Druid Database - New Beta Bridge</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Apache Hadoop HBase NoSQL Database (Java API)</p>
-                    <p class="tablebodytext">Apache Kafka</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Apache Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Apache Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Apache Kafka File System (API and Schema Registry)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Apache ORC&#160;File</p>
-                    <p class="tablebodytext">Cloudera Enterprise Hadoop Hive Database (HCatalog via JDBC)</p>
-                    <p class="tablebodytext">Cloudera Enterprise Hadoop HiveQL DDL</p>
-                    <p class="tablebodytext">Cloudera Impala Hadoop Hive Server</p>
-                    <p class="tablebodytext">Cloudera Impala Hadoop HiveQL DDL</p>
-                    <p class="tablebodytext">DataStax Enterprise (Cassandra)</p>
-                    <p class="tablebodytext">Hortonworks Hadoop Hive Database (HCatalog via JDBC)</p>
-                    <p class="tablebodytext">Hortonworks Hadoop HiveQL DDL</p>
-                    <p class="tablebodytext">MapR Hadoop Hive Database (HCatalog via JDBC)</p>
-                    <p class="tablebodytext">MapR Hadoop HiveQL DDL</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -81,14 +171,6 @@
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Apache Parquet File</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Amazon Web Services (AWS) RedShift Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -168,7 +250,63 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Data Platform Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Data Platform Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Hortonworks Data Platform Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Hortonworks Data Platform Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Impala Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Cloudera Impala Hadoop Hive Server</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">COBOL Copybook File</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Confluent Kafka File System (API and Schema Registry)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -184,10 +322,58 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Database SQL Data Definition Language (DDL)</p>
+                    <p class="tablebodytext">Database SQL DDL Script</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Databricks Delta Lake Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Databricks Delta Lake Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">DataStax Enterprise (Apache Cassandra) NoSQL Database</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Delimited File (CSV)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Denodo Virtual DataPort</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">EMC ProActivity 3.x &amp; 4.0	</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -208,26 +394,10 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">erwin Data Profiler - Beta bridge</p>
+                    <p class="tablebodytext">erwin Web Portal  - Vendor Internal Bridge</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">erwin Web Portal</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Export </p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">EMC ProActivity 3.x &amp; 4.0	</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import </p>
+                    <p class="tablebodytext">Export</p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -240,7 +410,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Flat File (CSV)</p>
+                    <p class="tablebodytext">File System (Delimited, Fixed Width, Excel, XML, JSON, Avro, Parquet, ORC, COBOL Copybook)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -248,10 +418,10 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">File System (CSV, Excel, XML, JSON, Avro, Parquet, ORC, COBOL Copybook)</p>
+                    <p class="tablebodytext">Fixed Width File</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
+                    <p class="tablebodytext">Import </p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -264,6 +434,46 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Google Cloud BigQuery Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Google Cloud Platform (GCP) Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Google Cloud Platform (GCP) Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Google Cloud Spanner Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Google Cloud Storage (GCS) File System</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Grandite Silverrun-RDM 2.4.4 to 2.8.6</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -272,7 +482,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Google BigQuery Database</p>
+                    <p class="tablebodytext">HPE Ezmeral Data Fabric (MapR) Hadoop Hive Database (HCatalog and Metastore via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -280,7 +490,15 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">HP Vertica Database (via JDBC)</p>
+                    <p class="tablebodytext">HPE Ezmeral Data Fabric (MapR) Hadoop Hive Database SQL DDL Script</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IBM Cognos Content Manager Packages</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -304,14 +522,6 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">IBM Cognos Content Manager Packages</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">IBM DB2 Cube Views</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -320,7 +530,31 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IBM DB2 for z/OS (mainframe) Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IBM DB2 iSeries (AS/400) Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">IBM DB2 Universal Database (UDB) (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IBM Informix Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -369,6 +603,14 @@
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">IBM Netezza Database (via JDBC) </p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IBM PureData System for Analytics - Netezza Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -432,14 +674,6 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">IBM Rational System Architect (SA) 10.4 to 11.x (Encyclopedia)</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">IBM Rational Software Architect (RSA) (via UML 2.x XMI)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -472,7 +706,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">IDERA ER/Studio Data Repository</p>
+                    <p class="tablebodytext">IDERA ER/Studio  Repository</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -480,10 +714,34 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Informatica Developer</p>
+                    <p class="tablebodytext">Informatica Big Data Management (BDM) Developer</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import/Export</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Informatica Big Data Management (BDM) Developer Repository</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Informatica Data Engineering Integration (DEI) Developer</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import/Export</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Informatica Data Engineering Integration (DEI) Developer Repository</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -512,6 +770,14 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">IRI CoSORT RowGen Data Definition File</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">IRI CoSORT SortCL Data Definition File</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -528,7 +794,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">MarkLogic NoSQL Database (for JSON only)</p>
+                    <p class="tablebodytext">MarkLogic NoSQL Database</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -552,9 +818,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft Azure Blob Storage</p>
-                    <p class="tablebodytext">Microsoft Azure Data Lake Storage</p>
-                    <p class="tablebodytext">Microsoft Azure SQL Data Warehouse (via JDBC)</p>
+                    <p class="tablebodytext">Microsoft Azure Analysis Services (SSAS)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -562,7 +826,47 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft Office Excel</p>
+                    <p class="tablebodytext">Microsoft Azure Blob Storage File System</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft Azure Cosmos DB NoSQL Database</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft Azure Data Lake Storage (ADLS) Gen1 File System</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft Azure Data Lake Storage (ADLS) Gen2 File System</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft Azure SQL Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft Azure Synapse Analytics (SQL Data Warehouse) (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -578,18 +882,10 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft Office Visio UML (via UML 1.x XMI)</p>
+                    <p class="tablebodytext">Microsoft Office Visio UML Class Diagram (via UML 1.x XMI)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft SQL Server Analysis Services (SSAS) 2016 (File)</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -626,14 +922,6 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft SQL Server Integration Services (File)	</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Microsoft SQL Server Integration Services (SSIS) (via DSV File)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -666,10 +954,18 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft SQL Server Analysis Services (SSAS) 2005 to 2017 (File)</p>
+                    <p class="tablebodytext">Microsoft SQL Server Analysis Services (SSAS) 2005 to 2019 (XMLA File)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Microsoft SQL Server Analysis Services (SSAS) 2016 to 2019 (Tabular Model File)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -682,7 +978,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Microsoft SQL Server Database SQL DDL</p>
+                    <p class="tablebodytext">Microsoft SQL Server Database SQL DDL Script</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -698,7 +994,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">MicroStrategy 7.0 to 10.x</p>
+                    <p class="tablebodytext">MicroStrategy 7.0 to 11.x/2021</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import/Export</p>
@@ -714,7 +1010,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">MongoDB NoSQL Database (JSON)</p>
+                    <p class="tablebodytext">MongoDB NoSQL Database</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -770,7 +1066,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">OpenStack Swift Object Store</p>
+                    <p class="tablebodytext">OpenStack Swift Object Store File System - New Beta Bridge</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -794,7 +1090,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Oracle Database SQL DDL</p>
+                    <p class="tablebodytext">Oracle Database SQL DDL Script</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -858,7 +1154,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Pivotal Greenplum Database (via JDBC) </p>
+                    <p class="tablebodytext">PostgreSQL Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -866,7 +1162,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">PostgreSQL Database (via JDBC)</p>
+                    <p class="tablebodytext">Presto Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -914,14 +1210,6 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">SAS Base SAS Code	</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">SAP BusinessObjects Designer (File)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -962,7 +1250,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Salesforce (SFDC)</p>
+                    <p class="tablebodytext">Salesforce (SFDC) Database</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -994,10 +1282,10 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Sparx Enterprise Architect (EA) (via UML 1.x XMI)</p>
+                    <p class="tablebodytext">Snowflake Database (via JDBC)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import</p>
+                    <p class="tablebodytext">Import </p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -1034,10 +1322,26 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">SAP PowerDesigner CDM 8.0 to 16.x	</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">SAP PowerDesigner OOM 9.x to 15.x (via UML 2.x XMI)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import/Export</p>
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">SAP PowerDesigner OOM 9.x to 15.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export</p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -1058,6 +1362,14 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">SAP PowerDesigner PDM 8.x to 16.x</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">SAP PowerDesigner LDM 15.x to 16.x</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -1066,10 +1378,34 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Tableau (File)</p>
+                    <p class="tablebodytext">SAP PowerDesigner XSM 10.x to 15.x</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import/Export</p>
+                    <p class="tablebodytext">Export</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">SAP Sybase ASE Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Tableau Data Source and Workbook (File)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Tableau Data Source  (File)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export</p>
                 </td>
             </tr>
             <tr align="left" valign="top">
@@ -1114,7 +1450,7 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Teradata Database SQL DDL</p>
+                    <p class="tablebodytext">Teradata Database SQL DDL Script</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -1122,7 +1458,15 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">ThoughtSpot - Beta Bridge</p>
+                    <p class="tablebodytext">Teradata Vantage Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">ThoughtSpot</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
@@ -1170,14 +1514,6 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">Visible IE:Advantage 6.1</p>
-                </td>
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import </p>
-                </td>
-            </tr>
-            <tr align="left" valign="top">
-                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
                     <p class="tablebodytext">Unicom (Popkin) System Architect (SA) 10.4 to 11.4 (Encyclopedia)</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
@@ -1194,7 +1530,15 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">W3C XML DTD 1.0</p>
+                    <p class="tablebodytext">Vertica SQL Data Warehouse (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">Visible IE:Advantage 6.1</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -1202,7 +1546,23 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">W3C Semantic Web Ontology (OWL/RDF) - New Beta Bridge</p>
+                    <p class="tablebodytext">VMware Tanzu Greenplum Database (via JDBC)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">W3C Semantic Web Ontology (OWL/RDF)</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import </p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext">W3C Web Service Definition Language (WSDL) - Beta Bridge</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import </p>
@@ -1218,18 +1578,34 @@
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext">W3C XML Schema 1.0 (XSD)</p>
+                    <p class="tablebodytext">W3C XML Document Type Definition (DTD) 1.0</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
-                    <p class="tablebodytext">Import/Export</p>
+                    <p class="tablebodytext">Import </p>
                 </td>
             </tr>
             <tr align="left" valign="top">
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
-                    <p class="tablebodytext"> XML Schema 1.0 (XSD) - Beta</p>
+                    <p class="tablebodytext">W3C XML Schema Definition (XSD) 1.0</p>
                 </td>
                 <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
                     <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext"> W3C XML Schema Definition (XSD) 1.0 Reverse Engineering</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Import</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top">
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="411">
+                    <p class="tablebodytext"> W3C XML Schema Definition (XSD) 1.0 Forward Engineering</p>
+                </td>
+                <td style="border-top: 1px solid #010101;border-bottom: 1px solid #010101;" width="96">
+                    <p class="tablebodytext">Export</p>
                 </td>
             </tr>
         </table>
