@@ -7,6 +7,7 @@
         <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
         <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
         <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
@@ -84,14 +85,14 @@
                 <MadCap:dropDownHotspot class="heading2">Connection</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../../Resources/Snippets/Oracle_ConnectionParameters.flsnp" />			
+                <MadCap:snippetBlock src="../../Resources/Snippets/Oracle_ConnectionParameters.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <p>
         </p>
         <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="heading2">Databases</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot class="heading2">Owners</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
@@ -110,18 +111,13 @@
                         </td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">System Objects</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether system databases are included under the Available Databases</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Owners</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available owners in the databases</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Databases</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available databases</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-                    </tr>
-                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Databases</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of selected databases for reverse engineering</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Owners</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of selected owners in the databases for reverse engineering</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                 </table>
@@ -131,7 +127,7 @@
         </p>
         <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="heading2">Label</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot class="heading2">Tables</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
@@ -150,13 +146,23 @@
                         </td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Labels</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available labels in the selected databases</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">CSV Table Filter</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Name</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Tables</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available tables the selected databases</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Labels</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of selected labels for reverse engineering</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Tables</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of selected tables for reverse engineering</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                 </table>
@@ -179,7 +185,80 @@
                 <MadCap:dropDownHotspot class="heading2">Detailed Options</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../../Resources/Snippets/Reverse_EngineeringDetailedOptions.flsnp" />
+                <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+                    <col class="TableStyle-TableStyle-Column-Column1" />
+                    <col class="TableStyle-TableStyle-Column-Column1" />
+                    <col class="TableStyle-TableStyle-Column-Column1" />
+                    <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                        <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p class="tableheading">Parameter</p>
+                        </td>
+                        <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                            <p class="tableheading">Description</p>
+                        </td>
+                        <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p class="tableheading">Additional Information</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">NSM Options</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the naming standard glossary file in the .CSV format</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">In TABLESPACEs (comma separated)</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">pecifies the tables that you want to set as filter criteria. To specify multiple tables, use a comma-separated list.</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">For exact matches, mention table names in upper case inside double quotes(for example, "TABLE1"). To use wild cards, mention table names without double quotes (for example, TABLE1).</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Infer</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether you want to infer primary keys or relationships, or both</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p><b>Primary Keys</b>: Indicates that primary key columns are inferred for the tables that are based on defined indexes</p>
+                            <p><![CDATA[
+
+]]><b>Relations</b>: Indicates that the relationships between tables based on either primary key column names or defined indexes are inferred. Select this option and then specify whether to use primary key column names or defined indexes.
+
+The following options are available only when Infer is set to Relations.
+</p>
+                            <p><![CDATA[
+]]><b>Indexes</b>: Indicates that the relationships from the table indexes are inferred. Relationships are inferred from table indexes only if the primary key columns of the parent table are part of the index in the child table.
+</p>
+                            <p><![CDATA[
+]]><b>Names</b>: Indicates that the relationships from the primary key column names are inferred. Relationships are inferred from columns names only if all of the primary key columns of the parent are in the child table.</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Case Conversion of Physical Names</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how the case conversion of physical names is handled </td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p class="bodytext"><b>None</b>: Indicates that the case in the script file is preserved</p>
+                            <p class="bodytext"><b>lower</b>: Indicates that the names are converted to lower case</p>
+                            <p class="bodytext"><b>UPPER</b>: Indicates that the names are converted to upper case</p>
+                            <p class="bodytext"><b>Force</b>: Indicates whether the physical name property of all the logical/physical models is overridden. If this option is enabled, the logical/physical link is broken between the logical and physical name. If this option is not enabled, all logical and physical names are set to the same value after the process completes. </p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Case Conversion of Logical Names</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies how the case conversion of logical names is handled</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                            <p class="bodytext"><b>None</b>: Indicates that the case in the script file is preserved</p>
+                            <p class="bodytext"><b>lower</b>: Indicates that the names are converted to lower case</p>
+                            <p class="bodytext"><b>UPPER</b>: Indicates that the names are converted to upper case</p>
+                            <p class="bodytext"><b>Mixed</b>: Indicates that the mixed-case logical names are preserved</p>
+                        </td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Include Generated Triggers</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether erwin-generated triggers are loaded during the reverse engineer process</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Include Public Synonyms</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether to include public synonyms during the reverse engineer process</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                </table>
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <p>

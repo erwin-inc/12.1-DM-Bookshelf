@@ -5066,6 +5066,9 @@
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
         <TocEntry
+          Title="Reverse Engineering Options for Oracle"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Oracle.html" />
+        <TocEntry
           Title="Reverse Engineering Options for Neo4j"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Neo4j.html"
           BreakType="chapter"
