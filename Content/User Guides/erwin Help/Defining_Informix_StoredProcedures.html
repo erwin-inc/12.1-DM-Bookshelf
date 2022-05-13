@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title>Defining Google BigQuery Datasets</title>
+    <head>
         <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <link href="../../Resources/StyleSheets/stylesheet.css" rel="stylesheet" type="text/css" />
         <link href="../../Resources/StyleSheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
@@ -33,79 +33,75 @@
         <script language="javascript" type="text/javascript">
         </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
     <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('8022');expand2('8023');highlight('8032')}">
-        <p class="heading1" id="t3067">Defining Google BigQuery Datasets</p>
-        <p class="bodytext">The following properties are applicable to a Google BigQuery Dataset object.</p>
+        <h1 class="heading1" id="t3067">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Defining Informix Stored Procedures</h1>
+        <p class="bodytext">The following properties are applicable to an Informix Stored Procedures object.</p>
         <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
             <col class="TableStyle-TableStyle-Column-Column1" />
             <col class="TableStyle-TableStyle-Column-Column1" />
             <col class="TableStyle-TableStyle-Column-Column1" />
             <col class="TableStyle-TableStyle-Column-Column1" />
             <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
-                <td style="text-align: center;vertical-align: middle;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
                     <p class="tableheading">Tab</p>
                 </td>
-                <td style="text-align: center;vertical-align: middle;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
                     <p class="tableheading">Property</p>
                 </td>
-                <td style="text-align: center;vertical-align: middle;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
                     <p class="tableheading">Description</p>
                 </td>
-                <td style="text-align: center;vertical-align: middle;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
                     <p class="tableheading">Additional Information</p>
                 </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Project</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the  project to which the dataset belongs</td>
-                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="4">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the stored procedure</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">If Not Exists</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies that if the dataset already exists, no exception is thrown, and no action happens</td>
-                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Type</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the script template type is applied to models or tables</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p><b>Model Level</b>:   Indicates that the script template is applied for database models</p>
+                    <p><b>Table Level</b>:  Indicates that the script template is applied for database tables</p>
+                </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Attach to New</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the stored procedure must be attached to each new table that you create</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available only when Type is set to Table Level</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a DDL statement is generated for the dataset during forward engineering</td>
-                <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-            </tr>
-            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="5">General</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Friendly Name</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a user-friendly name for the dataset, enclosed in quotation marks </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a DDL statement is generated for the stored procedure during forward engineering</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Default Table Expiration in Days</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default number of days after which tables in the dataset are deleted</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-            </tr>
-            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Default Partition Expiration in Days</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default number of days after which a table partition is deleted</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-            </tr>
-            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Default KMS&#160;Key Name</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the default Google Cloud KMS encryption path, enclosed in quotation marks</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-            </tr>
-            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Location</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the location in which the dataset is created</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-            </tr>
-            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Label List</td>
+                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Code</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies an array of labels for the dataset, expressed as key-value pairs</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the template code of the stored procedure that can include SQL statements and macros</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="2">Expanded</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Expanded Code (Read Only)</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the expanded code of the stored procedure</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Context</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the table or view </td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">Available only when Type is set to Table Level</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Object Creation Order</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the order of DDL statement generation for stored procedures</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
             </tr>
         </table>
-        <p class="bodytext">
-            <div class="noteAlt">If the value of an object property is of the Function type, do not enclose the value in quotation marks.</div>
-        </p>
     </body>
 </html>
