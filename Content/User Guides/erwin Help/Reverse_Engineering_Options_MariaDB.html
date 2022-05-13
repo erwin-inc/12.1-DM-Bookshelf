@@ -40,8 +40,8 @@
         </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
     <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3179');expand2('3181');expand2('8022');expand2('8023');highlight('8032')}">
         <h1 class="heading1" id="t3067">
-            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Reverse Engineering Options for Oracle</h1>
-        <p class="bodytext">Following are the reverse engineering options for Oracle.</p>
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Reverse Engineering Options for MariaDB</h1>
+        <p class="bodytext">Following are the reverse engineering options for MariaDB.</p>
         <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot class="heading2">Overview</MadCap:dropDownHotspot>
@@ -85,14 +85,14 @@
                 <MadCap:dropDownHotspot class="heading2">Connection</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="../../Resources/Snippets/Oracle_ConnectionParameters.flsnp" />
+                <MadCap:snippetBlock src="../../Resources/Snippets/MariaDB_ConnectionParameters.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <p>
         </p>
         <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <MadCap:dropDownHead>
-                <MadCap:dropDownHotspot class="heading2">Owners</MadCap:dropDownHotspot>
+                <MadCap:dropDownHotspot class="heading2">Databases</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
                 <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
@@ -111,20 +111,25 @@
                         </td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Owners</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available owners in the databases</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">System Objects</td>
+                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether to include system objects for database selection</td>
+                        <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    </tr>
+                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Databases</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Displays the available databases</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Owners</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of selected owners in the databases for reverse engineering</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Databases</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Displays the selected databases</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                 </table>
             </MadCap:dropDownBody>
+            <p>
+            </p>
         </MadCap:dropDown>
-        <p>
-        </p>
         <MadCap:dropDown xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot class="heading2">Tables</MadCap:dropDownHotspot>
@@ -146,19 +151,9 @@
                         </td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">CSV Table Filter</td>
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether to filter tables from a .CSV file for reverse engineering</td>
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-                    </tr>
-                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Name</td>
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the path to the .CSV file</td>
-                        <td style="text-align: left;" class="TableStyle-TableStyle-BodyD-Column1-Body1">The Selected Tables section displays the tables in the .CSV file</td>
-                    </tr>
-                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Available Tables</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies a list of available tables the selected databases for reverse engineering generation</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">To reverse engineer tables on a database, ensure that, the CSV Table Filter options is un-checked</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Selected Tables</td>
@@ -206,7 +201,7 @@
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">In TABLESPACEs (comma separated)</td>
+                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Table Filter (comma separated)</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the tables that you want to set as filter criteria. To specify multiple tables, use a comma-separated list.</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">For exact matches, mention table names in upper case inside double quotes(for example, "TABLE1"). To use wild cards, mention table names without double quotes (for example, TABLE1).</td>
                     </tr>
@@ -251,11 +246,6 @@ The following options are available only when Infer is set to Relations.
                     <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Include Generated Triggers</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether erwin-generated triggers are loaded during the reverse engineer process</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
-                    </tr>
-                    <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Include Public Synonyms</td>
-                        <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether to include public synonyms during the reverse engineer process</td>
                         <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
                     </tr>
                 </table>

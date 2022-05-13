@@ -5065,6 +5065,9 @@
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
         <TocEntry
+          Title="Reverse Engineering Options for MariaDB"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_MariaDB.html" />
+        <TocEntry
           Title="Reverse Engineering Options for MongoDB"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_MongoDB.html"
           BreakType="chapter"
