@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <IgnoredWordsDictionary>
-    <Word>SQL</Word>
+    <Word Comment="">SQL</Word>
+    <Word>REMAINDER_IN</Word>
+    <Word>DBSpace</Word>
 </IgnoredWordsDictionary>

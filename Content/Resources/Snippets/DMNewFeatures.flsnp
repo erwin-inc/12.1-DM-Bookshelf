@@ -8,6 +8,8 @@
         </p>
         <p class="minitocitem"><a href="#Data">Data Vault</a>
         </p>
+        <p class="minitocitem"><a href="#DBSupportUpdates">Database Support Updates</a>
+        </p>
         <p class="minitocitem"><a href="#DM"><a href="#Producti">Productivity and UI Enhancements</a></a>
         </p>
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
@@ -26,6 +28,44 @@
         <p class="bodytext">You can now connect to a Git repository hosted on GitLab or GitHub. This enables you to push forward engineering scripts for a Mart Model to a Git repository. Using Git repositories enables you to utilize Git features, such as version control and collaboration with team members. For information on connecting to Git, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Connecting_to_GitRepositories.html">Connecting to Git Repositories</a> topic.</p>
         <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>
         <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
+        <h2 class="heading2"><a name="DBSupportUpdates"></a>Database Support Updates</h2>
+        <p>Support for the following databases has been updated:</p>
+        <ul>
+            <li>
+                <p><b>DynamoDB</b>
+                </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>Added a new property Table Class under General tab in DynamoDB Table Editor.</p>
+                    </li>
+                    <li>
+                        <p>Added a new tab Viewer under Preview in DynamoDB Forward Engineer Alter Script Schema Generation Wizard.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Google BigQuery</b>: </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>You can now assign a dataset to an existing project using the Project field in Google BigQuery Dataset Editor.</p>
+                    </li>
+                    <li>
+                        <p>Added  Project field under Google BigQuery Table Editor, Google BigQuery View Editor, Google BigQuery Function Editor, Google BigQuery Materialized View Editor, and Google BigQuery Stored Procedure Editor.</p>
+                    </li>
+                    <li>
+                        <p>Added a new property Location under Dataset Options in Google BigQuery Dataset Editor.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Databricks</b>: </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>Added a new tab Views in Databricks Reverse Engineering Wizard.</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
         <h2 class="heading2"><a name="PostgreS"></a>PostgreSQL Support</h2>
         <p class="bodytext">erwin DM is now certified for PostgreSQL versions 9.6.24, 10.20, 11.14, 12.9 and 13.5.</p>
         <h2 class="heading2"><a name="Cassandr"></a>Cassandra: Deriving Models and Advanced Denormalization</h2>
