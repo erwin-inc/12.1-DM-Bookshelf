@@ -4779,6 +4779,9 @@
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
         <TocEntry
+          Title="Forward Engineering Options for MariaDB"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_MariaDB.html" />
+        <TocEntry
           Title="Forward Engineering Options for MongoDB"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_for_MongoDB.html"
           BreakType="chapter"
@@ -4792,6 +4795,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Forward Engineering Options for Oracle"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Oracle.html" />
         <TocEntry
           Title="Forward Engineering Options for Parquet"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Parquet.html"
