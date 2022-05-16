@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">To connect to the latest Mart, you must configure the Mart Server. Use the same database that you have used for the r9.0.0 Mart (or any earlier release of r9 series Mart).</p>
@@ -21,7 +21,7 @@ LDAP://server/distinguished-name
             <p class="examplesubheading">Configure Advanced Settings</p>
             <ol class="listnumber">
                 <p class="bodytext">Only in case of failures in upgrade, before you rerun the upgrade, ensure that you select the following settings on the Advanced tab:
-				<dl><dt>Rerun Count Upgrade</dt><dd><p class="normaltermcontinued2">Specifies that the model count upgrade should run while running the Mart database upgrade.</p></dd></dl><dl><dt>Rerun Report Upgrade</dt><dd><p class="normaltermcontinued2">Specifies that the report upgrade should run while running the Mart database upgrade.</p></dd></dl></p>
+				<dl><dt>Rerun Count Upgrade</dt><dd><p class="normaltermcontinued2">Specifies that the model count upgrade should run while running the Mart database upgrade.</p></dd></dl><dl><dt>Rerun Report Upgrade</dt><dd><p class="normaltermcontinued2">Specifies that the report upgrade should run while running the Mart database upgrade.</p></dd><dt>Rerun Report Upgrade for All Models</dt><dd><p class="normaltermcontinued2">Specifies that the report upgrade should run while running all models upgrade.</p></dd></dl></p>
                 <div class="noteAlt">
 Ensure that the Mart database has the following:
                 <ul class="listbullet"><li class="listbullet">m9reportUpgrade and m9ReportListData tables</li><li class="listbullet">m9Catalog table with entcnt, attcnt, relcnt, and countblob columns</li></ul></div>
