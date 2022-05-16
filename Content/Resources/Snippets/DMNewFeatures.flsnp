@@ -2,30 +2,27 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="minitocintro">Following new features and enhancements are available in erwin Data Modeler (DM) and erwin Mart Server <MadCap:variable name="General.VersionNumber" />.</p>
-        <p class="minitocitem"><a href="#ArangoDB">ArangoDB</a>
+        <p class="minitocitem"><a href="#erwin">erwin Mart Server on Cloud</a>
         </p>
         <p class="minitocitem"><a href="#Snowflak">OKTA support for Snowflake</a>
         </p>
-        <p class="minitocitem"><a href="#Data">Data Vault</a>
-        </p>
         <p class="minitocitem"><a href="#DBSupportUpdates">Database Support Updates</a>
-        </p>
-        <p class="minitocitem"><a href="#DM"><a href="#Producti">Productivity and UI Enhancements</a></a>
         </p>
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
         </p>
         <p class="minitocitem">The list includes a brief description and wherever relevant, a reference to more information about each feature.</p>
-        <h2 class="heading2"><a name="Neo4j"></a>Neo4j</h2>
-        <p class="bodytext">erwin DM now supports Neo4j 4.2.x and 4.3.x as target databases.</p>
-        <p class="bodytext">For information on supported objects and data types, refer <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Neo4j_Support_Summary.html">Neo4j support summary</a>.</p>
-        <h2 class="heading2"><a name="Parquet"></a>Parquet</h2>
-        <p class="bodytext">erwin DM now supports Parquet 2.x as target database.</p>
-        <p class="bodytext">For information on supported objects and data types, refer <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Parquet_Support_Summary.html">Parquet support summary</a>.</p>
-        <h2 class="heading2"><a name="Central"></a>Central Scheduler</h2>
-        <p class="bodytext">You can now use erwin DM Scheduler to schedule reverse engineering jobs centrally on a local or a remote instance of erwin Data Modeler. You can configure multiple remote machines as servers and set up jobs to run in parallel on these servers. The Central Scheduler saves time and provides you with an improved performance by distributing reverse engineering jobs across multiple servers. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Tools/Scheduler/Scheduling_Jobs.html" target="_blank">Scheduling Jobs</a> topic.</p>
-        <p class="bodytext">Apart from this, in case of models on erwin Mart, you can now run the Complete Compare process as part of reverse engineering. This enables you to compare the reverse engineering result with the model in your mart. In case of differences, you can save the updates as the latest version of your model in the mart. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Tools/Scheduler/Setting_Reverse_Engineering_Options.html" target="_blank">Setting Reverse Engineering Options</a> topic.</p>
-        <h2 class="heading2"><a name="Git"></a>Git Support</h2>
-        <p class="bodytext">You can now connect to a Git repository hosted on GitLab or GitHub. This enables you to push forward engineering scripts for a Mart Model to a Git repository. Using Git repositories enables you to utilize Git features, such as version control and collaboration with team members. For information on connecting to Git, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Connecting_to_GitRepositories.html">Connecting to Git Repositories</a> topic.</p>
+        <h2 class="heading2"><a name="erwin"></a>erwin Mart Server on Cloud</h2>
+        <p class="bodytext">Starting release 12.1, erwin Mart Server is available in two flavors, on-premises and on-cloud.</p>
+        <p class="bodytext">The on-cloud offering works same as the older, on-premises offering, except the following features:</p>
+        <ul class="listbullet">
+            <li class="listbullet">
+                <p class="bodytext">User Types: User types, Azure AD User and Azure AD Group User have been added.<br></br>For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/mart_users.html">Mart Users</a> topic.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext">erwin Mart application access: To connect to erwin Mart on cloud from erwin Data Modeler, the connection parameters differ from the erwin Mart on premises.<br></br>For information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</p>
+            </li>
+        </ul>
+        <p class="bodytext">For more information or queries about erwin Mart Server on cloud, contact <a href="https://support.quest.com/erwin-data-modeler/12.1">erwin Support</a>.</p>
         <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>
         <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
         <h2 class="heading2"><a name="DBSupportUpdates"></a>Database Support Updates</h2>
@@ -66,64 +63,6 @@
                 </ul>
             </li>
         </ul>
-        <h2 class="heading2"><a name="PostgreS"></a>PostgreSQL Support</h2>
-        <p class="bodytext">erwin DM is now certified for PostgreSQL versions 9.6.24, 10.20, 11.14, 12.9 and 13.5.</p>
-        <h2 class="heading2"><a name="Cassandr"></a>Cassandra: Deriving Models and Advanced Denormalization</h2>
-        <p class="bodytext">You can now perform advanced denormalization when you derive a Cassandra model. This feature provides you with options to do a manual or automatic denormalization.</p>
-        <ul class="listbullet">
-            <li class="listbullet">
-                <p class="bodytext">Use the auto-denormalization option to merge tables with the target table automatically. </p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">Use the manual denormalization option to selectively merge columns from source tables to target tables.</p>
-            </li>
-        </ul>
-        <p class="bodytext">For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Advanced_Denormalization_Options_for_Cassandra.html" target="_blank">advanced denormalization</a> topic.</p>
-        <h2 class="heading2"><a name="Oracle"></a>Oracle: View and Materialized View Enhancement</h2>
-        <p class="bodytext">For Oracle models with views and materialized views that have JOINS, GROUP BY and CTE clauses and/or wildcards, you can now run Reverse Engineering from Script (RES) without hampering the resulting model. For complex views and materialized views, you now have an option to add their DDL statements on the editor and commit to your models. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Edit_the_User_Defined_SQL_Code.html" target="_blank">Edit the User Defined SQL Code</a> topic.</p>
-        <h2 class="heading2"><a name="Data"></a>Data Vault 2.0 Support</h2>
-        <p class="bodytext">erwin DM now supports  model-level and table-level rollback function for Data Vault models. Additionally, the Data Vault Component Type selector is now available only when the model is configured to be a Data Vault model.</p>
-        <p class="bodytext">For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Converting_Models_DataVault.html">Data Vault</a> topic.</p>
-        <h2 class="heading2"><a name="Producti"></a>Productivity and UI Enhancements</h2>
-        <p class="bodytext">Several additions and enhancements have been implemented to improve erwin DM's productivity and usage experience. These enhancements are:</p>
-        <ul class="listbullet">
-            <li class="listbullet">
-                <p class="bodytext"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/copy_neighbourhood_to_different_model.html" target="_blank">Copy Neighborhood</a>: You can now selectively copy the immediate neighbors of a node in your diagram and use them in other models.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Object_Browser.html" target="_blank">Object Browser</a>: A new tab, &lt;Object&gt; Info has been added for all databases. It displays tables, records, collections, documents, JSON Objects, and nodes, in your model or in the selected object along with the counts based on database. Apart from this, for Couchbase and Neo4j models, database-specific tabs have been added:</p>
-                <ul class="listbullet">
-                    <li class="listbullet">
-                        <p class="bodytext">The Couchbase tab displays global indexes and full text indexes along with their counts.</p>
-                    </li>
-                    <li class="listbullet">
-                        <p class="bodytext">The Neo4j tab displays global indexes and global constraints along with their counts.</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">Denormalization and deriving models now creates new models instead of overwriting source models.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">You can now access the columns of a table via the table editor instead of having to open the column editor explicitly. Use the <img src="../Images/Icon-ColEditorShortcut.png" /> icon on the table editor.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">A new display level, Graph (<img src="../Images/Icon-GraphDisplayLevel.png" />), has been added to facilitate easier switch for graph databases.</p>
-            </li>
-            <li>
-                <p class="bodytext">You can now <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/generate_multiple_diagram_pictures.html">generate picture reports</a> of a single or multiple diagrams in one submission  in the following formats: </p>
-                <ul>
-                    <li class="listbullet">Enhanced Metafiles (.emf)</li>
-                    <li class="listbullet">PNG (.png)</li>
-                    <li class="listbullet">JPG (.jpg)</li>
-                    <li class="listbullet">SVG (.svg)</li>
-                    <li class="listbullet">PDF (.pdf)</li>
-                </ul>
-            </li>
-            <li class="listbullet">
-                <p>You can now export an enhanced report in HTML&#160;format using Report Designer.</p>
-            </li>
-        </ul>
         <h2 class="heading2"><a name="DM"></a>DM Connect for DI Support</h2>
         <p class="bodytext">The DM Connect for DI feature has undergone several enhancements as follows:</p>
         <ul class="listbullet">
@@ -148,24 +87,6 @@
                 </ul>
             </li>
         </ul>
-        <h2 class="heading2"><a name="erwin"></a>erwin Mart Server</h2>
-        <p class="bodytext">erwin Mart Server has undergone several enhancements as follows:</p>
-        <ul class="listbullet">
-            <li class="listbullet">
-                <p class="bodytext">You can now test LDAP connections using the erwin Mart Configuration screen.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">Session timeout has been updated to 30 minutes.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/Character Limitations.html" target="_blank">Special characters</a> support has been updated.</p>
-            </li>
-            <li class="listbullet">
-                <p><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Installation/erwin Mart Server/deploy_mart_server.html#ConfigureMartAdmin" target="_blank">Configuration</a> to use IIS and SSL has been updated.</p>
-            </li>
-        </ul>
-        <h2 class="heading2"><a name="API:"></a>API: ISCPersistenceUnit::ReverseEngineerScript</h2>
-        <p class="bodytext">You can now perform the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/References/API Reference/ISCPersistenceUnit--ReverseEngineerScript.html" target="_blank">Reverse Engineering from Script (RES)</a> process via API.</p>
         <h2 class="heading2"><a name="Third"></a>Third Party Tools</h2>
         <p class="bodytext">Support for third-party tools has been upgraded as follows:</p>
         <ul class="listbullet">

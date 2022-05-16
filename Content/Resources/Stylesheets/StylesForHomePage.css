@@ -214,10 +214,11 @@ p.Copyright
 	padding-left: 20px;
 }
 
+/*edit the height to manage the gap between the content and buttons on Home page*/
 .left-section .left-content,
 .right-section .right-content
 {
-	height: 550px;
+	height: 200px;
 }
 
 /*added by erwin to manage the PDF and Downloads section*/
