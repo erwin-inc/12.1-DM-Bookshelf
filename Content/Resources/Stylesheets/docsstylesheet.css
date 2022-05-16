@@ -916,37 +916,7 @@ li.normalterm
 	height: auto;
 	white-space: normal;
 }
-/*Added by erwin: Use the below class with p tag for a responsive note container.*/
-.noteAlt
-{
-    font-family: "Calibri", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 100%;
-    color: #000000;
-	 background-color: #f0f7fb;
-     background-image: url(../../Resources/Images/note.png);
-     background-position: 0.25% 50%;
-     background-repeat: no-repeat;
-     border-left: solid 4px #3498db;
-     line-height: 18px;
-     overflow: hidden;
-     padding: 1.75% 7.75%;
-	 border-radius: 0px 0px 0px 0px;
-}
-/*Added by erwin: Use this below class when you want to group other elements( <p>,<ol>,<ul>, or <li> tag etc.) together in a note container. This note container is responsive. */
-div.noteAlt
-{
-     background-color: #f0f7fb;
-     background-image: url(../../Resources/Images/note.png);
-     background-position: 0.25% 50%;
-     background-repeat: no-repeat;
-     border-left: solid 4px #3498db;
-     line-height: 18px;
-     overflow: hidden;
-     padding: 1.75% 7.75%;
-}
+
 
 .picture
 {
@@ -1771,24 +1741,6 @@ li.listalpha2
 	width: auto;
 	height: auto;
 	white-space: normal;
-}
-/*Added by erwin: Use this class when you want to add a note container in a table. Use this with <p> tag. This note container is responsive. */
-.noteAltTable
-{
-	font-family: "Calibri", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 100%;
-    color: #000000;
-     background: #f0f7fb;
-	 background-image: url(../../Resources/Images/note.png);
-     background-position: 0.25% 50%;
-     background-repeat: no-repeat;
-     border-left: solid 4px #3498db;
-     line-height: 18px;
-     overflow: hidden;
-	 padding: 12px 10px 12px 66px;
 }
 
 .code
@@ -3530,4 +3482,54 @@ p.bodytext
 fieldset
 {
 	border: 0px;
+}
+
+/*Added by erwin: Use this class when you want to add a note container in a table. Use this with <p> tag. This note container is responsive. */
+.noteAltTable
+{
+	font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 100%;
+    color: #000000;
+     background: #f0f7fb;
+	 background-image: url(../../Resources/Images/note.png);
+     background-position: 0.25% 50%;
+     background-repeat: no-repeat;
+     border-left: solid 4px #3498db;
+     line-height: 18px;
+     overflow: hidden;
+	 padding: 12px 10px 12px 66px;
+}
+/*Added by erwin: Use the below class with p tag for a responsive note container.*/
+.noteAlt
+{
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 100%;
+    color: #000000;
+	 background-color: #f0f7fb;
+     background-image: url(../../Resources/Images/note.png);
+     background-position: 0.25% 50%;
+     background-repeat: no-repeat;
+     border-left: solid 4px #3498db;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 1.75% 7.75%;
+	 border-radius: 0px 0px 0px 0px;
+}
+/*Added by erwin: Use this below class when you want to group other elements( <p>,<ol>,<ul>, or <li> tag etc.) together in a note container. This note container is responsive. */
+div.noteAlt
+{
+     background-color: #f0f7fb;
+     background-image: url(../../Resources/Images/note.png);
+     background-position: 0.25% 50%;
+     background-repeat: no-repeat;
+     border-left: solid 4px #3498db;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 1.75% 7.75%;
 }
