@@ -10,6 +10,8 @@
         </p>
         <p class="minitocitem"><a href="#DBSupportUpdates">Database Support Updates</a>
         </p>
+        <p class="minitocitem"><a href="#Git">Git Support</a>
+        </p>
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
         </p>
         <p class="minitocitem">The list includes a brief description and wherever relevant, a reference to more information about each feature.</p>
@@ -69,22 +71,12 @@
             </li>
         </ul>
         <h2 class="heading2"><a name="DM"></a>DM Connect for DI Support</h2>
-        <p class="bodytext">The DM Connect for DI feature has undergone several enhancements as follows:</p>
         <ul class="listbullet">
-            <li class="listbullet">
-                <p class="bodytext">The REDB process now stores the database connection parameters into your environment in erwin Data Intelligence Suite (erwin DI Suite). For more information, refer <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Tools/DM Connect for DI/Scenario Schedule Jobs.html" target="_blank">DM Connect for DI</a> guide.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">You can now run jobs immediately using the Run Now feature. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/schedule_job_dmconnectdi.html">Add Jobs</a> topic.</p>
-            </li>
-            <li class="listbullet">
-                <p class="bodytext">erwin Mart permissions have been updated. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/dmconnectdi_permissions.html" target="_blank">erwin DM Connect for DI Permissions</a> topic.</p>
-            </li>
             <li class="listbullet">
                 <p class="bodytext">Support for DM Connect for DI has been upgraded to support:</p>
                 <ul class="listbullet">
                     <li class="listbullet">
-                        <p class="bodytext">all new databases</p>
+                        <p class="bodytext">Export of business entity type from DM&#160;to DI is stored in environment details.</p>
                     </li>
                     <li class="listbullet">
                         <p class="bodytext">erwin Data Intelligence (DI) v10.2, v11.0, v11.1, and v12.0.</p>
@@ -92,6 +84,8 @@
                 </ul>
             </li>
         </ul>
+        <h2 class="heading2"><a name="Git"></a>Git Support</h2>
+        <p class="bodytext">You can now controls the level of permission and assign a user or a group to a profile, library, or model so that they have specific access.</p>
         <h2 class="heading2"><a name="Third"></a>Third Party Tools</h2>
         <p class="bodytext">Support for third-party tools has been upgraded as follows:</p>
         <ul class="listbullet">
