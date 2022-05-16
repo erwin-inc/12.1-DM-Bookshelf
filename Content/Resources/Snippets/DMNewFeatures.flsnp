@@ -130,9 +130,8 @@
         <p class="bodytext">Support for third-party tools has been upgraded as follows:</p>
         <ul class="listbullet">
             <li class="listbullet">Tomcat has been upgraded from v9.0.52 to v9.0.62.</li>
-            <li class="listbullet">erwin Data Modeler now uses AdoptOpenJDK (11.0.6+10)</li>
-            <li class="listbullet">erwin Data Modeler now uses OpenSSL (1.1.1k)</li>
-            <li class="listbullet">erwin Mart Server now uses AdoptOpenJDK (build 16.0.1+9)</li>
+            <li class="listbullet">AdoptOpenJDK <ul><li class="listbullet">erwin Data Modeler: 11.0.6+10</li><li class="listbullet">erwin Mart Server: Build 16.0.1+9</li></ul></li>
+            <li class="listbullet">erwin Data Modeler: OpenSSL (1.1.1k)</li>
         </ul>
     </body>
 </html>
