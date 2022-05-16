@@ -2417,6 +2417,46 @@
           </TocEntry>
         </TocEntry>
         <TocEntry
+          Title="Informix Support Summary"
+          Link="/Content/User Guides/erwin Help/Informix_Support_Summary.htm">
+          <TocEntry
+            Title="Defining Informix Objects"
+            Link="/Content/User Guides/erwin Help/Defining_Informix_Objects.html">
+            <TocEntry
+              Title="Define Informix DBSpaces"
+              Link="/Content/User Guides/erwin Help/Define_Informix_DBSpaces.html"></TocEntry>
+            <TocEntry
+              Title="Defining Informix Stored Procedures"
+              Link="/Content/User Guides/erwin Help/defining_informix_storedProcedures.html"></TocEntry>
+            <TocEntry
+              Title="Defining Informix Script Templates"
+              Link="/Content/User Guides/erwin Help/defining_informix_scriptTemplates.html" />
+            <TocEntry
+              Title="Defining Informix Tables"
+              Link="/Content/User Guides/erwin Help/defining_informix_tables.html">
+              <TocEntry
+                Title="Defining Informix Table Indexes"
+                Link="/Content/User Guides/erwin Help/define_informix_table_ndex_properties.html" />
+              <TocEntry
+                Title="Defining Informix Table Columns"
+                Link="/Content/User Guides/erwin Help/Define_Informix_Table_Column_Properties.html"></TocEntry>
+              <TocEntry
+                Title="Defining Informix Table Triggers"
+                Link="/Content/User Guides/erwin Help/Define_an_Informix_Table_Trigger.html" />
+            </TocEntry>
+            <TocEntry
+              Title="Defining Informix Views"
+              Link="/Content/User Guides/erwin Help/Defining_Informix_Views.html">
+              <TocEntry
+                Title="Defining Informix View Columns"
+                Link="/Content/User Guides/erwin Help/Defining_Informix_ViewColumns.html" />
+              <TocEntry
+                Title="Define an Informix View Trigger"
+                Link="/Content/User Guides/erwin Help/Define_an_Informix_View_Trigger.html"></TocEntry>
+            </TocEntry>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry
           Title="JSON Support Summary"
           Link="/Content/User Guides/erwin Help/JSON_Support_Summary.html">
           <TocEntry
@@ -4772,12 +4812,15 @@
           Title="Forward Engineering Options for Google BigQuery"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Google_BigQuery.html" />
         <TocEntry
+          Title="Forward Engineering Options for Informix"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Informix.html" />
+        <TocEntry
           Title="Forward Engineering Options for JSON"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_for_JSON.html"
           BreakType="chapter"
           StartSection="false"
           PageNumberReset="continue"
-          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
         <TocEntry
           Title="Forward Engineering Options for MariaDB"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_MariaDB.html" />
@@ -5057,6 +5100,9 @@
         <TocEntry
           Title="Reverse Engineering Options for Google BigQuery"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Google_BigQuery.html" />
+        <TocEntry
+          Title="Reverse Engineering Options for Informix"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Informix.html" />
         <TocEntry
           Title="Reverse Engineering Options for JSON"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_JSON.html"
