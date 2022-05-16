@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <IgnoredWordsDictionary>
     <Word Comment="">SQL</Word>
-    <Word>REMAINDER_IN</Word>
-    <Word>DBSpace</Word>
+    <Word Comment="">REMAINDER_IN</Word>
+    <Word Comment="">DBSpace</Word>
+    <Word>CTAS</Word>
+    <Word>MySQL</Word>
+    <Word>Databricks</Word>
 </IgnoredWordsDictionary>
