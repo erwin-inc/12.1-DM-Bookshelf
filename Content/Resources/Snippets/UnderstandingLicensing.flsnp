@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bodytext">erwin offers the following license types based on <MadCap:variable name="General.ProductNameDM"></MadCap:variable> (<MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>) editions:</p>
+        <ul class="listbullet">
+            <li class="listbullet">Standard
+</li>
+            <li class="listbullet">Workgroup
+</li>
+            <li class="listbullet">Navigator
+</li>
+            <li class="listbullet">API
+</li>
+            <li class="listbullet">Trial
+</li>
+            <li class="listbullet">Evaluation (15 days)
+</li>
+            <li class="listbullet">Academic (365 days)
+</li>
+            <li class="listbullet">Industry Reviewer (60 days, full-featured)
+</li>
+            <li class="listbullet">Partner (365 days, full-featured)
+</li>
+        </ul>
+        <p class="bodytext">Further, each edition-based license can belong to either of the following licensing models:</p>
+        <dl>
+            <dt>Concurrent</dt>
+            <dd>
+                <p class="normaltermcontinued">This licensing model is based on a pool of licenses shared between several users. Simultaneous access to the <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> is available to as many users as the number of allowed users on a concurrent license. For example, if you have a ten-user concurrent license, ten users can access <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> at a time using the license. Therefore, if an 11th user tries to use <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>, access is denied.</p>
+                <dl>
+                    <dt>Account-based License</dt>
+                    <dd>
+                        <p class="normaltermcontinued">This licensing model is based on the credential-based login-and-use mechanism. Under this model, a single concurrent license is shared between multiple users within a group. The workflow of this model is as follows:</p>
+                        <ol class="listnumber">
+                            <li class="listnumber">
+                                <p class="normaltermcontinued">Each organization has one master group and multiple user groups under the master group.</p>
+                            </li>
+                            <li class="listnumber">
+                                <p class="normaltermcontinued">User groups are then assigned with a license code each and each user receives license credentials.</p>
+                            </li>
+                            <li class="listnumber">
+                                <p class="normaltermcontinued"> Individual users then use the credentials to login and use <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> application.</p>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </dd>
+            <dt>Node-locked</dt>
+            <dd>
+                <p class="normaltermcontinued">This licensing mechanism uses your device ID to let you use the license and grant access to the <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>. Such licenses cannot be shared between users on different devices unless a user returns the license. However, there is a restriction on the number of times you can return a node-locked license. If you are unable to return your license, submit a request to <a class="z--jumptourl" href="https://support.quest.com/contact-us/licensing" target="_blank">erwin Support</a>.</p>
+            </dd>
+        </dl>
+        <p class="bodytext">Next, both the above licensing models let you activate licenses using either of the following mechanisms:</p>
+        <dl>
+            <dt>Online</dt>
+            <dd>
+                <p class="normaltermcontinued">This method connects to the licensing service over the Internet. The licensing service then validates and activates the license code that you entered.</p>
+            </dd>
+            <dt>Offline</dt>
+            <dd>
+                <p class="normaltermcontinued">This method uses a multi-step activation process as follows:</p>
+                <ol class="listnumber2">
+                    <li class="listnumber2">User generates an activation certificate and sends it to the license administrator.
+</li>
+                    <li class="listnumber2">License administrator generates a license certificate and sends it to the user.
+</li>
+                    <li class="listnumber2">User imports the license certificate to activate the license code.</li>
+                </ol>
+            </dd>
+        </dl>
+        <p class="bodytext">Each license comes with a maintenance period. Along with product, a year of support is included. Any product updates that are released during the registered maintenance/support period are allowed. Once the maintenance/support period is over, you need to renew the maintenance plan to be able to receive updates and support. To keep a track of the maintenance period, erwin DM lets you set a maintenance expiration reminder.</p>
+        <p class="noteAlt">Your license administrator needs to ensure that the Maintenance End Date is set. Else, your license will fail.</p>
+        <p class="note">For each type of license, you can implement usage restriction based on network domain name or subnet IP.</p>
+    </body>
+</html>
