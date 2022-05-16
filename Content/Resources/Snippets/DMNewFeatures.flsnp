@@ -10,6 +10,8 @@
         </p>
         <p class="minitocitem"><a href="#DBSupportUpdates">Database Support Updates</a>
         </p>
+        <p class="minitocitem"><a href="#DM">DM Connect for DI Support</a>
+        </p>
         <p class="minitocitem"><a href="#Git">Git Support</a>
         </p>
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
@@ -34,9 +36,7 @@
         <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
         <h2 class="heading2"><a name="DBSupportUpdates"></a>Database Support Updates</h2>
         <p class="bodytext">Support for the following databases has been updated:</p>
-
         <ul class="listbullet">
-
             <li>
                 <p class="bodytext"><b>DynamoDB</b>
                 </p>
@@ -51,9 +51,7 @@
             </li>
             <li>
                 <p class="bodytext"><b>Google BigQuery</b>: </p>
-
                 <ul class="listbullet">
-
                     <li>
                         <p class="bodytext">You can now assign a dataset to an existing project using the Project field in Google BigQuery Dataset Editor.</p>
                     </li>
@@ -67,9 +65,7 @@
             </li>
             <li>
                 <p class="bodytext"><b>Databricks</b>: </p>
-
                 <ul class="listbullet">
-
                     <li>
                         <p class="bodytext">Added a new tab Views in Databricks Reverse Engineering Wizard.</p>
                     </li>
@@ -82,16 +78,16 @@
                 <p class="bodytext">Support for DM Connect for DI has been upgraded to support:</p>
                 <ul class="listbullet">
                     <li class="listbullet">
-                        <p class="bodytext">Export of business entity type from DM&#160;to DI is stored in environment details.</p>
+                        <p class="bodytext">An export job stores business entity type (system environment type) under environment details in erwin Data Intelligence (erwin DI).</p>
                     </li>
                     <li class="listbullet">
-                        <p class="bodytext">erwin Data Intelligence (DI) v10.2, v11.0, v11.1, and v12.0.</p>
+                        <p class="bodytext">erwin DI v10.2, v11.0, v11.1, and v12.0.</p>
                     </li>
                 </ul>
             </li>
         </ul>
         <h2 class="heading2"><a name="Git"></a>Git Support</h2>
-        <p class="bodytext">You can now controls the level of permission and assign a user or a group to a profile, library, or model so that they have specific access.</p>
+        <p class="bodytext">You can now control the level of permission and assign a user or a group to a profile, library, or model.</p>
         <h2 class="heading2"><a name="Third"></a>Third Party Tools</h2>
         <p class="bodytext">Support for third-party tools has been upgraded as follows:</p>
         <ul class="listbullet">
