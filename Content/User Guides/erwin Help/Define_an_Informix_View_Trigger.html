@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html lang="en" xmlns:madcap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title>Define an Informix View Trigger</title>
+    <head>
+        <link href="../../Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><title>Define an Informix View Trigger</title>
         <link href="..\..\Resources\StyleSheets\stylesheet.css" rel="stylesheet" type="text/css" />
         <link href="..\..\Resources\StyleSheets\docsstylesheet.css" rel="stylesheet" type="text/css" />
         <meta content="&lt;authorit:componentcd&gt;" name="componentcd" />
@@ -32,35 +33,102 @@
         <script language="javascript" type="text/javascript">
         </script> <script language="javascript" type="text/javascript"></script> <script language="javascript" src="../../Resources/mailerwin.js" type="text/javascript"></script> <script language="javascript" type="text/javascript"></script></head>
     <body onload="loadParent();highlightx();if (isTOCLoaded()) {expand2('3175');expand2('3177');expand2('2600');expand2('7958');highlight('2638')}">
-        <p class="bodytext">
-            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        </p>
-        <h5 class="heading5" id="t2638">Define an Informix View Trigger</h5>
-        <p class="bodytext">Use the View Trigger Editor to define the stored procedures that exist for a view in an Informix physical model.</p>
-        <p class="proceduresubheading">To define an Informix view trigger</p>
-        <ol class="listnumber">
-            <li class="listnumber">Right-click the view for which you want to define a trigger and click Trigger Properties.
-<p class="listcontinue">The Informix View Trigger Editor opens.</p></li>
-            <li class="listnumber">Select the view trigger in the Navigation Grid that you want to define and work with the following options:
-<p class="noteAlt">Click New <img align="bottom" alt="New icon in property editors to create a new object" border="0" height="12" hspace="0" id="f1017" src="..\..\Resources\Images\1022.gif" vspace="0" width="13" /> on the toolbar to create a new view trigger. Use the <em class="italic">Enter filter text</em> box to filter a very large list of view triggers to quickly locate the one that you want to define.</p><dl><dt>Name</dt><dd><p class="normaltermcontinued2">Displays the view trigger name. You can change the trigger name in this field.</p></dd><dt>Insert</dt><dd><p class="normaltermcontinued2">Specifies to execute the view trigger on INSERT. </p></dd><dt>Update</dt><dd><p class="normaltermcontinued2">Specifies to execute the view trigger on UPDATE.</p></dd><dt>Delete</dt><dd><p class="normaltermcontinued2">Specifies to execute the view trigger on DELETE.</p></dd><dt>Fire</dt><dd><p class="normaltermcontinued2">Specifies when the view trigger is executed.</p></dd><dt>Generate</dt><dd><p class="normaltermcontinued2">Generates SQL during forward engineering. Clear the check box if you do not want to generate SQL.</p></dd></dl></li>
-            <li class="listnumber">Click the General tab and define properties and referential integrity constraints.
-</li>
-            <li class="listnumber">Click the Update Columns tab to specify columns to use for the UPDATE execution.
-</li>
-            <li class="listnumber">Click the Code tab to define the code type for the view trigger.
-</li>
-            <li class="listnumber">Click the Expanded tab to view expanded code for the view trigger.
-</li>
-            <li class="listnumber">(Optional) Click the Comment tab and enter any comments that you want to associate with the view trigger.
-</li>
-            <li class="listnumber">(Optional) Click the UDP tab to work with user-defined properties for the view trigger. 
-</li>
-            <li class="listnumber">(Optional) Click the Notes tab to view history associated with the view trigger and to add or view user notes.
-</li>
-            <li class="listnumber">Click Close.
-<p class="listcontinue">The view trigger is defined and the Informix View Trigger Editor closes.</p></li>
-        </ol>
-        <p>
-        </p>
+        <h1 class="heading1" id="t2638">
+            <MadCap:concept term="User Guides" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />Define an Informix View Trigger</h1>
+        <p class="bodytext">The following properties are applicable to an Informix View Trigger object.</p>
+        <table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse;mc-table-style: url('../../Resources/TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle">
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <tr align="left" class="TableStyle-TableStyle-Body-Body1" valign="top">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Tab</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Property</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">
+                    <p class="tableheading">Description</p>
+                </td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="tableheading">Additional Information</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Name</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the name of the trigger</td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Insert</td>
+                <td style="text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the  trigger is executed on INSERT</td>
+                <td style="text-align: center;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Update</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the  trigger is executed on UPDATE</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Delete</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether the  trigger is executed on DELETE</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Fire</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies when the view trigger is executed</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p><b>Before</b>: Indicates that the trigger is executed before the occurrence of the trigger event</p>
+                    <p><b>After</b>: Indicates that the trigger is executed after the occurrence of the trigger event</p>
+                    <p><b>For Each Row</b>: Indicates that the trigger is executed once for every row that the triggering statement affects</p>
+                </td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Generate</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies whether a DDL statement is generated for the view trigger during forward engineering</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1" rowspan="3">&#160; General</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">New</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Old</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Referential Integrity Constraints</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the referential integrity constraints between tables</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Update Columns</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Columns</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the columns to use for UPDATE execution</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Code</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the template code of the trigger that can include SQL statements and macros</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+            <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
+                <td style="color: #000000;vertical-align: top;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;text-align: left;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Expanded</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Expanded Code (Read Only)</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the expanded code of the trigger</td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+            </tr>
+        </table>
     </body>
 </html>
