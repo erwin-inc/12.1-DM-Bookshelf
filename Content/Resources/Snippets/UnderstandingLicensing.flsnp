@@ -36,10 +36,10 @@
                                 <p class="normaltermcontinued">Each organization has one master group and multiple user groups under the master group.</p>
                             </li>
                             <li class="listnumber">
-                                <p class="normaltermcontinued">User groups are then assigned with a license code each and each user receives license credentials.</p>
+                                <p class="normaltermcontinued">Each user groups is assigned with a unique license code and each user receives license credentials.</p>
                             </li>
                             <li class="listnumber">
-                                <p class="normaltermcontinued"> Individual users then use the credentials to login and use <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> application.</p>
+                                <p class="normaltermcontinued"> Individual users login and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
                             </li>
                         </ol>
                     </dd>
@@ -68,7 +68,7 @@
                 </ol>
             </dd>
         </dl>
-        <p class="bodytext">Each license comes with a maintenance period. Along with product, a year of support is included. Any product updates that are released during the registered maintenance/support period are allowed. Once the maintenance/support period is over, you need to renew the maintenance plan to be able to receive updates and support. To keep a track of the maintenance period, erwin DM lets you set a maintenance expiration reminder.</p>
+        <p class="bodytext">Each license comes with a maintenance period. Along with the product, a year of support is included. Any product updates that are released during the registered maintenance/support period are made available. Once the maintenance/support period is over, you need to renew the maintenance plan to be able to receive updates and support. To keep a track of the maintenance period, erwin DM lets you set a maintenance expiration reminder.</p>
         <p class="noteAlt">Your license administrator needs to ensure that the Maintenance End Date is set. Else, your license will fail.</p>
         <p class="note">For each type of license, you can implement usage restriction based on network domain name or subnet IP.</p>
     </body>
