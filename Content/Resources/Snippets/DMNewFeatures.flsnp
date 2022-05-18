@@ -75,10 +75,10 @@
         <h2 class="heading2"><a name="DM"></a>DM Connect for DI Support</h2>
         <ul class="listbullet">
             <li class="listbullet">
-                <p class="bodytext">Support for DM Connect for DI has been upgraded to support:</p>
+                <p class="bodytext">The DM Connect for DI feature has been upgraded to support:</p>
                 <ul class="listbullet">
                     <li class="listbullet">
-                        <p class="bodytext">An export job stores business entity type (system environment type) under environment details in erwin Data Intelligence (erwin DI).</p>
+                        <p class="bodytext">Business Entity Types: Model export jobs store business entity type (system environment type) under environment details in erwin Data Intelligence (erwin DI).</p>
                     </li>
                     <li class="listbullet">
                         <p class="bodytext">erwin DI v12.0</p>
