@@ -22,7 +22,20 @@
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Connection Method</td>
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">Specifies the type of connection you want to use. Select <b>JDBC</b> to connect using JDBC. Or, select <b>ODBC</b> to connect using the ODBC data source that you have defined.</td>
-                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">For the JDBC connection to work seamlessly, ensure that you download the required JDBC driver, rename it to <i>mariadb-java-client-2.6.1.jar</i>, and save the file at the following location:<br /><i>C:\Program Files\erwin\Data Modeler r9\JDBC_JAR</i></td>
+                <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
+                    <p class="bodytext">For the JDBC connection to work seamlessly, ensure that you:</p>
+                    <ol>
+                        <li>
+                            <p class="bodytext">Download the required JDBC driver.</p>
+                        </li>
+                        <li>
+                            <p class="bodytext">Rename the file to <i>mariadb-java-client-2.6.1.jar</i>.</p>
+                        </li>
+                        <li>
+                            <p class="bodytext">Save the file at the following location:<br /><i>C:\Program Files\erwin\Data Modeler r9\JDBC_JAR</i>.</p>
+                        </li>
+                    </ol>
+                </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyE-Column1-Body1">ODBC Data Source</td>
