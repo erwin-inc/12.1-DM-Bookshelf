@@ -17,7 +17,7 @@
   EnableSitemap="false"
   SitemapWebUrl="http://erwin.com/bookshelf/public_html/12.1/Content/"
   EquationsOutputType="PNG"
-  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1DM\erwin Bookshelf"
+  OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1\erwinBookshelf"
   MasterPage="/Content/Resources/MasterPages/OtherTopics.flmsp"
   SearchEngine="MadCapSearch"
   IncludeCSHRuntime="false"

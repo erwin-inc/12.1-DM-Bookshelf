@@ -22,19 +22,6 @@
     </TocEntry>
   </TocEntry>
   <TocEntry
-    Title="Getting Started"
-    ReplaceMergeNode="false">
-    <TocEntry
-      Title="Feature Tour"
-      Link="/Content/Release Notes/Feature Tour/Feature Tour.html">
-      <TocEntry
-        Title="FeatureTour-Introduction"
-        Link="/Project/TOCs/12.0FeatureTour.fltoc"
-        ReplaceMergeNode="true"
-        ComputeToc="false" />
-    </TocEntry>
-  </TocEntry>
-  <TocEntry
     Title="Installation">
     <TocEntry
       Title="erwin Licensing"
