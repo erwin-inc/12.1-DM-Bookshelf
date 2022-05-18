@@ -6,298 +6,324 @@
         <link href="../Stylesheets/docsstylesheet.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <table style="mc-table-style: url('../TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;width: 100%;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle" cellspacing="0">
-            <col class="TableStyle-TableStyle-Column-Column1" style="width: 170px;" />
-            <col class="TableStyle-TableStyle-Column-Column1" style="width: 170px;" />
+        <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> (<MadCap:variable name="General.ProductNameAcronymDM" />) supports or is compatible with the following target databases:</p>
+        <table style="mc-table-style: url('../TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle" cellspacing="0">
             <col class="TableStyle-TableStyle-Column-Column1" style="width: 180px;" />
+            <col class="TableStyle-TableStyle-Column-Column1" style="width: 180px;" />
+            <col class="TableStyle-TableStyle-Column-Column1" style="width: 150px;" />
             <col class="TableStyle-TableStyle-Column-Column1" />
             <thead>
                 <tr class="TableStyle-TableStyle-Head-Header1">
-                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: left;">
-                        <p class="tableheading">Database Name </p>
-                    </th>
-                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: left;">Version</th>
-                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: left;">
-                        <p class="tableheading">Type </p>
-                    </th>
-                    <th class="TableStyle-TableStyle-HeadD-Column1-Header1" style="text-align: left;">
-                        <p class="tableheading">Notes </p>
-                    </th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: left;">Database Name </th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: center;">Type</th>
+                    <th class="TableStyle-TableStyle-HeadE-Column1-Header1" style="text-align: center;">Version</th>
+                    <th class="TableStyle-TableStyle-HeadD-Column1-Header1" style="text-align: center;">Notes </th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/ArangoDB_Support_Summary.html">ArangoDB</a><![CDATA[							]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">3.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1"><![CDATA[ 						]]></td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">3.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;"><![CDATA[ 						]]></td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Avro_Support_Summary.html">Avro
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">1.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">1.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/AWS_Keyspaces_Support_Summary.html">Amazon Keyspaces
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/AzureSynapse_Object_Support.html">Azure Synapse</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Cassandra_Support_Summary.html">Cassandra</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">3.x/4.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">3.x/4.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Couchbase_Support_Summary.html">Couchbase
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">6.x/7.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>6.x</p>
+                        <p>7.x</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Databricks_Support_Summary.html">Databricks
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Define_DB2_for_i_Table_Properties.html">Db2 for i</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">5.x/6.x/7.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">5.x/6.x/7.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/DB2_LUW_Property_Editors.html">Db2 LUW</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">9.5, 9.7/10.x, 11.1</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>9.5,</p>
+                        <p>9.7/10.x,</p>
+                        <p>11.1</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/DB2 z-OS Property Editors.html">Db2 z/OS</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.1, 9.1/10/11, 12</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>8.1,</p>
+                        <p>9.1/10/11,</p>
+                        <p>12</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/DynamoDB_Support_Summary.html">DynamoDB</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Google_BigQuery_Support_Summary.html">Google BigQuery</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Hive_Support_Summary.html">Hive
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">2.1.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Refer to the <a href="../../Release Notes/Data Modeler Release Notes/Limitations in Hive.html">Limitations in Hive</a> topic.
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">2.1.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Refer to the <a href="../../Release Notes/Data Modeler Release Notes/Limitations in Hive.html">Limitations in Hive</a> topic.
 </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Informix_Support_Summary.html">Informix
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">10.x/11.x/12.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">10.x/11.x/12.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/JSON_Support_Summary.html">JSON
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">1.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">1.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/MariaDB_Object_Support.html">MariaDB
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">10.4.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">10.4.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/MongoDB_Support_Summary.html">MongoDB
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">4.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">4.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/MySQL_Support_Summary.html">MySQL
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">8.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">Use MySQL certified version 8.0.23 for Amazon Aurora.
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">8.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Use MySQL certified version 8.0.23 for Amazon Aurora.
 </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Neo4j_Support_Summary.html">Neo4j
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">4.2.x, 4.3.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">NoSQL</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">NoSQL</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>4.2.x</p>
+                        <p> 4.3.x</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Netezza_Property_Editors.html">Netezza
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">7.2</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">7.2</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Define_ODBC_Table_Properties.html">ODBC
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">2.0, 3.0</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>2.x</p>
+                        <p>3.x</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Oracle_Support_Summary.html">Oracle
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">12c r2, 18c, 19c, 21c</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>12c r2 </p>
+                        <p>18c</p>
+                        <p>19c</p>
+                        <p>21c</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Parquet_Support_Summary.html">Parquet
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">2.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Big Data
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Big Data
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">2.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/define_progress_table_physical_properties.html">Progress</a><![CDATA[ 
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">9.x/10.x/11.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">The erwin Data Modeler 64-bit version is not verified for the Progress 9.x/10.x database.
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">9.x/10.x/11.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">The erwin Data Modeler 64-bit version is not verified for the Progress 9.x/10.x database.
 </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/PostgreSQL_Support_Summary.html">PostgreSQL</a>&#160;
 </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1"> 9.6.x/10.x/11.x</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">PostgreSQL&#160;versions 9.6.21, 9.6.24, 10.16, 10.20, 11.11, and 11.14 are certified. You can also  use PostgreSQL certified version 11.8 for Amazon RDS and Amazon Aurora.
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;"> 9.6.x/10.x/11.x</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">PostgreSQL&#160;versions 9.6.21, 9.6.24, 10.16, 10.20, 11.11, and 11.14 are certified. You can also  use PostgreSQL certified version 11.8 for Amazon RDS and Amazon Aurora.
 </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Redshift_Property_Editors.html">Redshift
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">1.0</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">1.0</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/define_SAP_ASE_table_index_properties.html">SAP ASE</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">15.x/16</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">15.x/16</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Define_SAP_IQ_Table_Properties.html">SAP IQ</a><![CDATA[
 ]]></td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">15.x/16</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">15.x/16</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Define_SAS_Table_Properties.html">SAS
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/SQL_Server_Property_Editors.html">SQL Server
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">2012, 2014, 2016/2017, 2019, Azure</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
+                        <p>2012</p>
+                        <p>2014</p>
+                        <p>2016/2017 </p>
+                        <p>2019</p>
+                        <p>Azure</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Snowflake_Object_Support.html">Snowflake
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">&#160;</td>
-                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyB-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Teradata_Server_Support_Summary.html">Teradata
 </a>
                     </td>
-                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">14.10, 15.x/16.x</td>
-                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1">Relational
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1" style="text-align: center;">Relational
 </td>
-                    <td class="TableStyle-TableStyle-BodyA-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-TableStyle-BodyB-Column1-Body1" style="text-align: center;">
+                        <p>14.10</p>
+                        <p>15.x/16.x</p>
+                    </td>
+                    <td class="TableStyle-TableStyle-BodyA-Column1-Body1" style="text-align: left;">&#160;</td>
                 </tr>
             </tbody>
         </table>

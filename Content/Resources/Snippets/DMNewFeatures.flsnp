@@ -42,10 +42,10 @@
                 </p>
                 <ul class="listbullet">
                     <li>
-                        <p class="bodytext">Added a new property Table Class under General tab in DynamoDB Table Editor.</p>
+                        <p class="bodytext">Added  Table Class property to the DynamoDB Table Editor.</p>
                     </li>
                     <li>
-                        <p class="bodytext">Added a new tab Viewer under Preview in DynamoDB Forward Engineer Alter Script Schema Generation Wizard.</p>
+                        <p class="bodytext">Added Viewer tab to the Preview section of the DynamoDB Forward Engineer Alter Script Schema Generation Wizard, in addition to the Text tab.</p>
                     </li>
                 </ul>
             </li>
@@ -56,10 +56,10 @@
                         <p class="bodytext">You can now assign a dataset to an existing project using the Project field in Google BigQuery Dataset Editor.</p>
                     </li>
                     <li>
-                        <p class="bodytext">Added  Project field under Google BigQuery Table Editor, Google BigQuery View Editor, Google BigQuery Function Editor, Google BigQuery Materialized View Editor, and Google BigQuery Stored Procedure Editor.</p>
+                        <p class="bodytext">Added  Project field to Google BigQuery Table Editor, Google BigQuery View Editor, Google BigQuery Function Editor, Google BigQuery Materialized View Editor, and Google BigQuery Stored Procedure Editor.</p>
                     </li>
                     <li>
-                        <p class="bodytext">Added a new property Location under Dataset Options in Google BigQuery Dataset Editor.</p>
+                        <p class="bodytext">Added  Location property to the Google BigQuery Dataset Editor.</p>
                     </li>
                 </ul>
             </li>
@@ -67,7 +67,7 @@
                 <p class="bodytext"><b>Databricks</b>: </p>
                 <ul class="listbullet">
                     <li>
-                        <p class="bodytext">Added a new tab Views in Databricks Reverse Engineering Wizard.</p>
+                        <p class="bodytext">Added Views tab to the Databricks Reverse Engineering Wizard.</p>
                     </li>
                 </ul>
             </li>
