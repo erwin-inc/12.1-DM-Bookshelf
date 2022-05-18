@@ -14,7 +14,7 @@
         </p>
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
         </p>
-        <p class="minitocitem">The list includes a brief description and wherever relevant, a reference to more information about each feature.</p>
+        <p class="bodytext">The list includes a brief description and wherever relevant, a reference to more information about each feature.</p>
         <h2 class="heading2"><a name="erwin"></a>erwin Mart Server on Cloud</h2>
         <p class="bodytext">Starting release 12.1, erwin Mart Server is available in two flavors, on-premises and on-cloud.</p>
         <p class="bodytext">The on-cloud offering works same as the older, on-premises offering, except the following features:</p>
@@ -28,17 +28,19 @@
         </ul>
         <p class="bodytext">For more information or queries about erwin Mart Server on cloud, contact <a href="https://support.quest.com/erwin-data-modeler/12.1">erwin Support</a>.</p>
         <h2 class="heading2"><a name="erwin2"></a>erwin Account Based Licensing</h2>
-        <p><MadCap:variable name="General.ProductNameDM" /> now offers Account-based concurrent licensing. Under this model, a single concurrent license is shared between multiple users within a group. With its credential-based login-and-use mechanism, Account-based licensing makes license assignments and maintenance flexible and convenient.</p>
-        <p>For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Understand_Licensing.html">Understanding Licensing</a> topic.</p>
+        <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> now offers Account-based concurrent licensing. Under this model, a single concurrent license is shared between multiple users within a group. With its credential-based login-and-use mechanism, Account-based licensing makes license assignments and maintenance flexible and convenient.</p>
+        <p class="bodytext">For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Understand_Licensing.html">Understanding Licensing</a> topic.</p>
         <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>
         <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
         <h2 class="heading2"><a name="DBSupportUpdates"></a>Database Support Updates</h2>
         <p class="bodytext">Support for the following databases has been updated:</p>
-        <ul>
+
+        <ul class="listbullet">
+
             <li>
                 <p class="bodytext"><b>DynamoDB</b>
                 </p>
-                <ul style="list-style-type: square;">
+                <ul class="listbullet">
                     <li>
                         <p class="bodytext">Added a new property Table Class under General tab in DynamoDB Table Editor.</p>
                     </li>
@@ -49,7 +51,9 @@
             </li>
             <li>
                 <p class="bodytext"><b>Google BigQuery</b>: </p>
-                <ul style="list-style-type: square;">
+
+                <ul class="listbullet">
+
                     <li>
                         <p class="bodytext">You can now assign a dataset to an existing project using the Project field in Google BigQuery Dataset Editor.</p>
                     </li>
@@ -63,7 +67,9 @@
             </li>
             <li>
                 <p class="bodytext"><b>Databricks</b>: </p>
-                <ul style="list-style-type: square;">
+
+                <ul class="listbullet">
+
                     <li>
                         <p class="bodytext">Added a new tab Views in Databricks Reverse Engineering Wizard.</p>
                     </li>
