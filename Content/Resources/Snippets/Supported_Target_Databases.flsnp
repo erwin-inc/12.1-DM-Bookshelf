@@ -8,9 +8,9 @@
     <body>
         <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> (<MadCap:variable name="General.ProductNameAcronymDM" />) supports or is compatible with the following target databases:</p>
         <table style="mc-table-style: url('../TableStyles/TableStyle.css');border-left-style: solid;border-left-width: 0px;border-left-color: #000000;border-right-style: solid;border-right-width: 0px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;margin-left: 0;margin-right: auto;" class="TableStyle-TableStyle" cellspacing="0">
-            <col class="TableStyle-TableStyle-Column-Column1" style="width: 180px;" />
-            <col class="TableStyle-TableStyle-Column-Column1" style="width: 180px;" />
-            <col class="TableStyle-TableStyle-Column-Column1" style="width: 150px;" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
+            <col class="TableStyle-TableStyle-Column-Column1" />
             <col class="TableStyle-TableStyle-Column-Column1" />
             <thead>
                 <tr class="TableStyle-TableStyle-Head-Header1">
@@ -95,7 +95,7 @@
 </td>
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
                         <p>9.5,</p>
-                        <p>9.7/10.x,</p>
+                        <p>9.7/10.x</p>
                         <p>11.1</p>
                     </td>
                     <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
@@ -107,7 +107,7 @@
 </td>
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">
                         <p>8.1,</p>
-                        <p>9.1/10/11,</p>
+                        <p>9.1/10/11</p>
                         <p>12</p>
                     </td>
                     <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">&#160;</td>
@@ -179,7 +179,7 @@
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">8.x</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">Use MySQL certified version 8.0.23 for Amazon Aurora.
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">MySQL 8.0.23 is certified for Amazon Aurora.
 </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
@@ -252,8 +252,11 @@
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;">Relational
 </td>
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1" style="text-align: center;"> 9.6.x/10.x/11.x</td>
-                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">PostgreSQL&#160;versions 9.6.21, 9.6.24, 10.16, 10.20, 11.11, and 11.14 are certified. You can also  use PostgreSQL certified version 11.8 for Amazon RDS and Amazon Aurora.
-</td>
+                    <td class="TableStyle-TableStyle-BodyD-Column1-Body1" style="text-align: left;">
+                        <p>PostgreSQL&#160;9.6.21, 9.6.24, 10.16, 10.20, 11.11, and 11.14 are certified.</p>
+                        <p>PostgreSQL 11.8 is certified for Amazon RDS and Amazon Aurora.
+</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-TableStyle-Body-Body1">
                     <td class="TableStyle-TableStyle-BodyE-Column1-Body1"><a href="https://erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/Redshift_Property_Editors.html">Redshift
