@@ -574,16 +574,7 @@
     PageType="continue"
     PageNumber="(multiple)"
     PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
-    StartSection="false">
-    <TocEntry
-      Title="Issues Fixed in this Release"
-      Link="/Content/Release Notes/Data Modeler Release Notes/Issues Fixed in this Release.html"
-      BreakType="chapter"
-      PageType="continue"
-      PageNumber="(multiple)"
-      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
-      StartSection="false" />
-  </TocEntry>
+    StartSection="false"></TocEntry>
   <TocEntry
     Title="Appendix"
     Link="/Content/Release Notes/Data Modeler Release Notes/r9_reporting_appendix.html"
