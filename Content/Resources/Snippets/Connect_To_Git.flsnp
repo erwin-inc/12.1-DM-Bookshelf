@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="bodytext">Starting erwin Data Modeler (DM) 12.1, you can connect erwin DM to Git repositories via Mart Server. This enables you to push Forward Engineering (FE) scripts for a Mart Model to GitLab or GitHub. You cannot store FE scripts or DDL on a Mart Server but only erwin models. With Git support you can adopt DevOps principles as you can commit FE scripts in Git repositories. Working with these repositories help you in:</p>
+        <p class="bodytext">Starting erwin Data Modeler (DM) 12.0, you can connect erwin DM to Git repositories via Mart Server. This enables you to push Forward Engineering (FE) scripts for a Mart Model to GitLab or GitHub. You cannot store FE scripts or DDL on a Mart Server but only erwin models. With Git support you can adopt DevOps principles as you can commit FE scripts in Git repositories. Working with these repositories help you in:</p>
         <ul class="listbullet">
             <li class="listbullet">DevOps adoption
                 </li>
