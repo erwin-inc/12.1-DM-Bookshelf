@@ -39,7 +39,7 @@
                                 <p class="normaltermcontinued">Each user groups is assigned with a unique license code and each user receives license credentials.</p>
                             </li>
                             <li class="listnumber">
-                                <p class="normaltermcontinued"> Individual users login and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
+                                <p class="normaltermcontinued"> Individual users log on and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
                             </li>
                         </ol>
                     </dd>
