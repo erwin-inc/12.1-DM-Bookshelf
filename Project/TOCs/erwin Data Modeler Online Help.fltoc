@@ -4043,6 +4043,37 @@
               Link="/Content/User Guides/erwin Help/specify_teradata_statistics.html" />
           </TocEntry>
         </TocEntry>
+        <TocEntry
+          Title="Db2 for i Support Summary"
+          Link="/Content/User Guides/erwin Help/Db2_for_i_Support_Summary.htm">
+          <TocEntry
+            Title="Defining Db2 for i Objects"
+            Link="/Content/User Guides/erwin Help/Defining_Db2_for_i_Objects.html">
+            <TocEntry
+              Title="Defining Db2 for i Stored Procedures"
+              Link="/Content/User Guides/erwin Help/Defining_Db2_for_i_StoredProcedures.html"></TocEntry>
+            <TocEntry
+              Title="Defining Db2 for i Script Templates"
+              Link="/Content/User Guides/erwin Help/Defining_Db2_for_i_ScriptTemplates.html" />
+            <TocEntry
+              Title="Defining Db2 for i Tables"
+              Link="/Content/User Guides/erwin Help/Define_DB2_for_i_Table_Properties.html">
+              <TocEntry
+                Title="Defining Db2 for i Table Indexes"
+                Link="/Content/User Guides/erwin Help/define_db2_for_i_table_index_properties.html"></TocEntry>
+              <TocEntry
+                Title="Defining Db2 for i Table Columns"
+                Link="/Content/User Guides/erwin Help/define_db2fori_table_column_properties.html" />
+            </TocEntry>
+            <TocEntry
+              Title="Defining Db2 for i Views"
+              Link="/Content/User Guides/erwin Help/Defining_Db2_for_i_Views.html">
+              <TocEntry
+                Title="Defining Db2 for i View Columns"
+                Link="/Content/User Guides/erwin Help/Defining_Db2_for_i_ViewColumns.html" />
+            </TocEntry>
+          </TocEntry>
+        </TocEntry>
       </TocEntry>
     </TocEntry>
     <TocEntry
@@ -4855,6 +4886,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Forward Engineering Options for Db2 for i"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Db2_for_i.html" />
       </TocEntry>
       <TocEntry
         Title="Select Schema Generation Options"
@@ -5144,6 +5178,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+        <TocEntry
+          Title="Reverse Engineering Options Db2 for i"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Db2_for_i.html" />
       </TocEntry>
       <TocEntry
         Title="Reverse Engineer Processing Errors"
