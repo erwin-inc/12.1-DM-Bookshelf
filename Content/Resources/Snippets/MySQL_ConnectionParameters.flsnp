@@ -25,6 +25,18 @@
                 <td style="color: #000000;" class="TableStyle-TableStyle-BodyD-Column1-Body1">
                     <p>erwin DM 2021 R1 does not support the Unicode driver.</p>
                     <p>For Reverse Engineering a MySQL database, use the MySQL ANSI ODBC driver.</p>
+                    <p>For the JDBC connection to work seamlessly, ensure that you:</p>
+                    <ol>
+                        <li>
+                            <p>Download the required JDBC driver.</p>
+                        </li>
+                        <li>
+                            <p>Rename the driver file to <i>mysql-connector-java-8.0.22.jar</i>.</p>
+                        </li>
+                        <li>
+                            <p>Save the file at the following location:<br /><i>C:\Program Files\erwin\Data Modeler r9\JDBC_JAR</i>.</p>
+                        </li>
+                    </ol>
                 </td>
             </tr>
             <tr align="left" valign="top" class="TableStyle-TableStyle-Body-Body1">
