@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="bodytext">When you access the Mart database through erwin Mart Administrator for the first time, you must initialize the database. You can initialize the database using a database authenticated user or a Windows-authenticated user.</p>
+        <p class="bodytext">When you access the Mart database through erwin Mart Administrator for the first time, you must initialize the database. You can initialize the database using any user except a group user.</p>
         <p class="noteAlt">Before you proceed, verify that you have installed a DBMS, created the Mart database and run the initial queries. If the Mart is already initialized, the Login page appears.</p>
         <p class="bodytext">When you open erwin Mart Administrator for the first time, the Initialize Mart web page appears. </p>
         <p class="proceduresubheading">Follow these steps:</p>
