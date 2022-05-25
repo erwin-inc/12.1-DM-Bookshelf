@@ -33,7 +33,7 @@
         <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> now offers account-based concurrent licensing. Under this model, a single concurrent license is shared between multiple users within a group. With its credential-based login-and-use mechanism, account-based licensing makes license assignments and maintenance flexible and convenient.</p>
         <p class="bodytext">For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Understand_Licensing.html">Understanding Licensing</a> topic.</p>
         <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>
-        <p class="bodytext">erwin DM 12.1 supports single sign on using OKTA for Snowflake database, in addition to AzureAD.</p>
+        <p class="bodytext">In addition to AzureAD, erwin DM 12.1 supports OKTA Single Sign On (SSO) for Snowflake database.</p>
         <h2 class="heading2"><a name="DBSupportUpdates"></a>Database Support Updates</h2>
         <p class="bodytext">Support for the following databases has been updated:</p>
         <ul class="listbullet">
@@ -73,17 +73,16 @@
             </li>
         </ul>
         <h2 class="heading2"><a name="DM"></a>DM Connect for DI Support</h2>
+        <p class="bodytext">The DM Connect for DI feature has been upgraded to support:</p>
         <ul class="listbullet">
             <li class="listbullet">
-                <p class="bodytext">The DM Connect for DI feature has been upgraded to support:</p>
-                <ul class="listbullet">
-                    <li class="listbullet">
-                        <p class="bodytext">Business Entity Types: Model export jobs store business entity type (system environment type) under environment details in erwin Data Intelligence (erwin DI).</p>
-                    </li>
-                    <li class="listbullet">
-                        <p class="bodytext">erwin DI v12.0</p>
-                    </li>
-                </ul>
+                <p class="bodytext">Business Entity Types: <br />Model export jobs store business entity type (system environment type) under environment details in erwin Data Intelligence (erwin DI).</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext">Validation Rules:<br />Model export jobs store validation rules under extended properties in erwin DI.</p>
+            </li>
+            <li class="listbullet">
+                <p class="bodytext">erwin DI v12.0</p>
             </li>
         </ul>
         <h2 class="heading2"><a name="Git"></a>Git Support</h2>
