@@ -4854,7 +4854,8 @@
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
         <TocEntry
           Title="Forward Engineering Options for MariaDB"
-          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_MariaDB.html" />
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_MariaDB.html"
+          ReplaceMergeNode="false" />
         <TocEntry
           Title="Forward Engineering Options for MongoDB"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_for_MongoDB.html"
@@ -4886,6 +4887,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Forward Engineering Options for Teradata"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Teradata.html" />
         <TocEntry
           Title="Forward Engineering Options for Db2 for i"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Db2_for_i.html" />
@@ -5178,6 +5182,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+        <TocEntry
+          Title="Reverse Engineering Options for Teradata"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Teradata.html" />
         <TocEntry
           Title="Reverse Engineering Options Db2 for i"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Db2_for_i.html" />
