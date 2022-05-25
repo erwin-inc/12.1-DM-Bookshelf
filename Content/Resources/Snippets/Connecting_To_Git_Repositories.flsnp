@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -8,7 +8,7 @@
         <ul class="listbullet">
             <li class="listbullet"><b>erwin Mart</b>: Ensure that,
 				<ul class="listbullet"><li class="listbullet"> erwin DM is connected to erwin Mart Server.
-For more information on connecting erwin DM to Mart Server, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</li><li class="listbullet">the DM Connect for Git permission is enabled for your Mart user profile at the root, Mart level. By default, this permission is enabled for the out-of-box Admin profile.</li><p><img src="../Images/DM-ConnectforGit-Permission.png" style="width: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 350px;" /></p><p class="noteAlt">This permission is not available for other out-of-box profiles.</p></ul></li>
+For more information on connecting erwin DM to Mart Server, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</li><p><img src="../Images/DM-ConnectforGit-Permission.png" style="width: 400px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;height: 350px;" /></p><p class="noteAlt">This permission is not available for other out-of-box profiles.</p></ul></li>
             <li class="listbullet"><![CDATA[
                 ]]><b>Personal Access Token</b>: Ensure that you have created the required personal access token. To know how to create personal access tokens for GitLab, refer to the GitLab documentation. To know how to create personal access tokens for GitHub, refer to the GitHub documentation.</li>
         </ul>
