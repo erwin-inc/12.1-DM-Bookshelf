@@ -3218,6 +3218,40 @@
           </TocEntry>
         </TocEntry>
         <TocEntry
+          Title="Progress Support Summary"
+          Link="/Content/User Guides/erwin Help/Progress_Support_Summary.html">
+          <TocEntry
+            Title="Defining Progress Objects"
+            Link="/Content/User Guides/erwin Help/Defining_Progress_Objects.html">
+            <TocEntry
+              Title="Defining Progress Stored Procedures"
+              Link="/Content/User Guides/erwin Help/defining_progress_storedProcedures.html"></TocEntry>
+            <TocEntry
+              Title="Defining Progress Script Templates"
+              Link="/Content/User Guides/erwin Help/defining_progress_scriptTemplates.html" />
+            <TocEntry
+              Title="Defining Progress Tables"
+              Link="/Content/User Guides/erwin Help/define_progress_table_physical_properties.html">
+              <TocEntry
+                Title="Defining Progress Table Indexes"
+                Link="/Content/User Guides/erwin Help/define_progress_table_index_properties.html"></TocEntry>
+              <TocEntry
+                Title="Defining Progress Table Columns"
+                Link="/Content/User Guides/erwin Help/define_progress_table_column_properties.html"></TocEntry>
+              <TocEntry
+                Title="Defining Progress Table Triggers"
+                Link="/Content/User Guides/erwin Help/define_a_progress_Table_Trigger.html" />
+            </TocEntry>
+            <TocEntry
+              Title="Defining Progress Views"
+              Link="/Content/User Guides/erwin Help/defining_progress_views.html">
+              <TocEntry
+                Title="Defining Progress View Columns"
+                Link="/Content/User Guides/erwin Help/defining_progress_viewColumns.html" />
+            </TocEntry>
+          </TocEntry>
+        </TocEntry>
+        <TocEntry
           Title="Redshift Property Editors"
           Link="/Content/User Guides/erwin Help/Redshift_Property_Editors.html">
           <TocEntry
