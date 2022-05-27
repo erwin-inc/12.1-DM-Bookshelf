@@ -4888,6 +4888,10 @@
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
         <TocEntry
+          Title="Forward Engineering Options for SQL Server"
+          Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_for_SQL_Server.html"
+          ReplaceMergeNode="false" />
+        <TocEntry
           Title="Forward Engineering Options for Teradata"
           Link="/Content/User Guides/erwin Help/Forward_Engineering_Options_Teradata.html" />
         <TocEntry
@@ -5182,6 +5186,9 @@
           StartSection="false"
           PageNumberReset="continue"
           PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"></TocEntry>
+        <TocEntry
+          Title="Reverse Engineering Options for SQL Server"
+          Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_SQL_Server.html" />
         <TocEntry
           Title="Reverse Engineering Options for Teradata"
           Link="/Content/User Guides/erwin Help/Reverse_Engineering_Options_Teradata.html" />
