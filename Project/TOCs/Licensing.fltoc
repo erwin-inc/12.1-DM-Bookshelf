@@ -3,15 +3,72 @@
   lang="">
   <TocEntry
     Title="Licensing"
-    Link="/Content/Licensing/Licensing/Licensing.html">
+    Link="/Content/Licensing/Licensing/Licensing.html"
+    BreakType="chapter"
+    PageType="continue"
+    StartSection="false"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+    ReplaceMergeNode="false"
+    AutoEndOnLeftPage="enabled"
+    ComputeToc="false">
     <TocEntry
       Title="Understand Licensing"
-      Link="/Content/Licensing/Licensing/Understand_Licensing.html" />
+      Link="/Content/Licensing/Licensing/Understand_Licensing.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
     <TocEntry
       Title="Obtain and Activate a License"
-      Link="/Content/Licensing/Licensing/Obtain_and_Activate_a_License.html" />
+      Link="/Content/Licensing/Licensing/Obtain_and_Activate_a_License.html"
+      BreakType="chapter"
+      PageType="continue"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+      <TocEntry
+        Title="Configuring Account Based Licensing"
+        Link="/Content/Licensing/Licensing/Configuring Account Based Licensing.html"
+        BreakType="chapter"
+        PageType="continue"
+        StartSection="false"
+        PageNumberReset="continue"
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Master Group, Master User, and User Groups"
+          Link="/Content/Licensing/Licensing/MasterGroups MasterUser UserGroups.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Adding Users to User Groups"
+          Link="/Content/Licensing/Licensing/Adding Users to User Groups.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        <TocEntry
+          Title="Verifying and Using User Accounts"
+          Link="/Content/Licensing/Licensing/Verifying and Using User Accounts.html"
+          BreakType="chapter"
+          PageType="continue"
+          StartSection="false"
+          PageNumberReset="continue"
+          PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+      </TocEntry>
+    </TocEntry>
     <TocEntry
       Title="View or Return a License"
-      Link="/Content/Licensing/Licensing/View_or_Return_a_License.html" />
+      Link="/Content/Licensing/Licensing/View_or_Return_a_License.html"
+      BreakType="chapter"
+      StartSection="false"
+      PageNumberReset="continue"
+      PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
+      PageType="continue" />
   </TocEntry>
 </article>

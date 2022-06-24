@@ -8,7 +8,10 @@
     PageType="continue"
     PageNumber="(multiple)"
     PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
-    StartSection="false">
+    StartSection="false"
+    PageNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false">
     <TocEntry
       Title="Standard Edition"
       Link="/Content/Release Notes/Data Modeler Release Notes/Standard Edition.html"

@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">To obtain a license contact erwin Customer Care by <a class="z--jumptourl" href="http://erwin.com/support" target="_blank" title="">telephone</a> or the <a class="z--jumptourl" href="https://support.quest.com/contact-us/licensing" target="_blank">web licensing form</a>, or contact your license administrator. Provide the required information to submit a license request. Once the request is verified, you will receive a license code. Ensure that you keep a note of the license code. To use <MadCap:variable name="General.ProductNameDM" /> (<MadCap:variable name="General.ProductNameAcronymDM" />) using this license code, you first need to activate the license code.</p>
-        <p class="bodytext">If you are a concurrent license user and want to move to the Account Based Licensing Model, follow these steps:</p>
+        <p class="bodytext">If you are a concurrent license user and want to move to the Account Based Licensing Model, refer to the <a href="../../Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> topic.</p>
         <ol class="listnumber">
             <li class="listnumber">
                 <p class="bodytext">Open the <a href="https://support.quest.com/contact-us/licensing">web licensing form</a>.</p>
@@ -56,7 +56,7 @@
 </li><li class="listnumber2">Under License Certificate, copy and paste the license certificate that you receive from the license administrator.
 </li><li class="listnumber2">Click <span class="uielement" style="font-weight: bold;">Import</span>.</li></ol><p class="noteAlt">Once the offline license code is generated, it must be imported to a server within 14 days.</p><p>You can stop the <MadCap:variable name="General.ProductNameDM" /> Licensing dialog from showing every time you start <MadCap:variable name="General.ProductNameAcronymDM" />. On the <MadCap:variable name="General.ProductNameDM" /> Licensing dialog, select Do not show this dialog again. This sets the dialog to be suppressed.</p><p>To change this setting:</p><ol class="listnumber"><li class="listnumber">In <MadCap:variable name="General.ProductNameAcronymDM" />, from the menu bar, click <span class="uielement" style="font-weight: bold;">Help</span> &gt; <span class="uielement" style="font-weight: bold;">Licensing</span>.<br />The Licensing dialog box appears.</li><li class="listnumber">Clear the <b>Suppress the Licensing Dialog</b> check box.</li></ol></li>
         </ol>
-        <h3 class="heading3">Logging</h3>
+        <p class="heading3">Logging</p>
         <p class="bodytext">To enable logging for licensing, create a text file, loglevel.txt, in your license directory. Type the number, 4, and save the file. This indicates the logging level.</p>
         <p class="bodytext">Depending on your <MadCap:variable name="General.ProductNameAcronymDM" /> version, the license directory is as follows:</p>
         <ul class="listbullet">

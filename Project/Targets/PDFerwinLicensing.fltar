@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="Data Modeler Release Notes"
+  Comment="erwin Licensing Guide"
   Type="PDF"
   Destinations=""
   GlossaryTermConversion="marked"
@@ -11,8 +11,8 @@
   MasterPageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
   MasterStylesheet="/Content/Resources/Stylesheets/docsstylesheet.css"
   OutputFolder="C:\MadCapFlare Outputs\MadCapFlare-Build-Output\12.1\PDF"
-  MasterToc="/Project/TOCs/PDFDataModelerReleaseNotes.fltoc"
-  OutputFile="Data Modeler Release Notes">
+  MasterToc="/Project/TOCs/PDFerwin Licensing.fltoc"
+  OutputFile="erwin Licensing">
   <PrintedOutput
     CollapseMargins="true"
     ExpandingTextConversion="expand"
@@ -21,7 +21,7 @@
     GenerateIndexProxy="false"
     GenerateGlossaryProxy="false" />
   <DocumentProperties
-    Title="erwin Data Modeler Release Notes"
+    Title="erwin Licensing"
     Author="Quest Software" />
   <PDF
     ShowUsedBookmarks="false"
@@ -39,6 +39,6 @@
   </Destinations>
   <Variables>
     <Variable
-      Name="PDF-GuideName-Variables/GuideName">erwin Data Modeler Release Notes</Variable>
+      Name="PDF-GuideName-Variables/GuideName">erwin Licensing</Variable>
   </Variables>
 </CatapultTarget>
