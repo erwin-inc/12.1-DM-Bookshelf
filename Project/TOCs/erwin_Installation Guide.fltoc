@@ -78,9 +78,6 @@
           <TocEntry
             Title="Adding Users to User Groups"
             Link="/Content/Installation/Installation/erwin_Install/Adding Users to User Groups.html" />
-          <TocEntry
-            Title="Verifying and Using User Accounts"
-            Link="/Content/Installation/Installation/erwin_Install/Verifying and Using User Accounts.html" />
         </TocEntry>
       </TocEntry>
     </TocEntry>
@@ -119,7 +116,11 @@
         PageNumberReset="continue"
         ChapterNumber="1"
         ChapterNumberReset="continue"
-        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Verifying and Using User Accounts"
+          Link="/Content/Installation/Installation/erwin_Install/Verifying and Using User Accounts.html" />
+      </TocEntry>
     </TocEntry>
   </TocEntry>
 </CatapultToc>
