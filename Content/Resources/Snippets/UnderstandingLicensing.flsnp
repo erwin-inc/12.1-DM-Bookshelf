@@ -42,6 +42,7 @@
                                 <p class="normaltermcontinued"> Individual users log on and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
                             </li>
                         </ol>
+                        <p class="bodytext">Account-based licensing puts the Master User in charge of an End User Portal (EUP). Thus, making you self-reliant with convenient license assignments and maintenance. It eliminates the dependency on license codes for erwin DM users. For more information on how to set up Account Based Licensing for your organization, refer to the <a href="../../Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> Topic.</p>
                     </dd>
                 </dl>
             </dd>
@@ -50,7 +51,7 @@
                 <p class="normaltermcontinued">This licensing mechanism uses your device ID to let you use the license and grant access to the <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>. Such licenses cannot be shared between users on different devices unless a user returns the license. However, there is a restriction on the number of times you can return a node-locked license. If you are unable to return your license, submit a request to <a class="z--jumptourl" href="https://support.quest.com/contact-us/licensing" target="_blank">erwin Support</a>.</p>
             </dd>
         </dl>
-        <p class="bodytext">Next, both the above licensing models let you activate licenses using either of the following mechanisms:</p>
+        <p class="bodytext">Next, both the above licensing models (except Account Based Licensing) let you activate licenses using either of the following mechanisms:</p>
         <dl>
             <dt>Online</dt>
             <dd>

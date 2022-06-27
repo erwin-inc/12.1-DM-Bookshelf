@@ -3,13 +3,15 @@
   Version="1"
   conditions="General.PDF">
   <TocEntry
-    Title="Data Modeler Release Notes"
-    Link="/Content/Release Notes/Data Modeler Release Notes/CoverPage.html"
+    Title="erwin Licensing"
+    Link="/Content/Licensing/Licensing/CoverPage.html"
     BreakType="pageLayout"
     PageType="title"
     AutoEndOnLeftPage="disabled"
     StartSection="false"
-    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+    PageLayout="/Content/Resources/PageLayouts/FrontMatter.flpgl"
+    ReplaceMergeNode="false"
+    PageNumber="(multiple)" />
   <TocEntry
     Title="Copyright"
     Link="/Content/Installation/Installation/erwin_Install/copyright.html"
@@ -24,12 +26,12 @@
     ReplaceMergeNode="false"
     PageNumberFormat="decimal"
     PageNumber="(multiple)"
-    AutoEndOnLeftPage="enabled" />
+    AutoEndOnLeftPage="enabled"
+    PageType="continue" />
   <TocEntry
     Title="Contact Customer Support"
     Link="/Content/Installation/Installation/erwin_Install/contact_customer_support.html"
     BreakType="chapter"
-    PageType="continue"
     StartSection="false"
     PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
     PageNumberReset="continue"
@@ -38,16 +40,26 @@
     ChapterNumberReset="continue"
     PageNumber="(multiple)"
     ComputeToc="false"
-    ReplaceMergeNode="false" />
+    ReplaceMergeNode="false"
+    PageType="continue" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/Release Notes/Data Modeler Release Notes/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
-    StartSection="false"
+    Link="/Content/Licensing/Licensing/Contents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
     BreakType="chapter"
     PageNumber="(multiple)"
-    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl" />
+    PageLayout="/Content/Resources/PageLayouts/Chapters-ExceptTopics.flpgl"
+    StartSection="false"
+    PageType="normal"
+    PageNumberReset="continue"
+    ReplaceMergeNode="false"
+    AutoEndOnLeftPage="enabled" />
   <TocEntry
-    Title="Data Modeler Release Notes"
-    Link="/Project/TOCs/Data Modeler Release Notes.fltoc"
-    StartSection="false" />
+    Title="Licensing"
+    Link="/Project/TOCs/Licensing.fltoc"
+    BreakType="chapter"
+    PageNumber="(multiple)"
+    StartSection="false"
+    PageType="continue"
+    PageNumberReset="continue"
+    PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
 </CatapultToc>
