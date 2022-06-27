@@ -42,7 +42,7 @@
                                 <p class="normaltermcontinued"> Individual users log on and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
                             </li>
                         </ol>
-                        <p class="bodytext">Account-based licensing puts the Master User in charge of an End User Portal (EUP). Thus, making you self-reliant with convenient license assignments and maintenance. It eliminates the dependency on license codes for erwin DM users. For more information on how to set up Account Based Licensing for your organization, refer to the <a href="../../Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> Topic.</p>
+                        <p class="bodytext">Account-based licensing puts the Master User in charge of an End User Portal (EUP). Thus, making you self-reliant with convenient license assignments and maintenance. It eliminates the dependency on license codes for erwin DM users. For more information on how to set up Account Based Licensing for your organization, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> Topic.</p>
                     </dd>
                 </dl>
             </dd>

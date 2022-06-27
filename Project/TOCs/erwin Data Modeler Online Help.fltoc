@@ -11,7 +11,21 @@
       Link="/Content/User Guides/erwin Help/Understand_Licensing.html" />
     <TocEntry
       Title="Obtain and Activate a License"
-      Link="/Content/User Guides/erwin Help/Obtain_and_Activate_a_License.html" />
+      Link="/Content/User Guides/erwin Help/Obtain_and_Activate_a_License.html">
+      <TocEntry
+        Title="Configuring Account Based Licensing"
+        Link="/Content/User Guides/erwin Help/Configuring Account Based Licensing.html">
+        <TocEntry
+          Title="MasterGroups MasterUser UserGroups"
+          Link="/Content/User Guides/erwin Help/MasterGroups MasterUser UserGroups.html" />
+        <TocEntry
+          Title="Adding Users to User Groups"
+          Link="/Content/User Guides/erwin Help/Adding Users to User Groups.html" />
+        <TocEntry
+          Title="Verifying and Using User Accounts"
+          Link="/Content/User Guides/erwin Help/Verifying and Using User Accounts.html" />
+      </TocEntry>
+    </TocEntry>
     <TocEntry
       Title="View or Return a License"
       Link="/Content/User Guides/erwin Help/View_or_Return_a_License.html" />
