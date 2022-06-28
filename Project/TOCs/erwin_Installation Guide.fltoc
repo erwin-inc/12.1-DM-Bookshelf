@@ -68,7 +68,18 @@
         PageNumberReset="continue"
         ChapterNumber="1"
         ChapterNumberReset="continue"
-        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Configuring Account Based Licensing"
+          Link="/Content/Installation/Installation/erwin_Install/Configuring Account Based Licensing.html">
+          <TocEntry
+            Title="MasterGroups MasterUser UserGroups"
+            Link="/Content/Installation/Installation/erwin_Install/MasterGroups MasterUser UserGroups.html" />
+          <TocEntry
+            Title="Adding Users to User Groups"
+            Link="/Content/Installation/Installation/erwin_Install/Adding Users to User Groups.html" />
+        </TocEntry>
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="Installation"
@@ -105,7 +116,11 @@
         PageNumberReset="continue"
         ChapterNumber="1"
         ChapterNumberReset="continue"
-        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl" />
+        PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl">
+        <TocEntry
+          Title="Verifying and Using User Accounts"
+          Link="/Content/Installation/Installation/erwin_Install/Verifying and Using User Accounts.html" />
+      </TocEntry>
     </TocEntry>
   </TocEntry>
 </CatapultToc>

@@ -2,40 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="bodytext">To obtain a license contact erwin Customer Care by <a class="z--jumptourl" href="http://erwin.com/support" target="_blank" title="">telephone</a> or the <a class="z--jumptourl" href="https://support.quest.com/contact-us/licensing" target="_blank">web licensing form</a>, or contact your license administrator. Provide the required information to submit a license request. Once the request is verified, you will receive a license code. Ensure that you keep a note of the license code. To use <MadCap:variable name="General.ProductNameDM" /> (<MadCap:variable name="General.ProductNameAcronymDM" />) using this license code, you first need to activate the license code.</p>
-        <p class="bodytext">If you are a concurrent license user and want to move to the Account Based Licensing Model, refer to the <a href="../../Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> topic.</p>
-        <ol class="listnumber">
-            <li class="listnumber">
-                <p class="bodytext">Open the <a href="https://support.quest.com/contact-us/licensing">web licensing form</a>.</p>
-            </li>
-            <li class="listnumber">
-                <p>In the <b>How can we help you?</b> box, select <b>Obtain a license for my product</b>.</p>
-            </li>
-            <li class="listnumber">
-                <p>In the <b>Product list</b>, select <b>erwin Data Modeler</b>.</p>
-            </li>
-            <li class="listnumber">
-                <p>Select the appropriate <b>Product Version</b>.</p>
-            </li>
-            <li class="listnumber">
-                <p>In the <b>License Request Details</b> box, mention the following:</p>
-                <p><i>I would like to request for Account Based Licensing. My present licensing model is Concurrent WG License and my license code is &lt;insert your license code here&gt;. Please enable Account BBased Licensing on this license.</i>
-                </p>
-                <p>
-                    <img src="../Images/ABL-WebLicensingForm.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;width: 440px;height: 459px;" MadCap:mediastyle="@media print { width: 432px;height: 451px; }" />
-                    <br />
-                </p>
-            </li>
-            <li class="listnumber">
-                <p>Click <b>Next</b>.</p>
-            </li>
-            <li class="listnumber">
-                <p>Complete your support profile and add your contact and license information.</p>
-            </li>
-            <li class="listnumber">
-                <p>Click <b>Submit Request</b>.</p>
-                <p>Once your request is verified, you will receive your Account Based Licensing credentials.</p>
-            </li>
-        </ol>
+        <p class="bodytext">If you are a concurrent license user and want to move to the Account Based Licensing Model, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> topic.</p>
         <p class="noteAlt">Ensure that Microsoft Visual C++ 2017 Redistributable is installed on your system. If you are unable to install Microsoft Visual C++ 2017 Redistributable on your operating system, upgrade the operating system.</p>
         <p class="bodytext">When you first open <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>, the <MadCap:variable name="General.ProductNameDM"></MadCap:variable> Licensing dialog box appears.</p>
         <p class="picture">
