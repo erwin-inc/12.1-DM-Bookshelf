@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../../../../erwin-Product-InternalDocumentation/AccountBasedLicensing-DM12.1/Content/Resources/TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../TableStyles/TableStyle.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <p class="bodytext">Once account-based licensing is set up for an organization, the designated master user or an admin user creates and add application users to user groups via the End User Portal (EUP).</p>
+        <p class="bodytext">Once account-based licensing is set up for an organization, the designated master user or an administrator user creates and adds application users to user groups via the End User Portal (EUP).</p>
         <p class="bodytext">Application users can be of two types:</p>
         <ul class="listbullet">
             <li class="listbullet">
-                <p class="bodytext"><b>Administrators</b> have the permission to manage users in the user groups as well as use erwin Data Modeler (erwin DM).</p>
+                <p class="bodytext"><b>Administrators</b>: These users can manage other users in the user groups as well as use erwin Data Modeler (erwin DM).</p>
             </li>
             <li class="listbullet">
-                <p class="bodytext"><b>Standard users</b> can only use their credentials to log on and use erwin DM.</p>
+                <p class="bodytext"><b>Standard users</b>: These users can only use their credentials to log on and use erwin DM.</p>
             </li>
         </ul>
         <p class="bodytext">To add users, follow these steps:</p>
         <ol class="listnumber">
             <li class="listnumber">
-                <p class="bodytext">Log on to the EUP (eup-erwin.quest.com) using your master user or admin user credentials.</p>
+                <p class="bodytext">Log on to the EUP (eup-erwin.quest.com) using your master user or administrator user credentials.</p>
             </li>
             <li class="listnumber">
                 <p class="bodytext">In the left pane, click <b>Users</b>.</p>
@@ -37,7 +37,7 @@
             <li class="listnumber">
                 <p class="bodytext">Under the required user group section, click <b>Add New User</b>.<br /><img src="../Images/AddNewUser.png" MadCap:mediastyle="@media print { width: 400px;height: 400px; }" style="width: 381px;height: 368px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /><br />Enter or select appropriate values to the following fields:<br /></p>
                 <p>
-                    <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../../../../erwin-Product-InternalDocumentation/AccountBasedLicensing-DM12.1/Content/Resources/TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
+                    <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../TableStyles/TableStyle.css');" class="TableStyle-TableStyle" cellspacing="0">
                         <col class="TableStyle-TableStyle-Column-Column1">
                         </col>
                         <col class="TableStyle-TableStyle-Column-Column1">
@@ -83,7 +83,7 @@
                 <p class="bodytext">Click <b>Save</b>.</p>
             </li>
         </ul>
-        <p class="bodytext">A verification email with user’s credentials and a link to rest the password is sent to the user's email address. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Verifying and Using User Accounts.html">Verifying and Using User Accounts</a> topic.</p>
+        <p class="bodytext">A verification email with user’s credentials and a link to reset the password is sent to the user's email address. For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Verifying and Using User Accounts.html">Verifying and Using User Accounts</a> topic.</p>
         <p>
             <br />
         </p>
