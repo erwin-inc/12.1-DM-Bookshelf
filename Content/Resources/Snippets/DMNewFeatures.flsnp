@@ -30,7 +30,7 @@
         </ul>
         <p class="bodytext">For more information or queries about erwin Mart Server on cloud, contact <a href="https://support.quest.com/erwin-data-modeler/12.1">erwin Support</a>.</p>
         <h2 class="heading2"><a name="erwin2"></a>erwin Account Based Licensing</h2>
-        <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> now offers account-based concurrent licensing. Account-based licensing puts you in charge of an End User Portal (EUP). Thus, making you self-reliant with convenient license assignments and maintenance. It enables you to manages your licenses, run usage reports, and manage users. For erwin DM users, it eliminates the dependency on license codes.</p>
+        <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> now offers account-based concurrent licensing. Account-based licensing puts you in charge of an End User Portal (EUP). This makes you self-reliant with convenient license assignments and maintenance. It enables you to manage your licenses, run usage reports, and manage users. For erwin DM users, it eliminates the dependency on license codes.</p>
         <p class="bodytext">Under this model, a single concurrent license is shared between multiple users within a group. With its credential-based login-and-use mechanism, account-based licensing makes license assignments and maintenance flexible and convenient.</p>
         <p class="bodytext">For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Understand_Licensing.html">Understanding Licensing</a> topic.</p>
         <h2 class="heading2"><a name="Snowflak"></a>OKTA support for Snowflake</h2>

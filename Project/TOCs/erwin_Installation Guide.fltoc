@@ -73,7 +73,7 @@
           Title="Configuring Account Based Licensing"
           Link="/Content/Installation/Installation/erwin_Install/Configuring Account Based Licensing.html">
           <TocEntry
-            Title="MasterGroups MasterUser UserGroups"
+            Title="Master Group, Master User, and User Groups"
             Link="/Content/Installation/Installation/erwin_Install/MasterGroups MasterUser UserGroups.html" />
           <TocEntry
             Title="Adding Users to User Groups"

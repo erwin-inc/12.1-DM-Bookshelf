@@ -26,7 +26,7 @@
         <dl>
             <dt>Concurrent</dt>
             <dd>
-                <p class="normaltermcontinued">This licensing model is based on a pool of licenses shared between several users. Simultaneous access to the <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> is available to as many users as the number of allowed users on a concurrent license. For example, if you have a ten-user concurrent license, ten users can access <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable> at a time using the license. Therefore, if an 11th user tries to use <MadCap:variable name="General.ProductNameAcronymDM"></MadCap:variable>, access is denied.</p>
+                <p class="normaltermcontinued">This licensing model is based on a pool of licenses shared between several users. Simultaneous access to the <MadCap:variable name="General.ProductNameAcronymDM" /> is available to as many users as the number of allowed users on a concurrent license. For example, if you have a ten-user concurrent license, ten users can access <MadCap:variable name="General.ProductNameAcronymDM" /> at a time using the license. Therefore, if an eleventh user tries to use <MadCap:variable name="General.ProductNameAcronymDM" />, access is denied.</p>
                 <dl>
                     <dt>Account-based License</dt>
                     <dd>
@@ -36,13 +36,13 @@
                                 <p class="normaltermcontinued">Each organization has one master group and multiple user groups under the master group.</p>
                             </li>
                             <li class="listnumber">
-                                <p class="normaltermcontinued">Each user groups is assigned with a unique license code and each user receives license credentials.</p>
+                                <p class="normaltermcontinued">Each user group is assigned with a unique license code and each user receives license credentials.</p>
                             </li>
                             <li class="listnumber">
                                 <p class="normaltermcontinued"> Individual users log on and use <MadCap:variable name="General.ProductNameAcronymDM" /> application using their license credentials.</p>
                             </li>
                         </ol>
-                        <p class="bodytext">Account-based licensing puts the Master User in charge of an End User Portal (EUP). Thus, making you self-reliant with convenient license assignments and maintenance. It enables you to manages your licenses, run usage reports, and manage users. For erwin DM users, it eliminates the dependency on license codes. For more information on how to set up Account Based Licensing for your organization, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> Topic.</p>
+                        <p class="bodytext">Account-based licensing puts the Master User in charge of an End User Portal (EUP). This makes you self-reliant with convenient license assignments and maintenance. It enables you to manage your licenses, run usage reports, and manage users. For erwin DM users, it eliminates the dependency on license codes. For more information on how to set up Account Based Licensing for your organization, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/Licensing/Licensing/Configuring Account Based Licensing.html">Configuring Account Based Licensing</a> Topic.</p>
                     </dd>
                 </dl>
             </dd>

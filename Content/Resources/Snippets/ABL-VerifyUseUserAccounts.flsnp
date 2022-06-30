@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="bodytext">Once users are added to the user groups, they can use the given credentials to log on to erwin Data Modeler (erwin DM) and use it.</p>
+        <p class="bodytext">Once users are added to the user groups, they can use their credentials to log on to erwin Data Modeler (erwin DM) and use it.</p>
         <p class="bodytext">To verify user account and use erwin DM, follow these steps:</p>
         <ol class="listnumber">
             <li class="listnumber">
@@ -11,10 +11,10 @@
                     <br />
                 </p>
             </li>
-            <li class="listnumber">Click the password reset link.<br /><img src="../Images/ResetPassword.png" MadCap:mediastyle="@media print { width: 400px;height: 400px; }" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
+            <li class="listnumber">Click the password reset link.<br />The Change password page opens.<br /><img src="../Images/ResetPassword.png" MadCap:mediastyle="@media print { width: 400px;height: 400px; }" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" /></li>
             <li class="listnumber">Enter a new password and click <b>Submit</b>.</li>
             <li class="listnumber">
-                <p class="bodytext">Password is reset and the user is logged on to the EUP. If you are an administrator user, you can add more users to the user group.</p>
+                <p class="bodytext">Password is reset and you are logged on to the EUP. If you are an administrator user, you can add more users to the user group.</p>
             </li>
             <li class="listnumber">
                 <p class="bodytext">Start erwin DM.<br />The erwin&#160;Data Modeler Licensing screen appears.<br /><img src="../Images/ActivateLicense.png" /></p>
