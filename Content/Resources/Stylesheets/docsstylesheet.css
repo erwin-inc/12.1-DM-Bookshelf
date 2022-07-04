@@ -3533,3 +3533,69 @@ div.noteAlt
      overflow: hidden;
      padding: 1.75% 7.75%;
 }
+
+/*Added by erwin: Use this class for the heading in DIV on the MartOnlineHelo-LandingPage.flmsp page*/
+.bannerheading1
+{
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 150%;
+	color: #ffffff;
+	background-color: inherit;
+	word-spacing: normal;
+	letter-spacing: normal;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-transform: none;
+	line-height: 130%;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	float: none;
+	clear: none;
+	/*text-align: left;*/
+	text-indent: 0cm;
+	width: auto;
+	height: auto;
+	white-space: normal;
+}
+
+/*Added by erwin: Use this class for the 2nd line heading in DIV on the MartOnlineHelo-LandingPage.flmsp page*/
+.bannerheadingsubtext
+{
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 80%;
+	color: #ffffff;
+	background-color: inherit;
+	word-spacing: normal;
+	letter-spacing: normal;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-transform: none;
+	line-height: 130%;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	float: none;
+	clear: none;
+	/*text-align: left;*/
+	text-indent: 0cm;
+	width: auto;
+	height: auto;
+	white-space: normal;
+}
