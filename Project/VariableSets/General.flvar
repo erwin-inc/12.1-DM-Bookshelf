@@ -42,7 +42,7 @@
   <Variable
     Name="erwin Mart Administrator"
     Comment=""
-    EvaluatedDefinition="erwin Mart Administrator">erwin Mart Administrator</Variable>
+    EvaluatedDefinition="erwin Mart Server">erwin Mart Server</Variable>
   <Variable
     Name="ProductNameAcronymDM"
     Comment=""
