@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <p class="minitocintro">Following new features and enhancements are available in <MadCap:variable name="General.ProductNameDM" /> (<MadCap:variable name="General.ProductNameAcronymDM" />) and erwin Mart Server <MadCap:variable name="General.VersionNumber" />.</p>
-        <p class="minitocitem"><a href="#erwin">erwin Mart Server on Cloud</a>
+        <p class="minitocitem"><a href="#erwin">erwin Mart  on Cloud</a>
         </p>
         <p class="minitocitem"><a href="#erwin2">erwin Account Based Licensing</a>
         </p>
@@ -17,7 +17,7 @@
         <p class="minitocitem"><a href="#Third">Third Party Tools</a>
         </p>
         <p class="bodytext">The list includes a brief description and wherever relevant, a reference to more information about each feature.</p>
-        <h2 class="heading2"><a name="erwin"></a>erwin Mart Server on Cloud</h2>
+        <h2 class="heading2"><a name="erwin"></a>erwin Mart on Cloud</h2>
         <p class="bodytext">Starting release 12.1, erwin Mart Server is available in two flavors, on-premises and on-cloud.</p>
         <p class="bodytext">The on-cloud offering works same as the older, on-premise offering, except for the following features:</p>
         <ul class="listbullet">
@@ -25,10 +25,10 @@
                 <p class="bodytext"><b>User Types</b>: User types, Azure AD User and Azure AD Group User have been added.<br />For more information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/Mart Online Help/mart_users.html">Mart Users</a> topic.</p>
             </li>
             <li class="listbullet">
-                <p class="bodytext"><b>erwin Mart application access</b>: To connect to erwin Mart Server on cloud from <MadCap:variable name="General.ProductNameAcronymDM" />, the connection parameters differ from the erwin Mart on premises.<br />For information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</p>
+                <p class="bodytext"><b>erwin Mart application access</b>: To connect to erwin Mart on Cloud from <MadCap:variable name="General.ProductNameAcronymDM" />, the connection parameters differ from the erwin Mart on premises.<br />For information, refer to the <a href="https://bookshelf.erwin.com/bookshelf/public_html/12.1/Content/User Guides/erwin Help/connect_to_mart.html">Connect to Mart</a> topic.</p>
             </li>
         </ul>
-        <p class="bodytext">For more information or queries about erwin Mart Server on Cloud subscription, contact us for <a href="https://www.erwin.com/register/128774/" target="_blank">pricing</a>. Our experts will guide you.</p>
+        <p class="bodytext">For more information or queries about erwin Mart on Cloud subscription, contact us for <a href="https://www.erwin.com/register/128774/" target="_blank">pricing</a>. Our experts will guide you.</p>
         <h2 class="heading2"><a name="erwin2"></a>erwin Account Based Licensing</h2>
         <p class="bodytext"><MadCap:variable name="General.ProductNameDM" /> now offers account-based concurrent licensing. Account-based licensing puts you in charge of an End User Portal (EUP). This makes you self-reliant with convenient license assignments and maintenance. It enables you to manage your licenses, run usage reports, and manage users. For erwin DM users, it eliminates the dependency on license codes.</p>
         <p class="bodytext">Under this model, a single concurrent license is shared between multiple users within a group. With its credential-based login-and-use mechanism, account-based licensing makes license assignments and maintenance flexible and convenient.</p>
