@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p class="bodytext">The following diagram shows the new architecture:</p>
+        <p class="bodytext">The following diagram explains the architecture:</p>
         <p class="picture">
-            <img align="bottom" alt="Mart architecture new" border="0" height="399" hspace="0" id="f439" src="../Images/443.png" vspace="0" width="387" />
+            <img align="bottom" alt="Mart architecture new" border="0" hspace="0" id="f439" src="../Images/439.png" vspace="0" style="width: 547px;height: 461px;border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
         </p>
         <p class="bodytext">The new architecture has the following benefits:</p>
         <ul class="listbullet">

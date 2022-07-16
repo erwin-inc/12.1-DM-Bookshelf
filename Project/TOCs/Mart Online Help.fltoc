@@ -2,6 +2,9 @@
 <CatapultToc
   Version="1">
   <TocEntry
+    Title="Mart Architecture"
+    Link="/Content/User Guides/Mart Online Help/Mart Architecture.html" />
+  <TocEntry
     Title="User Interface"
     Link="/Content/User Guides/Mart Online Help/User Interface.html">
     <TocEntry
